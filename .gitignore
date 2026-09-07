@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+Precision_5560_Wall_Mount_Package.zip
+package_manifest.json
+*_log.txt
+# Unpacked CFD evidence is generated locally; tracked case dictionaries remain visible.
+cfd/*/[1-9]*/
+cfd/*/VTK/
+cfd/*/constant/polyMesh/
+cfd/*/*.log
