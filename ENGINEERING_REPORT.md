@@ -1,14 +1,14 @@
 # Precision 5560 server wall mount — engineering report
 
-Revision F · 7 September 2026 · design and numerical checkpoint
+Revision F · 7 September 2026 · prototype design
 
-**The current design is ready for prototype fit and print evaluation.** It combines a removable laptop cradle, an inclined two-fan plenum, a restricted upper outlet, and keyed assembly with four wall bolts. Geometry checks and a limited structural screen support this checkpoint. Physical printing, adhesive retention, pin durability and cooling performance remain unverified.
+**The mount aims to support the laptop's own cooling system.** Two inclined fans feed a shrouded rear gap; an upper restriction retains modeled intake pressure and directs bypass air toward the hinge exhaust. The laptop lifts out for access. Geometry checks, structural screening and comparative CFD are complete. Printing, joint retention and cooling performance need physical validation.
 
 ![Installed and empty assembly, rendered from the CAD](Precision_5560_Wall_Mount_Preview.png)
 
 ## 1. Design basis
 
-The mount stores a closed Dell Precision 5560 used as a web server. The hinge faces up so the exhaust remains at the upper edge. The laptop's underside faces the wall and a fan-fed gap. The user can lift the laptop out for temporary keyboard access without dismantling the mount.
+The mount holds a closed Dell Precision 5560 used as a web server. The hinge faces up, placing the exhaust at the upper edge. The underside faces the fan-fed wall gap. The laptop lifts out for keyboard access.
 
 | Parameter | Revision F |
 |---|---|
@@ -30,7 +30,7 @@ Coordinates are X across the laptop, Y outward from the wall and Z upward in the
 
 ![Scaled Dell images and estimated profile](Laptop_Profile_References.png)
 
-Dell's published width and depth set the image scales. Manual pixel picks from the side view reconstruct a conservative silhouette. The inside-base-cover image reveals two active intake regions behind the broad exterior grille. The covered center matters: treating the entire exterior grille as an open intake would misrepresent the flow path.
+Dell's published width and depth set the image scales. Selected points from the side view define the estimated silhouette. The inside-base-cover image reveals a covered center behind the broad exterior grille, leaving two inferred intake regions.
 
 We observed the following:
 
@@ -47,9 +47,9 @@ The [profile JSON](profile_reconstruction.json) preserves pixel picks, scale fac
 
 ## 3. Airflow design and numerical evidence
 
-The lower fans feed a rear plenum. Cheeks reduce gross side escape, and the upper restriction provides resistance downstream of the intake band. This arrangement aims to retain static pressure near the laptop's intake while directing bypass air upward. It does not require tilting the laptop or sealing it into a pressure vessel.
+The lower fans feed the rear plenum. Cheeks limit side leakage, and the upper restriction sits downstream of the intake band. The aim is to retain static pressure at the laptop intake while directing bypass air upward. The laptop remains vertical, with noncontact clearances for removal.
 
-Pressure and flow must be considered together. Restricting an outlet can increase upstream pressure while reducing total flow; a narrower opening does not guarantee a faster jet when the fan's available pressure is limited. The laptop's own blowers and resistance also determine through-laptop flow.
+Restricting the outlet can increase upstream pressure while reducing total flow. At limited supply pressure, a narrower opening need not produce a faster jet. The laptop's blowers and internal resistance also govern intake flow.
 
 ![OpenFOAM field results and common-mesh comparison](CFD_Plenum_Study.png)
 
@@ -66,11 +66,11 @@ The 12 mm slot remains the first prototype configuration. The 8 mm variant retai
 
 All eight meshes passed `checkMesh`, and reported flow imbalance stays below 0.001%. Coarse-to-fine refinement changes mean intake pressure by about 0.3% and exit speed by about 2.9%. Four cases miss the strict residual target at 1,600 iterations even though the final mean-pressure monitors change by less than 0.01% between saved states. The [CFD report](CFD_Design_Report.md) identifies every case and preserves the boundary conditions and convergence limits.
 
-**Interpretation limit:** the intake flow is imposed, not predicted from a laptop resistance model. The supply pressure is assumed, not derived from the selected fan's pressure–flow curve. The study omits 3D side leakage, fan hubs and swirl, detailed grilles and ribs, internal laptop flow, heat transfer and the room plume. It cannot establish actual total CFM, cooling improvement or how far hot air travels above the machine. Positive modeled pressure supports the arrangement as a prototype hypothesis, not a guaranteed operating result.
+**Model limits:** intake flow and fan supply pressure are prescribed. The study omits real fan curves, 3D leakage, fan hubs and swirl, detailed grilles and ribs, internal laptop resistance, heat transfer and the room plume. It compares the proposed slot geometries. Actual CFM, cooling improvement and exhaust carry distance require measurements.
 
 ## 4. Material reduction and structure
 
-The design replaces bulky regions with hollow box sections, thin duct skins, framed fan trays and pocketed caps. It retains material at the saddle roots, bearing shoulders, wall holes and load-carrying bracket sections. This is deliberate geometry reduction informed by calculations; no generative solver or topology-optimization algorithm was run.
+Hollow box sections, thin duct skins, framed trays and pocketed caps reduce material. Saddle roots, bearing shoulders and wall holes retain the load-carrying sections. Section calculations guided these edits; no generative or topology solver was run.
 
 | Checkpoint | Solid CAD volume, cm³ | Interpretation |
 |---|---:|---|
@@ -82,7 +82,7 @@ Revision F reduces solid volume by 35.0% relative to D. The latest containment a
 
 The structural screen uses a 2.5 kg laptop, a 6 kg complete installation, a 1 kg allowance per fan module, 3g acceleration and a 50 N outward hinge pull. It adopts 5 MPa normal/bearing and 2 MPa shear limits, a 1,000 MPa effective modulus, a 1.5 local stress multiplier and a 10% section-property allowance. These are chosen screening values, not measured warm printed ASA properties.
 
-Net section properties come from the actual cradle geometry at 0.5 mm stations and include voids and unsymmetric bending. The rear-section calculation ignores the additional cheek stiffness. The minimum assumed-limit-to-demand ratio is **1.19**, governed by the combined rear-rail screen. It is not a tested assembly safety factor. The full [strength report](Strength_and_Installation_Check.md) lists each calculation and load demand.
+Net section properties come from the actual cradle geometry at 0.5 mm stations and include voids and unsymmetric bending. The rear-section calculation ignores the additional cheek stiffness. The minimum ratio of assumed stress limit to calculated stress is **1.19**, governed by the combined rear-rail case. It does not establish a tested assembly safety factor. The full [strength report](Strength_and_Installation_Check.md) lists each calculation and load demand.
 
 The calculations do not resolve adhesive peel and pullout, pin retention, anchor capacity in the actual wall, torsion, local buckling, fatigue, impact or long-term thermal creep. In particular, each duct has a calculated 47.8 N outward joint demand and each pin a 7.4 N retention demand that still require physical qualification.
 
@@ -98,7 +98,7 @@ The Bambu Studio runtime could not execute in the design environment. The files 
 
 ![Sections through the actual printable geometry](FDM_Sections.png)
 
-Fixed ducts and rails use keyed lap joints. Their shoulders carry vertical reactions; CA retains withdrawal. The fan trays slide into dovetails, and two split pins retain each fan cap. The assembly needs no M3/M4 screws, nuts or heat-set inserts. All four wall bolts remain perpendicular to the wall with clear tool access.
+Fixed ducts and rails use keyed lap joints. Their shoulders carry vertical load; CA resists withdrawal. The fan trays slide into dovetails, and two split pins retain each fan cap. The assembly needs no M3/M4 screws, nuts or heat-set inserts. All four wall bolts remain perpendicular to the wall with clear tool access.
 
 The nominal sliding allowance is 0.30 mm horizontally per side, with 0.30 mm crown and 0.20 mm root clearance. The keyed CA pockets use 0.30 mm nominal offsets plus roof relief. Split pins use a 4.0 mm shaft, 4.1 mm socket and 4.2 mm retaining crown. [TOLERANCES.md](TOLERANCES.md) distinguishes diametral, radial and coordinate allowances; no global shrink compensation is assumed.
 
@@ -127,4 +127,4 @@ The next prototype should proceed in this order:
 
 ## 7. Reproducibility
 
-[PROCESS.md](PROCESS.md) records the design decisions, ordered regeneration commands and evidence files. Raw CFD cases, saved fields and logs are under `cfd/`; scripts use paths relative to the repository. The repository excludes runtime binaries, private conversation transcripts and nested historical archives. Manufacturer PDFs remain available at the attributed source links.
+[PROCESS.md](PROCESS.md) records the decisions and regeneration commands. The `cfd/` directory contains case definitions and archived fields and logs. Scripts use repository-relative paths. [SOURCES.md](SOURCES.md) links the manufacturer references, and [DIALOGUE.md](DIALOGUE.md) records the available project prompts.

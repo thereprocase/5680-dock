@@ -1,6 +1,6 @@
 # Design process and reproduction
 
-Revision F is a prototype checkpoint. The work combined parametric CAD, manufacturer-image reconstruction, geometric print checks, a limited structural calculation and comparative CFD. The useful next step is physical measurement and coupon testing.
+Revision F combines parametric CAD, scaled manufacturer imagery, print checks, structural screening and comparative CFD. This page records the decisions and reproduction steps. Physical measurement and coupon testing come next.
 
 ## Decisions that shaped the design
 
@@ -15,7 +15,7 @@ Revision F is a prototype checkpoint. The work combined parametric CAD, manufact
 | Assembly | Can all hardware except wall bolts disappear? | Use keyed CA joints for fixed parts and printed split pins for removable fan caps. Keep tray joints dry. |
 | Fit | What clearance should the printer reproduce? | Record coordinate, radial and diametral allowances separately. Supply coupons; no global ASA shrink correction. |
 
-The rendered images come from actual CAD or computed fields. The laptop profile is image-derived and the fan/laptop envelopes are simplified. No physical prototype, topology optimization, generative structure solver, thermal simulation or full 3D flow solution is represented as completed work.
+Figures show CAD geometry, scaled reference images or calculated flow fields. The laptop and fan envelopes are simplified. Physical testing, topology optimization and 3D thermal analysis remain outside this checkpoint.
 
 ## Repository map
 
@@ -30,11 +30,11 @@ The rendered images come from actual CAD or computed fields. The laptop profile 
 | Root Python files | CAD generation, analysis, validation, rendering and packaging |
 | Root JSON files | Machine-readable geometry, fit, print and structural results |
 
-Older design volumes are retained in `material_comparison.json` and `reference/Revision_D_Geometry.json`. This repository begins at Revision F; it does not fabricate earlier git commits or include nested historical project archives.
+The repository begins at Revision F. Earlier volume comparisons are recorded in `material_comparison.json` and `reference/Revision_D_Geometry.json`.
 
 ## Python setup and CAD regeneration
 
-Use Python 3.12 on a platform supported by CadQuery 2.8.0. The recorded dependency versions are in `requirements.txt`; dependencies with lower bounds may resolve differently on a future installation.
+Use Python 3.12 and CadQuery 2.8.0. `requirements.txt` records the dependencies; packages specified by lower bounds may change on future installations.
 
 ```bash
 python3.12 -m venv .venv
@@ -52,13 +52,13 @@ python render_fdm_guide.py
 python vent_layout.py
 ```
 
-Run these commands from the repository root. Regeneration overwrites the associated exported files. CAD uses millimeters. `base_geometry.py` retains supporting primitives and baseline construction functions; `build_mount.py` defines the current Revision F assembly. Edit the current construction and its referenced primitives rather than obsolete baseline assembly functions.
+Run from the repository root. Regeneration overwrites the corresponding exports. CAD dimensions are in millimeters. `build_mount.py` defines Revision F using primitives from `base_geometry.py`; make assembly changes through those active functions.
 
-The reference images are already included. [SOURCES.md](SOURCES.md) records their origins. Pillow and the CAD renderer need available fonts; font substitution can alter the layout of regenerated figures without changing CAD.
+Reference images are included and attributed in [SOURCES.md](SOURCES.md). Available fonts can affect the layout of regenerated figures.
 
 ## CFD reproduction
 
-The recorded run uses OpenFOAM v1912, Ubuntu package `1912.200626-2build3`. Install a compatible runtime and source its normal OpenFOAM shell environment. The scripts fall back to the inherited environment when the original optional local runtime tree is absent. Newer OpenFOAM versions may require dictionary changes.
+The study used OpenFOAM v1912, Ubuntu package `1912.200626-2build3`. Install a compatible runtime and load its shell environment. The scripts use that environment when the optional local runtime is absent. Newer releases may require dictionary changes.
 
 To inspect or reanalyze the recorded study, first unpack its per-case evidence:
 
@@ -81,9 +81,9 @@ done
 python render_cfd.py
 ```
 
-Each run executes `blockMesh`, `checkMesh` and `simpleFoam -noFunctionObjects`. The flag avoids an old binary's function-object compatibility failure; it does not replace the solver or suppress field output. Postprocessing reads the written fields. [foam_environment.md](foam_environment.md) and [CFD_Design_Report.md](CFD_Design_Report.md) give the environment, boundary conditions and numerical limits.
+Each run executes `blockMesh`, `checkMesh` and `simpleFoam -noFunctionObjects`. The flag avoids a function-object compatibility failure in the older binary. The solver writes normal field output for postprocessing. [foam_environment.md](foam_environment.md) and [CFD_Design_Report.md](CFD_Design_Report.md) give the environment, boundary conditions and numerical limits.
 
-Per-case ZIPs retain the existing mesh, saved states, logs and VTK files. The finest-mesh archive is split into numbered 4 MiB pieces for transfer; the unpack script joins them automatically. The plain case dictionaries and `results.json` are also directly browsable. ZIP compression keeps the repository practical without discarding numerical evidence. The original saved states are not a promise that every case met its residual target.
+Case ZIPs contain meshes, saved states, logs and VTK files. The finest-mesh archive uses numbered 4 MiB pieces; the unpack script joins them automatically. Dictionaries and `results.json` are directly browsable. Four cases missed the strict residual target; their logs retain that record.
 
 ## Package and check
 
@@ -91,6 +91,6 @@ Per-case ZIPs retain the existing mesh, saved states, logs and VTK files. The fi
 python create_package.py
 ```
 
-This generates a portable ZIP and a SHA-256 manifest from the public project files. It excludes local environments, git metadata and generated archives. Original validation results accompany the package. The scripts and stored results do not replace physical print, bond, retention, thermal or wall-anchor tests.
+This creates a portable ZIP with validation results and a SHA-256 manifest. It excludes local environments, git metadata and generated archives. Physical print, bond, retention, thermal and anchor tests remain pending.
 
 Before printing, follow [P1S_ASA_Print_Guide.md](P1S_ASA_Print_Guide.md). Before adjusting a fit, read [TOLERANCES.md](TOLERANCES.md). The ordered prototype evaluation appears in [ENGINEERING_REPORT.md](ENGINEERING_REPORT.md).
