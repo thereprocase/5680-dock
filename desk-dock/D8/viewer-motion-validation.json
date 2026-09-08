@@ -1,0 +1,661 @@
+{
+  "revision": "D8",
+  "passed": true,
+  "model_sha256": "097be0b68550704e2254f10b875f846b12c50d0b1324dd1e76e690eaa5f11274",
+  "manifest_sha256": "ee0736c7d278d8309afc380af31fc2febd20c273ee7f85d6cc2bae9080a16edc",
+  "checker_sha256": "213e142b88f66fb18a7c04a549bae6482ea58bee9aaa54d4b87da440e12fe3e5",
+  "binary_parts": [
+    {
+      "name": "01_fan_guard_retainer",
+      "vertices": 1072,
+      "triangles": 1036,
+      "passed": true
+    },
+    {
+      "name": "01_fan_top_clip_1",
+      "vertices": 132,
+      "triangles": 84,
+      "passed": true
+    },
+    {
+      "name": "01_fan_top_clip_2",
+      "vertices": 132,
+      "triangles": 84,
+      "passed": true
+    },
+    {
+      "name": "01_120x25_fan_frame",
+      "vertices": 1558,
+      "triangles": 1548,
+      "passed": true
+    },
+    {
+      "name": "01_fan_hub_struts",
+      "vertices": 350,
+      "triangles": 312,
+      "passed": true
+    },
+    {
+      "name": "01_blade_0",
+      "vertices": 188,
+      "triangles": 176,
+      "passed": true
+    },
+    {
+      "name": "01_blade_1",
+      "vertices": 188,
+      "triangles": 176,
+      "passed": true
+    },
+    {
+      "name": "01_blade_2",
+      "vertices": 188,
+      "triangles": 176,
+      "passed": true
+    },
+    {
+      "name": "01_blade_3",
+      "vertices": 188,
+      "triangles": 176,
+      "passed": true
+    },
+    {
+      "name": "01_blade_4",
+      "vertices": 188,
+      "triangles": 176,
+      "passed": true
+    },
+    {
+      "name": "01_blade_5",
+      "vertices": 188,
+      "triangles": 176,
+      "passed": true
+    },
+    {
+      "name": "01_blade_6",
+      "vertices": 188,
+      "triangles": 176,
+      "passed": true
+    },
+    {
+      "name": "02_fan_guard_retainer",
+      "vertices": 1072,
+      "triangles": 1036,
+      "passed": true
+    },
+    {
+      "name": "02_fan_top_clip_1",
+      "vertices": 132,
+      "triangles": 84,
+      "passed": true
+    },
+    {
+      "name": "02_fan_top_clip_2",
+      "vertices": 132,
+      "triangles": 84,
+      "passed": true
+    },
+    {
+      "name": "02_120x25_fan_frame",
+      "vertices": 1558,
+      "triangles": 1548,
+      "passed": true
+    },
+    {
+      "name": "02_fan_hub_struts",
+      "vertices": 350,
+      "triangles": 312,
+      "passed": true
+    },
+    {
+      "name": "02_blade_0",
+      "vertices": 188,
+      "triangles": 176,
+      "passed": true
+    },
+    {
+      "name": "02_blade_1",
+      "vertices": 188,
+      "triangles": 176,
+      "passed": true
+    },
+    {
+      "name": "02_blade_2",
+      "vertices": 188,
+      "triangles": 176,
+      "passed": true
+    },
+    {
+      "name": "02_blade_3",
+      "vertices": 188,
+      "triangles": 176,
+      "passed": true
+    },
+    {
+      "name": "02_blade_4",
+      "vertices": 188,
+      "triangles": 176,
+      "passed": true
+    },
+    {
+      "name": "02_blade_5",
+      "vertices": 188,
+      "triangles": 176,
+      "passed": true
+    },
+    {
+      "name": "02_blade_6",
+      "vertices": 188,
+      "triangles": 176,
+      "passed": true
+    },
+    {
+      "name": "corner_pad_far",
+      "vertices": 336,
+      "triangles": 220,
+      "passed": true
+    },
+    {
+      "name": "corner_pad_near",
+      "vertices": 336,
+      "triangles": 220,
+      "passed": true
+    },
+    {
+      "name": "lid_bearing_liner_1",
+      "vertices": 24,
+      "triangles": 12,
+      "passed": true
+    },
+    {
+      "name": "lid_bearing_liner_2",
+      "vertices": 24,
+      "triangles": 12,
+      "passed": true
+    },
+    {
+      "name": "hinge_seal_42.0_-11.335",
+      "vertices": 24,
+      "triangles": 12,
+      "passed": true
+    },
+    {
+      "name": "hinge_seal_177.3_-11.335",
+      "vertices": 24,
+      "triangles": 12,
+      "passed": true
+    },
+    {
+      "name": "hinge_seal_42.0_11.0",
+      "vertices": 24,
+      "triangles": 12,
+      "passed": true
+    },
+    {
+      "name": "hinge_seal_177.3_11.0",
+      "vertices": 24,
+      "triangles": 12,
+      "passed": true
+    },
+    {
+      "name": "breakaway_carrier",
+      "vertices": 3328,
+      "triangles": 2658,
+      "passed": true
+    },
+    {
+      "name": "breakaway_pivot_pin_10mm",
+      "vertices": 5100,
+      "triangles": 5084,
+      "passed": true
+    },
+    {
+      "name": "breakaway_spring_cartridge",
+      "vertices": 1306,
+      "triangles": 1132,
+      "passed": true
+    },
+    {
+      "name": "breakaway_preload_hand_nut",
+      "vertices": 3708,
+      "triangles": 3660,
+      "passed": true
+    },
+    {
+      "name": "breakaway_spring_hand_screw_0",
+      "vertices": 4639,
+      "triangles": 4632,
+      "passed": true
+    },
+    {
+      "name": "breakaway_spring_hand_screw_1",
+      "vertices": 4639,
+      "triangles": 4632,
+      "passed": true
+    },
+    {
+      "name": "cassette_Z_lock_0",
+      "vertices": 4918,
+      "triangles": 4884,
+      "passed": true
+    },
+    {
+      "name": "cassette_Z_lock_1",
+      "vertices": 4918,
+      "triangles": 4884,
+      "passed": true
+    },
+    {
+      "name": "cassette_Y_lock_0",
+      "vertices": 3848,
+      "triangles": 3818,
+      "passed": true
+    },
+    {
+      "name": "cassette_Z_saddle",
+      "vertices": 5994,
+      "triangles": 5956,
+      "passed": true
+    },
+    {
+      "name": "X_depth_overmold_clamp",
+      "vertices": 3602,
+      "triangles": 3502,
+      "passed": true
+    },
+    {
+      "name": "sliding_plug_cap",
+      "vertices": 690,
+      "triangles": 636,
+      "passed": true
+    },
+    {
+      "name": "cassette_cap_push_pin_6p5",
+      "vertices": 3580,
+      "triangles": 6044,
+      "passed": true
+    },
+    {
+      "name": "Dell_plug_overmold_REFERENCE",
+      "vertices": 550,
+      "triangles": 526,
+      "passed": true
+    },
+    {
+      "name": "USB_C_shell_REFERENCE",
+      "vertices": 288,
+      "triangles": 268,
+      "passed": true
+    },
+    {
+      "name": "breakaway_spring_spacer_0",
+      "vertices": 508,
+      "triangles": 504,
+      "passed": true
+    },
+    {
+      "name": "breakaway_spring_spacer_1",
+      "vertices": 508,
+      "triangles": 504,
+      "passed": true
+    },
+    {
+      "name": "connector_mount_lock_0",
+      "vertices": 5724,
+      "triangles": 5686,
+      "passed": true
+    },
+    {
+      "name": "connector_mount_lock_1",
+      "vertices": 5724,
+      "triangles": 5686,
+      "passed": true
+    },
+    {
+      "name": "chassis_stop_mount_lock_0",
+      "vertices": 5724,
+      "triangles": 5686,
+      "passed": true
+    },
+    {
+      "name": "chassis_stop_mount_lock_1",
+      "vertices": 5724,
+      "triangles": 5686,
+      "passed": true
+    },
+    {
+      "name": "chassis_stop_bracket",
+      "vertices": 4382,
+      "triangles": 4336,
+      "passed": true
+    },
+    {
+      "name": "connector_module_body",
+      "vertices": 23963,
+      "triangles": 23384,
+      "passed": true
+    },
+    {
+      "name": "independent_printed_chassis_stop_screw",
+      "vertices": 6030,
+      "triangles": 5974,
+      "passed": true
+    },
+    {
+      "name": "stop_soft_tip",
+      "vertices": 508,
+      "triangles": 500,
+      "passed": true
+    },
+    {
+      "name": "Precision_5680_REFERENCE",
+      "vertices": 1940,
+      "triangles": 1744,
+      "passed": true
+    },
+    {
+      "name": "RUBBER_FOOT_rear_strip",
+      "vertices": 24,
+      "triangles": 12,
+      "passed": true
+    },
+    {
+      "name": "RUBBER_FOOT_front_left",
+      "vertices": 24,
+      "triangles": 12,
+      "passed": true
+    },
+    {
+      "name": "RUBBER_FOOT_front_right",
+      "vertices": 24,
+      "triangles": 12,
+      "passed": true
+    },
+    {
+      "name": "01_bottom_thumb_lock_1",
+      "vertices": 4902,
+      "triangles": 4868,
+      "passed": true
+    },
+    {
+      "name": "01_bottom_thumb_lock_2",
+      "vertices": 4902,
+      "triangles": 4868,
+      "passed": true
+    },
+    {
+      "name": "01_desk_pad_1_1",
+      "vertices": 288,
+      "triangles": 268,
+      "passed": true
+    },
+    {
+      "name": "01_desk_pad_1_2",
+      "vertices": 288,
+      "triangles": 268,
+      "passed": true
+    },
+    {
+      "name": "01_desk_pad_2_1",
+      "vertices": 288,
+      "triangles": 268,
+      "passed": true
+    },
+    {
+      "name": "01_desk_pad_2_2",
+      "vertices": 288,
+      "triangles": 268,
+      "passed": true
+    },
+    {
+      "name": "01_bottom_panel",
+      "vertices": 1612,
+      "triangles": 1460,
+      "passed": true
+    },
+    {
+      "name": "02_bottom_thumb_lock_1",
+      "vertices": 4902,
+      "triangles": 4868,
+      "passed": true
+    },
+    {
+      "name": "02_bottom_thumb_lock_2",
+      "vertices": 4902,
+      "triangles": 4868,
+      "passed": true
+    },
+    {
+      "name": "02_desk_pad_1_1",
+      "vertices": 288,
+      "triangles": 268,
+      "passed": true
+    },
+    {
+      "name": "02_desk_pad_1_2",
+      "vertices": 288,
+      "triangles": 268,
+      "passed": true
+    },
+    {
+      "name": "02_desk_pad_2_1",
+      "vertices": 288,
+      "triangles": 268,
+      "passed": true
+    },
+    {
+      "name": "02_desk_pad_2_2",
+      "vertices": 288,
+      "triangles": 268,
+      "passed": true
+    },
+    {
+      "name": "02_bottom_panel",
+      "vertices": 1612,
+      "triangles": 1460,
+      "passed": true
+    },
+    {
+      "name": "01_bridge_thumb_lock_1",
+      "vertices": 4806,
+      "triangles": 4772,
+      "passed": true
+    },
+    {
+      "name": "02_bridge_thumb_lock_1",
+      "vertices": 4806,
+      "triangles": 4772,
+      "passed": true
+    },
+    {
+      "name": "bridge_key_1",
+      "vertices": 796,
+      "triangles": 780,
+      "passed": true
+    },
+    {
+      "name": "01_bridge_thumb_lock_2",
+      "vertices": 4806,
+      "triangles": 4772,
+      "passed": true
+    },
+    {
+      "name": "02_bridge_thumb_lock_2",
+      "vertices": 4806,
+      "triangles": 4772,
+      "passed": true
+    },
+    {
+      "name": "bridge_key_2",
+      "vertices": 796,
+      "triangles": 780,
+      "passed": true
+    },
+    {
+      "name": "01_manifold_with_cradle",
+      "vertices": 28915,
+      "triangles": 30566,
+      "passed": true
+    },
+    {
+      "name": "02_manifold_with_cradle",
+      "vertices": 28900,
+      "triangles": 30536,
+      "passed": true
+    }
+  ],
+  "rigid_motion_angles_deg": [
+    0,
+    0.5,
+    1,
+    5,
+    15,
+    45
+  ],
+  "rigid_motion": [
+    {
+      "name": "breakaway_carrier",
+      "motion": "rotate",
+      "max_error_mm": 5.684341886080802e-14,
+      "passed": true
+    },
+    {
+      "name": "breakaway_pivot_pin_10mm",
+      "motion": "axial",
+      "max_error_mm": 2.842170943040401e-14,
+      "passed": true
+    },
+    {
+      "name": "breakaway_preload_hand_nut",
+      "motion": "axial",
+      "max_error_mm": 2.842170943040401e-14,
+      "passed": true
+    },
+    {
+      "name": "cassette_Z_lock_0",
+      "motion": "rotate",
+      "max_error_mm": 5.684341886080802e-14,
+      "passed": true
+    },
+    {
+      "name": "cassette_Z_lock_1",
+      "motion": "rotate",
+      "max_error_mm": 5.684341886080802e-14,
+      "passed": true
+    },
+    {
+      "name": "cassette_Y_lock_0",
+      "motion": "rotate",
+      "max_error_mm": 4.263256414560601e-14,
+      "passed": true
+    },
+    {
+      "name": "cassette_Z_saddle",
+      "motion": "rotate",
+      "max_error_mm": 5.684341886080802e-14,
+      "passed": true
+    },
+    {
+      "name": "X_depth_overmold_clamp",
+      "motion": "rotate",
+      "max_error_mm": 5.684341886080802e-14,
+      "passed": true
+    },
+    {
+      "name": "sliding_plug_cap",
+      "motion": "rotate",
+      "max_error_mm": 5.684341886080802e-14,
+      "passed": true
+    },
+    {
+      "name": "cassette_cap_push_pin_6p5",
+      "motion": "rotate",
+      "max_error_mm": 5.684341886080802e-14,
+      "passed": true
+    },
+    {
+      "name": "Dell_plug_overmold_REFERENCE",
+      "motion": "rotate",
+      "max_error_mm": 5.684341886080802e-14,
+      "passed": true
+    },
+    {
+      "name": "USB_C_shell_REFERENCE",
+      "motion": "rotate",
+      "max_error_mm": 2.842170943040401e-14,
+      "passed": true
+    }
+  ],
+  "spring_endpoints": {
+    "fixed_frame_vertices": 532,
+    "island_vertices": 254,
+    "fixed_frame_displacement_mm": 0.0,
+    "island_translation_error_mm": 0.0,
+    "weight_range": [
+      0.0,
+      1.0
+    ],
+    "passed": true
+  },
+  "module_service_samples": [
+    {
+      "position_mm": {
+        "local_x": 0,
+        "local_y": 0
+      },
+      "max_error_mm": 0.0,
+      "passed": true
+    },
+    {
+      "position_mm": {
+        "local_x": 0,
+        "local_y": -1
+      },
+      "max_error_mm": 0.0,
+      "passed": true
+    },
+    {
+      "position_mm": {
+        "local_x": 0,
+        "local_y": -4.3
+      },
+      "max_error_mm": 0.0,
+      "passed": true
+    },
+    {
+      "position_mm": {
+        "local_x": -5,
+        "local_y": -4.3
+      },
+      "max_error_mm": 0.0,
+      "passed": true
+    },
+    {
+      "position_mm": {
+        "local_x": -15,
+        "local_y": -4.3
+      },
+      "max_error_mm": 0.0,
+      "passed": true
+    },
+    {
+      "position_mm": {
+        "local_x": -35,
+        "local_y": -4.3
+      },
+      "max_error_mm": 0.0,
+      "passed": true
+    },
+    {
+      "position_mm": {
+        "local_x": -70,
+        "local_y": -4.3
+      },
+      "max_error_mm": 0.0,
+      "passed": true
+    }
+  ],
+  "module_part_count": 23,
+  "removed_lock_count": 2,
+  "scope": "Check D8 browser mesh integrity and kinematics without rebuilding CAD.\n\nRigid motion compares the browser's world-axis formula with independent\nconstruction-frame matrix composition. Spring checks establish fixed-frame\nand translating-island endpoint behavior for the rotated cartridge; they do\nnot compare to a newly regenerated CAD spring or simulate material behavior."
+}

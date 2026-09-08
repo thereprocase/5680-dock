@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Precision 5680 · D7 desk dock</title>
+  <title>Precision 5680 · D8 desk dock</title>
   <link rel="stylesheet" href="desk-dock.css">
   <script type="importmap">{"imports":{"three":"./vendor/three.module.js"}}</script>
   <style>
@@ -20,9 +20,9 @@
   </style>
 </head>
 <body>
-<header><a href="./">Design journal</a><span>PRECISION 5680 / D7</span><a href="https://github.com/thereprocase/5680-dock/blob/main/desk-dock/D7/REVIEW.md">Design &amp; assembly guide</a></header>
+<header><a href="./">Design journal</a><span>PRECISION 5680 / D8</span><a href="https://github.com/thereprocase/5680-dock/blob/main/desk-dock/D8/README.md">Design &amp; assembly guide</a></header>
 <main>
-  <section class="intro"><div><p class="eyebrow">COMPACT SUPPORT. ACCESSIBLE PARTS.</p><h1>The plenum is the stand.</h1><p>Slide-in fan grilles, printed hand fasteners, and a plug holder that folds clear and resets.</p></div><span class="badge">D7 · Prototype design</span></section>
+  <section class="intro"><div><p class="eyebrow">REMOVABLE CONNECTOR. DIRECT SHELL SUPPORT.</p><h1>Less cover. More access.</h1><p>A complete removable connector with live Y/Z slides, shell perimeter feet, light ribbed covers and replaceable fan clips.</p></div><span class="badge">D8 · Prototype design</span></section>
   <div class="workspace">
     <section class="stage" aria-label="CAD viewer">
       <canvas id="scene" aria-label="Interactive Precision 5680 dock. Drag to rotate, scroll to zoom, or use the view buttons." tabindex="0"></canvas>
@@ -30,6 +30,7 @@
       <div class="viewbar" role="group" aria-label="Inspection views">
         <button data-view="home" aria-pressed="true">Assembled</button>
         <button data-view="service" aria-pressed="false">Fan service</button>
+        <button data-view="module" aria-pressed="false">Connector service</button>
         <button data-view="exploded" aria-pressed="false">Exploded</button>
         <button data-view="under" aria-pressed="false">Intake</button>
         <button data-view="plug" aria-pressed="false">Plug detail</button>
@@ -40,7 +41,7 @@
     </section>
     <aside>
       <p class="eyebrow">INSPECT THE DESIGN</p>
-      <div id="viewHint" class="service-note">The lid rests on the plenum. Fans sit inside its front pockets.</div>
+      <div id="viewHint" class="service-note">Shell perimeter feet carry the laptop. Ribbed covers close the underside, and the connector removes as a complete module.</div>
       <label for="explode">Separate the parts <output id="explodeValue" for="explode">0%</output></label>
       <input id="explode" type="range" min="0" max="100" value="0" aria-describedby="explodeNote">
       <label for="motion">Remove / insert laptop <output id="motionValue" for="motion">Seated</output></label>
@@ -48,9 +49,11 @@
       <button id="play" class="primary" aria-pressed="false">Play docking motion</button>
       <label for="foldAngle">Fold holder <output id="foldValue" for="foldAngle">0.0&deg;</output></label>
       <input id="foldAngle" type="range" min="0" max="45" step="0.1" value="0">
+      <label for="moduleMotion">Remove connector module <output id="moduleValue" for="moduleMotion">Seated</output></label>
+      <input id="moduleMotion" type="range" min="0" max="100" step="0.1" value="0">
       <div class="toggles">
         <label><input id="laptop" type="checkbox" checked> Laptop</label>
-        <label><input id="guards" type="checkbox" checked> Slide-in fan grilles</label>
+        <label><input id="guards" type="checkbox" checked> Fan grilles and clips</label>
         <label><input id="fans" type="checkbox" checked> Fans</label>
         <label><input id="cover" type="checkbox" checked> Plug cassette cap</label>
         <label><input id="air" type="checkbox"> Airflow direction</label>
@@ -62,12 +65,12 @@
     </aside>
   </div>
   <section class="notes">
-    <article><span>01 / SUPPORT</span><h2>Only the contacts you need.</h2><p>Two shaped end seats carry the laptop. Its lid leans 5° onto soft liners on the plenum wall. A continuous low lip guides the underside edge. The loading end stays open, and the intake stays clear.</p></article>
-    <article><span>02 / COOLING</span><h2>Fans belong inside the body.</h2><p>The pocket walls enclose the fan frames. Grilles slide down into open-top rails to retain the fans. Cable leads lay into edge notches before the bottom covers close. The 120 × 120 × 25 mm frames grow outward, preserving the inlet space behind them and the 18° upward discharge.</p><a href="https://github.com/thereprocase/5680-dock/blob/main/desk-dock/D6/AIRFLOW_STUDY.md">Read the retained airflow study</a></article>
-    <article><span>03 / ASSEMBLY</span><h2>Slide, pin, turn.</h2><p>Printed push pins retain the plug cap. Large printed hand threads clamp the floors and joining keys, and adjust the breakaway preload. The chassis stop stays fixed when the cassette folds away.</p><a href="https://github.com/thereprocase/5680-dock/blob/main/desk-dock/D7/REVIEW.md">Review assembly and print planning</a></article>
+    <article><span>01 / SUPPORT</span><h2>Feet carry the load.</h2><p>Profiled end seats pass laptop weight into the shell perimeter and its integral feet. Separate ribbed bottom covers close the duct. Together they use about 94 g of PETG, 48% less than D7. The loading end and underside intake remain clear.</p></article>
+    <article><span>02 / COOLING</span><h2>Fans belong inside the body.</h2><p>Flat grilles slide into open-top rails. Separate clips retain the fan and grille; their leaves print in the layer plane. The pocket allows for the selected 120 × 120 × 25 mm fan and configurable pad thickness. The suction datum and 18° upward discharge stay fixed.</p><a href="https://github.com/thereprocase/5680-dock/blob/main/desk-dock/D6/AIRFLOW_STUDY.md">Read the retained airflow study</a></article>
+    <article><span>03 / ASSEMBLY</span><h2>Align it. Remove it whole.</h2><p>The connector slides ±3 mm in Y and −4 to +5 mm in Z. Its independent X stop sets engagement. Remove two shell mounting locks, pull 4.3 mm to release the keys, then withdraw the entire module outboard. The printed face-cam spring still lets the holder fold clear.</p><a href="https://github.com/thereprocase/5680-dock/blob/main/desk-dock/D8/README.md">Review assembly and print planning</a></article>
   </section>
-  <footer>Local D7 prototype study. The proposed tool-free assembly, PETG fits, strength, desk stability, cooling and noise require physical verification. Port positions preserve the source orientation: both Thunderbolt ports are at the far plug end.<a href="downloads/Precision_5680_D7_Review.zip">Download saved review files — shell exports pending</a><a href="https://github.com/thereprocase/5680-dock/blob/main/desk-dock/D7/arm-study/HOLDER_AND_BREAKAWAY.md">Plug loads and breakaway study</a><a href="https://github.com/thereprocase/5680-dock/blob/main/desk-dock/D6/PORT_STUDY.md">Precision 5680 port study</a><a href="desk-dock-d6.html">Previous D6 viewer</a></footer>
+  <footer>D8 prototype: 83 CAD solids and 43 production print meshes. Generic slicing estimates 1.66 kg of PETG including supports and brims; budget two 1 kg spools for the first build. Final P1S support removal, fit, strength, spring creep, release force, stability, cooling and noise still require qualification. The animations illustrate geometry and finite checked poses.<a href="https://github.com/thereprocase/5680-dock/tree/main/desk-dock/D8/print">Get the 43 print meshes</a><a href="https://github.com/thereprocase/5680-dock/blob/main/desk-dock/D8/PRINT_DESIGN.md">Print orientations and plastic estimate</a><a href="https://github.com/thereprocase/5680-dock/blob/main/desk-dock/D8/CURRENT_STATUS.md">Validation and remaining work</a><a href="desk-dock-d7.html">Archived D7 viewer</a></footer>
 </main>
-<script type="module" src="desk-dock-viewer-d7.js?v=free-camera-1"></script>
+<script type="module" src="desk-dock-viewer-d8.js?v=d8-service-1"></script>
 </body>
 </html>

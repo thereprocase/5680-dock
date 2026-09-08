@@ -37,4 +37,4 @@ Automatic shell support is still the largest manufacturing loose end. The reduce
 
 Actual P1S slicing, physical thread/slider/fan fit, whole-holder stiffness, warm spring creep, measured release force, tip stability and cooling/noise remain unqualified. Five walls and dense loaded parts are a starting process choice, not a demonstrated strength rating. The complete-holder target of at most 0.20 mm deflection at 20 N and nominal 50 N release require measurement. The current printed face-cam and spring remain; a steel-preloaded detent redesign has not been implemented.
 
-D7's public viewer and archive remain D7. This package completes the documented CAD and manufacturing review, not a production print release.
+The public showcase and viewer now use D8; the archived D7 viewer and archive retain D7. This package completes the documented CAD and manufacturing review, not a production print release.

@@ -4,7 +4,7 @@ A compact, hinge-down stand built around its cooling plenum. Two recessed fans d
 
 **D8 is the current design.** The CAD and manufacturing review is complete; physical fit, strength and cooling tests remain.
 
-**[Download D8 STEP](desk-dock/D8/Precision_5680_D8_STEP.zip)** · **[Print meshes](desk-dock/D8/print/)** · **[Assembly and adjustment](desk-dock/D8/README.md)** · **[P1S print guide](desk-dock/D8/PRINT_DESIGN.md)**
+**[Explore D8](https://thereprocase.github.io/5680-dock/)** · **[Download D8 STEP](docs/downloads/Precision_5680_D8_STEP.zip)** · **[Print + source package](docs/downloads/Precision_5680_D8_Review.zip)** · **[Assembly and adjustment](desk-dock/D8/README.md)** · **[P1S print guide](desk-dock/D8/PRINT_DESIGN.md)**
 
 ![D8 assembled dock with laptop envelope, recessed fans and removable connector module](desk-dock/D8/D8-assembled.png)
 
@@ -53,4 +53,4 @@ The STEP download is a lossless ZIP containing the complete CAD file. Individual
 
 ## Earlier revisions
 
-The [public showcase](https://thereprocase.github.io/5680-dock/) and [interactive viewer](https://thereprocase.github.io/5680-dock/desk-dock.html) currently show **D7**. Its [review archive](docs/downloads/Precision_5680_D7_Review.zip), earlier desk-dock studies and [original 5560 wall-mount overview](docs/history/5560-README.md) remain available as history. Use the D8 files above for current work. See [LICENSE](LICENSE).
+The [archived D7 viewer](https://thereprocase.github.io/5680-dock/desk-dock-d7.html) and its [review archive](docs/downloads/Precision_5680_D7_Review.zip), earlier desk-dock studies and [original 5560 wall-mount overview](docs/history/5560-README.md) remain available as history. Use the D8 files above for current work. See [LICENSE](LICENSE).

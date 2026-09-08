@@ -6,7 +6,7 @@ of 2026-09-08. **D8 is the current design on main.** Read
 [current checks](desk-dock/D8/CURRENT_STATUS.md) first. The historical sections below
 preserve the D7 baseline and should not override D8's live Y/Z slides, keyed
 removable module, independent X stop, shell feet, light covers or fan clips.
-The public viewer and old downloadable archive still describe D7. Its home is
+The public showcase and viewer now use D8; the archived D7 viewer and old download retain D7. Its home is
 [`thereprocase/5680-dock`](https://github.com/thereprocase/5680-dock), with the
 [project site](https://thereprocase.github.io/5680-dock/) and
 [interactive model](https://thereprocase.github.io/5680-dock/desk-dock.html).
@@ -236,9 +236,11 @@ inspection of supports, bridges and fit surfaces.
 
 Keep GitHub checkpoints current and make the latest design, downloads and
 remaining engineering work prominent in the root README. Preserve earlier
-revisions as history. The public showcase, interactive viewer and
-[D7 archive](docs/downloads/Precision_5680_D7_Review.zip) still describe D7;
-the D8 CAD merge does not update their geometry or qualify their old results.
+revisions as history. The public showcase and interactive viewer now use D8.
+The [archived D7 viewer](docs/desk-dock-d7.html) and
+[D7 archive](docs/downloads/Precision_5680_D7_Review.zip) retain their original geometry and evidence.
+Run `desk-dock/D8/package.py` after updating review files to refresh the separate
+Pages print/source and STEP downloads.
 
 ## Research worth retaining
 
