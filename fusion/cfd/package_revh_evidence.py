@@ -129,6 +129,7 @@ All fans remain nominal 10 Pa constant-force actuators. Laptop internals, grille
 - [Method, acceptance criteria and GPU assessment](METHOD.md)
 - [Input hashes](input-hashes.json)
 - [Latest pilot diagnostics](pilot-review.json)
+- [Startup video (MP4, four recorded frames)](pilot-sections.mp4)
 - [Plot and animation provenance](animation-provenance.json)
 - [Raw probes, local sections and diagnostics](commissioning-samples.zip) ([hashes](sample-hashes.json))
 
