@@ -1,6 +1,14 @@
 # Native Onshape rebuild
 
-**Status: rebuild specification prepared; native document not yet created or tested.**
+**Status: native push-pin pilot built and tested; full mount rebuild remains unfinished.**
+
+The 2026-09-07 exploration used 34 of 40 authorized request attempts. The document now has a constrained native pin, 38 shared variables and four positioned pin instances in its Assembly tab. See [EFFICIENT_NATIVE_WORKFLOW.md](EFFICIENT_NATIVE_WORKFLOW.md) for tested batching methods, validation limits and the next execution plan, and [RESEARCH_NOTES.md](RESEARCH_NOTES.md) for the running evidence notebook.
+
+Current user direction: each distinct part gets its own Part Studio tab, with reusable instances in an Assembly. The grouped family descriptions below remain construction guidance; handed parts should occupy separate tabs.
+
+Target: [Dell Precision 5560 Wall Mount - Native Rebuild](https://cad.onshape.com/documents/c452b7f3224726ea2f11cdda/w/3231ffbfcf00782c1dba2494).
+Created on 2026-09-07 with one API request (HTTP 200); IDs saved in local ignored `.env`.
+See [MCP_WORKFLOW.md](MCP_WORKFLOW.md) for connection status, quota constraints and the modeling workflow.
 
 The current Revision F source is CadQuery. STEP carries its boundary geometry, but the native Onshape deliverable must reconstruct the design history and relationships. This directory records that reconstruction so it can proceed in a session with authenticated Onshape access.
 

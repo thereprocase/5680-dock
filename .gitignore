@@ -9,3 +9,11 @@ cfd/*/[1-9]*/
 cfd/*/VTK/
 cfd/*/constant/polyMesh/
 cfd/*/*.log
+
+# Local credentials, tool caches and duplicate build outputs
+.env
+.env.*
+!.env.example
+/tmp/
+/output/
+/%SystemDrive%/

@@ -1,8 +1,8 @@
 {
-  "status": "rebuild_specification_only",
+  "status": "native_pin_pilot_built_full_mount_pending",
   "revision": "F",
-  "native_document_created": false,
-  "native_regeneration_tested": false,
+  "native_document_created": true,
+  "native_regeneration_tested": true,
   "coordinates": {
     "X": "across laptop",
     "Y": "out from wall",
@@ -215,5 +215,6 @@
       16
     ]
   },
-  "dependency_note": "These are target native design variables. The CadQuery source has additional hard-coded coordinates; they must be refactored into layout relationships, not blindly substituted. No parameter range has been validated in Onshape."
+  "dependency_note": "These are target native design variables. The CadQuery source has additional hard-coded coordinates; they must be refactored into layout relationships, not blindly substituted. No parameter range has been validated in Onshape.",
+  "native_regeneration_scope": "Pin only; four features OK, head radius perturbation passed and restored. Full mount not rebuilt."
 }
