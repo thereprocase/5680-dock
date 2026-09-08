@@ -1,0 +1,224 @@
+{
+  "nominal_rigid_collisions": [],
+  "adjustment_positions": [
+    {
+      "xyz_mm": [
+        -5,
+        -3,
+        -5
+      ],
+      "collisions": []
+    },
+    {
+      "xyz_mm": [
+        -5,
+        -3,
+        0
+      ],
+      "collisions": []
+    },
+    {
+      "xyz_mm": [
+        -5,
+        -3,
+        5
+      ],
+      "collisions": []
+    },
+    {
+      "xyz_mm": [
+        -5,
+        0,
+        -5
+      ],
+      "collisions": []
+    },
+    {
+      "xyz_mm": [
+        -5,
+        0,
+        0
+      ],
+      "collisions": []
+    },
+    {
+      "xyz_mm": [
+        -5,
+        0,
+        5
+      ],
+      "collisions": []
+    },
+    {
+      "xyz_mm": [
+        -5,
+        3,
+        -5
+      ],
+      "collisions": []
+    },
+    {
+      "xyz_mm": [
+        -5,
+        3,
+        0
+      ],
+      "collisions": []
+    },
+    {
+      "xyz_mm": [
+        -5,
+        3,
+        5
+      ],
+      "collisions": []
+    },
+    {
+      "xyz_mm": [
+        0,
+        -3,
+        -5
+      ],
+      "collisions": []
+    },
+    {
+      "xyz_mm": [
+        0,
+        -3,
+        0
+      ],
+      "collisions": []
+    },
+    {
+      "xyz_mm": [
+        0,
+        -3,
+        5
+      ],
+      "collisions": []
+    },
+    {
+      "xyz_mm": [
+        0,
+        0,
+        -5
+      ],
+      "collisions": []
+    },
+    {
+      "xyz_mm": [
+        0,
+        0,
+        0
+      ],
+      "collisions": []
+    },
+    {
+      "xyz_mm": [
+        0,
+        0,
+        5
+      ],
+      "collisions": []
+    },
+    {
+      "xyz_mm": [
+        0,
+        3,
+        -5
+      ],
+      "collisions": []
+    },
+    {
+      "xyz_mm": [
+        0,
+        3,
+        0
+      ],
+      "collisions": []
+    },
+    {
+      "xyz_mm": [
+        0,
+        3,
+        5
+      ],
+      "collisions": []
+    },
+    {
+      "xyz_mm": [
+        5,
+        -3,
+        -5
+      ],
+      "collisions": []
+    },
+    {
+      "xyz_mm": [
+        5,
+        -3,
+        0
+      ],
+      "collisions": []
+    },
+    {
+      "xyz_mm": [
+        5,
+        -3,
+        5
+      ],
+      "collisions": []
+    },
+    {
+      "xyz_mm": [
+        5,
+        0,
+        -5
+      ],
+      "collisions": []
+    },
+    {
+      "xyz_mm": [
+        5,
+        0,
+        0
+      ],
+      "collisions": []
+    },
+    {
+      "xyz_mm": [
+        5,
+        0,
+        5
+      ],
+      "collisions": []
+    },
+    {
+      "xyz_mm": [
+        5,
+        3,
+        -5
+      ],
+      "collisions": []
+    },
+    {
+      "xyz_mm": [
+        5,
+        3,
+        0
+      ],
+      "collisions": []
+    },
+    {
+      "xyz_mm": [
+        5,
+        3,
+        5
+      ],
+      "collisions": []
+    }
+  ],
+  "step_roundtrip_solids": 57,
+  "step_all_valid": true,
+  "limits": "Solid/clearance screen only. Excludes hardware thread/nut engagement, lock-screw access, pad compression, mesh-to-hardware accuracy, movement of the laptop, strength, airflow and printing."
+}
