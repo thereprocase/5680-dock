@@ -33,3 +33,7 @@ cfd/*/*.log
 /minimalist/M1*History.png
 /minimalist/assembly_preview.png
 /minimalist/browser/*.png
+# Preserved local CFD meshes, partitioned fields and failed trials can be many GB.
+/fusion/cfd/runs/
+/fusion/cfd/geometry_revh_prepare.log
+/freecad/ValidationSnapshot.FCStd
