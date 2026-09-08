@@ -1,0 +1,12 @@
+{
+  "revision": "D8",
+  "archive": "Precision_5680_D8_STEP.zip",
+  "archive_bytes": 6648857,
+  "archive_sha256": "6de00c66477a2347b0304417175a714bf1cef021ac3ad997c37f4ec438aac6e6",
+  "member": "Precision_5680_D8.step",
+  "extracted_bytes": 30221792,
+  "extracted_sha256": "e0cac1f9cc215ed61f1105377ba9207bcded12ae0dd0ae3799d96196c5d6976f",
+  "exact_round_trip_verified": true,
+  "generation_provenance_sha256": "49c2b14042320b6b5e2b46e1575198c95aa8c33f458ba5ed891ff075fbaf1d64",
+  "reason": "The complete STEP exceeds the upload interface request limit; this lossless archive preserves every original byte."
+}

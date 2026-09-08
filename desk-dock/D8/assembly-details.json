@@ -37,8 +37,9 @@
         }
       ],
       "key_clearance_per_face_mm": 0.15,
-      "main_body_print_face": "Y=50 on bed; X and Z load directions in bed plane. Internal45degreehaunches leave8mm roof bridge.",
-      "removal": "Unload laptop; remove two locks; pull module -Y at least 4.3 mm, then withdraw outboard along -X. Cable remains installed in module.",
+      "main_body_print_face": "Y=50 on bed; X and Z load directions in bed plane. Internal 45 degree haunches leave an 8 mm roof bridge.",
+      "removal": "Unload laptop; remove two shell-mount locks; pull module local -Y 4.3 mm to clear keys, then withdraw outboard along -X. Cable remains installed in module; reserve a loose exterior loop. Do not lift the module before its right edge has cleared the rail.",
+      "spring_cartridge_orientation": "Original 88 x 60 mm leaf frame rotated 90 degrees about the unchanged Y preload axis, giving 60 mm X width and 88 mm Z height. Lateral spacer/screw mounts are X=-44 and 0 at the pivot height.",
       "qualification": "Nominal keys and broad clamp seat only; printed repeatability, extraction restraint and <=0.20 mm whole-holder movement require measurement."
     },
     "stop_adjustment_x_mm": 0.0,
@@ -159,6 +160,7 @@
           3.2,
           1.8
         ],
+        "zip_tie_threading_channel_length_mm": 20.0,
         "zip_tie_lug_centers_mm": [
           [
             -1,
@@ -258,6 +260,7 @@
           3.2,
           1.8
         ],
+        "zip_tie_threading_channel_length_mm": 20.0,
         "zip_tie_lug_centers_mm": [
           [
             372.68,

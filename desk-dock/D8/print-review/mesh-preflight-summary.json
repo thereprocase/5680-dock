@@ -23,7 +23,7 @@
     ]
   },
   "declared_export_linear_deflection_mm": 0.06,
-  "manifest_sha256": "6389b0ec9799f196bab9d74face314222cb2b390dbc059242019bed5278be35e",
+  "manifest_sha256": "51d71f28e96a9847b98a6c06dd4d041f4c41cf03b7ef955785ef2d29b04c981f",
   "parts": [
     {
       "part": "01_fan_guard_retainer",
@@ -785,7 +785,7 @@
       "file": "breakaway_spring_cartridge.stl",
       "failures": [],
       "warnings": [],
-      "sha256": "eb3921c9a85bbaf5d6ebd9479eb64f95b32a8aa2c409f198fda95f6a82651406",
+      "sha256": "f3b1e8041132cee9f9dbb1187b1d8364e875645da3ae510463babf4b66bdc0a3",
       "mesh": {
         "triangles": 1340,
         "unique_vertices": 662,
@@ -795,32 +795,32 @@
         "watertight": true,
         "consistent_winding": true,
         "degenerate_triangles": 0,
-        "signed_volume_mm3": 36105.751520816666,
+        "signed_volume_mm3": 36105.75152081658,
         "positive_volume": true,
         "bounds_mm": [
           [
             0.0,
-            0.0,
-            -5.937034980597867e-16
+            1.4210854715202004e-14,
+            1.361695163500402e-14
           ],
           [
-            88.0,
             60.0,
+            88.0,
             11.0
           ]
         ],
         "dimensions_mm": [
-          88.0,
           60.0,
-          11.0
+          87.99999999999999,
+          10.999999999999986
         ],
-        "surface_area_mm2": 15913.492855978515,
+        "surface_area_mm2": 15913.492855978502,
         "method": "Exact-coordinate vertex merge; edge incidence/winding; edge-connected components; signed volume. No healing or self-intersection certification."
       },
       "cad_minus_mesh_dimensions_mm": [
-        0.0,
-        0.0,
-        7.105427357601002e-15
+        2.1316282072803006e-14,
+        1.4210854715202004e-14,
+        2.4868995751603507e-14
       ],
       "pose": {
         "face_on_bed": "Common unloaded spring outside face",
@@ -840,34 +840,34 @@
         "rotation_z_deg": 0,
         "brim_mm": 8.0,
         "translation_after_rotation_mm": [
-          84.0,
-          108.0,
-          5.937034980597867e-16
+          98.0,
+          93.99999999999999,
+          -1.361695163500402e-14
         ],
         "placed_part_bounds_mm": [
           [
-            84.0,
-            108.0,
+            98.0,
+            94.0,
             0
           ],
           [
-            172.0,
-            168.0,
-            11.0
+            158.0,
+            182.0,
+            10.999999999999986
           ]
         ],
         "conservative_brim_bounds_mm": [
-          76.0,
-          100.0,
-          180.0,
-          176.0
+          90.0,
+          86.0,
+          166.0,
+          190.0
         ],
         "method": "Entire XY bounding rectangle plus brim avoids exclusion; exact brim toolpaths remain unreviewed."
       },
       "first_layer": {
-        "xy_bounding_footprint_mm2": 5280.0,
-        "cad_first_0p20mm_mean_area_mm2": 4463.186190297514,
-        "mean_area_fraction_of_bounding_rectangle": 0.8453004148290747,
+        "xy_bounding_footprint_mm2": 5279.999999999999,
+        "cad_first_0p20mm_mean_area_mm2": 4463.186190297191,
+        "mean_area_fraction_of_bounding_rectangle": 0.8453004148290136,
         "source": "Manifest CAD slab-intersection volume / 0.20 mm; not recalculated from STL and not exact Z=0 contact area"
       },
       "geometric_preflight_pass": true,
@@ -971,7 +971,7 @@
       "file": "breakaway_spring_hand_screw_0.stl",
       "failures": [],
       "warnings": [],
-      "sha256": "1d17700960f594e94069ac426e647a43d4816350ede71cba142005414e8f233d",
+      "sha256": "8772c90b31aa739c1e69a05bc0ea1953c9da55355e8c7484d5278babde95261b",
       "mesh": {
         "triangles": 7724,
         "unique_vertices": 3864,
@@ -981,13 +981,13 @@
         "watertight": true,
         "consistent_winding": true,
         "degenerate_triangles": 0,
-        "signed_volume_mm3": 3371.628095009255,
+        "signed_volume_mm3": 3371.6280950092514,
         "positive_volume": true,
         "bounds_mm": [
           [
-            3.552713678800501e-15,
+            0.0,
             0.0033120373263955116,
-            -8.311674907566353e-16
+            0.0
           ],
           [
             16.603092193603516,
@@ -996,17 +996,17 @@
           ]
         ],
         "dimensions_mm": [
-          16.603092193603512,
+          16.603092193603516,
           16.993376805447042,
           53.0
         ],
-        "surface_area_mm2": 1956.4015836673702,
+        "surface_area_mm2": 1956.4015836673689,
         "method": "Exact-coordinate vertex merge; edge incidence/winding; edge-connected components; signed volume. No healing or self-intersection certification."
       },
       "cad_minus_mesh_dimensions_mm": [
-        5.899016493060572e-07,
-        0.006623194552958012,
-        9.999999406318238e-08
+        5.899016457533435e-07,
+        0.006623194552986433,
+        1.0000001537946446e-07
       ],
       "pose": {
         "face_on_bed": "Hand face",
@@ -1028,7 +1028,7 @@
         "translation_after_rotation_mm": [
           119.69845390319824,
           129.49999955995008,
-          8.311674907566353e-16
+          -0.0
         ],
         "placed_part_bounds_mm": [
           [
@@ -1051,9 +1051,9 @@
         "method": "Entire XY bounding rectangle plus brim avoids exclusion; exact brim toolpaths remain unreviewed."
       },
       "first_layer": {
-        "xy_bounding_footprint_mm2": 282.1426017814808,
-        "cad_first_0p20mm_mean_area_mm2": 210.2829618801789,
-        "mean_area_fraction_of_bounding_rectangle": 0.7453073748963401,
+        "xy_bounding_footprint_mm2": 282.14260178148083,
+        "cad_first_0p20mm_mean_area_mm2": 210.28296188016398,
+        "mean_area_fraction_of_bounding_rectangle": 0.7453073748962871,
         "source": "Manifest CAD slab-intersection volume / 0.20 mm; not recalculated from STL and not exact Z=0 contact area"
       },
       "geometric_preflight_pass": true,
@@ -1064,7 +1064,7 @@
       "file": "breakaway_spring_hand_screw_1.stl",
       "failures": [],
       "warnings": [],
-      "sha256": "8f7963843a1370fdf01676775ed4f2c98541746559717ba2507cf085a5bfae7f",
+      "sha256": "eaa8036687190e3411b983f1a1ec0ceeddbe593a98031eaa72d59488bac8445b",
       "mesh": {
         "triangles": 7724,
         "unique_vertices": 3864,
@@ -1074,13 +1074,13 @@
         "watertight": true,
         "consistent_winding": true,
         "degenerate_triangles": 0,
-        "signed_volume_mm3": 3371.628095009255,
+        "signed_volume_mm3": 3371.6280950632317,
         "positive_volume": true,
         "bounds_mm": [
           [
-            3.552713678800501e-15,
+            1.7763568394002505e-15,
             0.0033120373263955116,
-            -8.311674907566353e-16
+            0.0
           ],
           [
             16.603092193603516,
@@ -1089,17 +1089,17 @@
           ]
         ],
         "dimensions_mm": [
-          16.603092193603512,
+          16.603092193603516,
           16.993376805447042,
           53.0
         ],
-        "surface_area_mm2": 1956.4015836673698,
+        "surface_area_mm2": 1956.4015836673689,
         "method": "Exact-coordinate vertex merge; edge incidence/winding; edge-connected components; signed volume. No healing or self-intersection certification."
       },
       "cad_minus_mesh_dimensions_mm": [
-        5.899016493060572e-07,
+        5.899016422006298e-07,
         0.006623194552986433,
-        1.000000082740371e-07
+        1.0000001537946446e-07
       ],
       "pose": {
         "face_on_bed": "Hand face",
@@ -1121,7 +1121,7 @@
         "translation_after_rotation_mm": [
           119.69845390319824,
           129.49999955995008,
-          8.311674907566353e-16
+          -0.0
         ],
         "placed_part_bounds_mm": [
           [
@@ -1144,9 +1144,9 @@
         "method": "Entire XY bounding rectangle plus brim avoids exclusion; exact brim toolpaths remain unreviewed."
       },
       "first_layer": {
-        "xy_bounding_footprint_mm2": 282.1426017814808,
-        "cad_first_0p20mm_mean_area_mm2": 210.28296188018055,
-        "mean_area_fraction_of_bounding_rectangle": 0.745307374896346,
+        "xy_bounding_footprint_mm2": 282.14260178148083,
+        "cad_first_0p20mm_mean_area_mm2": 210.28296188016392,
+        "mean_area_fraction_of_bounding_rectangle": 0.745307374896287,
         "source": "Manifest CAD slab-intersection volume / 0.20 mm; not recalculated from STL and not exact Z=0 contact area"
       },
       "geometric_preflight_pass": true,
@@ -1802,100 +1802,7 @@
       "file": "breakaway_spring_spacer_0.stl",
       "failures": [],
       "warnings": [],
-      "sha256": "07e165a811c26acd6ab3aa377824e5fc0ad984514722b5c2aec0baf49958fe5d",
-      "mesh": {
-        "triangles": 840,
-        "unique_vertices": 420,
-        "edge_connected_components": 1,
-        "boundary_edges": 0,
-        "nonmanifold_edges": 0,
-        "watertight": true,
-        "consistent_winding": true,
-        "degenerate_triangles": 0,
-        "signed_volume_mm3": 3679.7967027804566,
-        "positive_volume": true,
-        "bounds_mm": [
-          [
-            0.0008951855124905705,
-            0.0,
-            6.2176466198696125e-15
-          ],
-          [
-            15.999104499816895,
-            15.996419906616211,
-            26.0
-          ]
-        ],
-        "dimensions_mm": [
-          15.998209314304404,
-          15.996419906616211,
-          25.999999999999993
-        ],
-        "surface_area_mm2": 2300.291084432601,
-        "method": "Exact-coordinate vertex merge; edge incidence/winding; edge-connected components; signed volume. No healing or self-intersection certification."
-      },
-      "cad_minus_mesh_dimensions_mm": [
-        0.0017906856955960393,
-        0.003580093383831695,
-        1.4210854715202004e-14
-      ],
-      "pose": {
-        "face_on_bed": "Flat spacer end",
-        "rotations": [
-          [
-            "X",
-            90
-          ]
-        ],
-        "load_orientation": "Compressive spacer load along build Z; continuous walls.",
-        "support": "None expected",
-        "material": "PETG",
-        "unloaded_export": false
-      },
-      "placement": {
-        "pass": true,
-        "rotation_z_deg": 0,
-        "brim_mm": 8.0,
-        "translation_after_rotation_mm": [
-          120.00000015733531,
-          130.0017900466919,
-          -6.2176466198696125e-15
-        ],
-        "placed_part_bounds_mm": [
-          [
-            120.0008953428478,
-            130.0017900466919,
-            0
-          ],
-          [
-            135.9991046571522,
-            145.9982099533081,
-            25.999999999999993
-          ]
-        ],
-        "conservative_brim_bounds_mm": [
-          112.0008953428478,
-          122.0017900466919,
-          143.9991046571522,
-          153.9982099533081
-        ],
-        "method": "Entire XY bounding rectangle plus brim avoids exclusion; exact brim toolpaths remain unreviewed."
-      },
-      "first_layer": {
-        "xy_bounding_footprint_mm2": 255.91407394555185,
-        "cad_first_0p20mm_mean_area_mm2": 141.6151428421873,
-        "mean_area_fraction_of_bounding_rectangle": 0.5533698895837877,
-        "source": "Manifest CAD slab-intersection volume / 0.20 mm; not recalculated from STL and not exact Z=0 contact area"
-      },
-      "geometric_preflight_pass": true,
-      "qualified_for_printing": false
-    },
-    {
-      "part": "breakaway_spring_spacer_1",
-      "file": "breakaway_spring_spacer_1.stl",
-      "failures": [],
-      "warnings": [],
-      "sha256": "e3d609fa15d85a3e485de0bf5db5b4ea0c956eaa00e7a1a768feb2c2de7838bb",
+      "sha256": "aa8753fcc577901adcc5827363594b012f93dbd1cab89a67d756a6bb7cc4157a",
       "mesh": {
         "triangles": 840,
         "unique_vertices": 420,
@@ -1930,7 +1837,7 @@
       "cad_minus_mesh_dimensions_mm": [
         0.0017906856955960393,
         0.003580093383845906,
-        7.105427357601002e-15
+        0.0
       ],
       "pose": {
         "face_on_bed": "Flat spacer end",
@@ -1976,8 +1883,101 @@
       },
       "first_layer": {
         "xy_bounding_footprint_mm2": 255.91407394555185,
-        "cad_first_0p20mm_mean_area_mm2": 141.61514284219038,
-        "mean_area_fraction_of_bounding_rectangle": 0.5533698895837997,
+        "cad_first_0p20mm_mean_area_mm2": 141.6151428421937,
+        "mean_area_fraction_of_bounding_rectangle": 0.5533698895838127,
+        "source": "Manifest CAD slab-intersection volume / 0.20 mm; not recalculated from STL and not exact Z=0 contact area"
+      },
+      "geometric_preflight_pass": true,
+      "qualified_for_printing": false
+    },
+    {
+      "part": "breakaway_spring_spacer_1",
+      "file": "breakaway_spring_spacer_1.stl",
+      "failures": [],
+      "warnings": [],
+      "sha256": "1178ee213ba2dd8049a051f06a021bd387e042383c6c21dd52fa709458d52f22",
+      "mesh": {
+        "triangles": 840,
+        "unique_vertices": 420,
+        "edge_connected_components": 1,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "watertight": true,
+        "consistent_winding": true,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 3679.796702780457,
+        "positive_volume": true,
+        "bounds_mm": [
+          [
+            0.0008951855124905705,
+            0.0,
+            -8.877808965500669e-16
+          ],
+          [
+            15.999104499816895,
+            15.996419906616211,
+            26.0
+          ]
+        ],
+        "dimensions_mm": [
+          15.998209314304404,
+          15.996419906616211,
+          26.0
+        ],
+        "surface_area_mm2": 2300.291084432602,
+        "method": "Exact-coordinate vertex merge; edge incidence/winding; edge-connected components; signed volume. No healing or self-intersection certification."
+      },
+      "cad_minus_mesh_dimensions_mm": [
+        0.0017906856955960393,
+        0.003580093383845906,
+        0.0
+      ],
+      "pose": {
+        "face_on_bed": "Flat spacer end",
+        "rotations": [
+          [
+            "X",
+            90
+          ]
+        ],
+        "load_orientation": "Compressive spacer load along build Z; continuous walls.",
+        "support": "None expected",
+        "material": "PETG",
+        "unloaded_export": false
+      },
+      "placement": {
+        "pass": true,
+        "rotation_z_deg": 0,
+        "brim_mm": 8.0,
+        "translation_after_rotation_mm": [
+          120.00000015733531,
+          130.0017900466919,
+          8.877808965500669e-16
+        ],
+        "placed_part_bounds_mm": [
+          [
+            120.0008953428478,
+            130.0017900466919,
+            0
+          ],
+          [
+            135.9991046571522,
+            145.9982099533081,
+            26.0
+          ]
+        ],
+        "conservative_brim_bounds_mm": [
+          112.0008953428478,
+          122.0017900466919,
+          143.9991046571522,
+          153.9982099533081
+        ],
+        "method": "Entire XY bounding rectangle plus brim avoids exclusion; exact brim toolpaths remain unreviewed."
+      },
+      "first_layer": {
+        "xy_bounding_footprint_mm2": 255.91407394555185,
+        "cad_first_0p20mm_mean_area_mm2": 141.6151428421937,
+        "mean_area_fraction_of_bounding_rectangle": 0.5533698895838127,
         "source": "Manifest CAD slab-intersection volume / 0.20 mm; not recalculated from STL and not exact Z=0 contact area"
       },
       "geometric_preflight_pass": true,
@@ -2457,41 +2457,41 @@
       "warnings": [
         "Manifest identifies an outstanding bridge/support review"
       ],
-      "sha256": "a684069c649fb20d9a7086360f4f3ec01e47ef8b0b54565fd62bab44c5b6d354",
+      "sha256": "84110d8622f1a9db298924b7e974dd6fcee0014db05606e9434286fae3e5306e",
       "mesh": {
-        "triangles": 37156,
-        "unique_vertices": 18566,
+        "triangles": 37148,
+        "unique_vertices": 18562,
         "edge_connected_components": 1,
         "boundary_edges": 0,
         "nonmanifold_edges": 0,
         "watertight": true,
         "consistent_winding": true,
         "degenerate_triangles": 0,
-        "signed_volume_mm3": 143206.10699000172,
+        "signed_volume_mm3": 141808.44803272575,
         "positive_volume": true,
         "bounds_mm": [
           [
             0.00017126220336649567,
-            1.0000000116860974e-07,
+            0.003452759701758623,
             1.0000000116860974e-07
           ],
           [
             74.0,
-            135.11447143554688,
+            132.11447143554688,
             28.0
           ]
         ],
         "dimensions_mm": [
           73.99982873779663,
-          135.11447133554688,
+          132.11101867584512,
           27.9999999
         ],
-        "surface_area_mm2": 31345.856392511934,
+        "surface_area_mm2": 30879.97024088512,
         "method": "Exact-coordinate vertex merge; edge incidence/winding; edge-connected components; signed volume. No healing or self-intersection certification."
       },
       "cad_minus_mesh_dimensions_mm": [
         0.00017146220335462203,
-        0.01499866482112111,
+        0.01845132452288567,
         2.0000000944264684e-07
       ],
       "pose": {
@@ -2513,33 +2513,33 @@
         "brim_mm": 8.0,
         "translation_after_rotation_mm": [
           90.99991436889832,
-          70.44276423222655,
+          71.94103790237568,
           -1.0000000116860974e-07
         ],
         "placed_part_bounds_mm": [
           [
             91.00008563110168,
-            70.44276433222656,
+            71.94449066207744,
             0
           ],
           [
             164.99991436889832,
-            205.55723566777345,
+            204.05550933792256,
             27.9999999
           ]
         ],
         "conservative_brim_bounds_mm": [
           83.00008563110168,
-          62.44276433222656,
+          63.94449066207744,
           172.99991436889832,
-          213.55723566777345
+          212.05550933792256
         ],
         "method": "Entire XY bounding rectangle plus brim avoids exclusion; exact brim toolpaths remain unreviewed."
       },
       "first_layer": {
-        "xy_bounding_footprint_mm2": 9998.447738828401,
-        "cad_first_0p20mm_mean_area_mm2": 6465.612107028337,
-        "mean_area_fraction_of_bounding_rectangle": 0.6466615894704837,
+        "xy_bounding_footprint_mm2": 9776.192756388391,
+        "cad_first_0p20mm_mean_area_mm2": 6407.37633647767,
+        "mean_area_fraction_of_bounding_rectangle": 0.6554060968458993,
         "source": "Manifest CAD slab-intersection volume / 0.20 mm; not recalculated from STL and not exact Z=0 contact area"
       },
       "geometric_preflight_pass": true,
@@ -3818,17 +3818,17 @@
       "warnings": [
         "Manifest identifies an outstanding bridge/support review"
       ],
-      "sha256": "ec7e3c22005b589269454e35ad7eabb8ba26e5c394e9370d44a9a0813f8881a2",
+      "sha256": "26728cf4e435468157ef870e9309df23af9ccd067070c6aefed5d7fb9d707930",
       "mesh": {
-        "triangles": 55928,
-        "unique_vertices": 27934,
+        "triangles": 55888,
+        "unique_vertices": 27916,
         "edge_connected_components": 1,
         "boundary_edges": 0,
         "nonmanifold_edges": 0,
         "watertight": true,
         "consistent_winding": true,
         "degenerate_triangles": 0,
-        "signed_volume_mm3": 259819.8212724688,
+        "signed_volume_mm3": 260323.67065833465,
         "positive_volume": true,
         "bounds_mm": [
           [
@@ -3847,7 +3847,7 @@
           135.02145710308105,
           145.46690368652344
         ],
-        "surface_area_mm2": 171864.47619468562,
+        "surface_area_mm2": 172240.80545540163,
         "method": "Exact-coordinate vertex merge; edge incidence/winding; edge-connected components; signed volume. No healing or self-intersection certification."
       },
       "cad_minus_mesh_dimensions_mm": [
@@ -3904,23 +3904,21 @@
     {
       "part": "02_manifold_with_cradle",
       "file": "02_manifold_with_cradle.stl",
-      "failures": [
-        "Mesh does not contain exactly one edge-connected component"
-      ],
+      "failures": [],
       "warnings": [
         "Manifest identifies an outstanding bridge/support review"
       ],
-      "sha256": "6eada45844f4724fd43ee071c091a20d410bf21e57458f3f2cf581f4293828bb",
+      "sha256": "51889b1f8223d58655bc75cd662ed976cd9996770b25411d9cbbfa7a3ba9e0d2",
       "mesh": {
-        "triangles": 55860,
-        "unique_vertices": 27912,
-        "edge_connected_components": 2,
+        "triangles": 55428,
+        "unique_vertices": 27688,
+        "edge_connected_components": 1,
         "boundary_edges": 0,
         "nonmanifold_edges": 0,
         "watertight": true,
         "consistent_winding": true,
         "degenerate_triangles": 0,
-        "signed_volume_mm3": 256980.65930625494,
+        "signed_volume_mm3": 256945.1716537278,
         "positive_volume": true,
         "bounds_mm": [
           [
@@ -3939,7 +3937,7 @@
           135.02145710308105,
           145.46690368652344
         ],
-        "surface_area_mm2": 184741.2776943877,
+        "surface_area_mm2": 184755.42138754134,
         "method": "Exact-coordinate vertex merge; edge incidence/winding; edge-connected components; signed volume. No healing or self-intersection certification."
       },
       "cad_minus_mesh_dimensions_mm": [
@@ -3990,15 +3988,13 @@
         "mean_area_fraction_of_bounding_rectangle": 0.0639344715886022,
         "source": "Manifest CAD slab-intersection volume / 0.20 mm; not recalculated from STL and not exact Z=0 contact area"
       },
-      "geometric_preflight_pass": false,
+      "geometric_preflight_pass": true,
       "qualified_for_printing": false
     }
   ],
   "failures": [],
   "part_count": 43,
-  "failed_parts": [
-    "02_manifold_with_cradle"
-  ],
-  "geometric_preflight_pass": false,
+  "failed_parts": [],
+  "geometric_preflight_pass": true,
   "qualified_for_printing": false
 }

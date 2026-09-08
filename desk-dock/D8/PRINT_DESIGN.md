@@ -56,6 +56,8 @@ The foot load path and module locating interface are structural decisions. A ple
 
 The shell orientation changed after a bounded comparison of the earlier unribbed candidate. With the same generic Cura support settings, the right shell requested approximately 518 g of support on its fan rim, 509 g on its center-seam end, and 182 g upright. Those results identify the reason for the upright pose and underside ribs; they are not current D8 print totals. The final manifest and matching toolpath report govern the current geometry.
 
+A bounded candidate comparison also blocked automatic supports only in the rib-supported roof bays and the upper hood. It reduced estimated support, but the deposited paths failed the intended bridge direction: both hood roofs contained approximately 93 mm skin roads along X where the short bridge should run 6.61 mm along Y. The [recorded path review](print-review/bridge-path-review.json) includes the source/toolpath hashes, endpoints and preceding-layer contact check. **That reduced-support scenario was rejected.** Retain the automatic-support material estimate until the actual P1S slicer deposits correctly anchored short bridges; a support blocker alone does not establish that behavior.
+
 The current cassette has continuous Z travel from -4 to +5 mm and Y travel from -3 to +3 mm. The independent chassis stop supplies the remaining laptop-position adjustment. These are live adjustments in [cassette.py](cassette.py); they do not require a fitting jig or replacement height shim.
 
 ## Deposited-path review and evidence
@@ -67,5 +69,18 @@ For each exported part, record its face on the bed, dimensions including brim, m
 Use [OrcaSlicer's bridge controls](https://github.com/OrcaSlicer/OrcaSlicer/wiki/quality_settings_bridging) only after inspecting the geometry. Orca distinguishes bridges across open space from internal bridging over infill. Thick internal bridges, additional bridge layers and counterbore bridge options can help where appropriate; they do not remove the need for two-ended support or a sound load path. [Prusa's bridging guidance](https://help.prusa3d.com/article/poor-bridging_1802) likewise identifies span, speed and cooling as relevant to bridge quality.
 
 The inherited [D7 preparation record](../D7/PRINT_PREPARATION.md) reports an Orca crash and no approved toolpaths. Its [CLI discovery record](../D7/print-review/cli-discovery.json) also records a failed Windows Bambu Studio help invocation. Those records do not constitute a successful slice of D8. If Orca remains unavailable in the current environment, an explained offline slicer fallback may screen deposited paths. Label such output by the actual slicer/profile used; do not present generic review G-code as a qualified P1S print file.
+
+[slice_screen.py](slice_screen.py) uses that offline fallback and records separate deposited model, support and brim volumes. Every input retains its SHA-256 hash. Its optional `--reuse-summary` argument reuses a completed screen only when the STL hash, Cura binary, printer/extruder definitions, machine profile, every explicit slicing setting and material-density assumption match. The reused record retains its original toolpath hash and source-summary hash. A changed CAD export therefore triggers a new screen rather than inheriting an old part-name result. Keep the generic `.gcode.txt` outputs outside the repository and out of any print release.
+
+The [current material screen](print-review/path-screen-summary.json) covers all 42 PETG parts in the regenerated 43-part manifest; the soft stop tip is excluded from PETG slicing. Eight changed parts were sliced again and 34 reused matching evidence. All 43 meshes pass the geometric preflight; all 42 screened PETG parts keep deposited paths within the recorded bed/exclusion envelope. Those passes do not certify bridge behavior, support removal or strength.
+
+| Material allocation | Generic estimate |
+|---|---:|
+| Deposited PETG model | 1,255 g |
+| Automatic supports | 380 g |
+| Individual part brims | 25 g |
+| Total deposited PETG | **1,659 g** |
+
+The assumptions are 1.27 g/cm³ PETG, a 0.4 mm nozzle, 0.20 mm layers, five walls, six top/bottom layers, dense infill and normal automatic supports. The CAD solid volume alone corresponds to 1,243 g. Reserve roughly **1.8–2.0 kg** for an initial build with fit/strength samples and some reprints; this is a planning allowance, not a measured production requirement. Flexible pads/liners, the soft stop, purge/start waste and hardware are additional. The generic Cura time sum is about 89 hours under its conservative speed assumptions and must not be used as a P1S timing prediction.
 
 After toolpath review, qualify the complete connector mechanism and its adjustments with a dummy plug, including sustained warm preload, reset/release and the intended loads. Check the fan and panel fits using the actual hardware. Record measured material use from the final slicer output; separate finished parts, supports, brims and qualification samples.

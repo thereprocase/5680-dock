@@ -1,0 +1,360 @@
+{
+  "scope": "Independent repair probe on cached right shell; final full-regeneration mesh must be checked separately.",
+  "base_brep_sha256": "11dc89d51b84804bea5b192b78a2a3eadde154f80a9d68bc9432f11c6b6acab4",
+  "cad_source_sha256": "035fbcecbf95902f4e2614e39bb197fd2f6bb34c2d2edc4f5067474ab122ea61",
+  "operation": "Subtract both 20 mm through-Y tie channels from the fused shell, not only the lug.",
+  "slot_cross_section_mm": [
+    3.2,
+    1.8
+  ],
+  "slot_corner_radius_mm": 0.5,
+  "source_lug_retained_top_bottom_wall_mm": 3.1,
+  "volume_before_mm3": 256990.31849890723,
+  "volume_after_mm3": 256954.82818497336,
+  "removed_mm3": 35.49031393387122,
+  "valid_cad": true,
+  "cad_solids": 1,
+  "probe_mesh_sha256": "366877310eeea4431cdcaf53621fc42b27f7ef7f79016ccd194b5c89646cd650",
+  "watertight": true,
+  "mesh_boundary_components": 1,
+  "all_threading_centerline_samples_clear": true,
+  "threading_centerline_samples": [
+    {
+      "point_mm": [
+        372.68,
+        24.0,
+        14.0
+      ],
+      "clear": true
+    },
+    {
+      "point_mm": [
+        372.68,
+        25.0,
+        14.0
+      ],
+      "clear": true
+    },
+    {
+      "point_mm": [
+        372.68,
+        26.0,
+        14.0
+      ],
+      "clear": true
+    },
+    {
+      "point_mm": [
+        372.68,
+        27.0,
+        14.0
+      ],
+      "clear": true
+    },
+    {
+      "point_mm": [
+        372.68,
+        28.0,
+        14.0
+      ],
+      "clear": true
+    },
+    {
+      "point_mm": [
+        372.68,
+        29.0,
+        14.0
+      ],
+      "clear": true
+    },
+    {
+      "point_mm": [
+        372.68,
+        30.0,
+        14.0
+      ],
+      "clear": true
+    },
+    {
+      "point_mm": [
+        372.68,
+        31.0,
+        14.0
+      ],
+      "clear": true
+    },
+    {
+      "point_mm": [
+        372.68,
+        32.0,
+        14.0
+      ],
+      "clear": true
+    },
+    {
+      "point_mm": [
+        372.68,
+        33.0,
+        14.0
+      ],
+      "clear": true
+    },
+    {
+      "point_mm": [
+        372.68,
+        34.0,
+        14.0
+      ],
+      "clear": true
+    },
+    {
+      "point_mm": [
+        372.68,
+        35.0,
+        14.0
+      ],
+      "clear": true
+    },
+    {
+      "point_mm": [
+        372.68,
+        36.0,
+        14.0
+      ],
+      "clear": true
+    },
+    {
+      "point_mm": [
+        372.68,
+        37.0,
+        14.0
+      ],
+      "clear": true
+    },
+    {
+      "point_mm": [
+        372.68,
+        38.0,
+        14.0
+      ],
+      "clear": true
+    },
+    {
+      "point_mm": [
+        372.68,
+        39.0,
+        14.0
+      ],
+      "clear": true
+    },
+    {
+      "point_mm": [
+        372.68,
+        40.0,
+        14.0
+      ],
+      "clear": true
+    },
+    {
+      "point_mm": [
+        372.68,
+        41.0,
+        14.0
+      ],
+      "clear": true
+    },
+    {
+      "point_mm": [
+        372.68,
+        42.0,
+        14.0
+      ],
+      "clear": true
+    },
+    {
+      "point_mm": [
+        372.68,
+        43.0,
+        14.0
+      ],
+      "clear": true
+    },
+    {
+      "point_mm": [
+        372.68,
+        44.0,
+        14.0
+      ],
+      "clear": true
+    },
+    {
+      "point_mm": [
+        372.68,
+        40.0,
+        29.0
+      ],
+      "clear": true
+    },
+    {
+      "point_mm": [
+        372.68,
+        41.0,
+        29.0
+      ],
+      "clear": true
+    },
+    {
+      "point_mm": [
+        372.68,
+        42.0,
+        29.0
+      ],
+      "clear": true
+    },
+    {
+      "point_mm": [
+        372.68,
+        43.0,
+        29.0
+      ],
+      "clear": true
+    },
+    {
+      "point_mm": [
+        372.68,
+        44.0,
+        29.0
+      ],
+      "clear": true
+    },
+    {
+      "point_mm": [
+        372.68,
+        45.0,
+        29.0
+      ],
+      "clear": true
+    },
+    {
+      "point_mm": [
+        372.68,
+        46.0,
+        29.0
+      ],
+      "clear": true
+    },
+    {
+      "point_mm": [
+        372.68,
+        47.0,
+        29.0
+      ],
+      "clear": true
+    },
+    {
+      "point_mm": [
+        372.68,
+        48.0,
+        29.0
+      ],
+      "clear": true
+    },
+    {
+      "point_mm": [
+        372.68,
+        49.0,
+        29.0
+      ],
+      "clear": true
+    },
+    {
+      "point_mm": [
+        372.68,
+        50.0,
+        29.0
+      ],
+      "clear": true
+    },
+    {
+      "point_mm": [
+        372.68,
+        51.0,
+        29.0
+      ],
+      "clear": true
+    },
+    {
+      "point_mm": [
+        372.68,
+        52.0,
+        29.0
+      ],
+      "clear": true
+    },
+    {
+      "point_mm": [
+        372.68,
+        53.0,
+        29.0
+      ],
+      "clear": true
+    },
+    {
+      "point_mm": [
+        372.68,
+        54.0,
+        29.0
+      ],
+      "clear": true
+    },
+    {
+      "point_mm": [
+        372.68,
+        55.0,
+        29.0
+      ],
+      "clear": true
+    },
+    {
+      "point_mm": [
+        372.68,
+        56.0,
+        29.0
+      ],
+      "clear": true
+    },
+    {
+      "point_mm": [
+        372.68,
+        57.0,
+        29.0
+      ],
+      "clear": true
+    },
+    {
+      "point_mm": [
+        372.68,
+        58.0,
+        29.0
+      ],
+      "clear": true
+    },
+    {
+      "point_mm": [
+        372.68,
+        59.0,
+        29.0
+      ],
+      "clear": true
+    },
+    {
+      "point_mm": [
+        372.68,
+        60.0,
+        29.0
+      ],
+      "clear": true
+    }
+  ],
+  "qualified_for_printing": false
+}

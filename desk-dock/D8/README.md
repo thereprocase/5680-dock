@@ -2,6 +2,8 @@
 
 D8 develops D7 into a lighter, serviceable prototype. It preserves the source-handed port location, 5° laptop lean, 18° fan discharge and printed face-cam breakaway. **This is a CAD and manufacturing review, not a physically qualified print release.**
 
+Download the complete [STEP archive](Precision_5680_D8_STEP.zip) or the individual [manufacturing STLs](print/). The ZIP contains the full, unchanged `Precision_5680_D8.step`; extract it before opening in CAD. The [archive record](step-archive.json) verifies its extracted hash against the generated file. Compression keeps the 30 MB STEP below the upload interface's request limit.
+
 ## What changes
 
 - **A removable connector module.** Only its keyed mounting shoe belongs to the left shell. Two accessible 8 mm printed hand screws release the complete module, including the cable holder and separate laptop-stop bracket. The keys and broad seat transmit thrust; the screws clamp the joint.
@@ -42,7 +44,11 @@ python desk-dock/D8/render_review.py /absolute/scratch/d8-cache
 
 `build.py` creates STEP and geometry manifests; `export_print.py` supplies manufacturing poses. References, compliant desk pads and liners are not counted as PETG production meshes. The stop bumper is a separate flexible-material part. Review-cache BREPs and generic slice paths are intermediates.
 
+Regeneration writes the uncompressed STEP locally. When republishing regenerated geometry, refresh its ZIP and archive hashes along with the manifests; the tracked archive must not retain an earlier build.
+
 See [CURRENT_STATUS.md](CURRENT_STATUS.md) for the final measured mass, current checks and remaining gates. The existing D7 web viewer and archive describe D7; they are not updated D8 geometry.
+
+The completed review passes 83-solid assembly checks, all 43 mesh preflights and the 42-part PETG deposited-path envelope screen. CAD volume corresponds to 1.243 kg PETG; normal automatic supports and individual brims bring the generic estimate to **1.659 kg**. Plan on **1.8–2.0 kg** for a first build. This estimate uses a generic offline profile, so final P1S support choices and physical strength still need qualification.
 
 The female thread cutter includes a documented 0.045 mm additional minor-radius relief to avoid a CAD-kernel degeneracy. Major and crest clearances stay unchanged. The partial-thread screws use a tapered runout that exports as a closed mesh. See the hashed checks in [review-evidence](review-evidence/). Reprint thread fit samples for D8; D7 coupon fit does not validate this updated female root.
 

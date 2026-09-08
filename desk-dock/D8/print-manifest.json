@@ -246,13 +246,13 @@
       "part": "breakaway_spring_cartridge",
       "file": "breakaway_spring_cartridge.stl",
       "dimensions_mm": [
+        60.00000000000002,
         88.0,
-        60.0,
-        11.000000000000007
+        11.00000000000001
       ],
-      "volume_mm3": 36104.64927190958,
-      "first_layer_mean_contact_mm2": 4463.186190297514,
-      "sha256": "eb3921c9a85bbaf5d6ebd9479eb64f95b32a8aa2c409f198fda95f6a82651406",
+      "volume_mm3": 36104.64927190962,
+      "first_layer_mean_contact_mm2": 4463.186190297191,
+      "sha256": "f3b1e8041132cee9f9dbb1187b1d8364e875645da3ae510463babf4b66bdc0a3",
       "unloaded_export": true,
       "layer_mm": 0.2,
       "nozzle_mm": 0.4,
@@ -303,12 +303,12 @@
       "file": "breakaway_spring_hand_screw_0.stl",
       "dimensions_mm": [
         16.60309278350516,
-        17.0,
-        53.000000099999994
+        17.00000000000003,
+        53.000000100000015
       ],
-      "volume_mm3": 3373.2313933939904,
-      "first_layer_mean_contact_mm2": 210.2829618801789,
-      "sha256": "1d17700960f594e94069ac426e647a43d4816350ede71cba142005414e8f233d",
+      "volume_mm3": 3373.231393393989,
+      "first_layer_mean_contact_mm2": 210.28296188016398,
+      "sha256": "8772c90b31aa739c1e69a05bc0ea1953c9da55355e8c7484d5278babde95261b",
       "unloaded_export": false,
       "layer_mm": 0.2,
       "nozzle_mm": 0.4,
@@ -330,13 +330,13 @@
       "part": "breakaway_spring_hand_screw_1",
       "file": "breakaway_spring_hand_screw_1.stl",
       "dimensions_mm": [
-        16.60309278350516,
+        16.603092783505158,
         17.00000000000003,
-        53.00000010000001
+        53.000000100000015
       ],
       "volume_mm3": 3373.2313933939877,
-      "first_layer_mean_contact_mm2": 210.28296188018055,
-      "sha256": "8f7963843a1370fdf01676775ed4f2c98541746559717ba2507cf085a5bfae7f",
+      "first_layer_mean_contact_mm2": 210.28296188016392,
+      "sha256": "eaa8036687190e3411b983f1a1ec0ceeddbe593a98031eaa72d59488bac8445b",
       "unloaded_export": false,
       "layer_mm": 0.2,
       "nozzle_mm": 0.4,
@@ -540,12 +540,12 @@
       "file": "breakaway_spring_spacer_0.stl",
       "dimensions_mm": [
         16.0,
-        16.000000000000043,
-        26.000000000000007
+        16.000000000000057,
+        26.0
       ],
-      "volume_mm3": 3681.9937138970395,
-      "first_layer_mean_contact_mm2": 141.6151428421873,
-      "sha256": "07e165a811c26acd6ab3aa377824e5fc0ad984514722b5c2aec0baf49958fe5d",
+      "volume_mm3": 3681.99371389704,
+      "first_layer_mean_contact_mm2": 141.6151428421937,
+      "sha256": "aa8753fcc577901adcc5827363594b012f93dbd1cab89a67d756a6bb7cc4157a",
       "unloaded_export": false,
       "layer_mm": 0.2,
       "nozzle_mm": 0.4,
@@ -569,11 +569,11 @@
       "dimensions_mm": [
         16.0,
         16.000000000000057,
-        26.000000000000007
+        26.0
       ],
-      "volume_mm3": 3681.9937138970427,
-      "first_layer_mean_contact_mm2": 141.61514284219038,
-      "sha256": "e3d609fa15d85a3e485de0bf5db5b4ea0c956eaa00e7a1a768feb2c2de7838bb",
+      "volume_mm3": 3681.993713897041,
+      "first_layer_mean_contact_mm2": 141.6151428421937,
+      "sha256": "1178ee213ba2dd8049a051f06a021bd387e042383c6c21dd52fa709458d52f22",
       "unloaded_export": false,
       "layer_mm": 0.2,
       "nozzle_mm": 0.4,
@@ -736,12 +736,12 @@
       "file": "connector_module_body.stl",
       "dimensions_mm": [
         74.00000019999999,
-        135.129470000368,
+        132.129470000368,
         28.00000010000001
       ],
-      "volume_mm3": 143245.81218007414,
-      "first_layer_mean_contact_mm2": 6465.612107028337,
-      "sha256": "a684069c649fb20d9a7086360f4f3ec01e47ef8b0b54565fd62bab44c5b6d354",
+      "volume_mm3": 141848.1540087665,
+      "first_layer_mean_contact_mm2": 6407.37633647767,
+      "sha256": "84110d8622f1a9db298924b7e974dd6fcee0014db05606e9434286fae3e5306e",
       "unloaded_export": false,
       "layer_mm": 0.2,
       "nozzle_mm": 0.4,
@@ -1114,9 +1114,9 @@
         135.02209820239077,
         145.46689994995054
       ],
-      "volume_mm3": 259828.41864525765,
+      "volume_mm3": 260332.26438770312,
       "first_layer_mean_contact_mm2": 1654.8391339341197,
-      "sha256": "ec7e3c22005b589269454e35ad7eabb8ba26e5c394e9370d44a9a0813f8881a2",
+      "sha256": "26728cf4e435468157ef870e9309df23af9ccd067070c6aefed5d7fb9d707930",
       "unloaded_export": false,
       "layer_mm": 0.2,
       "nozzle_mm": 0.4,
@@ -1137,9 +1137,9 @@
         135.0220982023908,
         145.46689994995054
       ],
-      "volume_mm3": 256990.31849890656,
+      "volume_mm3": 256954.8281849735,
       "first_layer_mean_contact_mm2": 1739.7991339341245,
-      "sha256": "6eada45844f4724fd43ee071c091a20d410bf21e57458f3f2cf581f4293828bb",
+      "sha256": "51889b1f8223d58655bc75cd662ed976cd9996770b25411d9cbbfa7a3ba9e0d2",
       "unloaded_export": false,
       "layer_mm": 0.2,
       "nozzle_mm": 0.4,

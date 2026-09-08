@@ -1,5 +1,5 @@
 {
-  "passed": false,
+  "passed": true,
   "scope": "Exact cached nominal CAD and the finite listed docking/withdrawal and unloaded service-removal poses. No continuous sweep, complete adjustment envelope, manufacturing fit, loading, physical fan/plug qualification, cable flex, cooling or toolpath claim. STEP is not reopened by this check.",
   "parameters_tested": {
     "height_adjustment_mm": 0.0,
@@ -261,7 +261,7 @@
       "reference": false,
       "valid": true,
       "solids": 1,
-      "volume_mm3": 36104.64927190955
+      "volume_mm3": 36104.649271909606
     },
     {
       "name": "breakaway_preload_hand_nut",
@@ -275,7 +275,7 @@
       "reference": false,
       "valid": true,
       "solids": 1,
-      "volume_mm3": 3373.2313933939904
+      "volume_mm3": 3373.231393393986
     },
     {
       "name": "breakaway_spring_hand_screw_1",
@@ -352,14 +352,14 @@
       "reference": false,
       "valid": true,
       "solids": 1,
-      "volume_mm3": 3681.993713897044
+      "volume_mm3": 3681.9937138970427
     },
     {
       "name": "breakaway_spring_spacer_1",
       "reference": false,
       "valid": true,
       "solids": 1,
-      "volume_mm3": 3681.9937138970445
+      "volume_mm3": 3681.9937138970436
     },
     {
       "name": "connector_mount_lock_0",
@@ -401,7 +401,7 @@
       "reference": false,
       "valid": true,
       "solids": 1,
-      "volume_mm3": 143245.81218007402
+      "volume_mm3": 141848.15400876646
     },
     {
       "name": "independent_printed_chassis_stop_screw",
@@ -590,14 +590,14 @@
       "reference": false,
       "valid": true,
       "solids": 1,
-      "volume_mm3": 259828.41864525754
+      "volume_mm3": 260332.26438770434
     },
     {
       "name": "02_manifold_with_cradle",
       "reference": false,
       "valid": true,
       "solids": 1,
-      "volume_mm3": 256990.31849890723
+      "volume_mm3": 256954.82818497336
     }
   ],
   "rigid_pair_count": 1701,
@@ -870,47 +870,7 @@
             -0.9961946980917455,
             0.08715574274765817
           ],
-          "collisions": [
-            {
-              "moving_part": "breakaway_spring_cartridge",
-              "fixed_part": "01_manifold_with_cradle",
-              "volume_mm3": 8.483319598330018,
-              "bounds_mm": [
-                16.999999999999996,
-                80.21669818659782,
-                110.29591116960917,
-                22.0,
-                81.02499223782871,
-                113.71562027068374
-              ]
-            },
-            {
-              "moving_part": "chassis_stop_bracket",
-              "fixed_part": "01_manifold_with_cradle",
-              "volume_mm3": 1.950600269037202,
-              "bounds_mm": [
-                -7.0000000000000036,
-                16.586686896569045,
-                48.47692234813685,
-                -5.0,
-                17.367465478536403,
-                50.000000000000036
-              ]
-            },
-            {
-              "moving_part": "connector_module_body",
-              "fixed_part": "01_manifold_with_cradle",
-              "volume_mm3": 12.527671572540958,
-              "bounds_mm": [
-                9.999999999999996,
-                24.535568492017767,
-                47.599999999999966,
-                18.0,
-                25.398024178883166,
-                50.00000000000004
-              ]
-            }
-          ]
+          "collisions": []
         },
         {
           "position_mm": {
@@ -922,60 +882,7 @@
             -4.283637201794505,
             0.3747696938149301
           ],
-          "collisions": [
-            {
-              "moving_part": "breakaway_spring_cartridge",
-              "fixed_part": "01_fan_guard_retainer",
-              "volume_mm3": 9.453843713407071,
-              "bounds_mm": [
-                20.0,
-                76.92925568289506,
-                110.46437577962857,
-                22.0,
-                78.93866543667163,
-                115.37404907580628
-              ]
-            },
-            {
-              "moving_part": "breakaway_spring_cartridge",
-              "fixed_part": "01_manifold_with_cradle",
-              "volume_mm3": 112.68757959873977,
-              "bounds_mm": [
-                16.999999999999996,
-                76.92925568289508,
-                110.29591116960917,
-                22.0,
-                81.0249922378287,
-                121.74796342160872
-              ]
-            },
-            {
-              "moving_part": "chassis_stop_bracket",
-              "fixed_part": "01_manifold_with_cradle",
-              "volume_mm3": 10.713233059704185,
-              "bounds_mm": [
-                -7.0000000000000036,
-                13.299244392866285,
-                48.47692234813685,
-                -5.0,
-                17.367465478536403,
-                50.000000000000036
-              ]
-            },
-            {
-              "moving_part": "connector_module_body",
-              "fixed_part": "01_manifold_with_cradle",
-              "volume_mm3": 102.2428807903293,
-              "bounds_mm": [
-                10.0,
-                20.920179006609608,
-                44.04469070208289,
-                18.0,
-                25.398024178883166,
-                50.00000000000004
-              ]
-            }
-          ]
+          "collisions": []
         },
         {
           "position_mm": {
@@ -987,21 +894,7 @@
             -4.283637201794505,
             0.3747696938149301
           ],
-          "collisions": [
-            {
-              "moving_part": "connector_module_body",
-              "fixed_part": "01_manifold_with_cradle",
-              "volume_mm3": 368.75112481962293,
-              "bounds_mm": [
-                5.0,
-                20.920179006609608,
-                42.294917431564414,
-                13.0,
-                45.43279484811005,
-                50.00000000000004
-              ]
-            }
-          ]
+          "collisions": []
         },
         {
           "position_mm": {
@@ -1013,21 +906,7 @@
             -4.283637201794505,
             0.3747696938149301
           ],
-          "collisions": [
-            {
-              "moving_part": "connector_module_body",
-              "fixed_part": "01_manifold_with_cradle",
-              "volume_mm3": 592.7690555126457,
-              "bounds_mm": [
-                -5.0,
-                20.920179006609608,
-                42.04742497169803,
-                3.0,
-                45.43279484811005,
-                50.000000000000036
-              ]
-            }
-          ]
+          "collisions": []
         },
         {
           "position_mm": {
@@ -1185,7 +1064,7 @@
         ]
       }
     ],
-    "passed": false
+    "passed": true
   },
   "orientation": {
     "docking_direction": "-X",
@@ -1225,7 +1104,7 @@
   "geometry_errors": [],
   "numerical_intersection_threshold_mm3": 0.01,
   "provenance": {
-    "cache_directory": "/workspace/scratch/2b28a28d5c90/d8-final-cache",
+    "cache_directory": "/workspace/scratch/2b28a28d5c90/d8-release-review-cache",
     "input_sha256": {
       "parameters.json": "be41ebd6dcd159ccd4931493f291b29d37888c6d49e178dc7f05b6d426ee6d1c",
       "contact-profiles.json": "aa02aa10e52958e60c83230b141927807b6b04b000babc8a98ee0865c241bfdc",
@@ -1268,10 +1147,10 @@
       "hinge_seal_177.3_11.0.brep": "8b6c62ae4a2709a80011c41df3d68f3bc7742041c836ee3e8eac4f1986b69ccd",
       "breakaway_carrier.brep": "ff9f294bdf1a5c158bfc48f27055edb98adf0a44101b8197ab4c818c122d9355",
       "breakaway_pivot_pin_10mm.brep": "c9bbdb29b48c56bf10fbf8fbfbfae380f6a7a8a1c8d462631fad6a55d6247b6b",
-      "breakaway_spring_cartridge.brep": "5c28844158dd8fc1033e783eaf66a72dc9248e44a1bba69e6e8c07ca3587f408",
+      "breakaway_spring_cartridge.brep": "03b55a0ac9ae1158cdabdc8bf05346f5d7b6406a342042211dd6cb349b71d2d0",
       "breakaway_preload_hand_nut.brep": "df21f4020a3d66211666f9905f3452277003e0111d21d765c78c81b6288f2e19",
-      "breakaway_spring_hand_screw_0.brep": "2a6ee3f8fdc6ac275fd76de0eae01458813cc31ca0811764a5edd1b1f856dd73",
-      "breakaway_spring_hand_screw_1.brep": "165af3f54b794d4a7744517931b97f0f8033c47d41f160b77c1d6cb61e3a0065",
+      "breakaway_spring_hand_screw_0.brep": "34a0733fa08f574ce046c0c60a149f5b3736efe96ec2fe45d36b1e9087b9e336",
+      "breakaway_spring_hand_screw_1.brep": "242de4428056fc0c19127d2c4d12e52bd32e55e5a6cc9d67d6a50bff031c9306",
       "cassette_Z_lock_0.brep": "8d31730bab320687affb25ae078f3cd46d25a99c5611a266b4ea5f565d613c41",
       "cassette_Z_lock_1.brep": "f45f85cbc780fe43b4e6dfebe985af26997cda080953948ed59c4b41eaaa8220",
       "cassette_Y_lock_0.brep": "eb19450239112bd80935cdcead67e7e10c2a43b5643b112373a17e3554981b20",
@@ -1281,14 +1160,14 @@
       "cassette_cap_push_pin_6p5.brep": "7d625642f566f091748ec70c97bb6ac4d41627b9266d85c8b56f1c46c56a96d2",
       "Dell_plug_overmold_REFERENCE.brep": "c35cc8bb15ce7bb3f786adcdf573ed3d4fcbf1b93c541e1d2e349e6adcf9341b",
       "USB_C_shell_REFERENCE.brep": "6ccd92cef43a56324583f90449cd4bdf9edc283f7e8a681d7c1e1294b2e51831",
-      "breakaway_spring_spacer_0.brep": "9c041f2bd2137a7258e0acc71e34fafee0057ab03b4d914e0972703cca30beec",
-      "breakaway_spring_spacer_1.brep": "8c94652f7dc1565c180eb0729df53e61ecea0b65b9bc29baefaef6c6398ec8f8",
+      "breakaway_spring_spacer_0.brep": "aeefa418ea1592659281eccbb9b61d1bbbf4650adc0deff18122548693cacf1c",
+      "breakaway_spring_spacer_1.brep": "441f9c641bcfb50fcd9cf50a385bed7032c0bb9db3554a3880b4bf982a9cb116",
       "connector_mount_lock_0.brep": "a937c86bb9719e2a4d3800fa93a20ebfdfdf2c7c49ec38dbb11be8036a69fa1f",
       "connector_mount_lock_1.brep": "71f08f8a9bf7e0d7e0a81c40fcfd8d86c66503d9122fb68031126cfa8c5fcb0f",
       "chassis_stop_mount_lock_0.brep": "c47fd9edd7a4af75645d020be166c0a11725468a532ef7e51c84359ac278dc53",
       "chassis_stop_mount_lock_1.brep": "0657574c32bb0489c2f52b07d19cb19b8c4dde208c4960607171738f8702ce20",
       "chassis_stop_bracket.brep": "ae7986df68488693a2a9ef2850710d0fb3444192e21c44138b2dfbff9af6a3bf",
-      "connector_module_body.brep": "d3ccc6cd1b035c7b42b23c36940567c2183d66077fb9fcd3c8ab7a8d76b5f676",
+      "connector_module_body.brep": "51c918968f9f00d40f64dbc35be4c0a6ac29dac99d3fb070f484335bbbdc6ff6",
       "independent_printed_chassis_stop_screw.brep": "59fb90c42bf88e74b15ee93f745ff0b44bdfd7a93d88261825974a6fb33aa42f",
       "stop_soft_tip.brep": "d1d5112d00b76b906626b56800e223922ba867ae44f31bd6d4acbf429db11e0f",
       "Precision_5680_REFERENCE.brep": "ae96dddfcc89edb6a3bef0fb183b6d24de27545e8930d4c15d13aa3b8cea2d31",
@@ -1315,8 +1194,8 @@
       "01_bridge_thumb_lock_2.brep": "ae048196460fc599524326ca3b7237fb1641bddb3ffe49a533f730149bd4ed9d",
       "02_bridge_thumb_lock_2.brep": "a5a5b09c77c4dd528d5bec2ff3bae5f7fa1f7a6ec1169daa027be87a335d7d9c",
       "bridge_key_2.brep": "d7a7a4654547ddf4a3ab74ee8486baf7f50328b561a0fcaa277ea35fd3386b5b",
-      "01_manifold_with_cradle.brep": "fa69816bf1096f6a85d072b07eb1733ff1e016857eb12b394602540a2b28e742",
-      "02_manifold_with_cradle.brep": "11dc89d51b84804bea5b192b78a2a3eadde154f80a9d68bc9432f11c6b6acab4"
+      "01_manifold_with_cradle.brep": "72341d622a21ae600e83831fba105f21fa952f9e6eee0af3f837012b78d3a7da",
+      "02_manifold_with_cradle.brep": "f3fa96fa41d6870f15eb094842acad0a6ae931b6918e065ae5c8c879c7764392"
     },
     "note": "Hashes identify the exact BReps and parameter/source-reference bytes checked. This cache does not itself certify that current CAD source regenerated those BReps."
   }

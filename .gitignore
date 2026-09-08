@@ -37,3 +37,6 @@ cfd/*/*.log
 /fusion/cfd/runs/
 /fusion/cfd/geometry_revh_prepare.log
 /freecad/ValidationSnapshot.FCStd
+
+# D8 full STEP is distributed in its lossless ZIP; regeneration writes this local copy.
+/desk-dock/D8/Precision_5680_D8.step

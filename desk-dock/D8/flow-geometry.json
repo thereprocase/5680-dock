@@ -24,8 +24,8 @@
     }
   ],
   "plenum_volumes_mm3": [
-    854145.8986337152,
-    910672.051937253
+    854025.6693217615,
+    910707.542195848
   ],
   "cavity_basis": "Baseline void minus final body bosses and bottom panels; conservative omission of new floor clearance.",
   "exhaust_axis": [
