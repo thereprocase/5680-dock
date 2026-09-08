@@ -1,0 +1,207 @@
+{
+  "revision": "G",
+  "native_model": "freecad/Precision_5560_Native.FCStd",
+  "native_sha256": "f228a38358104b0e9b4bae01558b43b9e406fe716c0510fbacaed372dd555549",
+  "machine": "Bambu P1S",
+  "material": "ASA",
+  "nozzle_mm": 0.4,
+  "layer_mm": 0.2,
+  "parts": {
+    "02_right_cradle": {
+      "revised": false,
+      "printed_arm_frozen": true,
+      "closed_mesh": true,
+      "dimensions_mm": [
+        196.3330421447754,
+        180.56456756591797,
+        44.0
+      ],
+      "sha256": {
+        ".stl": "8b2ff61a31c4804fb78ca01af65fc9e3bc044b5961d3922bb9a4b36604bed5ac",
+        ".3mf": "0408e70cd419c4fa105da3ebd9bccc450dff67e7dd23323fabbfad6dc09d39cd"
+      }
+    },
+    "01_left_cradle": {
+      "revised": false,
+      "printed_arm_frozen": true,
+      "closed_mesh": true,
+      "dimensions_mm": [
+        180.56456756591797,
+        196.3330421447754,
+        44.0
+      ],
+      "sha256": {
+        ".stl": "70df06ef5ab8a6fdc0807c3442bfac7254387b8f6eabc5b20593ea42dff8125f",
+        ".3mf": "a8f5d61f691ff95a938aec5f74700fd02f322d37592ea18ad308c59dfcb0a05d"
+      }
+    },
+    "04_right_fan_duct": {
+      "revised": true,
+      "printed_arm_frozen": false,
+      "closed_mesh": true,
+      "dimensions_mm": [
+        174.5,
+        131.70000457763672,
+        109.64469909667969
+      ],
+      "sha256": {
+        ".stl": "8d92070d1810bb5a0fc46a0f8aefdae793756193398bba42277182d75bf9156d",
+        ".3mf": "74d64339fbf4f7bc0ea5d30db2fd27848883c940b23b033c2803da272c1205b3"
+      }
+    },
+    "03_left_fan_duct": {
+      "revised": true,
+      "printed_arm_frozen": false,
+      "closed_mesh": true,
+      "dimensions_mm": [
+        174.5,
+        131.70000457763672,
+        109.64469909667969
+      ],
+      "sha256": {
+        ".stl": "57db3dfbf25238d600275177178397fc57fbd7a140782b57aa8251bfc24c3404",
+        ".3mf": "7039deb411963a96361cbedc04db4780dd12757f8236ad8750947e72102f0535"
+      }
+    },
+    "06_right_fan_retainer": {
+      "revised": false,
+      "printed_arm_frozen": false,
+      "closed_mesh": true,
+      "dimensions_mm": [
+        139.0,
+        49.0,
+        13.0
+      ],
+      "sha256": {
+        ".stl": "51cbb70296a0c71093b96f4d1f6ddaa13c3483ea783041ec13392c5959eda466",
+        ".3mf": "c44b8ea633ec4f745a7c0dfadc610c3e7f3b7c81c1074efe14777080c695d03d"
+      }
+    },
+    "05_left_fan_retainer": {
+      "revised": false,
+      "printed_arm_frozen": false,
+      "closed_mesh": true,
+      "dimensions_mm": [
+        139.0,
+        49.0,
+        13.0
+      ],
+      "sha256": {
+        ".stl": "5cd6d827bc602bf8a90982883603f546fbc70bfba2fc63b306a84dc4dcdefc28",
+        ".3mf": "3713fc26d8f5165c94b047be4c76eccee8ce9cbf02b97b52901bb5b3db2f5f26"
+      }
+    },
+    "08_right_outlet_rail": {
+      "revised": true,
+      "printed_arm_frozen": false,
+      "closed_mesh": true,
+      "dimensions_mm": [
+        183.79999542236328,
+        39.0,
+        78.0
+      ],
+      "sha256": {
+        ".stl": "784a37c5297a14f996eb1edbe0e16c02a17091cba70825c23384aa5c10f98586",
+        ".3mf": "967595132690812d22cc69c16d4ce7fd9876ba1db807b2d0b4b15ce6c8059a3c"
+      }
+    },
+    "07_left_outlet_rail": {
+      "revised": true,
+      "printed_arm_frozen": false,
+      "closed_mesh": true,
+      "dimensions_mm": [
+        183.79999542236328,
+        39.0,
+        78.0
+      ],
+      "sha256": {
+        ".stl": "fff52c34b43001a0bd9988115ff2abb203c982271de4eaf561a1f1280d2ac491",
+        ".3mf": "8816e3286c99b7508ab3684ca795be7e0950028ff51fbf6cdae0095aceedb83f"
+      }
+    },
+    "10_right_fan_tray": {
+      "revised": true,
+      "printed_arm_frozen": false,
+      "closed_mesh": true,
+      "dimensions_mm": [
+        139.0,
+        131.70000457763672,
+        38.0
+      ],
+      "sha256": {
+        ".stl": "080f6bf975b5de193973402f3e09bbe5b10903b26f31c243096270766489d807",
+        ".3mf": "4f3642f21882674bc8c49bc46145e9710bd4cc3ffd327c73ae6823284a031aa4"
+      }
+    },
+    "09_left_fan_tray": {
+      "revised": true,
+      "printed_arm_frozen": false,
+      "closed_mesh": true,
+      "dimensions_mm": [
+        139.0,
+        131.70000457763672,
+        38.0
+      ],
+      "sha256": {
+        ".stl": "c498f2169a8eb9197ec179a5db1f2bef1ec976e0d8f2adf2d6e7e7a2cd37df18",
+        ".3mf": "e80a3269548fb7b9bc0edb0c2933c9846358d28978b7cf09697dbc8816e56e05"
+      }
+    },
+    "11_left_push_pin": {
+      "revised": false,
+      "printed_arm_frozen": false,
+      "closed_mesh": true,
+      "dimensions_mm": [
+        8.0,
+        7.997520446777344,
+        14.0
+      ],
+      "sha256": {
+        ".stl": "8d02184134bbb02efefd9b31e2c876aff95378a9e04be2cddf657f2e39784459",
+        ".3mf": "0eaab0d21b71007835b2f29ae058ee216c7e91d51a4e5d6f7cf53bf044f72655"
+      }
+    },
+    "12_right_push_pin": {
+      "revised": false,
+      "printed_arm_frozen": false,
+      "closed_mesh": true,
+      "dimensions_mm": [
+        8.0,
+        7.997520446777344,
+        14.0
+      ],
+      "sha256": {
+        ".stl": "8d02184134bbb02efefd9b31e2c876aff95378a9e04be2cddf657f2e39784459",
+        ".3mf": "83dd747c4ebd0c1cd14d770f17c0c8be4f0262dbdc44943f59ac594ff493c347"
+      }
+    },
+    "13_left_push_pin": {
+      "revised": false,
+      "printed_arm_frozen": false,
+      "closed_mesh": true,
+      "dimensions_mm": [
+        8.0,
+        7.997520446777344,
+        14.0
+      ],
+      "sha256": {
+        ".stl": "8d02184134bbb02efefd9b31e2c876aff95378a9e04be2cddf657f2e39784459",
+        ".3mf": "a93bf8d8b2719d1be4824b2c02e5a9602cd8fce1e13f62a89b5367414cb6e28d"
+      }
+    },
+    "14_right_push_pin": {
+      "revised": false,
+      "printed_arm_frozen": false,
+      "closed_mesh": true,
+      "dimensions_mm": [
+        8.0,
+        7.997520446777344,
+        14.0
+      ],
+      "sha256": {
+        ".stl": "8d02184134bbb02efefd9b31e2c876aff95378a9e04be2cddf657f2e39784459",
+        ".3mf": "422027507da41e5bf0a17b21c6e825e802143fcc3428de6613c790e979f75ee7"
+      }
+    }
+  }
+}
