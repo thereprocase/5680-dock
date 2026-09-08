@@ -1,5 +1,7 @@
 # Precision 5680 desk dock — D4
 
+**Superseded by [D5](../D5/README.md):** retains the upward-exhaust concept and adds profiled fixed guides, open ribs and rubber-foot sweep clearance.
+
 The fans now exhaust **15° above the desk**, with their tops leaning toward the laptop. D4 also enlarges the plenum, widens and rounds the hinge openings, and replaces the close flat guard with a spaced rounded-wire guard. The corrected orientation remains: hinge down, lid and fans toward the user, keyboard-left ports at the far end (photo right).
 
 ![Side section through the hinge and one fan](air-path.png)

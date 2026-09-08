@@ -1,13 +1,15 @@
-# Precision 5680 slide-in desk dock — D4
+# Precision 5680 slide-in desk dock — D5
 
-**Current design: [upward-exhaust dock with enlarged, rounded air passages](D4/README.md).**
+**Current design: [profiled fixed guides, open ribs and a polished enclosure](D5/README.md).**
 
-![D4 side section](D4/air-path.png)
+![D5 lid-side view](D5/overview.png)
 
-The laptop sits to the user's left, hinge down, with the lid toward the user. The keyboard-left ports and adjustable SD25TB5 plug holder sit at the far end—the right edge in the lid-facing photograph. Lower into the guides, slide toward the far plug, then reverse to remove.
+The laptop sits hinge down with its lid toward the user, leaning 2° onto fixed guides. Shaped hinge-end seats and flared entries guide lowering, followed by an 18 mm slide toward the far-end SD25TB5 plug. The keyboard-left ports remain on the far edge shown in the user's photograph.
 
-Two 120 mm fans on the lid side exhaust **15° above the desk**. Their rounded under-hinge passages feed a 2.76 L total plenum, with at least 35 mm fan inlet clearance at sampled locations. At an assumed 30 CFM total, the two broad hinge openings carry about 2.3–2.6 m/s. Spaced round-wire guards keep approximately 89% projected open area. The hinge seat remains 54 mm above the desk.
+Bare case margins carry the bearing contact. The open back clears the rubber feet's swept envelope and leaves 90.1% net free area over the OEM intake region. Rounded fan bezels and a removable adjustment cover improve the enclosure. Two 120 mm fans retain 15° upward exhaust and the curved under-hinge plenums.
 
-[Docking GIF](D4/docking-cycle.gif) · [Full-resolution MP4](D4/docking-cycle.mp4) · [STEP/source package](D4/Precision_5680_D4_Review.zip) · [Sizing and sources](D4/README.md)
+[Docking GIF](D5/docking-cycle.gif) · [Full-resolution MP4](D5/docking-cycle.mp4) · [STEP/source package](D5/Precision_5680_D5_Review.zip) · [Profile and rib study](D5/contact-study.png)
 
-Orientation and nominal sampled docking clearances pass. Actual airflow, whistle-free behavior, physical mating and production readiness still require prototype measurements. The sizing report distinguishes assumed flow and pressure estimates from measured performance. D1–D3 remain as history; use D4 for current geometry.
+Nominal and prescribed entry-path checks clear the laptop and expanded foot keepouts. Physical self-alignment, friction, strength, exact mating, airflow and acoustics still require prototype qualification. See the [D5 report](D5/README.md) for the measured source geometry and validation scope.
+
+[Interactive D5 exploded viewer](https://thereprocase.github.io/dell-5560-wall-mount/desk-dock.html) · rotate, explode, inspect parts and play the docking motion.
