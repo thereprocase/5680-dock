@@ -1,6 +1,6 @@
 # Precision 5680 desk dock
 
-**Saved for shutdown:** two corrected shell exports still need regeneration. The source is saved; this is not a print release. See [current status](desk-dock/D7/CURRENT_STATUS.md).
+**D8 development review:** [removable Y/Z connector module, direct shell feet, lighter covers and explicit print orientations](desk-dock/D8/README.md). See [D8 status and remaining checks](desk-dock/D8/CURRENT_STATUS.md). D8 is not a physically qualified print release; the public viewer and download below still describe D7.
 
 A compact, hinge-down laptop stand built around its cooling plenum. The laptop
 leans against the plenum, two recessed fans draw from the hinge exhaust, and a
@@ -10,7 +10,7 @@ captured USB-C plug makes the final sideways docking connection.
 **[Open the interactive D7 model](https://thereprocase.github.io/5680-dock/desk-dock.html)** ·
 **[Download D7 CAD and print-review package](docs/downloads/Precision_5680_D7_Review.zip)**
 
-## D7: form follows function
+## D7 baseline: form follows function
 
 - The laptop leans **5°** on soft plenum contacts. Profiled end seats carry its
   weight; a continuous low lip guides it without a loading-end tab.
@@ -46,7 +46,7 @@ Print the fit samples first. The review archive is also retained at
 [`desk-dock/D7/Precision_5680_D7_Review.zip`](desk-dock/D7/Precision_5680_D7_Review.zip).
 
 This repository preserves the earlier 5560 wall-mount work and D1–D6 desk-dock
-studies as project history. **D7 is the current 5680 design.** Old ASA print
+studies as project history. **D8 is the development revision on this branch.** Old ASA print
 guides, wall-mount packages, CFD results and historical “current design” labels
 do not qualify D7. The [original 5560 overview](docs/history/5560-README.md) and
 Git history remain available for provenance. See [LICENSE](LICENSE).

@@ -1,0 +1,4004 @@
+{
+  "revision": "D8",
+  "scope": "Geometric preflight only: no CAD build, slicer, deposited-path approval or printer communication.",
+  "machine": {
+    "bed_size_mm": [
+      256.0,
+      256.0
+    ],
+    "conservative_height_mm": 250.0,
+    "lower_left_exclusion_rectangle_mm": [
+      0.0,
+      0.0,
+      18.0,
+      28.0
+    ],
+    "brims_considered_mm": [
+      8,
+      5
+    ],
+    "in_plane_rotations_considered_deg": [
+      0,
+      90
+    ]
+  },
+  "declared_export_linear_deflection_mm": 0.06,
+  "manifest_sha256": "6389b0ec9799f196bab9d74face314222cb2b390dbc059242019bed5278be35e",
+  "parts": [
+    {
+      "part": "01_fan_guard_retainer",
+      "file": "01_fan_guard_retainer.stl",
+      "failures": [],
+      "warnings": [],
+      "sha256": "4481228109ffab4ea7fba14422e3d6f523fc3eb6b4a5cd2aeb31033c9ef98b92",
+      "mesh": {
+        "triangles": 1476,
+        "unique_vertices": 712,
+        "edge_connected_components": 1,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "watertight": true,
+        "consistent_winding": true,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 30485.18806012977,
+        "positive_volume": true,
+        "bounds_mm": [
+          [
+            0.0,
+            3.552713678800501e-15,
+            0.0
+          ],
+          [
+            128.0,
+            128.0,
+            4.0
+          ]
+        ],
+        "dimensions_mm": [
+          128.0,
+          128.0,
+          4.0
+        ],
+        "surface_area_mm2": 27542.611201321866,
+        "method": "Exact-coordinate vertex merge; edge incidence/winding; edge-connected components; signed volume. No healing or self-intersection certification."
+      },
+      "cad_minus_mesh_dimensions_mm": [
+        0.0,
+        5.684341886080802e-14,
+        3.375077994860476e-14
+      ],
+      "pose": {
+        "face_on_bed": "Broad front grille face",
+        "rotations": [
+          [
+            "X",
+            -108
+          ]
+        ],
+        "load_orientation": "Grille bars lie in bed plane.",
+        "support": "None expected",
+        "material": "PETG",
+        "unloaded_export": false
+      },
+      "placement": {
+        "pass": true,
+        "rotation_z_deg": 0,
+        "brim_mm": 8.0,
+        "translation_after_rotation_mm": [
+          64.0,
+          74.0,
+          -0.0
+        ],
+        "placed_part_bounds_mm": [
+          [
+            64.0,
+            74.0,
+            0
+          ],
+          [
+            192.0,
+            202.0,
+            4.0
+          ]
+        ],
+        "conservative_brim_bounds_mm": [
+          56.0,
+          66.0,
+          200.0,
+          210.0
+        ],
+        "method": "Entire XY bounding rectangle plus brim avoids exclusion; exact brim toolpaths remain unreviewed."
+      },
+      "first_layer": {
+        "xy_bounding_footprint_mm2": 16384.0,
+        "cad_first_0p20mm_mean_area_mm2": 8100.586065824279,
+        "mean_area_fraction_of_bounding_rectangle": 0.49442053624415766,
+        "source": "Manifest CAD slab-intersection volume / 0.20 mm; not recalculated from STL and not exact Z=0 contact area"
+      },
+      "geometric_preflight_pass": true,
+      "qualified_for_printing": false
+    },
+    {
+      "part": "01_fan_top_clip_1",
+      "file": "01_fan_top_clip_1.stl",
+      "failures": [],
+      "warnings": [],
+      "sha256": "bb12cf2ed7daffb7cb9f95d7506c4945416e94d4584c9e2e4988076805cc4387",
+      "mesh": {
+        "triangles": 84,
+        "unique_vertices": 44,
+        "edge_connected_components": 1,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "watertight": true,
+        "consistent_winding": true,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 1270.9179531962845,
+        "positive_volume": true,
+        "bounds_mm": [
+          [
+            0.0,
+            0.0,
+            3.552713678800501e-15
+          ],
+          [
+            50.099998474121094,
+            17.299999237060547,
+            8.0
+          ]
+        ],
+        "dimensions_mm": [
+          50.099998474121094,
+          17.299999237060547,
+          7.9999999999999964
+        ],
+        "surface_area_mm2": 1999.7461050267784,
+        "method": "Exact-coordinate vertex merge; edge incidence/winding; edge-connected components; signed volume. No healing or self-intersection certification."
+      },
+      "cad_minus_mesh_dimensions_mm": [
+        1.5258789289873675e-06,
+        7.629394787045385e-07,
+        1.0658141036401503e-14
+      ],
+      "pose": {
+        "face_on_bed": "Broad fan-local YZ side; unloaded shape",
+        "rotations": [
+          [
+            "X",
+            -108
+          ],
+          [
+            "Y",
+            -90
+          ]
+        ],
+        "load_orientation": "Leaf length and bending stress lie in bed plane.",
+        "support": "None expected",
+        "material": "PETG",
+        "unloaded_export": true
+      },
+      "placement": {
+        "pass": true,
+        "rotation_z_deg": 0,
+        "brim_mm": 8.0,
+        "translation_after_rotation_mm": [
+          102.95000076293945,
+          129.35000038146973,
+          -3.552713678800501e-15
+        ],
+        "placed_part_bounds_mm": [
+          [
+            102.95000076293945,
+            129.35000038146973,
+            0
+          ],
+          [
+            153.04999923706055,
+            146.64999961853027,
+            7.9999999999999964
+          ]
+        ],
+        "conservative_brim_bounds_mm": [
+          94.95000076293945,
+          121.35000038146973,
+          161.04999923706055,
+          154.64999961853027
+        ],
+        "method": "Entire XY bounding rectangle plus brim avoids exclusion; exact brim toolpaths remain unreviewed."
+      },
+      "first_layer": {
+        "xy_bounding_footprint_mm2": 866.7299353790295,
+        "cad_first_0p20mm_mean_area_mm2": 158.86481481481047,
+        "mean_area_fraction_of_bounding_rectangle": 0.1832921747941443,
+        "source": "Manifest CAD slab-intersection volume / 0.20 mm; not recalculated from STL and not exact Z=0 contact area"
+      },
+      "geometric_preflight_pass": true,
+      "qualified_for_printing": false
+    },
+    {
+      "part": "01_fan_top_clip_2",
+      "file": "01_fan_top_clip_2.stl",
+      "failures": [],
+      "warnings": [],
+      "sha256": "db83eec63dcbe66dab86779555f94cf48ad31854ff46e67b8b66012537840a7f",
+      "mesh": {
+        "triangles": 84,
+        "unique_vertices": 44,
+        "edge_connected_components": 1,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "watertight": true,
+        "consistent_winding": true,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 1270.917953196285,
+        "positive_volume": true,
+        "bounds_mm": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            50.099998474121094,
+            17.299999237060547,
+            8.0
+          ]
+        ],
+        "dimensions_mm": [
+          50.099998474121094,
+          17.299999237060547,
+          8.0
+        ],
+        "surface_area_mm2": 1999.7461050267793,
+        "method": "Exact-coordinate vertex merge; edge incidence/winding; edge-connected components; signed volume. No healing or self-intersection certification."
+      },
+      "cad_minus_mesh_dimensions_mm": [
+        1.5258789289873675e-06,
+        7.629394787045385e-07,
+        1.0658141036401503e-14
+      ],
+      "pose": {
+        "face_on_bed": "Broad fan-local YZ side; unloaded shape",
+        "rotations": [
+          [
+            "X",
+            -108
+          ],
+          [
+            "Y",
+            -90
+          ]
+        ],
+        "load_orientation": "Leaf length and bending stress lie in bed plane.",
+        "support": "None expected",
+        "material": "PETG",
+        "unloaded_export": true
+      },
+      "placement": {
+        "pass": true,
+        "rotation_z_deg": 0,
+        "brim_mm": 8.0,
+        "translation_after_rotation_mm": [
+          102.95000076293945,
+          129.35000038146973,
+          -0.0
+        ],
+        "placed_part_bounds_mm": [
+          [
+            102.95000076293945,
+            129.35000038146973,
+            0
+          ],
+          [
+            153.04999923706055,
+            146.64999961853027,
+            8.0
+          ]
+        ],
+        "conservative_brim_bounds_mm": [
+          94.95000076293945,
+          121.35000038146973,
+          161.04999923706055,
+          154.64999961853027
+        ],
+        "method": "Entire XY bounding rectangle plus brim avoids exclusion; exact brim toolpaths remain unreviewed."
+      },
+      "first_layer": {
+        "xy_bounding_footprint_mm2": 866.7299353790295,
+        "cad_first_0p20mm_mean_area_mm2": 158.8648148148154,
+        "mean_area_fraction_of_bounding_rectangle": 0.18329217479414997,
+        "source": "Manifest CAD slab-intersection volume / 0.20 mm; not recalculated from STL and not exact Z=0 contact area"
+      },
+      "geometric_preflight_pass": true,
+      "qualified_for_printing": false
+    },
+    {
+      "part": "02_fan_guard_retainer",
+      "file": "02_fan_guard_retainer.stl",
+      "failures": [],
+      "warnings": [],
+      "sha256": "3bf3b83bfaf70820ac4e4c7e7fbd40fd76f03751d1e0cfe025e0d25f71e708bd",
+      "mesh": {
+        "triangles": 1476,
+        "unique_vertices": 712,
+        "edge_connected_components": 1,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "watertight": true,
+        "consistent_winding": true,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 30485.188061230827,
+        "positive_volume": true,
+        "bounds_mm": [
+          [
+            0.0,
+            3.552713678800501e-15,
+            0.0
+          ],
+          [
+            128.0,
+            128.0,
+            4.0
+          ]
+        ],
+        "dimensions_mm": [
+          128.0,
+          128.0,
+          4.0
+        ],
+        "surface_area_mm2": 27542.611201321866,
+        "method": "Exact-coordinate vertex merge; edge incidence/winding; edge-connected components; signed volume. No healing or self-intersection certification."
+      },
+      "cad_minus_mesh_dimensions_mm": [
+        0.0,
+        5.684341886080802e-14,
+        3.375077994860476e-14
+      ],
+      "pose": {
+        "face_on_bed": "Broad front grille face",
+        "rotations": [
+          [
+            "X",
+            -108
+          ]
+        ],
+        "load_orientation": "Grille bars lie in bed plane.",
+        "support": "None expected",
+        "material": "PETG",
+        "unloaded_export": false
+      },
+      "placement": {
+        "pass": true,
+        "rotation_z_deg": 0,
+        "brim_mm": 8.0,
+        "translation_after_rotation_mm": [
+          64.0,
+          74.0,
+          -0.0
+        ],
+        "placed_part_bounds_mm": [
+          [
+            64.0,
+            74.0,
+            0
+          ],
+          [
+            192.0,
+            202.0,
+            4.0
+          ]
+        ],
+        "conservative_brim_bounds_mm": [
+          56.0,
+          66.0,
+          200.0,
+          210.0
+        ],
+        "method": "Entire XY bounding rectangle plus brim avoids exclusion; exact brim toolpaths remain unreviewed."
+      },
+      "first_layer": {
+        "xy_bounding_footprint_mm2": 16384.0,
+        "cad_first_0p20mm_mean_area_mm2": 8100.586065824286,
+        "mean_area_fraction_of_bounding_rectangle": 0.4944205362441581,
+        "source": "Manifest CAD slab-intersection volume / 0.20 mm; not recalculated from STL and not exact Z=0 contact area"
+      },
+      "geometric_preflight_pass": true,
+      "qualified_for_printing": false
+    },
+    {
+      "part": "02_fan_top_clip_1",
+      "file": "02_fan_top_clip_1.stl",
+      "failures": [],
+      "warnings": [],
+      "sha256": "db83eec63dcbe66dab86779555f94cf48ad31854ff46e67b8b66012537840a7f",
+      "mesh": {
+        "triangles": 84,
+        "unique_vertices": 44,
+        "edge_connected_components": 1,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "watertight": true,
+        "consistent_winding": true,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 1270.917953196285,
+        "positive_volume": true,
+        "bounds_mm": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            50.099998474121094,
+            17.299999237060547,
+            8.0
+          ]
+        ],
+        "dimensions_mm": [
+          50.099998474121094,
+          17.299999237060547,
+          8.0
+        ],
+        "surface_area_mm2": 1999.7461050267793,
+        "method": "Exact-coordinate vertex merge; edge incidence/winding; edge-connected components; signed volume. No healing or self-intersection certification."
+      },
+      "cad_minus_mesh_dimensions_mm": [
+        1.525878936092795e-06,
+        7.629394787045385e-07,
+        1.0658141036401503e-14
+      ],
+      "pose": {
+        "face_on_bed": "Broad fan-local YZ side; unloaded shape",
+        "rotations": [
+          [
+            "X",
+            -108
+          ],
+          [
+            "Y",
+            -90
+          ]
+        ],
+        "load_orientation": "Leaf length and bending stress lie in bed plane.",
+        "support": "None expected",
+        "material": "PETG",
+        "unloaded_export": true
+      },
+      "placement": {
+        "pass": true,
+        "rotation_z_deg": 0,
+        "brim_mm": 8.0,
+        "translation_after_rotation_mm": [
+          102.95000076293945,
+          129.35000038146973,
+          -0.0
+        ],
+        "placed_part_bounds_mm": [
+          [
+            102.95000076293945,
+            129.35000038146973,
+            0
+          ],
+          [
+            153.04999923706055,
+            146.64999961853027,
+            8.0
+          ]
+        ],
+        "conservative_brim_bounds_mm": [
+          94.95000076293945,
+          121.35000038146973,
+          161.04999923706055,
+          154.64999961853027
+        ],
+        "method": "Entire XY bounding rectangle plus brim avoids exclusion; exact brim toolpaths remain unreviewed."
+      },
+      "first_layer": {
+        "xy_bounding_footprint_mm2": 866.7299353790295,
+        "cad_first_0p20mm_mean_area_mm2": 158.86481481481545,
+        "mean_area_fraction_of_bounding_rectangle": 0.18329217479415005,
+        "source": "Manifest CAD slab-intersection volume / 0.20 mm; not recalculated from STL and not exact Z=0 contact area"
+      },
+      "geometric_preflight_pass": true,
+      "qualified_for_printing": false
+    },
+    {
+      "part": "02_fan_top_clip_2",
+      "file": "02_fan_top_clip_2.stl",
+      "failures": [],
+      "warnings": [],
+      "sha256": "38e26896acf62134f17092d4aded50375577a660baad6fc5c75ee05e0b574891",
+      "mesh": {
+        "triangles": 84,
+        "unique_vertices": 44,
+        "edge_connected_components": 1,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "watertight": true,
+        "consistent_winding": true,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 1270.917953196285,
+        "positive_volume": true,
+        "bounds_mm": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            50.099998474121094,
+            17.299999237060547,
+            8.0
+          ]
+        ],
+        "dimensions_mm": [
+          50.099998474121094,
+          17.299999237060547,
+          8.0
+        ],
+        "surface_area_mm2": 1999.7461050267793,
+        "method": "Exact-coordinate vertex merge; edge incidence/winding; edge-connected components; signed volume. No healing or self-intersection certification."
+      },
+      "cad_minus_mesh_dimensions_mm": [
+        1.525878936092795e-06,
+        7.629394787045385e-07,
+        1.0658141036401503e-14
+      ],
+      "pose": {
+        "face_on_bed": "Broad fan-local YZ side; unloaded shape",
+        "rotations": [
+          [
+            "X",
+            -108
+          ],
+          [
+            "Y",
+            -90
+          ]
+        ],
+        "load_orientation": "Leaf length and bending stress lie in bed plane.",
+        "support": "None expected",
+        "material": "PETG",
+        "unloaded_export": true
+      },
+      "placement": {
+        "pass": true,
+        "rotation_z_deg": 0,
+        "brim_mm": 8.0,
+        "translation_after_rotation_mm": [
+          102.95000076293945,
+          129.35000038146973,
+          -0.0
+        ],
+        "placed_part_bounds_mm": [
+          [
+            102.95000076293945,
+            129.35000038146973,
+            0
+          ],
+          [
+            153.04999923706055,
+            146.64999961853027,
+            8.0
+          ]
+        ],
+        "conservative_brim_bounds_mm": [
+          94.95000076293945,
+          121.35000038146973,
+          161.04999923706055,
+          154.64999961853027
+        ],
+        "method": "Entire XY bounding rectangle plus brim avoids exclusion; exact brim toolpaths remain unreviewed."
+      },
+      "first_layer": {
+        "xy_bounding_footprint_mm2": 866.7299353790295,
+        "cad_first_0p20mm_mean_area_mm2": 158.86481481481545,
+        "mean_area_fraction_of_bounding_rectangle": 0.18329217479415005,
+        "source": "Manifest CAD slab-intersection volume / 0.20 mm; not recalculated from STL and not exact Z=0 contact area"
+      },
+      "geometric_preflight_pass": true,
+      "qualified_for_printing": false
+    },
+    {
+      "part": "breakaway_carrier",
+      "file": "breakaway_carrier.stl",
+      "failures": [],
+      "warnings": [
+        "Manifest identifies an outstanding bridge/support review"
+      ],
+      "sha256": "510117fe93439446d98be5d80bb181a05635f63f8ec6e8b0fd4e721d0a4a8807",
+      "mesh": {
+        "triangles": 3754,
+        "unique_vertices": 1875,
+        "edge_connected_components": 1,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "watertight": true,
+        "consistent_winding": true,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 46293.69320808512,
+        "positive_volume": true,
+        "bounds_mm": [
+          [
+            0.010390672832727432,
+            0.0,
+            9.999999406318238e-08
+          ],
+          [
+            59.99955368041992,
+            58.5,
+            88.14763641357422
+          ]
+        ],
+        "dimensions_mm": [
+          59.989163007587194,
+          58.5,
+          88.14763631357422
+        ],
+        "surface_area_mm2": 16968.634957095546,
+        "method": "Exact-coordinate vertex merge; edge incidence/winding; edge-connected components; signed volume. No healing or self-intersection certification."
+      },
+      "cad_minus_mesh_dimensions_mm": [
+        0.010837092412806726,
+        1.4210854715202004e-14,
+        0.0023638864258259673
+      ],
+      "pose": {
+        "face_on_bed": "Reinforced carrier lower face and guide feet",
+        "rotations": [],
+        "load_orientation": "Docking X loads lie in the bed plane; vertical-web bending still depends on layer bonding.",
+        "support": "Small accessible supports; upright pose screened at about 5.6 g support",
+        "material": "PETG",
+        "unloaded_export": false
+      },
+      "placement": {
+        "pass": true,
+        "rotation_z_deg": 0,
+        "brim_mm": 8.0,
+        "translation_after_rotation_mm": [
+          97.99502782337368,
+          108.75,
+          -9.999999406318238e-08
+        ],
+        "placed_part_bounds_mm": [
+          [
+            98.0054184962064,
+            108.75,
+            0
+          ],
+          [
+            157.9945815037936,
+            167.25,
+            88.14763631357422
+          ]
+        ],
+        "conservative_brim_bounds_mm": [
+          90.0054184962064,
+          100.75,
+          165.9945815037936,
+          175.25
+        ],
+        "method": "Entire XY bounding rectangle plus brim avoids exclusion; exact brim toolpaths remain unreviewed."
+      },
+      "first_layer": {
+        "xy_bounding_footprint_mm2": 3509.366035943851,
+        "cad_first_0p20mm_mean_area_mm2": 411.9997939999563,
+        "mean_area_fraction_of_bounding_rectangle": 0.11740006308266107,
+        "source": "Manifest CAD slab-intersection volume / 0.20 mm; not recalculated from STL and not exact Z=0 contact area"
+      },
+      "geometric_preflight_pass": true,
+      "qualified_for_printing": false
+    },
+    {
+      "part": "breakaway_pivot_pin_10mm",
+      "file": "breakaway_pivot_pin_10mm.stl",
+      "failures": [],
+      "warnings": [
+        "Mean first-layer area is below 5% of bounding rectangle; inspect adhesion and local supports",
+        "Manifest identifies an outstanding bridge/support review"
+      ],
+      "sha256": "fba7447365c6e256e7abd4f1920533ebd25aa4ea2a9d5b8e7c8158c2d48b18d1",
+      "mesh": {
+        "triangles": 8140,
+        "unique_vertices": 4072,
+        "edge_connected_components": 1,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "watertight": true,
+        "consistent_winding": true,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 8627.061348573588,
+        "positive_volume": true,
+        "bounds_mm": [
+          [
+            0.0012308800360187888,
+            0.0,
+            0.004923244938254356
+          ],
+          [
+            21.998769760131836,
+            88.0,
+            22.0
+          ]
+        ],
+        "dimensions_mm": [
+          21.997538880095817,
+          88.0,
+          21.995076755061746
+        ],
+        "surface_area_mm2": 3849.3488641227264,
+        "method": "Exact-coordinate vertex merge; edge incidence/winding; edge-connected components; signed volume. No healing or self-intersection certification."
+      },
+      "cad_minus_mesh_dimensions_mm": [
+        0.0024611199041828513,
+        9.999999406318238e-08,
+        0.004923244938282778
+      ],
+      "pose": {
+        "face_on_bed": "Shaft horizontal; accessible support beneath",
+        "rotations": [],
+        "load_orientation": "Continuous deposited paths run along shaft.",
+        "support": "Accessible support beneath round shaft and head",
+        "material": "PETG",
+        "unloaded_export": false
+      },
+      "placement": {
+        "pass": true,
+        "rotation_z_deg": 0,
+        "brim_mm": 8.0,
+        "translation_after_rotation_mm": [
+          116.99999967991607,
+          94.0,
+          -0.004923244938254356
+        ],
+        "placed_part_bounds_mm": [
+          [
+            117.00123055995209,
+            94.0,
+            0
+          ],
+          [
+            138.9987694400479,
+            182.0,
+            21.995076755061746
+          ]
+        ],
+        "conservative_brim_bounds_mm": [
+          109.00123055995209,
+          86.0,
+          146.9987694400479,
+          190.0
+        ],
+        "method": "Entire XY bounding rectangle plus brim avoids exclusion; exact brim toolpaths remain unreviewed."
+      },
+      "first_layer": {
+        "xy_bounding_footprint_mm2": 1935.783421448432,
+        "cad_first_0p20mm_mean_area_mm2": 16.73510080676224,
+        "mean_area_fraction_of_bounding_rectangle": 0.008645130762738094,
+        "source": "Manifest CAD slab-intersection volume / 0.20 mm; not recalculated from STL and not exact Z=0 contact area"
+      },
+      "geometric_preflight_pass": true,
+      "qualified_for_printing": false
+    },
+    {
+      "part": "breakaway_spring_cartridge",
+      "file": "breakaway_spring_cartridge.stl",
+      "failures": [],
+      "warnings": [],
+      "sha256": "eb3921c9a85bbaf5d6ebd9479eb64f95b32a8aa2c409f198fda95f6a82651406",
+      "mesh": {
+        "triangles": 1340,
+        "unique_vertices": 662,
+        "edge_connected_components": 1,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "watertight": true,
+        "consistent_winding": true,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 36105.751520816666,
+        "positive_volume": true,
+        "bounds_mm": [
+          [
+            0.0,
+            0.0,
+            -5.937034980597867e-16
+          ],
+          [
+            88.0,
+            60.0,
+            11.0
+          ]
+        ],
+        "dimensions_mm": [
+          88.0,
+          60.0,
+          11.0
+        ],
+        "surface_area_mm2": 15913.492855978515,
+        "method": "Exact-coordinate vertex merge; edge incidence/winding; edge-connected components; signed volume. No healing or self-intersection certification."
+      },
+      "cad_minus_mesh_dimensions_mm": [
+        0.0,
+        0.0,
+        7.105427357601002e-15
+      ],
+      "pose": {
+        "face_on_bed": "Common unloaded spring outside face",
+        "rotations": [
+          [
+            "X",
+            -90
+          ]
+        ],
+        "load_orientation": "Leaf length and bending stress lie in bed plane.",
+        "support": "None expected",
+        "material": "PETG",
+        "unloaded_export": true
+      },
+      "placement": {
+        "pass": true,
+        "rotation_z_deg": 0,
+        "brim_mm": 8.0,
+        "translation_after_rotation_mm": [
+          84.0,
+          108.0,
+          5.937034980597867e-16
+        ],
+        "placed_part_bounds_mm": [
+          [
+            84.0,
+            108.0,
+            0
+          ],
+          [
+            172.0,
+            168.0,
+            11.0
+          ]
+        ],
+        "conservative_brim_bounds_mm": [
+          76.0,
+          100.0,
+          180.0,
+          176.0
+        ],
+        "method": "Entire XY bounding rectangle plus brim avoids exclusion; exact brim toolpaths remain unreviewed."
+      },
+      "first_layer": {
+        "xy_bounding_footprint_mm2": 5280.0,
+        "cad_first_0p20mm_mean_area_mm2": 4463.186190297514,
+        "mean_area_fraction_of_bounding_rectangle": 0.8453004148290747,
+        "source": "Manifest CAD slab-intersection volume / 0.20 mm; not recalculated from STL and not exact Z=0 contact area"
+      },
+      "geometric_preflight_pass": true,
+      "qualified_for_printing": false
+    },
+    {
+      "part": "breakaway_preload_hand_nut",
+      "file": "breakaway_preload_hand_nut.stl",
+      "failures": [],
+      "warnings": [],
+      "sha256": "b60f9a5c6a4a40c5d5260772edba7cfefb0566d91990bc1ac5c437bda6b86e68",
+      "mesh": {
+        "triangles": 6778,
+        "unique_vertices": 3389,
+        "edge_connected_components": 1,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "watertight": true,
+        "consistent_winding": true,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 3006.7950492277614,
+        "positive_volume": true,
+        "bounds_mm": [
+          [
+            0.0,
+            0.004795570392161608,
+            9.999997985232767e-08
+          ],
+          [
+            23.70833396911621,
+            23.99520492553711,
+            10.0
+          ]
+        ],
+        "dimensions_mm": [
+          23.70833396911621,
+          23.990409355144948,
+          9.99999990000002
+        ],
+        "surface_area_mm2": 1809.3933068293582,
+        "method": "Exact-coordinate vertex merge; edge incidence/winding; edge-connected components; signed volume. No healing or self-intersection certification."
+      },
+      "cad_minus_mesh_dimensions_mm": [
+        -6.357828716829772e-07,
+        0.009590644855080654,
+        1.9999998812636477e-07
+      ],
+      "pose": {
+        "face_on_bed": "Hand face",
+        "rotations": [
+          [
+            "X",
+            -90
+          ]
+        ],
+        "load_orientation": "Thread axis upright; dense part.",
+        "support": "None expected",
+        "material": "PETG",
+        "unloaded_export": false
+      },
+      "placement": {
+        "pass": true,
+        "rotation_z_deg": 0,
+        "brim_mm": 8.0,
+        "translation_after_rotation_mm": [
+          116.1458330154419,
+          125.99999975203536,
+          -9.999997985232767e-08
+        ],
+        "placed_part_bounds_mm": [
+          [
+            116.1458330154419,
+            126.00479532242753,
+            0
+          ],
+          [
+            139.8541669845581,
+            149.99520467757247,
+            9.99999990000002
+          ]
+        ],
+        "conservative_brim_bounds_mm": [
+          108.1458330154419,
+          118.00479532242753,
+          147.8541669845581,
+          157.99520467757247
+        ],
+        "method": "Entire XY bounding rectangle plus brim avoids exclusion; exact brim toolpaths remain unreviewed."
+      },
+      "first_layer": {
+        "xy_bounding_footprint_mm2": 568.7726370475863,
+        "cad_first_0p20mm_mean_area_mm2": 346.54568559263254,
+        "mean_area_fraction_of_bounding_rectangle": 0.6092868450766187,
+        "source": "Manifest CAD slab-intersection volume / 0.20 mm; not recalculated from STL and not exact Z=0 contact area"
+      },
+      "geometric_preflight_pass": true,
+      "qualified_for_printing": false
+    },
+    {
+      "part": "breakaway_spring_hand_screw_0",
+      "file": "breakaway_spring_hand_screw_0.stl",
+      "failures": [],
+      "warnings": [],
+      "sha256": "1d17700960f594e94069ac426e647a43d4816350ede71cba142005414e8f233d",
+      "mesh": {
+        "triangles": 7724,
+        "unique_vertices": 3864,
+        "edge_connected_components": 1,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "watertight": true,
+        "consistent_winding": true,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 3371.628095009255,
+        "positive_volume": true,
+        "bounds_mm": [
+          [
+            3.552713678800501e-15,
+            0.0033120373263955116,
+            -8.311674907566353e-16
+          ],
+          [
+            16.603092193603516,
+            16.996688842773438,
+            53.0
+          ]
+        ],
+        "dimensions_mm": [
+          16.603092193603512,
+          16.993376805447042,
+          53.0
+        ],
+        "surface_area_mm2": 1956.4015836673702,
+        "method": "Exact-coordinate vertex merge; edge incidence/winding; edge-connected components; signed volume. No healing or self-intersection certification."
+      },
+      "cad_minus_mesh_dimensions_mm": [
+        5.899016493060572e-07,
+        0.006623194552958012,
+        9.999999406318238e-08
+      ],
+      "pose": {
+        "face_on_bed": "Hand face",
+        "rotations": [
+          [
+            "X",
+            -90
+          ]
+        ],
+        "load_orientation": "Thread axis upright; verify preload tension.",
+        "support": "None expected",
+        "material": "PETG",
+        "unloaded_export": false
+      },
+      "placement": {
+        "pass": true,
+        "rotation_z_deg": 0,
+        "brim_mm": 8.0,
+        "translation_after_rotation_mm": [
+          119.69845390319824,
+          129.49999955995008,
+          8.311674907566353e-16
+        ],
+        "placed_part_bounds_mm": [
+          [
+            119.69845390319824,
+            129.50331159727648,
+            0
+          ],
+          [
+            136.30154609680176,
+            146.49668840272352,
+            53.0
+          ]
+        ],
+        "conservative_brim_bounds_mm": [
+          111.69845390319824,
+          121.50331159727648,
+          144.30154609680176,
+          154.49668840272352
+        ],
+        "method": "Entire XY bounding rectangle plus brim avoids exclusion; exact brim toolpaths remain unreviewed."
+      },
+      "first_layer": {
+        "xy_bounding_footprint_mm2": 282.1426017814808,
+        "cad_first_0p20mm_mean_area_mm2": 210.2829618801789,
+        "mean_area_fraction_of_bounding_rectangle": 0.7453073748963401,
+        "source": "Manifest CAD slab-intersection volume / 0.20 mm; not recalculated from STL and not exact Z=0 contact area"
+      },
+      "geometric_preflight_pass": true,
+      "qualified_for_printing": false
+    },
+    {
+      "part": "breakaway_spring_hand_screw_1",
+      "file": "breakaway_spring_hand_screw_1.stl",
+      "failures": [],
+      "warnings": [],
+      "sha256": "8f7963843a1370fdf01676775ed4f2c98541746559717ba2507cf085a5bfae7f",
+      "mesh": {
+        "triangles": 7724,
+        "unique_vertices": 3864,
+        "edge_connected_components": 1,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "watertight": true,
+        "consistent_winding": true,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 3371.628095009255,
+        "positive_volume": true,
+        "bounds_mm": [
+          [
+            3.552713678800501e-15,
+            0.0033120373263955116,
+            -8.311674907566353e-16
+          ],
+          [
+            16.603092193603516,
+            16.996688842773438,
+            53.0
+          ]
+        ],
+        "dimensions_mm": [
+          16.603092193603512,
+          16.993376805447042,
+          53.0
+        ],
+        "surface_area_mm2": 1956.4015836673698,
+        "method": "Exact-coordinate vertex merge; edge incidence/winding; edge-connected components; signed volume. No healing or self-intersection certification."
+      },
+      "cad_minus_mesh_dimensions_mm": [
+        5.899016493060572e-07,
+        0.006623194552986433,
+        1.000000082740371e-07
+      ],
+      "pose": {
+        "face_on_bed": "Hand face",
+        "rotations": [
+          [
+            "X",
+            -90
+          ]
+        ],
+        "load_orientation": "Thread axis upright; verify preload tension.",
+        "support": "None expected",
+        "material": "PETG",
+        "unloaded_export": false
+      },
+      "placement": {
+        "pass": true,
+        "rotation_z_deg": 0,
+        "brim_mm": 8.0,
+        "translation_after_rotation_mm": [
+          119.69845390319824,
+          129.49999955995008,
+          8.311674907566353e-16
+        ],
+        "placed_part_bounds_mm": [
+          [
+            119.69845390319824,
+            129.50331159727648,
+            0
+          ],
+          [
+            136.30154609680176,
+            146.49668840272352,
+            53.0
+          ]
+        ],
+        "conservative_brim_bounds_mm": [
+          111.69845390319824,
+          121.50331159727648,
+          144.30154609680176,
+          154.49668840272352
+        ],
+        "method": "Entire XY bounding rectangle plus brim avoids exclusion; exact brim toolpaths remain unreviewed."
+      },
+      "first_layer": {
+        "xy_bounding_footprint_mm2": 282.1426017814808,
+        "cad_first_0p20mm_mean_area_mm2": 210.28296188018055,
+        "mean_area_fraction_of_bounding_rectangle": 0.745307374896346,
+        "source": "Manifest CAD slab-intersection volume / 0.20 mm; not recalculated from STL and not exact Z=0 contact area"
+      },
+      "geometric_preflight_pass": true,
+      "qualified_for_printing": false
+    },
+    {
+      "part": "cassette_Z_lock_0",
+      "file": "cassette_Z_lock_0.stl",
+      "failures": [],
+      "warnings": [],
+      "sha256": "6986265e9dff24f44b69fbf3b9dacaa7a37d51c7fd067fc7e2393149c0d5610d",
+      "mesh": {
+        "triangles": 8862,
+        "unique_vertices": 4433,
+        "edge_connected_components": 1,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "watertight": true,
+        "consistent_winding": true,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 1175.9050285514802,
+        "positive_volume": true,
+        "bounds_mm": [
+          [
+            9.999997985232767e-08,
+            0.003008807310834527,
+            -2.829899206101785e-32
+          ],
+          [
+            13.530488014221191,
+            13.996991157531738,
+            18.5
+          ]
+        ],
+        "dimensions_mm": [
+          13.530487914221212,
+          13.993982350220904,
+          18.5
+        ],
+        "surface_area_mm2": 882.4304600639098,
+        "method": "Exact-coordinate vertex merge; edge incidence/winding; edge-connected components; signed volume. No healing or self-intersection certification."
+      },
+      "cad_minus_mesh_dimensions_mm": [
+        9.06568544678521e-08,
+        0.00601784977909503,
+        1.0000000116860974e-07
+      ],
+      "pose": {
+        "face_on_bed": "Hand face",
+        "rotations": [
+          [
+            "Y",
+            -90
+          ]
+        ],
+        "load_orientation": "Thread axis upright; broad thrust land carries X reaction.",
+        "support": "None expected",
+        "material": "PETG",
+        "unloaded_export": false
+      },
+      "placement": {
+        "pass": true,
+        "rotation_z_deg": 0,
+        "brim_mm": 8.0,
+        "translation_after_rotation_mm": [
+          121.23475594288941,
+          131.0000000175787,
+          2.829899206101785e-32
+        ],
+        "placed_part_bounds_mm": [
+          [
+            121.23475604288939,
+            131.00300882488955,
+            0
+          ],
+          [
+            134.7652439571106,
+            144.99699117511045,
+            18.5
+          ]
+        ],
+        "conservative_brim_bounds_mm": [
+          113.23475604288939,
+          123.00300882488955,
+          142.7652439571106,
+          152.99699117511045
+        ],
+        "method": "Entire XY bounding rectangle plus brim avoids exclusion; exact brim toolpaths remain unreviewed."
+      },
+      "first_layer": {
+        "xy_bounding_footprint_mm2": 189.34540906148888,
+        "cad_first_0p20mm_mean_area_mm2": 137.54860397650242,
+        "mean_area_fraction_of_bounding_rectangle": 0.726442772804881,
+        "source": "Manifest CAD slab-intersection volume / 0.20 mm; not recalculated from STL and not exact Z=0 contact area"
+      },
+      "geometric_preflight_pass": true,
+      "qualified_for_printing": false
+    },
+    {
+      "part": "cassette_Z_lock_1",
+      "file": "cassette_Z_lock_1.stl",
+      "failures": [],
+      "warnings": [],
+      "sha256": "f5e57d96b2ce9ef73833c52723740a1bbabd5a53b82eb0a0807094a8a8089bcc",
+      "mesh": {
+        "triangles": 8862,
+        "unique_vertices": 4433,
+        "edge_connected_components": 1,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "watertight": true,
+        "consistent_winding": true,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 1175.9050285514802,
+        "positive_volume": true,
+        "bounds_mm": [
+          [
+            9.999999406318238e-08,
+            0.003008807310834527,
+            -2.829899206101785e-32
+          ],
+          [
+            13.530488014221191,
+            13.996991157531738,
+            18.5
+          ]
+        ],
+        "dimensions_mm": [
+          13.530487914221197,
+          13.993982350220904,
+          18.5
+        ],
+        "surface_area_mm2": 882.4304600639093,
+        "method": "Exact-coordinate vertex merge; edge incidence/winding; edge-connected components; signed volume. No healing or self-intersection certification."
+      },
+      "cad_minus_mesh_dimensions_mm": [
+        9.065686690234998e-08,
+        0.00601784977909503,
+        1.0000000116860974e-07
+      ],
+      "pose": {
+        "face_on_bed": "Hand face",
+        "rotations": [
+          [
+            "Y",
+            -90
+          ]
+        ],
+        "load_orientation": "Thread axis upright; broad thrust land carries X reaction.",
+        "support": "None expected",
+        "material": "PETG",
+        "unloaded_export": false
+      },
+      "placement": {
+        "pass": true,
+        "rotation_z_deg": 0,
+        "brim_mm": 8.0,
+        "translation_after_rotation_mm": [
+          121.23475594288941,
+          131.0000000175787,
+          2.829899206101785e-32
+        ],
+        "placed_part_bounds_mm": [
+          [
+            121.2347560428894,
+            131.00300882488955,
+            0
+          ],
+          [
+            134.7652439571106,
+            144.99699117511045,
+            18.5
+          ]
+        ],
+        "conservative_brim_bounds_mm": [
+          113.2347560428894,
+          123.00300882488955,
+          142.7652439571106,
+          152.99699117511045
+        ],
+        "method": "Entire XY bounding rectangle plus brim avoids exclusion; exact brim toolpaths remain unreviewed."
+      },
+      "first_layer": {
+        "xy_bounding_footprint_mm2": 189.34540906148868,
+        "cad_first_0p20mm_mean_area_mm2": 137.54860397650245,
+        "mean_area_fraction_of_bounding_rectangle": 0.7264427728048819,
+        "source": "Manifest CAD slab-intersection volume / 0.20 mm; not recalculated from STL and not exact Z=0 contact area"
+      },
+      "geometric_preflight_pass": true,
+      "qualified_for_printing": false
+    },
+    {
+      "part": "cassette_Y_lock_0",
+      "file": "cassette_Y_lock_0.stl",
+      "failures": [],
+      "warnings": [],
+      "sha256": "69ffda38364ea08fbfe983cd5b7d00daa93a988115865deaa8f93a3b5fc44e53",
+      "mesh": {
+        "triangles": 7166,
+        "unique_vertices": 3585,
+        "edge_connected_components": 1,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "watertight": true,
+        "consistent_winding": true,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 1402.9036166870947,
+        "positive_volume": true,
+        "bounds_mm": [
+          [
+            1.0000000116860974e-07,
+            0.0037712762132287025,
+            0.0
+          ],
+          [
+            17.622549057006836,
+            17.99622917175293,
+            14.5
+          ]
+        ],
+        "dimensions_mm": [
+          17.622548957006835,
+          17.9924578955397,
+          14.5
+        ],
+        "surface_area_mm2": 1016.1394240926343,
+        "method": "Exact-coordinate vertex merge; edge incidence/winding; edge-connected components; signed volume. No healing or self-intersection certification."
+      },
+      "cad_minus_mesh_dimensions_mm": [
+        2.626010129347378e-07,
+        0.007542304460301352,
+        9.99999993922529e-08
+      ],
+      "pose": {
+        "face_on_bed": "Hand face",
+        "rotations": [],
+        "load_orientation": "Thread axis upright; rail shoulders carry X reaction.",
+        "support": "None expected",
+        "material": "PETG",
+        "unloaded_export": false
+      },
+      "placement": {
+        "pass": true,
+        "rotation_z_deg": 0,
+        "brim_mm": 8.0,
+        "translation_after_rotation_mm": [
+          119.18872542149657,
+          128.99999977601692,
+          -0.0
+        ],
+        "placed_part_bounds_mm": [
+          [
+            119.18872552149658,
+            129.00377105223015,
+            0
+          ],
+          [
+            136.8112744785034,
+            146.99622894776985,
+            14.5
+          ]
+        ],
+        "conservative_brim_bounds_mm": [
+          111.18872552149658,
+          121.00377105223015,
+          144.8112744785034,
+          154.99622894776985
+        ],
+        "method": "Entire XY bounding rectangle plus brim avoids exclusion; exact brim toolpaths remain unreviewed."
+      },
+      "first_layer": {
+        "xy_bounding_footprint_mm2": 317.07297012103254,
+        "cad_first_0p20mm_mean_area_mm2": 237.69020266519095,
+        "mean_area_fraction_of_bounding_rectangle": 0.7496388057754032,
+        "source": "Manifest CAD slab-intersection volume / 0.20 mm; not recalculated from STL and not exact Z=0 contact area"
+      },
+      "geometric_preflight_pass": true,
+      "qualified_for_printing": false
+    },
+    {
+      "part": "cassette_Z_saddle",
+      "file": "cassette_Z_saddle.stl",
+      "failures": [],
+      "warnings": [
+        "Manifest identifies an outstanding bridge/support review"
+      ],
+      "sha256": "e742619588d11d4e0bc2df7fe64d890ce3e8809b73f1c3e1620f39c1b7be2aed",
+      "mesh": {
+        "triangles": 9028,
+        "unique_vertices": 4510,
+        "edge_connected_components": 1,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "watertight": true,
+        "consistent_winding": true,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 13636.244741593318,
+        "positive_volume": true,
+        "bounds_mm": [
+          [
+            1.0000000116860974e-07,
+            0.0,
+            0.0
+          ],
+          [
+            39.599998474121094,
+            25.399999618530273,
+            37.5
+          ]
+        ],
+        "dimensions_mm": [
+          39.59999837412109,
+          25.399999618530273,
+          37.5
+        ],
+        "surface_area_mm2": 7086.362157759776,
+        "method": "Exact-coordinate vertex merge; edge incidence/winding; edge-connected components; signed volume. No healing or self-intersection certification."
+      },
+      "cad_minus_mesh_dimensions_mm": [
+        1.725878910008305e-06,
+        3.814697606685513e-07,
+        1.4210854715202004e-14
+      ],
+      "pose": {
+        "face_on_bed": "Broad Y=17.5 outside face",
+        "rotations": [
+          [
+            "X",
+            -90
+          ]
+        ],
+        "load_orientation": "X/Z saddle load path lies in bed plane; check local open gusset bridge.",
+        "support": "Accessible local support/bridge review",
+        "material": "PETG",
+        "unloaded_export": false
+      },
+      "placement": {
+        "pass": true,
+        "rotation_z_deg": 0,
+        "brim_mm": 8.0,
+        "translation_after_rotation_mm": [
+          108.20000071293944,
+          125.30000019073486,
+          -0.0
+        ],
+        "placed_part_bounds_mm": [
+          [
+            108.20000081293945,
+            125.30000019073486,
+            0
+          ],
+          [
+            147.79999918706054,
+            150.69999980926514,
+            37.5
+          ]
+        ],
+        "conservative_brim_bounds_mm": [
+          100.20000081293945,
+          117.30000019073486,
+          155.79999918706054,
+          158.69999980926514
+        ],
+        "method": "Entire XY bounding rectangle plus brim avoids exclusion; exact brim toolpaths remain unreviewed."
+      },
+      "first_layer": {
+        "xy_bounding_footprint_mm2": 1005.8399435964752,
+        "cad_first_0p20mm_mean_area_mm2": 515.4178241395402,
+        "mean_area_fraction_of_bounding_rectangle": 0.5124252893523152,
+        "source": "Manifest CAD slab-intersection volume / 0.20 mm; not recalculated from STL and not exact Z=0 contact area"
+      },
+      "geometric_preflight_pass": true,
+      "qualified_for_printing": false
+    },
+    {
+      "part": "X_depth_overmold_clamp",
+      "file": "X_depth_overmold_clamp.stl",
+      "failures": [],
+      "warnings": [
+        "Manifest identifies an outstanding bridge/support review"
+      ],
+      "sha256": "f8b9cbf63c361efc6ee03482daad5dee15da5b5420f8e8dbe49cc605f7134f1f",
+      "mesh": {
+        "triangles": 5580,
+        "unique_vertices": 2786,
+        "edge_connected_components": 1,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "watertight": true,
+        "consistent_winding": true,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 11220.320528517166,
+        "positive_volume": true,
+        "bounds_mm": [
+          [
+            0.0,
+            0.0,
+            9.999996564147295e-08
+          ],
+          [
+            32.599998474121094,
+            29.0,
+            28.200000762939453
+          ]
+        ],
+        "dimensions_mm": [
+          32.599998474121094,
+          29.0,
+          28.200000662939487
+        ],
+        "surface_area_mm2": 5232.462086298491,
+        "method": "Exact-coordinate vertex merge; edge incidence/winding; edge-connected components; signed volume. No healing or self-intersection certification."
+      },
+      "cad_minus_mesh_dimensions_mm": [
+        1.5258789076710855e-06,
+        7.105427357601002e-15,
+        -5.629394692618916e-07
+      ],
+      "pose": {
+        "face_on_bed": "Broad cradle underside",
+        "rotations": [],
+        "load_orientation": "XY base and axial thrust shoulders lie along layers; clamp has open cable cavity.",
+        "support": "Accessible local support/bridge review",
+        "material": "PETG",
+        "unloaded_export": false
+      },
+      "placement": {
+        "pass": true,
+        "rotation_z_deg": 0,
+        "brim_mm": 8.0,
+        "translation_after_rotation_mm": [
+          111.70000076293945,
+          123.5,
+          -9.999996564147295e-08
+        ],
+        "placed_part_bounds_mm": [
+          [
+            111.70000076293945,
+            123.5,
+            0
+          ],
+          [
+            144.29999923706055,
+            152.5,
+            28.200000662939487
+          ]
+        ],
+        "conservative_brim_bounds_mm": [
+          103.70000076293945,
+          115.5,
+          152.29999923706055,
+          160.5
+        ],
+        "method": "Entire XY bounding rectangle plus brim avoids exclusion; exact brim toolpaths remain unreviewed."
+      },
+      "first_layer": {
+        "xy_bounding_footprint_mm2": 945.3999557495117,
+        "cad_first_0p20mm_mean_area_mm2": 700.7071647472242,
+        "mean_area_fraction_of_bounding_rectangle": 0.7411753729052214,
+        "source": "Manifest CAD slab-intersection volume / 0.20 mm; not recalculated from STL and not exact Z=0 contact area"
+      },
+      "geometric_preflight_pass": true,
+      "qualified_for_printing": false
+    },
+    {
+      "part": "sliding_plug_cap",
+      "file": "sliding_plug_cap.stl",
+      "failures": [],
+      "warnings": [
+        "Manifest identifies an outstanding bridge/support review"
+      ],
+      "sha256": "c69ca2f26f6e87afaad6ad50e3b2d28ba3fff1ff6fcc8d6fc7ff4e05eefde9b6",
+      "mesh": {
+        "triangles": 1000,
+        "unique_vertices": 500,
+        "edge_connected_components": 1,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "watertight": true,
+        "consistent_winding": true,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 3379.333548661334,
+        "positive_volume": true,
+        "bounds_mm": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            32.599998474121094,
+            21.268644332885742,
+            10.100000381469727
+          ]
+        ],
+        "dimensions_mm": [
+          32.599998474121094,
+          21.268644332885742,
+          10.100000381469727
+        ],
+        "surface_area_mm2": 2093.495622148497,
+        "method": "Exact-coordinate vertex merge; edge incidence/winding; edge-connected components; signed volume. No healing or self-intersection certification."
+      },
+      "cad_minus_mesh_dimensions_mm": [
+        1.5258789076710855e-06,
+        7.9665337437973e-08,
+        -3.81469675403423e-07
+      ],
+      "pose": {
+        "face_on_bed": "Broad cap outside face",
+        "rotations": [
+          [
+            "X",
+            180
+          ]
+        ],
+        "load_orientation": "Cap bending spans the bed plane; gripping features grow upward.",
+        "support": "Accessible local support/bridge review",
+        "material": "PETG",
+        "unloaded_export": false
+      },
+      "placement": {
+        "pass": true,
+        "rotation_z_deg": 0,
+        "brim_mm": 8.0,
+        "translation_after_rotation_mm": [
+          111.70000076293945,
+          127.36567783355713,
+          -0.0
+        ],
+        "placed_part_bounds_mm": [
+          [
+            111.70000076293945,
+            127.36567783355713,
+            0
+          ],
+          [
+            144.29999923706055,
+            148.63432216644287,
+            10.100000381469727
+          ]
+        ],
+        "conservative_brim_bounds_mm": [
+          103.70000076293945,
+          119.36567783355713,
+          152.29999923706055,
+          156.63432216644287
+        ],
+        "method": "Entire XY bounding rectangle plus brim avoids exclusion; exact brim toolpaths remain unreviewed."
+      },
+      "first_layer": {
+        "xy_bounding_footprint_mm2": 693.3577727986994,
+        "cad_first_0p20mm_mean_area_mm2": 543.7507094579041,
+        "mean_area_fraction_of_bounding_rectangle": 0.784228187510014,
+        "source": "Manifest CAD slab-intersection volume / 0.20 mm; not recalculated from STL and not exact Z=0 contact area"
+      },
+      "geometric_preflight_pass": true,
+      "qualified_for_printing": false
+    },
+    {
+      "part": "cassette_cap_push_pin_6p5",
+      "file": "cassette_cap_push_pin_6p5.stl",
+      "failures": [],
+      "warnings": [
+        "Mean first-layer area is below 5% of bounding rectangle; inspect adhesion and local supports",
+        "Manifest identifies an outstanding bridge/support review"
+      ],
+      "sha256": "7629cfad9cc206d603d8379602970aac485810a92e405197f45694add742781f",
+      "mesh": {
+        "triangles": 15956,
+        "unique_vertices": 7980,
+        "edge_connected_components": 1,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "watertight": true,
+        "consistent_winding": true,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 1324.9302540167585,
+        "positive_volume": true,
+        "bounds_mm": [
+          [
+            0.0031329740304499865,
+            -7.770691375418384e-16,
+            0.0007832873379811645
+          ],
+          [
+            14.0,
+            25.268644332885742,
+            13.99921703338623
+          ]
+        ],
+        "dimensions_mm": [
+          13.99686702596955,
+          25.268644332885742,
+          13.99843374604825
+        ],
+        "surface_area_mm2": 925.0138915009389,
+        "method": "Exact-coordinate vertex merge; edge incidence/winding; edge-connected components; signed volume. No healing or self-intersection certification."
+      },
+      "cad_minus_mesh_dimensions_mm": [
+        0.0031329740304499865,
+        7.966533388525932e-08,
+        0.0015662539517506957
+      ],
+      "pose": {
+        "face_on_bed": "Shaft horizontal; accessible support beneath",
+        "rotations": [],
+        "load_orientation": "Continuous deposited paths run along shaft.",
+        "support": "Accessible support beneath round shaft and head",
+        "material": "PETG",
+        "unloaded_export": false
+      },
+      "placement": {
+        "pass": true,
+        "rotation_z_deg": 0,
+        "brim_mm": 8.0,
+        "translation_after_rotation_mm": [
+          120.99843351298478,
+          125.36567783355713,
+          -0.0007832873379811645
+        ],
+        "placed_part_bounds_mm": [
+          [
+            121.00156648701522,
+            125.36567783355713,
+            0
+          ],
+          [
+            134.99843351298478,
+            150.63432216644287,
+            13.99843374604825
+          ]
+        ],
+        "conservative_brim_bounds_mm": [
+          113.00156648701522,
+          117.36567783355713,
+          142.99843351298478,
+          158.63432216644287
+        ],
+        "method": "Entire XY bounding rectangle plus brim avoids exclusion; exact brim toolpaths remain unreviewed."
+      },
+      "first_layer": {
+        "xy_bounding_footprint_mm2": 353.68185465392077,
+        "cad_first_0p20mm_mean_area_mm2": 8.886028185134979,
+        "mean_area_fraction_of_bounding_rectangle": 0.02512435418500617,
+        "source": "Manifest CAD slab-intersection volume / 0.20 mm; not recalculated from STL and not exact Z=0 contact area"
+      },
+      "geometric_preflight_pass": true,
+      "qualified_for_printing": false
+    },
+    {
+      "part": "breakaway_spring_spacer_0",
+      "file": "breakaway_spring_spacer_0.stl",
+      "failures": [],
+      "warnings": [],
+      "sha256": "07e165a811c26acd6ab3aa377824e5fc0ad984514722b5c2aec0baf49958fe5d",
+      "mesh": {
+        "triangles": 840,
+        "unique_vertices": 420,
+        "edge_connected_components": 1,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "watertight": true,
+        "consistent_winding": true,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 3679.7967027804566,
+        "positive_volume": true,
+        "bounds_mm": [
+          [
+            0.0008951855124905705,
+            0.0,
+            6.2176466198696125e-15
+          ],
+          [
+            15.999104499816895,
+            15.996419906616211,
+            26.0
+          ]
+        ],
+        "dimensions_mm": [
+          15.998209314304404,
+          15.996419906616211,
+          25.999999999999993
+        ],
+        "surface_area_mm2": 2300.291084432601,
+        "method": "Exact-coordinate vertex merge; edge incidence/winding; edge-connected components; signed volume. No healing or self-intersection certification."
+      },
+      "cad_minus_mesh_dimensions_mm": [
+        0.0017906856955960393,
+        0.003580093383831695,
+        1.4210854715202004e-14
+      ],
+      "pose": {
+        "face_on_bed": "Flat spacer end",
+        "rotations": [
+          [
+            "X",
+            90
+          ]
+        ],
+        "load_orientation": "Compressive spacer load along build Z; continuous walls.",
+        "support": "None expected",
+        "material": "PETG",
+        "unloaded_export": false
+      },
+      "placement": {
+        "pass": true,
+        "rotation_z_deg": 0,
+        "brim_mm": 8.0,
+        "translation_after_rotation_mm": [
+          120.00000015733531,
+          130.0017900466919,
+          -6.2176466198696125e-15
+        ],
+        "placed_part_bounds_mm": [
+          [
+            120.0008953428478,
+            130.0017900466919,
+            0
+          ],
+          [
+            135.9991046571522,
+            145.9982099533081,
+            25.999999999999993
+          ]
+        ],
+        "conservative_brim_bounds_mm": [
+          112.0008953428478,
+          122.0017900466919,
+          143.9991046571522,
+          153.9982099533081
+        ],
+        "method": "Entire XY bounding rectangle plus brim avoids exclusion; exact brim toolpaths remain unreviewed."
+      },
+      "first_layer": {
+        "xy_bounding_footprint_mm2": 255.91407394555185,
+        "cad_first_0p20mm_mean_area_mm2": 141.6151428421873,
+        "mean_area_fraction_of_bounding_rectangle": 0.5533698895837877,
+        "source": "Manifest CAD slab-intersection volume / 0.20 mm; not recalculated from STL and not exact Z=0 contact area"
+      },
+      "geometric_preflight_pass": true,
+      "qualified_for_printing": false
+    },
+    {
+      "part": "breakaway_spring_spacer_1",
+      "file": "breakaway_spring_spacer_1.stl",
+      "failures": [],
+      "warnings": [],
+      "sha256": "e3d609fa15d85a3e485de0bf5db5b4ea0c956eaa00e7a1a768feb2c2de7838bb",
+      "mesh": {
+        "triangles": 840,
+        "unique_vertices": 420,
+        "edge_connected_components": 1,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "watertight": true,
+        "consistent_winding": true,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 3679.796702780457,
+        "positive_volume": true,
+        "bounds_mm": [
+          [
+            0.0008951855124905705,
+            0.0,
+            -8.877808965500669e-16
+          ],
+          [
+            15.999104499816895,
+            15.996419906616211,
+            26.0
+          ]
+        ],
+        "dimensions_mm": [
+          15.998209314304404,
+          15.996419906616211,
+          26.0
+        ],
+        "surface_area_mm2": 2300.291084432602,
+        "method": "Exact-coordinate vertex merge; edge incidence/winding; edge-connected components; signed volume. No healing or self-intersection certification."
+      },
+      "cad_minus_mesh_dimensions_mm": [
+        0.0017906856955960393,
+        0.003580093383845906,
+        7.105427357601002e-15
+      ],
+      "pose": {
+        "face_on_bed": "Flat spacer end",
+        "rotations": [
+          [
+            "X",
+            90
+          ]
+        ],
+        "load_orientation": "Compressive spacer load along build Z; continuous walls.",
+        "support": "None expected",
+        "material": "PETG",
+        "unloaded_export": false
+      },
+      "placement": {
+        "pass": true,
+        "rotation_z_deg": 0,
+        "brim_mm": 8.0,
+        "translation_after_rotation_mm": [
+          120.00000015733531,
+          130.0017900466919,
+          8.877808965500669e-16
+        ],
+        "placed_part_bounds_mm": [
+          [
+            120.0008953428478,
+            130.0017900466919,
+            0
+          ],
+          [
+            135.9991046571522,
+            145.9982099533081,
+            26.0
+          ]
+        ],
+        "conservative_brim_bounds_mm": [
+          112.0008953428478,
+          122.0017900466919,
+          143.9991046571522,
+          153.9982099533081
+        ],
+        "method": "Entire XY bounding rectangle plus brim avoids exclusion; exact brim toolpaths remain unreviewed."
+      },
+      "first_layer": {
+        "xy_bounding_footprint_mm2": 255.91407394555185,
+        "cad_first_0p20mm_mean_area_mm2": 141.61514284219038,
+        "mean_area_fraction_of_bounding_rectangle": 0.5533698895837997,
+        "source": "Manifest CAD slab-intersection volume / 0.20 mm; not recalculated from STL and not exact Z=0 contact area"
+      },
+      "geometric_preflight_pass": true,
+      "qualified_for_printing": false
+    },
+    {
+      "part": "connector_mount_lock_0",
+      "file": "connector_mount_lock_0.stl",
+      "failures": [],
+      "warnings": [],
+      "sha256": "25a86ca8899d98aa1aead77c0cbaa7e186a251c0d156d9756830e02c52a7e0dc",
+      "mesh": {
+        "triangles": 9788,
+        "unique_vertices": 4896,
+        "edge_connected_components": 1,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "watertight": true,
+        "consistent_winding": true,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 1305.9245687076973,
+        "positive_volume": true,
+        "bounds_mm": [
+          [
+            1.0000000116860974e-07,
+            0.003008807310834527,
+            0.0
+          ],
+          [
+            13.530488014221191,
+            13.996991157531738,
+            21.5
+          ]
+        ],
+        "dimensions_mm": [
+          13.53048791422119,
+          13.993982350220904,
+          21.5
+        ],
+        "surface_area_mm2": 971.0642775914855,
+        "method": "Exact-coordinate vertex merge; edge incidence/winding; edge-connected components; signed volume. No healing or self-intersection certification."
+      },
+      "cad_minus_mesh_dimensions_mm": [
+        9.065685802056578e-08,
+        0.00601784977909503,
+        1.000000082740371e-07
+      ],
+      "pose": {
+        "face_on_bed": "Hand face",
+        "rotations": [
+          [
+            "X",
+            -90
+          ]
+        ],
+        "load_orientation": "Thread axis upright; keys carry docking thrust.",
+        "support": "None expected",
+        "material": "PETG",
+        "unloaded_export": false
+      },
+      "placement": {
+        "pass": true,
+        "rotation_z_deg": 0,
+        "brim_mm": 8.0,
+        "translation_after_rotation_mm": [
+          121.2347559428894,
+          131.0000000175787,
+          -0.0
+        ],
+        "placed_part_bounds_mm": [
+          [
+            121.2347560428894,
+            131.00300882488955,
+            0
+          ],
+          [
+            134.76524395711058,
+            144.99699117511045,
+            21.5
+          ]
+        ],
+        "conservative_brim_bounds_mm": [
+          113.2347560428894,
+          123.00300882488955,
+          142.76524395711058,
+          152.99699117511045
+        ],
+        "method": "Entire XY bounding rectangle plus brim avoids exclusion; exact brim toolpaths remain unreviewed."
+      },
+      "first_layer": {
+        "xy_bounding_footprint_mm2": 189.3454090614886,
+        "cad_first_0p20mm_mean_area_mm2": 137.5486039764981,
+        "mean_area_fraction_of_bounding_rectangle": 0.7264427728048592,
+        "source": "Manifest CAD slab-intersection volume / 0.20 mm; not recalculated from STL and not exact Z=0 contact area"
+      },
+      "geometric_preflight_pass": true,
+      "qualified_for_printing": false
+    },
+    {
+      "part": "connector_mount_lock_1",
+      "file": "connector_mount_lock_1.stl",
+      "failures": [],
+      "warnings": [],
+      "sha256": "52bed6aa65a30ea11c2884a0acff88fa562afe0acac40c1834a37a8ca245d149",
+      "mesh": {
+        "triangles": 9788,
+        "unique_vertices": 4896,
+        "edge_connected_components": 1,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "watertight": true,
+        "consistent_winding": true,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 1305.9245687076964,
+        "positive_volume": true,
+        "bounds_mm": [
+          [
+            1.0000000116860974e-07,
+            0.003008807310834527,
+            0.0
+          ],
+          [
+            13.530488014221191,
+            13.996991157531738,
+            21.5
+          ]
+        ],
+        "dimensions_mm": [
+          13.53048791422119,
+          13.993982350220904,
+          21.5
+        ],
+        "surface_area_mm2": 971.0642775914853,
+        "method": "Exact-coordinate vertex merge; edge incidence/winding; edge-connected components; signed volume. No healing or self-intersection certification."
+      },
+      "cad_minus_mesh_dimensions_mm": [
+        9.065685802056578e-08,
+        0.00601784977909503,
+        1.0000000116860974e-07
+      ],
+      "pose": {
+        "face_on_bed": "Hand face",
+        "rotations": [
+          [
+            "X",
+            -90
+          ]
+        ],
+        "load_orientation": "Thread axis upright; keys carry docking thrust.",
+        "support": "None expected",
+        "material": "PETG",
+        "unloaded_export": false
+      },
+      "placement": {
+        "pass": true,
+        "rotation_z_deg": 0,
+        "brim_mm": 8.0,
+        "translation_after_rotation_mm": [
+          121.2347559428894,
+          131.0000000175787,
+          -0.0
+        ],
+        "placed_part_bounds_mm": [
+          [
+            121.2347560428894,
+            131.00300882488955,
+            0
+          ],
+          [
+            134.76524395711058,
+            144.99699117511045,
+            21.5
+          ]
+        ],
+        "conservative_brim_bounds_mm": [
+          113.2347560428894,
+          123.00300882488955,
+          142.76524395711058,
+          152.99699117511045
+        ],
+        "method": "Entire XY bounding rectangle plus brim avoids exclusion; exact brim toolpaths remain unreviewed."
+      },
+      "first_layer": {
+        "xy_bounding_footprint_mm2": 189.3454090614886,
+        "cad_first_0p20mm_mean_area_mm2": 137.548603976496,
+        "mean_area_fraction_of_bounding_rectangle": 0.7264427728048481,
+        "source": "Manifest CAD slab-intersection volume / 0.20 mm; not recalculated from STL and not exact Z=0 contact area"
+      },
+      "geometric_preflight_pass": true,
+      "qualified_for_printing": false
+    },
+    {
+      "part": "chassis_stop_mount_lock_0",
+      "file": "chassis_stop_mount_lock_0.stl",
+      "failures": [],
+      "warnings": [],
+      "sha256": "9d982f4919a8e190ef7c65c9e6d392a262d9597f74a79e413c64bd1679a8040f",
+      "mesh": {
+        "triangles": 9788,
+        "unique_vertices": 4896,
+        "edge_connected_components": 1,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "watertight": true,
+        "consistent_winding": true,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 1305.9245687019381,
+        "positive_volume": true,
+        "bounds_mm": [
+          [
+            1.0000000116860974e-07,
+            0.003008807310834527,
+            0.0
+          ],
+          [
+            13.530488014221191,
+            13.996991157531738,
+            21.5
+          ]
+        ],
+        "dimensions_mm": [
+          13.53048791422119,
+          13.993982350220904,
+          21.5
+        ],
+        "surface_area_mm2": 971.0642775914855,
+        "method": "Exact-coordinate vertex merge; edge incidence/winding; edge-connected components; signed volume. No healing or self-intersection certification."
+      },
+      "cad_minus_mesh_dimensions_mm": [
+        9.065685979692262e-08,
+        0.00601784977909503,
+        1.0000001182675078e-07
+      ],
+      "pose": {
+        "face_on_bed": "Hand face",
+        "rotations": [
+          [
+            "X",
+            90
+          ]
+        ],
+        "load_orientation": "Thread axis upright; bracket key carries thrust.",
+        "support": "None expected",
+        "material": "PETG",
+        "unloaded_export": false
+      },
+      "placement": {
+        "pass": true,
+        "rotation_z_deg": 0,
+        "brim_mm": 8.0,
+        "translation_after_rotation_mm": [
+          121.2347559428894,
+          131.0000000175787,
+          -0.0
+        ],
+        "placed_part_bounds_mm": [
+          [
+            121.2347560428894,
+            131.00300882488955,
+            0
+          ],
+          [
+            134.76524395711058,
+            144.99699117511045,
+            21.5
+          ]
+        ],
+        "conservative_brim_bounds_mm": [
+          113.2347560428894,
+          123.00300882488955,
+          142.76524395711058,
+          152.99699117511045
+        ],
+        "method": "Entire XY bounding rectangle plus brim avoids exclusion; exact brim toolpaths remain unreviewed."
+      },
+      "first_layer": {
+        "xy_bounding_footprint_mm2": 189.3454090614886,
+        "cad_first_0p20mm_mean_area_mm2": 137.54860397650006,
+        "mean_area_fraction_of_bounding_rectangle": 0.7264427728048696,
+        "source": "Manifest CAD slab-intersection volume / 0.20 mm; not recalculated from STL and not exact Z=0 contact area"
+      },
+      "geometric_preflight_pass": true,
+      "qualified_for_printing": false
+    },
+    {
+      "part": "chassis_stop_mount_lock_1",
+      "file": "chassis_stop_mount_lock_1.stl",
+      "failures": [],
+      "warnings": [],
+      "sha256": "e3df14456d03c494a2e3fad64ece18147b0a72177ef9a0d18bca6c9c4a53b9f0",
+      "mesh": {
+        "triangles": 9788,
+        "unique_vertices": 4896,
+        "edge_connected_components": 1,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "watertight": true,
+        "consistent_winding": true,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 1305.9245687019381,
+        "positive_volume": true,
+        "bounds_mm": [
+          [
+            1.0000000116860974e-07,
+            0.003008807310834527,
+            0.0
+          ],
+          [
+            13.530488014221191,
+            13.996991157531738,
+            21.5
+          ]
+        ],
+        "dimensions_mm": [
+          13.53048791422119,
+          13.993982350220904,
+          21.5
+        ],
+        "surface_area_mm2": 971.0642775914856,
+        "method": "Exact-coordinate vertex merge; edge incidence/winding; edge-connected components; signed volume. No healing or self-intersection certification."
+      },
+      "cad_minus_mesh_dimensions_mm": [
+        9.065685979692262e-08,
+        0.00601784977909503,
+        1.000000082740371e-07
+      ],
+      "pose": {
+        "face_on_bed": "Hand face",
+        "rotations": [
+          [
+            "X",
+            90
+          ]
+        ],
+        "load_orientation": "Thread axis upright; bracket key carries thrust.",
+        "support": "None expected",
+        "material": "PETG",
+        "unloaded_export": false
+      },
+      "placement": {
+        "pass": true,
+        "rotation_z_deg": 0,
+        "brim_mm": 8.0,
+        "translation_after_rotation_mm": [
+          121.2347559428894,
+          131.0000000175787,
+          -0.0
+        ],
+        "placed_part_bounds_mm": [
+          [
+            121.2347560428894,
+            131.00300882488955,
+            0
+          ],
+          [
+            134.76524395711058,
+            144.99699117511045,
+            21.5
+          ]
+        ],
+        "conservative_brim_bounds_mm": [
+          113.2347560428894,
+          123.00300882488955,
+          142.76524395711058,
+          152.99699117511045
+        ],
+        "method": "Entire XY bounding rectangle plus brim avoids exclusion; exact brim toolpaths remain unreviewed."
+      },
+      "first_layer": {
+        "xy_bounding_footprint_mm2": 189.3454090614886,
+        "cad_first_0p20mm_mean_area_mm2": 137.54860397650083,
+        "mean_area_fraction_of_bounding_rectangle": 0.7264427728048737,
+        "source": "Manifest CAD slab-intersection volume / 0.20 mm; not recalculated from STL and not exact Z=0 contact area"
+      },
+      "geometric_preflight_pass": true,
+      "qualified_for_printing": false
+    },
+    {
+      "part": "chassis_stop_bracket",
+      "file": "chassis_stop_bracket.stl",
+      "failures": [],
+      "warnings": [
+        "Manifest identifies an outstanding bridge/support review"
+      ],
+      "sha256": "bd2af61f556092fdba0cfd983affdbbcaf3530c998c5fe6b9de5d907482c5b02",
+      "mesh": {
+        "triangles": 7142,
+        "unique_vertices": 3567,
+        "edge_connected_components": 1,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "watertight": true,
+        "consistent_winding": true,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 10546.467473360239,
+        "positive_volume": true,
+        "bounds_mm": [
+          [
+            0.0,
+            0.0,
+            -4.827308529038038e-16
+          ],
+          [
+            26.0,
+            30.0,
+            35.0
+          ]
+        ],
+        "dimensions_mm": [
+          26.0,
+          30.0,
+          35.0
+        ],
+        "surface_area_mm2": 4765.524535689685,
+        "method": "Exact-coordinate vertex merge; edge incidence/winding; edge-connected components; signed volume. No healing or self-intersection certification."
+      },
+      "cad_minus_mesh_dimensions_mm": [
+        1.0000000116860974e-07,
+        0.0,
+        7.105427357601002e-15
+      ],
+      "pose": {
+        "face_on_bed": "Broad rear support face",
+        "rotations": [
+          [
+            "X",
+            -90
+          ]
+        ],
+        "load_orientation": "Stop bending lies in XZ bed plane; local horizontal thread needs path review.",
+        "support": "Accessible local support/bridge review",
+        "material": "PETG",
+        "unloaded_export": false
+      },
+      "placement": {
+        "pass": true,
+        "rotation_z_deg": 0,
+        "brim_mm": 8.0,
+        "translation_after_rotation_mm": [
+          115.0,
+          123.0,
+          4.827308529038038e-16
+        ],
+        "placed_part_bounds_mm": [
+          [
+            115.0,
+            123.0,
+            0
+          ],
+          [
+            141.0,
+            153.0,
+            35.0
+          ]
+        ],
+        "conservative_brim_bounds_mm": [
+          107.0,
+          115.0,
+          149.0,
+          161.0
+        ],
+        "method": "Entire XY bounding rectangle plus brim avoids exclusion; exact brim toolpaths remain unreviewed."
+      },
+      "first_layer": {
+        "xy_bounding_footprint_mm2": 780.0,
+        "cad_first_0p20mm_mean_area_mm2": 608.8164260248727,
+        "mean_area_fraction_of_bounding_rectangle": 0.7805338795190676,
+        "source": "Manifest CAD slab-intersection volume / 0.20 mm; not recalculated from STL and not exact Z=0 contact area"
+      },
+      "geometric_preflight_pass": true,
+      "qualified_for_printing": false
+    },
+    {
+      "part": "connector_module_body",
+      "file": "connector_module_body.stl",
+      "failures": [],
+      "warnings": [
+        "Manifest identifies an outstanding bridge/support review"
+      ],
+      "sha256": "a684069c649fb20d9a7086360f4f3ec01e47ef8b0b54565fd62bab44c5b6d354",
+      "mesh": {
+        "triangles": 37156,
+        "unique_vertices": 18566,
+        "edge_connected_components": 1,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "watertight": true,
+        "consistent_winding": true,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 143206.10699000172,
+        "positive_volume": true,
+        "bounds_mm": [
+          [
+            0.00017126220336649567,
+            1.0000000116860974e-07,
+            1.0000000116860974e-07
+          ],
+          [
+            74.0,
+            135.11447143554688,
+            28.0
+          ]
+        ],
+        "dimensions_mm": [
+          73.99982873779663,
+          135.11447133554688,
+          27.9999999
+        ],
+        "surface_area_mm2": 31345.856392511934,
+        "method": "Exact-coordinate vertex merge; edge incidence/winding; edge-connected components; signed volume. No healing or self-intersection certification."
+      },
+      "cad_minus_mesh_dimensions_mm": [
+        0.00017146220335462203,
+        0.01499866482112111,
+        2.0000000944264684e-07
+      ],
+      "pose": {
+        "face_on_bed": "Broad rear Y=50 support face",
+        "rotations": [
+          [
+            "X",
+            -90
+          ]
+        ],
+        "load_orientation": "Main arm and root XZ load path lies in layers; cam working face grows upward.",
+        "support": "Accessible local support/bridge review",
+        "material": "PETG",
+        "unloaded_export": false
+      },
+      "placement": {
+        "pass": true,
+        "rotation_z_deg": 0,
+        "brim_mm": 8.0,
+        "translation_after_rotation_mm": [
+          90.99991436889832,
+          70.44276423222655,
+          -1.0000000116860974e-07
+        ],
+        "placed_part_bounds_mm": [
+          [
+            91.00008563110168,
+            70.44276433222656,
+            0
+          ],
+          [
+            164.99991436889832,
+            205.55723566777345,
+            27.9999999
+          ]
+        ],
+        "conservative_brim_bounds_mm": [
+          83.00008563110168,
+          62.44276433222656,
+          172.99991436889832,
+          213.55723566777345
+        ],
+        "method": "Entire XY bounding rectangle plus brim avoids exclusion; exact brim toolpaths remain unreviewed."
+      },
+      "first_layer": {
+        "xy_bounding_footprint_mm2": 9998.447738828401,
+        "cad_first_0p20mm_mean_area_mm2": 6465.612107028337,
+        "mean_area_fraction_of_bounding_rectangle": 0.6466615894704837,
+        "source": "Manifest CAD slab-intersection volume / 0.20 mm; not recalculated from STL and not exact Z=0 contact area"
+      },
+      "geometric_preflight_pass": true,
+      "qualified_for_printing": false
+    },
+    {
+      "part": "independent_printed_chassis_stop_screw",
+      "file": "independent_printed_chassis_stop_screw.stl",
+      "failures": [],
+      "warnings": [],
+      "sha256": "ed605a32ae6434f4a1aa15ad2fb891dcfa0edcb21af8e4addb5df4eeaf33acc8",
+      "mesh": {
+        "triangles": 10698,
+        "unique_vertices": 5351,
+        "edge_connected_components": 1,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "watertight": true,
+        "consistent_winding": true,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 4017.3091027404275,
+        "positive_volume": true,
+        "bounds_mm": [
+          [
+            9.999999406318238e-08,
+            0.004795670509338379,
+            -2.830017931031218e-32
+          ],
+          [
+            23.70833396911621,
+            23.99520492553711,
+            27.0
+          ]
+        ],
+        "dimensions_mm": [
+          23.708333869116217,
+          23.99040925502777,
+          27.0
+        ],
+        "surface_area_mm2": 2094.91394294522,
+        "method": "Exact-coordinate vertex merge; edge incidence/winding; edge-connected components; signed volume. No healing or self-intersection certification."
+      },
+      "cad_minus_mesh_dimensions_mm": [
+        -3.357828646244343e-07,
+        0.009590944972231341,
+        0.0
+      ],
+      "pose": {
+        "face_on_bed": "Hand face",
+        "rotations": [
+          [
+            "Y",
+            -90
+          ]
+        ],
+        "load_orientation": "Thread axis upright; verify layer-bond strength.",
+        "support": "None expected",
+        "material": "PETG",
+        "unloaded_export": false
+      },
+      "placement": {
+        "pass": true,
+        "rotation_z_deg": 0,
+        "brim_mm": 8.0,
+        "translation_after_rotation_mm": [
+          116.1458329654419,
+          125.99999970197678,
+          2.830017931031218e-32
+        ],
+        "placed_part_bounds_mm": [
+          [
+            116.14583306544189,
+            126.00479537248611,
+            0
+          ],
+          [
+            139.85416693455812,
+            149.99520462751389,
+            27.0
+          ]
+        ],
+        "conservative_brim_bounds_mm": [
+          108.14583306544189,
+          118.00479537248611,
+          147.85416693455812,
+          157.99520462751389
+        ],
+        "method": "Entire XY bounding rectangle plus brim avoids exclusion; exact brim toolpaths remain unreviewed."
+      },
+      "first_layer": {
+        "xy_bounding_footprint_mm2": 568.772632274934,
+        "cad_first_0p20mm_mean_area_mm2": 435.2539554280868,
+        "mean_area_fraction_of_bounding_rectangle": 0.7652512282231139,
+        "source": "Manifest CAD slab-intersection volume / 0.20 mm; not recalculated from STL and not exact Z=0 contact area"
+      },
+      "geometric_preflight_pass": true,
+      "qualified_for_printing": false
+    },
+    {
+      "part": "stop_soft_tip",
+      "file": "stop_soft_tip.stl",
+      "failures": [],
+      "warnings": [],
+      "sha256": "3700036844ed503869416af71486090bf1afb6079de88078f38415cf720f4242",
+      "mesh": {
+        "triangles": 836,
+        "unique_vertices": 420,
+        "edge_connected_components": 1,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "watertight": true,
+        "consistent_winding": true,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 293.7834232727708,
+        "positive_volume": true,
+        "bounds_mm": [
+          [
+            0.0,
+            0.0006713891634717584,
+            3.3306690738754696e-16
+          ],
+          [
+            11.997314453125,
+            11.99932861328125,
+            4.0
+          ]
+        ],
+        "dimensions_mm": [
+          11.997314453125,
+          11.998657224117778,
+          3.9999999999999996
+        ],
+        "surface_area_mm2": 454.10530231990253,
+        "method": "Exact-coordinate vertex merge; edge incidence/winding; edge-connected components; signed volume. No healing or self-intersection certification."
+      },
+      "cad_minus_mesh_dimensions_mm": [
+        0.0026855468750071054,
+        0.0013427758822217584,
+        3.9968028886505635e-15
+      ],
+      "pose": {
+        "face_on_bed": "Closed soft contact face",
+        "rotations": [
+          [
+            "Y",
+            90
+          ]
+        ],
+        "load_orientation": "Low-load contact bumper; socket upward.",
+        "support": "None expected",
+        "material": "TPU or purchased compliant bumper",
+        "unloaded_export": false
+      },
+      "placement": {
+        "pass": true,
+        "rotation_z_deg": 0,
+        "brim_mm": 8.0,
+        "translation_after_rotation_mm": [
+          122.0013427734375,
+          131.99999999877764,
+          -3.3306690738754696e-16
+        ],
+        "placed_part_bounds_mm": [
+          [
+            122.0013427734375,
+            132.0006713879411,
+            0
+          ],
+          [
+            133.9986572265625,
+            143.9993286120589,
+            3.9999999999999996
+          ]
+        ],
+        "conservative_brim_bounds_mm": [
+          114.0013427734375,
+          124.00067138794111,
+          141.9986572265625,
+          151.9993286120589
+        ],
+        "method": "Entire XY bounding rectangle plus brim avoids exclusion; exact brim toolpaths remain unreviewed."
+      },
+      "first_layer": {
+        "xy_bounding_footprint_mm2": 143.9516637330009,
+        "cad_first_0p20mm_mean_area_mm2": 113.09733552923252,
+        "mean_area_fraction_of_bounding_rectangle": 0.7856618853603772,
+        "source": "Manifest CAD slab-intersection volume / 0.20 mm; not recalculated from STL and not exact Z=0 contact area"
+      },
+      "geometric_preflight_pass": true,
+      "qualified_for_printing": false
+    },
+    {
+      "part": "01_bottom_thumb_lock_1",
+      "file": "01_bottom_thumb_lock_1.stl",
+      "failures": [],
+      "warnings": [],
+      "sha256": "eb51f646ff88a41f4b3ed71834f990c1cf2b0bca07edc373150e55caa1e9ceb1",
+      "mesh": {
+        "triangles": 8792,
+        "unique_vertices": 4398,
+        "edge_connected_components": 1,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "watertight": true,
+        "consistent_winding": true,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 1554.623894430685,
+        "positive_volume": true,
+        "bounds_mm": [
+          [
+            1.0000000116860974e-07,
+            0.0037712762132287025,
+            0.0
+          ],
+          [
+            17.622549057006836,
+            17.99622917175293,
+            18.0
+          ]
+        ],
+        "dimensions_mm": [
+          17.622548957006835,
+          17.9924578955397,
+          18.0
+        ],
+        "surface_area_mm2": 1119.5555971234487,
+        "method": "Exact-coordinate vertex merge; edge incidence/winding; edge-connected components; signed volume. No healing or self-intersection certification."
+      },
+      "cad_minus_mesh_dimensions_mm": [
+        2.626010129347378e-07,
+        0.007542304460301352,
+        1.0000000116860974e-07
+      ],
+      "pose": {
+        "face_on_bed": "Hand head",
+        "rotations": [],
+        "load_orientation": "Threads upright; axial strength depends on layer bonding.",
+        "support": "None expected",
+        "material": "PETG",
+        "unloaded_export": false
+      },
+      "placement": {
+        "pass": true,
+        "rotation_z_deg": 0,
+        "brim_mm": 8.0,
+        "translation_after_rotation_mm": [
+          119.18872542149657,
+          128.99999977601692,
+          -0.0
+        ],
+        "placed_part_bounds_mm": [
+          [
+            119.18872552149658,
+            129.00377105223015,
+            0
+          ],
+          [
+            136.8112744785034,
+            146.99622894776985,
+            18.0
+          ]
+        ],
+        "conservative_brim_bounds_mm": [
+          111.18872552149658,
+          121.00377105223015,
+          144.8112744785034,
+          154.99622894776985
+        ],
+        "method": "Entire XY bounding rectangle plus brim avoids exclusion; exact brim toolpaths remain unreviewed."
+      },
+      "first_layer": {
+        "xy_bounding_footprint_mm2": 317.07297012103254,
+        "cad_first_0p20mm_mean_area_mm2": 237.69020266519095,
+        "mean_area_fraction_of_bounding_rectangle": 0.7496388057754032,
+        "source": "Manifest CAD slab-intersection volume / 0.20 mm; not recalculated from STL and not exact Z=0 contact area"
+      },
+      "geometric_preflight_pass": true,
+      "qualified_for_printing": false
+    },
+    {
+      "part": "01_bottom_thumb_lock_2",
+      "file": "01_bottom_thumb_lock_2.stl",
+      "failures": [],
+      "warnings": [],
+      "sha256": "b7829dc90f111a09f21402a1ab3e7862badc07433268d0eaddbfb38c61bd0b01",
+      "mesh": {
+        "triangles": 8792,
+        "unique_vertices": 4398,
+        "edge_connected_components": 1,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "watertight": true,
+        "consistent_winding": true,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 1554.6238944306845,
+        "positive_volume": true,
+        "bounds_mm": [
+          [
+            9.999999406318238e-08,
+            0.0037712762132287025,
+            0.0
+          ],
+          [
+            17.622549057006836,
+            17.99622917175293,
+            18.0
+          ]
+        ],
+        "dimensions_mm": [
+          17.622548957006842,
+          17.9924578955397,
+          18.0
+        ],
+        "surface_area_mm2": 1119.5555971234487,
+        "method": "Exact-coordinate vertex merge; edge incidence/winding; edge-connected components; signed volume. No healing or self-intersection certification."
+      },
+      "cad_minus_mesh_dimensions_mm": [
+        2.6260100582931045e-07,
+        0.007542304460301352,
+        1.0000000116860974e-07
+      ],
+      "pose": {
+        "face_on_bed": "Hand head",
+        "rotations": [],
+        "load_orientation": "Threads upright; axial strength depends on layer bonding.",
+        "support": "None expected",
+        "material": "PETG",
+        "unloaded_export": false
+      },
+      "placement": {
+        "pass": true,
+        "rotation_z_deg": 0,
+        "brim_mm": 8.0,
+        "translation_after_rotation_mm": [
+          119.18872542149658,
+          128.99999977601692,
+          -0.0
+        ],
+        "placed_part_bounds_mm": [
+          [
+            119.18872552149658,
+            129.00377105223015,
+            0
+          ],
+          [
+            136.81127447850344,
+            146.99622894776985,
+            18.0
+          ]
+        ],
+        "conservative_brim_bounds_mm": [
+          111.18872552149658,
+          121.00377105223015,
+          144.81127447850344,
+          154.99622894776985
+        ],
+        "method": "Entire XY bounding rectangle plus brim avoids exclusion; exact brim toolpaths remain unreviewed."
+      },
+      "first_layer": {
+        "xy_bounding_footprint_mm2": 317.07297012103265,
+        "cad_first_0p20mm_mean_area_mm2": 237.69020266519084,
+        "mean_area_fraction_of_bounding_rectangle": 0.7496388057754027,
+        "source": "Manifest CAD slab-intersection volume / 0.20 mm; not recalculated from STL and not exact Z=0 contact area"
+      },
+      "geometric_preflight_pass": true,
+      "qualified_for_printing": false
+    },
+    {
+      "part": "01_bottom_panel",
+      "file": "01_bottom_panel.stl",
+      "failures": [],
+      "warnings": [
+        "Manifest identifies an outstanding bridge/support review"
+      ],
+      "sha256": "0d2324499b7cc3923972afb3f48f52c308b1af41b563d17688d2b8beec136eaf",
+      "mesh": {
+        "triangles": 2284,
+        "unique_vertices": 1140,
+        "edge_connected_components": 1,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "watertight": true,
+        "consistent_winding": true,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 35396.67617121255,
+        "positive_volume": true,
+        "bounds_mm": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            181.24000549316406,
+            91.23348999023438,
+            5.300000190734863
+          ]
+        ],
+        "dimensions_mm": [
+          181.24000549316406,
+          91.23348999023438,
+          5.300000190734863
+        ],
+        "surface_area_mm2": 35992.35964188838,
+        "method": "Exact-coordinate vertex merge; edge incidence/winding; edge-connected components; signed volume. No healing or self-intersection certification."
+      },
+      "cad_minus_mesh_dimensions_mm": [
+        -5.493164053405053e-06,
+        2.368049166534547e-06,
+        -1.9073486345888568e-07
+      ],
+      "pose": {
+        "face_on_bed": "Broad exterior skin",
+        "rotations": [],
+        "load_orientation": "Plate and ribs carry cover handling only; shell feet bypass it.",
+        "support": "Short cable-saddle roof bridge",
+        "material": "PETG",
+        "unloaded_export": false
+      },
+      "placement": {
+        "pass": true,
+        "rotation_z_deg": 0,
+        "brim_mm": 8.0,
+        "translation_after_rotation_mm": [
+          37.37999725341797,
+          92.38325500488281,
+          -0.0
+        ],
+        "placed_part_bounds_mm": [
+          [
+            37.37999725341797,
+            92.38325500488281,
+            0
+          ],
+          [
+            218.62000274658203,
+            183.6167449951172,
+            5.300000190734863
+          ]
+        ],
+        "conservative_brim_bounds_mm": [
+          29.37999725341797,
+          84.38325500488281,
+          226.62000274658203,
+          191.6167449951172
+        ],
+        "method": "Entire XY bounding rectangle plus brim avoids exclusion; exact brim toolpaths remain unreviewed."
+      },
+      "first_layer": {
+        "xy_bounding_footprint_mm2": 16535.158226990607,
+        "cad_first_0p20mm_mean_area_mm2": 15828.577923310731,
+        "mean_area_fraction_of_bounding_rectangle": 0.9572680046976199,
+        "source": "Manifest CAD slab-intersection volume / 0.20 mm; not recalculated from STL and not exact Z=0 contact area"
+      },
+      "geometric_preflight_pass": true,
+      "qualified_for_printing": false
+    },
+    {
+      "part": "02_bottom_thumb_lock_1",
+      "file": "02_bottom_thumb_lock_1.stl",
+      "failures": [],
+      "warnings": [],
+      "sha256": "b7829dc90f111a09f21402a1ab3e7862badc07433268d0eaddbfb38c61bd0b01",
+      "mesh": {
+        "triangles": 8792,
+        "unique_vertices": 4398,
+        "edge_connected_components": 1,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "watertight": true,
+        "consistent_winding": true,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 1554.6238944306845,
+        "positive_volume": true,
+        "bounds_mm": [
+          [
+            9.999999406318238e-08,
+            0.0037712762132287025,
+            0.0
+          ],
+          [
+            17.622549057006836,
+            17.99622917175293,
+            18.0
+          ]
+        ],
+        "dimensions_mm": [
+          17.622548957006842,
+          17.9924578955397,
+          18.0
+        ],
+        "surface_area_mm2": 1119.5555971234487,
+        "method": "Exact-coordinate vertex merge; edge incidence/winding; edge-connected components; signed volume. No healing or self-intersection certification."
+      },
+      "cad_minus_mesh_dimensions_mm": [
+        2.6260100582931045e-07,
+        0.007542304460301352,
+        1.0000000116860974e-07
+      ],
+      "pose": {
+        "face_on_bed": "Hand head",
+        "rotations": [],
+        "load_orientation": "Threads upright; axial strength depends on layer bonding.",
+        "support": "None expected",
+        "material": "PETG",
+        "unloaded_export": false
+      },
+      "placement": {
+        "pass": true,
+        "rotation_z_deg": 0,
+        "brim_mm": 8.0,
+        "translation_after_rotation_mm": [
+          119.18872542149658,
+          128.99999977601692,
+          -0.0
+        ],
+        "placed_part_bounds_mm": [
+          [
+            119.18872552149658,
+            129.00377105223015,
+            0
+          ],
+          [
+            136.81127447850344,
+            146.99622894776985,
+            18.0
+          ]
+        ],
+        "conservative_brim_bounds_mm": [
+          111.18872552149658,
+          121.00377105223015,
+          144.81127447850344,
+          154.99622894776985
+        ],
+        "method": "Entire XY bounding rectangle plus brim avoids exclusion; exact brim toolpaths remain unreviewed."
+      },
+      "first_layer": {
+        "xy_bounding_footprint_mm2": 317.07297012103265,
+        "cad_first_0p20mm_mean_area_mm2": 237.69020266519084,
+        "mean_area_fraction_of_bounding_rectangle": 0.7496388057754027,
+        "source": "Manifest CAD slab-intersection volume / 0.20 mm; not recalculated from STL and not exact Z=0 contact area"
+      },
+      "geometric_preflight_pass": true,
+      "qualified_for_printing": false
+    },
+    {
+      "part": "02_bottom_thumb_lock_2",
+      "file": "02_bottom_thumb_lock_2.stl",
+      "failures": [],
+      "warnings": [],
+      "sha256": "9b28d59741783a540fed19a3bd0c777666a23783d6fbef7933c59398dbe672f6",
+      "mesh": {
+        "triangles": 8792,
+        "unique_vertices": 4398,
+        "edge_connected_components": 1,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "watertight": true,
+        "consistent_winding": true,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 1554.6238944306845,
+        "positive_volume": true,
+        "bounds_mm": [
+          [
+            1.0000002248489182e-07,
+            0.0037712762132287025,
+            0.0
+          ],
+          [
+            17.622549057006836,
+            17.99622917175293,
+            18.0
+          ]
+        ],
+        "dimensions_mm": [
+          17.622548957006813,
+          17.9924578955397,
+          18.0
+        ],
+        "surface_area_mm2": 1119.5555971234485,
+        "method": "Exact-coordinate vertex merge; edge incidence/winding; edge-connected components; signed volume. No healing or self-intersection certification."
+      },
+      "cad_minus_mesh_dimensions_mm": [
+        2.626010342510199e-07,
+        0.007542304460301352,
+        1.0000000116860974e-07
+      ],
+      "pose": {
+        "face_on_bed": "Hand head",
+        "rotations": [],
+        "load_orientation": "Threads upright; axial strength depends on layer bonding.",
+        "support": "None expected",
+        "material": "PETG",
+        "unloaded_export": false
+      },
+      "placement": {
+        "pass": true,
+        "rotation_z_deg": 0,
+        "brim_mm": 8.0,
+        "translation_after_rotation_mm": [
+          119.18872542149657,
+          128.99999977601692,
+          -0.0
+        ],
+        "placed_part_bounds_mm": [
+          [
+            119.1887255214966,
+            129.00377105223015,
+            0
+          ],
+          [
+            136.8112744785034,
+            146.99622894776985,
+            18.0
+          ]
+        ],
+        "conservative_brim_bounds_mm": [
+          111.1887255214966,
+          121.00377105223015,
+          144.8112744785034,
+          154.99622894776985
+        ],
+        "method": "Entire XY bounding rectangle plus brim avoids exclusion; exact brim toolpaths remain unreviewed."
+      },
+      "first_layer": {
+        "xy_bounding_footprint_mm2": 317.07297012103214,
+        "cad_first_0p20mm_mean_area_mm2": 237.690202665191,
+        "mean_area_fraction_of_bounding_rectangle": 0.7496388057754044,
+        "source": "Manifest CAD slab-intersection volume / 0.20 mm; not recalculated from STL and not exact Z=0 contact area"
+      },
+      "geometric_preflight_pass": true,
+      "qualified_for_printing": false
+    },
+    {
+      "part": "02_bottom_panel",
+      "file": "02_bottom_panel.stl",
+      "failures": [],
+      "warnings": [
+        "Manifest identifies an outstanding bridge/support review"
+      ],
+      "sha256": "6129d50bf1e723817abc89e8d2c4c2fbe6b5c63229985090c912bcb905c9ecf6",
+      "mesh": {
+        "triangles": 2284,
+        "unique_vertices": 1140,
+        "edge_connected_components": 1,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "watertight": true,
+        "consistent_winding": true,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 38813.25004246155,
+        "positive_volume": true,
+        "bounds_mm": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            198.94000244140625,
+            91.23348999023438,
+            5.300000190734863
+          ]
+        ],
+        "dimensions_mm": [
+          198.94000244140625,
+          91.23348999023438,
+          5.300000190734863
+        ],
+        "surface_area_mm2": 39448.58350437488,
+        "method": "Exact-coordinate vertex merge; edge incidence/winding; edge-connected components; signed volume. No healing or self-intersection certification."
+      },
+      "cad_minus_mesh_dimensions_mm": [
+        -2.4414062522737368e-06,
+        2.368049166534547e-06,
+        -1.9073486345888568e-07
+      ],
+      "pose": {
+        "face_on_bed": "Broad exterior skin",
+        "rotations": [],
+        "load_orientation": "Plate and ribs carry cover handling only; shell feet bypass it.",
+        "support": "Short cable-saddle roof bridge",
+        "material": "PETG",
+        "unloaded_export": false
+      },
+      "placement": {
+        "pass": true,
+        "rotation_z_deg": 0,
+        "brim_mm": 8.0,
+        "translation_after_rotation_mm": [
+          28.529998779296875,
+          92.38325500488281,
+          -0.0
+        ],
+        "placed_part_bounds_mm": [
+          [
+            28.529998779296875,
+            92.38325500488281,
+            0
+          ],
+          [
+            227.47000122070312,
+            183.6167449951172,
+            5.300000190734863
+          ]
+        ],
+        "conservative_brim_bounds_mm": [
+          20.529998779296875,
+          84.38325500488281,
+          235.47000122070312,
+          191.6167449951172
+        ],
+        "method": "Entire XY bounding rectangle plus brim avoids exclusion; exact brim toolpaths remain unreviewed."
+      },
+      "first_layer": {
+        "xy_bounding_footprint_mm2": 18149.99072139524,
+        "cad_first_0p20mm_mean_area_mm2": 17443.41073805235,
+        "mean_area_fraction_of_bounding_rectangle": 0.9610699534678013,
+        "source": "Manifest CAD slab-intersection volume / 0.20 mm; not recalculated from STL and not exact Z=0 contact area"
+      },
+      "geometric_preflight_pass": true,
+      "qualified_for_printing": false
+    },
+    {
+      "part": "01_bridge_thumb_lock_1",
+      "file": "01_bridge_thumb_lock_1.stl",
+      "failures": [],
+      "warnings": [],
+      "sha256": "c3c134ef4d270d07577913482da174c645d7cab8691b317960d7ac0b79fd663e",
+      "mesh": {
+        "triangles": 8620,
+        "unique_vertices": 4312,
+        "edge_connected_components": 1,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "watertight": true,
+        "consistent_winding": true,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 1792.2397373824813,
+        "positive_volume": true,
+        "bounds_mm": [
+          [
+            9.999999406318238e-08,
+            0.0037712762132287025,
+            -2.203440592284762e-15
+          ],
+          [
+            17.622549057006836,
+            17.99622917175293,
+            19.0
+          ]
+        ],
+        "dimensions_mm": [
+          17.622548957006842,
+          17.9924578955397,
+          19.000000000000004
+        ],
+        "surface_area_mm2": 1179.3991127053948,
+        "method": "Exact-coordinate vertex merge; edge incidence/winding; edge-connected components; signed volume. No healing or self-intersection certification."
+      },
+      "cad_minus_mesh_dimensions_mm": [
+        2.6260100582931045e-07,
+        0.007542304460301352,
+        1.0000000116860974e-07
+      ],
+      "pose": {
+        "face_on_bed": "Hand head",
+        "rotations": [
+          [
+            "X",
+            180
+          ]
+        ],
+        "load_orientation": "Threads upright; axial strength depends on layer bonding.",
+        "support": "None expected",
+        "material": "PETG",
+        "unloaded_export": false
+      },
+      "placement": {
+        "pass": true,
+        "rotation_z_deg": 0,
+        "brim_mm": 8.0,
+        "translation_after_rotation_mm": [
+          119.18872542149658,
+          128.99999977601692,
+          2.203440592284762e-15
+        ],
+        "placed_part_bounds_mm": [
+          [
+            119.18872552149658,
+            129.00377105223015,
+            0
+          ],
+          [
+            136.81127447850344,
+            146.99622894776985,
+            19.000000000000004
+          ]
+        ],
+        "conservative_brim_bounds_mm": [
+          111.18872552149658,
+          121.00377105223015,
+          144.81127447850344,
+          154.99622894776985
+        ],
+        "method": "Entire XY bounding rectangle plus brim avoids exclusion; exact brim toolpaths remain unreviewed."
+      },
+      "first_layer": {
+        "xy_bounding_footprint_mm2": 317.07297012103265,
+        "cad_first_0p20mm_mean_area_mm2": 237.690202665189,
+        "mean_area_fraction_of_bounding_rectangle": 0.7496388057753968,
+        "source": "Manifest CAD slab-intersection volume / 0.20 mm; not recalculated from STL and not exact Z=0 contact area"
+      },
+      "geometric_preflight_pass": true,
+      "qualified_for_printing": false
+    },
+    {
+      "part": "02_bridge_thumb_lock_1",
+      "file": "02_bridge_thumb_lock_1.stl",
+      "failures": [],
+      "warnings": [],
+      "sha256": "c3c134ef4d270d07577913482da174c645d7cab8691b317960d7ac0b79fd663e",
+      "mesh": {
+        "triangles": 8620,
+        "unique_vertices": 4312,
+        "edge_connected_components": 1,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "watertight": true,
+        "consistent_winding": true,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 1792.2397373824813,
+        "positive_volume": true,
+        "bounds_mm": [
+          [
+            9.999999406318238e-08,
+            0.0037712762132287025,
+            -2.203440592284762e-15
+          ],
+          [
+            17.622549057006836,
+            17.99622917175293,
+            19.0
+          ]
+        ],
+        "dimensions_mm": [
+          17.622548957006842,
+          17.9924578955397,
+          19.000000000000004
+        ],
+        "surface_area_mm2": 1179.3991127053948,
+        "method": "Exact-coordinate vertex merge; edge incidence/winding; edge-connected components; signed volume. No healing or self-intersection certification."
+      },
+      "cad_minus_mesh_dimensions_mm": [
+        2.6260100582931045e-07,
+        0.007542304460301352,
+        1.0000000116860974e-07
+      ],
+      "pose": {
+        "face_on_bed": "Hand head",
+        "rotations": [
+          [
+            "X",
+            180
+          ]
+        ],
+        "load_orientation": "Threads upright; axial strength depends on layer bonding.",
+        "support": "None expected",
+        "material": "PETG",
+        "unloaded_export": false
+      },
+      "placement": {
+        "pass": true,
+        "rotation_z_deg": 0,
+        "brim_mm": 8.0,
+        "translation_after_rotation_mm": [
+          119.18872542149658,
+          128.99999977601692,
+          2.203440592284762e-15
+        ],
+        "placed_part_bounds_mm": [
+          [
+            119.18872552149658,
+            129.00377105223015,
+            0
+          ],
+          [
+            136.81127447850344,
+            146.99622894776985,
+            19.000000000000004
+          ]
+        ],
+        "conservative_brim_bounds_mm": [
+          111.18872552149658,
+          121.00377105223015,
+          144.81127447850344,
+          154.99622894776985
+        ],
+        "method": "Entire XY bounding rectangle plus brim avoids exclusion; exact brim toolpaths remain unreviewed."
+      },
+      "first_layer": {
+        "xy_bounding_footprint_mm2": 317.07297012103265,
+        "cad_first_0p20mm_mean_area_mm2": 237.690202665189,
+        "mean_area_fraction_of_bounding_rectangle": 0.7496388057753968,
+        "source": "Manifest CAD slab-intersection volume / 0.20 mm; not recalculated from STL and not exact Z=0 contact area"
+      },
+      "geometric_preflight_pass": true,
+      "qualified_for_printing": false
+    },
+    {
+      "part": "bridge_key_1",
+      "file": "bridge_key_1.stl",
+      "failures": [],
+      "warnings": [],
+      "sha256": "9644d7bbc60073a21aaa1f0d412086c62e2c85ffe0392ee7cff058df655da4f9",
+      "mesh": {
+        "triangles": 1292,
+        "unique_vertices": 644,
+        "edge_connected_components": 1,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "watertight": true,
+        "consistent_winding": true,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 2357.6028024292264,
+        "positive_volume": true,
+        "bounds_mm": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            40.0,
+            18.0,
+            4.0
+          ]
+        ],
+        "dimensions_mm": [
+          40.0,
+          18.0,
+          4.0
+        ],
+        "surface_area_mm2": 1855.2207216021607,
+        "method": "Exact-coordinate vertex merge; edge incidence/winding; edge-connected components; signed volume. No healing or self-intersection certification."
+      },
+      "cad_minus_mesh_dimensions_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "pose": {
+        "face_on_bed": "Broad underside",
+        "rotations": [],
+        "load_orientation": "Plate load path lies in bed plane.",
+        "support": "None expected",
+        "material": "PETG",
+        "unloaded_export": false
+      },
+      "placement": {
+        "pass": true,
+        "rotation_z_deg": 0,
+        "brim_mm": 8.0,
+        "translation_after_rotation_mm": [
+          108.0,
+          129.0,
+          -0.0
+        ],
+        "placed_part_bounds_mm": [
+          [
+            108.0,
+            129.0,
+            0
+          ],
+          [
+            148.0,
+            147.0,
+            4.0
+          ]
+        ],
+        "conservative_brim_bounds_mm": [
+          100.0,
+          121.0,
+          156.0,
+          155.0
+        ],
+        "method": "Entire XY bounding rectangle plus brim avoids exclusion; exact brim toolpaths remain unreviewed."
+      },
+      "first_layer": {
+        "xy_bounding_footprint_mm2": 720.0,
+        "cad_first_0p20mm_mean_area_mm2": 589.3318681439725,
+        "mean_area_fraction_of_bounding_rectangle": 0.8185164835332952,
+        "source": "Manifest CAD slab-intersection volume / 0.20 mm; not recalculated from STL and not exact Z=0 contact area"
+      },
+      "geometric_preflight_pass": true,
+      "qualified_for_printing": false
+    },
+    {
+      "part": "01_bridge_thumb_lock_2",
+      "file": "01_bridge_thumb_lock_2.stl",
+      "failures": [],
+      "warnings": [],
+      "sha256": "c2c8ac57d2a08262058a24d7669658a1c38f8cdc3121777baf4cfc77ac4d9a89",
+      "mesh": {
+        "triangles": 8620,
+        "unique_vertices": 4312,
+        "edge_connected_components": 1,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "watertight": true,
+        "consistent_winding": true,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 1792.2397373824817,
+        "positive_volume": true,
+        "bounds_mm": [
+          [
+            9.999999406318238e-08,
+            0.0037712762132287025,
+            -2.203440592284762e-15
+          ],
+          [
+            17.622549057006836,
+            17.99622917175293,
+            19.0
+          ]
+        ],
+        "dimensions_mm": [
+          17.622548957006842,
+          17.9924578955397,
+          19.000000000000004
+        ],
+        "surface_area_mm2": 1179.3991127053946,
+        "method": "Exact-coordinate vertex merge; edge incidence/winding; edge-connected components; signed volume. No healing or self-intersection certification."
+      },
+      "cad_minus_mesh_dimensions_mm": [
+        2.6260100582931045e-07,
+        0.007542304460301352,
+        1.0000000116860974e-07
+      ],
+      "pose": {
+        "face_on_bed": "Hand head",
+        "rotations": [
+          [
+            "X",
+            180
+          ]
+        ],
+        "load_orientation": "Threads upright; axial strength depends on layer bonding.",
+        "support": "None expected",
+        "material": "PETG",
+        "unloaded_export": false
+      },
+      "placement": {
+        "pass": true,
+        "rotation_z_deg": 0,
+        "brim_mm": 8.0,
+        "translation_after_rotation_mm": [
+          119.18872542149658,
+          128.99999977601692,
+          2.203440592284762e-15
+        ],
+        "placed_part_bounds_mm": [
+          [
+            119.18872552149658,
+            129.00377105223015,
+            0
+          ],
+          [
+            136.81127447850344,
+            146.99622894776985,
+            19.000000000000004
+          ]
+        ],
+        "conservative_brim_bounds_mm": [
+          111.18872552149658,
+          121.00377105223015,
+          144.81127447850344,
+          154.99622894776985
+        ],
+        "method": "Entire XY bounding rectangle plus brim avoids exclusion; exact brim toolpaths remain unreviewed."
+      },
+      "first_layer": {
+        "xy_bounding_footprint_mm2": 317.07297012103265,
+        "cad_first_0p20mm_mean_area_mm2": 237.69020266519084,
+        "mean_area_fraction_of_bounding_rectangle": 0.7496388057754027,
+        "source": "Manifest CAD slab-intersection volume / 0.20 mm; not recalculated from STL and not exact Z=0 contact area"
+      },
+      "geometric_preflight_pass": true,
+      "qualified_for_printing": false
+    },
+    {
+      "part": "02_bridge_thumb_lock_2",
+      "file": "02_bridge_thumb_lock_2.stl",
+      "failures": [],
+      "warnings": [],
+      "sha256": "c2c8ac57d2a08262058a24d7669658a1c38f8cdc3121777baf4cfc77ac4d9a89",
+      "mesh": {
+        "triangles": 8620,
+        "unique_vertices": 4312,
+        "edge_connected_components": 1,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "watertight": true,
+        "consistent_winding": true,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 1792.2397373824817,
+        "positive_volume": true,
+        "bounds_mm": [
+          [
+            9.999999406318238e-08,
+            0.0037712762132287025,
+            -2.203440592284762e-15
+          ],
+          [
+            17.622549057006836,
+            17.99622917175293,
+            19.0
+          ]
+        ],
+        "dimensions_mm": [
+          17.622548957006842,
+          17.9924578955397,
+          19.000000000000004
+        ],
+        "surface_area_mm2": 1179.3991127053946,
+        "method": "Exact-coordinate vertex merge; edge incidence/winding; edge-connected components; signed volume. No healing or self-intersection certification."
+      },
+      "cad_minus_mesh_dimensions_mm": [
+        2.6260100582931045e-07,
+        0.007542304460301352,
+        1.0000000116860974e-07
+      ],
+      "pose": {
+        "face_on_bed": "Hand head",
+        "rotations": [
+          [
+            "X",
+            180
+          ]
+        ],
+        "load_orientation": "Threads upright; axial strength depends on layer bonding.",
+        "support": "None expected",
+        "material": "PETG",
+        "unloaded_export": false
+      },
+      "placement": {
+        "pass": true,
+        "rotation_z_deg": 0,
+        "brim_mm": 8.0,
+        "translation_after_rotation_mm": [
+          119.18872542149658,
+          128.99999977601692,
+          2.203440592284762e-15
+        ],
+        "placed_part_bounds_mm": [
+          [
+            119.18872552149658,
+            129.00377105223015,
+            0
+          ],
+          [
+            136.81127447850344,
+            146.99622894776985,
+            19.000000000000004
+          ]
+        ],
+        "conservative_brim_bounds_mm": [
+          111.18872552149658,
+          121.00377105223015,
+          144.81127447850344,
+          154.99622894776985
+        ],
+        "method": "Entire XY bounding rectangle plus brim avoids exclusion; exact brim toolpaths remain unreviewed."
+      },
+      "first_layer": {
+        "xy_bounding_footprint_mm2": 317.07297012103265,
+        "cad_first_0p20mm_mean_area_mm2": 237.69020266519084,
+        "mean_area_fraction_of_bounding_rectangle": 0.7496388057754027,
+        "source": "Manifest CAD slab-intersection volume / 0.20 mm; not recalculated from STL and not exact Z=0 contact area"
+      },
+      "geometric_preflight_pass": true,
+      "qualified_for_printing": false
+    },
+    {
+      "part": "bridge_key_2",
+      "file": "bridge_key_2.stl",
+      "failures": [],
+      "warnings": [],
+      "sha256": "9644d7bbc60073a21aaa1f0d412086c62e2c85ffe0392ee7cff058df655da4f9",
+      "mesh": {
+        "triangles": 1292,
+        "unique_vertices": 644,
+        "edge_connected_components": 1,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "watertight": true,
+        "consistent_winding": true,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 2357.6028024292264,
+        "positive_volume": true,
+        "bounds_mm": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            40.0,
+            18.0,
+            4.0
+          ]
+        ],
+        "dimensions_mm": [
+          40.0,
+          18.0,
+          4.0
+        ],
+        "surface_area_mm2": 1855.2207216021607,
+        "method": "Exact-coordinate vertex merge; edge incidence/winding; edge-connected components; signed volume. No healing or self-intersection certification."
+      },
+      "cad_minus_mesh_dimensions_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "pose": {
+        "face_on_bed": "Broad underside",
+        "rotations": [],
+        "load_orientation": "Plate load path lies in bed plane.",
+        "support": "None expected",
+        "material": "PETG",
+        "unloaded_export": false
+      },
+      "placement": {
+        "pass": true,
+        "rotation_z_deg": 0,
+        "brim_mm": 8.0,
+        "translation_after_rotation_mm": [
+          108.0,
+          129.0,
+          -0.0
+        ],
+        "placed_part_bounds_mm": [
+          [
+            108.0,
+            129.0,
+            0
+          ],
+          [
+            148.0,
+            147.0,
+            4.0
+          ]
+        ],
+        "conservative_brim_bounds_mm": [
+          100.0,
+          121.0,
+          156.0,
+          155.0
+        ],
+        "method": "Entire XY bounding rectangle plus brim avoids exclusion; exact brim toolpaths remain unreviewed."
+      },
+      "first_layer": {
+        "xy_bounding_footprint_mm2": 720.0,
+        "cad_first_0p20mm_mean_area_mm2": 589.3318681439725,
+        "mean_area_fraction_of_bounding_rectangle": 0.8185164835332952,
+        "source": "Manifest CAD slab-intersection volume / 0.20 mm; not recalculated from STL and not exact Z=0 contact area"
+      },
+      "geometric_preflight_pass": true,
+      "qualified_for_printing": false
+    },
+    {
+      "part": "01_manifold_with_cradle",
+      "file": "01_manifold_with_cradle.stl",
+      "failures": [],
+      "warnings": [
+        "Manifest identifies an outstanding bridge/support review"
+      ],
+      "sha256": "ec7e3c22005b589269454e35ad7eabb8ba26e5c394e9370d44a9a0813f8881a2",
+      "mesh": {
+        "triangles": 55928,
+        "unique_vertices": 27934,
+        "edge_connected_components": 1,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "watertight": true,
+        "consistent_winding": true,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 259819.8212724688,
+        "positive_volume": true,
+        "bounds_mm": [
+          [
+            0.0,
+            0.0006376234814524651,
+            4.440892098500626e-16
+          ],
+          [
+            192.83999633789062,
+            135.0220947265625,
+            145.46690368652344
+          ]
+        ],
+        "dimensions_mm": [
+          192.83999633789062,
+          135.02145710308105,
+          145.46690368652344
+        ],
+        "surface_area_mm2": 171864.47619468562,
+        "method": "Exact-coordinate vertex merge; edge incidence/winding; edge-connected components; signed volume. No healing or self-intersection certification."
+      },
+      "cad_minus_mesh_dimensions_mm": [
+        3.662109378410605e-06,
+        0.0006410993097176743,
+        -3.736572892876211e-06
+      ],
+      "pose": {
+        "face_on_bed": "Flat shell lower perimeter and corner feet",
+        "rotations": [],
+        "load_orientation": "Vertical perimeter walls carry gravity; upright roof ribs provide short bridge landings. Local fan-pocket supports remain accessible.",
+        "support": "Accessible local support/bridge review",
+        "material": "PETG",
+        "unloaded_export": false
+      },
+      "placement": {
+        "pass": true,
+        "rotation_z_deg": 0,
+        "brim_mm": 8.0,
+        "translation_after_rotation_mm": [
+          31.580001831054688,
+          70.48863382497802,
+          -4.440892098500626e-16
+        ],
+        "placed_part_bounds_mm": [
+          [
+            31.580001831054688,
+            70.48927144845948,
+            0
+          ],
+          [
+            224.4199981689453,
+            205.51072855154052,
+            145.46690368652344
+          ]
+        ],
+        "conservative_brim_bounds_mm": [
+          23.580001831054688,
+          62.489271448459476,
+          232.4199981689453,
+          213.51072855154052
+        ],
+        "method": "Entire XY bounding rectangle plus brim avoids exclusion; exact brim toolpaths remain unreviewed."
+      },
+      "first_layer": {
+        "xy_bounding_footprint_mm2": 26037.537293294805,
+        "cad_first_0p20mm_mean_area_mm2": 1654.8391339341197,
+        "mean_area_fraction_of_bounding_rectangle": 0.06355590067115427,
+        "source": "Manifest CAD slab-intersection volume / 0.20 mm; not recalculated from STL and not exact Z=0 contact area"
+      },
+      "geometric_preflight_pass": true,
+      "qualified_for_printing": false
+    },
+    {
+      "part": "02_manifold_with_cradle",
+      "file": "02_manifold_with_cradle.stl",
+      "failures": [
+        "Mesh does not contain exactly one edge-connected component"
+      ],
+      "warnings": [
+        "Manifest identifies an outstanding bridge/support review"
+      ],
+      "sha256": "6eada45844f4724fd43ee071c091a20d410bf21e57458f3f2cf581f4293828bb",
+      "mesh": {
+        "triangles": 55860,
+        "unique_vertices": 27912,
+        "edge_connected_components": 2,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "watertight": true,
+        "consistent_winding": true,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 256980.65930625494,
+        "positive_volume": true,
+        "bounds_mm": [
+          [
+            0.0,
+            0.0006376234814524651,
+            4.440892098500626e-16
+          ],
+          [
+            201.5399932861328,
+            135.0220947265625,
+            145.46690368652344
+          ]
+        ],
+        "dimensions_mm": [
+          201.5399932861328,
+          135.02145710308105,
+          145.46690368652344
+        ],
+        "surface_area_mm2": 184741.2776943877,
+        "method": "Exact-coordinate vertex merge; edge incidence/winding; edge-connected components; signed volume. No healing or self-intersection certification."
+      },
+      "cad_minus_mesh_dimensions_mm": [
+        6.71386723638534e-06,
+        0.000641099309746096,
+        -3.736572892876211e-06
+      ],
+      "pose": {
+        "face_on_bed": "Flat shell lower perimeter and corner feet",
+        "rotations": [],
+        "load_orientation": "Vertical perimeter walls carry gravity; upright roof ribs provide short bridge landings. Local fan-pocket supports remain accessible.",
+        "support": "Accessible local support/bridge review",
+        "material": "PETG",
+        "unloaded_export": false
+      },
+      "placement": {
+        "pass": true,
+        "rotation_z_deg": 0,
+        "brim_mm": 8.0,
+        "translation_after_rotation_mm": [
+          27.230003356933594,
+          70.48863382497802,
+          -4.440892098500626e-16
+        ],
+        "placed_part_bounds_mm": [
+          [
+            27.230003356933594,
+            70.48927144845948,
+            0
+          ],
+          [
+            228.7699966430664,
+            205.51072855154052,
+            145.46690368652344
+          ]
+        ],
+        "conservative_brim_bounds_mm": [
+          19.230003356933594,
+          62.489271448459476,
+          236.7699966430664,
+          213.51072855154052
+        ],
+        "method": "Entire XY bounding rectangle plus brim avoids exclusion; exact brim toolpaths remain unreviewed."
+      },
+      "first_layer": {
+        "xy_bounding_footprint_mm2": 27212.223558038822,
+        "cad_first_0p20mm_mean_area_mm2": 1739.7991339341245,
+        "mean_area_fraction_of_bounding_rectangle": 0.0639344715886022,
+        "source": "Manifest CAD slab-intersection volume / 0.20 mm; not recalculated from STL and not exact Z=0 contact area"
+      },
+      "geometric_preflight_pass": false,
+      "qualified_for_printing": false
+    }
+  ],
+  "failures": [],
+  "part_count": 43,
+  "failed_parts": [
+    "02_manifold_with_cradle"
+  ],
+  "geometric_preflight_pass": false,
+  "qualified_for_printing": false
+}

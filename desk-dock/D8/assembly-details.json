@@ -1,0 +1,440 @@
+{
+  "cassette": {
+    "threads": "Custom printed8x2 calibration lock and10x2 chassis stop; real matched trapezoids, not ISO",
+    "fasteners": "Three8mm live adjustment locks, two8mm module locks,6.5mm cap pin and existing printed hinge hardware",
+    "cap_release_direction": "Pull6.5mm pin toward -Y then lift cap; no front clip",
+    "height_adjustment": "Loosen two Z locks; slide saddle continuously -4..+5 mm; tighten. No replacement shim.",
+    "depth_adjustment": "Plug X is fixed by front/rear saddle shoulders; independent chassis stop adjusts along X.",
+    "lateral_adjustment": "Loosen Y lock beneath cradle; slide continuously -3..+3 mm; tighten.",
+    "axis_frame": "Y and Z follow laptop thickness/height and rotate together through the5degree lean. X remains insertion axis.",
+    "module_mount": {
+      "fixed_shell_part": "connector_shell_shoe",
+      "removable_body": "connector_module_body",
+      "seat_plane_laptop_y_mm": 50,
+      "locks": "Two accessible printed 8x2 screws, axes -Y, 9.5 mm nominal engagement",
+      "positive_keys": [
+        {
+          "center_xz_mm": [
+            -10,
+            65.97946980036795
+          ],
+          "size_xyz_mm": [
+            8,
+            4,
+            10
+          ]
+        },
+        {
+          "center_xz_mm": [
+            -10,
+            88.97946980036795
+          ],
+          "size_xyz_mm": [
+            8,
+            4,
+            10
+          ]
+        }
+      ],
+      "key_clearance_per_face_mm": 0.15,
+      "main_body_print_face": "Y=50 on bed; X and Z load directions in bed plane. Internal45degreehaunches leave8mm roof bridge.",
+      "removal": "Unload laptop; remove two locks; pull module -Y at least 4.3 mm, then withdraw outboard along -X. Cable remains installed in module.",
+      "qualification": "Nominal keys and broad clamp seat only; printed repeatability, extraction restraint and <=0.20 mm whole-holder movement require measurement."
+    },
+    "stop_adjustment_x_mm": 0.0,
+    "stop_adjustment_range_mm": [
+      -4,
+      4
+    ],
+    "overmold_grip_squeeze_mm": 0.3,
+    "extraction_retention": "Overmold friction requires physical pull testing; squeeze is provisional",
+    "moving_top_positive_y_limit_mm": 8.5,
+    "soft_stop": "Removable flexible printed bumper,8.2mm socket over8mm stem; fit test required",
+    "material_target": "PETG,0.4mm nozzle,P1S; pin/thread/grip coupons required",
+    "rear_cable": {
+      "source_stub_diameter_mm": 6.5,
+      "provisional_continuation_diameter_mm": 6.5,
+      "clearance_check_diameter_mm": 8.0,
+      "trough_diameter_mm": 8.5,
+      "fixed_carrier_window_width_mm": 14.5,
+      "fixed_carrier_window_lowest_relative_to_nominal_port_mm": -8.25,
+      "window_basis": "Full Y/Z adjustment envelope; moving cradle retains the 8.5 mm rounded cable trough. Inspect real cable contact at the fixed window edge.",
+      "exit_axis": [
+        -1,
+        0,
+        0
+      ],
+      "lay_in_direction": [
+        0,
+        0,
+        -1
+      ],
+      "rear_wall_outer_x_mm": -47,
+      "free_straight_after_wall_mm": 30,
+      "illustrative_bend_radius_mm": 30,
+      "qualification": "Continuation diameter and bend radius are assumptions, not measured Dell cable properties. Reserve a loose exterior loop; no fixed clamp or rigid elbow near the moving outlet."
+    }
+  },
+  "body_service": [
+    {
+      "module": 1,
+      "cover_skin_mm": 2.0,
+      "flat_print_perimeter_bottom_z_mm": -2,
+      "perimeter_rib_mm": 2.4,
+      "rib_height_mm": 2.2,
+      "panel_clearance_per_side_mm": 0.35,
+      "panel_removal_direction": [
+        0,
+        0,
+        -1
+      ],
+      "fastener": {
+        "family": "D8 custom trapezoidal matched pair with relieved female root; not ISO metric",
+        "major_diameter_mm": 8.0,
+        "pitch_mm": 2.0,
+        "core_diameter_mm": 6.7,
+        "crest_width_mm": 0.45,
+        "default_radial_clearance_mm": 0.25,
+        "default_axial_clearance_per_flank_mm": 0.15,
+        "female_minimum_helix_root_gap_mm": 0.02,
+        "female_core_boolean_overlap_mm": 0.01,
+        "female_standard_total_minor_radius_relief_mm": 0.045,
+        "partial_thread_runout_before_thread_mm": 0.8,
+        "partial_thread_runout_overlap_mm": 0.2,
+        "minimum_recommended_engagement_mm": 6.0,
+        "print_orientation": "Screw knob flat on bed, shaft upright; nut axis upright",
+        "qualification": "PETG fit and hand torque coupon required; no strength certification"
+      },
+      "bottom_screw_under_head_length_mm": 14,
+      "nominal_thread_engagement_mm": 11.7,
+      "feet": [
+        [
+          -1,
+          -18,
+          -5
+        ],
+        [
+          -1,
+          66.43349235828353,
+          -5
+        ],
+        [
+          170.84,
+          -18,
+          -5
+        ],
+        [
+          170.84,
+          66.43349235828353,
+          -5
+        ]
+      ],
+      "load_path": "Laptop seat to shell walls to integral corner stems to desk pads; covers are bypassed.",
+      "minimum_lock_head_desk_clearance_mm": 1.5,
+      "sealing": "No required gasket. Perimeter tongue limits gross bypass; optional tape only if testing warrants it.",
+      "cable_routing": {
+        "exit_side": "far outer end",
+        "exit_center_mm": [
+          -7,
+          34.0,
+          5.0
+        ],
+        "nominal_bundle_envelope_mm": [
+          6.0,
+          4.0
+        ],
+        "rounded_tunnel_envelope_mm": [
+          7.0,
+          5.0
+        ],
+        "tunnel_corner_radius_mm": 0.6,
+        "cover_edge_saddle_clearance_mm": 0.3,
+        "cover_release_direction": [
+          0,
+          0,
+          -1
+        ],
+        "zip_tie_nominal_width_mm": 2.5,
+        "zip_tie_slot_mm": [
+          3.2,
+          1.8
+        ],
+        "zip_tie_lug_centers_mm": [
+          [
+            -1,
+            34.0,
+            14.0
+          ],
+          [
+            -1,
+            50.0,
+            29.0
+          ]
+        ],
+        "service": "Lay the cable into the open cover-edge groove, then close the panel. The tunnel captures with clearance; it must not crush insulation. Keep ties and wiring on the shell when removing the panel.",
+        "qualification": "Actual fan lead, plug connector, bend radius and tie head are not modeled. Fit the intended fan and cable before fixing a route."
+      }
+    },
+    {
+      "module": 2,
+      "cover_skin_mm": 2.0,
+      "flat_print_perimeter_bottom_z_mm": -2,
+      "perimeter_rib_mm": 2.4,
+      "rib_height_mm": 2.2,
+      "panel_clearance_per_side_mm": 0.35,
+      "panel_removal_direction": [
+        0,
+        0,
+        -1
+      ],
+      "fastener": {
+        "family": "D8 custom trapezoidal matched pair with relieved female root; not ISO metric",
+        "major_diameter_mm": 8.0,
+        "pitch_mm": 2.0,
+        "core_diameter_mm": 6.7,
+        "crest_width_mm": 0.45,
+        "default_radial_clearance_mm": 0.25,
+        "default_axial_clearance_per_flank_mm": 0.15,
+        "female_minimum_helix_root_gap_mm": 0.02,
+        "female_core_boolean_overlap_mm": 0.01,
+        "female_standard_total_minor_radius_relief_mm": 0.045,
+        "partial_thread_runout_before_thread_mm": 0.8,
+        "partial_thread_runout_overlap_mm": 0.2,
+        "minimum_recommended_engagement_mm": 6.0,
+        "print_orientation": "Screw knob flat on bed, shaft upright; nut axis upright",
+        "qualification": "PETG fit and hand torque coupon required; no strength certification"
+      },
+      "bottom_screw_under_head_length_mm": 14,
+      "nominal_thread_engagement_mm": 11.7,
+      "feet": [
+        [
+          183.14000000000001,
+          -18,
+          -5
+        ],
+        [
+          183.14000000000001,
+          66.43349235828353,
+          -5
+        ],
+        [
+          372.68,
+          -18,
+          -5
+        ],
+        [
+          372.68,
+          66.43349235828353,
+          -5
+        ]
+      ],
+      "load_path": "Laptop seat to shell walls to integral corner stems to desk pads; covers are bypassed.",
+      "minimum_lock_head_desk_clearance_mm": 1.5,
+      "sealing": "No required gasket. Perimeter tongue limits gross bypass; optional tape only if testing warrants it.",
+      "cable_routing": {
+        "exit_side": "loading outer end",
+        "exit_center_mm": [
+          378.68,
+          34.0,
+          5.0
+        ],
+        "nominal_bundle_envelope_mm": [
+          6.0,
+          4.0
+        ],
+        "rounded_tunnel_envelope_mm": [
+          7.0,
+          5.0
+        ],
+        "tunnel_corner_radius_mm": 0.6,
+        "cover_edge_saddle_clearance_mm": 0.3,
+        "cover_release_direction": [
+          0,
+          0,
+          -1
+        ],
+        "zip_tie_nominal_width_mm": 2.5,
+        "zip_tie_slot_mm": [
+          3.2,
+          1.8
+        ],
+        "zip_tie_lug_centers_mm": [
+          [
+            372.68,
+            34.0,
+            14.0
+          ],
+          [
+            372.68,
+            50.0,
+            29.0
+          ]
+        ],
+        "service": "Lay the cable into the open cover-edge groove, then close the panel. The tunnel captures with clearance; it must not crush insulation. Keep ties and wiring on the shell when removing the panel.",
+        "qualification": "Actual fan lead, plug connector, bend radius and tie head are not modeled. Fit the intended fan and cable before fixing a route."
+      }
+    }
+  ],
+  "roof_print_geometry": [
+    {
+      "rib_width_mm": 1.6,
+      "rib_pitch_mm": 10.0,
+      "maximum_clear_roof_bridge_between_ribs_mm": 8.4,
+      "minimum_wing_ramp_degrees_above_horizontal": 45.0,
+      "mouth_keepout": "Full-width vertical keepout through the low cavity; no new ribs in it."
+    },
+    {
+      "rib_width_mm": 1.6,
+      "rib_pitch_mm": 10.0,
+      "maximum_clear_roof_bridge_between_ribs_mm": 8.4,
+      "minimum_wing_ramp_degrees_above_horizontal": 43.633114961585434,
+      "mouth_keepout": "Full-width vertical keepout through the low cavity; no new ribs in it."
+    }
+  ],
+  "fan_fit": {
+    "1": {
+      "pocket_inner_size_mm": 121.5,
+      "pocket_axial_envelope_mm": 27.8,
+      "retention": "Two replaceable flat-print top clips per fan; low-strain leaves and local contact shoes. No full perimeter gasket.",
+      "fan_reference_size_mm": [
+        120,
+        120,
+        25.0
+      ],
+      "fan_suction_face_local_z_mm": 30.0,
+      "fan_pose_anchor_local_z_mm": 22.5,
+      "fan_discharge_face_local_z_mm": 5.0,
+      "grille_frame_local_z_mm": [
+        -9.3,
+        -5.300000000000001
+      ],
+      "fan_factory_holes_used": false,
+      "fan_locating_pins_used": false,
+      "fan_fasteners_used": false,
+      "grille_bar_width_mm": 1.6,
+      "grille_bar_pitch_mm": 9.0,
+      "guard_back_to_fan_discharge_mm": 10.3,
+      "slide_axis_fan_local": [
+        0,
+        1,
+        0
+      ],
+      "full_service_lift_mm": 140.0,
+      "service_requires_laptop_removed": true,
+      "fan_front_guide_clearance_mm": null,
+      "long_front_guide_lips_used": false,
+      "grille_back_edge_chamfer_mm": 2.8,
+      "rail_roof_transition": "45-degree support ramp with 0.30 mm normal-coordinate mating allowance; <=0.45 mm residual shelf at pocket rim.",
+      "rail_side_running_clearance_mm": 0.6,
+      "friction_land_interference_per_side_mm": 0.0,
+      "friction_note": "Grille uses running clearance. Separate positive top clips provide retention; no precise interference land is required.",
+      "cable_bundle_envelope_mm": [
+        6.0,
+        4.0
+      ],
+      "cable_notch_width_mm": 7.0,
+      "cable_notch_note": "Lower +X corner relief spans fan depth and opens to the suction cavity; actual lead exit and fan clocking remain provisional.",
+      "fan_pad_thickness_mm": 0.0
+    },
+    "2": {
+      "pocket_inner_size_mm": 121.5,
+      "pocket_axial_envelope_mm": 27.8,
+      "retention": "Two replaceable flat-print top clips per fan; low-strain leaves and local contact shoes. No full perimeter gasket.",
+      "fan_reference_size_mm": [
+        120,
+        120,
+        25.0
+      ],
+      "fan_suction_face_local_z_mm": 30.0,
+      "fan_pose_anchor_local_z_mm": 22.5,
+      "fan_discharge_face_local_z_mm": 5.0,
+      "grille_frame_local_z_mm": [
+        -9.3,
+        -5.300000000000001
+      ],
+      "fan_factory_holes_used": false,
+      "fan_locating_pins_used": false,
+      "fan_fasteners_used": false,
+      "grille_bar_width_mm": 1.6,
+      "grille_bar_pitch_mm": 9.0,
+      "guard_back_to_fan_discharge_mm": 10.3,
+      "slide_axis_fan_local": [
+        0,
+        1,
+        0
+      ],
+      "full_service_lift_mm": 140.0,
+      "service_requires_laptop_removed": true,
+      "fan_front_guide_clearance_mm": null,
+      "long_front_guide_lips_used": false,
+      "grille_back_edge_chamfer_mm": 2.8,
+      "rail_roof_transition": "45-degree support ramp with 0.30 mm normal-coordinate mating allowance; <=0.45 mm residual shelf at pocket rim.",
+      "rail_side_running_clearance_mm": 0.6,
+      "friction_land_interference_per_side_mm": 0.0,
+      "friction_note": "Grille uses running clearance. Separate positive top clips provide retention; no precise interference land is required.",
+      "cable_bundle_envelope_mm": [
+        6.0,
+        4.0
+      ],
+      "cable_notch_width_mm": 7.0,
+      "cable_notch_note": "Lower +X corner relief spans fan depth and opens to the suction cavity; actual lead exit and fan clocking remain provisional.",
+      "fan_pad_thickness_mm": 0.0
+    }
+  },
+  "fan_retention": {
+    "1": {
+      "count": 2,
+      "material": "PETG",
+      "print_pose": "Broad YZ side down; extruded X width is 8 mm build height.",
+      "unloaded_export_required": true,
+      "unloaded_shape_registry": "fan_service.PRINT_OVERRIDES",
+      "retention": "Rear snap hook in an open shell-ear notch; lift rear release leg before removing clip.",
+      "grille_return_removed": true,
+      "top_leaf_nominal_deflection_mm": 0.8,
+      "axial_leaf_nominal_deflection_mm": 0.45,
+      "leaf_thickness_mm": 0.8,
+      "axial_contact_envelope_front_z_mm": 5.0,
+      "positions_fan_local_mm": [
+        [
+          31.5,
+          155.8,
+          30.0
+        ],
+        [
+          136.5,
+          155.8,
+          30.0
+        ]
+      ],
+      "limits": "Nominal geometry and low-strain design intent only. Measure actual fan/pads, fit coupons, warm dwell, vibration and repeated service; no measured clamp force claimed.",
+      "seal": "No full fan gasket required. Overlapping rigid duct/frame seat limits direct bypass; optional small corner damping patches remain a fit choice."
+    },
+    "2": {
+      "count": 2,
+      "material": "PETG",
+      "print_pose": "Broad YZ side down; extruded X width is 8 mm build height.",
+      "unloaded_export_required": true,
+      "unloaded_shape_registry": "fan_service.PRINT_OVERRIDES",
+      "retention": "Rear snap hook in an open shell-ear notch; lift rear release leg before removing clip.",
+      "grille_return_removed": true,
+      "top_leaf_nominal_deflection_mm": 0.8,
+      "axial_leaf_nominal_deflection_mm": 0.45,
+      "leaf_thickness_mm": 0.8,
+      "axial_contact_envelope_front_z_mm": 5.0,
+      "positions_fan_local_mm": [
+        [
+          217.18,
+          155.8,
+          30.0
+        ],
+        [
+          322.18,
+          155.8,
+          30.0
+        ]
+      ],
+      "limits": "Nominal geometry and low-strain design intent only. Measure actual fan/pads, fit coupons, warm dwell, vibration and repeated service; no measured clamp force claimed.",
+      "seal": "No full fan gasket required. Overlapping rigid duct/frame seat limits direct bypass; optional small corner damping patches remain a fit choice."
+    }
+  }
+}

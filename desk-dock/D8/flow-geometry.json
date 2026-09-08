@@ -1,0 +1,36 @@
+{
+  "mouths": [
+    {
+      "module": 1,
+      "construction_x_bounds": [
+        42,
+        172.84
+      ],
+      "width_mm": 21.0,
+      "corner_radius_mm": 4.0,
+      "edge_radius_mm": 1.0,
+      "area_mm2": 2733.9054824574364
+    },
+    {
+      "module": 2,
+      "construction_x_bounds": [
+        181.14000000000001,
+        329.68
+      ],
+      "width_mm": 21.0,
+      "corner_radius_mm": 4.0,
+      "edge_radius_mm": 1.0,
+      "area_mm2": 3105.605482457436
+    }
+  ],
+  "plenum_volumes_mm3": [
+    854145.8986337152,
+    910672.051937253
+  ],
+  "cavity_basis": "Baseline void minus final body bosses and bottom panels; conservative omission of new floor clearance.",
+  "exhaust_axis": [
+    0,
+    0.9510565162951535,
+    0.3090169943749474
+  ]
+}

@@ -1,0 +1,415 @@
+{
+  "status": "Work-in-progress checkpoint; see CURRENT_STATUS.md for blockers",
+  "files": [
+    {
+      "path": "CURRENT_STATUS.md",
+      "bytes": 3755,
+      "sha256": "8e0349fd2b7f27e40c1001b66d0c9ec8dadf38f8c4f38963833b1fd1f7713084"
+    },
+    {
+      "path": "D8-assembled.png",
+      "bytes": 69445,
+      "sha256": "ace6dc2a5e4839f599e4306e1d99bfb1c9b9a408de1d2cfcb4529b76f5c560cd"
+    },
+    {
+      "path": "D8-connector.png",
+      "bytes": 38977,
+      "sha256": "1cfd97edb225c5ec502f4f4f2571a045a893f2be69deb3b2f360fa24dcc3caf8"
+    },
+    {
+      "path": "D8-service-covers.png",
+      "bytes": 47470,
+      "sha256": "e9963d3ced3ed0a672f4bebccb8dc76e252edee002430c66a3d796b04f4e5454"
+    },
+    {
+      "path": "FAN_FIT.md",
+      "bytes": 7049,
+      "sha256": "82fdd1b307c097c80633c1c60e2fd4e38ffaa78cfa325575292561a53bee2b44"
+    },
+    {
+      "path": "PRINT_DESIGN.md",
+      "bytes": 14524,
+      "sha256": "b545f7c08bc5b2ca02a5738d4bd2ffcfc1f66e9f53ab7282c684ff1b146ac3c6"
+    },
+    {
+      "path": "Precision_5680_D8.step",
+      "bytes": 30312158,
+      "sha256": "1cfcac4be92af4acac0308bb2b7329995f82fbffa42639a8e14febe86f7150c8"
+    },
+    {
+      "path": "README.md",
+      "bytes": 7345,
+      "sha256": "c06d508c28fbff16228f2b086c772a910c9863fde0395fa46d89e5ba04af5fb0"
+    },
+    {
+      "path": "assembly-details.json",
+      "bytes": 15662,
+      "sha256": "a153ae491a328b1858bd241fc8adf4e228496ee96f4cc8466f1a1562df4a6f43"
+    },
+    {
+      "path": "body_print_geometry.py",
+      "bytes": 2855,
+      "sha256": "f1cef2880b91d7bc2b24e09be358946b055cd47c951de5bdc3089344026acb6c"
+    },
+    {
+      "path": "body_service.py",
+      "bytes": 4103,
+      "sha256": "d56534d75b9f817df1bd7fc4b7fecd3eac0cb10f9ac7fcd341591b309933ce56"
+    },
+    {
+      "path": "breakaway_geometry.py",
+      "bytes": 8975,
+      "sha256": "c7ab35cfc93254af142470745e05414da26b0d243a7c88ee633c5333334e26b5"
+    },
+    {
+      "path": "build.py",
+      "bytes": 14741,
+      "sha256": "dc15e831c3f3d77805965f4f278a4d56c5745a9d130f47fa550414d16a5f2f5d"
+    },
+    {
+      "path": "cable_service.py",
+      "bytes": 2754,
+      "sha256": "5d2dbb08dd82011bd4039d1719fa716a5503f201871e964c86bfb678a66784c5"
+    },
+    {
+      "path": "cassette.py",
+      "bytes": 10932,
+      "sha256": "e51873694c2696e7dd817a61b5ee0d786f7bfc1f8971703d180a78a81939cd8e"
+    },
+    {
+      "path": "connector_clearance.py",
+      "bytes": 2284,
+      "sha256": "24946b2c577c646f9de1b05831c8222c9e97adaa3b06621e074af03234e162a5"
+    },
+    {
+      "path": "connector_mount.py",
+      "bytes": 4990,
+      "sha256": "3823e5f2ee6331f3666b308d2451ac7f8c31175e8ee06e61ea995302923c5cfa"
+    },
+    {
+      "path": "contact-profiles.json",
+      "bytes": 20437,
+      "sha256": "aa02aa10e52958e60c83230b141927807b6b04b000babc8a98ee0865c241bfdc"
+    },
+    {
+      "path": "export_print.py",
+      "bytes": 6954,
+      "sha256": "812d5c7adb1b1f0697ed3fc2e6f5216862d648c604188b09248047f81439a0ff"
+    },
+    {
+      "path": "fan_retention.py",
+      "bytes": 3909,
+      "sha256": "7df2d3b2d431ae0b97ba17a4be76ee3983ad533eb6a5848be9116e459f04b46b"
+    },
+    {
+      "path": "fan_service.py",
+      "bytes": 7932,
+      "sha256": "428b768804a1a71f98ea9de95fc7c601694768aafd92ee2c9ad7730bbe699c49"
+    },
+    {
+      "path": "flow-geometry.json",
+      "bytes": 758,
+      "sha256": "a82a4f33e0ba223c1b55b42af0d7e1414c0238825df54e7366b2cafb0e888ca7"
+    },
+    {
+      "path": "geometry.json",
+      "bytes": 24438,
+      "sha256": "ffc0aaeca3b2dbe56e8ddde0424cfca75ab463cec3dbefc36b49d72f57572c00"
+    },
+    {
+      "path": "parameters.json",
+      "bytes": 4415,
+      "sha256": "be41ebd6dcd159ccd4931493f291b29d37888c6d49e178dc7f05b6d426ee6d1c"
+    },
+    {
+      "path": "port-study.json",
+      "bytes": 2776,
+      "sha256": "eb484763342fc2eef1e0c31727f123ea17a7ea41c65d0c9ad65f63bcd77c127f"
+    },
+    {
+      "path": "print/01_bottom_panel.stl",
+      "bytes": 114284,
+      "sha256": "0d2324499b7cc3923972afb3f48f52c308b1af41b563d17688d2b8beec136eaf"
+    },
+    {
+      "path": "print/01_bottom_thumb_lock_1.stl",
+      "bytes": 439684,
+      "sha256": "eb51f646ff88a41f4b3ed71834f990c1cf2b0bca07edc373150e55caa1e9ceb1"
+    },
+    {
+      "path": "print/01_bottom_thumb_lock_2.stl",
+      "bytes": 439684,
+      "sha256": "b7829dc90f111a09f21402a1ab3e7862badc07433268d0eaddbfb38c61bd0b01"
+    },
+    {
+      "path": "print/01_bridge_thumb_lock_1.stl",
+      "bytes": 431084,
+      "sha256": "c3c134ef4d270d07577913482da174c645d7cab8691b317960d7ac0b79fd663e"
+    },
+    {
+      "path": "print/01_bridge_thumb_lock_2.stl",
+      "bytes": 431084,
+      "sha256": "c2c8ac57d2a08262058a24d7669658a1c38f8cdc3121777baf4cfc77ac4d9a89"
+    },
+    {
+      "path": "print/01_fan_guard_retainer.stl",
+      "bytes": 73884,
+      "sha256": "4481228109ffab4ea7fba14422e3d6f523fc3eb6b4a5cd2aeb31033c9ef98b92"
+    },
+    {
+      "path": "print/01_fan_top_clip_1.stl",
+      "bytes": 4284,
+      "sha256": "bb12cf2ed7daffb7cb9f95d7506c4945416e94d4584c9e2e4988076805cc4387"
+    },
+    {
+      "path": "print/01_fan_top_clip_2.stl",
+      "bytes": 4284,
+      "sha256": "db83eec63dcbe66dab86779555f94cf48ad31854ff46e67b8b66012537840a7f"
+    },
+    {
+      "path": "print/01_manifold_with_cradle.stl",
+      "bytes": 2796484,
+      "sha256": "ec7e3c22005b589269454e35ad7eabb8ba26e5c394e9370d44a9a0813f8881a2"
+    },
+    {
+      "path": "print/02_bottom_panel.stl",
+      "bytes": 114284,
+      "sha256": "6129d50bf1e723817abc89e8d2c4c2fbe6b5c63229985090c912bcb905c9ecf6"
+    },
+    {
+      "path": "print/02_bottom_thumb_lock_1.stl",
+      "bytes": 439684,
+      "sha256": "b7829dc90f111a09f21402a1ab3e7862badc07433268d0eaddbfb38c61bd0b01"
+    },
+    {
+      "path": "print/02_bottom_thumb_lock_2.stl",
+      "bytes": 439684,
+      "sha256": "9b28d59741783a540fed19a3bd0c777666a23783d6fbef7933c59398dbe672f6"
+    },
+    {
+      "path": "print/02_bridge_thumb_lock_1.stl",
+      "bytes": 431084,
+      "sha256": "c3c134ef4d270d07577913482da174c645d7cab8691b317960d7ac0b79fd663e"
+    },
+    {
+      "path": "print/02_bridge_thumb_lock_2.stl",
+      "bytes": 431084,
+      "sha256": "c2c8ac57d2a08262058a24d7669658a1c38f8cdc3121777baf4cfc77ac4d9a89"
+    },
+    {
+      "path": "print/02_fan_guard_retainer.stl",
+      "bytes": 73884,
+      "sha256": "3bf3b83bfaf70820ac4e4c7e7fbd40fd76f03751d1e0cfe025e0d25f71e708bd"
+    },
+    {
+      "path": "print/02_fan_top_clip_1.stl",
+      "bytes": 4284,
+      "sha256": "db83eec63dcbe66dab86779555f94cf48ad31854ff46e67b8b66012537840a7f"
+    },
+    {
+      "path": "print/02_fan_top_clip_2.stl",
+      "bytes": 4284,
+      "sha256": "38e26896acf62134f17092d4aded50375577a660baad6fc5c75ee05e0b574891"
+    },
+    {
+      "path": "print/02_manifold_with_cradle.stl",
+      "bytes": 2793084,
+      "sha256": "6eada45844f4724fd43ee071c091a20d410bf21e57458f3f2cf581f4293828bb"
+    },
+    {
+      "path": "print/X_depth_overmold_clamp.stl",
+      "bytes": 279084,
+      "sha256": "f8b9cbf63c361efc6ee03482daad5dee15da5b5420f8e8dbe49cc605f7134f1f"
+    },
+    {
+      "path": "print/breakaway_carrier.stl",
+      "bytes": 187784,
+      "sha256": "510117fe93439446d98be5d80bb181a05635f63f8ec6e8b0fd4e721d0a4a8807"
+    },
+    {
+      "path": "print/breakaway_pivot_pin_10mm.stl",
+      "bytes": 407084,
+      "sha256": "fba7447365c6e256e7abd4f1920533ebd25aa4ea2a9d5b8e7c8158c2d48b18d1"
+    },
+    {
+      "path": "print/breakaway_preload_hand_nut.stl",
+      "bytes": 338984,
+      "sha256": "b60f9a5c6a4a40c5d5260772edba7cfefb0566d91990bc1ac5c437bda6b86e68"
+    },
+    {
+      "path": "print/breakaway_spring_cartridge.stl",
+      "bytes": 67084,
+      "sha256": "eb3921c9a85bbaf5d6ebd9479eb64f95b32a8aa2c409f198fda95f6a82651406"
+    },
+    {
+      "path": "print/breakaway_spring_hand_screw_0.stl",
+      "bytes": 386284,
+      "sha256": "1d17700960f594e94069ac426e647a43d4816350ede71cba142005414e8f233d"
+    },
+    {
+      "path": "print/breakaway_spring_hand_screw_1.stl",
+      "bytes": 386284,
+      "sha256": "8f7963843a1370fdf01676775ed4f2c98541746559717ba2507cf085a5bfae7f"
+    },
+    {
+      "path": "print/breakaway_spring_spacer_0.stl",
+      "bytes": 42084,
+      "sha256": "07e165a811c26acd6ab3aa377824e5fc0ad984514722b5c2aec0baf49958fe5d"
+    },
+    {
+      "path": "print/breakaway_spring_spacer_1.stl",
+      "bytes": 42084,
+      "sha256": "e3d609fa15d85a3e485de0bf5db5b4ea0c956eaa00e7a1a768feb2c2de7838bb"
+    },
+    {
+      "path": "print/bridge_key_1.stl",
+      "bytes": 64684,
+      "sha256": "9644d7bbc60073a21aaa1f0d412086c62e2c85ffe0392ee7cff058df655da4f9"
+    },
+    {
+      "path": "print/bridge_key_2.stl",
+      "bytes": 64684,
+      "sha256": "9644d7bbc60073a21aaa1f0d412086c62e2c85ffe0392ee7cff058df655da4f9"
+    },
+    {
+      "path": "print/cassette_Y_lock_0.stl",
+      "bytes": 358384,
+      "sha256": "69ffda38364ea08fbfe983cd5b7d00daa93a988115865deaa8f93a3b5fc44e53"
+    },
+    {
+      "path": "print/cassette_Z_lock_0.stl",
+      "bytes": 443184,
+      "sha256": "6986265e9dff24f44b69fbf3b9dacaa7a37d51c7fd067fc7e2393149c0d5610d"
+    },
+    {
+      "path": "print/cassette_Z_lock_1.stl",
+      "bytes": 443184,
+      "sha256": "f5e57d96b2ce9ef73833c52723740a1bbabd5a53b82eb0a0807094a8a8089bcc"
+    },
+    {
+      "path": "print/cassette_Z_saddle.stl",
+      "bytes": 451484,
+      "sha256": "e742619588d11d4e0bc2df7fe64d890ce3e8809b73f1c3e1620f39c1b7be2aed"
+    },
+    {
+      "path": "print/cassette_cap_push_pin_6p5.stl",
+      "bytes": 797884,
+      "sha256": "7629cfad9cc206d603d8379602970aac485810a92e405197f45694add742781f"
+    },
+    {
+      "path": "print/chassis_stop_bracket.stl",
+      "bytes": 357184,
+      "sha256": "bd2af61f556092fdba0cfd983affdbbcaf3530c998c5fe6b9de5d907482c5b02"
+    },
+    {
+      "path": "print/chassis_stop_mount_lock_0.stl",
+      "bytes": 489484,
+      "sha256": "9d982f4919a8e190ef7c65c9e6d392a262d9597f74a79e413c64bd1679a8040f"
+    },
+    {
+      "path": "print/chassis_stop_mount_lock_1.stl",
+      "bytes": 489484,
+      "sha256": "e3df14456d03c494a2e3fad64ece18147b0a72177ef9a0d18bca6c9c4a53b9f0"
+    },
+    {
+      "path": "print/connector_module_body.stl",
+      "bytes": 1857884,
+      "sha256": "a684069c649fb20d9a7086360f4f3ec01e47ef8b0b54565fd62bab44c5b6d354"
+    },
+    {
+      "path": "print/connector_mount_lock_0.stl",
+      "bytes": 489484,
+      "sha256": "25a86ca8899d98aa1aead77c0cbaa7e186a251c0d156d9756830e02c52a7e0dc"
+    },
+    {
+      "path": "print/connector_mount_lock_1.stl",
+      "bytes": 489484,
+      "sha256": "52bed6aa65a30ea11c2884a0acff88fa562afe0acac40c1834a37a8ca245d149"
+    },
+    {
+      "path": "print/independent_printed_chassis_stop_screw.stl",
+      "bytes": 534984,
+      "sha256": "ed605a32ae6434f4a1aa15ad2fb891dcfa0edcb21af8e4addb5df4eeaf33acc8"
+    },
+    {
+      "path": "print/sliding_plug_cap.stl",
+      "bytes": 50084,
+      "sha256": "c69ca2f26f6e87afaad6ad50e3b2d28ba3fff1ff6fcc8d6fc7ff4e05eefde9b6"
+    },
+    {
+      "path": "print/stop_soft_tip.stl",
+      "bytes": 41884,
+      "sha256": "3700036844ed503869416af71486090bf1afb6079de88078f38415cf720f4242"
+    },
+    {
+      "path": "print-manifest.json",
+      "bytes": 37269,
+      "sha256": "6389b0ec9799f196bab9d74face314222cb2b390dbc059242019bed5278be35e"
+    },
+    {
+      "path": "print-review/mesh-preflight-summary.json",
+      "bytes": 123245,
+      "sha256": "0824bcfa6d0bb395fedab509a6a8cad8a80bbb941018e5936275c68f4850a475"
+    },
+    {
+      "path": "print_check.py",
+      "bytes": 12542,
+      "sha256": "1e5f9414e792d83318a662bf3780738405f8bcaa2aaf59886964128dd9646502"
+    },
+    {
+      "path": "printed_fasteners.py",
+      "bytes": 12774,
+      "sha256": "fee35ccbb8c3c25ecb442685b2634ac9eded9abaeeaedc580569af04ca1860a4"
+    },
+    {
+      "path": "raster.py",
+      "bytes": 3912,
+      "sha256": "3749d55b78844eeb7f057f93dc12592b3b645af663f37b16e431c632e4a239fb"
+    },
+    {
+      "path": "regenerate.py",
+      "bytes": 887,
+      "sha256": "745040e1ae5b4898ad044133b44bc03f6b66cab877de0e605c0b077ac7a64e38"
+    },
+    {
+      "path": "render_review.py",
+      "bytes": 2305,
+      "sha256": "868813e9e88876e8f0f9bd7e0a9155fd7cff54d2fe6c224a289ee13b59d77325"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 44,
+      "sha256": "e28d3b7be1f491d2b65c838d4e96b3f0183eb1047582661c7b816d71e946742e"
+    },
+    {
+      "path": "review-evidence/adjustment-macro-check.json",
+      "bytes": 596,
+      "sha256": "8a4d7c16fa406d55eda8f71db8a9257d0d31223598fd434e94829114c9f2e937"
+    },
+    {
+      "path": "review-evidence/partial-thread-screw.json",
+      "bytes": 1773,
+      "sha256": "6f3f51f132b0a21d20a86f51d7f365043d1a0e001603caed84eeb8b9ab3f6897"
+    },
+    {
+      "path": "review-evidence/thread-fit.json",
+      "bytes": 2444,
+      "sha256": "11fdb3d0e74a88bcb8d459c71c8364f05cc7357c8370ce06ef96e31a402dafe8"
+    },
+    {
+      "path": "slice_screen.py",
+      "bytes": 21139,
+      "sha256": "b3fbf291bffbe2f4c4c0dbe493f9ffcb66cca19cadc66fbd08508168b17f7704"
+    },
+    {
+      "path": "validate.py",
+      "bytes": 16979,
+      "sha256": "bcbd0260b895e0a44bfe1e266a21667491c5127b82b520ed105e09fa4a743a95"
+    },
+    {
+      "path": "validation.json",
+      "bytes": 28907,
+      "sha256": "410419e9516e00e9f4d5166f7dab6e79a93ffedeed671add7cce8cb0e115b3b1"
+    }
+  ]
+}

@@ -1,7 +1,12 @@
 # Project context and maintainer handoff
 
 This is the durable engineering context for the Precision 5680 desk dock as
-of 2026-09-08. **D7 is the active design.** Its new home is
+of 2026-09-08. **D8 is the development revision on this branch.** Read
+[the D8 change record](desk-dock/D8/README.md) and
+[current checks](desk-dock/D8/CURRENT_STATUS.md) first. The sections below
+preserve the D7 baseline and should not override D8's live Y/Z slides, keyed
+removable module, independent X stop, shell feet, light covers or fan clips.
+The public viewer and old downloadable archive still describe D7. Its home is
 [`thereprocase/5680-dock`](https://github.com/thereprocase/5680-dock), with the
 [project site](https://thereprocase.github.io/5680-dock/) and
 [interactive model](https://thereprocase.github.io/5680-dock/desk-dock.html).
@@ -43,14 +48,15 @@ guides or a tall loading-end obstacle without addressing why they were removed.
 | D4 | Upward 15° discharge, rounded mouths, curved passages and conditional airflow sizing | Useful airflow reasoning; larger, older geometry and fabricated guard concept |
 | D5 | Profiled guides, 2° laptop lean, open ribs and expanded rubber-foot keepouts | Contact-source evidence; guides, lean, fan geometry and mirrored CAD were superseded |
 | D6 | Independent port study; removal of reflection; 5° lean, direct plenum bearing, 18° discharge and compact plenum | Orientation/contact and airflow baseline inherited by D7 |
-| D7 | Recessed fan pockets, slide-in printed grilles, service covers, printed hardware, continuous low lip, reinforced/resettable cassette and cable passages; final 25 mm fans | Active development prototype; use regenerated geometry, manifests and checks |
+| D7 | Recessed fan pockets, slide-in printed grilles, service covers, printed hardware, continuous low lip, reinforced/resettable cassette and cable passages; final 25 mm fans | Preserved baseline; its exports/status do not qualify D8 |
+| D8 | Removable live Y/Z module and independent X stop; direct shell feet, thin ribbed covers, separate fan clips and explicit print poses | Current development review on this branch; use D8 manifests and status |
 
 Older reports may call their revision “current,” use ASA, specify 15 mm fans,
 or claim an orientation correction that predates D6's independent audit.
 Keep those statements attached to their original revisions. The original
 root overview is at [docs/history/5560-README.md](docs/history/5560-README.md).
 Root-level wall-mount scripts and reports are retained history; start current
-work in [desk-dock/D7](desk-dock/D7/).
+work in [desk-dock/D8](desk-dock/D8/).
 
 ## Handedness and coordinate contract
 
