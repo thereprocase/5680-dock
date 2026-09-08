@@ -4,7 +4,7 @@ Run with FreeCAD's bundled Python (VTK + matplotlib).
 import os
 os.environ.setdefault('WINDIR', 'C:/Windows')
 os.environ.setdefault('SystemRoot', 'C:/Windows')
-os.environ.setdefault('USERPROFILE', 'C:/Users/USER')
+os.environ.setdefault('USERPROFILE', os.path.expanduser('~'))
 os.environ['VTK_SMP_MAX_THREADS']='1'
 from pathlib import Path
 import json, re

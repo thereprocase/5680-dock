@@ -21,3 +21,6 @@ cfd/geometry_traced_repaired/*.vtp
 
 # Live bridge transport is local; native recipes and evidence remain versioned.
 queue/
+
+/output/desktop.png
+/output/native/simulation_access.png

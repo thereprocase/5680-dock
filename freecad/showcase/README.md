@@ -1,12 +1,12 @@
-# Private fit-and-finish showcase
+# Public project showcase
 
-URL: http://127.0.0.1:8876/
+URL: https://thereprocase.github.io/dell-5560-wall-mount/
 
 Local server: Python serve.py, listening only on 127.0.0.1:8876.
 Tailscale Serve adds /mount-showcase on the existing HTTPS service.
 The pre-existing root route and TCP routes are retained. No Funnel enabled.
-Only public/ is served; dependencies, source scripts and server logs stay outside it.
-Three.js assets are local, with its MIT license in public/vendor/THREE-LICENSE.txt.
+Only ../../docs/ is served; dependencies, source scripts and server logs stay outside it.
+Three.js assets are local, with its MIT license in ../../docs/vendor/THREE-LICENSE.txt.
 
 Features: real STL before/after geometry for all 14 parts, matched camera,
 exploded view, family focus, arm ghosting, technical edges, annotated original

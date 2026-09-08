@@ -2,7 +2,7 @@
 from pathlib import Path
 import json,re,xml.etree.ElementTree as E,hashlib
 ROOT=Path(__file__).resolve().parent
-INSTALL=Path(r"C:\Users\USER\AppData\Local\Autodesk\webdeploy\production\9c5312dfff2e4569cd1d269973ddf11cb999f782")
+INSTALL=max((Path.home()/"AppData/Local/Autodesk/webdeploy/production").iterdir(), key=lambda p:p.stat().st_mtime)
 def parse(p):
  s=p.read_text(encoding="utf-8-sig")
  s=re.sub(r"<!DOCTYPE.*?\]>","",s,flags=re.S)

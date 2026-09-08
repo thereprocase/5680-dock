@@ -122,6 +122,6 @@ def verify(target):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--target", type=Path,
-                        default=Path("C:/Users/USER/AppData/Local/Programs/BARAM-26.3.0"))
+                        default=Path.home()/"AppData/Local/Programs/BARAM-26.3.0")
     args = parser.parse_args()
     verify(args.target.resolve())

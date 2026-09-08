@@ -198,3 +198,5 @@ hidden Python process; route persists but process must be restarted after reboot
 
 ## Revision G release — 2026-09-07
 Final model: 14 valid installed solids and 176 fully constrained sketches. Separate additive patches restore the original lofted duct wall; measured missing wall is zero. Six fan interface gaps remain 0.30 mm. Printed arms are unchanged. The complete P1S-oriented release is ../print_release/; public showcase is ../docs/. CFD figures describe the earlier baseline, not a new Revision G solve. A valid solid can still contain an unintended wall opening: check wall continuity against the original shell, not only isValid().
+
+Airway review: audit_airway_continuity.py verifies zero patch intrusion into the original inner loft, zero missing wall, unchanged frozen arms and six 0.30 mm gaps. No geometry change was warranted. This is geometric acceptance, not measured airflow or thermal validation.
