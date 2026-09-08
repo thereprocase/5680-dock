@@ -48,7 +48,7 @@ def slice_record(folder, require_audit=True):
 
 def offline_guide():
     text=(DOCS/'minimalist-guide.html').read_text()
-    for relative in ('index.html','downloads/','assets/minimalist-release-report.json','assets/minimalist-section-review.json'):
+    for relative in ('index.html','downloads/','assets/minimalist-release-report.json','assets/minimalist-section-review.json','simulation/revh-transient/'):
         text=text.replace('href="'+relative,'href="'+SITE+relative)
     files={'Guide/START_HERE.html':text.encode()}
     for name in ['style.css','minimalist.css','assets/minimalist-with-envelopes.png']:
@@ -111,6 +111,8 @@ def main():
     rebuilt=json.loads((ROOT/'rebuild-validation.json').read_text())
     comparison=json.loads((ROOT/'rebuild-shape-comparison.json').read_text())
     gui=json.loads((ROOT/'gui-review.json').read_text())
+    preset_gui=json.loads((ROOT/'reports/preset-gui-review.json').read_text())
+    assert len(preset_gui)==6 and all(v['pass'] and v['file_unchanged'] for v in preset_gui.values())
     assert rebuilt['pass'] and all(v['pass'] for v in comparison['parts'].values()) and not gui['bad_features']
     report['source_reconstruction']={'native_validation_pass':True,'matching_solids':20,
         'maximum_shape_difference_mm3':max(v['symmetric_difference_mm3'] for v in comparison['parts'].values()),
@@ -129,6 +131,7 @@ def main():
         assert native['saved_reopened']['pass'] and native['source_unchanged']
         manifest=json.loads((folder/'print/manifest.json').read_text())
         assert sha((folder/'M1.FCStd').read_bytes())==manifest['native_sha256']
+        assert preset_gui[name]['native_sha256']==manifest['native_sha256']
         for key,part in {**manifest['parts'],**manifest['plates']}.items():
             for suffix,digest in part['sha256'].items():assert sha((folder/'print'/(key+suffix)).read_bytes())==digest
         sliced=ROOT/'slices'/name
@@ -146,6 +149,7 @@ def main():
         no_dam=[r for r in records if int(r['part_or_plate'][:2])<=6]+[optional]
         report['presets'][name]={'label':meta['label'],'width_mm':meta['width'],'depth_mm':meta['depth'],'thickness_mm':meta['thickness'],
             'native_dam_positions_passed':9,'reopened_pass':True,'valid_individual_prints':20,'hardware_plate_solids':12,
+            'live_gui_preset_open_pass':True,
             'estimated_filament_g':round(sum(r['estimated_filament_g'] for r in records),2),
             'total_estimated_seconds':sum(r['total_estimated_seconds'] for r in records),
             'max_unsupported_bridge_span_mm':max(r['max_unsupported_bridge_span_mm'] for r in records),

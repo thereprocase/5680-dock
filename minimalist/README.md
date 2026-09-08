@@ -28,6 +28,8 @@ The six checked examples in `presets/` span 304–400 mm case width, 210–275 m
 depth and 16–28 mm thickness. They are specific dimensioned examples, not a
 continuous certified compatibility range. Screen diagonals are labels only.
 Each preset has nine checked dam positions, indexed 0–8 on a 12 mm ladder.
+All six delivered files also passed a live GUI open check with the installed
+assembly visible and the source construction hidden.
 The key engages two rungs 24 mm apart; both sides must use the same index.
 
 ## Files and plates
@@ -68,12 +70,18 @@ FREECAD_PYTHON minimalist/section_review.py
 FREECAD_PYTHON minimalist/export_scene.py
 ```
 
+Headless preset saves preserve the original GUI payload order through
+`preserve_gui.py`, leaving geometry and parameter streams intact. Run
+`gui_presets.py` from FreeCAD’s GUI Python environment to repeat the display
+check before packaging regenerated files.
+
 The construction builder is incremental and preserves existing part families.
 For a clean reconstruction that leaves the delivered model untouched:
 
 ```text
 FREECAD_PYTHON minimalist/build.py all --target minimalist/scratch/Rebuilt_M1.FCStd
-FREECAD_PYTHON minimalist/validate.py --source minimalist/scratch/Rebuilt_M1.FCStd --output minimalist/scratch/rebuilt-validation.json
+FREECAD_PYTHON minimalist/validate.py --source minimalist/scratch/Rebuilt_M1.FCStd --output minimalist/rebuild-validation.json
+FREECAD_PYTHON minimalist/compare_rebuild.py
 ```
 
 `slice_models.py` uses the official Orca CLI and flattens its bundled P1S,

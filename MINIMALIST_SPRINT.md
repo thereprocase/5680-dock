@@ -68,3 +68,18 @@ minimalist CFD. There are no new CFD results at this sprint's start.
 - 2026-09-08: interactive site passed six-preset, dam-index, exploded-view,
   Rev F/H comparison, CFD gallery and mobile-layout checks. Archive publication
   and final download verification follow the completed all-feature path audit.
+
+- 2026-09-08: all 60 full/optional production plate alternatives and the coupon
+  passed the deposited-path screen; seven delivery archives have verified hashes.
+- 2026-09-08: merged CFD publication `67fa835` through `188d49e`, preserving
+  both histories and all collaborator files. The showcase links the Rev H
+  commissioning report with failed expanded checks and 0.0203084 ms completed
+  of the planned 2 ms explicit; no shedding, Bernoulli or validation claim.
+- 2026-09-08: restored headless preset GUI data in FreeCAD archive order,
+  preserving every geometry/parameter stream. All six final native presets
+  open in the live GUI with 20 visible parts, five colors and no feature errors.
+- 2026-09-08: final local browser review passes both interactive assemblies,
+  all six presets, indexed and optional dam controls, mobile layouts, 16
+  download links and the CFD commissioning link/status. The final privacy scan
+  reports no findings across 218 unique archive payloads. Ready to publish the
+  combined release; physical qualification remains explicitly outstanding.

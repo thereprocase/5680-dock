@@ -94,7 +94,7 @@ later exploratory 3D installed-flow case with traced laptop intake assumptions.
 [3D CFD run notes](fusion/cfd/TRACED_RUN_NOTES.md) ·
 [2D CFD report](CFD_Design_Report.md)
 
-The gallery is Revision F exploratory evidence. The separate Revision H transient study is being commissioned and has no accepted validation result here. The 3D
+The gallery is Revision F exploratory evidence. The [Revision H transient commissioning report](https://thereprocase.github.io/dell-5560-wall-mount/simulation/revh-transient/) includes an 18.2 million-cell mesh with 0.25 mm edge targets, raw samples, plots and a four-frame startup animation. Expanded mesh checks fail; the diagnostic restart completed only 0.0203084 ms of the planned 2 ms. Shedding, Bernoulli suction and validation are not established. The 3D
 case uses uncalibrated constant-force fan assumptions, no thermal solution,
 and did not meet its strict convergence target. It is not a measured hardware
 performance claim.

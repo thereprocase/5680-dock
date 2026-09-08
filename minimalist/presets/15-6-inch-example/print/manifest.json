@@ -1,7 +1,7 @@
 {
   "revision": "Minimalist M1 prototype",
   "units": "mm",
-  "native_sha256": "07a4a752a2f8682f779490368ea7922e15aa4785360e7ea7e5360aeb4d2ee5fb",
+  "native_sha256": "6447932e73ca1bdeb207215233b7de8958cabba13485eeb6ff20c01180133948",
   "standard_3mf_contains_slicer_settings": false,
   "parts": {
     "01_left_arm": {

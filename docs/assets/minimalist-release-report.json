@@ -25,6 +25,7 @@
       "reopened_pass": true,
       "valid_individual_prints": 20,
       "hardware_plate_solids": 12,
+      "live_gui_preset_open_pass": true,
       "estimated_filament_g": 388.05,
       "total_estimated_seconds": 55494.0,
       "max_unsupported_bridge_span_mm": 3.015000000000015,
@@ -188,6 +189,7 @@
       "reopened_pass": true,
       "valid_individual_prints": 20,
       "hardware_plate_solids": 12,
+      "live_gui_preset_open_pass": true,
       "estimated_filament_g": 367.39,
       "total_estimated_seconds": 52682.0,
       "max_unsupported_bridge_span_mm": 3.015000000000015,
@@ -352,6 +354,7 @@
       "reopened_pass": true,
       "valid_individual_prints": 20,
       "hardware_plate_solids": 12,
+      "live_gui_preset_open_pass": true,
       "estimated_filament_g": 377.14,
       "total_estimated_seconds": 53978.0,
       "max_unsupported_bridge_span_mm": 3.015000000000015,
@@ -518,6 +521,7 @@
       "reopened_pass": true,
       "valid_individual_prints": 20,
       "hardware_plate_solids": 12,
+      "live_gui_preset_open_pass": true,
       "estimated_filament_g": 399.47,
       "total_estimated_seconds": 57385.0,
       "max_unsupported_bridge_span_mm": 3.015000000000015,
@@ -684,6 +688,7 @@
       "reopened_pass": true,
       "valid_individual_prints": 20,
       "hardware_plate_solids": 12,
+      "live_gui_preset_open_pass": true,
       "estimated_filament_g": 400.01,
       "total_estimated_seconds": 57682.0,
       "max_unsupported_bridge_span_mm": 3.015000000000015,
@@ -850,6 +855,7 @@
       "reopened_pass": true,
       "valid_individual_prints": 20,
       "hardware_plate_solids": 12,
+      "live_gui_preset_open_pass": true,
       "estimated_filament_g": 408.46,
       "total_estimated_seconds": 59944.0,
       "max_unsupported_bridge_span_mm": 3.015000000000015,
@@ -1011,50 +1017,50 @@
   "downloads": {
     "5560": {
       "file": "Minimalist_M1_5560.zip",
-      "bytes": 12353075,
-      "sha256": "29f746fd8e8de2f55faba378cfd6cef4ea5a9d76e7f6e3c2283873443a9b4565",
+      "bytes": 12381977,
+      "sha256": "c80259913735e37e0eb85c884ea9701929b14333d6097147760eb6c94f049516",
       "members": 91,
       "all_member_hashes_verified": true
     },
     "13-inch-example": {
       "file": "Minimalist_M1_13-inch-example.zip",
-      "bytes": 12135125,
-      "sha256": "e67a8438d6d704e9ea96fa6f0de0c1766ae666f1e9c79f4f6ad124046328f20b",
+      "bytes": 12162479,
+      "sha256": "d4ef6bc18eff4d140edbd923f91a6d6ad7e4234bbc672d4627cb72e58f73ed21",
       "members": 91,
       "all_member_hashes_verified": true
     },
     "14-inch-example": {
       "file": "Minimalist_M1_14-inch-example.zip",
-      "bytes": 12281014,
-      "sha256": "d3a0f9a5f5c9b8053c75106c758b1dde3be2765128b6ce1859dadeec37a92967",
+      "bytes": 12309889,
+      "sha256": "7e8654a915c0666867ba977657fbac75860b6da170b3e3b6394bffe5fa4c3ff5",
       "members": 91,
       "all_member_hashes_verified": true
     },
     "15-6-inch-example": {
       "file": "Minimalist_M1_15-6-inch-example.zip",
-      "bytes": 12463506,
-      "sha256": "9aa4a2a5c5d99aa38f9a8e8054191de7a90ac324d0fa12c22b517ecb562655d0",
+      "bytes": 12493330,
+      "sha256": "5a9a41fbf5f47724a420a73a9eabf9f0121b3fd3659f535caf34cb590dc8c7c5",
       "members": 91,
       "all_member_hashes_verified": true
     },
     "16-inch-example": {
       "file": "Minimalist_M1_16-inch-example.zip",
-      "bytes": 12457254,
-      "sha256": "bd6a30c509310e9698baddebddc8d08e2153343781b0135879b7771f0bd9706b",
+      "bytes": 12487816,
+      "sha256": "c9538d75f39cf1f9844c242df2e00ebcb452622a73a18717582bdf44e770d76f",
       "members": 91,
       "all_member_hashes_verified": true
     },
     "17-inch-example": {
       "file": "Minimalist_M1_17-inch-example.zip",
-      "bytes": 12314869,
-      "sha256": "2288aedcdfbffdb0394ccdecb9728ae72e27d76b5f3cba5c907e5967cb3f4a5c",
+      "bytes": 12344854,
+      "sha256": "233dbaf483285b3296aca5647a673e0b7eeb307615c0188bf9c4ac0019fee028",
       "members": 91,
       "all_member_hashes_verified": true
     },
     "coupons": {
       "file": "Minimalist_M1_Fit_Coupons.zip",
-      "bytes": 1854240,
-      "sha256": "51901fdc315ca981dd8ac689727864b2097a646b8420e28448afa054289a294b",
+      "bytes": 1854343,
+      "sha256": "60cbf0a7720b35a039a71ec35933717b6f08160b049c23195fcf6ab7943518bd",
       "members": 36,
       "all_member_hashes_verified": true
     }

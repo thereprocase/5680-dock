@@ -10,6 +10,7 @@ import FreeCAD as App
 from build import TARGET, values
 from validate import audit
 from export import export, sha
+from preserve_gui import restore
 
 ROOT = Path(__file__).resolve().parent
 PRESETS = {
@@ -64,6 +65,7 @@ def main():
         doc.recompute()
         doc.save()
         App.closeDocument(doc.Name)
+        result['gui_preservation'] = restore(TARGET, native)
         doc = App.openDocument(str(native))
         result['saved_reopened'] = audit(doc)
         assert result['saved_reopened']['pass']

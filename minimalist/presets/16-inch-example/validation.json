@@ -2929,7 +2929,7 @@
   "export": {
     "revision": "Minimalist M1 prototype",
     "units": "mm",
-    "native_sha256": "6ba1cd61c8c7d740371e16bd143c1a39e9c28782533e1bfd81cd36f19b540010",
+    "native_sha256": "9801cdf749da50878c7b461677fe3ad72fa0bbb3d482e55653b9a2c0692867c5",
     "standard_3mf_contains_slicer_settings": false,
     "parts": {
       "01_left_arm": {
@@ -3504,5 +3504,12 @@
     },
     "total_volume_mm3": 396147.0679720128
   },
-  "source_unchanged": true
+  "source_unchanged": true,
+  "gui_preservation": {
+    "restored": true,
+    "gui_present": true,
+    "matching_view_providers": 192,
+    "core_and_existing_streams_unchanged": true,
+    "core_sha256": "cb8a8e3d1cec1e4e0bbda5cd64ddba65a92b87449a7f237bcb17696059df18ba"
+  }
 }

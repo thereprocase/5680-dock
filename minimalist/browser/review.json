@@ -5,5 +5,7 @@
   "damLowestShiftMm": -96,
   "optionalDamRemovedParts": 6,
   "mobileOverflow": false,
-  "downloadChecks": 16
+  "downloadChecks": 16,
+  "revhCommissioningLink": "simulation/revh-transient/",
+  "revhValidationAccepted": false
 }
