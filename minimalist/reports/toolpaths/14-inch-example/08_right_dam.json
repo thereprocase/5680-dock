@@ -1,6 +1,6 @@
 {
   "source_gcode": "preview.gcode",
-  "source_gcode_sha256": "37d0c6650dfe119646a43fd7c99c3051d850aa9302b3c9a2e1d6605ec043c1b1",
+  "source_gcode_sha256": "d7ef1fd2f1f706380a2de27d25a49c9cc0733692aaef91a5acdc8cdfefc7059b",
   "layers": 415,
   "method": "Model paths buffered by reported line width. Island support: previous layer plus 0.15 mm. A deposited bead is supported where it overlaps the prior-layer footprint by at least 0.05 mm: buffer that footprint by half the current bead width minus 0.05 mm. Report contiguous unsupported subsegments, not full move lengths. Same-layer anchoring order and physical sag are not proven.",
   "floating_components": [],
@@ -158,11 +158,11 @@
     }
   ],
   "time_and_material_comments": [
-    "; model printing time: 1h 6m 0s; total estimated time: 1h 12m 15s",
-    "; filament used [mm] = 5734.07",
-    "; filament used [cm3] = 13.79",
-    "; filament used [g] = 14.48"
+    "; model printing time: 1h 6m 6s; total estimated time: 1h 12m 21s",
+    "; filament used [mm] = 5643.18",
+    "; filament used [cm3] = 13.57",
+    "; filament used [g] = 14.25"
   ],
-  "analysis_geometry_sha256": "ee65d77dca5b8effd8fea9fcbef5334986622f31d6d53b9b12023c30cc894217",
+  "analysis_geometry_sha256": "a9d32b65abf81d8a3644f0c9531d36ac96f3d74cf8c25ba03a6a4dc91177ae91",
   "analysis_feature_scope": "All positive-extrusion model paths; bridge-tagged and all-feature maxima are reported separately."
 }

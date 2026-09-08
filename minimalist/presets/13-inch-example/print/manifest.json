@@ -1,23 +1,23 @@
 {
-  "revision": "Minimalist M1 prototype",
+  "revision": "Minimalist M1.1 prototype",
   "units": "mm",
-  "native_sha256": "1797bd9373e0b3ffbe1941376b7fe397b10be79ae32a4eded0c5129b68c1fb84",
+  "native_sha256": "21d953ba2fcbda1b1341bed5085a3f3ddeeecff24fc2abd08587e0aff8a11bff",
   "standard_3mf_contains_slicer_settings": false,
   "parts": {
     "01_left_arm": {
       "orientation": "outer flat side down; diagonal; plate turn 0 degrees",
-      "volume_mm3": 104413.11887702957,
+      "volume_mm3": 110861.45221036302,
       "dimensions_mm": [
         210.7178207935912,
-        199.4041122946065,
+        200.81832585697964,
         30.000000000000043
       ],
       "bounds_mm": [
-        22.641089603204364,
-        28.297943852696704,
+        22.641089603204392,
+        27.59083707151015,
         0.0,
-        233.35891039679555,
-        227.7020561473032,
+        233.35891039679558,
+        228.4091629284898,
         30.000000000000043
       ],
       "closed_mesh": true,
@@ -26,26 +26,26 @@
       "bed_and_8mm_brim_clear": true,
       "stock_cutter_and_brim_clear": true,
       "sha256": {
-        ".stl": "2c811242e68bc840c66dec60f4405af7db05a812618d1837baa3012fcd27ce30",
-        ".step": "0fd75de65e9323fab8cb061ebd163a7248bd401b922d859031775877c9edbe9e",
-        ".3mf": "51adcfee54e6aa774ddfcc92e83a8d984653e2936b12dfdbe1acb24564ddf462"
+        ".stl": "89fb449077ce7a833ffd75af1a90c7883bd206efb80c21542c5f8c6f70bfc92e",
+        ".step": "698f24b18189b2ae10d51eb022018d227c4035aefd36c562aee9b49b0c976a42",
+        ".3mf": "e72598b565f1042fa6aada7f29e1c7ce4790346a15f7fa905e95e5147b932b8d"
       }
     },
     "02_right_arm": {
       "orientation": "outer flat side down; diagonal; plate turn 0 degrees",
-      "volume_mm3": 104413.11887702963,
+      "volume_mm3": 110861.45221036307,
       "dimensions_mm": [
-        199.40411229460653,
+        200.81832585697958,
         210.71782079359122,
-        30.000000000000018
+        30.000000000000014
       ],
       "bounds_mm": [
-        28.297943852696775,
-        22.64108960320442,
+        27.590837071510222,
+        22.641089603204428,
         2.842170943040401e-14,
-        227.70205614730332,
+        228.40916292848982,
         233.35891039679564,
-        30.000000000000046
+        30.000000000000043
       ],
       "closed_mesh": true,
       "step_valid_solids": 1,
@@ -53,9 +53,9 @@
       "bed_and_8mm_brim_clear": true,
       "stock_cutter_and_brim_clear": true,
       "sha256": {
-        ".stl": "566aa42c5b70f23b862e3451ae0b37857ba3f88bb07a587a687e9d0fbbf33fa2",
-        ".step": "7198ef1b63f896c10abc8831f5523a5ffe731c2922c5d563e373e9f150f172f8",
-        ".3mf": "069d65cabc93a420c3197c0a4d68f6160e8a04b62a97477893cbcfe3cd50020a"
+        ".stl": "3f253c37a3a155986faa4f801007eae427e995697acb533362024abfae8a1672",
+        ".step": "30548a5c7fca75df89b1ac8dc3e1d7f921bb34d9c912c9044ee3afb6a629f9a5",
+        ".3mf": "80361754ecd3ecd3fc1e19019eb31753d68669aef5f5efc0f1b32d51ffe3d271"
       }
     },
     "03_left_fan_cage": {
@@ -81,8 +81,8 @@
       "stock_cutter_and_brim_clear": true,
       "sha256": {
         ".stl": "7e5d95d4a8ca810d0784233138a3d4ca339170beebaaaf1ce7027f358ff162f9",
-        ".step": "bb33bddf05ca4fa5b9e28f8b1db5fed515a003a7f8e45717ab8549656d1072b7",
-        ".3mf": "f30257ea6a568fdd47ecdfc21821b9457f49311b0542c385d84716b3db0414b3"
+        ".step": "155cc17ac2eb3e7985a3eb539b8ba8568ae262f90afe4757260ffd11a6ef1a02",
+        ".3mf": "404dbff1c97ff2c775ad4944eefd2279f608d5ac324a61ecb0ab71f2a9014ba7"
       }
     },
     "04_right_fan_cage": {
@@ -108,8 +108,8 @@
       "stock_cutter_and_brim_clear": true,
       "sha256": {
         ".stl": "1220a1b80c7f1196812a63c8a773824618f821becfa3f4233432cb8d343fe12d",
-        ".step": "ed2835328321672fd8024e0527aea5ef118587845934f2170b78c6b04a0db269",
-        ".3mf": "aef1d110de28b39398be7506595826740cf5dc1627cd68b541d9e85eec2aea4a"
+        ".step": "1527e9145c4a4ce171d286108b56d054544444185acbddefa7269ece978d4222",
+        ".3mf": "13e9c215ee11e8b71a4e3e70e54097faaa811176957d5558efb4e49b4a0a0dba"
       }
     },
     "05_left_fan_cap": {
@@ -135,8 +135,8 @@
       "stock_cutter_and_brim_clear": true,
       "sha256": {
         ".stl": "5bb1c496647bcb9b8f41188502215f226b29381eef32df314a625c31bb885627",
-        ".step": "e03081ae9ba5837c004dcce6abcc591949c1e43b52aec971cd7186deff54218f",
-        ".3mf": "04142c227a743d7de6b006f242794421dc46ce74277412bcd2666b25bbf595b9"
+        ".step": "7e18d66ddcbb199e34558357bd5f9bcf6ac4e964ed0a224680a741558a915ac2",
+        ".3mf": "0ff64cf434ec6b26cd8cab685b3866500bf16b84007a4953fae1aa5f678281af"
       }
     },
     "06_right_fan_cap": {
@@ -162,13 +162,13 @@
       "stock_cutter_and_brim_clear": true,
       "sha256": {
         ".stl": "905652ec38d1dd0c7d7c88a8c8e4e1d24ec6a99e82bb6d2e05603d3f2422beef",
-        ".step": "9b449dd37d8ff385decac47ab2c04a99bf8ca2747aa360f2fd269f0df70e5a3e",
-        ".3mf": "56703aac372f23fb910da99c9fa5a38ea9bb4590124979bd78fcf7b24e642323"
+        ".step": "2ea8d8a52234029880c780a4fb2e15a347263e7981782ef8f77225ece3e70023",
+        ".3mf": "44e39d8977deab7e713b7c92e79e95ccdf95dd4e5732b5ba762d88211582efb0"
       }
     },
     "07_left_dam": {
       "orientation": "lip down",
-      "volume_mm3": 13360.445412587744,
+      "volume_mm3": 13121.360621742715,
       "dimensions_mm": [
         143.39999999999998,
         36.00000000000006,
@@ -188,14 +188,14 @@
       "bed_and_8mm_brim_clear": true,
       "stock_cutter_and_brim_clear": true,
       "sha256": {
-        ".stl": "890d561d375c7e95a51c243841de08f2dad30ee7c9b10efcb5bd9aa11e170654",
-        ".step": "f0a5ddc2666ce7573cd6fb653861b4c34c0d0c9444be703bbb35e2e65957159a",
-        ".3mf": "e6d62edc803d66d1301254f6a51727fbf5a3c52cf61bdfe8a1cd383259cd08c4"
+        ".stl": "2044f83117e205f27fcc50e056de4b2b78e5598a99dde9b2817ebb07473f0938",
+        ".step": "5178cd8313fbce8e0d7c822193d8db11628caafe313963d441490cb31d6b5bd5",
+        ".3mf": "079971a995eec3fb0ded6c3772811d85daf0c81e81c2ffb1f2c033559a06ae50"
       }
     },
     "08_right_dam": {
       "orientation": "lip down",
-      "volume_mm3": 13360.445412587742,
+      "volume_mm3": 13121.360621742695,
       "dimensions_mm": [
         143.39999999999998,
         36.00000000000006,
@@ -215,9 +215,9 @@
       "bed_and_8mm_brim_clear": true,
       "stock_cutter_and_brim_clear": true,
       "sha256": {
-        ".stl": "6c1bc9f33c564d78307d8684b75318d67f55acee5af540f95de727436194df23",
-        ".step": "7d44b11768b5441484d593831e565bd0341384f8cd688be8aef05054e7551674",
-        ".3mf": "fc806a2e41e8869122302810c8fe3f089b28c843801597391417361a998caf92"
+        ".stl": "114a2f4f1831d2e3bf39e44d59be01baba3399b20ffeaa09f771a3d1d9e4efd8",
+        ".step": "dd546ef4f7646191f90148ac1f8f12344e710c2908ccba0a0d5ec84e821f7648",
+        ".3mf": "89a44931e788b713926adb322b32974dad679e878f136b0facc30c8b193f2191"
       }
     },
     "09_left_fan_key": {
@@ -243,8 +243,8 @@
       "stock_cutter_and_brim_clear": true,
       "sha256": {
         ".stl": "72a115005eb0f58d5287f22e380c61957e6fde4e2e80e324937c2b919d43900c",
-        ".step": "3531dae2152c7fc26075e42970e338b87e3350b84ef2d2a9f4efd68726d6c9e2",
-        ".3mf": "970568dc872db5151be01d9d23c9c06a769cf569e4c981087bd96e1eb9ed4c14"
+        ".step": "bd14ee05b5dad33e9601fecaa98486a876cdc846bd20579b4723c051eb0f4424",
+        ".3mf": "b7f8f340aaabcdf6a50b302ba2baa112248d06f1e2c0f98f1d05b32b50633a48"
       }
     },
     "10_right_fan_key": {
@@ -270,8 +270,8 @@
       "stock_cutter_and_brim_clear": true,
       "sha256": {
         ".stl": "c6d7701ed59ff2d2ecfb125615b12a9a72da7e450d501a33078de35ce7d1b6ed",
-        ".step": "e8a9dc078b47a3d229f9cb9db29aa9932dc1be71a78d8719fcd34ab5dff3242e",
-        ".3mf": "a8c306acc6a274642252b6d61cf21546ed274ccf9555f073bcef8177f62f5577"
+        ".step": "ec5e05c283dce74f2bd60e99acc80f1b59641bcf8ecae742458a5c786c25082a",
+        ".3mf": "6a93f44c1979aeed7035fb96380e0e547b46a2230fe869a222486076769431a9"
       }
     },
     "11_left_dam_key": {
@@ -297,8 +297,8 @@
       "stock_cutter_and_brim_clear": true,
       "sha256": {
         ".stl": "72a115005eb0f58d5287f22e380c61957e6fde4e2e80e324937c2b919d43900c",
-        ".step": "20457ba8904b6295dc3516f8454734a8eeb0ee510f9352d53a23c55f40d89657",
-        ".3mf": "ced5dcdc02b1dda7fe5cc66fa99bca244ebf7ab00c6bc893586770841cbccf18"
+        ".step": "87fd019a14e9accf26cae51a57faf5ddbfaf57390a3f7ba397d4bfb80e368aea",
+        ".3mf": "1f0dc384f08b276838988b0e52a7d9818276f1b0dec2f7dc609577edbb587332"
       }
     },
     "12_right_dam_key": {
@@ -324,8 +324,8 @@
       "stock_cutter_and_brim_clear": true,
       "sha256": {
         ".stl": "e140c2db63589b6899c6e2a9aa855842a04c93c7ae8e081377746b5a25da3cdd",
-        ".step": "c772e716a7c611c300745984c64c910c88726cb9f665176db166b6f347e55ee8",
-        ".3mf": "2f8100dc55249255abb09086b0c82fd06f786ef93e8c716d235befbc78989f56"
+        ".step": "b94c9e009f2c6f4529e47c03587cbcdcedf04ef4f2178765cc495406dfe9f992",
+        ".3mf": "7960f8e7e0fb8f7cf032e3837d05b0bafb54008a9ed7d16b55a7b868f49a8c3f"
       }
     },
     "13_left_fan_keeper": {
@@ -351,8 +351,8 @@
       "stock_cutter_and_brim_clear": true,
       "sha256": {
         ".stl": "fcd0687007446d7f26ffd50a2a5e52aa554784083012b459a342bdf615532485",
-        ".step": "3158896fe5e83efd7be8201d4248e446a35bc591ed1cd319327342d71dde4678",
-        ".3mf": "061db1d69b6b16d13ca919f024ab08a9290661dbeae7ff7712301b049a807389"
+        ".step": "73e9268391804993fb62e2d12a24aa7191ad1bc4dbbce050ac252d122818956b",
+        ".3mf": "c84f8dc134c4963796fd83c07a69d9b1688762bf9dd5ce23a6ba8f73cc7cc5d6"
       }
     },
     "14_right_fan_keeper": {
@@ -378,8 +378,8 @@
       "stock_cutter_and_brim_clear": true,
       "sha256": {
         ".stl": "b2c09d4b2f7b8619a7b2ea721f9788f08a4c61c22b650bdf27ad27dc0745194f",
-        ".step": "0c1ecd34cead2ea851719db1fdcbf368d0d288764b6eaa2875ef3f6e11d52f99",
-        ".3mf": "5a451669afdced11bcc7434001319d050e06eee44543653809a7fc4124d19a5d"
+        ".step": "f27eb01df11930ddfc9b9083a4295f77c6d21685c2a8171859c4a3e6c4590707",
+        ".3mf": "8aab5285e5da8691927e94f31d0da2861e44af2ef5d9b7864a7ab7bb5703b112"
       }
     },
     "15_left_dam_keeper": {
@@ -405,8 +405,8 @@
       "stock_cutter_and_brim_clear": true,
       "sha256": {
         ".stl": "59c6356badb7735afc9ed9c4a6c4925e09cc83e5faa732aca59161ae5cdb91b6",
-        ".step": "ece88ddd859c7c377a13ae7cc9d424c1b94339562d6ddf00802717b637014dd6",
-        ".3mf": "adc818a64137397f58fd52180a1b52d1a6e85967fd33bbfc67095ba83563949a"
+        ".step": "6c88a4b813655d88ef19b093884d0a61bc561a29aa9fadac532b0429043e2453",
+        ".3mf": "b324be533338d6cea69b3dd7f37b00145aff4f1a4b2f942d84046625a0ba4980"
       }
     },
     "16_right_dam_keeper": {
@@ -432,8 +432,8 @@
       "stock_cutter_and_brim_clear": true,
       "sha256": {
         ".stl": "2771b73a11044f739c2f2c8dc91df7d91e09361c5ff04738b03a7c47ead7f574",
-        ".step": "4ff79cc4e6e5f6cd4e5c041a39c4229fa72e5726cacc04ed4d3a1eb0e075139c",
-        ".3mf": "4a18148e1a43b67cb81101f542a1e83511735a6f609d938d08fe2d1474e84637"
+        ".step": "d024831602ab266d5abee1e02ee9ab40e26736c165ccc94ab44f4dac1eb3cf26",
+        ".3mf": "b443524c95800dcf48a10e91186447c766ff06ac29745f337b5cfd8135caa2c1"
       }
     },
     "17_left_cap_pin_1": {
@@ -459,8 +459,8 @@
       "stock_cutter_and_brim_clear": true,
       "sha256": {
         ".stl": "4265d836690b5a113d5bc0be3747313cad4e087305a7bacfab745c284e401d5f",
-        ".step": "1a8f794add46394f84a5080798eedd2ee1945501f8dadfe3053b4e3a6690c3c1",
-        ".3mf": "c2de23c63427bc962a589572ff52101d2a686c12c45d29b9890f913bb3f48243"
+        ".step": "2ba9cfc63b52c012ef371aa386482fe7015f2ea451b98ca76b9d0a91124ddd57",
+        ".3mf": "3349a7533619772593e850c8585f5978327c51c825c7be4d1a20f1059de20939"
       }
     },
     "18_right_cap_pin_1": {
@@ -486,8 +486,8 @@
       "stock_cutter_and_brim_clear": true,
       "sha256": {
         ".stl": "5babfd579a5b90af4bf92b146fe56d6e915bde265e9fc8c5bdd9e4da1c6fb08a",
-        ".step": "c72179efe7d6b798bf50e6ed8ecd34669c5179c013b5b13c41893ffba9570d37",
-        ".3mf": "e2001f2811fed27a363721d56c22abb555fbf30d7694eec907da3986a2f97f6b"
+        ".step": "e24630eb9fb5d1d7904ac095ed706145124b0e35108538ede722d90c7e04e487",
+        ".3mf": "e74de73b0a3e19de61c6f965b648d58a30640ce8afbd107b225d71620bd7c17b"
       }
     },
     "19_left_cap_pin_2": {
@@ -513,8 +513,8 @@
       "stock_cutter_and_brim_clear": true,
       "sha256": {
         ".stl": "b169b1a9e8358354c9bc6ba9ee3f5efd38715f897c1890251152b25ed96d7890",
-        ".step": "86af37a0ed3c9fc51c96fd1be48ba1fbf731451f8d89e171139101a691be01c7",
-        ".3mf": "0d37f3b43c1820f4aff2abae4f761a5dbabfb3af10006c3a17e241a298dea90b"
+        ".step": "f11b90a6b34f0425e23ce0c1e8798bf48c6f6f2621aad4062118bb0f05715773",
+        ".3mf": "8d1ede61f6bf01e0a006b3ca4d858ef31c408a6d8cb63b5af0642cde07960bb8"
       }
     },
     "20_right_cap_pin_2": {
@@ -540,8 +540,8 @@
       "stock_cutter_and_brim_clear": true,
       "sha256": {
         ".stl": "1ed404db81f54f03c6bbad01b71f9cc61a65e46810371f5c6f08979b3bf1af86",
-        ".step": "c2cd8d307edb4417183fadd2d6b9097e052df3490ffcae0b13ae890349fefdd4",
-        ".3mf": "c5f5b3f87879cf10b8a6e9bcf826bab880433ee0daddc2684522197f9bb06a8b"
+        ".step": "542e92c7fafd1640aa5b6ffd3f6c2c638965ae1f6d6ad9f806024fef034a2d76",
+        ".3mf": "ce2e20728476984d182ad69d508175b1affbfcd72c1a2f390a53a45769a428d5"
       }
     }
   },
@@ -569,8 +569,8 @@
       "stock_cutter_and_brim_clear": true,
       "sha256": {
         ".stl": "6b2e2ca646126aa5898129611114104028498bcbcd8a7679923742e84df95360",
-        ".step": "ba31047e5224cc32507e922d560505ddf5b759e6d39cb050802233018c9443c7",
-        ".3mf": "7bdc74205e5439c1411f0553baaf2c5c023dfd12902339fa783004f5ee44cbcb"
+        ".step": "2758845063726e8f6a058cf44e44ea0ed8abad6a61e73dc5d49543603d15567c",
+        ".3mf": "b9efcb968c99f1269461101a2b08536e2168f5a2b0dd459bf252dbb7772f7081"
       }
     },
     "22_hardware_without_dam": {
@@ -596,10 +596,10 @@
       "stock_cutter_and_brim_clear": true,
       "sha256": {
         ".stl": "8d9c072edf96b506f63ecf84f1db5b5a503010ba18b1c74bd3455e7792981aee",
-        ".step": "7392761c303eca9f4c2e45a446f977ed9186dac3707678edaad8e8cc8a30af42",
-        ".3mf": "0517d42f9a49fa161b567e9c27de99037c36b3913fdcee1c2dcdae9a4fdab516"
+        ".step": "387a6af25e06eece082af1e9b6c48db5f60c07969a8f15341630a1034dbfb70f",
+        ".3mf": "96aff23c4fed389424a136c9e4657b8995355e47f0c63451414eb0cc8125d74a"
       }
     }
   },
-  "total_volume_mm3": 363386.10801962117
+  "total_volume_mm3": 375804.6051045979
 }

@@ -48,12 +48,14 @@ for p in ROOT.rglob('*'):
     paths.append(p)
 docs=ROOT.parent/'docs'
 paths += [docs/p for p in ['index.html','minimalist-guide.html','minimalist-viewer.js','minimalist.css']]
+paths += [ROOT.parent/'README.md',ROOT.parent/'MINIMALIST_SPRINT.md']
+paths += list((docs/'assets').glob('minimalist-*'))
 paths += list((docs/'downloads').glob('Minimalist_M1_*.zip'))
 paths += list((ROOT.parent/'print_release_step').rglob('*'))
 for p in paths:
     if p.is_file():scan(str(p.relative_to(ROOT.parent)),p.read_bytes())
 result={**counts,'findings':findings,'pass':not findings,
-    'scope':'New Minimalist source/preset metadata, nested delivery archives, and Rev H STEP/Orca supplement. Generated local scratch, logs and raw slicer working directories excluded from publication.',
+    'scope':'New Minimalist source/preset metadata, root README and journal, published M1 assets, nested delivery archives, and Rev H STEP/Orca supplement. Generated local scratch, logs and raw slicer working directories excluded from publication.',
     'image_review':'New published images are native geometry renders, a vector schematic and a toolpath plot; visually reviewed without application chrome or personal data.'}
 (ROOT/'reports/privacy-review.json').write_text(json.dumps(result,indent=2)+'\n')
 print(json.dumps(result,indent=2),flush=True)

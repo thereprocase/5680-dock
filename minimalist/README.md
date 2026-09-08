@@ -1,4 +1,4 @@
-# Minimalist M1 native fork
+# Minimalist M1.1 native fork
 
 M1 is an independent open-frame prototype derived through a FreeCAD Save As of
 the preserved Rev H document. Its arms, fan cradles, caps, dam and hardware are
@@ -9,10 +9,29 @@ new. No prototype arm freeze applies to this fork or to future ducted designs.
 [Nominal package](../docs/downloads/Minimalist_M1_5560.zip) ·
 [Fit coupon package](../docs/downloads/Minimalist_M1_Fit_Coupons.zip)
 
+## Reinforced wall transition (M1.1)
+
+Each wall pad is now 32 mm tall with two 6 mm webs tapering 16 mm forward.
+The webs reach the flat print face through the arm’s full thickness, filling
+the adjacent window roots. Existing arm material, bolt centers, bores and
+print orientation are preserved. The dam has a matching tapered clearance
+notch; all six sizes pass all nine indexed positions.
+
+When upgrading, replace arms 01/02 and optional dams 07/08 together. The other
+sixteen parts are geometrically unchanged. The nominal full set is 400.55 g /
+15 h 42 m 30 s in Orca, adding 12.50 g / 17 m 36 s compared with M1.0.
+See the [illustrated comparison](../README.md#m11-carry-the-wall-pad-into-the-arm)
+and `reports/wall-transition-review.json` for native layer sections and limits.
+The 192 to 416 mm² section increase is not a tested strength multiplier.
+To reproduce that comparison, extract `minimalist/presets/` from commit
+`64fc1aa` to a separate directory, then run `wall_transition_review.py` with
+`--baseline-dir` pointing to its six original preset directories. The current
+native files stay untouched. `plot_wall_transition.py` renders the report.
+
 ## Open and edit
 
 Open `Laptop_Wall_Mount_Minimalist.FCStd` in FreeCAD 1.1. The model contains
-51 fully constrained sketches, stock Part construction features, a shared
+55 fully constrained sketches, stock Part construction features, a shared
 Spreadsheet and 20 installed App::Links. It has no custom feature proxy that
 must be installed to reopen or recompute it. Construction history is grouped by
 part family; the installed assembly is separate from the hidden source features.

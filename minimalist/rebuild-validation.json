@@ -3,27 +3,27 @@
     "01_left_arm": {
       "valid": true,
       "solids": 1,
-      "volume_mm3": 112159.51165626277,
+      "volume_mm3": 118607.84498959631,
       "bounds_mm": [
         -176.2,
-        -4.618527782440651e-14,
+        -4.707345624410664e-14,
         -74.0,
         -146.19999999999996,
         68.0,
-        210.3
+        210.30000000000007
       ]
     },
     "02_right_arm": {
       "valid": true,
       "solids": 1,
-      "volume_mm3": 112159.51165626277,
+      "volume_mm3": 118607.84498959633,
       "bounds_mm": [
         146.2,
-        -4.618527782440651e-14,
+        -4.707345624410664e-14,
         -74.0,
         176.2,
         68.0,
-        210.3
+        210.30000000000007
       ]
     },
     "03_left_fan_cage": {
@@ -81,10 +81,10 @@
     "07_left_dam": {
       "valid": true,
       "solids": 1,
-      "volume_mm3": 15911.1437539143,
+      "volume_mm3": 15672.05896306923,
       "bounds_mm": [
         -163.89999999999998,
-        1.9999999999999893,
+        1.9999999999999951,
         141.0,
         -0.30000000000001137,
         38.0,
@@ -94,10 +94,10 @@
     "08_right_dam": {
       "valid": true,
       "solids": 1,
-      "volume_mm3": 15911.14375391426,
+      "volume_mm3": 15672.058963069194,
       "bounds_mm": [
         0.30000000000001137,
-        1.9999999999999893,
+        1.9999999999999951,
         141.0,
         163.89999999999998,
         38.0,
@@ -266,10 +266,10 @@
   "overlaps_mm3": {},
   "interface_gaps_mm": {
     "left_arm_to_fan": 0.29999999999998295,
-    "left_arm_to_dam": 0.3000000000000007,
+    "left_arm_to_dam": 0.2999999999999726,
     "left_fan_to_cap": 0.29999999999997556,
     "right_arm_to_fan": 0.30000000000001137,
-    "right_arm_to_dam": 0.3000000000000007,
+    "right_arm_to_dam": 0.2999999999999726,
     "right_fan_to_cap": 0.29999999999997684
   },
   "external_interference_mm3": {
@@ -278,7 +278,7 @@
     "right_fan_envelope": {}
   },
   "part_count": 20,
-  "sketch_count": 51,
+  "sketch_count": 55,
   "wall_intrusions": {},
   "sampled_service_interference_mm3": {
     "laptop_lift_0_forward_0": {},
@@ -296,10 +296,10 @@
     "right_fan_slide_50": {},
     "right_fan_slide_130": {}
   },
-  "total_printed_volume_mm3": 383980.29026074114,
-  "cad_solid_mass_g_at_1_05": 403.1793047737782,
-  "elapsed_seconds": 4.132730484008789,
+  "total_printed_volume_mm3": 396398.78734571807,
+  "cad_solid_mass_g_at_1_05": 416.218726713004,
+  "elapsed_seconds": 6.266411542892456,
   "pass": true,
-  "source_sha256": "8b695309a250b02760f4b1dafb2bd47fa59499cd96c496c626af571ccfd26944",
+  "source_sha256": "e8befcc77fc3d9bab18c51013f15e275df6b26650dd54f6ceb9c6ff66964194c",
   "source_unchanged": true
 }

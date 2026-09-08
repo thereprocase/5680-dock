@@ -8,32 +8,6 @@
   "dam_positions": {
     "0": {
       "parts": {
-        "01_left_arm": {
-          "valid": true,
-          "solids": 1,
-          "volume_mm3": 116601.8995105138,
-          "bounds_mm": [
-            -184.00000000000006,
-            -4.973799150320701e-14,
-            -74.00000000000003,
-            -154.0,
-            72.00000000000001,
-            220.00000000000006
-          ]
-        },
-        "02_right_arm": {
-          "valid": true,
-          "solids": 1,
-          "volume_mm3": 116601.89951051377,
-          "bounds_mm": [
-            154.0,
-            -4.973799150320701e-14,
-            -74.00000000000001,
-            184.00000000000006,
-            72.00000000000001,
-            220.00000000000006
-          ]
-        },
         "05_left_fan_cap": {
           "valid": true,
           "solids": 1,
@@ -242,13 +216,39 @@
             -13.75521651039979
           ]
         },
+        "01_left_arm": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 123050.23284384732,
+          "bounds_mm": [
+            -184.00000000000006,
+            -4.884981308350689e-14,
+            -74.00000000000003,
+            -154.0,
+            72.00000000000001,
+            220.00000000000006
+          ]
+        },
+        "02_right_arm": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 123050.2328438473,
+          "bounds_mm": [
+            154.0,
+            -4.884981308350689e-14,
+            -74.00000000000001,
+            184.00000000000006,
+            72.00000000000001,
+            220.00000000000006
+          ]
+        },
         "07_left_dam": {
           "valid": true,
           "solids": 1,
-          "volume_mm3": 17552.144755299305,
+          "volume_mm3": 17313.059964454238,
           "bounds_mm": [
             -171.70000000000002,
-            1.9999999999999716,
+            1.9999999999999645,
             45.0,
             -0.3000000000000349,
             38.0,
@@ -258,10 +258,10 @@
         "08_right_dam": {
           "valid": true,
           "solids": 1,
-          "volume_mm3": 17552.144755299334,
+          "volume_mm3": 17313.059964454238,
           "bounds_mm": [
             0.3000000000000327,
-            1.9999999999999716,
+            1.9999999999999645,
             45.0,
             171.70000000000002,
             38.0,
@@ -286,7 +286,7 @@
         "right_fan_envelope": {}
       },
       "part_count": 20,
-      "sketch_count": 51,
+      "sketch_count": 55,
       "wall_intrusions": {},
       "sampled_service_interference_mm3": {
         "laptop_lift_0_forward_0": {},
@@ -304,39 +304,13 @@
         "right_fan_slide_50": {},
         "right_fan_slide_130": {}
       },
-      "total_printed_volume_mm3": 396147.06797201245,
-      "cad_solid_mass_g_at_1_05": 415.9544213706131,
-      "elapsed_seconds": 6.334088325500488,
+      "total_printed_volume_mm3": 408565.56505698944,
+      "cad_solid_mass_g_at_1_05": 428.99384330983895,
+      "elapsed_seconds": 4.548811674118042,
       "pass": true
     },
     "1": {
       "parts": {
-        "01_left_arm": {
-          "valid": true,
-          "solids": 1,
-          "volume_mm3": 116601.8995105138,
-          "bounds_mm": [
-            -184.00000000000006,
-            -4.973799150320701e-14,
-            -74.00000000000003,
-            -154.0,
-            72.00000000000001,
-            220.00000000000006
-          ]
-        },
-        "02_right_arm": {
-          "valid": true,
-          "solids": 1,
-          "volume_mm3": 116601.89951051377,
-          "bounds_mm": [
-            154.0,
-            -4.973799150320701e-14,
-            -74.00000000000001,
-            184.00000000000006,
-            72.00000000000001,
-            220.00000000000006
-          ]
-        },
         "05_left_fan_cap": {
           "valid": true,
           "solids": 1,
@@ -545,13 +519,39 @@
             -13.75521651039979
           ]
         },
+        "01_left_arm": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 123050.23284384732,
+          "bounds_mm": [
+            -184.00000000000006,
+            -4.884981308350689e-14,
+            -74.00000000000003,
+            -154.0,
+            72.00000000000001,
+            220.00000000000006
+          ]
+        },
+        "02_right_arm": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 123050.2328438473,
+          "bounds_mm": [
+            154.0,
+            -4.884981308350689e-14,
+            -74.00000000000001,
+            184.00000000000006,
+            72.00000000000001,
+            220.00000000000006
+          ]
+        },
         "07_left_dam": {
           "valid": true,
           "solids": 1,
-          "volume_mm3": 17552.14475529927,
+          "volume_mm3": 17313.05996445422,
           "bounds_mm": [
             -171.70000000000002,
-            1.9999999999999702,
+            1.9999999999999698,
             57.0,
             -0.3000000000000349,
             38.0,
@@ -561,10 +561,10 @@
         "08_right_dam": {
           "valid": true,
           "solids": 1,
-          "volume_mm3": 17552.144755299298,
+          "volume_mm3": 17313.059964454205,
           "bounds_mm": [
             0.30000000000003535,
-            1.9999999999999702,
+            1.9999999999999698,
             57.0,
             171.70000000000002,
             38.0,
@@ -589,41 +589,15 @@
         "right_fan_envelope": {}
       },
       "part_count": 20,
-      "sketch_count": 51,
+      "sketch_count": 55,
       "wall_intrusions": {},
-      "total_printed_volume_mm3": 396147.0679720124,
-      "cad_solid_mass_g_at_1_05": 415.95442137061303,
-      "elapsed_seconds": 3.8490207195281982,
+      "total_printed_volume_mm3": 408565.5650569893,
+      "cad_solid_mass_g_at_1_05": 428.99384330983884,
+      "elapsed_seconds": 3.6471054553985596,
       "pass": true
     },
     "2": {
       "parts": {
-        "01_left_arm": {
-          "valid": true,
-          "solids": 1,
-          "volume_mm3": 116601.8995105138,
-          "bounds_mm": [
-            -184.00000000000006,
-            -4.973799150320701e-14,
-            -74.00000000000003,
-            -154.0,
-            72.00000000000001,
-            220.00000000000006
-          ]
-        },
-        "02_right_arm": {
-          "valid": true,
-          "solids": 1,
-          "volume_mm3": 116601.89951051377,
-          "bounds_mm": [
-            154.0,
-            -4.973799150320701e-14,
-            -74.00000000000001,
-            184.00000000000006,
-            72.00000000000001,
-            220.00000000000006
-          ]
-        },
         "05_left_fan_cap": {
           "valid": true,
           "solids": 1,
@@ -832,13 +806,39 @@
             -13.75521651039979
           ]
         },
+        "01_left_arm": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 123050.23284384732,
+          "bounds_mm": [
+            -184.00000000000006,
+            -4.884981308350689e-14,
+            -74.00000000000003,
+            -154.0,
+            72.00000000000001,
+            220.00000000000006
+          ]
+        },
+        "02_right_arm": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 123050.2328438473,
+          "bounds_mm": [
+            154.0,
+            -4.884981308350689e-14,
+            -74.00000000000001,
+            184.00000000000006,
+            72.00000000000001,
+            220.00000000000006
+          ]
+        },
         "07_left_dam": {
           "valid": true,
           "solids": 1,
-          "volume_mm3": 17552.144755299276,
+          "volume_mm3": 17313.05996445421,
           "bounds_mm": [
             -171.70000000000002,
-            1.9999999999999674,
+            1.9999999999999574,
             69.0,
             -0.3000000000000349,
             38.0,
@@ -848,10 +848,10 @@
         "08_right_dam": {
           "valid": true,
           "solids": 1,
-          "volume_mm3": 17552.144755299305,
+          "volume_mm3": 17313.059964454187,
           "bounds_mm": [
             0.300000000000038,
-            1.9999999999999674,
+            1.9999999999999574,
             69.0,
             171.70000000000002,
             38.0,
@@ -876,41 +876,15 @@
         "right_fan_envelope": {}
       },
       "part_count": 20,
-      "sketch_count": 51,
+      "sketch_count": 55,
       "wall_intrusions": {},
-      "total_printed_volume_mm3": 396147.0679720124,
-      "cad_solid_mass_g_at_1_05": 415.95442137061303,
-      "elapsed_seconds": 5.14533805847168,
+      "total_printed_volume_mm3": 408565.5650569893,
+      "cad_solid_mass_g_at_1_05": 428.99384330983884,
+      "elapsed_seconds": 3.6048333644866943,
       "pass": true
     },
     "3": {
       "parts": {
-        "01_left_arm": {
-          "valid": true,
-          "solids": 1,
-          "volume_mm3": 116601.8995105138,
-          "bounds_mm": [
-            -184.00000000000006,
-            -4.973799150320701e-14,
-            -74.00000000000003,
-            -154.0,
-            72.00000000000001,
-            220.00000000000006
-          ]
-        },
-        "02_right_arm": {
-          "valid": true,
-          "solids": 1,
-          "volume_mm3": 116601.89951051377,
-          "bounds_mm": [
-            154.0,
-            -4.973799150320701e-14,
-            -74.00000000000001,
-            184.00000000000006,
-            72.00000000000001,
-            220.00000000000006
-          ]
-        },
         "05_left_fan_cap": {
           "valid": true,
           "solids": 1,
@@ -1119,13 +1093,39 @@
             -13.75521651039979
           ]
         },
+        "01_left_arm": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 123050.23284384732,
+          "bounds_mm": [
+            -184.00000000000006,
+            -4.884981308350689e-14,
+            -74.00000000000003,
+            -154.0,
+            72.00000000000001,
+            220.00000000000006
+          ]
+        },
+        "02_right_arm": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 123050.2328438473,
+          "bounds_mm": [
+            154.0,
+            -4.884981308350689e-14,
+            -74.00000000000001,
+            184.00000000000006,
+            72.00000000000001,
+            220.00000000000006
+          ]
+        },
         "07_left_dam": {
           "valid": true,
           "solids": 1,
-          "volume_mm3": 17552.1447552993,
+          "volume_mm3": 17313.059964454224,
           "bounds_mm": [
-            -171.70000000000002,
-            1.9999999999999645,
+            -171.70000000000005,
+            1.9999999999999538,
             81.0,
             -0.3000000000000349,
             38.0,
@@ -1135,12 +1135,12 @@
         "08_right_dam": {
           "valid": true,
           "solids": 1,
-          "volume_mm3": 17552.1447552993,
+          "volume_mm3": 17313.059964454267,
           "bounds_mm": [
             0.3000000000000398,
-            1.9999999999999645,
+            1.9999999999999538,
             81.0,
-            171.70000000000002,
+            171.70000000000005,
             38.0,
             194.00000000000006
           ]
@@ -1163,41 +1163,15 @@
         "right_fan_envelope": {}
       },
       "part_count": 20,
-      "sketch_count": 51,
+      "sketch_count": 55,
       "wall_intrusions": {},
-      "total_printed_volume_mm3": 396147.06797201245,
-      "cad_solid_mass_g_at_1_05": 415.9544213706131,
-      "elapsed_seconds": 5.349249601364136,
+      "total_printed_volume_mm3": 408565.5650569894,
+      "cad_solid_mass_g_at_1_05": 428.9938433098389,
+      "elapsed_seconds": 3.633922576904297,
       "pass": true
     },
     "4": {
       "parts": {
-        "01_left_arm": {
-          "valid": true,
-          "solids": 1,
-          "volume_mm3": 116601.8995105138,
-          "bounds_mm": [
-            -184.00000000000006,
-            -4.973799150320701e-14,
-            -74.00000000000003,
-            -154.0,
-            72.00000000000001,
-            220.00000000000006
-          ]
-        },
-        "02_right_arm": {
-          "valid": true,
-          "solids": 1,
-          "volume_mm3": 116601.89951051377,
-          "bounds_mm": [
-            154.0,
-            -4.973799150320701e-14,
-            -74.00000000000001,
-            184.00000000000006,
-            72.00000000000001,
-            220.00000000000006
-          ]
-        },
         "05_left_fan_cap": {
           "valid": true,
           "solids": 1,
@@ -1406,13 +1380,39 @@
             -13.75521651039979
           ]
         },
+        "01_left_arm": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 123050.23284384732,
+          "bounds_mm": [
+            -184.00000000000006,
+            -4.884981308350689e-14,
+            -74.00000000000003,
+            -154.0,
+            72.00000000000001,
+            220.00000000000006
+          ]
+        },
+        "02_right_arm": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 123050.2328438473,
+          "bounds_mm": [
+            154.0,
+            -4.884981308350689e-14,
+            -74.00000000000001,
+            184.00000000000006,
+            72.00000000000001,
+            220.00000000000006
+          ]
+        },
         "07_left_dam": {
           "valid": true,
           "solids": 1,
-          "volume_mm3": 17552.144755299363,
+          "volume_mm3": 17313.059964454293,
           "bounds_mm": [
             -171.70000000000005,
-            1.9999999999999387,
+            1.9999999999999272,
             93.0,
             -0.30000000000003857,
             38.0,
@@ -1422,12 +1422,12 @@
         "08_right_dam": {
           "valid": true,
           "solids": 1,
-          "volume_mm3": 17552.144755299385,
+          "volume_mm3": 17313.059964454318,
           "bounds_mm": [
             0.3000000000000398,
-            1.9999999999999387,
+            1.9999999999999272,
             93.0,
-            171.70000000000002,
+            171.70000000000005,
             38.0,
             206.00000000000006
           ]
@@ -1441,7 +1441,7 @@
         "left_arm_to_dam": 0.2999999999999545,
         "left_fan_to_cap": 0.29999999999997684,
         "right_arm_to_fan": 0.29999999999998295,
-        "right_arm_to_dam": 0.29999999999998295,
+        "right_arm_to_dam": 0.29999999999996996,
         "right_fan_to_cap": 0.29999999999997684
       },
       "external_interference_mm3": {
@@ -1450,41 +1450,15 @@
         "right_fan_envelope": {}
       },
       "part_count": 20,
-      "sketch_count": 51,
+      "sketch_count": 55,
       "wall_intrusions": {},
-      "total_printed_volume_mm3": 396147.06797201256,
-      "cad_solid_mass_g_at_1_05": 415.9544213706132,
-      "elapsed_seconds": 5.333802223205566,
+      "total_printed_volume_mm3": 408565.5650569895,
+      "cad_solid_mass_g_at_1_05": 428.993843309839,
+      "elapsed_seconds": 3.987894296646118,
       "pass": true
     },
     "5": {
       "parts": {
-        "01_left_arm": {
-          "valid": true,
-          "solids": 1,
-          "volume_mm3": 116601.8995105138,
-          "bounds_mm": [
-            -184.00000000000006,
-            -4.973799150320701e-14,
-            -74.00000000000003,
-            -154.0,
-            72.00000000000001,
-            220.00000000000006
-          ]
-        },
-        "02_right_arm": {
-          "valid": true,
-          "solids": 1,
-          "volume_mm3": 116601.89951051377,
-          "bounds_mm": [
-            154.0,
-            -4.973799150320701e-14,
-            -74.00000000000001,
-            184.00000000000006,
-            72.00000000000001,
-            220.00000000000006
-          ]
-        },
         "05_left_fan_cap": {
           "valid": true,
           "solids": 1,
@@ -1693,13 +1667,39 @@
             -13.75521651039979
           ]
         },
+        "01_left_arm": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 123050.23284384732,
+          "bounds_mm": [
+            -184.00000000000006,
+            -4.884981308350689e-14,
+            -74.00000000000003,
+            -154.0,
+            72.00000000000001,
+            220.00000000000006
+          ]
+        },
+        "02_right_arm": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 123050.2328438473,
+          "bounds_mm": [
+            154.0,
+            -4.884981308350689e-14,
+            -74.00000000000001,
+            184.00000000000006,
+            72.00000000000001,
+            220.00000000000006
+          ]
+        },
         "07_left_dam": {
           "valid": true,
           "solids": 1,
-          "volume_mm3": 17552.144755299327,
+          "volume_mm3": 17313.059964454256,
           "bounds_mm": [
             -171.70000000000005,
-            1.9999999999999387,
+            1.9999999999999272,
             105.0,
             -0.3000000000000398,
             38.0,
@@ -1709,12 +1709,12 @@
         "08_right_dam": {
           "valid": true,
           "solids": 1,
-          "volume_mm3": 17552.14475529937,
+          "volume_mm3": 17313.059964454285,
           "bounds_mm": [
             0.3000000000000398,
-            1.9999999999999387,
+            1.9999999999999272,
             105.0,
-            171.70000000000002,
+            171.70000000000005,
             38.0,
             218.00000000000006
           ]
@@ -1725,10 +1725,10 @@
       "overlaps_mm3": {},
       "interface_gaps_mm": {
         "left_arm_to_fan": 0.29999999999998295,
-        "left_arm_to_dam": 0.2999999999999545,
+        "left_arm_to_dam": 0.29999999999996596,
         "left_fan_to_cap": 0.29999999999997684,
         "right_arm_to_fan": 0.29999999999998295,
-        "right_arm_to_dam": 0.29999999999998295,
+        "right_arm_to_dam": 0.29999999999996596,
         "right_fan_to_cap": 0.29999999999997684
       },
       "external_interference_mm3": {
@@ -1737,41 +1737,15 @@
         "right_fan_envelope": {}
       },
       "part_count": 20,
-      "sketch_count": 51,
+      "sketch_count": 55,
       "wall_intrusions": {},
-      "total_printed_volume_mm3": 396147.0679720125,
-      "cad_solid_mass_g_at_1_05": 415.95442137061315,
-      "elapsed_seconds": 4.909124851226807,
+      "total_printed_volume_mm3": 408565.56505698944,
+      "cad_solid_mass_g_at_1_05": 428.99384330983895,
+      "elapsed_seconds": 3.8789734840393066,
       "pass": true
     },
     "6": {
       "parts": {
-        "01_left_arm": {
-          "valid": true,
-          "solids": 1,
-          "volume_mm3": 116601.8995105138,
-          "bounds_mm": [
-            -184.00000000000006,
-            -4.973799150320701e-14,
-            -74.00000000000003,
-            -154.0,
-            72.00000000000001,
-            220.00000000000006
-          ]
-        },
-        "02_right_arm": {
-          "valid": true,
-          "solids": 1,
-          "volume_mm3": 116601.89951051377,
-          "bounds_mm": [
-            154.0,
-            -4.973799150320701e-14,
-            -74.00000000000001,
-            184.00000000000006,
-            72.00000000000001,
-            220.00000000000006
-          ]
-        },
         "05_left_fan_cap": {
           "valid": true,
           "solids": 1,
@@ -1980,13 +1954,39 @@
             -13.75521651039979
           ]
         },
+        "01_left_arm": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 123050.23284384732,
+          "bounds_mm": [
+            -184.00000000000006,
+            -4.884981308350689e-14,
+            -74.00000000000003,
+            -154.0,
+            72.00000000000001,
+            220.00000000000006
+          ]
+        },
+        "02_right_arm": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 123050.2328438473,
+          "bounds_mm": [
+            154.0,
+            -4.884981308350689e-14,
+            -74.00000000000001,
+            184.00000000000006,
+            72.00000000000001,
+            220.00000000000006
+          ]
+        },
         "07_left_dam": {
           "valid": true,
           "solids": 1,
-          "volume_mm3": 17552.14475529926,
+          "volume_mm3": 17313.0599644542,
           "bounds_mm": [
             -171.70000000000005,
-            1.9999999999999503,
+            1.9999999999999432,
             117.0,
             -0.30000000000003924,
             38.0,
@@ -1996,10 +1996,10 @@
         "08_right_dam": {
           "valid": true,
           "solids": 1,
-          "volume_mm3": 17552.14475529929,
+          "volume_mm3": 17313.05996445423,
           "bounds_mm": [
             0.3000000000000398,
-            1.9999999999999503,
+            1.9999999999999432,
             117.0,
             171.70000000000005,
             38.0,
@@ -2012,10 +2012,10 @@
       "overlaps_mm3": {},
       "interface_gaps_mm": {
         "left_arm_to_fan": 0.29999999999998295,
-        "left_arm_to_dam": 0.29999999999998295,
+        "left_arm_to_dam": 0.29999999999997523,
         "left_fan_to_cap": 0.29999999999997684,
         "right_arm_to_fan": 0.29999999999998295,
-        "right_arm_to_dam": 0.29999999999998295,
+        "right_arm_to_dam": 0.29999999999997523,
         "right_fan_to_cap": 0.29999999999997684
       },
       "external_interference_mm3": {
@@ -2024,41 +2024,15 @@
         "right_fan_envelope": {}
       },
       "part_count": 20,
-      "sketch_count": 51,
+      "sketch_count": 55,
       "wall_intrusions": {},
-      "total_printed_volume_mm3": 396147.06797201233,
-      "cad_solid_mass_g_at_1_05": 415.954421370613,
-      "elapsed_seconds": 4.897166013717651,
+      "total_printed_volume_mm3": 408565.5650569893,
+      "cad_solid_mass_g_at_1_05": 428.99384330983884,
+      "elapsed_seconds": 4.0580527782440186,
       "pass": true
     },
     "7": {
       "parts": {
-        "01_left_arm": {
-          "valid": true,
-          "solids": 1,
-          "volume_mm3": 116601.8995105138,
-          "bounds_mm": [
-            -184.00000000000006,
-            -4.973799150320701e-14,
-            -74.00000000000003,
-            -154.0,
-            72.00000000000001,
-            220.00000000000006
-          ]
-        },
-        "02_right_arm": {
-          "valid": true,
-          "solids": 1,
-          "volume_mm3": 116601.89951051377,
-          "bounds_mm": [
-            154.0,
-            -4.973799150320701e-14,
-            -74.00000000000001,
-            184.00000000000006,
-            72.00000000000001,
-            220.00000000000006
-          ]
-        },
         "05_left_fan_cap": {
           "valid": true,
           "solids": 1,
@@ -2267,13 +2241,39 @@
             -13.75521651039979
           ]
         },
+        "01_left_arm": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 123050.23284384732,
+          "bounds_mm": [
+            -184.00000000000006,
+            -4.884981308350689e-14,
+            -74.00000000000003,
+            -154.0,
+            72.00000000000001,
+            220.00000000000006
+          ]
+        },
+        "02_right_arm": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 123050.2328438473,
+          "bounds_mm": [
+            154.0,
+            -4.884981308350689e-14,
+            -74.00000000000001,
+            184.00000000000006,
+            72.00000000000001,
+            220.00000000000006
+          ]
+        },
         "07_left_dam": {
           "valid": true,
           "solids": 1,
-          "volume_mm3": 17552.144755299265,
+          "volume_mm3": 17313.059964454216,
           "bounds_mm": [
             -171.70000000000005,
-            1.9999999999999512,
+            1.9999999999999543,
             129.0,
             -0.3000000000000349,
             38.0,
@@ -2283,10 +2283,10 @@
         "08_right_dam": {
           "valid": true,
           "solids": 1,
-          "volume_mm3": 17552.144755299323,
+          "volume_mm3": 17313.0599644542,
           "bounds_mm": [
             0.3000000000000398,
-            1.9999999999999512,
+            1.9999999999999543,
             129.0,
             171.70000000000005,
             38.0,
@@ -2299,10 +2299,10 @@
       "overlaps_mm3": {},
       "interface_gaps_mm": {
         "left_arm_to_fan": 0.29999999999998295,
-        "left_arm_to_dam": 0.2999999999999545,
+        "left_arm_to_dam": 0.29999999999996463,
         "left_fan_to_cap": 0.29999999999997684,
         "right_arm_to_fan": 0.29999999999998295,
-        "right_arm_to_dam": 0.2999999999999545,
+        "right_arm_to_dam": 0.29999999999996463,
         "right_fan_to_cap": 0.29999999999997684
       },
       "external_interference_mm3": {
@@ -2311,41 +2311,15 @@
         "right_fan_envelope": {}
       },
       "part_count": 20,
-      "sketch_count": 51,
+      "sketch_count": 55,
       "wall_intrusions": {},
-      "total_printed_volume_mm3": 396147.0679720124,
-      "cad_solid_mass_g_at_1_05": 415.95442137061303,
-      "elapsed_seconds": 4.820865154266357,
+      "total_printed_volume_mm3": 408565.5650569893,
+      "cad_solid_mass_g_at_1_05": 428.99384330983884,
+      "elapsed_seconds": 3.5189080238342285,
       "pass": true
     },
     "8": {
       "parts": {
-        "01_left_arm": {
-          "valid": true,
-          "solids": 1,
-          "volume_mm3": 116601.8995105138,
-          "bounds_mm": [
-            -184.00000000000006,
-            -4.973799150320701e-14,
-            -74.00000000000003,
-            -154.0,
-            72.00000000000001,
-            220.00000000000006
-          ]
-        },
-        "02_right_arm": {
-          "valid": true,
-          "solids": 1,
-          "volume_mm3": 116601.89951051377,
-          "bounds_mm": [
-            154.0,
-            -4.973799150320701e-14,
-            -74.00000000000001,
-            184.00000000000006,
-            72.00000000000001,
-            220.00000000000006
-          ]
-        },
         "05_left_fan_cap": {
           "valid": true,
           "solids": 1,
@@ -2554,13 +2528,39 @@
             -13.75521651039979
           ]
         },
+        "01_left_arm": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 123050.23284384732,
+          "bounds_mm": [
+            -184.00000000000006,
+            -4.884981308350689e-14,
+            -74.00000000000003,
+            -154.0,
+            72.00000000000001,
+            220.00000000000006
+          ]
+        },
+        "02_right_arm": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 123050.2328438473,
+          "bounds_mm": [
+            154.0,
+            -4.884981308350689e-14,
+            -74.00000000000001,
+            184.00000000000006,
+            72.00000000000001,
+            220.00000000000006
+          ]
+        },
         "07_left_dam": {
           "valid": true,
           "solids": 1,
-          "volume_mm3": 17552.14475529933,
+          "volume_mm3": 17313.059964454213,
           "bounds_mm": [
             -171.70000000000005,
-            1.9999999999999494,
+            1.9999999999999514,
             141.0,
             -0.3000000000000349,
             38.0,
@@ -2570,10 +2570,10 @@
         "08_right_dam": {
           "valid": true,
           "solids": 1,
-          "volume_mm3": 17552.144755299363,
+          "volume_mm3": 17313.05996445424,
           "bounds_mm": [
             0.3000000000000398,
-            1.9999999999999494,
+            1.9999999999999514,
             141.0,
             171.70000000000005,
             38.0,
@@ -2598,7 +2598,7 @@
         "right_fan_envelope": {}
       },
       "part_count": 20,
-      "sketch_count": 51,
+      "sketch_count": 55,
       "wall_intrusions": {},
       "sampled_service_interference_mm3": {
         "laptop_lift_0_forward_0": {},
@@ -2616,41 +2616,22 @@
         "right_fan_slide_50": {},
         "right_fan_slide_130": {}
       },
-      "total_printed_volume_mm3": 396147.0679720125,
-      "cad_solid_mass_g_at_1_05": 415.95442137061315,
-      "elapsed_seconds": 5.635793209075928,
+      "total_printed_volume_mm3": 408565.5650569894,
+      "cad_solid_mass_g_at_1_05": 428.9938433098389,
+      "elapsed_seconds": 4.301952362060547,
       "pass": true
     }
   },
-  "source_sha256": "359e32b5eb61c56ef6fb952c43dce364ba3e93e62b13f14c4ab592254f5dbd06",
+  "source_sha256": "49741ae916b0e06605d89b4b7a1499b0e4df74adb1221cf37320d93bb9474d57",
+  "gui_preservation": {
+    "restored": true,
+    "gui_present": true,
+    "matching_view_providers": 200,
+    "core_and_existing_streams_unchanged": true,
+    "core_sha256": "9ee30e5f1824afb4c0336a1cd55d797cb7acbb7a82ff4903eeb770a858b613bc"
+  },
   "saved_reopened": {
     "parts": {
-      "01_left_arm": {
-        "valid": true,
-        "solids": 1,
-        "volume_mm3": 116601.8995105138,
-        "bounds_mm": [
-          -184.00000000000006,
-          -4.973799150320701e-14,
-          -74.00000000000004,
-          -153.99999999999997,
-          72.00000000000009,
-          220.00000000000006
-        ]
-      },
-      "02_right_arm": {
-        "valid": true,
-        "solids": 1,
-        "volume_mm3": 116601.89951051383,
-        "bounds_mm": [
-          154.0,
-          -4.973799150320701e-14,
-          -74.00000000000001,
-          184.00000000000006,
-          72.00000000000001,
-          220.00000000000006
-        ]
-      },
       "05_left_fan_cap": {
         "valid": true,
         "solids": 1,
@@ -2859,10 +2840,36 @@
           -13.755216510399768
         ]
       },
+      "01_left_arm": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 123050.23284384733,
+        "bounds_mm": [
+          -184.00000000000006,
+          -4.884981308350689e-14,
+          -74.00000000000004,
+          -153.99999999999997,
+          72.00000000000009,
+          220.00000000000006
+        ]
+      },
+      "02_right_arm": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 123050.23284384742,
+        "bounds_mm": [
+          154.0,
+          -4.884981308350689e-14,
+          -74.00000000000001,
+          184.00000000000006,
+          72.00000000000001,
+          220.00000000000006
+        ]
+      },
       "07_left_dam": {
         "valid": true,
         "solids": 1,
-        "volume_mm3": 17552.144755299345,
+        "volume_mm3": 17313.05996445424,
         "bounds_mm": [
           -171.70000000000005,
           1.9999999999999183,
@@ -2875,10 +2882,10 @@
       "08_right_dam": {
         "valid": true,
         "solids": 1,
-        "volume_mm3": 17552.144755299378,
+        "volume_mm3": 17313.05996445424,
         "bounds_mm": [
           0.30000000000001137,
-          1.9999999999999494,
+          1.9999999999999514,
           141.0,
           171.70000000000005,
           38.0,
@@ -2903,7 +2910,7 @@
       "right_fan_envelope": {}
     },
     "part_count": 20,
-    "sketch_count": 51,
+    "sketch_count": 55,
     "wall_intrusions": {},
     "sampled_service_interference_mm3": {
       "laptop_lift_0_forward_0": {},
@@ -2921,28 +2928,29 @@
       "right_fan_slide_50": {},
       "right_fan_slide_130": {}
     },
-    "total_printed_volume_mm3": 396147.0679720128,
-    "cad_solid_mass_g_at_1_05": 415.95442137061343,
-    "elapsed_seconds": 5.3345947265625,
+    "total_printed_volume_mm3": 408565.5650569898,
+    "cad_solid_mass_g_at_1_05": 428.9938433098393,
+    "elapsed_seconds": 5.235942125320435,
     "pass": true
   },
+  "source_unchanged": true,
   "export": {
-    "revision": "Minimalist M1 prototype",
+    "revision": "Minimalist M1.1 prototype",
     "units": "mm",
-    "native_sha256": "9801cdf749da50878c7b461677fe3ad72fa0bbb3d482e55653b9a2c0692867c5",
+    "native_sha256": "70dfca602ba381a0990f334de44f52b2ff7542f19a7c69278e0942e3f858e985",
     "standard_3mf_contains_slicer_settings": false,
     "parts": {
       "01_left_arm": {
         "orientation": "outer flat side down; diagonal; plate turn 0 degrees",
-        "volume_mm3": 116601.89951051367,
+        "volume_mm3": 123050.2328438473,
         "dimensions_mm": [
           231.93102422918767,
-          220.61731573020293,
+          222.03152929257604,
           30.000000000000057
         ],
         "bounds_mm": [
           16.06897577081233,
-          27.382684269796954,
+          25.968470707423847,
           0.0,
           248.0,
           247.9999999999999,
@@ -2954,24 +2962,24 @@
         "bed_and_8mm_brim_clear": true,
         "stock_cutter_and_brim_clear": true,
         "sha256": {
-          ".stl": "5b0c5f6a65195038686ffe10cdc668ea71b80b89435b52327d31986306020de8",
-          ".step": "74005780c1b9929bd6e35c3e020c75f15cc7ba476cc9d802eafb144aa7f5ad6d",
-          ".3mf": "bcbccd1e5a813ce02d12366387f2c8e9435eed8b1ca033111aac77a547eac573"
+          ".stl": "fef6d2ba098cbcd20275c2ad718dc5946c6569b5e6450f38532334dc36eeaab6",
+          ".step": "9a1b8c4a64a858dc962d62b06bcf521e24c7fd9841accd4a7e116c543df56b78",
+          ".3mf": "34fac9d9c22ee4f197225eb686ca1b99037892988cfcde0c391e24f56e5280c4"
         }
       },
       "02_right_arm": {
         "orientation": "outer flat side down; diagonal; plate turn 0 degrees",
-        "volume_mm3": 116601.89951051395,
+        "volume_mm3": 123050.23284384703,
         "dimensions_mm": [
-          220.617315730203,
+          222.031529292576,
           231.93102422918764,
           30.00000000000006
         ],
         "bounds_mm": [
-          27.382684269797068,
+          25.968470707423975,
           16.068975770812344,
           0.0,
-          248.00000000000006,
+          248.0,
           248.0,
           30.00000000000006
         ],
@@ -2981,9 +2989,9 @@
         "bed_and_8mm_brim_clear": true,
         "stock_cutter_and_brim_clear": true,
         "sha256": {
-          ".stl": "9fc8c9a2ef1985f61033ddb5499f5f83e82fce9403f162f4264e7dfd72b1f53b",
-          ".step": "bc463c8200d9b721b49576a83f8806ab374722b1762a8fe6bff8b2b4ddfbcd03",
-          ".3mf": "47789726ef1b93c17d89e0274c4074c20a17ddf1282011c5b5d322377c88a8b8"
+          ".stl": "3d46c4b818b6dc07802e1434394fb28fa04c169885fbaf1e4e3a93f66c2490d8",
+          ".step": "98e012395c27bec28526b6869698118c1ed5c56712a4ccec0f09f8cd979c95be",
+          ".3mf": "7053cf463a31c12eafdd8687da8de8fc11ce6980b0a8f0047d77b3e8c380b497"
         }
       },
       "03_left_fan_cage": {
@@ -3009,8 +3017,8 @@
         "stock_cutter_and_brim_clear": true,
         "sha256": {
           ".stl": "d5b590973c7e9f958b448506aeb137f9605e510643531ee79eeff9169c374766",
-          ".step": "cec3dcbcf541534ed441806f9bd5b120d3668bce8e679c6f13fb327efa82fbaa",
-          ".3mf": "2bd1df882fad2a07be1f79d9a74fd83c958c8508cad6a0b18d2c64b6766293d9"
+          ".step": "ef5a630311450a8e3a14aea58c98f4a86510e3ac1b95a9ed42f15c8805fbe774",
+          ".3mf": "2b1ecbe28b02bf4dcdd8db8b8c12b81fad3037cd3f54989fd6e3a216a6dea2e2"
         }
       },
       "04_right_fan_cage": {
@@ -3036,8 +3044,8 @@
         "stock_cutter_and_brim_clear": true,
         "sha256": {
           ".stl": "1220a1b80c7f1196812a63c8a773824618f821becfa3f4233432cb8d343fe12d",
-          ".step": "5d47e53ed42148bb57bc6f604c57837b890a2965cc69c8e21aca7e8a9408aa05",
-          ".3mf": "76f6b6808299e857129a6fd202d370825d1b01787b58a7a823a5c33d43522ee4"
+          ".step": "1527e9145c4a4ce171d286108b56d054544444185acbddefa7269ece978d4222",
+          ".3mf": "13e9c215ee11e8b71a4e3e70e54097faaa811176957d5558efb4e49b4a0a0dba"
         }
       },
       "05_left_fan_cap": {
@@ -3063,8 +3071,8 @@
         "stock_cutter_and_brim_clear": true,
         "sha256": {
           ".stl": "fc0bc281f1cc19b2ec27cdc8277c4723a62225dc7af98555b505f2c76cacea1d",
-          ".step": "342331e486c50b1539adde29ee004f5da9ea00597a3ca4144283362463860437",
-          ".3mf": "8dde5d6b9127ac2c4d95f5110b08ec51f4e08feeb1d9769bd352a3577d5b3804"
+          ".step": "7e18d66ddcbb199e34558357bd5f9bcf6ac4e964ed0a224680a741558a915ac2",
+          ".3mf": "79b922162ee71676354e318f4c396ddd897fca1cc9e3528d6cf31537a0182563"
         }
       },
       "06_right_fan_cap": {
@@ -3090,13 +3098,13 @@
         "stock_cutter_and_brim_clear": true,
         "sha256": {
           ".stl": "905652ec38d1dd0c7d7c88a8c8e4e1d24ec6a99e82bb6d2e05603d3f2422beef",
-          ".step": "d58862be2d5aa6a7cba5cd2777909d1237b1388700539d18b14d51a4d479cf09",
-          ".3mf": "44619ba736b73d3d8f7dc8f17228fa5fba8cb82a5b9d67fc42cd4aefc2fc33b8"
+          ".step": "2ea8d8a52234029880c780a4fb2e15a347263e7981782ef8f77225ece3e70023",
+          ".3mf": "44e39d8977deab7e713b7c92e79e95ccdf95dd4e5732b5ba762d88211582efb0"
         }
       },
       "07_left_dam": {
         "orientation": "lip down",
-        "volume_mm3": 17552.14475529936,
+        "volume_mm3": 17313.059964454274,
         "dimensions_mm": [
           171.4,
           36.00000000000006,
@@ -3116,14 +3124,14 @@
         "bed_and_8mm_brim_clear": true,
         "stock_cutter_and_brim_clear": true,
         "sha256": {
-          ".stl": "de5090dc1b797024397db07acca529667eb2da872b963cabdd12f247e7c03ef7",
-          ".step": "bbae8ff576abcf7e3d6ef409efa00c08fb1b0e8accb04178609121f9d538a2c5",
-          ".3mf": "67a99cade47bc98db65cebcfe033b6289422e1e32c538e87498e969deb101029"
+          ".stl": "68e11f06f23fab5c7e761e1301bae1f68e36b8ae66b2f42bf7336f430a78abaf",
+          ".step": "32bdf0a464a39fc667ba463f09803ea4d6c696c44539d6165fa727f004fa2099",
+          ".3mf": "88cfae29ce5d8cc15e49733d64dc4dcb9c6b8243448407607cd28ef126f7b136"
         }
       },
       "08_right_dam": {
         "orientation": "lip down",
-        "volume_mm3": 17552.14475529936,
+        "volume_mm3": 17313.059964454278,
         "dimensions_mm": [
           171.4,
           36.00000000000006,
@@ -3143,9 +3151,9 @@
         "bed_and_8mm_brim_clear": true,
         "stock_cutter_and_brim_clear": true,
         "sha256": {
-          ".stl": "d996dd6cb3f51cc3d1479f47fcb8e47aa8f9a97ccd4256f9a9a840c728712c1e",
-          ".step": "f23e122c7d72fffc363c2d15c0cc1fd960e5aea8d3c3b22b947a79952ca83431",
-          ".3mf": "6a9e0617c7cf3147254bf5bf4fd609a22840a3d5b5bd1953bf63b176ba4b479d"
+          ".stl": "9430516bd25a82f2ff459046b1df13c9dc5d2d9d4fdd0fd71fee325d3e44408a",
+          ".step": "b2fda81d576536859c2ca010cbbd8214ad9806d0f0b2ea25e46900fe2be42419",
+          ".3mf": "deebef0c66aa95579b0b5d23988a16137f32c2f25642f31fde6067deb2eac38f"
         }
       },
       "09_left_fan_key": {
@@ -3171,8 +3179,8 @@
         "stock_cutter_and_brim_clear": true,
         "sha256": {
           ".stl": "72a115005eb0f58d5287f22e380c61957e6fde4e2e80e324937c2b919d43900c",
-          ".step": "96d7aaba6cd236fe437b56538cc585bd32837bc00c5664efc1b448cfa78fa3cf",
-          ".3mf": "5a0df2cd80e5da6317a48ba1798a500b5653e74ee79daf58442dd08ebb22dab2"
+          ".step": "c6ed7339f1584da06499a09b2d975e8006a417d8601a74251b4fd7af14e15093",
+          ".3mf": "b7f8f340aaabcdf6a50b302ba2baa112248d06f1e2c0f98f1d05b32b50633a48"
         }
       },
       "10_right_fan_key": {
@@ -3198,8 +3206,8 @@
         "stock_cutter_and_brim_clear": true,
         "sha256": {
           ".stl": "e140c2db63589b6899c6e2a9aa855842a04c93c7ae8e081377746b5a25da3cdd",
-          ".step": "d55e33f97ef639804587de55f68639ef30007d240165f439a20f304afd3aa445",
-          ".3mf": "fafa661cab832f4b644446a38c7d27a0b5db1b5a794bbc1a76e6445569b84733"
+          ".step": "ec5e05c283dce74f2bd60e99acc80f1b59641bcf8ecae742458a5c786c25082a",
+          ".3mf": "b6341921e9b5cc2625595350bf029a619df8c29c5c15dfd9a6af851ef600c81a"
         }
       },
       "11_left_dam_key": {
@@ -3225,8 +3233,8 @@
         "stock_cutter_and_brim_clear": true,
         "sha256": {
           ".stl": "72a115005eb0f58d5287f22e380c61957e6fde4e2e80e324937c2b919d43900c",
-          ".step": "2265679ec16505b92f9709d7ff0e93a9e7e97255753bc791b3d825a806863c44",
-          ".3mf": "2625c900f8cd2d83ff31568cb8821b67e01776b0cfb9adda25912b9701263add"
+          ".step": "87fd019a14e9accf26cae51a57faf5ddbfaf57390a3f7ba397d4bfb80e368aea",
+          ".3mf": "1f0dc384f08b276838988b0e52a7d9818276f1b0dec2f7dc609577edbb587332"
         }
       },
       "12_right_dam_key": {
@@ -3252,8 +3260,8 @@
         "stock_cutter_and_brim_clear": true,
         "sha256": {
           ".stl": "e140c2db63589b6899c6e2a9aa855842a04c93c7ae8e081377746b5a25da3cdd",
-          ".step": "6f55e8b1f079afb6de0138f380c70b42f6dd92b3fc0087fbf06aad961556d044",
-          ".3mf": "661011682758eb25ff5128c2c434dc2ec710c43ddfca7f021784194091527de7"
+          ".step": "b94c9e009f2c6f4529e47c03587cbcdcedf04ef4f2178765cc495406dfe9f992",
+          ".3mf": "7960f8e7e0fb8f7cf032e3837d05b0bafb54008a9ed7d16b55a7b868f49a8c3f"
         }
       },
       "13_left_fan_keeper": {
@@ -3279,8 +3287,8 @@
         "stock_cutter_and_brim_clear": true,
         "sha256": {
           ".stl": "fcd0687007446d7f26ffd50a2a5e52aa554784083012b459a342bdf615532485",
-          ".step": "343ff5af7814ffc98733e5feada67dba29d989c394a205d97ef61b1444be3a52",
-          ".3mf": "cf2c8068e213d265eae714236fef8042bf05298e451bd2596201cc219d0b04a0"
+          ".step": "73e9268391804993fb62e2d12a24aa7191ad1bc4dbbce050ac252d122818956b",
+          ".3mf": "c84f8dc134c4963796fd83c07a69d9b1688762bf9dd5ce23a6ba8f73cc7cc5d6"
         }
       },
       "14_right_fan_keeper": {
@@ -3306,8 +3314,8 @@
         "stock_cutter_and_brim_clear": true,
         "sha256": {
           ".stl": "b2c09d4b2f7b8619a7b2ea721f9788f08a4c61c22b650bdf27ad27dc0745194f",
-          ".step": "9cf62d4627ca1fd35c11a5020a80e38a720843a56b8cec4344b7bffec9d8c74e",
-          ".3mf": "01ef8963b4a20b55d6a1abde934331db5386105d9df2e6d42fda3ece6ed3448f"
+          ".step": "f27eb01df11930ddfc9b9083a4295f77c6d21685c2a8171859c4a3e6c4590707",
+          ".3mf": "b27df15e92476958ee23179440c5ef09a7d171e3c14cff9ea970337dc4e408f7"
         }
       },
       "15_left_dam_keeper": {
@@ -3333,8 +3341,8 @@
         "stock_cutter_and_brim_clear": true,
         "sha256": {
           ".stl": "59c6356badb7735afc9ed9c4a6c4925e09cc83e5faa732aca59161ae5cdb91b6",
-          ".step": "2cb6025f22847e4ed423094a312d51401b8f6f205cf8f5a7417e5dfeb11feac1",
-          ".3mf": "03d104856399bdeae027e75f3592b769dc4c19b24df39c66994617cffd242dec"
+          ".step": "ec780fde46dd0df34b23ca9340a270c4566df42b3d3ec06ff7d79f85e51b3be4",
+          ".3mf": "b324be533338d6cea69b3dd7f37b00145aff4f1a4b2f942d84046625a0ba4980"
         }
       },
       "16_right_dam_keeper": {
@@ -3360,8 +3368,8 @@
         "stock_cutter_and_brim_clear": true,
         "sha256": {
           ".stl": "2771b73a11044f739c2f2c8dc91df7d91e09361c5ff04738b03a7c47ead7f574",
-          ".step": "e4a18b2644010eb6fec98e359a7e75511c29f94bede6fb74b63d07bd74c53b58",
-          ".3mf": "5dd26df05f583e8f994b140769d4d5507e83992ba5cb47dcd757669810583a17"
+          ".step": "d024831602ab266d5abee1e02ee9ab40e26736c165ccc94ab44f4dac1eb3cf26",
+          ".3mf": "b443524c95800dcf48a10e91186447c766ff06ac29745f337b5cfd8135caa2c1"
         }
       },
       "17_left_cap_pin_1": {
@@ -3387,8 +3395,8 @@
         "stock_cutter_and_brim_clear": true,
         "sha256": {
           ".stl": "cf71e131cacfee1b8bf256d64b73d1e0860f88147491a6d5e57dbd7a85f27a99",
-          ".step": "07df7dbf337f51720be75ae0ff9086f7e64f905884c073e778298087cedc8217",
-          ".3mf": "e47b22ad495049d980e1997788b1739d82a32ea5e834656e203b28fe72ccce4c"
+          ".step": "2ba9cfc63b52c012ef371aa386482fe7015f2ea451b98ca76b9d0a91124ddd57",
+          ".3mf": "35b040580a987aed3f66b09994c1debbfc66777c3d46f68d0ce0fcdd461674de"
         }
       },
       "18_right_cap_pin_1": {
@@ -3414,8 +3422,8 @@
         "stock_cutter_and_brim_clear": true,
         "sha256": {
           ".stl": "5babfd579a5b90af4bf92b146fe56d6e915bde265e9fc8c5bdd9e4da1c6fb08a",
-          ".step": "796ddb5d3ad11c08193bd84256a58f417f576010e0e6110c40a14c100749df3c",
-          ".3mf": "71a677851b0dbd891e68d4ecf67821a13c965c099f9276f365c368f661ac21ea"
+          ".step": "e24630eb9fb5d1d7904ac095ed706145124b0e35108538ede722d90c7e04e487",
+          ".3mf": "e74de73b0a3e19de61c6f965b648d58a30640ce8afbd107b225d71620bd7c17b"
         }
       },
       "19_left_cap_pin_2": {
@@ -3441,8 +3449,8 @@
         "stock_cutter_and_brim_clear": true,
         "sha256": {
           ".stl": "b169b1a9e8358354c9bc6ba9ee3f5efd38715f897c1890251152b25ed96d7890",
-          ".step": "830296a6f2faac8f4b3bf1130cac984c9e09b6c4ee4cb3d067cdd41da731fef5",
-          ".3mf": "d4b0ac4e7bab9a2d098fde3a41a67bbb55ffd40350a8bd96bab74911bab60a8d"
+          ".step": "f11b90a6b34f0425e23ce0c1e8798bf48c6f6f2621aad4062118bb0f05715773",
+          ".3mf": "8d1ede61f6bf01e0a006b3ca4d858ef31c408a6d8cb63b5af0642cde07960bb8"
         }
       },
       "20_right_cap_pin_2": {
@@ -3468,8 +3476,8 @@
         "stock_cutter_and_brim_clear": true,
         "sha256": {
           ".stl": "1ed404db81f54f03c6bbad01b71f9cc61a65e46810371f5c6f08979b3bf1af86",
-          ".step": "522b2afe56353c22dbfdcef8eab96e3e10d3dbe528bc2006fda92d00c6e68e21",
-          ".3mf": "6512f368e4567e3f0cb17903c7d68c965e964ca34ecf1fbeff9b8a8ba66627df"
+          ".step": "542e92c7fafd1640aa5b6ffd3f6c2c638965ae1f6d6ad9f806024fef034a2d76",
+          ".3mf": "ce2e20728476984d182ad69d508175b1affbfcd72c1a2f390a53a45769a428d5"
         }
       }
     },
@@ -3497,19 +3505,38 @@
         "stock_cutter_and_brim_clear": true,
         "sha256": {
           ".stl": "564681b4f1738742c8175fefbe9fdf5f536d12e917f1e60a11b286a817bf7f5e",
-          ".step": "97ea61fc35682bb682d65df73025b3e6f233df488ad2fb2b99177c69f6efb31c",
-          ".3mf": "de42ac02eebeb84fb463caecc4403b2cfe473b4b7c0871e8bffbd5730f9d486c"
+          ".step": "8837232c4851d4a6c22ed94d6f18248d9176867964b94fe005a93085763f1e99",
+          ".3mf": "574ac873f63b0608fe18e61315f8530d4c22eaecea11e3cd22e92bd93d615e84"
+        }
+      },
+      "22_hardware_without_dam": {
+        "orientation": "8 separate parts; use with 01-06 when omitting the dam",
+        "volume_mm3": 7157.697122145916,
+        "dimensions_mm": [
+          140.0,
+          59.99955240724111,
+          33.40000000000001
+        ],
+        "bounds_mm": [
+          44.0,
+          84.0,
+          -4.284544558371977e-16,
+          184.0,
+          143.9995524072411,
+          33.40000000000001
+        ],
+        "closed_mesh": true,
+        "step_valid_solids": 8,
+        "step_roundtrip_difference_mm3": 0.0,
+        "bed_and_8mm_brim_clear": true,
+        "stock_cutter_and_brim_clear": true,
+        "sha256": {
+          ".stl": "f6292816b508b6ff015d9c04b7c1834992e53f4f7ac6a7b927b60e22acbb3d6d",
+          ".step": "387a6af25e06eece082af1e9b6c48db5f60c07969a8f15341630a1034dbfb70f",
+          ".3mf": "d95ad12b98d1c0dd16269fbf422642cc2d4fb02924c40ecd8ec49b6624932815"
         }
       }
     },
-    "total_volume_mm3": 396147.0679720128
-  },
-  "source_unchanged": true,
-  "gui_preservation": {
-    "restored": true,
-    "gui_present": true,
-    "matching_view_providers": 192,
-    "core_and_existing_streams_unchanged": true,
-    "core_sha256": "cb8a8e3d1cec1e4e0bbda5cd64ddba65a92b87449a7f237bcb17696059df18ba"
+    "total_volume_mm3": 408565.5650569898
   }
 }

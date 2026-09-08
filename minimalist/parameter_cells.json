@@ -42,5 +42,8 @@
   "damAttachZ": "B50",
   "damLift": "B51",
   "damStartZ": "B52",
-  "fanOffsetX": "B53"
+  "fanOffsetX": "B53",
+  "wallPadHeight": "B56",
+  "wallGussetWeb": "B57",
+  "wallGussetRise": "B58"
 }

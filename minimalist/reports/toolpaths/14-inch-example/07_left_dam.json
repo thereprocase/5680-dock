@@ -1,6 +1,6 @@
 {
   "source_gcode": "preview.gcode",
-  "source_gcode_sha256": "7d1a9d9378b350e8dd02ee3aa31640491e8e8555f4ce6d253eda0dd82674fc4a",
+  "source_gcode_sha256": "0eb2d10964797cf75052454f2b3a2882c1ceef25dec21edba7c025c847dd074c",
   "layers": 415,
   "method": "Model paths buffered by reported line width. Island support: previous layer plus 0.15 mm. A deposited bead is supported where it overlaps the prior-layer footprint by at least 0.05 mm: buffer that footprint by half the current bead width minus 0.05 mm. Report contiguous unsupported subsegments, not full move lengths. Same-layer anchoring order and physical sag are not proven.",
   "floating_components": [],
@@ -81,9 +81,9 @@
     },
     {
       "z_mm": 81.0,
-      "move_length_mm": 2.7319999999999993,
-      "unsupported_length_mm": 2.7319999999999993,
-      "unsupported_total_mm": 2.7319999999999993,
+      "move_length_mm": 2.6920000000000073,
+      "unsupported_length_mm": 2.6920000000000073,
+      "unsupported_total_mm": 2.6920000000000073,
       "feature": "Overhang wall"
     },
     {
@@ -158,11 +158,11 @@
     }
   ],
   "time_and_material_comments": [
-    "; model printing time: 1h 6m 0s; total estimated time: 1h 12m 15s",
-    "; filament used [mm] = 5733.88",
-    "; filament used [cm3] = 13.79",
-    "; filament used [g] = 14.48"
+    "; model printing time: 1h 5m 53s; total estimated time: 1h 12m 7s",
+    "; filament used [mm] = 5642.99",
+    "; filament used [cm3] = 13.57",
+    "; filament used [g] = 14.25"
   ],
-  "analysis_geometry_sha256": "801a6f96aba97dff7c53aa3d3ec6e40a1634bc3f19859251293021ea0f563622",
+  "analysis_geometry_sha256": "c38bcd78ca758876b5c96bad38d047173c982265cfc5e3dde39aff2e1b2d70a1",
   "analysis_feature_scope": "All positive-extrusion model paths; bridge-tagged and all-feature maxima are reported separately."
 }

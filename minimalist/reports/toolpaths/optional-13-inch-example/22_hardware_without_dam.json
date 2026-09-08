@@ -163,5 +163,6 @@
     "; filament used [cm3] = 7.37",
     "; filament used [g] = 7.74"
   ],
+  "analysis_geometry_sha256": "745889d83911fc6373c32b12d9ba2c5c2248a819aeb900839300019d4696dec6",
   "analysis_feature_scope": "All positive-extrusion model paths; bridge-tagged and all-feature maxima are reported separately."
 }

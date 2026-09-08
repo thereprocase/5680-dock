@@ -1,9 +1,9 @@
 {
-  "source_native_sha256": "30adb9d6a2a71545ab0a9908f2f4d89d391fb73090111f70bc7bc042ddcf609c",
+  "source_native_sha256": "109ac2fbadb0bf8c23e14b563b2e30ae69641a30d52d80c07a87c71e97400984",
   "parts": {
     "01_coupon_right_arm": {
       "orientation": "outer flat side down",
-      "volume_mm3": 5370.239999999986,
+      "volume_mm3": 5370.239999999989,
       "dimensions_mm": [
         37.0,
         16.00000000000003,
@@ -23,9 +23,9 @@
       "bed_and_8mm_brim_clear": true,
       "stock_cutter_and_brim_clear": true,
       "sha256": {
-        ".stl": "88f51021553a4f32428151321d40ac1b20d4361ffb595012f88bfdfd540301bb",
-        ".step": "b89273046ad8382019f17b8990576efb26f665c2913446c8273b1a831662801b",
-        ".3mf": "a6b3748291d5b143f74e9449aee65d18993ebb83ffc828ffad1e031b2652d2d6"
+        ".stl": "2366f4201342c0609e7b065cce87cd207267a84cfd8463be4f3c05737686f1ee",
+        ".step": "05d8463d0d3227dfa2f930cb6e9a1930224906d582b9c280b63405a75bf2e6b0",
+        ".3mf": "6d584226ea964106de4537d6acd6cabbfce930c5d44ce35b266e96b44c0a9323"
       }
     },
     "02_coupon_dam_carriage": {
@@ -51,8 +51,8 @@
       "stock_cutter_and_brim_clear": true,
       "sha256": {
         ".stl": "d6c349ddd1042ac868411a9f5446dc508d8e77b53dc37f59d8aab151b2e3238f",
-        ".step": "cbc9a6160d8dfd66fc21776d251b0a0b33b329cb47e1d9dbe9037ab72ccefce3",
-        ".3mf": "280c85039f7a4b661bdf95f1fac45d241261854dfe999a3425a30b215807e00c"
+        ".step": "3c0fde4010a605f82a98ec915d85aef6b3ac7760e48b01f0c13c739824e43b87",
+        ".3mf": "94a150efcfbb713c2269024e2c20ac0f875912cc7abb5541553b34d56b466550"
       }
     },
     "03_coupon_right_key": {
@@ -78,8 +78,8 @@
       "stock_cutter_and_brim_clear": true,
       "sha256": {
         ".stl": "ee0608f213e10902174554095eec57ae4484f187dbcccb795a29f8a40769ce86",
-        ".step": "8103c6bcf0e90b38d0e0b4893db1b125b1553a0799bd72a71c8ad5081167c8e2",
-        ".3mf": "9773694ce8695437beb98445ed03f066dc4124837cf8524bec843b397217fef6"
+        ".step": "9c596661b7f83df50c7a0a41a7f70021d4829ded3adaa61f0e30c26ef93c83d0",
+        ".3mf": "70427ba59885d0290a9e1d7e5c0af7516e69b66c3aaf6f2d46d7f60e7ac63683"
       }
     },
     "04_coupon_keeper": {
@@ -105,8 +105,8 @@
       "stock_cutter_and_brim_clear": true,
       "sha256": {
         ".stl": "409e09d17b37a9bfb7169629d11a626553f5cd83287c2b7fbccb5649daedb22e",
-        ".step": "f5d85bee6e58111c291b6ea44c6576d5fe36ac6aba7f17a34b4248472498ce03",
-        ".3mf": "7365dde79d99038bc876280df0feacd559ef98a326e4a271902e00b4191d4226"
+        ".step": "4a846d8e7a26ed7f20de2150cf0de174f6e339e3490bc2ead3044ad7214030fb",
+        ".3mf": "2e180e3c269cdedcb4b01cdffc76e5f5835c4cc4f6b418b9ae99b72cb7ef49c6"
       }
     },
     "05_coupon_fan_cage": {
@@ -132,8 +132,8 @@
       "stock_cutter_and_brim_clear": true,
       "sha256": {
         ".stl": "f3fdf1b00171a150f59a85c8911cb425e644c5395f95ed4bf8c2d0cc3de53b14",
-        ".step": "1f0b373a34f9cf13e83e0509d09cd3831813396ab61505b7d8c7b6e9c3f0a802",
-        ".3mf": "e272b5c9b26605190240fb1fa19c94fc781468e75679e639858b8af6712fa63f"
+        ".step": "ce9aaf8164405af9aa0c253e0311a400aeac4b97075b76f0c62a5a5c5a2edf10",
+        ".3mf": "f65c71467bcdbd80c63584d0d1d82140d38ee595f70da9822f2d8e7bf025a384"
       }
     },
     "06_coupon_fan_cap": {
@@ -159,8 +159,8 @@
       "stock_cutter_and_brim_clear": true,
       "sha256": {
         ".stl": "a51bdaf8f3897f4c337e937de5c910f1e4ff3a4e24bc4aaa3d97893034accf43",
-        ".step": "ff850082567125a2257312e76226a1b452b593d3c31bc2c147f237cad8993c11",
-        ".3mf": "bdd898b220965ab1f7e7da7c92e232ac8a6961b21ba714a667e5c53478167475"
+        ".step": "e3e9865e63009b42e47734f6bd6d993ead8df8eaa76d8419ca71d88c86a3e30b",
+        ".3mf": "368a5fc2aac1323311e511c1b1ad229350b4c3d606823414eaca2cd29dcf7c32"
       }
     },
     "07_coupon_cap_pin": {
@@ -186,8 +186,8 @@
       "stock_cutter_and_brim_clear": true,
       "sha256": {
         ".stl": "7e5c30ce0f07fe0c7ebb22511660b9841fde626dcd4e71158922fc20c7b03f32",
-        ".step": "310faaf2dc1d1efaf2cef16e8260b297b2c39674157cd8f07c6eb34aab269528",
-        ".3mf": "43416d64188682829d03f407710bd173c2a5623db63b73ce4d923cadb6de6b32"
+        ".step": "3814879becfe01bd3447f55c26ee7243c92c942c677e9c05e91ed92d6a227eeb",
+        ".3mf": "5e7e2ab03deb17a2c52b1d79edaa597c0195c34980fe04c043c9c1f78615b490"
       }
     },
     "08_coupon_fan_cage_hanger": {
@@ -213,8 +213,8 @@
       "stock_cutter_and_brim_clear": true,
       "sha256": {
         ".stl": "d3cd0770b3c735a60e09b088a57da7c79269326dab35f2aeba46bea003c3d7d4",
-        ".step": "b7706fe5ae5a486f0c299d8779135935e16e45b316b54e33a99c7d0e1957bad8",
-        ".3mf": "032e54165ba6f78003a10d2f883b121651db8e6e493ea78617e6567342108fd3"
+        ".step": "32ae1aed26c0b49c68c08f08e7fe37bcf676c5ee4634cddce84e9af46785b309",
+        ".3mf": "11c239976538b440f4478e385eef12065d089e888cf99c8df2a27ea4a1a6bab6"
       }
     }
   },
@@ -241,9 +241,9 @@
     "bed_and_8mm_brim_clear": true,
     "stock_cutter_and_brim_clear": true,
     "sha256": {
-      ".stl": "4c16c059b7dd31e18db40b806e32acda17628116525e5f2f5639a598fcb1be1c",
-      ".step": "e2d9cdadb093e3e9945aee4b9a5c2f10c2390658299c1b2ecdb1f49359205609",
-      ".3mf": "e0701a0246adcacf0cebfe14731a6c741d8e642dc954213a9690a06dda77cdde"
+      ".stl": "5bbbce3fdbf0f00009d4a29f3bd430a1446ddc3a826a0d4d9216baa9b8ca9167",
+      ".step": "62b9e806f43553e8ad958eca8e2dddc9393122067270e93853f070f5d371b34a",
+      ".3mf": "86460eb3d37cb330fef91836a357de230e7fbe45f52bee4cf5b92ed7c9803f99"
     }
   }
 }

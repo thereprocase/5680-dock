@@ -1,7 +1,7 @@
 {
-  "revision": "Minimalist M1 prototype",
+  "revision": "Minimalist M1.1 prototype",
   "native_design": "constrained sketches and stock FreeCAD features",
-  "source_native_sha256": "359e32b5eb61c56ef6fb952c43dce364ba3e93e62b13f14c4ab592254f5dbd06",
+  "source_native_sha256": "49741ae916b0e06605d89b4b7a1499b0e4df74adb1221cf37320d93bb9474d57",
   "process": {
     "slicer": "OrcaSlicer 2.4.2",
     "printer": "Bambu P1S",
@@ -26,38 +26,38 @@
       "valid_individual_prints": 20,
       "hardware_plate_solids": 12,
       "live_gui_preset_open_pass": true,
-      "estimated_filament_g": 388.05,
-      "total_estimated_seconds": 55494.0,
+      "estimated_filament_g": 400.55,
+      "total_estimated_seconds": 56550.0,
       "max_unsupported_bridge_span_mm": 3.015000000000015,
       "max_unsupported_deposition_span_mm": 8.987000000000009,
       "disconnected_floating_components": 0,
       "plates": [
         {
           "part_or_plate": "01_left_arm",
-          "estimated_filament_g": 113.2,
-          "total_estimated_seconds": 12148.0,
-          "gcode_sha256": "b5c0dde199eed6f3f10bc80f956c0e89b6bf26dfd31b10f8d4bfab5e0c251084",
-          "max_unsupported_bridge_span_mm": 0.08256720583096258,
-          "max_unsupported_deposition_span_mm": 0.08256720583096258,
+          "estimated_filament_g": 119.68,
+          "total_estimated_seconds": 12704.0,
+          "gcode_sha256": "0508a00f3432b01c2a0ad9e83e3e933f86be0de8ae1137ec9d8d1b42fbd35778",
+          "max_unsupported_bridge_span_mm": 0.0825672063234035,
+          "max_unsupported_deposition_span_mm": 0.0825672063234035,
           "unsupported_by_feature_mm": {
-            "Inner wall": 0.032568211692291765,
-            "Outer wall": 0.06258553406064844,
-            "Bridge": 0.08256720583096258
+            "Inner wall": 0.03256821169654935,
+            "Outer wall": 0.06274149987656517,
+            "Bridge": 0.0825672063234035
           },
           "disconnected_floating_components": 0
         },
         {
           "part_or_plate": "02_right_arm",
-          "estimated_filament_g": 113.32,
-          "total_estimated_seconds": 12332.0,
-          "gcode_sha256": "919ff11e6d39c094ef5e6c1031107138186e3017e2b5407cb6a1f0f3db35c8e5",
-          "max_unsupported_bridge_span_mm": 0.08304378252223624,
-          "max_unsupported_deposition_span_mm": 0.08304378252223624,
+          "estimated_filament_g": 119.8,
+          "total_estimated_seconds": 12831.0,
+          "gcode_sha256": "d2749807d3a8a11d04eab5e3b825947f07ab6c529a7b81842de28a85f438e400",
+          "max_unsupported_bridge_span_mm": 0.08327431258775209,
+          "max_unsupported_deposition_span_mm": 0.08327431258775209,
           "unsupported_by_feature_mm": {
-            "Internal solid infill": 0.021711022141087277,
-            "Inner wall": 0.033236711569835896,
-            "Outer wall": 0.0632753018177937,
-            "Bridge": 0.08304378252223624
+            "Internal solid infill": 0.021600983933964587,
+            "Inner wall": 0.03327531845847721,
+            "Outer wall": 0.06341387570843321,
+            "Bridge": 0.08327431258775209
           },
           "disconnected_floating_components": 0
         },
@@ -119,9 +119,9 @@
         },
         {
           "part_or_plate": "07_left_dam",
-          "estimated_filament_g": 15.9,
-          "total_estimated_seconds": 4745.0,
-          "gcode_sha256": "06c96d2291831a1b59b80556532da09f187f900c1bee97cd6b4aab1c33d0a94c",
+          "estimated_filament_g": 15.67,
+          "total_estimated_seconds": 4739.0,
+          "gcode_sha256": "b5c2ed9391a0be7ee05a0bd358eb3a9e59a1b8d161f7e648540d63e4e5d6cbdc",
           "max_unsupported_bridge_span_mm": 0,
           "max_unsupported_deposition_span_mm": 6.1200000000000045,
           "unsupported_by_feature_mm": {
@@ -133,9 +133,9 @@
         },
         {
           "part_or_plate": "08_right_dam",
-          "estimated_filament_g": 15.9,
-          "total_estimated_seconds": 4752.0,
-          "gcode_sha256": "ed93c3aee0db1b748915a6af88345da3d75c17ac5cdf5fe04223baa07c0a29f1",
+          "estimated_filament_g": 15.67,
+          "total_estimated_seconds": 4759.0,
+          "gcode_sha256": "a179eaa9176be707fd6866c0e03f16b4b99e3c34b7491691667c6fde9481a1c7",
           "max_unsupported_bridge_span_mm": 0,
           "max_unsupported_deposition_span_mm": 6.1200000000000045,
           "unsupported_by_feature_mm": {
@@ -176,8 +176,8 @@
           },
           "disconnected_floating_components": 0
         },
-        "estimated_filament_g": 349.9,
-        "total_estimated_seconds": 45095.0
+        "estimated_filament_g": 362.86,
+        "total_estimated_seconds": 46150.0
       }
     },
     "13-inch-example": {
@@ -190,39 +190,39 @@
       "valid_individual_prints": 20,
       "hardware_plate_solids": 12,
       "live_gui_preset_open_pass": true,
-      "estimated_filament_g": 367.39,
-      "total_estimated_seconds": 52682.0,
+      "estimated_filament_g": 379.88,
+      "total_estimated_seconds": 53795.0,
       "max_unsupported_bridge_span_mm": 3.015000000000015,
       "max_unsupported_deposition_span_mm": 8.987000000000009,
       "disconnected_floating_components": 0,
       "plates": [
         {
           "part_or_plate": "01_left_arm",
-          "estimated_filament_g": 105.4,
-          "total_estimated_seconds": 11559.0,
-          "gcode_sha256": "2878c924a4c31f53bdaa930691891907449480d94fce9badd805d7051d3adbdd",
-          "max_unsupported_bridge_span_mm": 0.08281331870901157,
-          "max_unsupported_deposition_span_mm": 0.08281331870901157,
+          "estimated_filament_g": 111.88,
+          "total_estimated_seconds": 12188.0,
+          "gcode_sha256": "7a5f5e9108f0b58328c940dfcd9eddacf7685830afb2fd855dc3b6965b5f6afb",
+          "max_unsupported_bridge_span_mm": 0.08302382291471232,
+          "max_unsupported_deposition_span_mm": 0.11875330007169652,
           "unsupported_by_feature_mm": {
-            "Outer wall": 0.06327530020765258,
-            "Internal solid infill": 0.04562882981465008,
-            "Inner wall": 0.033198117987107666,
-            "Bridge": 0.08281331870901157
+            "Outer wall": 0.06327530181778868,
+            "Internal solid infill": 0.11875330007169652,
+            "Inner wall": 0.03323674366892518,
+            "Bridge": 0.08302382291471232
           },
           "disconnected_floating_components": 0
         },
         {
           "part_or_plate": "02_right_arm",
-          "estimated_filament_g": 105.5,
-          "total_estimated_seconds": 11721.0,
-          "gcode_sha256": "3b597bedc72aaf7fbb1bee9e72b406d9456dc100e0b28db51432ad02878727a4",
-          "max_unsupported_bridge_span_mm": 0.08281331870898143,
-          "max_unsupported_deposition_span_mm": 0.08281331870898143,
+          "estimated_filament_g": 111.97,
+          "total_estimated_seconds": 12193.0,
+          "gcode_sha256": "953cb333e8c408ee6687ee436e251460be6c0caa4d905f428e6554a276c391dd",
+          "max_unsupported_bridge_span_mm": 0.08302382768353278,
+          "max_unsupported_deposition_span_mm": 0.08302382768353278,
           "unsupported_by_feature_mm": {
-            "Outer wall": 0.06327530020758726,
-            "Internal solid infill": 0.03051883380017971,
-            "Inner wall": 0.033198117987047374,
-            "Bridge": 0.08281331870898143
+            "Outer wall": 0.0632753018177334,
+            "Internal solid infill": 0.030515512393694738,
+            "Inner wall": 0.033236744525301336,
+            "Bridge": 0.08302382768353278
           },
           "disconnected_floating_components": 0
         },
@@ -284,9 +284,9 @@
         },
         {
           "part_or_plate": "07_left_dam",
-          "estimated_filament_g": 13.38,
-          "total_estimated_seconds": 3939.0,
-          "gcode_sha256": "9fa1db8e94006952f5e47fd270dcf6c75ac0f9a6c239e6c1f1d8fdc7621c0e7c",
+          "estimated_filament_g": 13.15,
+          "total_estimated_seconds": 3944.0,
+          "gcode_sha256": "42ec51b7a6e31bf7f1a761bc70e158a4ca18a565277eea8651b21c3b420aa61b",
           "max_unsupported_bridge_span_mm": 0,
           "max_unsupported_deposition_span_mm": 6.1200000000000045,
           "unsupported_by_feature_mm": {
@@ -298,9 +298,9 @@
         },
         {
           "part_or_plate": "08_right_dam",
-          "estimated_filament_g": 13.38,
-          "total_estimated_seconds": 3938.0,
-          "gcode_sha256": "b2888a428afab15206ef7432f0e3eb37e163671f5332cd1ae78ec0f7be26510b",
+          "estimated_filament_g": 13.15,
+          "total_estimated_seconds": 3945.0,
+          "gcode_sha256": "709cf6f59011c3db498d08c69cfcfe47c8cc727271eb0aa233abb769b9fbc0f0",
           "max_unsupported_bridge_span_mm": 0,
           "max_unsupported_deposition_span_mm": 6.1200000000000045,
           "unsupported_by_feature_mm": {
@@ -341,8 +341,8 @@
           },
           "disconnected_floating_components": 0
         },
-        "estimated_filament_g": 334.28,
-        "total_estimated_seconds": 43895.0
+        "estimated_filament_g": 347.23,
+        "total_estimated_seconds": 44996.0
       }
     },
     "14-inch-example": {
@@ -355,41 +355,41 @@
       "valid_individual_prints": 20,
       "hardware_plate_solids": 12,
       "live_gui_preset_open_pass": true,
-      "estimated_filament_g": 377.14,
-      "total_estimated_seconds": 53978.0,
+      "estimated_filament_g": 389.65,
+      "total_estimated_seconds": 55110.0,
       "max_unsupported_bridge_span_mm": 3.015000000000015,
       "max_unsupported_deposition_span_mm": 8.987000000000009,
       "disconnected_floating_components": 0,
       "plates": [
         {
           "part_or_plate": "01_left_arm",
-          "estimated_filament_g": 109.19,
-          "total_estimated_seconds": 11826.0,
-          "gcode_sha256": "9cadbcaed31c34b75f1240e8f63e4384a8109558fc17c03af49cf3f096a51f51",
-          "max_unsupported_bridge_span_mm": 0.08256719664669042,
-          "max_unsupported_deposition_span_mm": 0.13477897781926146,
+          "estimated_filament_g": 115.68,
+          "total_estimated_seconds": 12434.0,
+          "gcode_sha256": "941254d25b11fca58a055dde07e403ac3bb871dece97e212fded543682d37232",
+          "max_unsupported_bridge_span_mm": 0.08234376279459676,
+          "max_unsupported_deposition_span_mm": 0.13477897781922124,
           "unsupported_by_feature_mm": {
-            "Internal solid infill": 0.13477897781926146,
-            "Top surface": 0.03700377323067201,
-            "Inner wall": 0.03256819666818333,
-            "Outer wall": 0.06258551952580765,
-            "Bridge": 0.08256719664669042
+            "Internal solid infill": 0.13477897781922124,
+            "Top surface": 0.03766389222666388,
+            "Inner wall": 0.032529669888688696,
+            "Outer wall": 0.06277484076428437,
+            "Bridge": 0.08234376279459676
           },
           "disconnected_floating_components": 0
         },
         {
           "part_or_plate": "02_right_arm",
-          "estimated_filament_g": 109.26,
-          "total_estimated_seconds": 11965.0,
-          "gcode_sha256": "cd3167b8d8b6805cba841e2a34b1274055ade017ffe6a0e22c4dbdc4923734a3",
-          "max_unsupported_bridge_span_mm": 0.08256720583099274,
+          "estimated_filament_g": 115.74,
+          "total_estimated_seconds": 12491.0,
+          "gcode_sha256": "7ebe5b0819c0a4e1e98c1f45a393781406ad0549c681ca4f8932d79dc08793c8",
+          "max_unsupported_bridge_span_mm": 0.08234376284622642,
           "max_unsupported_deposition_span_mm": 0.19102564217180992,
           "unsupported_by_feature_mm": {
             "Internal solid infill": 0.19102564217180992,
-            "Top surface": 0.05599309874584926,
-            "Inner wall": 0.03256821169227167,
-            "Outer wall": 0.06258553406065348,
-            "Bridge": 0.08256720583099274
+            "Top surface": 0.05599309874588946,
+            "Inner wall": 0.03252966989911914,
+            "Outer wall": 0.06277423576342657,
+            "Bridge": 0.08234376284622642
           },
           "disconnected_floating_components": 0
         },
@@ -451,9 +451,9 @@
         },
         {
           "part_or_plate": "07_left_dam",
-          "estimated_filament_g": 14.48,
-          "total_estimated_seconds": 4335.0,
-          "gcode_sha256": "7d1a9d9378b350e8dd02ee3aa31640491e8e8555f4ce6d253eda0dd82674fc4a",
+          "estimated_filament_g": 14.25,
+          "total_estimated_seconds": 4327.0,
+          "gcode_sha256": "0eb2d10964797cf75052454f2b3a2882c1ceef25dec21edba7c025c847dd074c",
           "max_unsupported_bridge_span_mm": 0,
           "max_unsupported_deposition_span_mm": 6.1200000000000045,
           "unsupported_by_feature_mm": {
@@ -465,9 +465,9 @@
         },
         {
           "part_or_plate": "08_right_dam",
-          "estimated_filament_g": 14.48,
-          "total_estimated_seconds": 4335.0,
-          "gcode_sha256": "37d0c6650dfe119646a43fd7c99c3051d850aa9302b3c9a2e1d6605ec043c1b1",
+          "estimated_filament_g": 14.25,
+          "total_estimated_seconds": 4341.0,
+          "gcode_sha256": "d7ef1fd2f1f706380a2de27d25a49c9cc0733692aaef91a5acdc8cdfefc7059b",
           "max_unsupported_bridge_span_mm": 0,
           "max_unsupported_deposition_span_mm": 6.1200000000000045,
           "unsupported_by_feature_mm": {
@@ -508,8 +508,8 @@
           },
           "disconnected_floating_components": 0
         },
-        "estimated_filament_g": 341.83,
-        "total_estimated_seconds": 44405.0
+        "estimated_filament_g": 354.8,
+        "total_estimated_seconds": 45539.0
       }
     },
     "15-6-inch-example": {
@@ -522,41 +522,41 @@
       "valid_individual_prints": 20,
       "hardware_plate_solids": 12,
       "live_gui_preset_open_pass": true,
-      "estimated_filament_g": 399.47,
-      "total_estimated_seconds": 57385.0,
+      "estimated_filament_g": 411.96,
+      "total_estimated_seconds": 58533.0,
       "max_unsupported_bridge_span_mm": 3.015000000000015,
       "max_unsupported_deposition_span_mm": 8.987000000000009,
       "disconnected_floating_components": 0,
       "plates": [
         {
           "part_or_plate": "01_left_arm",
-          "estimated_filament_g": 117.58,
-          "total_estimated_seconds": 12570.0,
-          "gcode_sha256": "097866cb2ebc89abf1f13c9e4d13f196b5dd1af4b948a4083f1ef8681f9fccc1",
-          "max_unsupported_bridge_span_mm": 0.08256720583096258,
-          "max_unsupported_deposition_span_mm": 0.19730958767317347,
+          "estimated_filament_g": 124.07,
+          "total_estimated_seconds": 13172.0,
+          "gcode_sha256": "4a06a8a3f7ac517bb6b0230f5a53fc90c6ffeb3d69173073c8afdd513c8e6b8c",
+          "max_unsupported_bridge_span_mm": 0.08256720596702052,
+          "max_unsupported_deposition_span_mm": 0.28728183979435884,
           "unsupported_by_feature_mm": {
-            "Internal solid infill": 0.19730958767317347,
+            "Internal solid infill": 0.28728183979435884,
             "Top surface": 0.018671862551750837,
-            "Inner wall": 0.032568211692291765,
-            "Outer wall": 0.06258553406064844,
-            "Bridge": 0.08256720583096258
+            "Inner wall": 0.032568211685142893,
+            "Outer wall": 0.06274149987656517,
+            "Bridge": 0.08256720596702052
           },
           "disconnected_floating_components": 0
         },
         {
           "part_or_plate": "02_right_arm",
-          "estimated_filament_g": 117.68,
-          "total_estimated_seconds": 12609.0,
-          "gcode_sha256": "86c5fd544a4bbf046f55c4f890aab087fe3d4b15ddcbf3c959f969265af77baa",
-          "max_unsupported_bridge_span_mm": 0.0830438110950697,
-          "max_unsupported_deposition_span_mm": 0.3032169857856967,
+          "estimated_filament_g": 124.14,
+          "total_estimated_seconds": 13193.0,
+          "gcode_sha256": "616f48a609fa2e75ab4504a39acd7c78268206013f335456b4cf63c515b9e0bc",
+          "max_unsupported_bridge_span_mm": 0.08327430378801938,
+          "max_unsupported_deposition_span_mm": 0.3025975717381853,
           "unsupported_by_feature_mm": {
-            "Internal solid infill": 0.3032169857856967,
-            "Top surface": 0.018502028039206045,
-            "Inner wall": 0.033236711569835896,
-            "Outer wall": 0.06327530181780375,
-            "Bridge": 0.0830438110950697
+            "Internal solid infill": 0.3025975717381853,
+            "Top surface": 0.019200009144904478,
+            "Inner wall": 0.03327530342792433,
+            "Outer wall": 0.06344867056521478,
+            "Bridge": 0.08327430378801938
           },
           "disconnected_floating_components": 0
         },
@@ -618,23 +618,23 @@
         },
         {
           "part_or_plate": "07_left_dam",
-          "estimated_filament_g": 17.24,
-          "total_estimated_seconds": 5363.0,
-          "gcode_sha256": "3b9461e4a1878f7e2a41b73b26a577353845c4a3306c63b611edc418f665baf5",
+          "estimated_filament_g": 17.01,
+          "total_estimated_seconds": 5317.0,
+          "gcode_sha256": "f1995a62f2ec1f1419eb26beff1c4f3ece185b3d38cbf54585d90e03a2552a50",
           "max_unsupported_bridge_span_mm": 0,
           "max_unsupported_deposition_span_mm": 6.1200000000000045,
           "unsupported_by_feature_mm": {
-            "Inner wall": 0.049158500000018535,
             "Overhang wall": 6.1200000000000045,
+            "Inner wall": 0.049158500000018535,
             "Outer wall": 0.04000100000001794
           },
           "disconnected_floating_components": 0
         },
         {
           "part_or_plate": "08_right_dam",
-          "estimated_filament_g": 17.24,
-          "total_estimated_seconds": 5330.0,
-          "gcode_sha256": "abf136c52068d43e4ce4177d1062de449ea9a0046b4f853efae4ae3516d6ca49",
+          "estimated_filament_g": 17.01,
+          "total_estimated_seconds": 5338.0,
+          "gcode_sha256": "1eb088469caee5d154c16897abacbcf43cdf91d144326f8c6149cbecb4f2bb50",
           "max_unsupported_bridge_span_mm": 0,
           "max_unsupported_deposition_span_mm": 6.1200000000000045,
           "unsupported_by_feature_mm": {
@@ -675,8 +675,8 @@
           },
           "disconnected_floating_components": 0
         },
-        "estimated_filament_g": 358.64,
-        "total_estimated_seconds": 45789.0
+        "estimated_filament_g": 371.59,
+        "total_estimated_seconds": 46975.0
       }
     },
     "16-inch-example": {
@@ -689,41 +689,41 @@
       "valid_individual_prints": 20,
       "hardware_plate_solids": 12,
       "live_gui_preset_open_pass": true,
-      "estimated_filament_g": 400.01,
-      "total_estimated_seconds": 57682.0,
+      "estimated_filament_g": 412.5,
+      "total_estimated_seconds": 58926.0,
       "max_unsupported_bridge_span_mm": 3.015000000000015,
       "max_unsupported_deposition_span_mm": 8.987000000000009,
       "disconnected_floating_components": 0,
       "plates": [
         {
           "part_or_plate": "01_left_arm",
-          "estimated_filament_g": 117.58,
-          "total_estimated_seconds": 12570.0,
-          "gcode_sha256": "d1bf47555ffe340bd3b76210d73cabade558b158de3dbf01d6e49c2711b1852c",
-          "max_unsupported_bridge_span_mm": 0.08256720583096258,
-          "max_unsupported_deposition_span_mm": 0.19730958767317347,
+          "estimated_filament_g": 124.07,
+          "total_estimated_seconds": 13172.0,
+          "gcode_sha256": "edb2841249a74fda088f1d6544f02d66f1e31111702dd9be061d67b76b59a124",
+          "max_unsupported_bridge_span_mm": 0.08256720596702052,
+          "max_unsupported_deposition_span_mm": 0.28728183979435884,
           "unsupported_by_feature_mm": {
-            "Internal solid infill": 0.19730958767317347,
+            "Internal solid infill": 0.28728183979435884,
             "Top surface": 0.018671862551750837,
-            "Inner wall": 0.032568211692291765,
-            "Outer wall": 0.06258553406064844,
-            "Bridge": 0.08256720583096258
+            "Inner wall": 0.032568211685142893,
+            "Outer wall": 0.06274149987656517,
+            "Bridge": 0.08256720596702052
           },
           "disconnected_floating_components": 0
         },
         {
           "part_or_plate": "02_right_arm",
-          "estimated_filament_g": 117.68,
-          "total_estimated_seconds": 12609.0,
-          "gcode_sha256": "84ebee0993e37f68739e3fa0d8eb72534d754763191a6c3a85476e4bda193946",
-          "max_unsupported_bridge_span_mm": 0.0830438110950697,
-          "max_unsupported_deposition_span_mm": 0.3032169857856967,
+          "estimated_filament_g": 124.14,
+          "total_estimated_seconds": 13193.0,
+          "gcode_sha256": "4546317b9f4dee577fd7365d549482e86d75443a91d3d616c6fd00f26fd1a00d",
+          "max_unsupported_bridge_span_mm": 0.08327430378801938,
+          "max_unsupported_deposition_span_mm": 0.3025975717381853,
           "unsupported_by_feature_mm": {
-            "Internal solid infill": 0.3032169857856967,
-            "Top surface": 0.018502028039206045,
-            "Inner wall": 0.033236711569835896,
-            "Outer wall": 0.06327530181780375,
-            "Bridge": 0.0830438110950697
+            "Internal solid infill": 0.3025975717381853,
+            "Top surface": 0.019200009144904478,
+            "Inner wall": 0.03327530342792433,
+            "Outer wall": 0.06344867056521478,
+            "Bridge": 0.08327430378801938
           },
           "disconnected_floating_components": 0
         },
@@ -785,9 +785,9 @@
         },
         {
           "part_or_plate": "07_left_dam",
-          "estimated_filament_g": 17.51,
-          "total_estimated_seconds": 5521.0,
-          "gcode_sha256": "b4998f757aca5d8f5fdfa2086c387c7e8638724ed0db714c82dbd1fce202ea28",
+          "estimated_filament_g": 17.28,
+          "total_estimated_seconds": 5514.0,
+          "gcode_sha256": "3c362280854ab30761d4f45bd0604b31cec07051c11ccaffef684dbab951768f",
           "max_unsupported_bridge_span_mm": 0,
           "max_unsupported_deposition_span_mm": 6.1200000000000045,
           "unsupported_by_feature_mm": {
@@ -799,14 +799,14 @@
         },
         {
           "part_or_plate": "08_right_dam",
-          "estimated_filament_g": 17.51,
-          "total_estimated_seconds": 5468.0,
-          "gcode_sha256": "3a2e50ee06dd834818e315d6dba2b4824e09121f1b0ef69fcb426f9bb68a0158",
+          "estimated_filament_g": 17.28,
+          "total_estimated_seconds": 5533.0,
+          "gcode_sha256": "e8e37380960736013f56ed9f00f2a800fc60b97d6ae960b72d2922d4f887e59e",
           "max_unsupported_bridge_span_mm": 0,
           "max_unsupported_deposition_span_mm": 6.1200000000000045,
           "unsupported_by_feature_mm": {
-            "Overhang wall": 6.1200000000000045,
             "Inner wall": 0.049158500000018535,
+            "Overhang wall": 6.1200000000000045,
             "Outer wall": 0.04000100000001794
           },
           "disconnected_floating_components": 0
@@ -842,8 +842,8 @@
           },
           "disconnected_floating_components": 0
         },
-        "estimated_filament_g": 358.64,
-        "total_estimated_seconds": 45790.0
+        "estimated_filament_g": 371.59,
+        "total_estimated_seconds": 46976.0
       }
     },
     "17-inch-example": {
@@ -856,41 +856,41 @@
       "valid_individual_prints": 20,
       "hardware_plate_solids": 12,
       "live_gui_preset_open_pass": true,
-      "estimated_filament_g": 408.46,
-      "total_estimated_seconds": 59944.0,
+      "estimated_filament_g": 421.16,
+      "total_estimated_seconds": 61038.0,
       "max_unsupported_bridge_span_mm": 3.015000000000015,
       "max_unsupported_deposition_span_mm": 8.987000000000009,
       "disconnected_floating_components": 0,
       "plates": [
         {
           "part_or_plate": "01_left_arm",
-          "estimated_filament_g": 119.06,
-          "total_estimated_seconds": 12637.0,
-          "gcode_sha256": "a02102d220a27a5fb6c1c4224b0999ef4f79deac05ceb6d96b3a47852a0159af",
-          "max_unsupported_bridge_span_mm": 0.08256720583096258,
-          "max_unsupported_deposition_span_mm": 0.37265441015095135,
+          "estimated_filament_g": 125.66,
+          "total_estimated_seconds": 13208.0,
+          "gcode_sha256": "9f12e23e2be06ee94b06d33c24c11c406b4d01d65056b1523832ff18dce5026a",
+          "max_unsupported_bridge_span_mm": 0.08256720596702052,
+          "max_unsupported_deposition_span_mm": 0.3726549102207216,
           "unsupported_by_feature_mm": {
-            "Internal solid infill": 0.37265441015095135,
-            "Top surface": 0.0329362092426023,
-            "Inner wall": 0.032568211692291765,
-            "Outer wall": 0.06258553406064844,
-            "Bridge": 0.08256720583096258
+            "Internal solid infill": 0.3726549102207216,
+            "Top surface": 0.032961260167340994,
+            "Inner wall": 0.032568211685142893,
+            "Outer wall": 0.06274149987656517,
+            "Bridge": 0.08256720596702052
           },
           "disconnected_floating_components": 0
         },
         {
           "part_or_plate": "02_right_arm",
-          "estimated_filament_g": 119.13,
-          "total_estimated_seconds": 12762.0,
-          "gcode_sha256": "2d70d15db681f63450770a3441ce57d9c1937c6b244edd8ddda8a7e334681253",
-          "max_unsupported_bridge_span_mm": 0.0830438110950697,
-          "max_unsupported_deposition_span_mm": 0.10603750222343254,
+          "estimated_filament_g": 125.69,
+          "total_estimated_seconds": 13285.0,
+          "gcode_sha256": "66fb47db39ca2c8f09ef75e1915b69542e636df2bbffd30b7f0c98a88d8cc1e0",
+          "max_unsupported_bridge_span_mm": 0.08327430378801938,
+          "max_unsupported_deposition_span_mm": 0.10591667849749795,
           "unsupported_by_feature_mm": {
-            "Internal solid infill": 0.10603750222343254,
-            "Top surface": 0.03413485404541474,
-            "Inner wall": 0.033236711569835896,
-            "Outer wall": 0.06327530181780375,
-            "Bridge": 0.0830438110950697
+            "Internal solid infill": 0.10591667849749795,
+            "Top surface": 0.032919417569942405,
+            "Inner wall": 0.03327530342792433,
+            "Outer wall": 0.0634483274566851,
+            "Bridge": 0.08327430378801938
           },
           "disconnected_floating_components": 0
         },
@@ -952,9 +952,9 @@
         },
         {
           "part_or_plate": "07_left_dam",
-          "estimated_filament_g": 20.27,
-          "total_estimated_seconds": 6509.0,
-          "gcode_sha256": "636e90636911be5643f32c68db2c3f63c4026533412b2f92e283c460b83fe1d3",
+          "estimated_filament_g": 20.04,
+          "total_estimated_seconds": 6500.0,
+          "gcode_sha256": "427d0beb19ae5b1260094667e2c1a8696eb7b33940b2ed5c6353843e407810d5",
           "max_unsupported_bridge_span_mm": 0,
           "max_unsupported_deposition_span_mm": 6.1200000000000045,
           "unsupported_by_feature_mm": {
@@ -966,9 +966,9 @@
         },
         {
           "part_or_plate": "08_right_dam",
-          "estimated_filament_g": 20.27,
-          "total_estimated_seconds": 6519.0,
-          "gcode_sha256": "0d3d9e7ff376bb67ec83275c01a54ac3e82cb4d608d75d8971165850e1dfa3e2",
+          "estimated_filament_g": 20.04,
+          "total_estimated_seconds": 6528.0,
+          "gcode_sha256": "4504917a2222aa818d6c77548d5b417caa546383928a80c17394683b1e19bc94",
           "max_unsupported_bridge_span_mm": 0,
           "max_unsupported_deposition_span_mm": 6.1200000000000045,
           "unsupported_by_feature_mm": {
@@ -1009,59 +1009,59 @@
           },
           "disconnected_floating_components": 0
         },
-        "estimated_filament_g": 361.57,
-        "total_estimated_seconds": 46012.0
+        "estimated_filament_g": 374.73,
+        "total_estimated_seconds": 47106.0
       }
     }
   },
   "downloads": {
     "5560": {
       "file": "Minimalist_M1_5560.zip",
-      "bytes": 12381977,
-      "sha256": "c80259913735e37e0eb85c884ea9701929b14333d6097147760eb6c94f049516",
-      "members": 91,
+      "bytes": 13353129,
+      "sha256": "c606c64c0d3f76b0c851733e6574b59c64842fc828fe040641d61c884c5db2f0",
+      "members": 94,
       "all_member_hashes_verified": true
     },
     "13-inch-example": {
       "file": "Minimalist_M1_13-inch-example.zip",
-      "bytes": 12162479,
-      "sha256": "d4ef6bc18eff4d140edbd923f91a6d6ad7e4234bbc672d4627cb72e58f73ed21",
-      "members": 91,
+      "bytes": 13130557,
+      "sha256": "dd055ea60bba3b3a4ae794ac88897b0c91473051acf2602b19224c8afaaf2759",
+      "members": 94,
       "all_member_hashes_verified": true
     },
     "14-inch-example": {
       "file": "Minimalist_M1_14-inch-example.zip",
-      "bytes": 12309889,
-      "sha256": "7e8654a915c0666867ba977657fbac75860b6da170b3e3b6394bffe5fa4c3ff5",
-      "members": 91,
+      "bytes": 13312649,
+      "sha256": "e8da7981cf672f0114235d05dcf4fc564e4650d7fa37c05b7ac0c799f64027ea",
+      "members": 94,
       "all_member_hashes_verified": true
     },
     "15-6-inch-example": {
       "file": "Minimalist_M1_15-6-inch-example.zip",
-      "bytes": 12493330,
-      "sha256": "5a9a41fbf5f47724a420a73a9eabf9f0121b3fd3659f535caf34cb590dc8c7c5",
-      "members": 91,
+      "bytes": 13490651,
+      "sha256": "b68e8393663f9070d989d8c6338db9123e4fd7853a2dac4451324027027b421e",
+      "members": 94,
       "all_member_hashes_verified": true
     },
     "16-inch-example": {
       "file": "Minimalist_M1_16-inch-example.zip",
-      "bytes": 12487816,
-      "sha256": "c9538d75f39cf1f9844c242df2e00ebcb452622a73a18717582bdf44e770d76f",
-      "members": 91,
+      "bytes": 13492818,
+      "sha256": "349d699b0b0073a176179652447f5ef962b620316b0a75b405af3528650aa92c",
+      "members": 94,
       "all_member_hashes_verified": true
     },
     "17-inch-example": {
       "file": "Minimalist_M1_17-inch-example.zip",
-      "bytes": 12344854,
-      "sha256": "233dbaf483285b3296aca5647a673e0b7eeb307615c0188bf9c4ac0019fee028",
-      "members": 91,
+      "bytes": 13361718,
+      "sha256": "d1ac0dafae45fe1f7a10b6883170e39710cf78c937202584a0127837111576f9",
+      "members": 94,
       "all_member_hashes_verified": true
     },
     "coupons": {
       "file": "Minimalist_M1_Fit_Coupons.zip",
-      "bytes": 1854343,
-      "sha256": "60cbf0a7720b35a039a71ec35933717b6f08160b049c23195fcf6ab7943518bd",
-      "members": 36,
+      "bytes": 2038602,
+      "sha256": "43636a4f309a8ccd3b4c43b21db8c731aafdd641247ad644cab8b30c28aabab5",
+      "members": 39,
       "all_member_hashes_verified": true
     }
   },
@@ -1073,19 +1073,33 @@
     "Section demand is not a load rating",
     "Toolpath screen does not prove sag or same-layer anchoring order"
   ],
+  "wall_transition_revision": {
+    "baseline_commit": "64fc1aa",
+    "changed_parts": [
+      "01_left_arm",
+      "02_right_arm",
+      "07_left_dam",
+      "08_right_dam"
+    ],
+    "wall_pad_height_mm": 32,
+    "paired_web_thickness_mm": 6,
+    "web_rise_from_pad_face_mm": 16,
+    "report": "minimalist-wall-transition-review.json",
+    "strength_rating_established": false
+  },
   "source_reconstruction": {
     "native_validation_pass": true,
     "matching_solids": 20,
     "maximum_shape_difference_mm3": 0.0,
     "live_gui_bad_features": [],
-    "live_gui_constrained_sketches": 51
+    "live_gui_constrained_sketches": 55
   },
   "preserved_revh_native_sha256": "01d41e0c91873dc18e7d3b6a6384f2ad8b988a5ccb8d5be0353a2aec8a0cecb3",
   "fit_coupon": {
     "part_or_plate": "00_fit_coupon_plate",
     "estimated_filament_g": 35.09,
-    "total_estimated_seconds": 7654.0,
-    "gcode_sha256": "ac499eee13e1fa96e36a6b2165e1447b9bb03eeae382121e9e49e582870da652",
+    "total_estimated_seconds": 7655.0,
+    "gcode_sha256": "761e6c0d03d3279341fe7df8e717556c31e64fba4c37af3828f48a75c8ce5ce4",
     "max_unsupported_bridge_span_mm": 3.0149999999999864,
     "max_unsupported_deposition_span_mm": 8.986999999999995,
     "unsupported_by_feature_mm": {

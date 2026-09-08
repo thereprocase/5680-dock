@@ -1,6 +1,6 @@
 {
   "source_gcode": "preview.gcode",
-  "source_gcode_sha256": "ac499eee13e1fa96e36a6b2165e1447b9bb03eeae382121e9e49e582870da652",
+  "source_gcode_sha256": "761e6c0d03d3279341fe7df8e717556c31e64fba4c37af3828f48a75c8ce5ce4",
   "layers": 443,
   "method": "Model paths buffered by reported line width. Island support: previous layer plus 0.15 mm. A deposited bead is supported where it overlaps the prior-layer footprint by at least 0.05 mm: buffer that footprint by half the current bead width minus 0.05 mm. Report contiguous unsupported subsegments, not full move lengths. Same-layer anchoring order and physical sag are not proven.",
   "floating_components": [],
@@ -297,7 +297,7 @@
     }
   ],
   "time_and_material_comments": [
-    "; model printing time: 2h 1m 19s; total estimated time: 2h 7m 34s",
+    "; model printing time: 2h 1m 20s; total estimated time: 2h 7m 35s",
     "; filament used [mm] = 13892.96",
     "; filament used [cm3] = 33.42",
     "; filament used [g] = 35.09"

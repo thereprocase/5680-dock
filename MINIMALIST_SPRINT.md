@@ -83,3 +83,18 @@ minimalist CFD. There are no new CFD results at this sprint's start.
   download links and the CFD commissioning link/status. The final privacy scan
   reports no findings across 218 unique archive payloads. Ready to publish the
   combined release; physical qualification remains explicitly outstanding.
+
+- 2026-09-08 / M1.1: reinforced only the Minimalist wall junctions: 32 mm
+  pads and paired 6 mm tapered webs with roots continuous to the print face.
+  Matching dam relief preserves all nine positions. All six presets passed
+  native/save/reopen/export checks; a clean reconstruction matches all 20 parts.
+  The other sixteen part geometries and preserved Rev H source are unchanged.
+  Nominal Orca estimate is 400.55 g / 15 h 42 m 30 s (+12.50 g / 17 m 36 s).
+  Restored the root README's nine-stage Rev F design story and seven working
+  images, with clear historical labels and the new M1.1 before/after comparison.
+  Final M1.1 review: all 61 current plate audits have zero disconnected
+  floating components; revised arm prior-layer unsupported spans stay below
+  0.38 mm. All seven archives passed hashes and offline image/link checks.
+  Desktop/mobile browser checks passed all six presets, dam controls and
+  sixteen downloads. The six saved presets opened in the live FreeCAD GUI
+  with twenty visible parts, restored colors and no invalid features.

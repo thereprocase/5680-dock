@@ -1,14 +1,6 @@
 {
-  "source_native_sha256": "359e32b5eb61c56ef6fb952c43dce364ba3e93e62b13f14c4ab592254f5dbd06",
+  "source_native_sha256": "49741ae916b0e06605d89b4b7a1499b0e4df74adb1221cf37320d93bb9474d57",
   "parts": {
-    "01_left_arm": {
-      "symmetric_difference_mm3": 0.0,
-      "pass": true
-    },
-    "02_right_arm": {
-      "symmetric_difference_mm3": 0.0,
-      "pass": true
-    },
     "05_left_fan_cap": {
       "symmetric_difference_mm3": 0.0,
       "pass": true
@@ -70,6 +62,14 @@
       "pass": true
     },
     "04_right_fan_cage": {
+      "symmetric_difference_mm3": 0.0,
+      "pass": true
+    },
+    "01_left_arm": {
+      "symmetric_difference_mm3": 0.0,
+      "pass": true
+    },
+    "02_right_arm": {
       "symmetric_difference_mm3": 0.0,
       "pass": true
     },

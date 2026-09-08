@@ -5,15 +5,15 @@
       "width": 344.4,
       "depth": 230.3,
       "thickness": 20,
-      "native_sha256": "30adb9d6a2a71545ab0a9908f2f4d89d391fb73090111f70bc7bc042ddcf609c",
+      "native_sha256": "109ac2fbadb0bf8c23e14b563b2e30ae69641a30d52d80c07a87c71e97400984",
       "parts": [
         {
           "key": "01_left_arm",
-          "volume_mm3": 112159.51165626274
+          "volume_mm3": 118607.84498959617
         },
         {
           "key": "02_right_arm",
-          "volume_mm3": 112159.5116562628
+          "volume_mm3": 118607.84498959625
         },
         {
           "key": "03_left_fan_cage",
@@ -33,11 +33,11 @@
         },
         {
           "key": "07_left_dam",
-          "volume_mm3": 15911.143753914334
+          "volume_mm3": 15672.058963069234
         },
         {
           "key": "08_right_dam",
-          "volume_mm3": 15911.143753914348
+          "volume_mm3": 15672.058963069263
         },
         {
           "key": "09_left_fan_key",
@@ -95,15 +95,15 @@
       "width": 304,
       "depth": 210,
       "thickness": 16,
-      "native_sha256": "4653f3cf4502a22fd24a54007038699af22502d34c7109a732b8937d9d104773",
+      "native_sha256": "21d953ba2fcbda1b1341bed5085a3f3ddeeecff24fc2abd08587e0aff8a11bff",
       "parts": [
         {
           "key": "01_left_arm",
-          "volume_mm3": 104413.11887702961
+          "volume_mm3": 110861.45221036297
         },
         {
           "key": "02_right_arm",
-          "volume_mm3": 104413.11887702967
+          "volume_mm3": 110861.45221036303
         },
         {
           "key": "03_left_fan_cage",
@@ -123,11 +123,11 @@
         },
         {
           "key": "07_left_dam",
-          "volume_mm3": 13360.445412587742
+          "volume_mm3": 13121.360621742706
         },
         {
           "key": "08_right_dam",
-          "volume_mm3": 13360.445412587727
+          "volume_mm3": 13121.360621742706
         },
         {
           "key": "09_left_fan_key",
@@ -185,15 +185,15 @@
       "width": 320,
       "depth": 220,
       "thickness": 18,
-      "native_sha256": "c87dcc47cf0fae00a1ff7694ea583020b741b136c14e069e968b56f1cba3bd53",
+      "native_sha256": "a6f5829f2f1001ec49c44b135f6f1f088db7eafc3921074a53c1ed435e51929d",
       "parts": [
         {
           "key": "01_left_arm",
-          "volume_mm3": 108238.7615617957
+          "volume_mm3": 114687.09489512909
         },
         {
           "key": "02_right_arm",
-          "volume_mm3": 108238.76156179579
+          "volume_mm3": 114687.0948951291
         },
         {
           "key": "03_left_fan_cage",
@@ -213,11 +213,11 @@
         },
         {
           "key": "07_left_dam",
-          "volume_mm3": 14479.05654624567
+          "volume_mm3": 14239.971755400638
         },
         {
           "key": "08_right_dam",
-          "volume_mm3": 14479.056546245663
+          "volume_mm3": 14239.971755400646
         },
         {
           "key": "09_left_fan_key",
@@ -275,15 +275,15 @@
       "width": 360,
       "depth": 245,
       "thickness": 24,
-      "native_sha256": "07a4a752a2f8682f779490368ea7922e15aa4785360e7ea7e5360aeb4d2ee5fb",
+      "native_sha256": "8bfbbeaaa716b32907f12cd0b0e3e3f29ac891943ac899fe3281b580fd6437a7",
       "parts": [
         {
           "key": "01_left_arm",
-          "volume_mm3": 116601.8995105138
+          "volume_mm3": 123050.23284384733
         },
         {
           "key": "02_right_arm",
-          "volume_mm3": 116601.89951051383
+          "volume_mm3": 123050.23284384742
         },
         {
           "key": "03_left_fan_cage",
@@ -303,11 +303,11 @@
         },
         {
           "key": "07_left_dam",
-          "volume_mm3": 17275.584380390534
+          "volume_mm3": 17036.499589545485
         },
         {
           "key": "08_right_dam",
-          "volume_mm3": 17275.584380390577
+          "volume_mm3": 17036.49958954547
         },
         {
           "key": "09_left_fan_key",
@@ -365,15 +365,15 @@
       "width": 360,
       "depth": 250,
       "thickness": 24,
-      "native_sha256": "6ba1cd61c8c7d740371e16bd143c1a39e9c28782533e1bfd81cd36f19b540010",
+      "native_sha256": "70dfca602ba381a0990f334de44f52b2ff7542f19a7c69278e0942e3f858e985",
       "parts": [
         {
           "key": "01_left_arm",
-          "volume_mm3": 116601.8995105138
+          "volume_mm3": 123050.23284384733
         },
         {
           "key": "02_right_arm",
-          "volume_mm3": 116601.89951051383
+          "volume_mm3": 123050.23284384742
         },
         {
           "key": "03_left_fan_cage",
@@ -393,11 +393,11 @@
         },
         {
           "key": "07_left_dam",
-          "volume_mm3": 17552.144755299345
+          "volume_mm3": 17313.05996445424
         },
         {
           "key": "08_right_dam",
-          "volume_mm3": 17552.144755299378
+          "volume_mm3": 17313.05996445424
         },
         {
           "key": "09_left_fan_key",
@@ -455,15 +455,15 @@
       "width": 400,
       "depth": 275,
       "thickness": 28,
-      "native_sha256": "7027ff231ac34c5443fbb07f9d030c1fced3512c00ac1c2e76da24fad5423f3d",
+      "native_sha256": "218c0f0af40d46e1689ddde2474d8da9abfe5efb790557d4dca13385a8ef86ba",
       "parts": [
         {
           "key": "01_left_arm",
-          "volume_mm3": 118017.89951051363
+          "volume_mm3": 124466.23284384706
         },
         {
           "key": "02_right_arm",
-          "volume_mm3": 118017.89951051366
+          "volume_mm3": 124466.23284384712
         },
         {
           "key": "03_left_fan_cage",
@@ -483,11 +483,11 @@
         },
         {
           "key": "07_left_dam",
-          "volume_mm3": 20348.672589444246
+          "volume_mm3": 20109.587798599056
         },
         {
           "key": "08_right_dam",
-          "volume_mm3": 20348.672589444304
+          "volume_mm3": 20109.5877985991
         },
         {
           "key": "09_left_fan_key",

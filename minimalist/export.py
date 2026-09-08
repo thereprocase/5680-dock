@@ -121,7 +121,7 @@ def write_shape(path, key, shape, pose, expected_solids=1):
 def export(doc, path):
     path.mkdir(parents=True, exist_ok=True)
     parts = shapes(doc)
-    manifest = {'revision': 'Minimalist M1 prototype', 'units': 'mm', 'native_sha256': sha(Path(doc.FileName)),
+    manifest = {'revision': 'Minimalist M1.1 prototype', 'units': 'mm', 'native_sha256': sha(Path(doc.FileName)),
                 'standard_3mf_contains_slicer_settings': False, 'parts': {}, 'plates': {}}
     hardware = []
     for key, shape in sorted(parts.items()):

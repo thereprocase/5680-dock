@@ -48,10 +48,12 @@ def slice_record(folder, require_audit=True):
 
 def offline_guide():
     text=(DOCS/'minimalist-guide.html').read_text()
-    for relative in ('index.html','downloads/','assets/minimalist-release-report.json','assets/minimalist-section-review.json','simulation/revh-transient/'):
+    for relative in ('index.html','downloads/','assets/minimalist-release-report.json','assets/minimalist-section-review.json','assets/minimalist-wall-transition-review.json','simulation/revh-transient/'):
         text=text.replace('href="'+relative,'href="'+SITE+relative)
     files={'Guide/START_HERE.html':text.encode()}
-    for name in ['style.css','minimalist.css','assets/minimalist-with-envelopes.png']:
+    for name in ['style.css','minimalist.css','assets/minimalist-with-envelopes.png',
+                 'assets/minimalist-wall-junction-before.png','assets/minimalist-wall-junction-after.png',
+                 'assets/minimalist-wall-transition-section.png']:
         files['Guide/'+name]=(DOCS/name).read_bytes()
     return files
 
@@ -70,7 +72,7 @@ def make_zip(path, files):
 
 
 def start_here(name):
-    return f'''MINIMALIST M1 / {name} / PRINT CANDIDATE
+    return f'''MINIMALIST M1.1 / {name} / PRINT CANDIDATE
 
 1. Open Guide/START_HERE.html in a browser. It works offline for the included
    instructions and pictures. Confirm the measured case dimensions first.
@@ -88,6 +90,8 @@ def start_here(name):
 7. M1_assembled.step is for installed-assembly inspection, not a print plate.
 
 Optional dam: omit 07,08,11,12,15,16. Print 01-06 plus 22_hardware_without_dam for seven plates, replacing plate 21.
+Upgrading from M1.0: replace both reinforced arms (01/02) and, if fitted,
+both dams (07/08) with their matching clearance notch. Other parts are unchanged.
 See the illustrated guide.
 
 Physical fit, retention, ASA creep, wall anchors and cooling need qualification.
@@ -103,7 +107,7 @@ def main():
     ap.add_argument('--revh-slices',type=Path,default=ROOT.parent.parent/'dell-5560-wall-mount/tmp/orca_H_comparison')
     args=ap.parse_args()
     names=json.loads((DOCS/'models/minimalist/manifest.json').read_text())['presets']
-    report={'revision':'Minimalist M1 prototype','native_design':'constrained sketches and stock FreeCAD features',
+    report={'revision':'Minimalist M1.1 prototype','native_design':'constrained sketches and stock FreeCAD features',
             'source_native_sha256':sha((ROOT/'Laptop_Wall_Mount_Minimalist.FCStd').read_bytes()),
             'process':{'slicer':'OrcaSlicer 2.4.2','printer':'Bambu P1S','material_profile':'Bambu ASA','nozzle_mm':.4,'layer_mm':.2,'walls':6,'top_layers':6,'bottom_layers':6,'infill':'100% rectilinear','brim_mm':8,'supports':False},
             'presets':{},'downloads':{},'physical_qualification_complete':False,
@@ -112,8 +116,15 @@ def main():
     comparison=json.loads((ROOT/'rebuild-shape-comparison.json').read_text())
     gui=json.loads((ROOT/'gui-review.json').read_text())
     preset_gui=json.loads((ROOT/'reports/preset-gui-review.json').read_text())
+    transitions=json.loads((ROOT/'reports/wall-transition-review.json').read_text())
+    assert len(transitions['presets'])==6
+    report['wall_transition_revision']={'baseline_commit':transitions['baseline_commit'],
+        'changed_parts':['01_left_arm','02_right_arm','07_left_dam','08_right_dam'],
+        'wall_pad_height_mm':32,'paired_web_thickness_mm':6,'web_rise_from_pad_face_mm':16,
+        'report':'minimalist-wall-transition-review.json','strength_rating_established':False}
     assert len(preset_gui)==6 and all(v['pass'] and v['file_unchanged'] for v in preset_gui.values())
     assert rebuilt['pass'] and all(v['pass'] for v in comparison['parts'].values()) and not gui['bad_features']
+    assert comparison['source_native_sha256']==report['source_native_sha256']
     report['source_reconstruction']={'native_validation_pass':True,'matching_solids':20,
         'maximum_shape_difference_mm3':max(v['symmetric_difference_mm3'] for v in comparison['parts'].values()),
         'live_gui_bad_features':gui['bad_features'],'live_gui_constrained_sketches':gui['constrained_sketches']}
@@ -132,6 +143,10 @@ def main():
         manifest=json.loads((folder/'print/manifest.json').read_text())
         assert sha((folder/'M1.FCStd').read_bytes())==manifest['native_sha256']
         assert preset_gui[name]['native_sha256']==manifest['native_sha256']
+        transition=transitions['presets'][name]
+        assert transition['after_native_sha256']==manifest['native_sha256']
+        assert transition['unchanged_other_parts']==16 and transition['bolt_centers_unchanged']
+        assert transition['original_arm_material_removed_mm3']<.01
         for key,part in {**manifest['parts'],**manifest['plates']}.items():
             for suffix,digest in part['sha256'].items():assert sha((folder/'print'/(key+suffix)).read_bytes())==digest
         sliced=ROOT/'slices'/name
@@ -167,6 +182,9 @@ def main():
         for p in sorted((sliced/'profiles').glob('*.json')):files['Orca_preview/Profiles/'+p.name]=p.read_bytes()
         files['Orca_preview/review.json']=(json.dumps(report['presets'][name],indent=2)+'\n').encode()
         report['downloads'][name]=make_zip(downloads/('Minimalist_M1_'+name+'.zip'),files)
+    coupon_summary=json.loads((ROOT/'slices/coupons/slice_summary.json').read_text())
+    assert len(coupon_summary)==1 and coupon_summary[0]['exit_code']==0
+    assert coupon_summary[0]['source_sha256']==sha((ROOT/'coupons/00_fit_coupon_plate.stl').read_bytes())
     coupon_slice=slice_record(ROOT/'slices/coupons/00_fit_coupon_plate')
     report['fit_coupon']=coupon_slice
     files={**common,'START_HERE.txt':b'MINIMALIST M1 FIT COUPON\n\nOpen Guide/START_HERE.html. Print 00_fit_coupon_plate once, or the eight\nindividual samples as alternatives. These are fit samples, not mount parts.\nThe coupon retains each interface\'s actual full-part build direction.\n'}
@@ -183,6 +201,7 @@ def main():
     section=ROOT/'section-review.json'
     assert len(json.loads(section.read_text()))==6
     shutil.copy2(section,DOCS/'assets/minimalist-section-review.json')
+    shutil.copy2(ROOT/'reports/wall-transition-review.json',DOCS/'assets/minimalist-wall-transition-review.json')
     shutil.copy2(ROOT/'slices/5560/03_left_fan_cage/bridge-review.png',DOCS/'assets/minimalist-cage-toolpaths.png')
     print('Seven delivery archives verified; six presets and all plate audits published',flush=True)
 

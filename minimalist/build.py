@@ -36,6 +36,9 @@ PARAMETERS = [
     ('tineHeight', 40.0, 'mm', 'Laptop lift required before forward removal'),
     ('wallBoltDiameter', 7.2, 'mm', 'Clearance for the existing wall-anchor class'),
     ('wallPadDepth', 8.0, 'mm', 'Wall fastener pad thickness'),
+    ('wallPadHeight', 32.0, 'mm', 'Wall pad height; bolt centers stay unchanged'),
+    ('wallGussetWeb', 6.0, 'mm', 'Paired webs beside each bolt opening'),
+    ('wallGussetRise', 16.0, 'mm', 'Tapered web reach beyond the wall pad face'),
     ('FIT / REMOVABLE HARDWARE', None),
     ('fitClearance', 0.3, 'mm', 'Nominal clearance at new mating surfaces'),
     ('carriageThickness', 4.0, 'mm', 'Fan and dam attachment cheek thickness'),
@@ -115,7 +118,33 @@ def open_document():
 
 
 def setup(doc):
-    if doc.getObject('M1Parameters'): return
+    if doc.getObject('M1Parameters'):
+        sheet = doc.getObject('M1Parameters')
+        present, missing = {}, []
+        for entry in PARAMETERS:
+            if entry[1] is None: continue
+            cell = sheet.getCellFromAlias(entry[0])
+            if cell: present[entry[0]] = cell
+            else: missing.append(entry)
+        if missing:
+            row = max(int(cell[1:]) for cell in present.values()) + 2
+            sheet.mergeCells(f'A{row}:D{row}')
+            sheet.set(f'A{row}', 'WALL TRANSITIONS / M1.1 REINFORCEMENT')
+            sheet.setBackground(f'A{row}:D{row}', (0.81, 0.88, 0.86))
+            sheet.setStyle(f'A{row}:D{row}', 'bold', 'add')
+            for name, value, unit, description in missing:
+                row += 1
+                assert not isinstance(value, str), 'Migration requires a numeric default'
+                sheet.set(f'A{row}', name)
+                sheet.set(f'B{row}', str(value) + ' ' + unit)
+                sheet.set(f'C{row}', unit)
+                sheet.set(f'D{row}', description)
+                sheet.setAlias(f'B{row}', name)
+                sheet.setBackground(f'B{row}', (0.83, 0.92, 1.0))
+                present[name] = f'B{row}'
+            doc.recompute()
+            (Path(doc.FileName).parent / 'parameter_cells.json').write_text(json.dumps(present, indent=2))
+        return
     sources = doc.addObject('App::DocumentObjectGroup', 'M1Sources')
     sources.Label = 'M1 / Native construction history'
     assembly = doc.addObject('App::Part', 'M1Assembly')
@@ -161,7 +190,7 @@ def setup(doc):
     for cell, formula in derived: sheet.set(cell, formula)
     doc.recompute()
     assert not any(s in ('Invalid', 'Error') for s in sheet.State), sheet.State
-    (ROOT / 'parameter_cells.json').write_text(json.dumps(cells, indent=2), encoding='utf-8')
+    (Path(doc.FileName).parent / 'parameter_cells.json').write_text(json.dumps(cells, indent=2), encoding='utf-8')
     doc.save()
     view(doc, 'M1 Save As complete. The prototype is hidden; the new parameter sheet is ready.')
 
@@ -378,7 +407,17 @@ def dams(doc):
                           'XY', (0, 0, z - 10)), upper - z + 20)
     carriage = n.cut('M1DamKeeperClearance', carriage, channel)
     joined = n.fuse('M1DamBeforePadRelief', [blade, carriage])
-    pad_relief = n.box('M1DamWallPadRelief', -30 - gap, x1 + 1, -1, p['wallPadDepth'] + gap, z - 10, upper + 1)
+    # Clear the entire travel envelope of the reinforced wall junctions.
+    # Offset the tapered face by the nominal clearance in its normal direction.
+    toe, knee = -27, -p['armThickness'] + 3
+    taper = p['wallGussetRise'] / (knee - toe)
+    normal_gap = gap * E(math.sqrt(1 + float(taper) ** 2),
+                         'sqrt(1 + (' + ex(taper) + ') * (' + ex(taper) + '))')
+    base_y = p['wallPadDepth'] + normal_gap
+    relief_profile = [(-30 - gap, -1), (x1 + 1, -1),
+                      (x1 + 1, base_y + taper * (x1 + 1 - toe)),
+                      (toe, base_y), (-30 - gap, base_y)]
+    pad_relief = n.prism('M1DamWallPadRelief', relief_profile, 'XY', (0, 0, z - 10), upper - z + 11)
     joined = n.cut('M1DamLocal', joined, pad_relief)
     right = n.move('M1RightDam', joined, (p['armOriginX'], 0, 0))
     left = n.mirror('M1LeftDam', right)
@@ -477,13 +516,25 @@ def arms(doc):
                 rectangle(front + 1.8, outer - 1.8, 12, p['tineHeight'] - 9)]
     tools = n.extrusion('M1ArmLightening', n.sketch('M1ArmWindows', windows, 'YZ', (-t - 1, 0, 0)), t + 2)
     body = n.cut('M1ArmOpenFrame', body, tools)
-    pads = []
+    pads, gussets = [], []
+    half_pad, web = p['wallPadHeight'] / 2, p['wallGussetWeb']
     for index, z in enumerate((18, h - 16)):
-        outline_pad = [(-30, z - 9), (-27, z - 12), (-3, z - 12), (0, z - 9),
-                       (0, z + 9), (-3, z + 12), (-27, z + 12), (-30, z + 9)]
+        outline_pad = [(-30, z - half_pad + 3), (-27, z - half_pad),
+                       (-3, z - half_pad), (0, z - half_pad + 3),
+                       (0, z + half_pad - 3), (-3, z + half_pad),
+                       (-27, z + half_pad), (-30, z + half_pad - 3)]
         pads.append(n.prism('M1WallPad' + str(index), outline_pad, 'XZ', (0, p['wallPadDepth'], 0), p['wallPadDepth']))
+        # Continue both web roots through the complete arm thickness. Adding
+        # them only above the old 12 mm layer would leave a bridge over a window.
+        depth = p['wallPadDepth']
+        web_profile = [(-27, depth - 2), (-27, depth),
+                       (-t + 3, depth + p['wallGussetRise']),
+                       (0, depth + p['wallGussetRise']), (0, depth - 2)]
+        for side, low in [('Lower', z - half_pad), ('Upper', z + half_pad - web)]:
+            gussets.append(n.prism('M1WallGusset' + str(index) + side,
+                                   web_profile, 'XY', (0, 0, low), web))
     cheek = n.box('M1LateralStop', -p['sideLip'], 0, back, front, -2, 14)
-    body = n.fuse('M1ArmWithWallPads', [body, cheek] + pads)
+    body = n.fuse('M1ArmWithWallPads', [body, cheek] + pads + gussets)
     slots = []
     for z in [-54, -30] + [p['ladderStart'] + i * p['rungPitch'] for i in range(11)]:
         half_y = p['keyWidth'] / 2 + p['fitClearance']
@@ -504,7 +555,7 @@ def arms(doc):
     left = n.mirror('M1LeftArm', right)
     register(doc, left, '01_left_arm', '01 / Left perforated arm', (0.23, 0.30, 0.33))
     register(doc, right, '02_right_arm', '02 / Right perforated arm', (0.23, 0.30, 0.33))
-    finish(doc, n, 'M1 arms built: flat print faces, low side stops, wall pads and 12 mm ladder indexing.')
+    finish(doc, n, 'M1.1 arms built: paired tapered wall gussets, continuous web roots and unchanged bolt/ladder centers.')
 
 
 def run(stage='arms'):
@@ -535,6 +586,12 @@ def run(stage='arms'):
         caps(doc)
     if stage in ('dams', 'all'): dams(doc)
     if stage in ('hardware', 'all'): hardware(doc)
+    assembly = doc.getObject('M1Assembly')
+    if not hasattr(assembly, 'Revision'):
+        assembly.addProperty('App::PropertyString', 'Revision', 'Design')
+    if doc.getObject('M1WallGusset0Lower'):
+        assembly.Revision = 'M1.1 / reinforced wall transitions'
+        doc.Label = 'Laptop wall mount / Minimalist M1.1'
     doc.save()
     return doc
 
