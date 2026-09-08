@@ -1,0 +1,8 @@
+# Preserve checksum-bearing CAD and print artifacts across Windows and WSL.
+*.step -text
+*.stp -text
+*.stl -text
+*.3mf -text
+*.FCStd -text
+*.zip -text
+*.png -text
