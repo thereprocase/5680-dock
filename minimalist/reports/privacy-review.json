@@ -1,0 +1,9 @@
+{
+  "unique_payloads": 1829,
+  "text_payloads": 850,
+  "archive_payloads": 218,
+  "findings": [],
+  "pass": true,
+  "scope": "New Minimalist source/preset metadata, nested delivery archives, and Rev H STEP/Orca supplement. Generated local scratch, logs and raw slicer working directories excluded from publication.",
+  "image_review": "New published images are native geometry renders, a vector schematic and a toolpath plot; visually reviewed without application chrome or personal data."
+}

@@ -1,0 +1,549 @@
+{
+  "presets": {
+    "5560": {
+      "label": "Precision 5560 reference",
+      "width": 344.4,
+      "depth": 230.3,
+      "thickness": 20,
+      "native_sha256": "30adb9d6a2a71545ab0a9908f2f4d89d391fb73090111f70bc7bc042ddcf609c",
+      "parts": [
+        {
+          "key": "01_left_arm",
+          "volume_mm3": 112159.51165626274
+        },
+        {
+          "key": "02_right_arm",
+          "volume_mm3": 112159.5116562628
+        },
+        {
+          "key": "03_left_fan_cage",
+          "volume_mm3": 51650.04629733425
+        },
+        {
+          "key": "04_right_fan_cage",
+          "volume_mm3": 51650.04629733416
+        },
+        {
+          "key": "05_left_fan_cap",
+          "volume_mm3": 5634.305849175067
+        },
+        {
+          "key": "06_right_fan_cap",
+          "volume_mm3": 5634.305849175067
+        },
+        {
+          "key": "07_left_dam",
+          "volume_mm3": 15911.143753914334
+        },
+        {
+          "key": "08_right_dam",
+          "volume_mm3": 15911.143753914348
+        },
+        {
+          "key": "09_left_fan_key",
+          "volume_mm3": 2826.212398023691
+        },
+        {
+          "key": "10_right_fan_key",
+          "volume_mm3": 2826.2123980236915
+        },
+        {
+          "key": "11_left_dam_key",
+          "volume_mm3": 2826.212398023691
+        },
+        {
+          "key": "12_right_dam_key",
+          "volume_mm3": 2826.2123980236915
+        },
+        {
+          "key": "13_left_fan_keeper",
+          "volume_mm3": 230.07661457352347
+        },
+        {
+          "key": "14_right_fan_keeper",
+          "volume_mm3": 230.07661457352395
+        },
+        {
+          "key": "15_left_dam_keeper",
+          "volume_mm3": 230.07661457352356
+        },
+        {
+          "key": "16_right_dam_keeper",
+          "volume_mm3": 230.0766145735241
+        },
+        {
+          "key": "17_left_cap_pin_1",
+          "volume_mm3": 261.27977424477933
+        },
+        {
+          "key": "18_right_cap_pin_1",
+          "volume_mm3": 261.27977424477945
+        },
+        {
+          "key": "19_left_cap_pin_2",
+          "volume_mm3": 261.2797742447792
+        },
+        {
+          "key": "20_right_cap_pin_2",
+          "volume_mm3": 261.2797742447794
+        }
+      ],
+      "exported_dam_index": 8
+    },
+    "13-inch-example": {
+      "label": "13-inch class example",
+      "width": 304,
+      "depth": 210,
+      "thickness": 16,
+      "native_sha256": "4653f3cf4502a22fd24a54007038699af22502d34c7109a732b8937d9d104773",
+      "parts": [
+        {
+          "key": "01_left_arm",
+          "volume_mm3": 104413.11887702961
+        },
+        {
+          "key": "02_right_arm",
+          "volume_mm3": 104413.11887702967
+        },
+        {
+          "key": "03_left_fan_cage",
+          "volume_mm3": 51650.0462973342
+        },
+        {
+          "key": "04_right_fan_cage",
+          "volume_mm3": 51650.04629733414
+        },
+        {
+          "key": "05_left_fan_cap",
+          "volume_mm3": 5634.305849175067
+        },
+        {
+          "key": "06_right_fan_cap",
+          "volume_mm3": 5634.305849175067
+        },
+        {
+          "key": "07_left_dam",
+          "volume_mm3": 13360.445412587742
+        },
+        {
+          "key": "08_right_dam",
+          "volume_mm3": 13360.445412587727
+        },
+        {
+          "key": "09_left_fan_key",
+          "volume_mm3": 2826.212398023691
+        },
+        {
+          "key": "10_right_fan_key",
+          "volume_mm3": 2826.212398023691
+        },
+        {
+          "key": "11_left_dam_key",
+          "volume_mm3": 2826.212398023691
+        },
+        {
+          "key": "12_right_dam_key",
+          "volume_mm3": 2826.212398023691
+        },
+        {
+          "key": "13_left_fan_keeper",
+          "volume_mm3": 230.07661457352347
+        },
+        {
+          "key": "14_right_fan_keeper",
+          "volume_mm3": 230.07661457352393
+        },
+        {
+          "key": "15_left_dam_keeper",
+          "volume_mm3": 230.07661457352359
+        },
+        {
+          "key": "16_right_dam_keeper",
+          "volume_mm3": 230.07661457352407
+        },
+        {
+          "key": "17_left_cap_pin_1",
+          "volume_mm3": 261.2797742447793
+        },
+        {
+          "key": "18_right_cap_pin_1",
+          "volume_mm3": 261.2797742447794
+        },
+        {
+          "key": "19_left_cap_pin_2",
+          "volume_mm3": 261.27977424477945
+        },
+        {
+          "key": "20_right_cap_pin_2",
+          "volume_mm3": 261.2797742447794
+        }
+      ],
+      "exported_dam_index": 8
+    },
+    "14-inch-example": {
+      "label": "14-inch class example",
+      "width": 320,
+      "depth": 220,
+      "thickness": 18,
+      "native_sha256": "c87dcc47cf0fae00a1ff7694ea583020b741b136c14e069e968b56f1cba3bd53",
+      "parts": [
+        {
+          "key": "01_left_arm",
+          "volume_mm3": 108238.7615617957
+        },
+        {
+          "key": "02_right_arm",
+          "volume_mm3": 108238.76156179579
+        },
+        {
+          "key": "03_left_fan_cage",
+          "volume_mm3": 51650.046297334215
+        },
+        {
+          "key": "04_right_fan_cage",
+          "volume_mm3": 51650.04629733413
+        },
+        {
+          "key": "05_left_fan_cap",
+          "volume_mm3": 5634.305849175069
+        },
+        {
+          "key": "06_right_fan_cap",
+          "volume_mm3": 5634.305849175068
+        },
+        {
+          "key": "07_left_dam",
+          "volume_mm3": 14479.05654624567
+        },
+        {
+          "key": "08_right_dam",
+          "volume_mm3": 14479.056546245663
+        },
+        {
+          "key": "09_left_fan_key",
+          "volume_mm3": 2826.212398023691
+        },
+        {
+          "key": "10_right_fan_key",
+          "volume_mm3": 2826.212398023691
+        },
+        {
+          "key": "11_left_dam_key",
+          "volume_mm3": 2826.212398023691
+        },
+        {
+          "key": "12_right_dam_key",
+          "volume_mm3": 2826.212398023691
+        },
+        {
+          "key": "13_left_fan_keeper",
+          "volume_mm3": 230.07661457352347
+        },
+        {
+          "key": "14_right_fan_keeper",
+          "volume_mm3": 230.07661457352393
+        },
+        {
+          "key": "15_left_dam_keeper",
+          "volume_mm3": 230.07661457352356
+        },
+        {
+          "key": "16_right_dam_keeper",
+          "volume_mm3": 230.07661457352407
+        },
+        {
+          "key": "17_left_cap_pin_1",
+          "volume_mm3": 261.27977424477933
+        },
+        {
+          "key": "18_right_cap_pin_1",
+          "volume_mm3": 261.27977424477945
+        },
+        {
+          "key": "19_left_cap_pin_2",
+          "volume_mm3": 261.2797742447792
+        },
+        {
+          "key": "20_right_cap_pin_2",
+          "volume_mm3": 261.2797742447794
+        }
+      ],
+      "exported_dam_index": 8
+    },
+    "15-6-inch-example": {
+      "label": "15.6-inch class example",
+      "width": 360,
+      "depth": 245,
+      "thickness": 24,
+      "native_sha256": "07a4a752a2f8682f779490368ea7922e15aa4785360e7ea7e5360aeb4d2ee5fb",
+      "parts": [
+        {
+          "key": "01_left_arm",
+          "volume_mm3": 116601.8995105138
+        },
+        {
+          "key": "02_right_arm",
+          "volume_mm3": 116601.89951051383
+        },
+        {
+          "key": "03_left_fan_cage",
+          "volume_mm3": 51650.04629733419
+        },
+        {
+          "key": "04_right_fan_cage",
+          "volume_mm3": 51650.0462973342
+        },
+        {
+          "key": "05_left_fan_cap",
+          "volume_mm3": 5634.305849175065
+        },
+        {
+          "key": "06_right_fan_cap",
+          "volume_mm3": 5634.305849175067
+        },
+        {
+          "key": "07_left_dam",
+          "volume_mm3": 17275.584380390534
+        },
+        {
+          "key": "08_right_dam",
+          "volume_mm3": 17275.584380390577
+        },
+        {
+          "key": "09_left_fan_key",
+          "volume_mm3": 2826.212398023691
+        },
+        {
+          "key": "10_right_fan_key",
+          "volume_mm3": 2826.2123980236915
+        },
+        {
+          "key": "11_left_dam_key",
+          "volume_mm3": 2826.212398023691
+        },
+        {
+          "key": "12_right_dam_key",
+          "volume_mm3": 2826.2123980236915
+        },
+        {
+          "key": "13_left_fan_keeper",
+          "volume_mm3": 230.07661457352347
+        },
+        {
+          "key": "14_right_fan_keeper",
+          "volume_mm3": 230.0766145735239
+        },
+        {
+          "key": "15_left_dam_keeper",
+          "volume_mm3": 230.07661457352359
+        },
+        {
+          "key": "16_right_dam_keeper",
+          "volume_mm3": 230.07661457352404
+        },
+        {
+          "key": "17_left_cap_pin_1",
+          "volume_mm3": 261.2797742447793
+        },
+        {
+          "key": "18_right_cap_pin_1",
+          "volume_mm3": 261.27977424477945
+        },
+        {
+          "key": "19_left_cap_pin_2",
+          "volume_mm3": 261.2797742447792
+        },
+        {
+          "key": "20_right_cap_pin_2",
+          "volume_mm3": 261.2797742447794
+        }
+      ],
+      "exported_dam_index": 8
+    },
+    "16-inch-example": {
+      "label": "16-inch class example",
+      "width": 360,
+      "depth": 250,
+      "thickness": 24,
+      "native_sha256": "6ba1cd61c8c7d740371e16bd143c1a39e9c28782533e1bfd81cd36f19b540010",
+      "parts": [
+        {
+          "key": "01_left_arm",
+          "volume_mm3": 116601.8995105138
+        },
+        {
+          "key": "02_right_arm",
+          "volume_mm3": 116601.89951051383
+        },
+        {
+          "key": "03_left_fan_cage",
+          "volume_mm3": 51650.04629733419
+        },
+        {
+          "key": "04_right_fan_cage",
+          "volume_mm3": 51650.0462973342
+        },
+        {
+          "key": "05_left_fan_cap",
+          "volume_mm3": 5634.305849175065
+        },
+        {
+          "key": "06_right_fan_cap",
+          "volume_mm3": 5634.305849175067
+        },
+        {
+          "key": "07_left_dam",
+          "volume_mm3": 17552.144755299345
+        },
+        {
+          "key": "08_right_dam",
+          "volume_mm3": 17552.144755299378
+        },
+        {
+          "key": "09_left_fan_key",
+          "volume_mm3": 2826.212398023691
+        },
+        {
+          "key": "10_right_fan_key",
+          "volume_mm3": 2826.2123980236915
+        },
+        {
+          "key": "11_left_dam_key",
+          "volume_mm3": 2826.212398023691
+        },
+        {
+          "key": "12_right_dam_key",
+          "volume_mm3": 2826.2123980236915
+        },
+        {
+          "key": "13_left_fan_keeper",
+          "volume_mm3": 230.07661457352347
+        },
+        {
+          "key": "14_right_fan_keeper",
+          "volume_mm3": 230.0766145735239
+        },
+        {
+          "key": "15_left_dam_keeper",
+          "volume_mm3": 230.07661457352359
+        },
+        {
+          "key": "16_right_dam_keeper",
+          "volume_mm3": 230.07661457352404
+        },
+        {
+          "key": "17_left_cap_pin_1",
+          "volume_mm3": 261.2797742447793
+        },
+        {
+          "key": "18_right_cap_pin_1",
+          "volume_mm3": 261.27977424477945
+        },
+        {
+          "key": "19_left_cap_pin_2",
+          "volume_mm3": 261.2797742447792
+        },
+        {
+          "key": "20_right_cap_pin_2",
+          "volume_mm3": 261.2797742447794
+        }
+      ],
+      "exported_dam_index": 8
+    },
+    "17-inch-example": {
+      "label": "17-inch class example",
+      "width": 400,
+      "depth": 275,
+      "thickness": 28,
+      "native_sha256": "7027ff231ac34c5443fbb07f9d030c1fced3512c00ac1c2e76da24fad5423f3d",
+      "parts": [
+        {
+          "key": "01_left_arm",
+          "volume_mm3": 118017.89951051363
+        },
+        {
+          "key": "02_right_arm",
+          "volume_mm3": 118017.89951051366
+        },
+        {
+          "key": "03_left_fan_cage",
+          "volume_mm3": 51650.04629733418
+        },
+        {
+          "key": "04_right_fan_cage",
+          "volume_mm3": 51650.046297334164
+        },
+        {
+          "key": "05_left_fan_cap",
+          "volume_mm3": 5634.305849175065
+        },
+        {
+          "key": "06_right_fan_cap",
+          "volume_mm3": 5634.305849175069
+        },
+        {
+          "key": "07_left_dam",
+          "volume_mm3": 20348.672589444246
+        },
+        {
+          "key": "08_right_dam",
+          "volume_mm3": 20348.672589444304
+        },
+        {
+          "key": "09_left_fan_key",
+          "volume_mm3": 2826.212398023691
+        },
+        {
+          "key": "10_right_fan_key",
+          "volume_mm3": 2826.212398023691
+        },
+        {
+          "key": "11_left_dam_key",
+          "volume_mm3": 2826.212398023691
+        },
+        {
+          "key": "12_right_dam_key",
+          "volume_mm3": 2826.212398023691
+        },
+        {
+          "key": "13_left_fan_keeper",
+          "volume_mm3": 230.07661457352347
+        },
+        {
+          "key": "14_right_fan_keeper",
+          "volume_mm3": 230.0766145735239
+        },
+        {
+          "key": "15_left_dam_keeper",
+          "volume_mm3": 230.07661457352359
+        },
+        {
+          "key": "16_right_dam_keeper",
+          "volume_mm3": 230.07661457352404
+        },
+        {
+          "key": "17_left_cap_pin_1",
+          "volume_mm3": 261.2797742447793
+        },
+        {
+          "key": "18_right_cap_pin_1",
+          "volume_mm3": 261.2797742447795
+        },
+        {
+          "key": "19_left_cap_pin_2",
+          "volume_mm3": 261.27977424477933
+        },
+        {
+          "key": "20_right_cap_pin_2",
+          "volume_mm3": 261.2797742447794
+        }
+      ],
+      "exported_dam_index": 8
+    }
+  },
+  "dam_index_range": [
+    0,
+    8
+  ],
+  "rung_pitch_mm": 12
+}

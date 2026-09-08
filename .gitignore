@@ -17,3 +17,19 @@ cfd/*/*.log
 /tmp/
 /output/
 /%SystemDrive%/
+
+# Minimalist build intermediates; reviewed reports and delivery archives are tracked.
+/minimalist/scratch/
+/minimalist/snapshots/
+/minimalist/slices/
+/minimalist/presets/*/*.FCStd1
+/minimalist/*.FCStd1
+/minimalist/*.[0-9]*.FCStd
+/00000.log
+/result.json
+
+**/node_modules/
+
+/minimalist/M1*History.png
+/minimalist/assembly_preview.png
+/minimalist/browser/*.png

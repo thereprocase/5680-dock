@@ -1,6 +1,6 @@
 # Manufacturing finish audit — 2026-09-07
 
-The two gray cradles are PRINT FROZEN. `frozen_print_arms/manifest.json` identifies their exact saved BRep baselines. No arm geometry changes are authorized. Recompute and comparison gates must be repeated before any future mating-part revision.
+The two gray cradles are PRINT FROZEN. `frozen_print_arms/manifest.json` identifies their exact saved BRep baselines. This freeze applied to the preserved Rev H prototype and its already-printed arms. It does not constrain future ducted or Minimalist revisions: the user explicitly authorized new arms, size variations and adjustable airflow parts. Preserve the H artifact and repeat fit and print checks for each new revision.
 
 | Source family | Finding and action | FDM / fit boundary |
 |---|---|---|

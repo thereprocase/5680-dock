@@ -1,6 +1,8 @@
-# Preserve checksum-bearing CAD and print artifacts across Windows and WSL.
-*.step -text
-*.stp -text
+# Preserve CAD bytes across Windows and WSL. Review STEP geometry through the
+# roundtrip reports and native models; generated STEP spacing is significant
+# to published checksums and is not source-code whitespace.
+/print_release_step/*.step -text -diff
+/minimalist/**/*.step -text -diff
 *.stl -text
 *.3mf -text
 *.FCStd -text

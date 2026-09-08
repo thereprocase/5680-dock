@@ -23,13 +23,13 @@ for key in keys:
  manifest['parts'][key]={'revised':revised,'printed_arm_frozen':'cradle' in key,'closed_mesh':True,'dimensions_mm':[b.XLength,b.YLength,b.ZLength],'sha256':files}
 assert len(manifest['parts'])==14
 (OUT/'manifest.json').write_text(json.dumps(manifest,indent=2))
-(OUT/'README.md').write_text("""# Revision H - final native fit-and-finish print set
+(OUT/'README.md').write_text("""# Revision H - preserved ducted prototype print set
 
 Print one each of 01-14. STL and 3MF are alternatives for the same part; do not
 print both formats. Standard 3MF models contain millimeter geometry and baked
 orientation, not slicer settings or G-code.
 
-This is the selected print set. Original root print_ready/ and Fusion/Onshape
+This is the preserved Rev H prototype print set. Original root print_ready/ and Fusion/Onshape
 ports remain Revision F baseline/history. Six parts are revised: ducts, trays,
 and outlet rails. Both cradle/arm files are byte-identical to the already-printed
 Revision F files. Caps and four pins are also unchanged.
@@ -49,8 +49,10 @@ inlet-down orientation. Cooling performance is not yet physically validated.
 
 Final checks: valid native solids, constrained sketches, unchanged printed arms,
 wall continuity, assembly/service clearances, closed meshes, and bed/brim/cutter
-fit. Physical fit, ASA bridge quality, retention and slicer paths remain to be
-checked. Use the root P1S_ASA_Print_Guide.md for material and assembly guidance.
+fit. Both duct toolpaths were checked with Bridge direction and Internal bridge
+direction 180 degrees; Relative bridge angle and Align infill direction to
+model off. See ../print_release_step/ORCA_BRIDGE_REVIEW.txt. Physical fit, ASA
+bridge quality and retention remain to be checked. Use the root P1S_ASA_Print_Guide.md for material and assembly guidance.
 Original fit coupons remain under print_ready/; full-length tray fit needs its
 own check because the revised flank clearance is normal to the dovetail slope.
 

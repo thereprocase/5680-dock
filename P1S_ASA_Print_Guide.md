@@ -1,3 +1,5 @@
+> Current designs: [Minimalist M1 guide](https://thereprocase.github.io/dell-5560-wall-mount/minimalist-guide.html) and [preserved ducted Rev H](print_release/). For both Rev H ducts, use the [corrected Orca cross-slot bridge settings](print_release_step/ORCA_BRIDGE_REVIEW.txt). This older guide retains the original design and material context.
+
 # P1S / ASA — Revision F
 
 Print the supplied oriented 3MF files with your **P1S, 0.4 mm nozzle, ASA,
