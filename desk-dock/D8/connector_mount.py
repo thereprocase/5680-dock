@@ -9,6 +9,7 @@ from printed_fasteners import make_screw, make_threaded_hole
 
 
 def detachable_support(p, support, box, hole, add):
+    from breakaway_geometry import spring_mounts
     P = p['rear_case_seat_z'] + p['port_from_rear_case']
     # With Y=50 on the bed, two 45-degree haunches reduce the original
     # 40 mm cavity roof bridge to 8 mm. The brace remains open at X=-40 for
@@ -23,10 +24,10 @@ def detachable_support(p, support, box, hole, add):
     # their external dimensions and the original long spring screws, but their
     # bores are clearance fits. The main support can now print on its XZ face.
     support = support.cut(box(-100, 50, P-10, 200, 100, 120))
-    for j, zz in enumerate([P+5.15, P+49.15]):
+    for j, (xx,zz) in enumerate(spring_mounts(p)):
         offset = float(p['breakaway'].get('spring_offset_y_mm', 26))
-        spacer = cq.Workplane(obj=hole((0, 1, 0), (-22, 50, zz), 8, offset))
-        spacer = spacer.cut(hole((0, 1, 0), (-22, 49.9, zz), 4.35, offset+.2))
+        spacer = cq.Workplane(obj=hole((0, 1, 0), (xx, 50, zz), 8, offset))
+        spacer = spacer.cut(hole((0, 1, 0), (xx, 49.9, zz), 4.35, offset+.2))
         add(f'breakaway_spring_spacer_{j}', spacer, (74, 82, 86))
     split = box(18, -60, 0, 80, 200, P-18.7)
     shoe = support.intersect(split)
@@ -34,6 +35,7 @@ def detachable_support(p, support, box, hole, add):
     # This old under-root projection served the formerly fused shell joint.
     # The removable module instead seats against the keyed side flange.
     module = module.cut(box(0, -60, 0, 18.1, 86, P-18.7))
+    module = module.cut(box(0, 26, 0, 18.1, 24.1, P-66.7))
     # Stop at X=23: the actual left fan frame begins at X=24, with its
     # half-millimetre pocket clearance beginning at X=23.5.
     shoe = shoe.union(box(-16, 50, P-66.7, 39, 8, 48))
@@ -62,8 +64,9 @@ def detachable_support(p, support, box, hole, add):
         'locks': 'Two accessible printed 8x2 screws, axes -Y, 9.5 mm nominal engagement',
         'positive_keys': keys,
         'key_clearance_per_face_mm': .15,
-        'main_body_print_face': 'Y=50 on bed; X and Z load directions in bed plane. Internal45degreehaunches leave8mm roof bridge.',
-        'removal': 'Unload laptop; remove two locks; pull module -Y at least 4.3 mm, then withdraw outboard along -X. Cable remains installed in module.',
+        'main_body_print_face': 'Y=50 on bed; X and Z load directions in bed plane. Internal 45 degree haunches leave an 8 mm roof bridge.',
+        'removal': 'Unload laptop; remove two shell-mount locks; pull module local -Y 4.3 mm to clear keys, then withdraw outboard along -X. Cable remains installed in module; reserve a loose exterior loop. Do not lift the module before its right edge has cleared the rail.',
+        'spring_cartridge_orientation': 'Original 88 x 60 mm leaf frame rotated 90 degrees about the unchanged Y preload axis, giving 60 mm X width and 88 mm Z height. Lateral spacer/screw mounts are X=-44 and 0 at the pivot height.',
         'qualification': 'Nominal keys and broad clamp seat only; printed repeatability, extraction restraint and <=0.20 mm whole-holder movement require measurement.'}
 
 

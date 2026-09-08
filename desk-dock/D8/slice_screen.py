@@ -348,6 +348,42 @@ def screen(source, mode, args, machine, defs, engine, env):
     return record
 
 
+def reusable_records(paths, provenance, machine, density):
+    """Reuse complete screens only with identical mesh, engine and settings.
+
+    The original toolpath hash and source summary are retained as evidence.
+    Reuse never repairs a mesh or qualifies its support/strength behavior.
+    """
+    records = {}
+    for path in paths:
+        saved = json.loads(path.read_text(encoding="utf-8"))
+        keys = ("engine_sha256", "definition_sha256", "machine_profile_sha256")
+        if any(saved.get(key) != provenance[key] for key in keys):
+            raise ValueError(f"Slicer/profile provenance differs in {path}")
+        for item in saved.get("parts", []):
+            mode = item.get("support_mode")
+            if mode not in ("normal", "off") or not item.get("path_screen_pass"):
+                continue
+            if item.get("estimates", {}).get("density_assumed_g_cm3") != density:
+                continue
+            command = item.get("command", [])
+            actual = {}
+            for index, value in enumerate(command[:-1]):
+                if value == "-s":
+                    name, setting = command[index+1].split("=", 1)
+                    actual[name] = setting
+            expected = {name: setting_text(value) for name, value in settings(machine, mode).items()}
+            if actual != expected:
+                continue
+            record = dict(item)
+            record["reused_evidence"] = {
+                "summary": str(path.resolve()), "summary_sha256": sha(path),
+                "reason": "Identical STL hash, Cura binary, definitions, profile, settings and density",
+            }
+            records[(item["source_sha256"], mode)] = record
+    return records
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("models", nargs="+", type=Path, help="STL files or directories of STL files")
@@ -358,6 +394,8 @@ def main():
     parser.add_argument("--supports", choices=("normal", "off", "both"), default="normal")
     parser.add_argument("--timeout", type=int, default=60, help="Bounded seconds per part/mode")
     parser.add_argument("--density", type=float, default=1.27, help="Assumed PETG density g/cm3")
+    parser.add_argument("--reuse-summary", nargs="*", type=Path, default=[],
+                        help="Prior complete summary.json files; reuse only matching mesh and slicer provenance")
     args = parser.parse_args()
     args.output = args.output.resolve()
     if args.output.is_relative_to(REPO):
@@ -391,9 +429,18 @@ def main():
                "machine_profile_sha256": sha(args.machine_profile),
                "machine_envelope": {k: machine[k] for k in ("printable_area", "printable_height", "bed_exclude_area")},
                "parts": []}
+    reused = reusable_records(args.reuse_summary, summary, machine, args.density)
     for source in sources:
         for mode in modes:
-            summary["parts"].append(screen(source, mode, args, machine, defs, engine, env))
+            record = reused.get((sha(source), mode))
+            if record:
+                record = dict(record)
+                record["source"] = str(source)
+                print(json.dumps({"part": source.stem, "supports": mode,
+                                  "pass": True, "reused_matching_evidence": True}), flush=True)
+            else:
+                record = screen(source, mode, args, machine, defs, engine, env)
+            summary["parts"].append(record)
             save(args.output / "summary.json", summary)
     raise SystemExit(0 if all(p["path_screen_pass"] for p in summary["parts"]) else 1)
 

@@ -32,7 +32,8 @@ def add_cable_routing(i,x0,x1,body,plate,box,rb,hole):
         lug=rb(lx,y-6.5,z-4,8,13,8,1.5)
         slot_x=outer+4.4 if side==1 else outer-7.6
         # Continue through nearby roof ribs, not only through the lug. The
-        # 20 mm service channel leaves both tie-threading ends open.
+        # 20 mm service channel clears the adjacent 10 mm-pitch roof ribs
+        # at both threading ends; cutting the lug alone makes a sealed void.
         slot=box(slot_x,y-10,z-.9,3.2,20,1.8).edges('|Y').fillet(.5)
         lug=lug.cut(slot)
         body=body.fuse(lug.val()).cut(slot.val()).clean()
@@ -49,6 +50,7 @@ def add_cable_routing(i,x0,x1,body,plate,box,rb,hole):
         'cover_release_direction':[0,0,-1],
         'zip_tie_nominal_width_mm':2.5,
         'zip_tie_slot_mm':[3.2,1.8],
+        'zip_tie_threading_channel_length_mm':20.0,
         'zip_tie_lug_centers_mm':lug_centers,
         'service':'Lay the cable into the open cover-edge groove, then close the panel. The tunnel captures with clearance; it must not crush insulation. Keep ties and wiring on the shell when removing the panel.',
         'qualification':'Actual fan lead, plug connector, bend radius and tie head are not modeled. Fit the intended fan and cable before fixing a route.',

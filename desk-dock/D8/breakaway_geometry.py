@@ -13,6 +13,11 @@ def datum(p):
     P=p['rear_case_seat_z']+p['port_from_rear_case']
     return -22.0,P+27.15
 
+def spring_mounts(p):
+    """Two lateral mounts for the vertically oriented spring cartridge."""
+    px,pz=datum(p)
+    return [(px-22,pz),(px+22,pz)]
+
 def box(x,y,z,a,b,c):
     return cq.Workplane('XY').box(a,b,c,centered=False).translate((x,y,z))
 
@@ -81,8 +86,10 @@ def make_spring(p,delta=None):
     island=box(px-8,55-delta,pz-12,16,6,24)
     frame=frame.union(island).cut(cyl(px,49,pz,5.35,20))
     for zz in [pz-22,pz+22]:frame=frame.cut(cyl(px,49,zz,4.35,20))
-    # Put the spring behind the slide-in fan rails, inside the existing fan
-    # depth envelope. Two short spacers carry it back to the fixed support.
+    # Rotate the unchanged cartridge in its XZ plane: its 60 mm width now
+    # clears the adjacent fan rail during module service. The leaves retain
+    # their length, section and Y deflection; the preload axis is unchanged.
+    frame=frame.rotate((px,0,pz),(px,1,pz),90)
     return frame.translate((0,spring_offset(p),0))
 
 def make_fixed_support(p):
@@ -105,13 +112,13 @@ def make_fixed_support(p):
         .threePointArc((outer*math.cos(a/2),-outer*math.sin(a/2)),(outer,0)).close().extrude(-6))
     for theta in [0,-a]:track=track.union(cyl(px+r*math.cos(theta),25.9,pz+r*math.sin(theta),4.25,6))
     fixed=fixed.cut(track)
-    for zz in [pz-22,pz+22]:
+    for xx,zz in spring_mounts(p):
         offset=spring_offset(p)
         # D8's separate spacers have clearance bores. Only the support's
         # Y=50..38 mm land needs a female thread; retain the original screw
         # phase relative to its under-head datum at Y=61+offset.
         fixed=fixed.cut(make_threaded_hole(12,diameter=8,phase_z=-(11+offset))
-            .rotate((0,0,0),(1,0,0),90).translate((px,50,zz)))
+            .rotate((0,0,0),(1,0,0),90).translate((xx,50,zz)))
     return fixed
 
 def make_carrier(p):
@@ -154,12 +161,12 @@ def add_hinge_hardware(p,add):
     nose=cq.Workplane('XY').circle(7.5).circle(5.35).extrude(2)
     nut=nut.union(nose)
     add('breakaway_preload_hand_nut',along_y(nut,px,base,pz),(109,143,130))
-    for j,zz in enumerate([pz-22,pz+22]):
+    for j,(xx,zz) in enumerate(spring_mounts(p)):
         # Only the last 12 mm engages the support; the long spacer run is a
         # smooth, stronger 8 mm shank rather than 48 mm of unnecessary thread.
         screw=make_screw(22+offset,diameter=8,head_diameter=17,head_height=5,thread_length=12)
         # Screw points toward -Y. Thread phase follows its own reverse axis.
-        posed=screw.rotate((0,0,0),(1,0,0),90).translate((px,spring_face,zz))
+        posed=screw.rotate((0,0,0),(1,0,0),90).translate((xx,spring_face,zz))
         add(f'breakaway_spring_hand_screw_{j}',posed,(109,143,130))
 
 def moving_names(name):

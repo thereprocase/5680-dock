@@ -1,15 +1,21 @@
-# D8 work checkpoint — not a print release
+# D8 verified-service checkpoint — not a print release
 
-This branch preserves the removable live Y/Z connector module, independent X stop, dedicated shell feet, light covers, researched fan clearances and separate flat-printing fan clips.
+D8 includes a removable live Y/Z connector module, independent X stop, dedicated shell feet, light covers, researched fan clearances and separate flat-printing fan clips.
 
-The latest regeneration produced 83 valid CAD solids, a STEP assembly and 43 manufacturing meshes. Shells now print upright with a continuous lower perimeter and sparse roof gussets; the carrier also prints upright. The partial-thread preload screws were repaired and independently exported as watertight meshes.
+## Latest completed milestone
 
-## Active checks
+The spring cartridge is rotated 90 degrees while retaining its leaf dimensions, preload axis and cam. Both spacer/screw/thread mounts move consistently. The obsolete lower root is removed.
 
-- Final mesh preflight and changed-part offline Cura screening are running. Earlier slice/mesh reports may describe superseded poses or screw meshes; consult their input hashes.
-- Earlier exact assembly checks passed all 12 sampled laptop docking poses, OEM foot keepouts and port handedness. Three shell collisions were found and corrected with local clearance pockets; the revised complete assembly is being checked.
-- **Module removal is not yet clear.** The nominal receiver pockets do not provide the full advertised −Y then −X service path. This remains an active geometry fix.
-- Live Y/Z travel passed nominal and four corner positions with invariant part volumes and no unintended housing collisions in a check using cylindrical thread envelopes. Exact matched thread geometry was checked separately.
+**The complete module now clears all 19 sampled service positions:** unload the laptop, remove two mounting locks, move local −Y by 4.3 mm, then withdraw along −X. No initial lift is required. The check found zero nominal connector collisions and 79 valid single CAD solids. See [the hashed service evidence](review-evidence/module-service-check.json).
+
+Live Y/Z travel also passed nominal and four corner positions with invariant part volumes and no unintended housing collisions using cylindrical thread envelopes. Exact matched thread geometry was checked separately.
+
+## Final integration in progress
+
+- Final full regeneration from the corrected source is running. `generation-provenance.json` will record its unchanged input hashes and output hashes.
+- Final full-assembly laptop/foot checks, mesh preflight, renders and changed-part slice checks will follow those exact exports. Earlier generated files and reports may describe superseded geometry; use their hashes.
+- All 12 laptop docking samples, foot keepouts and port handedness passed the preceding full-assembly check.
+- Generic automatic supports remain substantial under the shells. A bounded manual bridge-support scenario is being inspected; its smaller material estimate is not yet a print qualification.
 - Actual P1S slicing, printed fits, complete-holder stiffness, spring creep/release force and cooling remain unqualified.
 
-This is a deliberate development checkpoint so work is recoverable. Do not treat the presence of STEP/STL files or an earlier passing subset as production approval. D7's public viewer and download remain D7.
+This checkpoint preserves progress while final integration finishes. D7's public viewer and archive remain D7. The presence of STEP/STL files does not establish a production release.
