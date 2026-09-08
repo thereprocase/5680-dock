@@ -36,5 +36,33 @@
   "sampling_gaps": "Bounded cutting-plane output can omit coarse cells that cross its clipping box. Grey denotes solid or unsampled regions; CAD outlines distinguish the intended geometry. Gaps are not filled.",
   "playback_slowdown": 4047.5287965928987,
   "animation": "Single playback with recorded timestamp spacing rounded to GIF timing; final frame held for 2 s.",
-  "caution": "A startup animation is not evidence of sustained periodic shedding or a Bernoulli cause for pressure depression. Colour scales are fixed across all displayed frames; values outside them are clipped."
+  "caution": "A startup animation is not evidence of sustained periodic shedding or a Bernoulli cause for pressure depression. Colour scales are fixed across all displayed frames; values outside them are clipped.",
+  "video": {
+    "file": "pilot-sections.mp4",
+    "source": "pilot-sections.gif",
+    "source_sha256": "e2fbf84aa4ecfb5201cc43e3fa55b4c1d58697d72d12a9df4aae872f157800c6",
+    "sha256": "a77632f61d41b0daf9191fe0e42747ffcf489723bc57073ec466c640978360f4",
+    "codec": "H.264",
+    "pixel_format": "yuv420p",
+    "width": 1440,
+    "height": 1200,
+    "frames_per_second": 30,
+    "source_frame_count": 4,
+    "encoded_frame_count": 282,
+    "duration_s": 9.4,
+    "target_playback_slowdown": 404752.8796592899,
+    "source_frame_start_s": [
+      0.0,
+      2.0,
+      4.133333333333334,
+      6.4
+    ],
+    "source_frame_duration_s": [
+      2.0,
+      2.1333333333333333,
+      2.2666666666666666,
+      3.0
+    ],
+    "presentation": "User-controlled playback; no autoplay or automatic looping. Physical intervals are uniformly slowed and rounded to 30 fps; the final sample is held for 3 seconds. Original timestamps and fixed colour scales are preserved. No motion interpolation or additional simulation samples."
+  }
 }
