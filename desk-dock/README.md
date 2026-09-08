@@ -1,24 +1,13 @@
-# Precision 5680 slide-in desk dock — D1
+# Precision 5680 slide-in desk dock — D2
 
-**Current design: [hinge-down extraction dock](D1/README.md).**
+**Current design: [upright-fan dock and docking animation](D2/README.md).**
 
-![D1 installed and internal fan arrangement](D1/overview.png)
+![Laptop docking and undocking](D2/docking-cycle.gif)
 
-Two slim 120 mm fans sit on the lid side and draw from a curved duct below
-the hinge. The underside intake stays exposed. A low end support carries the
-original SD25TB5 plug in a cap with independent height, lateral and depth
-adjustment, plus a separate chassis stop.
+Two 120 mm fans stand 10° from vertical on the lid side, extracting from curved pods beneath the hinge. The laptop lowers into the trough, slides 18 mm into the adjustable SD25TB5 plug, then reverses that sequence to undock.
 
-[STEP review package](D1/Precision_5680_D1_Review.zip) ·
-[Adjustment detail](D1/adjustment.png) ·
-[Air-path section](D1/air-path.png) ·
-[Dell geometry evidence](D1/reference-evidence.png)
+[Full-resolution animation](D2/docking-cycle.mp4) · [STEP review package](D2/Precision_5680_D2_Review.zip) · [D1 Dell geometry evidence](D1/reference-evidence.png)
 
-D1 uses geometry extracted from Dell-linked 3D viewing assets and checked
-against service images. The custom rigid parts clear at the nominal setup;
-the principal adjustment stages clear at 27 sampled X/Y/Z limit combinations.
-Physical mating, production attachment details, printing and cooling remain
-unqualified. This is a developed CAD study, not a print release.
+The hinge seat remains 54 mm above the desk, with the selected port center near 120 mm. The connector retains independent height, transverse and depth adjustment and a separate chassis stop. D2 adds longer bearing pads for the withdrawal stroke and a corrected connector shelf clearance.
 
-The earlier hinge-up D0 concept remains in Git history and the legacy files
-in this directory. Use D1 for current geometry and instructions.
+This is a CAD motion study. Nominal envelope and sampled movement checks do not establish physical mating, production readiness or cooling performance. See the [D2 report](D2/README.md) for the validation scope and remaining details. [D1](D1/README.md) and the older files remain as revision history.
