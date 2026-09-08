@@ -1,135 +1,78 @@
-# A wall mount optimized for airflow synergy
+# Precision 5560 wall mount
 
-A Dell Precision 5560 server mount designed to work with the laptop's cooling system. Two 120 mm fans feed a shrouded gap behind the underside. An upper restriction aims to retain pressure at the intake vents and direct bypass air upward, past the hinge exhaust. The laptop lifts out for keyboard access.
+**Revision G is the selected print model:** native FreeCAD, refined fit and finish,
+and a complete oriented P1S/ASA print set. Both already-printed arms are unchanged.
 
-The assembly uses side-printed ASA brackets, 45° fan modules, keyed CA joints and removable fan trays. Four wall bolts are the only metal mounting fasteners.
+[Project showcase](https://thereprocase.github.io/dell-5560-wall-mount/) ·
+[Download all print files](Precision_5560_RevG_Print_Set.zip) ·
+[Print set and instructions](print_release/) ·
+[Editable FreeCAD model](freecad/Precision_5560_Native.FCStd) ·
+[Final STEP assembly](freecad/Precision_5560_Native.step)
 
-![Revision F installed and empty, rendered from CAD](Precision_5560_Wall_Mount_Preview.png)
+## Print this version
 
-**Revision F — prototype design.** CAD checks, structural screening and eight CFD cases are complete. Printing, joint strength and cooling performance still need physical validation.
+Use **print_release/**, one each of parts 01-14. STL and 3MF are alternative
+formats of the same part. The complete ZIP includes both plus a SHA256 manifest.
+Files have their intended orientations baked in; they are not sliced G-code.
 
-[STEP assembly](Precision_5560_Wall_Mount.step) · [Print files](print_ready/) · [Assembly guide](P1S_ASA_Print_Guide.md) · [Engineering report](ENGINEERING_REPORT.md) · [Reproduction steps](PROCESS.md)
+P1S, ASA, 0.4 mm nozzle, 0.20 mm layers, 6 walls, 6 top/bottom layers,
+100% infill of the explicitly hollow geometry, 8 mm outer brim, supports off.
+See the [print-set instructions](print_release/README.md) and
+[P1S ASA assembly guide](P1S_ASA_Print_Guide.md).
 
-## Installed airflow: 3D simulation drawing package
+The original **print_ready/**, root STEP, CadQuery source and Fusion/Onshape ports
+remain **Revision F history/baselines**. Do not confuse those with the selected
+Revision G print set. The gray arm files in the new set are byte-identical to the
+old ones; caps and pins are unchanged too.
 
-[**Seven-sheet A3 technical review**](docs/simulation/installed-airflow-2026-09-07/) covers the installed mount, traced laptop envelope, internal surrogate ducts and four idealized fans. It includes isometric and orthographic views, velocity and pressure sections, mesh details and convergence evidence.
+## What changed
 
-[View the PDF](docs/simulation/installed-airflow-2026-09-07/Precision_5560_CFD_Technical_Review.pdf) · [Download the PDF and individual sheets](https://github.com/thereprocase/dell-5560-wall-mount/raw/refs/heads/onshape-native-rebuild/docs/simulation/installed-airflow-2026-09-07/Precision_5560_CFD_Drawing_Package.zip)
+- Closed rail roofs and end windows while retaining the exhaust slot and open back.
+- Contoured the rail shoulder with 0.30 mm clearance to the frozen printed arm.
+- Rounded exposed tips, matched cover outlines, and used print-aware corner bevels.
+- Set the cap/duct/tray interfaces to measured 0.30 mm gaps on both sides.
+- Corrected dovetail clearance normal to the sloping flank.
+- Added separate editable native loft-skin patches to close the unintended duct-wall notches.
+- Preserved pin retention, fixed mounting shoulders, screw access and service motions.
 
-This newer 3D exploration is separate from the sealed 2D slot comparison below. The 836,278-cell run reached 1,200 iterations but did not meet the residual convergence target. Fan forcing is assumed; no thermal prediction or measured cooling performance is claimed.
+Final CAD checks: **14 valid solids, 176 fully constrained sketches**, zero
+additional wall loss, unchanged frozen arms, and passing sampled service paths.
+All 14 print meshes are closed and their oriented bounds plus brims fit the P1S.
+Physical fit, retention, ASA bridging and slicer toolpaths remain to be checked.
 
-## 1. Define fit and access
+[Fit-and-finish review](freecad/ADJACENT_FIT_REVIEW.md) ·
+[Native model guide](freecad/README.md) ·
+[Final acceptance JSON](freecad/complete_fit_review.json) ·
+[Print manifest](print_release/manifest.json)
 
-> “The hinge will go up so that the hot air escapes up and the fans can go on the bottom…”
+## Airflow research and technical drawings
 
-The laptop sits vertically, underside toward the wall, with a 40 mm rear gap. A 344.4 × 230.3 × 20 mm envelope controls fit. The 26 mm bare slot allows for contact pads.
+Two 120 mm fans feed the rear plenum; the upper contraction directs bypass flow
+past the hinge exhaust. The project includes the original 2D slot study and a
+later exploratory 3D installed-flow case with traced laptop intake assumptions.
 
-> “…make the tines on the front a little bit taller…”
+[Seven-sheet A3 technical review](docs/simulation/installed-airflow-2026-09-07/Precision_5560_CFD_Technical_Review.pdf) ·
+[Drawing package](docs/simulation/installed-airflow-2026-09-07/) ·
+[3D CFD run notes](fusion/cfd/TRACED_RUN_NOTES.md) ·
+[2D CFD report](CFD_Design_Report.md)
 
-The front tines are 94 mm tall. Four Ø7 mm wall holes face the room through clear Ø16 mm tool paths. We checked bolt access and laptop removal with the assembly in place. The laptop needs a 105 mm lift before moving forward; allow 110 mm overhead.
+CFD is baseline exploratory evidence, not a new solve of Revision G. The 3D
+case uses uncalibrated constant-force fan assumptions, no thermal solution,
+and did not meet its strict convergence target. It is not a measured hardware
+performance claim.
 
-## 2. Support the laptop's intake
+## Project history and continued work
 
-> “…doesn't have to seal, just has to be high pressure at vent high velocity beyond.”
+- [Original design narrative](docs/REVISION_F_DESIGN_STORY.md)
+- [FreeCAD workflow notebook](freecad/RESEARCH_NOTES.md)
+- [Fusion native port and CFD work](fusion/README.md)
+- [Onshape pilot and API research](onshape/README.md)
+- [Engineering report](ENGINEERING_REPORT.md) and [source attribution](SOURCES.md)
 
-The airflow goal became a plenum with a controlled outlet. Side cheeks limit leakage. A separate upper rail contracts the gap above the intake band, keeping the laptop vertical and the outlet width interchangeable.
+The native FreeCAD document is the current editable manufacturing artifact.
+Frozen arms are immutable reference geometry for any future mating-part edit.
+New dimensions require renewed fit and print-orientation checks.
 
-Restricting the outlet can raise upstream pressure while reducing flow. The useful question was how much pressure each slot retained at the intake, and what exit velocity remained.
-
-## 3. Locate the active vents
-
-> “…download and scale images and cross sections of the machine to estimate its profile geometry?”
-
-We scaled Dell side views and an inside-base-cover image against the published width and depth. The inside view revealed a covered center behind the broad exterior grille, leaving two estimated 70 × 40 mm intake regions near X = ±111 mm.
-
-![Scaled Dell references and estimated profile](Laptop_Profile_References.png)
-
-The estimated intake band ends near Z = 191 mm, with ±4 mm location uncertainty. The contraction starts at 198 mm, reaches its throat at 226 mm and exits at 232 mm, near the hinge. No dimensioned factory section was found; the reconstructed profile has an estimated ±2 mm uncertainty. Check the actual machine before assembly.
-
-## 4. Design for the print orientation
-
-> “I would like to print the brackets on their side for strength, and not on their back.”
-
-> “Also bridges are just fine, they're usually printable. Unsupported overhangs are bad.”
-
-The brackets print on their outer sides. Ducts print inlet down; outlet rails print lip down. Sloped roofs support the next layer, while short bridges close box sections and dovetail grooves.
-
-![Supplied print orientations](FDM_Print_Orientations.png)
-
-The 0.20 mm layer audit found no floating starts. The longest intentional bridge spans 18 mm. Each part and its 8 mm brim fits the P1S bed and avoids the cutter exclusion. Bambu Studio could not run in the environment, so toolpaths and ASA bridge quality remain to be checked.
-
-## 5. Reduce material along the load path
-
-> “I feel like we could get really creative and save a ton of plastic here.”
-
-We hollowed the brackets, thinned the duct skins and pocketed the trays and caps. Material remains at bearing shoulders, bracket roots and wall holes. This used explicit geometry and section calculations; no topology or generative solver was run.
-
-We extracted net section properties every 0.5 mm, including voids and unsymmetric bending. The structural screen uses a 2.5 kg laptop, 6 kg installation, 3g acceleration and a 50 N outward hinge pull. The minimum ratio of assumed stress limit to calculated stress is 1.19. This is a screening result; bonds, anchors and warm ASA creep remain unqualified.
-
-Revision F uses **1,177.3 cm³ of solid CAD, 35.0% less than Revision D** at equal fill policy. The latest containment and assembly changes add 13.1 cm³ to the lightweight Revision E.
-
-## 6. Keep service parts removable
-
-> “Can we also make it tool free / ca glue assembly, except for the four wall bolts?”
-
-Keyed lap joints connect the fixed ducts and outlet rails. Their shoulders carry vertical load; CA resists withdrawal. Fan trays slide in dry, and two split pins retain each cap.
-
-> “…have the fans angle down so they're blowing at a 45 to the gap instead of straight in?”
-
-The fan intakes face down and outward. Air flows upward and wallward at 45°. Cheeks contain the rear flow while leaving side ports accessible.
-
-![Fixed joints and removable fan assemblies](Tool_Free_Assembly.png)
-
-The screened loads require 47.8 N of outward retention per duct and 7.4 N per pin. Adhesive and pin tests must establish that retention before service.
-
-## 7. Compare the outlet slots
-
-> “And do some cfd to design the plenum and slot?”
-
-Eight OpenFOAM v1912 cases compare slot width, lower-turn geometry, mesh size, supply pressure and intake demand. The model uses steady incompressible RANS with k–omega SST in a sealed 2D section.
-
-![Calculated pressure and velocity fields](CFD_Plenum_Study.png)
-
-At an assumed 20 Pa inlet total pressure and prescribed 0.4 m/s intake demand:
-
-| Outlet | Mean intake pressure | Mean exit speed |
-|---|---:|---:|
-| 8 mm | 18.80 Pa | 4.01 m/s |
-| **12 mm** | **17.67 Pa** | **4.42 m/s** |
-| 16 mm | 15.43 Pa | 5.16 m/s |
-
-The narrow slot retained more pressure; the wide slot produced a faster exit. We kept **12 mm** as the starting compromise. The curved lower turn improved intake pressure by only 0.11 Pa on the common mesh, giving little reason to refine the bend further before testing.
-
-All meshes passed `checkMesh`. Flow imbalance stayed below 0.001%; mesh refinement changed mean intake pressure by about 0.3% and exit speed by 2.9%. Four cases missed the strict residual target despite stable mean-pressure monitors.
-
-The model prescribes laptop intake flow and assumes fan pressure. It omits real fan curves, internal laptop resistance, side leakage, heat transfer and the room plume. The results compare slot behavior; actual cooling, total CFM and exhaust carry distance require measurements.
-
-## 8. Specify the fits
-
-> “what tolerances did you assume for slide to fit parts?”
-
-The dovetail has 0.30 mm horizontal allowance per side, 0.30 mm crown clearance and 0.20 mm root clearance. Clearance normal to the sloping flank is smaller. Fixed-key pockets use 0.30 mm nominal offsets plus roof relief. Pins use a Ø4.0 mm shaft, Ø4.1 mm socket and Ø4.2 mm split crown.
-
-No global ASA shrink correction is applied. Print the coupons, inspect elephant foot and adjust individual interfaces as needed. Full-length tray engagement also needs a warping check. See [TOLERANCES.md](TOLERANCES.md).
-
-## 9. Reproduce and test
-
-The workflow followed the interfaces: establish fit, reconstruct the vents, build the solids, check loads and service motions, audit print support, then compare airflow variants. [DIALOGUE.md](DIALOGUE.md) preserves the available prompts in order.
-
-| Software | Use |
-|---|---|
-| Python 3.12; CadQuery 2.8.0 / Open CASCADE | Parametric solids, sections, STEP export and interference checks |
-| NumPy; trimesh 5.1.0; Shapely 2.1.2; rtree; NetworkX | Mesh, layer support and connectivity checks |
-| Pillow | CAD renders and reference-image annotations |
-| Matplotlib; SciPy; VTK | CFD postprocessing and field plots |
-| OpenFOAM v1912 | Meshing, mesh checks, flow solution and field export |
-| Bambu Studio 2.8.2.61 profile sources | Starting P1S/ASA settings; slicing remains pending |
-| Git / GitHub | Source, design files and analysis records |
-
-[PROCESS.md](PROCESS.md) gives the commands; [requirements.txt](requirements.txt) records the Python dependencies. The [engineering report](ENGINEERING_REPORT.md) covers dimensions, assumptions, loads and verification.
-
-Next: measure the laptop, print the coupons, test joint retention and warm structural behavior, then measure intake pressure and workload temperatures with the selected fans and outlet rails. Use those results to decide whether a coupled 3D or thermal model would change the design.
-
-**Printing:** follow the [P1S ASA guide](P1S_ASA_Print_Guide.md), retain the supplied orientations and inspect the slice. Files are standard 3MF/STL models. Print the individual parts; reference STEP assemblies are for fit inspection.
-
-**License:** [MIT](LICENSE). Dell reference material is attributed separately in [SOURCES.md](SOURCES.md). This project is independent of Dell and Bambu Lab.
+MIT licensed project. Third-party viewer code retains its own MIT notice.
+Dell and Bambu references are attributed separately. This project is independent
+of Dell, Bambu Lab and Autodesk.
