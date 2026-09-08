@@ -1,0 +1,1151 @@
+{
+  "revision": "D8",
+  "scope": "Explicit manufacturing poses, not physical print qualification.",
+  "parts": [
+    {
+      "rotations": [
+        [
+          "X",
+          -108
+        ]
+      ],
+      "face_on_bed": "Broad front grille face",
+      "load_orientation": "Grille bars lie in bed plane.",
+      "support": "None expected",
+      "material": "PETG",
+      "part": "01_fan_guard_retainer",
+      "file": "01_fan_guard_retainer.stl",
+      "dimensions_mm": [
+        128.0,
+        128.00000000000006,
+        4.000000000000034
+      ],
+      "volume_mm3": 30472.13165271042,
+      "first_layer_mean_contact_mm2": 8100.586065824279,
+      "sha256": "4481228109ffab4ea7fba14422e3d6f523fc3eb6b4a5cd2aeb31033c9ef98b92",
+      "unloaded_export": false,
+      "layer_mm": 0.2,
+      "nozzle_mm": 0.4,
+      "walls": 5,
+      "top_bottom_layers": 6,
+      "initial_infill": "100% for dense initial qualification; CAD cavities remain hollow"
+    },
+    {
+      "rotations": [
+        [
+          "X",
+          -108
+        ],
+        [
+          "Y",
+          -90
+        ]
+      ],
+      "face_on_bed": "Broad fan-local YZ side; unloaded shape",
+      "load_orientation": "Leaf length and bending stress lie in bed plane.",
+      "support": "None expected",
+      "material": "PETG",
+      "part": "01_fan_top_clip_1",
+      "file": "01_fan_top_clip_1.stl",
+      "dimensions_mm": [
+        50.10000000000002,
+        17.300000000000026,
+        8.000000000000007
+      ],
+      "volume_mm3": 1270.9185185185177,
+      "first_layer_mean_contact_mm2": 158.86481481481047,
+      "sha256": "bb12cf2ed7daffb7cb9f95d7506c4945416e94d4584c9e2e4988076805cc4387",
+      "unloaded_export": true,
+      "layer_mm": 0.2,
+      "nozzle_mm": 0.4,
+      "walls": 5,
+      "top_bottom_layers": 6,
+      "initial_infill": "100% for dense initial qualification; CAD cavities remain hollow"
+    },
+    {
+      "rotations": [
+        [
+          "X",
+          -108
+        ],
+        [
+          "Y",
+          -90
+        ]
+      ],
+      "face_on_bed": "Broad fan-local YZ side; unloaded shape",
+      "load_orientation": "Leaf length and bending stress lie in bed plane.",
+      "support": "None expected",
+      "material": "PETG",
+      "part": "01_fan_top_clip_2",
+      "file": "01_fan_top_clip_2.stl",
+      "dimensions_mm": [
+        50.10000000000002,
+        17.300000000000026,
+        8.00000000000001
+      ],
+      "volume_mm3": 1270.9185185185172,
+      "first_layer_mean_contact_mm2": 158.8648148148154,
+      "sha256": "db83eec63dcbe66dab86779555f94cf48ad31854ff46e67b8b66012537840a7f",
+      "unloaded_export": true,
+      "layer_mm": 0.2,
+      "nozzle_mm": 0.4,
+      "walls": 5,
+      "top_bottom_layers": 6,
+      "initial_infill": "100% for dense initial qualification; CAD cavities remain hollow"
+    },
+    {
+      "rotations": [
+        [
+          "X",
+          -108
+        ]
+      ],
+      "face_on_bed": "Broad front grille face",
+      "load_orientation": "Grille bars lie in bed plane.",
+      "support": "None expected",
+      "material": "PETG",
+      "part": "02_fan_guard_retainer",
+      "file": "02_fan_guard_retainer.stl",
+      "dimensions_mm": [
+        128.0,
+        128.00000000000006,
+        4.000000000000034
+      ],
+      "volume_mm3": 30472.131652710355,
+      "first_layer_mean_contact_mm2": 8100.586065824286,
+      "sha256": "3bf3b83bfaf70820ac4e4c7e7fbd40fd76f03751d1e0cfe025e0d25f71e708bd",
+      "unloaded_export": false,
+      "layer_mm": 0.2,
+      "nozzle_mm": 0.4,
+      "walls": 5,
+      "top_bottom_layers": 6,
+      "initial_infill": "100% for dense initial qualification; CAD cavities remain hollow"
+    },
+    {
+      "rotations": [
+        [
+          "X",
+          -108
+        ],
+        [
+          "Y",
+          -90
+        ]
+      ],
+      "face_on_bed": "Broad fan-local YZ side; unloaded shape",
+      "load_orientation": "Leaf length and bending stress lie in bed plane.",
+      "support": "None expected",
+      "material": "PETG",
+      "part": "02_fan_top_clip_1",
+      "file": "02_fan_top_clip_1.stl",
+      "dimensions_mm": [
+        50.10000000000003,
+        17.300000000000026,
+        8.00000000000001
+      ],
+      "volume_mm3": 1270.9185185185179,
+      "first_layer_mean_contact_mm2": 158.86481481481545,
+      "sha256": "db83eec63dcbe66dab86779555f94cf48ad31854ff46e67b8b66012537840a7f",
+      "unloaded_export": true,
+      "layer_mm": 0.2,
+      "nozzle_mm": 0.4,
+      "walls": 5,
+      "top_bottom_layers": 6,
+      "initial_infill": "100% for dense initial qualification; CAD cavities remain hollow"
+    },
+    {
+      "rotations": [
+        [
+          "X",
+          -108
+        ],
+        [
+          "Y",
+          -90
+        ]
+      ],
+      "face_on_bed": "Broad fan-local YZ side; unloaded shape",
+      "load_orientation": "Leaf length and bending stress lie in bed plane.",
+      "support": "None expected",
+      "material": "PETG",
+      "part": "02_fan_top_clip_2",
+      "file": "02_fan_top_clip_2.stl",
+      "dimensions_mm": [
+        50.10000000000003,
+        17.300000000000026,
+        8.00000000000001
+      ],
+      "volume_mm3": 1270.9185185185183,
+      "first_layer_mean_contact_mm2": 158.86481481481545,
+      "sha256": "38e26896acf62134f17092d4aded50375577a660baad6fc5c75ee05e0b574891",
+      "unloaded_export": true,
+      "layer_mm": 0.2,
+      "nozzle_mm": 0.4,
+      "walls": 5,
+      "top_bottom_layers": 6,
+      "initial_infill": "100% for dense initial qualification; CAD cavities remain hollow"
+    },
+    {
+      "rotations": [],
+      "face_on_bed": "Reinforced carrier lower face and guide feet",
+      "load_orientation": "Docking X loads lie in the bed plane; vertical-web bending still depends on layer bonding.",
+      "support": "Small accessible supports; upright pose screened at about 5.6 g support",
+      "material": "PETG",
+      "part": "breakaway_carrier",
+      "file": "breakaway_carrier.stl",
+      "dimensions_mm": [
+        60.0000001,
+        58.500000000000014,
+        88.15000020000005
+      ],
+      "volume_mm3": 46299.92690247993,
+      "first_layer_mean_contact_mm2": 411.9997939999563,
+      "sha256": "510117fe93439446d98be5d80bb181a05635f63f8ec6e8b0fd4e721d0a4a8807",
+      "unloaded_export": false,
+      "layer_mm": 0.2,
+      "nozzle_mm": 0.4,
+      "walls": 5,
+      "top_bottom_layers": 6,
+      "initial_infill": "100% for dense initial qualification; CAD cavities remain hollow"
+    },
+    {
+      "rotations": [],
+      "face_on_bed": "Shaft horizontal; accessible support beneath",
+      "load_orientation": "Continuous deposited paths run along shaft.",
+      "support": "Accessible support beneath round shaft and head",
+      "material": "PETG",
+      "part": "breakaway_pivot_pin_10mm",
+      "file": "breakaway_pivot_pin_10mm.stl",
+      "dimensions_mm": [
+        22.0,
+        88.0000001,
+        22.00000000000003
+      ],
+      "volume_mm3": 8632.112543848361,
+      "first_layer_mean_contact_mm2": 16.73510080676224,
+      "sha256": "fba7447365c6e256e7abd4f1920533ebd25aa4ea2a9d5b8e7c8158c2d48b18d1",
+      "unloaded_export": false,
+      "layer_mm": 0.2,
+      "nozzle_mm": 0.4,
+      "walls": 5,
+      "top_bottom_layers": 6,
+      "initial_infill": "100% for dense initial qualification; CAD cavities remain hollow"
+    },
+    {
+      "rotations": [
+        [
+          "X",
+          -90
+        ]
+      ],
+      "face_on_bed": "Common unloaded spring outside face",
+      "load_orientation": "Leaf length and bending stress lie in bed plane.",
+      "support": "None expected",
+      "material": "PETG",
+      "part": "breakaway_spring_cartridge",
+      "file": "breakaway_spring_cartridge.stl",
+      "dimensions_mm": [
+        60.00000000000002,
+        88.0,
+        11.00000000000001
+      ],
+      "volume_mm3": 36104.64927190962,
+      "first_layer_mean_contact_mm2": 4463.186190297191,
+      "sha256": "f3b1e8041132cee9f9dbb1187b1d8364e875645da3ae510463babf4b66bdc0a3",
+      "unloaded_export": true,
+      "layer_mm": 0.2,
+      "nozzle_mm": 0.4,
+      "walls": 5,
+      "top_bottom_layers": 6,
+      "initial_infill": "100% for dense initial qualification; CAD cavities remain hollow"
+    },
+    {
+      "rotations": [
+        [
+          "X",
+          -90
+        ]
+      ],
+      "face_on_bed": "Hand face",
+      "load_orientation": "Thread axis upright; dense part.",
+      "support": "None expected",
+      "material": "PETG",
+      "part": "breakaway_preload_hand_nut",
+      "file": "breakaway_preload_hand_nut.stl",
+      "dimensions_mm": [
+        23.70833333333334,
+        24.00000000000003,
+        10.000000100000008
+      ],
+      "volume_mm3": 3007.8828709082836,
+      "first_layer_mean_contact_mm2": 346.54568559263254,
+      "sha256": "b60f9a5c6a4a40c5d5260772edba7cfefb0566d91990bc1ac5c437bda6b86e68",
+      "unloaded_export": false,
+      "layer_mm": 0.2,
+      "nozzle_mm": 0.4,
+      "walls": 5,
+      "top_bottom_layers": 6,
+      "initial_infill": "100% for dense initial qualification; CAD cavities remain hollow"
+    },
+    {
+      "rotations": [
+        [
+          "X",
+          -90
+        ]
+      ],
+      "face_on_bed": "Hand face",
+      "load_orientation": "Thread axis upright; verify preload tension.",
+      "support": "None expected",
+      "material": "PETG",
+      "part": "breakaway_spring_hand_screw_0",
+      "file": "breakaway_spring_hand_screw_0.stl",
+      "dimensions_mm": [
+        16.60309278350516,
+        17.00000000000003,
+        53.000000100000015
+      ],
+      "volume_mm3": 3373.231393393989,
+      "first_layer_mean_contact_mm2": 210.28296188016398,
+      "sha256": "8772c90b31aa739c1e69a05bc0ea1953c9da55355e8c7484d5278babde95261b",
+      "unloaded_export": false,
+      "layer_mm": 0.2,
+      "nozzle_mm": 0.4,
+      "walls": 5,
+      "top_bottom_layers": 6,
+      "initial_infill": "100% for dense initial qualification; CAD cavities remain hollow"
+    },
+    {
+      "rotations": [
+        [
+          "X",
+          -90
+        ]
+      ],
+      "face_on_bed": "Hand face",
+      "load_orientation": "Thread axis upright; verify preload tension.",
+      "support": "None expected",
+      "material": "PETG",
+      "part": "breakaway_spring_hand_screw_1",
+      "file": "breakaway_spring_hand_screw_1.stl",
+      "dimensions_mm": [
+        16.603092783505158,
+        17.00000000000003,
+        53.000000100000015
+      ],
+      "volume_mm3": 3373.2313933939877,
+      "first_layer_mean_contact_mm2": 210.28296188016392,
+      "sha256": "eaa8036687190e3411b983f1a1ec0ceeddbe593a98031eaa72d59488bac8445b",
+      "unloaded_export": false,
+      "layer_mm": 0.2,
+      "nozzle_mm": 0.4,
+      "walls": 5,
+      "top_bottom_layers": 6,
+      "initial_infill": "100% for dense initial qualification; CAD cavities remain hollow"
+    },
+    {
+      "rotations": [
+        [
+          "Y",
+          -90
+        ]
+      ],
+      "face_on_bed": "Hand face",
+      "load_orientation": "Thread axis upright; broad thrust land carries X reaction.",
+      "support": "None expected",
+      "material": "PETG",
+      "part": "cassette_Z_lock_0",
+      "file": "cassette_Z_lock_0.stl",
+      "dimensions_mm": [
+        13.530488004878066,
+        14.000000199999999,
+        18.5000001
+      ],
+      "volume_mm3": 1176.2427856859658,
+      "first_layer_mean_contact_mm2": 137.54860397650242,
+      "sha256": "6986265e9dff24f44b69fbf3b9dacaa7a37d51c7fd067fc7e2393149c0d5610d",
+      "unloaded_export": false,
+      "layer_mm": 0.2,
+      "nozzle_mm": 0.4,
+      "walls": 5,
+      "top_bottom_layers": 6,
+      "initial_infill": "100% for dense initial qualification; CAD cavities remain hollow"
+    },
+    {
+      "rotations": [
+        [
+          "Y",
+          -90
+        ]
+      ],
+      "face_on_bed": "Hand face",
+      "load_orientation": "Thread axis upright; broad thrust land carries X reaction.",
+      "support": "None expected",
+      "material": "PETG",
+      "part": "cassette_Z_lock_1",
+      "file": "cassette_Z_lock_1.stl",
+      "dimensions_mm": [
+        13.530488004878064,
+        14.000000199999999,
+        18.5000001
+      ],
+      "volume_mm3": 1176.2427856859658,
+      "first_layer_mean_contact_mm2": 137.54860397650245,
+      "sha256": "f5e57d96b2ce9ef73833c52723740a1bbabd5a53b82eb0a0807094a8a8089bcc",
+      "unloaded_export": false,
+      "layer_mm": 0.2,
+      "nozzle_mm": 0.4,
+      "walls": 5,
+      "top_bottom_layers": 6,
+      "initial_infill": "100% for dense initial qualification; CAD cavities remain hollow"
+    },
+    {
+      "rotations": [],
+      "face_on_bed": "Hand face",
+      "load_orientation": "Thread axis upright; rail shoulders carry X reaction.",
+      "support": "None expected",
+      "material": "PETG",
+      "part": "cassette_Y_lock_0",
+      "file": "cassette_Y_lock_0.stl",
+      "dimensions_mm": [
+        17.622549219607848,
+        18.000000200000002,
+        14.5000001
+      ],
+      "volume_mm3": 1403.3447151298396,
+      "first_layer_mean_contact_mm2": 237.69020266519095,
+      "sha256": "69ffda38364ea08fbfe983cd5b7d00daa93a988115865deaa8f93a3b5fc44e53",
+      "unloaded_export": false,
+      "layer_mm": 0.2,
+      "nozzle_mm": 0.4,
+      "walls": 5,
+      "top_bottom_layers": 6,
+      "initial_infill": "100% for dense initial qualification; CAD cavities remain hollow"
+    },
+    {
+      "rotations": [
+        [
+          "X",
+          -90
+        ]
+      ],
+      "face_on_bed": "Broad Y=17.5 outside face",
+      "load_orientation": "X/Z saddle load path lies in bed plane; check local open gusset bridge.",
+      "support": "Accessible local support/bridge review",
+      "material": "PETG",
+      "part": "cassette_Z_saddle",
+      "file": "cassette_Z_saddle.stl",
+      "dimensions_mm": [
+        39.6000001,
+        25.400000000000034,
+        37.500000000000014
+      ],
+      "volume_mm3": 13635.714616392068,
+      "first_layer_mean_contact_mm2": 515.4178241395402,
+      "sha256": "e742619588d11d4e0bc2df7fe64d890ce3e8809b73f1c3e1620f39c1b7be2aed",
+      "unloaded_export": false,
+      "layer_mm": 0.2,
+      "nozzle_mm": 0.4,
+      "walls": 5,
+      "top_bottom_layers": 6,
+      "initial_infill": "100% for dense initial qualification; CAD cavities remain hollow"
+    },
+    {
+      "rotations": [],
+      "face_on_bed": "Broad cradle underside",
+      "load_orientation": "XY base and axial thrust shoulders lie along layers; clamp has open cable cavity.",
+      "support": "Accessible local support/bridge review",
+      "material": "PETG",
+      "part": "X_depth_overmold_clamp",
+      "file": "X_depth_overmold_clamp.stl",
+      "dimensions_mm": [
+        32.6,
+        29.000000000000007,
+        28.200000100000018
+      ],
+      "volume_mm3": 11219.854686592413,
+      "first_layer_mean_contact_mm2": 700.7071647472242,
+      "sha256": "f8b9cbf63c361efc6ee03482daad5dee15da5b5420f8e8dbe49cc605f7134f1f",
+      "unloaded_export": false,
+      "layer_mm": 0.2,
+      "nozzle_mm": 0.4,
+      "walls": 5,
+      "top_bottom_layers": 6,
+      "initial_infill": "100% for dense initial qualification; CAD cavities remain hollow"
+    },
+    {
+      "rotations": [
+        [
+          "X",
+          180
+        ]
+      ],
+      "face_on_bed": "Broad cap outside face",
+      "load_orientation": "Cap bending spans the bed plane; gripping features grow upward.",
+      "support": "Accessible local support/bridge review",
+      "material": "PETG",
+      "part": "sliding_plug_cap",
+      "file": "sliding_plug_cap.stl",
+      "dimensions_mm": [
+        32.6,
+        21.26864441255108,
+        10.100000000000051
+      ],
+      "volume_mm3": 3379.159467185084,
+      "first_layer_mean_contact_mm2": 543.7507094579041,
+      "sha256": "c69ca2f26f6e87afaad6ad50e3b2d28ba3fff1ff6fcc8d6fc7ff4e05eefde9b6",
+      "unloaded_export": false,
+      "layer_mm": 0.2,
+      "nozzle_mm": 0.4,
+      "walls": 5,
+      "top_bottom_layers": 6,
+      "initial_infill": "100% for dense initial qualification; CAD cavities remain hollow"
+    },
+    {
+      "rotations": [],
+      "face_on_bed": "Shaft horizontal; accessible support beneath",
+      "load_orientation": "Continuous deposited paths run along shaft.",
+      "support": "Accessible support beneath round shaft and head",
+      "material": "PETG",
+      "part": "cassette_cap_push_pin_6p5",
+      "file": "cassette_cap_push_pin_6p5.stl",
+      "dimensions_mm": [
+        14.0,
+        25.268644412551076,
+        14.0
+      ],
+      "volume_mm3": 1325.7256041244498,
+      "first_layer_mean_contact_mm2": 8.886028185134979,
+      "sha256": "7629cfad9cc206d603d8379602970aac485810a92e405197f45694add742781f",
+      "unloaded_export": false,
+      "layer_mm": 0.2,
+      "nozzle_mm": 0.4,
+      "walls": 5,
+      "top_bottom_layers": 6,
+      "initial_infill": "100% for dense initial qualification; CAD cavities remain hollow"
+    },
+    {
+      "rotations": [
+        [
+          "X",
+          90
+        ]
+      ],
+      "face_on_bed": "Flat spacer end",
+      "load_orientation": "Compressive spacer load along build Z; continuous walls.",
+      "support": "None expected",
+      "material": "PETG",
+      "part": "breakaway_spring_spacer_0",
+      "file": "breakaway_spring_spacer_0.stl",
+      "dimensions_mm": [
+        16.0,
+        16.000000000000057,
+        26.0
+      ],
+      "volume_mm3": 3681.99371389704,
+      "first_layer_mean_contact_mm2": 141.6151428421937,
+      "sha256": "aa8753fcc577901adcc5827363594b012f93dbd1cab89a67d756a6bb7cc4157a",
+      "unloaded_export": false,
+      "layer_mm": 0.2,
+      "nozzle_mm": 0.4,
+      "walls": 5,
+      "top_bottom_layers": 6,
+      "initial_infill": "100% for dense initial qualification; CAD cavities remain hollow"
+    },
+    {
+      "rotations": [
+        [
+          "X",
+          90
+        ]
+      ],
+      "face_on_bed": "Flat spacer end",
+      "load_orientation": "Compressive spacer load along build Z; continuous walls.",
+      "support": "None expected",
+      "material": "PETG",
+      "part": "breakaway_spring_spacer_1",
+      "file": "breakaway_spring_spacer_1.stl",
+      "dimensions_mm": [
+        16.0,
+        16.000000000000057,
+        26.0
+      ],
+      "volume_mm3": 3681.993713897041,
+      "first_layer_mean_contact_mm2": 141.6151428421937,
+      "sha256": "1178ee213ba2dd8049a051f06a021bd387e042383c6c21dd52fa709458d52f22",
+      "unloaded_export": false,
+      "layer_mm": 0.2,
+      "nozzle_mm": 0.4,
+      "walls": 5,
+      "top_bottom_layers": 6,
+      "initial_infill": "100% for dense initial qualification; CAD cavities remain hollow"
+    },
+    {
+      "rotations": [
+        [
+          "X",
+          -90
+        ]
+      ],
+      "face_on_bed": "Hand face",
+      "load_orientation": "Thread axis upright; keys carry docking thrust.",
+      "support": "None expected",
+      "material": "PETG",
+      "part": "connector_mount_lock_0",
+      "file": "connector_mount_lock_0.stl",
+      "dimensions_mm": [
+        13.530488004878048,
+        14.000000199999999,
+        21.50000010000001
+      ],
+      "volume_mm3": 1306.3468615044867,
+      "first_layer_mean_contact_mm2": 137.5486039764981,
+      "sha256": "25a86ca8899d98aa1aead77c0cbaa7e186a251c0d156d9756830e02c52a7e0dc",
+      "unloaded_export": false,
+      "layer_mm": 0.2,
+      "nozzle_mm": 0.4,
+      "walls": 5,
+      "top_bottom_layers": 6,
+      "initial_infill": "100% for dense initial qualification; CAD cavities remain hollow"
+    },
+    {
+      "rotations": [
+        [
+          "X",
+          -90
+        ]
+      ],
+      "face_on_bed": "Hand face",
+      "load_orientation": "Thread axis upright; keys carry docking thrust.",
+      "support": "None expected",
+      "material": "PETG",
+      "part": "connector_mount_lock_1",
+      "file": "connector_mount_lock_1.stl",
+      "dimensions_mm": [
+        13.530488004878048,
+        14.000000199999999,
+        21.5000001
+      ],
+      "volume_mm3": 1306.346861504486,
+      "first_layer_mean_contact_mm2": 137.548603976496,
+      "sha256": "52bed6aa65a30ea11c2884a0acff88fa562afe0acac40c1834a37a8ca245d149",
+      "unloaded_export": false,
+      "layer_mm": 0.2,
+      "nozzle_mm": 0.4,
+      "walls": 5,
+      "top_bottom_layers": 6,
+      "initial_infill": "100% for dense initial qualification; CAD cavities remain hollow"
+    },
+    {
+      "rotations": [
+        [
+          "X",
+          90
+        ]
+      ],
+      "face_on_bed": "Hand face",
+      "load_orientation": "Thread axis upright; bracket key carries thrust.",
+      "support": "None expected",
+      "material": "PETG",
+      "part": "chassis_stop_mount_lock_0",
+      "file": "chassis_stop_mount_lock_0.stl",
+      "dimensions_mm": [
+        13.53048800487805,
+        14.000000199999999,
+        21.500000100000012
+      ],
+      "volume_mm3": 1306.3468615044872,
+      "first_layer_mean_contact_mm2": 137.54860397650006,
+      "sha256": "9d982f4919a8e190ef7c65c9e6d392a262d9597f74a79e413c64bd1679a8040f",
+      "unloaded_export": false,
+      "layer_mm": 0.2,
+      "nozzle_mm": 0.4,
+      "walls": 5,
+      "top_bottom_layers": 6,
+      "initial_infill": "100% for dense initial qualification; CAD cavities remain hollow"
+    },
+    {
+      "rotations": [
+        [
+          "X",
+          90
+        ]
+      ],
+      "face_on_bed": "Hand face",
+      "load_orientation": "Thread axis upright; bracket key carries thrust.",
+      "support": "None expected",
+      "material": "PETG",
+      "part": "chassis_stop_mount_lock_1",
+      "file": "chassis_stop_mount_lock_1.stl",
+      "dimensions_mm": [
+        13.53048800487805,
+        14.000000199999999,
+        21.50000010000001
+      ],
+      "volume_mm3": 1306.346861504488,
+      "first_layer_mean_contact_mm2": 137.54860397650083,
+      "sha256": "e3df14456d03c494a2e3fad64ece18147b0a72177ef9a0d18bca6c9c4a53b9f0",
+      "unloaded_export": false,
+      "layer_mm": 0.2,
+      "nozzle_mm": 0.4,
+      "walls": 5,
+      "top_bottom_layers": 6,
+      "initial_infill": "100% for dense initial qualification; CAD cavities remain hollow"
+    },
+    {
+      "rotations": [
+        [
+          "X",
+          -90
+        ]
+      ],
+      "face_on_bed": "Broad rear support face",
+      "load_orientation": "Stop bending lies in XZ bed plane; local horizontal thread needs path review.",
+      "support": "Accessible local support/bridge review",
+      "material": "PETG",
+      "part": "chassis_stop_bracket",
+      "file": "chassis_stop_bracket.stl",
+      "dimensions_mm": [
+        26.0000001,
+        30.0,
+        35.00000000000001
+      ],
+      "volume_mm3": 10545.526540300185,
+      "first_layer_mean_contact_mm2": 608.8164260248727,
+      "sha256": "bd2af61f556092fdba0cfd983affdbbcaf3530c998c5fe6b9de5d907482c5b02",
+      "unloaded_export": false,
+      "layer_mm": 0.2,
+      "nozzle_mm": 0.4,
+      "walls": 5,
+      "top_bottom_layers": 6,
+      "initial_infill": "100% for dense initial qualification; CAD cavities remain hollow"
+    },
+    {
+      "rotations": [
+        [
+          "X",
+          -90
+        ]
+      ],
+      "face_on_bed": "Broad rear Y=50 support face",
+      "load_orientation": "Main arm and root XZ load path lies in layers; cam working face grows upward.",
+      "support": "Accessible local support/bridge review",
+      "material": "PETG",
+      "part": "connector_module_body",
+      "file": "connector_module_body.stl",
+      "dimensions_mm": [
+        74.00000019999999,
+        132.129470000368,
+        28.00000010000001
+      ],
+      "volume_mm3": 141848.1540087665,
+      "first_layer_mean_contact_mm2": 6407.37633647767,
+      "sha256": "84110d8622f1a9db298924b7e974dd6fcee0014db05606e9434286fae3e5306e",
+      "unloaded_export": false,
+      "layer_mm": 0.2,
+      "nozzle_mm": 0.4,
+      "walls": 5,
+      "top_bottom_layers": 6,
+      "initial_infill": "100% for dense initial qualification; CAD cavities remain hollow"
+    },
+    {
+      "rotations": [
+        [
+          "Y",
+          -90
+        ]
+      ],
+      "face_on_bed": "Hand face",
+      "load_orientation": "Thread axis upright; verify layer-bond strength.",
+      "support": "None expected",
+      "material": "PETG",
+      "part": "independent_printed_chassis_stop_screw",
+      "file": "independent_printed_chassis_stop_screw.stl",
+      "dimensions_mm": [
+        23.708333533333352,
+        24.000000200000002,
+        27.0
+      ],
+      "volume_mm3": 4018.7923494632428,
+      "first_layer_mean_contact_mm2": 435.2539554280868,
+      "sha256": "ed605a32ae6434f4a1aa15ad2fb891dcfa0edcb21af8e4addb5df4eeaf33acc8",
+      "unloaded_export": false,
+      "layer_mm": 0.2,
+      "nozzle_mm": 0.4,
+      "walls": 5,
+      "top_bottom_layers": 6,
+      "initial_infill": "100% for dense initial qualification; CAD cavities remain hollow"
+    },
+    {
+      "rotations": [
+        [
+          "Y",
+          90
+        ]
+      ],
+      "face_on_bed": "Closed soft contact face",
+      "load_orientation": "Low-load contact bumper; socket upward.",
+      "support": "None expected",
+      "material": "TPU or purchased compliant bumper",
+      "part": "stop_soft_tip",
+      "file": "stop_soft_tip.stl",
+      "dimensions_mm": [
+        12.000000000000007,
+        12.0,
+        4.0000000000000036
+      ],
+      "volume_mm3": 293.95882459639705,
+      "first_layer_mean_contact_mm2": 113.09733552923252,
+      "sha256": "3700036844ed503869416af71486090bf1afb6079de88078f38415cf720f4242",
+      "unloaded_export": false,
+      "layer_mm": 0.2,
+      "nozzle_mm": 0.4,
+      "walls": 5,
+      "top_bottom_layers": 6,
+      "initial_infill": "100% for dense initial qualification; CAD cavities remain hollow"
+    },
+    {
+      "rotations": [],
+      "face_on_bed": "Hand head",
+      "load_orientation": "Threads upright; axial strength depends on layer bonding.",
+      "support": "None expected",
+      "material": "PETG",
+      "part": "01_bottom_thumb_lock_1",
+      "file": "01_bottom_thumb_lock_1.stl",
+      "dimensions_mm": [
+        17.622549219607848,
+        18.000000200000002,
+        18.0000001
+      ],
+      "volume_mm3": 1555.1271224095244,
+      "first_layer_mean_contact_mm2": 237.69020266519095,
+      "sha256": "eb51f646ff88a41f4b3ed71834f990c1cf2b0bca07edc373150e55caa1e9ceb1",
+      "unloaded_export": false,
+      "layer_mm": 0.2,
+      "nozzle_mm": 0.4,
+      "walls": 5,
+      "top_bottom_layers": 6,
+      "initial_infill": "100% for dense initial qualification; CAD cavities remain hollow"
+    },
+    {
+      "rotations": [],
+      "face_on_bed": "Hand head",
+      "load_orientation": "Threads upright; axial strength depends on layer bonding.",
+      "support": "None expected",
+      "material": "PETG",
+      "part": "01_bottom_thumb_lock_2",
+      "file": "01_bottom_thumb_lock_2.stl",
+      "dimensions_mm": [
+        17.622549219607848,
+        18.000000200000002,
+        18.0000001
+      ],
+      "volume_mm3": 1555.1271224095242,
+      "first_layer_mean_contact_mm2": 237.69020266519084,
+      "sha256": "b7829dc90f111a09f21402a1ab3e7862badc07433268d0eaddbfb38c61bd0b01",
+      "unloaded_export": false,
+      "layer_mm": 0.2,
+      "nozzle_mm": 0.4,
+      "walls": 5,
+      "top_bottom_layers": 6,
+      "initial_infill": "100% for dense initial qualification; CAD cavities remain hollow"
+    },
+    {
+      "rotations": [],
+      "face_on_bed": "Broad exterior skin",
+      "load_orientation": "Plate and ribs carry cover handling only; shell feet bypass it.",
+      "support": "Short cable-saddle roof bridge",
+      "material": "PETG",
+      "part": "01_bottom_panel",
+      "file": "01_bottom_panel.stl",
+      "dimensions_mm": [
+        181.24,
+        91.23349235828354,
+        5.3
+      ],
+      "volume_mm3": 35396.43346829451,
+      "first_layer_mean_contact_mm2": 15828.577923310731,
+      "sha256": "0d2324499b7cc3923972afb3f48f52c308b1af41b563d17688d2b8beec136eaf",
+      "unloaded_export": false,
+      "layer_mm": 0.2,
+      "nozzle_mm": 0.4,
+      "walls": 5,
+      "top_bottom_layers": 6,
+      "initial_infill": "100% for dense initial qualification; CAD cavities remain hollow"
+    },
+    {
+      "rotations": [],
+      "face_on_bed": "Hand head",
+      "load_orientation": "Threads upright; axial strength depends on layer bonding.",
+      "support": "None expected",
+      "material": "PETG",
+      "part": "02_bottom_thumb_lock_1",
+      "file": "02_bottom_thumb_lock_1.stl",
+      "dimensions_mm": [
+        17.622549219607848,
+        18.000000200000002,
+        18.0000001
+      ],
+      "volume_mm3": 1555.1271224095242,
+      "first_layer_mean_contact_mm2": 237.69020266519084,
+      "sha256": "b7829dc90f111a09f21402a1ab3e7862badc07433268d0eaddbfb38c61bd0b01",
+      "unloaded_export": false,
+      "layer_mm": 0.2,
+      "nozzle_mm": 0.4,
+      "walls": 5,
+      "top_bottom_layers": 6,
+      "initial_infill": "100% for dense initial qualification; CAD cavities remain hollow"
+    },
+    {
+      "rotations": [],
+      "face_on_bed": "Hand head",
+      "load_orientation": "Threads upright; axial strength depends on layer bonding.",
+      "support": "None expected",
+      "material": "PETG",
+      "part": "02_bottom_thumb_lock_2",
+      "file": "02_bottom_thumb_lock_2.stl",
+      "dimensions_mm": [
+        17.622549219607848,
+        18.000000200000002,
+        18.0000001
+      ],
+      "volume_mm3": 1555.127122409526,
+      "first_layer_mean_contact_mm2": 237.690202665191,
+      "sha256": "9b28d59741783a540fed19a3bd0c777666a23783d6fbef7933c59398dbe672f6",
+      "unloaded_export": false,
+      "layer_mm": 0.2,
+      "nozzle_mm": 0.4,
+      "walls": 5,
+      "top_bottom_layers": 6,
+      "initial_infill": "100% for dense initial qualification; CAD cavities remain hollow"
+    },
+    {
+      "rotations": [],
+      "face_on_bed": "Broad exterior skin",
+      "load_orientation": "Plate and ribs carry cover handling only; shell feet bypass it.",
+      "support": "Short cable-saddle roof bridge",
+      "material": "PETG",
+      "part": "02_bottom_panel",
+      "file": "02_bottom_panel.stl",
+      "dimensions_mm": [
+        198.94,
+        91.23349235828354,
+        5.3
+      ],
+      "volume_mm3": 38813.0110977779,
+      "first_layer_mean_contact_mm2": 17443.41073805235,
+      "sha256": "6129d50bf1e723817abc89e8d2c4c2fbe6b5c63229985090c912bcb905c9ecf6",
+      "unloaded_export": false,
+      "layer_mm": 0.2,
+      "nozzle_mm": 0.4,
+      "walls": 5,
+      "top_bottom_layers": 6,
+      "initial_infill": "100% for dense initial qualification; CAD cavities remain hollow"
+    },
+    {
+      "rotations": [
+        [
+          "X",
+          180
+        ]
+      ],
+      "face_on_bed": "Hand head",
+      "load_orientation": "Threads upright; axial strength depends on layer bonding.",
+      "support": "None expected",
+      "material": "PETG",
+      "part": "01_bridge_thumb_lock_1",
+      "file": "01_bridge_thumb_lock_1.stl",
+      "dimensions_mm": [
+        17.622549219607848,
+        18.000000200000002,
+        19.000000100000005
+      ],
+      "volume_mm3": 1792.8173285787288,
+      "first_layer_mean_contact_mm2": 237.690202665189,
+      "sha256": "c3c134ef4d270d07577913482da174c645d7cab8691b317960d7ac0b79fd663e",
+      "unloaded_export": false,
+      "layer_mm": 0.2,
+      "nozzle_mm": 0.4,
+      "walls": 5,
+      "top_bottom_layers": 6,
+      "initial_infill": "100% for dense initial qualification; CAD cavities remain hollow"
+    },
+    {
+      "rotations": [
+        [
+          "X",
+          180
+        ]
+      ],
+      "face_on_bed": "Hand head",
+      "load_orientation": "Threads upright; axial strength depends on layer bonding.",
+      "support": "None expected",
+      "material": "PETG",
+      "part": "02_bridge_thumb_lock_1",
+      "file": "02_bridge_thumb_lock_1.stl",
+      "dimensions_mm": [
+        17.622549219607848,
+        18.000000200000002,
+        19.000000100000005
+      ],
+      "volume_mm3": 1792.8173285787288,
+      "first_layer_mean_contact_mm2": 237.690202665189,
+      "sha256": "c3c134ef4d270d07577913482da174c645d7cab8691b317960d7ac0b79fd663e",
+      "unloaded_export": false,
+      "layer_mm": 0.2,
+      "nozzle_mm": 0.4,
+      "walls": 5,
+      "top_bottom_layers": 6,
+      "initial_infill": "100% for dense initial qualification; CAD cavities remain hollow"
+    },
+    {
+      "rotations": [],
+      "face_on_bed": "Broad underside",
+      "load_orientation": "Plate load path lies in bed plane.",
+      "support": "None expected",
+      "material": "PETG",
+      "part": "bridge_key_1",
+      "file": "bridge_key_1.stl",
+      "dimensions_mm": [
+        40.0,
+        18.0,
+        4.0
+      ],
+      "volume_mm3": 2357.32747257589,
+      "first_layer_mean_contact_mm2": 589.3318681439725,
+      "sha256": "9644d7bbc60073a21aaa1f0d412086c62e2c85ffe0392ee7cff058df655da4f9",
+      "unloaded_export": false,
+      "layer_mm": 0.2,
+      "nozzle_mm": 0.4,
+      "walls": 5,
+      "top_bottom_layers": 6,
+      "initial_infill": "100% for dense initial qualification; CAD cavities remain hollow"
+    },
+    {
+      "rotations": [
+        [
+          "X",
+          180
+        ]
+      ],
+      "face_on_bed": "Hand head",
+      "load_orientation": "Threads upright; axial strength depends on layer bonding.",
+      "support": "None expected",
+      "material": "PETG",
+      "part": "01_bridge_thumb_lock_2",
+      "file": "01_bridge_thumb_lock_2.stl",
+      "dimensions_mm": [
+        17.622549219607848,
+        18.000000200000002,
+        19.000000100000005
+      ],
+      "volume_mm3": 1792.8173285787284,
+      "first_layer_mean_contact_mm2": 237.69020266519084,
+      "sha256": "c2c8ac57d2a08262058a24d7669658a1c38f8cdc3121777baf4cfc77ac4d9a89",
+      "unloaded_export": false,
+      "layer_mm": 0.2,
+      "nozzle_mm": 0.4,
+      "walls": 5,
+      "top_bottom_layers": 6,
+      "initial_infill": "100% for dense initial qualification; CAD cavities remain hollow"
+    },
+    {
+      "rotations": [
+        [
+          "X",
+          180
+        ]
+      ],
+      "face_on_bed": "Hand head",
+      "load_orientation": "Threads upright; axial strength depends on layer bonding.",
+      "support": "None expected",
+      "material": "PETG",
+      "part": "02_bridge_thumb_lock_2",
+      "file": "02_bridge_thumb_lock_2.stl",
+      "dimensions_mm": [
+        17.622549219607848,
+        18.000000200000002,
+        19.000000100000005
+      ],
+      "volume_mm3": 1792.8173285787284,
+      "first_layer_mean_contact_mm2": 237.69020266519084,
+      "sha256": "c2c8ac57d2a08262058a24d7669658a1c38f8cdc3121777baf4cfc77ac4d9a89",
+      "unloaded_export": false,
+      "layer_mm": 0.2,
+      "nozzle_mm": 0.4,
+      "walls": 5,
+      "top_bottom_layers": 6,
+      "initial_infill": "100% for dense initial qualification; CAD cavities remain hollow"
+    },
+    {
+      "rotations": [],
+      "face_on_bed": "Broad underside",
+      "load_orientation": "Plate load path lies in bed plane.",
+      "support": "None expected",
+      "material": "PETG",
+      "part": "bridge_key_2",
+      "file": "bridge_key_2.stl",
+      "dimensions_mm": [
+        40.0,
+        18.0,
+        4.0
+      ],
+      "volume_mm3": 2357.32747257589,
+      "first_layer_mean_contact_mm2": 589.3318681439725,
+      "sha256": "9644d7bbc60073a21aaa1f0d412086c62e2c85ffe0392ee7cff058df655da4f9",
+      "unloaded_export": false,
+      "layer_mm": 0.2,
+      "nozzle_mm": 0.4,
+      "walls": 5,
+      "top_bottom_layers": 6,
+      "initial_infill": "100% for dense initial qualification; CAD cavities remain hollow"
+    },
+    {
+      "rotations": [],
+      "face_on_bed": "Flat shell lower perimeter and corner feet",
+      "load_orientation": "Vertical perimeter walls carry gravity; upright roof ribs provide short bridge landings. Local fan-pocket supports remain accessible.",
+      "support": "Accessible local support/bridge review",
+      "material": "PETG",
+      "part": "01_manifold_with_cradle",
+      "file": "01_manifold_with_cradle.stl",
+      "dimensions_mm": [
+        192.84,
+        135.02209820239077,
+        145.46689994995054
+      ],
+      "volume_mm3": 260332.26438770312,
+      "first_layer_mean_contact_mm2": 1654.8391339341197,
+      "sha256": "26728cf4e435468157ef870e9309df23af9ccd067070c6aefed5d7fb9d707930",
+      "unloaded_export": false,
+      "layer_mm": 0.2,
+      "nozzle_mm": 0.4,
+      "walls": 5,
+      "top_bottom_layers": 6,
+      "initial_infill": "100% for dense initial qualification; CAD cavities remain hollow"
+    },
+    {
+      "rotations": [],
+      "face_on_bed": "Flat shell lower perimeter and corner feet",
+      "load_orientation": "Vertical perimeter walls carry gravity; upright roof ribs provide short bridge landings. Local fan-pocket supports remain accessible.",
+      "support": "Accessible local support/bridge review",
+      "material": "PETG",
+      "part": "02_manifold_with_cradle",
+      "file": "02_manifold_with_cradle.stl",
+      "dimensions_mm": [
+        201.54000000000005,
+        135.0220982023908,
+        145.46689994995054
+      ],
+      "volume_mm3": 256954.8281849735,
+      "first_layer_mean_contact_mm2": 1739.7991339341245,
+      "sha256": "51889b1f8223d58655bc75cd662ed976cd9996770b25411d9cbbfa7a3ba9e0d2",
+      "unloaded_export": false,
+      "layer_mm": 0.2,
+      "nozzle_mm": 0.4,
+      "walls": 5,
+      "top_bottom_layers": 6,
+      "initial_infill": "100% for dense initial qualification; CAD cavities remain hollow"
+    }
+  ]
+}

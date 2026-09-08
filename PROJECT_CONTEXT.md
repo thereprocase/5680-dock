@@ -1,7 +1,12 @@
 # Project context and maintainer handoff
 
 This is the durable engineering context for the Precision 5680 desk dock as
-of 2026-09-08. **D7 is the active design.** Its new home is
+of 2026-09-08. **D8 is the current design on main.** Read
+[the D8 change record](desk-dock/D8/README.md) and
+[current checks](desk-dock/D8/CURRENT_STATUS.md) first. The historical sections below
+preserve the D7 baseline and should not override D8's live Y/Z slides, keyed
+removable module, independent X stop, shell feet, light covers or fan clips.
+The public viewer and old downloadable archive still describe D7. Its home is
 [`thereprocase/5680-dock`](https://github.com/thereprocase/5680-dock), with the
 [project site](https://thereprocase.github.io/5680-dock/) and
 [interactive model](https://thereprocase.github.io/5680-dock/desk-dock.html).
@@ -43,14 +48,15 @@ guides or a tall loading-end obstacle without addressing why they were removed.
 | D4 | Upward 15° discharge, rounded mouths, curved passages and conditional airflow sizing | Useful airflow reasoning; larger, older geometry and fabricated guard concept |
 | D5 | Profiled guides, 2° laptop lean, open ribs and expanded rubber-foot keepouts | Contact-source evidence; guides, lean, fan geometry and mirrored CAD were superseded |
 | D6 | Independent port study; removal of reflection; 5° lean, direct plenum bearing, 18° discharge and compact plenum | Orientation/contact and airflow baseline inherited by D7 |
-| D7 | Recessed fan pockets, slide-in printed grilles, service covers, printed hardware, continuous low lip, reinforced/resettable cassette and cable passages; final 25 mm fans | Active development prototype; use regenerated geometry, manifests and checks |
+| D7 | Recessed fan pockets, slide-in printed grilles, service covers, printed hardware, continuous low lip, reinforced/resettable cassette and cable passages; final 25 mm fans | Preserved baseline; its exports/status do not qualify D8 |
+| D8 | Removable live Y/Z module and independent X stop; direct shell feet, thin ribbed covers, separate fan clips and explicit print poses | Current design on main; use D8 manifests and status |
 
 Older reports may call their revision “current,” use ASA, specify 15 mm fans,
 or claim an orientation correction that predates D6's independent audit.
 Keep those statements attached to their original revisions. The original
 root overview is at [docs/history/5560-README.md](docs/history/5560-README.md).
 Root-level wall-mount scripts and reports are retained history; start current
-work in [desk-dock/D7](desk-dock/D7/).
+work in [desk-dock/D8](desk-dock/D8/).
 
 ## Handedness and coordinate contract
 
@@ -82,7 +88,7 @@ not toleranced factory connector drawings. Physical calibration is necessary.
 Read [D6 PORT_STUDY](desk-dock/D6/PORT_STUDY.md) and its extraction record
 before changing reference transforms.
 
-## Current geometry and service decisions
+## D7 baseline: geometry and service decisions
 
 The laptop leans **5°**. Fans discharge **18° upward in the desk/world frame**;
 their planes are 18° from vertical. The fan angle is independently posed,
@@ -113,7 +119,7 @@ accessible loops or disconnects; do not attach the moving USB lead to fixed
 fan-wire tie points. Cable ties are service accessories, not precision
 locators or substitutes for the printed body fasteners.
 
-## Printed hardware and plug calibration
+## D7 baseline: printed hardware and plug calibration
 
 The user selected **Bambu Lab P1S, PETG and a 0.4 mm nozzle**, with hand
 assembly and printable screws, nuts and pins. Small metal fasteners and the
@@ -138,7 +144,7 @@ extraction retention requires a pull test. The USB shell must not act as a
 guide, bearing or chassis stop. See
 [CASSETTE_ASSEMBLY](desk-dock/D7/CASSETTE_ASSEMBLY.md).
 
-## Alignment and resettable breakaway
+## D7 baseline: alignment and resettable breakaway
 
 Targets are **no more than 0.20 mm complete-holder axial movement at 20 N**
 and a **50 N-class resettable release for a misaligned, unmated docking
@@ -178,7 +184,7 @@ reuse the smaller pre-notch estimate or treat removed volume fraction as a
 stiffness result. The [holder study](desk-dock/D7/arm-study/HOLDER_AND_BREAKAWAY.md)
 and independent calculations retain the derivations and boundaries.
 
-## Rear USB cable and animation
+## D7 baseline: rear USB cable and animation
 
 The rear lead exits along -X through an **8.5 mm open-top rounded trough**.
 Its mouth flares to 12.5 mm over the outer 2 mm of the carrier wall. Removing
@@ -203,33 +209,36 @@ slow fold is kinematic; neither simulates force nor establishes a physical
 assembly/removal sequence. Describe endpoint and intermediate checks according
 to the current validation report, not as physical qualification.
 
-## Evidence, reproduction and publication
+## Current evidence, reproduction and publication
 
-Start with the [D7 review](desk-dock/D7/REVIEW.md),
-[print preparation](desk-dock/D7/PRINT_PREPARATION.md), `parameters.json`,
-`geometry.json`, `print-manifest.json` and `package-manifest.json`.
-Validation records cover solid/mesh validity, selected intersections,
-sampled docking/service motion, source hashes and stated exclusions.
-Intentional soft-contact squeeze, grille friction lands and matched seats
-must be distinguished from accidental interference. A passing check applies
-only to its geometry and sample set; compare source hashes after edits.
+Start with the [D8 assembly guide](desk-dock/D8/README.md),
+[print design](desk-dock/D8/PRINT_DESIGN.md) and
+[completed review status](desk-dock/D8/CURRENT_STATUS.md).
+D8's `parameters.json`, `geometry.json`, `print-manifest.json`,
+`generation-provenance.json` and `validation.json` describe the current files.
+The generation record ties unchanged source inputs to exact exported outputs;
+individual development experiments retain their own hashes and stated scope.
 
-Editable generation is in `desk-dock/D7/build.py` and the body, fan, cassette,
-printed-fastener and breakaway modules. Importing `build.py` can regenerate
-outputs. Use isolated checks for one interface; then regenerate the complete
-STEP, meshes, viewer and package together. Repository Python requirements
-include CadQuery and analysis/rendering libraries; review the relevant script's
-imports and documented working directory. Serve the viewer over local HTTP
-from `docs` or the repository, rather than opening HTML directly from disk.
-The viewer uses vendored JavaScript dependencies.
+Regenerate with `desk-dock/D8/regenerate.py` and an explicit scratch cache,
+then run `print_check.py`, `validate.py` and `render_review.py` as documented
+in the D8 guide. Use the declared CadQuery environment. Regeneration writes
+an uncompressed STEP locally; refresh its tracked ZIP and archive hashes when
+republishing. Keep CAD, meshes, manifests, checks and images from the same build.
 
-The current package is
-[desk-dock/D7/Precision_5680_D7_Review.zip](desk-dock/D7/Precision_5680_D7_Review.zip),
-mirrored under [docs/downloads](docs/downloads/Precision_5680_D7_Review.zip)
-for Pages. Keep both copies consistent with the manifest. Publishing a
-review archive does not make it a qualified print release. The old repository's
-Git ancestry, source and evidence are preserved in this home; do not assume
-old wall-mount scripts generate the active desk dock.
+The current downloads are the complete
+[D8 STEP archive](desk-dock/D8/Precision_5680_D8_STEP.zip) and
+[individual manufacturing STLs](desk-dock/D8/print/).
+All 43 meshes pass preflight. The generic offline material/path screen covers
+42 PETG parts and estimates 1.659 kg including normal supports and brims;
+the flexible stop is separate. This is not approved P1S G-code or physical
+qualification. Actual printing still requires the selected P1S profile and
+inspection of supports, bridges and fit surfaces.
+
+Keep GitHub checkpoints current and make the latest design, downloads and
+remaining engineering work prominent in the root README. Preserve earlier
+revisions as history. The public showcase, interactive viewer and
+[D7 archive](docs/downloads/Precision_5680_D7_Review.zip) still describe D7;
+the D8 CAD merge does not update their geometry or qualify their old results.
 
 ## Research worth retaining
 
@@ -259,7 +268,7 @@ assumptions; preserve those distinctions when updating it.
   explains inlet system effects. It does not establish a safe minimum gap,
   operating flow or acoustic result for this compact enclosure.
 
-## Next physical work
+## Next physical work for D8
 
 1. **Measure and fit.** Confirm the real laptop, chosen port, cable overmold,
    fan thickness/pads, lead exit and cable diameter. Print thread, pin,
@@ -267,14 +276,14 @@ assumptions; preserve those distinctions when updating it.
 2. **Complete slicing.** Use OrcaSlicer, the project default, with the selected
    P1S/PETG/0.4 mm setup. Review deposited paths, support access, bearing faces,
    thread roots, spring orientation and brim/excluded-bed clearance. The
-   package is unsliced; geometric preflight is not toolpath review.
+   generic Cura review is not an approved P1S job; inspect the actual paths.
 3. **Test the detached holder.** Use a dummy plug and measured load to assess
    complete movement relative to the laptop-bearing datum at 20 N, directional
    release, peak force, repeatable reseating, overmold retention and warm dwell.
    Calibrate within the nut's shoulder limit; do not overtighten a relaxed
    spring to recover force. Keep the laptop out of these load tests.
 4. **Calibrate docking.** With the laptop supported, set the fitted cassette
-   and independent stop. Check straight engagement/withdrawal, feet/intake
+   using the live Y/Z slides and independent X stop. Check straight engagement/withdrawal, feet/intake
    clearance, cable slack and manual removal without a slam.
 5. **Check the stand in use.** Measure sliding and tip stability under actual
    laptop/cable loads, service access, fastener/grille retention, seals and

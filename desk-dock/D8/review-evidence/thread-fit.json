@@ -1,0 +1,67 @@
+{
+  "source_file": "desk-dock/D8/printed_fasteners.py",
+  "source_sha256": "0aff7cbf7bb79e5c6b4f4717231ecebcf469d4b8ca9d6885696b44a2a3b4ad4a",
+  "cadquery_version": "2.7.0",
+  "ocp_version": "7.8.1.1.post1",
+  "thread_spec": {
+    "family": "D8 custom trapezoidal matched pair with relieved female root; not ISO metric",
+    "major_diameter_mm": 8.0,
+    "pitch_mm": 2.0,
+    "core_diameter_mm": 6.7,
+    "crest_width_mm": 0.45,
+    "default_radial_clearance_mm": 0.25,
+    "default_axial_clearance_per_flank_mm": 0.15,
+    "female_minimum_helix_root_gap_mm": 0.02,
+    "female_core_boolean_overlap_mm": 0.01,
+    "female_standard_total_minor_radius_relief_mm": 0.045,
+    "minimum_recommended_engagement_mm": 6.0,
+    "print_orientation": "Screw knob flat on bed, shaft upright; nut axis upright",
+    "qualification": "PETG fit and hand torque coupon required; no strength certification"
+  },
+  "checks": [
+    {
+      "length_mm": 12,
+      "diameter_mm": 8,
+      "phase_z_mm": 1,
+      "hole_valid": true,
+      "hole_solids": 1,
+      "nut_valid": true,
+      "nut_solids": 1,
+      "shaft_valid": true,
+      "shaft_solids": 1,
+      "aligned_interference_mm3": 0.0,
+      "half_turn_interference_mm3": 17.51829709778639,
+      "elapsed_s": 19.33451365700057
+    },
+    {
+      "length_mm": 7.2,
+      "diameter_mm": 8,
+      "phase_z_mm": 0,
+      "hole_valid": true,
+      "hole_solids": 1,
+      "nut_valid": true,
+      "nut_solids": 1,
+      "shaft_valid": true,
+      "shaft_solids": 1,
+      "aligned_interference_mm3": 0.0,
+      "half_turn_interference_mm3": 9.996347997086499,
+      "elapsed_s": 8.22343872700003
+    },
+    {
+      "length_mm": 8,
+      "diameter_mm": 10,
+      "phase_z_mm": 0.2,
+      "hole_valid": true,
+      "hole_solids": 1,
+      "nut_valid": true,
+      "nut_solids": 1,
+      "shaft_valid": true,
+      "shaft_solids": 1,
+      "aligned_interference_mm3": 0.0,
+      "half_turn_interference_mm3": 14.148267086008511,
+      "elapsed_s": 10.304130672999236
+    }
+  ],
+  "diagnosis": "The helical ridge is valid alone, but coincident cylinder/profile vertices made OCCT core union return two disconnected solids and an empty trimmed cutter. A 0.01 mm radial overlap across those profile vertices resolves that boolean degeneracy. Canonical female sweep plus phase rotation stabilizes the construction inputs.",
+  "limits": "Geometric fit only; no printed fit, torque, stripping or creep qualification."
+}
