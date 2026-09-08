@@ -21,10 +21,15 @@ for key,info in json.loads((ROOT/'frozen_print_arms/manifest.json').read_text())
 for o in D.Objects:
  if o.TypeId=='Sketcher::SketchObject':assert o.FullyConstrained,o.Name;report['fully_constrained_sketches']+=1
 wall_ref=D.getObject('OriginalWallSkin').Shape
+flow=D.getObject('FlowInnerBlend')
+if flow:
+    relief=flow.Base.Shape.cut(flow.Shape)
+    report['intentional_flow_wall_relief_mm3']=wall_ref.common(relief).Volume
+    wall_ref=wall_ref.cut(relief)
 wall_loss=wall_ref.cut(D.getObject('Compound027').Shape).Volume
 assert wall_loss<1e-6
 report['original_wall_loss_mm3']=wall_loss
-report['release_revision']='G'
+report['release_revision']='H' if flow else 'G'
 sheet=D.getObject('ManufacturingFitReview') or D.addObject('Spreadsheet::Sheet','ManufacturingFitReview');sheet.Label='Fit review - P1S ASA - measured clearances'
 sheet.mergeCells('A1:E1');sheet.set('A1','MANUFACTURING FIT REVIEW | PRINTED ARMS FROZEN');sheet.setBackground('A1:E1',(.16,.26,.32));sheet.setForeground('A1:E1',(1,1,1))
 for c,t in zip('ABCDE',['Interface','Target mm','Measured mm','Status','Native edit point / exception']):sheet.set(c+'3',t)

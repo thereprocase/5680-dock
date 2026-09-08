@@ -49,3 +49,7 @@ wall loss is checked directly against that reference. Approximately 73.96 mm3
 of wall was restored per duct. See duct_blend_patches.json and
 complete_fit_review.json. The unsuccessful free-form blend trial was rolled back.
 This additive patch construction supersedes the earlier cut-only repair.
+
+
+## Revision H airflow refinement
+Three R12 tangent blends per duct soften the internal direction changes. Two R14 exterior blends support the thinned corners. Inlet/outlet profiles and keys remain fixed. Native features: FlowOuterSupport and FlowInnerBlend; edit their Edges radii. The sheet lists the radii as reference values. Sampled new curve wall thickness exceeds 1.60 mm and downward overhang stays below 40 degrees in the inlet-down orientation. Native and exported assembly clearance checks are rerun. This is geometric refinement; no new pressure-loss or thermal solve is claimed.

@@ -1,10 +1,10 @@
 # Precision 5560 wall mount
 
-**Revision G is the selected print model:** native FreeCAD, refined fit and finish,
+**Revision H is the selected print model:** native FreeCAD, refined fit and finish,
 and a complete oriented P1S/ASA print set. Both already-printed arms are unchanged.
 
 [Project showcase](https://thereprocase.github.io/dell-5560-wall-mount/) ·
-[Download all print files](Precision_5560_RevG_Print_Set.zip) ·
+[Download all print files](Precision_5560_RevH_Print_Set.zip) ·
 [Print set and instructions](print_release/) ·
 [Editable FreeCAD model](freecad/Precision_5560_Native.FCStd) ·
 [Final STEP assembly](freecad/Precision_5560_Native.step)
@@ -22,10 +22,17 @@ See the [print-set instructions](print_release/README.md) and
 
 The original **print_ready/**, root STEP, CadQuery source and Fusion/Onshape ports
 remain **Revision F history/baselines**. Do not confuse those with the selected
-Revision G print set. The gray arm files in the new set are byte-identical to the
+Revision H print set. The gray arm files in the new set are byte-identical to the
 old ones; caps and pins are unchanged too.
 
 ## What changed
+
+Revision H adds three R12 internal tangent blends per duct and two R14 exterior
+support blends. Inlet/outlet profiles, printed arms, and 0.30 mm interfaces
+remain unchanged. The other twelve parts retain the prior release geometry.
+See [flow validation](freecad/flow_validation.json) for sampled wall thickness
+and inlet-down overhang checks. Cooling performance has not been measured.
+
 
 - Closed rail roofs and end windows while retaining the exhaust slot and open back.
 - Contoured the rail shoulder with 0.30 mm clearance to the frozen printed arm.
@@ -56,7 +63,7 @@ later exploratory 3D installed-flow case with traced laptop intake assumptions.
 [3D CFD run notes](fusion/cfd/TRACED_RUN_NOTES.md) ·
 [2D CFD report](CFD_Design_Report.md)
 
-CFD is baseline exploratory evidence, not a new solve of Revision G. The 3D
+CFD is baseline exploratory evidence, not a new solve of Revision H. The 3D
 case uses uncalibrated constant-force fan assumptions, no thermal solution,
 and did not meet its strict convergence target. It is not a measured hardware
 performance claim.

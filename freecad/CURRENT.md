@@ -1,4 +1,4 @@
-# FreeCAD continuation
+# FreeCAD continuation — Revision H
 
 Worktree: F:/Code/dell-5560-wall-mount-standby, branch codex/parallel-standby. All completed FreeCAD, Fusion and Onshape work is merged into main in the original checkout. The GUI still uses this standby worktree.
 
@@ -21,3 +21,5 @@ Latest live pass: BossRunout and FanFitClearance, 0.30 mm dry-fit gaps, tangent 
 Final model: 14 valid installed solids and 176 fully constrained sketches. Separate additive patches restore the original lofted duct wall; measured missing wall is zero. Six fan interface gaps remain 0.30 mm. Printed arms are unchanged. The complete P1S-oriented release is ../print_release/; public showcase is ../docs/. CFD figures describe the earlier baseline, not a new Revision G solve. A valid solid can still contain an unintended wall opening: check wall continuity against the original shell, not only isValid().
 
 Airway review: audit_airway_continuity.py verifies zero patch intrusion into the original inner loft, zero missing wall, unchanged frozen arms and six 0.30 mm gaps. No geometry change was warranted. This is geometric acceptance, not measured airflow or thermal validation.
+
+Revision H: three R12 internal tangent blends and two R14 exterior support blends per duct, native FlowInnerBlend/FlowOuterSupport. Broad smooth-loft trial was rejected because a downstream union became invalid. Final local blends pass native and independent STEP service checks, sampled wall thickness >1.60 mm and curved overhang <40 degrees. Arms and interfaces remain fixed. Revision H supersedes the earlier no-intrusion audit with explicit intentional blend accounting.

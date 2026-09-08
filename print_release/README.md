@@ -1,4 +1,4 @@
-# Revision G - final native fit-and-finish print set
+# Revision H - final native fit-and-finish print set
 
 Print one each of 01-14. STL and 3MF are alternatives for the same part; do not
 print both formats. Standard 3MF models contain millimeter geometry and baked
@@ -17,6 +17,10 @@ caps front down; rails lip down; pins button down. Keep the baked orientations.
 Fan-interface and rail-to-arm clearances measure 0.30 mm. Pin retention keeps
 its intentional interference; fixed load shoulders retain seating contact.
 Separate native loft-skin patches close the unintended duct-wall notches.
+Revision H adds three R12 tangent airway blends per duct with two R14 exterior
+support blends. Inlet and outlet profiles remain fixed. Sampled new bend walls
+are at least 1.60 mm; sampled new curved overhangs stay below 40 degrees in the
+inlet-down orientation. Cooling performance is not yet physically validated.
 
 Final checks: valid native solids, constrained sketches, unchanged printed arms,
 wall continuity, assembly/service clearances, closed meshes, and bed/brim/cutter

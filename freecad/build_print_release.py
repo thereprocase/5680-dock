@@ -2,7 +2,7 @@ from pathlib import Path
 import json,hashlib,shutil,zipfile,xml.etree.ElementTree as E
 import FreeCAD as A,Mesh
 ROOT=Path(__file__).resolve().parent;OUT=ROOT.parent/'print_release';OUT.mkdir(exist_ok=True)
-manifest={'revision':'G','native_model':'freecad/Precision_5560_Native.FCStd','native_sha256':hashlib.sha256((ROOT/'Precision_5560_Native.FCStd').read_bytes()).hexdigest(),'machine':'Bambu P1S','material':'ASA','nozzle_mm':.4,'layer_mm':.2,'parts':{}}
+manifest={'revision':'H','native_model':'freecad/Precision_5560_Native.FCStd','native_sha256':hashlib.sha256((ROOT/'Precision_5560_Native.FCStd').read_bytes()).hexdigest(),'machine':'Bambu P1S','material':'ASA','nozzle_mm':.4,'layer_mm':.2,'parts':{}}
 keys=json.loads((ROOT/'assembly_native_validation.json').read_text())['parts']
 ns='http://schemas.microsoft.com/3dmanufacturing/core/2015/02'
 for key in keys:
@@ -23,7 +23,7 @@ for key in keys:
  manifest['parts'][key]={'revised':revised,'printed_arm_frozen':'cradle' in key,'closed_mesh':True,'dimensions_mm':[b.XLength,b.YLength,b.ZLength],'sha256':files}
 assert len(manifest['parts'])==14
 (OUT/'manifest.json').write_text(json.dumps(manifest,indent=2))
-(OUT/'README.md').write_text("""# Revision G - final native fit-and-finish print set
+(OUT/'README.md').write_text("""# Revision H - final native fit-and-finish print set
 
 Print one each of 01-14. STL and 3MF are alternatives for the same part; do not
 print both formats. Standard 3MF models contain millimeter geometry and baked
@@ -42,6 +42,10 @@ caps front down; rails lip down; pins button down. Keep the baked orientations.
 Fan-interface and rail-to-arm clearances measure 0.30 mm. Pin retention keeps
 its intentional interference; fixed load shoulders retain seating contact.
 Separate native loft-skin patches close the unintended duct-wall notches.
+Revision H adds three R12 tangent airway blends per duct with two R14 exterior
+support blends. Inlet and outlet profiles remain fixed. Sampled new bend walls
+are at least 1.60 mm; sampled new curved overhangs stay below 40 degrees in the
+inlet-down orientation. Cooling performance is not yet physically validated.
 
 Final checks: valid native solids, constrained sketches, unchanged printed arms,
 wall continuity, assembly/service clearances, closed meshes, and bed/brim/cutter
@@ -52,7 +56,7 @@ own check because the revised flank clearance is normal to the dovetail slope.
 
 See manifest.json for hashes tying this print set to the native FCStd document.
 """,encoding='utf-8')
-with zipfile.ZipFile(ROOT.parent/'Precision_5560_RevG_Print_Set.zip','w',zipfile.ZIP_DEFLATED) as z:
+with zipfile.ZipFile(ROOT.parent/'Precision_5560_RevH_Print_Set.zip','w',zipfile.ZIP_DEFLATED) as z:
  for p in sorted(OUT.iterdir()):
-  if p.is_file():z.write(p,'Revision_G/'+p.name)
-print('Revision G: 14 closed oriented parts, 28 model files, frozen arm bytes retained',flush=True)
+  if p.is_file():z.write(p,'Revision_H/'+p.name)
+print('Revision H: 14 closed oriented parts, 28 model files, frozen arm bytes retained',flush=True)

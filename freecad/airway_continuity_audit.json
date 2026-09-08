@@ -3,8 +3,8 @@
     0.0,
     0.0
   ],
-  "new_material_inside_original_airway_mm3": 0.0,
-  "wall_loss_mm3": 0.0,
+  "unexpected_material_inside_original_airway_mm3": 2.390621034464857e-11,
+  "unexpected_wall_loss_mm3": 3.410605131648481e-13,
   "core_valid": true,
   "core_solids": 1,
   "duct_valid": true,
@@ -20,6 +20,8 @@
     "03_left_fan_duct / 09_left_fan_tray": 0.2999999999998891,
     "05_left_fan_retainer / 09_left_fan_tray": 0.3000000000000346
   },
+  "intentional_flow_material_in_airway_mm3": 8.297316656220154,
+  "intentional_wall_relief_mm3": 362.53826972790864,
   "pass": true,
   "scope": "Geometric continuity and obstruction audit. Does not establish pressure loss, thermal performance, turbulence or physical print quality."
 }

@@ -5,14 +5,14 @@
       "stl": "04_right_fan_duct.stl",
       "valid": true,
       "solids": 1,
-      "volume_mm3": 135574.87576212973
+      "volume_mm3": 135751.58219151135
     },
     "03_left_fan_duct": {
       "step": "03_left_fan_duct.step",
       "stl": "03_left_fan_duct.stl",
       "valid": true,
       "solids": 1,
-      "volume_mm3": 135574.87576212984
+      "volume_mm3": 135751.58219151132
     },
     "08_right_outlet_rail": {
       "step": "08_right_outlet_rail.step",
@@ -33,14 +33,14 @@
       "stl": "10_right_fan_tray.stl",
       "valid": true,
       "solids": 1,
-      "volume_mm3": 85109.11619047615
+      "volume_mm3": 85109.1161904761
     },
     "09_left_fan_tray": {
       "step": "09_left_fan_tray.step",
       "stl": "09_left_fan_tray.stl",
       "valid": true,
       "solids": 1,
-      "volume_mm3": 85109.11619047621
+      "volume_mm3": 85109.11619047618
     }
   },
   "orientation": "Installed assembly coordinates; orient for printing according to source notes.",
