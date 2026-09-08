@@ -160,6 +160,8 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output", type=Path, default=Path(__file__).resolve().parent / "geometry_installed")
     parser.add_argument("--deflection-mm", type=float, default=.1)
+    parser.add_argument("--printed-assembly", type=Path, default=NATIVE / "assembly.step",
+                        help="Installed-coordinate printed assembly STEP; default is historic Revision F")
     args = parser.parse_args()
     args.output.mkdir(parents=True, exist_ok=True)
     report = {"created_utc": datetime.now(timezone.utc).isoformat(),
@@ -176,7 +178,7 @@ def main():
                   "Four fan markers and the grille marker are NOT impermeable obstacles.",
                   "Finite ambient-domain extents need a domain-size sensitivity check."]}
     try:
-        path = NATIVE / "assembly.step"
+        path = args.printed_assembly.resolve()
         printed = Part.read(str(path))
         if not printed.isValid() or len(printed.Solids) != 14:
             raise ValueError("Expected validated 14-solid printed assembly")

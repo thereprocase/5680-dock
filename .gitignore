@@ -17,3 +17,8 @@ cfd/*/*.log
 /tmp/
 /output/
 /%SystemDrive%/
+
+# Preserved local CFD meshes, partitioned fields and failed trials can be many GB.
+/fusion/cfd/runs/
+/fusion/cfd/geometry_revh_prepare.log
+/freecad/ValidationSnapshot.FCStd
