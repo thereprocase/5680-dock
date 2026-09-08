@@ -1,12 +1,12 @@
 # FreeCAD continuation
 
-Worktree: F:/Code/dell-5560-wall-mount-standby, branch codex/parallel-standby. Original checkout belongs to the parallel Onshape work.
+Worktree: F:/Code/dell-5560-wall-mount-standby, branch codex/parallel-standby. All completed FreeCAD, Fusion and Onshape work is merged into main in the original checkout. The GUI still uses this standby worktree.
 
 Open freecad/Precision_5560_Native.FCStd. Read README.md for editing and evidence, RESEARCH_NOTES.md for workflow failures and corrections. The native model is the canonical editable artifact; STEP is exchange output. Recovery files are older evidence, not the current model.
 
 The GUI runner polls local queue jobs. Always target the document by absolute FileName. Inspect app_report_log.txt and queue receipts. Never use global SendKeys. Headless checks run against ValidationSnapshot.FCStd, never against a GUI save target.
 
-Current construction: 40 shared aliases, 158 fully constrained sketches, 14 installed solids. Rounded-profile replacements avoid unstable edge-filleting dependencies. Fan inlet width varies independently of the fixed cradle-side duct sections. Reports preserve original failures and separate successful regeneration from interface clearance.
+Current construction: 40 shared aliases, 176 fully constrained sketches, 14 installed solids. Rounded-profile replacements avoid unstable edge-filleting dependencies. Fan inlet width varies independently of the fixed cradle-side duct sections. Reports preserve original failures and separate successful regeneration from interface clearance.
 
 No installed FreeCAD skill has been created yet. The notebook is the evidence for building that skill. No physical testing is implied by CAD acceptance.
 
