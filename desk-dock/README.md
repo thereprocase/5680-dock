@@ -1,13 +1,13 @@
-# Precision 5680 slide-in desk dock — D2
+# Precision 5680 slide-in desk dock — D4
 
-**Current design: [upright-fan dock and docking animation](D2/README.md).**
+**Current design: [upward-exhaust dock with enlarged, rounded air passages](D4/README.md).**
 
-![Laptop docking and undocking](D2/docking-cycle.gif)
+![D4 side section](D4/air-path.png)
 
-Two 120 mm fans stand 10° from vertical on the lid side, extracting from curved pods beneath the hinge. The laptop lowers into the trough, slides 18 mm into the adjustable SD25TB5 plug, then reverses that sequence to undock.
+The laptop sits to the user's left, hinge down, with the lid toward the user. The keyboard-left ports and adjustable SD25TB5 plug holder sit at the far end—the right edge in the lid-facing photograph. Lower into the guides, slide toward the far plug, then reverse to remove.
 
-[Full-resolution animation](D2/docking-cycle.mp4) · [STEP review package](D2/Precision_5680_D2_Review.zip) · [D1 Dell geometry evidence](D1/reference-evidence.png)
+Two 120 mm fans on the lid side exhaust **15° above the desk**. Their rounded under-hinge passages feed a 2.76 L total plenum, with at least 35 mm fan inlet clearance at sampled locations. At an assumed 30 CFM total, the two broad hinge openings carry about 2.3–2.6 m/s. Spaced round-wire guards keep approximately 89% projected open area. The hinge seat remains 54 mm above the desk.
 
-The hinge seat remains 54 mm above the desk, with the selected port center near 120 mm. The connector retains independent height, transverse and depth adjustment and a separate chassis stop. D2 adds longer bearing pads for the withdrawal stroke and a corrected connector shelf clearance.
+[Docking GIF](D4/docking-cycle.gif) · [Full-resolution MP4](D4/docking-cycle.mp4) · [STEP/source package](D4/Precision_5680_D4_Review.zip) · [Sizing and sources](D4/README.md)
 
-This is a CAD motion study. Nominal envelope and sampled movement checks do not establish physical mating, production readiness or cooling performance. See the [D2 report](D2/README.md) for the validation scope and remaining details. [D1](D1/README.md) and the older files remain as revision history.
+Orientation and nominal sampled docking clearances pass. Actual airflow, whistle-free behavior, physical mating and production readiness still require prototype measurements. The sizing report distinguishes assumed flow and pressure estimates from measured performance. D1–D3 remain as history; use D4 for current geometry.

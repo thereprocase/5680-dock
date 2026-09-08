@@ -1,5 +1,6 @@
 # Precision 5680 / hinge-down extraction dock
 
+**Superseded orientation:** [D3](../D3/README.md) corrects the reversed port end. Use [D4](../D4/README.md) for the current CAD and docking animation.
 [STEP review package](Precision_5680_D1_Review.zip) · [Connector adjustment](adjustment.png) · [Air-path section](air-path.png) · [Source geometry](reference-evidence.png)
 
 ![D1 installed and with fan-chamber roofs removed](overview.png)

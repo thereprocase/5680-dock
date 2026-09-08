@@ -2,8 +2,9 @@
 
 **New independent design:** [Precision 5680 hinge-down desk dock](desk-dock/README.md)
 uses two lid-side 120 mm extraction fans, a curved under-hinge duct and an
-SD25TB5 plug cassette with height, lateral and depth adjustment. D2 stands the fans nearly vertical and adds a docking/undocking
-animation, editable CAD and a review STEP package; Dell fit evidence is retained.
+SD25TB5 plug cassette with height, lateral and depth adjustment. D4 places the keyboard-left ports at the far end, aims fan exhaust
+15° upward, and enlarges and rounds the under-hinge passages. The current
+package includes CAD, a docking animation, a side section and airflow sizing.
 Physical fit, print details and cooling remain to be qualified.
 
 Two independent prototypes: **Minimalist M1** uses lighter open arms and fan

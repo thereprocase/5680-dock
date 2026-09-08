@@ -1,0 +1,130 @@
+{
+  "design_basis": "30 CFM total, assumed equal fan split; 20/40 CFM sensitivity. This does not predict actual flow.",
+  "density_kg_m3": 1.2,
+  "mouths": [
+    {
+      "module": 1,
+      "construction_x_bounds": [
+        42,
+        172.84
+      ],
+      "width_mm": 21,
+      "corner_radius_mm": 4,
+      "edge_radius_mm": 1,
+      "area_mm2": 2733.9054824574364
+    },
+    {
+      "module": 2,
+      "construction_x_bounds": [
+        181.14000000000001,
+        329.68
+      ],
+      "width_mm": 21,
+      "corner_radius_mm": 4,
+      "edge_radius_mm": 1,
+      "area_mm2": 3105.605482457436
+    }
+  ],
+  "mouth_total_mm2": 5839.510964914873,
+  "plenums": [
+    {
+      "module": 1,
+      "volume_litres": 1.334127437230838,
+      "transfer_section_mm2": 7565.522279097131,
+      "fan_ray_min_clear_mm": 35.0,
+      "fan_axis_clear_mm": 57.0,
+      "ray_sample_count": 81
+    },
+    {
+      "module": 2,
+      "volume_litres": 1.4225968438735521,
+      "transfer_section_mm2": 8312.462279097113,
+      "fan_ray_min_clear_mm": 35.0,
+      "fan_axis_clear_mm": 57.0,
+      "ray_sample_count": 81
+    }
+  ],
+  "guard_projected_open_fraction": 0.8877186758957714,
+  "flow_cases": [
+    {
+      "assumed_total_CFM": 20,
+      "assumed_branch_CFM": 10.0,
+      "branches": [
+        {
+          "mouth_velocity_m_s": 1.7262756632529181,
+          "mouth_velocity_pressure_Pa": 1.7880165993235815,
+          "transfer_velocity_m_s": 0.6238134428656025,
+          "fan_free_area_velocity_m_s": 0.5601332045308138,
+          "external_duct_loss_estimate_Pa": [
+            1.4154523519530302,
+            3.37110293269862
+          ]
+        },
+        {
+          "mouth_velocity_m_s": 1.5196632433381476,
+          "mouth_velocity_pressure_Pa": 1.3856258238918109,
+          "transfer_velocity_m_s": 0.5677589072335162,
+          "fan_free_area_velocity_m_s": 0.5601332045308138,
+          "external_duct_loss_estimate_Pa": [
+            1.1539799762669156,
+            2.7074030382698084
+          ]
+        }
+      ]
+    },
+    {
+      "assumed_total_CFM": 30,
+      "assumed_branch_CFM": 15.0,
+      "branches": [
+        {
+          "mouth_velocity_m_s": 2.589413494879377,
+          "mouth_velocity_pressure_Pa": 4.0230373484780575,
+          "transfer_velocity_m_s": 0.9357201642984035,
+          "fan_free_area_velocity_m_s": 0.8401998067962206,
+          "external_duct_loss_estimate_Pa": [
+            3.1847677918943167,
+            7.5849815985718925
+          ]
+        },
+        {
+          "mouth_velocity_m_s": 2.2794948650072215,
+          "mouth_velocity_pressure_Pa": 3.1176581037565745,
+          "transfer_velocity_m_s": 0.8516383608502742,
+          "fan_free_area_velocity_m_s": 0.8401998067962206,
+          "external_duct_loss_estimate_Pa": [
+            2.59645494660056,
+            6.091656836107068
+          ]
+        }
+      ]
+    },
+    {
+      "assumed_total_CFM": 40,
+      "assumed_branch_CFM": 20.0,
+      "branches": [
+        {
+          "mouth_velocity_m_s": 3.4525513265058363,
+          "mouth_velocity_pressure_Pa": 7.152066397294326,
+          "transfer_velocity_m_s": 1.247626885731205,
+          "fan_free_area_velocity_m_s": 1.1202664090616277,
+          "external_duct_loss_estimate_Pa": [
+            5.661809407812121,
+            13.48441173079448
+          ]
+        },
+        {
+          "mouth_velocity_m_s": 3.0393264866762952,
+          "mouth_velocity_pressure_Pa": 5.5425032955672435,
+          "transfer_velocity_m_s": 1.1355178144670324,
+          "fan_free_area_velocity_m_s": 1.1202664090616277,
+          "external_duct_loss_estimate_Pa": [
+            4.6159199050676625,
+            10.829612153079234
+          ]
+        }
+      ]
+    }
+  ],
+  "fan_static_pressure_endpoint_Pa": 15.0041745,
+  "limitations": "Loss-coefficient bounds are engineering assumptions, not calibrated coefficients for this geometry. Excludes the laptop grille/heatsink/blowers, seal leakage and unsteady acoustic effects. No measured P-Q curve/system intersection, CFD, whistle guarantee, or thermal claim."
+}

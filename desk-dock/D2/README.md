@@ -1,5 +1,6 @@
 # Precision 5680 desk dock — D2
 
+**Superseded orientation:** [D3](../D3/README.md) corrects the reversed port end. Use [D4](../D4/README.md) for the current CAD and docking animation.
 ![Docking cycle](docking-cycle.gif)
 
 [Full-resolution MP4](docking-cycle.mp4) · [STEP and editable source package](Precision_5680_D2_Review.zip) · [Poster](overview.png)
