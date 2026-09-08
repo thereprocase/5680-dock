@@ -1,0 +1,42 @@
+{
+  "source": "D:\\Code\\Modeling\\dell-5560-wall-mount\\desk-dock\\D7\\print\\COUPON_bottom_socket_gap_0p35_per_side_R3.stl",
+  "source_sha256": "a8acfa7e8acd99c561650a12c749e1e82d63394d3c84d976adf4ad7e4a1d5e85",
+  "watertight": true,
+  "part_size_mm": [
+    32.70000076293945,
+    32.70000076293945,
+    3.200000047683716
+  ],
+  "translation_mm": [
+    111.64999961853027,
+    121.64999961853027,
+    -0.0
+  ],
+  "placed_bounds_mm": [
+    [
+      111.64999961853027,
+      121.64999961853027,
+      0.0
+    ],
+    [
+      144.35000038146973,
+      154.35000038146973,
+      3.200000047683716
+    ]
+  ],
+  "conservative_brim_bounds_mm": [
+    103.64999961853027,
+    113.64999961853027,
+    152.35000038146973,
+    162.35000038146973
+  ],
+  "bed_and_exclusion_pass": true,
+  "brim_mm": 8,
+  "orientation": "CAD export orientation preserved",
+  "overhang_angle_screen": {
+    "method": "Downward-facing triangles steeper than a 45-degree printable wall, above the first 0.4 mm. Angle screening alone cannot establish support requirements or bridge anchoring.",
+    "candidate_area_mm2": 0.0,
+    "candidate_triangle_count": 0,
+    "largest_candidate_triangles": []
+  }
+}

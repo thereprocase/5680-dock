@@ -1,0 +1,123 @@
+{
+  "source": "D:\\Code\\Modeling\\dell-5560-wall-mount\\desk-dock\\D7\\print\\COUPON_cap_T_male_2p7_head_1p1_neck.stl",
+  "source_sha256": "716f004724a8573ac5dd56e22be50e10312e740c58cf9a87f80547716bd4d886",
+  "watertight": true,
+  "part_size_mm": [
+    28.0,
+    8.0,
+    5.900000095367432
+  ],
+  "translation_mm": [
+    114.0,
+    134.0,
+    -0.0
+  ],
+  "placed_bounds_mm": [
+    [
+      114.0,
+      134.0,
+      0.0
+    ],
+    [
+      142.0,
+      142.0,
+      5.900000095367432
+    ]
+  ],
+  "conservative_brim_bounds_mm": [
+    106.0,
+    126.0,
+    150.0,
+    150.0
+  ],
+  "bed_and_exclusion_pass": true,
+  "brim_mm": 8,
+  "orientation": "CAD export orientation preserved",
+  "overhang_angle_screen": {
+    "method": "Downward-facing triangles steeper than a 45-degree printable wall, above the first 0.4 mm. Angle screening alone cannot establish support requirements or bridge anchoring.",
+    "candidate_area_mm2": 43.5199915218352,
+    "candidate_triangle_count": 4,
+    "largest_candidate_triangles": [
+      {
+        "area_mm2": 10.87999950170516,
+        "normal": [
+          -0.0,
+          0.0,
+          -1.0
+        ],
+        "bounds_mm": [
+          [
+            114.40000000596046,
+            136.65000009536743,
+            4.699999809265137
+          ],
+          [
+            141.60000038146973,
+            137.45000004768372,
+            4.699999809265137
+          ]
+        ]
+      },
+      {
+        "area_mm2": 10.87999950170516,
+        "normal": [
+          -0.0,
+          -0.0,
+          -1.0
+        ],
+        "bounds_mm": [
+          [
+            114.40000000596046,
+            136.65000009536743,
+            4.699999809265137
+          ],
+          [
+            141.60000038146973,
+            137.45000004768372,
+            4.699999809265137
+          ]
+        ]
+      },
+      {
+        "area_mm2": 10.87999625921244,
+        "normal": [
+          -0.0,
+          0.0,
+          -1.0
+        ],
+        "bounds_mm": [
+          [
+            114.40000000596046,
+            138.55000019073486,
+            4.699999809265137
+          ],
+          [
+            141.60000038146973,
+            139.34999990463257,
+            4.699999809265137
+          ]
+        ]
+      },
+      {
+        "area_mm2": 10.87999625921244,
+        "normal": [
+          -0.0,
+          -0.0,
+          -1.0
+        ],
+        "bounds_mm": [
+          [
+            114.40000000596046,
+            138.55000019073486,
+            4.699999809265137
+          ],
+          [
+            141.60000038146973,
+            139.34999990463257,
+            4.699999809265137
+          ]
+        ]
+      }
+    ]
+  }
+}

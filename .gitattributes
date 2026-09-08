@@ -8,3 +8,9 @@
 *.FCStd -text
 *.zip -text
 *.png -text
+
+# Preserve reviewed CAD and evidence bytes.
+*.step -text -diff
+*.bin -text
+*.glb -text
+/desk-dock/D7/** -text

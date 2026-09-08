@@ -1,0 +1,44 @@
+[
+  {
+    "source": "D:\\Code\\Modeling\\dell-5560-wall-mount\\minimalist\\presets\\5560\\print\\05_left_fan_cap.stl",
+    "source_sha256": "5bb1c496647bcb9b8f41188502215f226b29381eef32df314a625c31bb885627",
+    "watertight": true,
+    "part_size_mm": [
+      135.39999771118164,
+      35.100006103515625,
+      2.999999999999986
+    ],
+    "translation_mm": [
+      1.9073486328125e-06,
+      10.0,
+      -1.4210854715202004e-14
+    ],
+    "placed_bounds_mm": [
+      [
+        60.30000114440918,
+        120.44999694824219,
+        0.0
+      ],
+      [
+        195.69999885559082,
+        155.5500030517578,
+        2.999999999999986
+      ]
+    ],
+    "conservative_brim_bounds_mm": [
+      52.30000114440918,
+      112.44999694824219,
+      203.69999885559082,
+      163.5500030517578
+    ],
+    "bed_and_exclusion_pass": true,
+    "brim_mm": 8,
+    "orientation": "CAD export orientation preserved",
+    "overhang_angle_screen": {
+      "method": "Downward-facing triangles steeper than a 45-degree printable wall, above the first 0.4 mm. Angle screening alone cannot establish support requirements or bridge anchoring.",
+      "candidate_area_mm2": 0.0,
+      "candidate_triangle_count": 0,
+      "largest_candidate_triangles": []
+    }
+  }
+]

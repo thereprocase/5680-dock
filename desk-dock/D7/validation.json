@@ -1,0 +1,150 @@
+{
+  "orientation": {
+    "plug_edge": "far, keyboard-left; photo right",
+    "docking_direction": "-X",
+    "port_probes": [
+      {
+        "name": "TB4_rear",
+        "side": "keyboard-left",
+        "opening_material_mm3": 0.0,
+        "opposite_edge_material_mm3": 0.8000000000000158
+      },
+      {
+        "name": "TB4_front",
+        "side": "keyboard-left",
+        "opening_material_mm3": 0.0,
+        "opposite_edge_material_mm3": 0.7999999999999932
+      },
+      {
+        "name": "USB_C_right",
+        "side": "keyboard-right",
+        "opening_material_mm3": 0.0,
+        "opposite_edge_material_mm3": 0.8000000000000081
+      }
+    ],
+    "lid_camera_keyboard_left_screen_right": true,
+    "source_handedness_preserved": true
+  },
+  "nominal_rigid_collisions": [],
+  "docking_path_samples": [
+    {
+      "offset_xz_mm": [
+        18,
+        135
+      ],
+      "collisions": [],
+      "expanded_foot_keepout_collisions": []
+    },
+    {
+      "offset_xz_mm": [
+        18,
+        80
+      ],
+      "collisions": [],
+      "expanded_foot_keepout_collisions": []
+    },
+    {
+      "offset_xz_mm": [
+        18,
+        30
+      ],
+      "collisions": [],
+      "expanded_foot_keepout_collisions": []
+    },
+    {
+      "offset_xz_mm": [
+        18,
+        24
+      ],
+      "collisions": [],
+      "expanded_foot_keepout_collisions": []
+    },
+    {
+      "offset_xz_mm": [
+        18,
+        10
+      ],
+      "collisions": [],
+      "expanded_foot_keepout_collisions": []
+    },
+    {
+      "offset_xz_mm": [
+        18,
+        0
+      ],
+      "collisions": [],
+      "expanded_foot_keepout_collisions": []
+    },
+    {
+      "offset_xz_mm": [
+        15,
+        0
+      ],
+      "collisions": [],
+      "expanded_foot_keepout_collisions": []
+    },
+    {
+      "offset_xz_mm": [
+        10,
+        0
+      ],
+      "collisions": [],
+      "expanded_foot_keepout_collisions": []
+    },
+    {
+      "offset_xz_mm": [
+        6,
+        0
+      ],
+      "collisions": [],
+      "expanded_foot_keepout_collisions": []
+    },
+    {
+      "offset_xz_mm": [
+        4,
+        0
+      ],
+      "collisions": [],
+      "expanded_foot_keepout_collisions": []
+    },
+    {
+      "offset_xz_mm": [
+        2,
+        0
+      ],
+      "collisions": [],
+      "expanded_foot_keepout_collisions": []
+    },
+    {
+      "offset_xz_mm": [
+        0,
+        0
+      ],
+      "collisions": [],
+      "expanded_foot_keepout_collisions": []
+    }
+  ],
+  "step_solids": 70,
+  "step_all_valid": true,
+  "scope": "Simplified nominal envelope and sampled path only; does not qualify real hardware, all adjustment positions, manufacturing, loads or airflow.",
+  "intentional_compliant_contacts": [
+    [
+      "01_fan_guard_retainer",
+      "01_manifold_with_cradle",
+      1.719241,
+      "grille friction lands"
+    ],
+    [
+      "02_fan_guard_retainer",
+      "02_manifold_with_cradle",
+      1.719241,
+      "grille friction lands"
+    ],
+    [
+      "X_depth_overmold_clamp",
+      "cassette_cap_push_pin_6p5",
+      0.574218,
+      "cap push-pin retention ribs"
+    ]
+  ]
+}

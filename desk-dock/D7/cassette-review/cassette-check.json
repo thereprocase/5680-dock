@@ -1,0 +1,951 @@
+{
+  "details": {
+    "threads": "Custom printed8x2 calibration lock and10x2 chassis stop; real matched trapezoids, not ISO",
+    "fasteners": "One8mm calibration screw, keeper plate,6.5mm cap push pin, printed hinge hardware",
+    "cap_release_direction": "Pull6.5mm pin toward -Y then lift cap; no front clip",
+    "height_adjustment": "Replace keyed shim; thickness5.1+dz, minimum1.1mm",
+    "depth_adjustment": "Rear abutment encoded in replaceable keyed shim",
+    "lateral_adjustment": "Side abutment and bolt bore encoded in replaceable keyed shim",
+    "overmold_grip_squeeze_mm": 0.3,
+    "extraction_retention": "Overmold friction requires physical pull testing; squeeze is provisional",
+    "moving_top_positive_y_limit_mm": 11.5,
+    "soft_stop": "Removable flexible printed bumper,8.2mm socket over8mm stem; fit test required",
+    "material_target": "PETG,0.4mm nozzle,P1S; pin/thread/grip coupons required",
+    "rear_cable": {
+      "source_stub_diameter_mm": 6.5,
+      "provisional_continuation_diameter_mm": 6.5,
+      "clearance_check_diameter_mm": 8.0,
+      "trough_diameter_mm": 8.5,
+      "mouth_flare_diameter_mm": 12.5,
+      "mouth_flare_length_mm": 2.0,
+      "exit_axis": [
+        -1,
+        0,
+        0
+      ],
+      "lay_in_direction": [
+        0,
+        0,
+        -1
+      ],
+      "rear_wall_outer_x_mm": -47,
+      "free_straight_after_wall_mm": 30,
+      "illustrative_bend_radius_mm": 30,
+      "qualification": "Continuation diameter and bend radius are assumptions, not measured Dell cable properties. Reserve a loose exterior loop; no fixed clamp or rigid elbow near the moving outlet."
+    }
+  },
+  "part_count_with_hinge": 18,
+  "cassette_stl_count": 9,
+  "critical_pairs": [
+    {
+      "a": "X_depth_overmold_clamp",
+      "b": "height_shim_pack",
+      "overlap_mm3": 0.0,
+      "intentional": false,
+      "note": ""
+    },
+    {
+      "a": "X_depth_overmold_clamp",
+      "b": "Dell_plug_overmold_REFERENCE",
+      "overlap_mm3": 0.0,
+      "intentional": false,
+      "note": ""
+    },
+    {
+      "a": "breakaway_pivot_pin_10mm",
+      "b": "breakaway_preload_hand_nut",
+      "overlap_mm3": 0.0,
+      "intentional": false,
+      "note": ""
+    },
+    {
+      "a": "breakaway_pivot_pin_10mm",
+      "b": "breakaway_spring_cartridge",
+      "overlap_mm3": 0.0,
+      "intentional": false,
+      "note": ""
+    },
+    {
+      "a": "breakaway_pivot_pin_10mm",
+      "b": "plug_support",
+      "overlap_mm3": 0.0,
+      "intentional": false,
+      "note": ""
+    },
+    {
+      "a": "breakaway_preload_hand_nut",
+      "b": "breakaway_spring_cartridge",
+      "overlap_mm3": 0.0,
+      "intentional": false,
+      "note": ""
+    },
+    {
+      "a": "breakaway_spring_hand_screw_0",
+      "b": "plug_support",
+      "overlap_mm3": 0.0,
+      "intentional": false,
+      "note": ""
+    },
+    {
+      "a": "breakaway_spring_hand_screw_0",
+      "b": "breakaway_spring_cartridge",
+      "overlap_mm3": 0.0,
+      "intentional": false,
+      "note": ""
+    },
+    {
+      "a": "breakaway_spring_hand_screw_1",
+      "b": "plug_support",
+      "overlap_mm3": 0.0,
+      "intentional": false,
+      "note": ""
+    },
+    {
+      "a": "breakaway_spring_hand_screw_1",
+      "b": "breakaway_spring_cartridge",
+      "overlap_mm3": 0.0,
+      "intentional": false,
+      "note": ""
+    },
+    {
+      "a": "height_shim_pack",
+      "b": "breakaway_carrier",
+      "overlap_mm3": 0.0,
+      "intentional": false,
+      "note": ""
+    },
+    {
+      "a": "cassette_calibration_keeper_plate",
+      "b": "breakaway_carrier",
+      "overlap_mm3": 0.0,
+      "intentional": false,
+      "note": ""
+    },
+    {
+      "a": "cassette_calibration_hand_screw",
+      "b": "X_depth_overmold_clamp",
+      "overlap_mm3": 0.0,
+      "intentional": false,
+      "note": ""
+    },
+    {
+      "a": "cassette_calibration_hand_screw",
+      "b": "height_shim_pack",
+      "overlap_mm3": 0.0,
+      "intentional": false,
+      "note": ""
+    },
+    {
+      "a": "cassette_calibration_hand_screw",
+      "b": "cassette_calibration_keeper_plate",
+      "overlap_mm3": 0.0,
+      "intentional": false,
+      "note": ""
+    },
+    {
+      "a": "cassette_calibration_hand_screw",
+      "b": "breakaway_carrier",
+      "overlap_mm3": 0.0,
+      "intentional": false,
+      "note": ""
+    },
+    {
+      "a": "sliding_plug_cap",
+      "b": "X_depth_overmold_clamp",
+      "overlap_mm3": 0.0,
+      "intentional": false,
+      "note": ""
+    },
+    {
+      "a": "sliding_plug_cap",
+      "b": "Dell_plug_overmold_REFERENCE",
+      "overlap_mm3": 25.521794906127383,
+      "intentional": true,
+      "note": "Provisional .30mm overmold squeeze"
+    },
+    {
+      "a": "cassette_cap_push_pin_6p5",
+      "b": "sliding_plug_cap",
+      "overlap_mm3": 0.0,
+      "intentional": false,
+      "note": ""
+    },
+    {
+      "a": "cassette_cap_push_pin_6p5",
+      "b": "X_depth_overmold_clamp",
+      "overlap_mm3": 0.5742179379561065,
+      "intentional": true,
+      "note": "Two .05mm radial pin retention lands"
+    },
+    {
+      "a": "sliding_plug_cap",
+      "b": "breakaway_pivot_pin_10mm",
+      "overlap_mm3": 0.0,
+      "intentional": false,
+      "note": ""
+    },
+    {
+      "a": "sliding_plug_cap",
+      "b": "breakaway_carrier",
+      "overlap_mm3": 0.0,
+      "intentional": false,
+      "note": ""
+    },
+    {
+      "a": "X_depth_overmold_clamp",
+      "b": "breakaway_pivot_pin_10mm",
+      "overlap_mm3": 0.0,
+      "intentional": false,
+      "note": ""
+    },
+    {
+      "a": "X_depth_overmold_clamp",
+      "b": "breakaway_carrier",
+      "overlap_mm3": 0.0,
+      "intentional": false,
+      "note": ""
+    },
+    {
+      "a": "cassette_cap_push_pin_6p5",
+      "b": "breakaway_pivot_pin_10mm",
+      "overlap_mm3": 0.0,
+      "intentional": false,
+      "note": ""
+    },
+    {
+      "a": "cassette_cap_push_pin_6p5",
+      "b": "breakaway_carrier",
+      "overlap_mm3": 0.0,
+      "intentional": false,
+      "note": ""
+    },
+    {
+      "a": "independent_printed_chassis_stop_screw",
+      "b": "chassis_stop_block",
+      "overlap_mm3": 0.0,
+      "intentional": false,
+      "note": ""
+    },
+    {
+      "a": "stop_soft_tip",
+      "b": "independent_printed_chassis_stop_screw",
+      "overlap_mm3": 0.0,
+      "intentional": false,
+      "note": ""
+    },
+    {
+      "a": "stop_soft_tip",
+      "b": "chassis_stop_block",
+      "overlap_mm3": 0.0,
+      "intentional": false,
+      "note": ""
+    },
+    {
+      "a": "chassis_stop_block",
+      "b": "plug_support",
+      "overlap_mm3": 1092.8547607769647,
+      "intentional": true,
+      "note": "Intentional fused fixed load path"
+    }
+  ],
+  "upper_cap_carrier_corner_checks": [
+    {
+      "part": "sliding_plug_cap",
+      "translation_mm": [
+        -5.0,
+        -3.0,
+        -4
+      ],
+      "carrier_overlap_mm3": 0.0
+    },
+    {
+      "part": "cassette_cap_push_pin_6p5",
+      "translation_mm": [
+        -5.0,
+        -3.0,
+        -4
+      ],
+      "carrier_overlap_mm3": 0.0
+    },
+    {
+      "part": "sliding_plug_cap",
+      "translation_mm": [
+        -5.0,
+        -3.0,
+        5
+      ],
+      "carrier_overlap_mm3": 0.0
+    },
+    {
+      "part": "cassette_cap_push_pin_6p5",
+      "translation_mm": [
+        -5.0,
+        -3.0,
+        5
+      ],
+      "carrier_overlap_mm3": 0.0
+    },
+    {
+      "part": "sliding_plug_cap",
+      "translation_mm": [
+        -5.0,
+        3.0,
+        -4
+      ],
+      "carrier_overlap_mm3": 0.0
+    },
+    {
+      "part": "cassette_cap_push_pin_6p5",
+      "translation_mm": [
+        -5.0,
+        3.0,
+        -4
+      ],
+      "carrier_overlap_mm3": 0.0
+    },
+    {
+      "part": "sliding_plug_cap",
+      "translation_mm": [
+        -5.0,
+        3.0,
+        5
+      ],
+      "carrier_overlap_mm3": 0.0
+    },
+    {
+      "part": "cassette_cap_push_pin_6p5",
+      "translation_mm": [
+        -5.0,
+        3.0,
+        5
+      ],
+      "carrier_overlap_mm3": 0.0
+    },
+    {
+      "part": "sliding_plug_cap",
+      "translation_mm": [
+        5.0,
+        -3.0,
+        -4
+      ],
+      "carrier_overlap_mm3": 0.0
+    },
+    {
+      "part": "cassette_cap_push_pin_6p5",
+      "translation_mm": [
+        5.0,
+        -3.0,
+        -4
+      ],
+      "carrier_overlap_mm3": 0.0
+    },
+    {
+      "part": "sliding_plug_cap",
+      "translation_mm": [
+        5.0,
+        -3.0,
+        5
+      ],
+      "carrier_overlap_mm3": 0.0
+    },
+    {
+      "part": "cassette_cap_push_pin_6p5",
+      "translation_mm": [
+        5.0,
+        -3.0,
+        5
+      ],
+      "carrier_overlap_mm3": 0.0
+    },
+    {
+      "part": "sliding_plug_cap",
+      "translation_mm": [
+        5.0,
+        3.0,
+        -4
+      ],
+      "carrier_overlap_mm3": 0.0
+    },
+    {
+      "part": "cassette_cap_push_pin_6p5",
+      "translation_mm": [
+        5.0,
+        3.0,
+        -4
+      ],
+      "carrier_overlap_mm3": 0.0
+    },
+    {
+      "part": "sliding_plug_cap",
+      "translation_mm": [
+        5.0,
+        3.0,
+        5
+      ],
+      "carrier_overlap_mm3": 0.0
+    },
+    {
+      "part": "cassette_cap_push_pin_6p5",
+      "translation_mm": [
+        5.0,
+        3.0,
+        5
+      ],
+      "carrier_overlap_mm3": 0.0
+    }
+  ],
+  "parts": [
+    {
+      "name": "height_shim_pack",
+      "file": "height_shim_pack.stl",
+      "size_mm": [
+        38.4006025626076,
+        37.500602562607604,
+        16.60135225829645
+      ],
+      "pose": "Base down; review underside roofs after slicing",
+      "sha256": "d0a2219d3a4e7d85af2a73bbdc483972e5f36b1ecea60104f2cbd9d47479dae3"
+    },
+    {
+      "name": "cassette_calibration_keeper_plate",
+      "file": "cassette_calibration_keeper_plate.stl",
+      "size_mm": [
+        34.00120492521519,
+        32.00120492521519,
+        5.002704316592908
+      ],
+      "pose": "Base down; review underside roofs after slicing",
+      "sha256": "5dd57d965fc7e0725e9a3db248895b79d0254126d4660d14a67c2fdba267500d"
+    },
+    {
+      "name": "cassette_calibration_hand_screw",
+      "file": "cassette_calibration_hand_screw.stl",
+      "size_mm": [
+        19.662076182989026,
+        20.005826182989022,
+        28.910925755257527
+      ],
+      "pose": "Knob on bed; threaded shaft upright",
+      "sha256": "0d3624d1557605f2e54302a66045e147db3213061d0336dcb15588c0fb96bb7e"
+    },
+    {
+      "name": "X_depth_overmold_clamp",
+      "file": "X_depth_overmold_clamp.stl",
+      "size_mm": [
+        32.602024722028865,
+        29.0009037439114,
+        28.208495235486307
+      ],
+      "pose": "Base down; review underside roofs after slicing",
+      "sha256": "2d9acf5b182d4bf9156ea7ae37f008b1599d115046bbf8b8dedbbccab47929b3"
+    },
+    {
+      "name": "sliding_plug_cap",
+      "file": "sliding_plug_cap.stl",
+      "size_mm": [
+        32.60166545903987,
+        24.269548156462477,
+        10.101213687084316
+      ],
+      "pose": "Rear clevis on bed; broad cap ledge starts 2.5 mm above bed. Cable relief opens upward; horizontal pin bore needs support/fit review.",
+      "sha256": "7eed8f2672b6366ed00fff1c7a92f2226996135324f1be164e60d839eccb0f5d"
+    },
+    {
+      "name": "cassette_cap_push_pin_6p5",
+      "file": "cassette_cap_push_pin_6p5.stl",
+      "size_mm": [
+        14.004351651988578,
+        14.000000200000008,
+        28.271830497042718
+      ],
+      "pose": "Pin head on bed; shaft upright",
+      "sha256": "6942c765bdffe74994968d88b53f97cc408eba2e778fc84427c488618dcd0d8a"
+    },
+    {
+      "name": "chassis_stop_block",
+      "file": "chassis_stop_block.stl",
+      "size_mm": [
+        12.014484332224338,
+        44.00120492521519,
+        20.001204925215198
+      ],
+      "pose": "Base down; review underside roofs after slicing",
+      "sha256": "9e1e04f64cf1ed246b1a23e1ae587bcdf25e956548c325f9d5bfa0123de5867f"
+    },
+    {
+      "name": "independent_printed_chassis_stop_screw",
+      "file": "independent_printed_chassis_stop_screw.stl",
+      "size_mm": [
+        23.71553766507462,
+        24.000000200000002,
+        27.004845537867375
+      ],
+      "pose": "Axis upright; knob down for screw, open socket up for bumper",
+      "sha256": "5e01d91d58b7e5e40608502be485c5aa43cc14d88fb065bfa7f9b5e0cec9d40c"
+    },
+    {
+      "name": "stop_soft_tip",
+      "file": "stop_soft_tip.stl",
+      "size_mm": [
+        12.003730015990211,
+        12.00000020000001,
+        4.003730015990213
+      ],
+      "pose": "Axis upright; knob down for screw, open socket up for bumper",
+      "sha256": "49b06d06866a413fc38c52276720bc4a93512e8ad79d1d1d51798cf624b38a55"
+    }
+  ],
+  "rear_cable_spec": {
+    "source_stub_diameter_mm": 6.5,
+    "provisional_continuation_diameter_mm": 6.5,
+    "clearance_check_diameter_mm": 8.0,
+    "trough_diameter_mm": 8.5,
+    "mouth_flare_diameter_mm": 12.5,
+    "mouth_flare_length_mm": 2.0,
+    "exit_axis": [
+      -1,
+      0,
+      0
+    ],
+    "lay_in_direction": [
+      0,
+      0,
+      -1
+    ],
+    "rear_wall_outer_x_mm": -47,
+    "free_straight_after_wall_mm": 30,
+    "illustrative_bend_radius_mm": 30,
+    "qualification": "Continuation diameter and bend radius are assumptions, not measured Dell cable properties. Reserve a loose exterior loop; no fixed clamp or rigid elbow near the moving outlet."
+  },
+  "rear_cable_checks": [
+    {
+      "part": "plug_support",
+      "angle_deg": 0,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "breakaway_carrier",
+      "angle_deg": 0,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "breakaway_pivot_pin_10mm",
+      "angle_deg": 0,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "breakaway_spring_cartridge",
+      "angle_deg": 0,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "breakaway_preload_hand_nut",
+      "angle_deg": 0,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "breakaway_spring_hand_screw_0",
+      "angle_deg": 0,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "breakaway_spring_hand_screw_1",
+      "angle_deg": 0,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "height_shim_pack",
+      "angle_deg": 0,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "cassette_calibration_keeper_plate",
+      "angle_deg": 0,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "cassette_calibration_hand_screw",
+      "angle_deg": 0,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "X_depth_overmold_clamp",
+      "angle_deg": 0,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "sliding_plug_cap",
+      "angle_deg": 0,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "cassette_cap_push_pin_6p5",
+      "angle_deg": 0,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "Dell_plug_overmold_REFERENCE",
+      "angle_deg": 0,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "USB_C_shell_REFERENCE",
+      "angle_deg": 0,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "chassis_stop_block",
+      "angle_deg": 0,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "independent_printed_chassis_stop_screw",
+      "angle_deg": 0,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "stop_soft_tip",
+      "angle_deg": 0,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "sliding_plug_cap",
+      "cap_lift_mm": 5,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "X_depth_overmold_clamp",
+      "cable_lay_in_lift_mm": 5,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "breakaway_carrier",
+      "cable_lay_in_lift_mm": 5,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "sliding_plug_cap",
+      "cap_lift_mm": 10,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "X_depth_overmold_clamp",
+      "cable_lay_in_lift_mm": 10,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "breakaway_carrier",
+      "cable_lay_in_lift_mm": 10,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "sliding_plug_cap",
+      "cap_lift_mm": 20,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "X_depth_overmold_clamp",
+      "cable_lay_in_lift_mm": 20,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "breakaway_carrier",
+      "cable_lay_in_lift_mm": 20,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "sliding_plug_cap",
+      "cap_lift_mm": 35,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "X_depth_overmold_clamp",
+      "cable_lay_in_lift_mm": 35,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "breakaway_carrier",
+      "cable_lay_in_lift_mm": 35,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "plug_support",
+      "angle_deg": 5,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "breakaway_pivot_pin_10mm",
+      "angle_deg": 5,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "breakaway_spring_cartridge",
+      "angle_deg": 5,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "breakaway_preload_hand_nut",
+      "angle_deg": 5,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "breakaway_spring_hand_screw_0",
+      "angle_deg": 5,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "breakaway_spring_hand_screw_1",
+      "angle_deg": 5,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "chassis_stop_block",
+      "angle_deg": 5,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "independent_printed_chassis_stop_screw",
+      "angle_deg": 5,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "stop_soft_tip",
+      "angle_deg": 5,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "plug_support",
+      "angle_deg": 10,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "breakaway_pivot_pin_10mm",
+      "angle_deg": 10,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "breakaway_spring_cartridge",
+      "angle_deg": 10,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "breakaway_preload_hand_nut",
+      "angle_deg": 10,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "breakaway_spring_hand_screw_0",
+      "angle_deg": 10,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "breakaway_spring_hand_screw_1",
+      "angle_deg": 10,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "chassis_stop_block",
+      "angle_deg": 10,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "independent_printed_chassis_stop_screw",
+      "angle_deg": 10,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "stop_soft_tip",
+      "angle_deg": 10,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "plug_support",
+      "angle_deg": 15,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "breakaway_pivot_pin_10mm",
+      "angle_deg": 15,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "breakaway_spring_cartridge",
+      "angle_deg": 15,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "breakaway_preload_hand_nut",
+      "angle_deg": 15,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "breakaway_spring_hand_screw_0",
+      "angle_deg": 15,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "breakaway_spring_hand_screw_1",
+      "angle_deg": 15,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "chassis_stop_block",
+      "angle_deg": 15,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "independent_printed_chassis_stop_screw",
+      "angle_deg": 15,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "stop_soft_tip",
+      "angle_deg": 15,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "plug_support",
+      "angle_deg": 20,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "breakaway_pivot_pin_10mm",
+      "angle_deg": 20,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "breakaway_spring_cartridge",
+      "angle_deg": 20,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "breakaway_preload_hand_nut",
+      "angle_deg": 20,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "breakaway_spring_hand_screw_0",
+      "angle_deg": 20,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "breakaway_spring_hand_screw_1",
+      "angle_deg": 20,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "chassis_stop_block",
+      "angle_deg": 20,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "independent_printed_chassis_stop_screw",
+      "angle_deg": 20,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "stop_soft_tip",
+      "angle_deg": 20,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "plug_support",
+      "angle_deg": 30,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "breakaway_pivot_pin_10mm",
+      "angle_deg": 30,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "breakaway_spring_cartridge",
+      "angle_deg": 30,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "breakaway_preload_hand_nut",
+      "angle_deg": 30,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "breakaway_spring_hand_screw_0",
+      "angle_deg": 30,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "breakaway_spring_hand_screw_1",
+      "angle_deg": 30,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "chassis_stop_block",
+      "angle_deg": 30,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "independent_printed_chassis_stop_screw",
+      "angle_deg": 30,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "stop_soft_tip",
+      "angle_deg": 30,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "plug_support",
+      "angle_deg": 45,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "breakaway_pivot_pin_10mm",
+      "angle_deg": 45,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "breakaway_spring_cartridge",
+      "angle_deg": 45,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "breakaway_preload_hand_nut",
+      "angle_deg": 45,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "breakaway_spring_hand_screw_0",
+      "angle_deg": 45,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "breakaway_spring_hand_screw_1",
+      "angle_deg": 45,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "chassis_stop_block",
+      "angle_deg": 45,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "independent_printed_chassis_stop_screw",
+      "angle_deg": 45,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "stop_soft_tip",
+      "angle_deg": 45,
+      "overlap_mm3": 0.0
+    }
+  ],
+  "rear_wall_notch_removed_mm3": 1052.6290853314204,
+  "source_modules_sha256": {
+    "cassette.py": "4656683eff78a7e7b0bdb92c13589ca827ce69895454eccd1311a09ef84c94c0",
+    "breakaway_geometry.py": "f0b5e5cfc4a78a2e1e53a8b5ffb4a771811f8a4d57d16ab7e8650f9cb6548c34",
+    "printed_fasteners.py": "3cdf579dd8d7c7ec681f95f0d09a51599345eb0bb9516030d4aca44cfded9c73",
+    "parameters.json": "bb182f2c0b46c712af08c0de0fabed644b21b2b83268ed04be23914c231c3785"
+  },
+  "limits": "Nominal isolated geometry, cap/pin-to-carrier translations at adjustment corners and the selected provisional cable-loop/lift samples only; regenerated calibration shapes, full-body sweep, slicing, actual cable flexibility and physical fit remain separate.",
+  "cassette_source_sha256": "4656683eff78a7e7b0bdb92c13589ca827ce69895454eccd1311a09ef84c94c0"
+}

@@ -1,15 +1,9 @@
-# Precision 5680 slide-in desk dock — D5
+# Precision 5680 desk dock
 
-**Current design: [profiled fixed guides, open ribs and a polished enclosure](D5/README.md).**
+Current local design: [D7 - recessed fans and hand assembly](D7/README.md).
 
-![D5 lid-side view](D5/overview.png)
+5 degree laptop lean, 18 degree fan discharge, source-handed Thunderbolt ports, direct plenum support, recessed fan pockets, removable duct floors and hand controls. PETG on the P1S; print-oriented parts and fit samples are supplied. Slicing remains unverified after application startup failures.
 
-The laptop sits hinge down with its lid toward the user, leaning 2° onto fixed guides. Shaped hinge-end seats and flared entries guide lowering, followed by an 18 mm slide toward the far-end SD25TB5 plug. The keyboard-left ports remain on the far edge shown in the user's photograph.
+[Port study](D6/PORT_STUDY.md) · [Compact-depth airflow screen](D6/AIRFLOW_STUDY.md) · [Viewer](../docs/desk-dock.html)
 
-Bare case margins carry the bearing contact. The open back clears the rubber feet's swept envelope and leaves 90.1% net free area over the OEM intake region. Rounded fan bezels and a removable adjustment cover improve the enclosure. Two 120 mm fans retain 15° upward exhaust and the curved under-hinge plenums.
-
-[Docking GIF](D5/docking-cycle.gif) · [Full-resolution MP4](D5/docking-cycle.mp4) · [STEP/source package](D5/Precision_5680_D5_Review.zip) · [Profile and rib study](D5/contact-study.png)
-
-Nominal and prescribed entry-path checks clear the laptop and expanded foot keepouts. Physical self-alignment, friction, strength, exact mating, airflow and acoustics still require prototype qualification. See the [D5 report](D5/README.md) for the measured source geometry and validation scope.
-
-[Interactive D5 exploded viewer](https://thereprocase.github.io/dell-5560-wall-mount/desk-dock.html) · rotate, explode, inspect parts and play the docking motion.
+D1-D6 are retained as history. D5 has a known mirrored port layout. Use the repository root Open-Desk-Dock.ps1 launcher for the local viewer.

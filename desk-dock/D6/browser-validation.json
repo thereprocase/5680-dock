@@ -1,0 +1,19 @@
+{
+  "revision": "D6",
+  "parts": 56,
+  "verified_controls": [
+    "explode",
+    "docking slider",
+    "reset",
+    "lid view"
+  ],
+  "keyboard_left_appears_screen_right": true,
+  "undocked_translation_mm": [
+    18,
+    11.766025270933852,
+    134.48628424238564
+  ],
+  "laptop_lean_deg": 5,
+  "observed_end_tab_removed": true,
+  "viewer_url": "http://127.0.0.1:8768/docs/desk-dock.html"
+}

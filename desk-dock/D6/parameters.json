@@ -1,0 +1,72 @@
+{
+  "revision": "D6 - compact 5 degree laptop lean, 18 degree fan discharge",
+  "laptop_width": 353.68,
+  "laptop_depth": 240.33,
+  "laptop_thickness": 22.17,
+  "rear_case_seat_z": 54.0,
+  "port_from_rear_case": 65.97946980036795,
+  "second_port_from_rear_case": 82.1922526229173,
+  "port_y": 2.231355587448924,
+  "plug_length": 25.0,
+  "plug_major": 12.5,
+  "plug_minor": 6.5,
+  "plug_tip_length": 6.65,
+  "fan_size": 120.0,
+  "fan_thickness": 15.0,
+  "fan_hole_pitch": 105.0,
+  "fan_centers_x": [
+    84.0,
+    269.68
+  ],
+  "fan_center_y": 58,
+  "wall": 2.4,
+  "height_adjustment": 0.0,
+  "lateral_adjustment": 0.0,
+  "depth_adjustment": 0.0,
+  "height_range": [
+    -4,
+    5
+  ],
+  "lateral_range": [
+    -3.0,
+    3.0
+  ],
+  "depth_range": [
+    -5.0,
+    5.0
+  ],
+  "guide_clearance_per_face": 0.35,
+  "notes": "D6 re-extracts all three USB-C centers from the source mesh, preserving handedness. Port types follow Dell owner manual. Source visualization dimensions require physical calibration; no reflection is used to orient the laptop.",
+  "fan_center_z": 72,
+  "fan_plane_from_vertical_deg": 18,
+  "docking_withdrawal_mm": 18,
+  "animation_lift_mm": 135,
+  "coordinate_frame": {
+    "x": "Positive from keyboard-left/plug end (x=0) toward keyboard-right end (x=353.68). Plug appears screen-right in a lid-facing view.",
+    "y": "Positive toward lid/user/fans; negative toward underside/intake.",
+    "z": "Positive upward from desk; hinge down.",
+    "construction": "Preserve Dell source handedness; translation then rigid lean, no reflection. Positive depth_adjustment inserts plug along +X; laptop docks along -X."
+  },
+  "docking_travel_direction": "-X",
+  "undocked_x_offset_mm": 18,
+  "fan_exhaust_elevation_deg": 18,
+  "design_flow_cfm": 30,
+  "flow_checks_cfm": [
+    20,
+    30,
+    40
+  ],
+  "mouth_width_mm": 21,
+  "mouth_corner_radius_mm": 4,
+  "mouth_edge_radius_mm": 1,
+  "inner_turn_radius_mm": 24.4,
+  "guard_wire_diameter_mm": 1,
+  "guard_pitch_mm": 9,
+  "guard_from_fan_face_mm": 7.5,
+  "guide_mouth_extra_per_face_mm": 5,
+  "guide_fit_clearance_per_face_mm": 0.25,
+  "laptop_lean_deg": 5,
+  "underside_net_free_area_target": 0.8,
+  "contact_scheme": "Profiled hinge-end seats carry weight; laptop leans directly on two thin plenum-wall liners. Two low end lips assist lowering. No upright guide posts or underside rib frame.",
+  "cassette_adjustment": "1-10 mm shim stack (5 mm nominal) sets height; broad shelf slots permit +/-3 mm transverse and +/-5 mm insertion adjustment. Two M3 locks with 14 mm washers. Select screw length for engagement; nominal hardware represented only."
+}

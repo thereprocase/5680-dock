@@ -1,0 +1,55 @@
+{
+  "purpose": "Local review only; no printing or printer communication",
+  "printer": "Bambu Lab P1S 0.4 nozzle",
+  "material": "Generic PETG",
+  "nozzle_mm": [
+    "0.4"
+  ],
+  "layer_mm": "0.2",
+  "support_mode": "off",
+  "printable_area": [
+    "0x0",
+    "256x0",
+    "256x256",
+    "0x256"
+  ],
+  "printable_height": "250",
+  "bed_exclude_area": [
+    "0x0",
+    "18x0",
+    "18x28",
+    "0x28"
+  ],
+  "nozzle_temperature_c": [
+    "255"
+  ],
+  "textured_plate_temperature_c": [
+    "70"
+  ],
+  "max_volumetric_speed_mm3_s": [
+    "12"
+  ],
+  "source_profile_sha256": {
+    "C:\\Program Files\\Bambu Studio\\resources\\profiles\\BBL\\machine\\Bambu Lab P1S 0.4 nozzle.json": "31e55f8f1eb1b040c5314e50ff5b4671716740647ca90b36911883b8fdaacf97",
+    "C:\\Program Files\\Bambu Studio\\resources\\profiles\\BBL\\machine\\fdm_bbl_3dp_001_common.json": "aa5b0148c3131965ab2bb1d377b43301304030c3d87b339897cef98809a9004f",
+    "C:\\Program Files\\Bambu Studio\\resources\\profiles\\BBL\\machine\\fdm_machine_common.json": "aef949f605e74bd7370dab061d9cb9f6b7fde5ae92e7fe3b34d98c0a7746c514",
+    "C:\\Program Files\\Bambu Studio\\resources\\profiles\\BBL\\machine\\Bambu Lab P1S 0.4 nozzle template machine_start_gcode.json": "ba5fa982179abd2c7c893e643be2fd91377a042368aa609420690f819cd4bbc0",
+    "C:\\Program Files\\Bambu Studio\\resources\\profiles\\BBL\\machine\\Bambu Lab P1S 0.4 nozzle template machine_end_gcode.json": "71d15baae3109651565caa6a41ab1b546f1f3a579e2b82a3e49139ed0319ebfa",
+    "C:\\Program Files\\Bambu Studio\\resources\\profiles\\BBL\\machine\\Bambu Lab P1S 0.4 nozzle template time_lapse_gcode.json": "fe558ba9c89711cda6b7179689da9ffe279e87a432bcb947f05e1037652ccdb3",
+    "C:\\Program Files\\Bambu Studio\\resources\\profiles\\BBL\\machine\\Bambu Lab P1S 0.4 nozzle template change_filament_gcode.json": "d51462ed02f2ef075bc73463aa98a9bcba340331a3c814431e5dc78926926d41",
+    "C:\\Program Files\\Bambu Studio\\resources\\profiles\\BBL\\machine\\Bambu Lab P1S 0.4 nozzle template layer_change_gcode.json": "88fd5f1a0d71e737966d8b411c03c8735b6f9b5a762726c017b6fb5b9f66f542",
+    "C:\\Program Files\\Bambu Studio\\resources\\profiles\\BBL\\process\\0.20mm Standard @BBL X1C.json": "9cfd44e7378d6fed4b3507e6bd01d618662837bf1cce9a1a0bc30f8b89454512",
+    "C:\\Program Files\\Bambu Studio\\resources\\profiles\\BBL\\process\\fdm_process_single_0.20.json": "dc32f236bb0ae0d19560954a1beb87701dac4db85877f5f7c92b3a67315431c5",
+    "C:\\Program Files\\Bambu Studio\\resources\\profiles\\BBL\\process\\fdm_process_single_common.json": "b589e22e3a9f3513dd71d0a1061181c6f24a2e330b73b1cf7f63a292d7d6a37b",
+    "C:\\Program Files\\Bambu Studio\\resources\\profiles\\BBL\\process\\fdm_process_common.json": "ff2c0e49a424f70319e52eff6e84c57604b5b86deb883bb4d5614ff448d0c107",
+    "C:\\Program Files\\Bambu Studio\\resources\\profiles\\BBL\\filament\\Generic PETG.json": "ab46eb25d4c8ce37a2505644c1fe6ef183f91a24a27a6e35e91d462870b58e0c",
+    "C:\\Program Files\\Bambu Studio\\resources\\profiles\\BBL\\filament\\Generic PETG @base.json": "cae86cd8a45f7baed08206f0863045e99ab638894a39d118f7c77da9eb5ba82d",
+    "C:\\Program Files\\Bambu Studio\\resources\\profiles\\BBL\\filament\\fdm_filament_pet.json": "33ce64c25a626455eecf244ddd2e75022c08f95a074ba0d1690ab63802fab9d7",
+    "C:\\Program Files\\Bambu Studio\\resources\\profiles\\BBL\\filament\\fdm_filament_common.json": "55573eb37c4031a58e939c4a2c281d62e234192509cac525d4f8d911e8a85c09"
+  },
+  "generated_profile_sha256": {
+    "machine": "7ba23f587723c06eb306c3d1acaf1090083b30955fd5772f33904d37e4592ecc",
+    "process": "1f763f25617592733333bb4dd6c547067aef3c5d26277420e98befdcd3ab8518",
+    "filament": "00ef33c3dee9510b0eed56e565a603949bea4f800d6964b19a177e7c7a7929a8"
+  }
+}

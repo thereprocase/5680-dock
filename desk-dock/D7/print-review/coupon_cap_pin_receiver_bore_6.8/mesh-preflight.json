@@ -1,0 +1,42 @@
+{
+  "source": "D:\\Code\\Modeling\\dell-5560-wall-mount\\desk-dock\\D7\\print\\coupon_cap_pin_receiver_bore_6.8.stl",
+  "source_sha256": "3e9dbb2cfb47f918c9595b87cf7e3c42cf9fb08aff03e3b6c35bca75f8450f08",
+  "watertight": true,
+  "part_size_mm": [
+    14.0,
+    13.995648384094238,
+    8.0
+  ],
+  "translation_mm": [
+    128.0,
+    138.0,
+    -0.0
+  ],
+  "placed_bounds_mm": [
+    [
+      121.0,
+      131.00217580795288,
+      0.0
+    ],
+    [
+      135.0,
+      144.99782419204712,
+      8.0
+    ]
+  ],
+  "conservative_brim_bounds_mm": [
+    113.0,
+    123.00217580795288,
+    143.0,
+    152.99782419204712
+  ],
+  "bed_and_exclusion_pass": true,
+  "brim_mm": 8,
+  "orientation": "CAD export orientation preserved",
+  "overhang_angle_screen": {
+    "method": "Downward-facing triangles steeper than a 45-degree printable wall, above the first 0.4 mm. Angle screening alone cannot establish support requirements or bridge anchoring.",
+    "candidate_area_mm2": 0.0,
+    "candidate_triangle_count": 0,
+    "largest_candidate_triangles": []
+  }
+}

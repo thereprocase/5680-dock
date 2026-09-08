@@ -1,0 +1,19 @@
+{
+  "bearing_contacts": [
+    {
+      "name": "lid_bearing_liner_1",
+      "lid_gap_mm": 0.0,
+      "backing_gap_mm": 0.0,
+      "overlap_mm3": 0.0
+    },
+    {
+      "name": "lid_bearing_liner_2",
+      "lid_gap_mm": 0.0,
+      "backing_gap_mm": 0.0,
+      "overlap_mm3": 0.0
+    }
+  ],
+  "intake_screen_blockage_mm3": 0.0,
+  "rib_net_free_fraction": 1.0,
+  "scope": "Nominal geometry only. Added stand has no structure over the intake window; excludes OEM grille solidity. Direct plenum contact checked; no claim of passive self-centering, strength or friction qualification."
+}
