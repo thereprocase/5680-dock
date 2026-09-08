@@ -1,5 +1,10 @@
 # Laptop wall mount — Minimalist M1 and ducted Rev H
 
+**New independent concept:** [Precision 5680 slide-in desk dock](desk-dock/README.md)
+captures an SD25TB5 host plug for sideways docking in an upright trough.
+D0 includes editable parameters, a review STEP and CAD overview; physical
+interface measurements are required before a printable mating design.
+
 Two independent prototypes: **Minimalist M1** uses lighter open arms and fan
 cradles with an optional indexed airflow dam; **Rev H** preserves the ducted
 prototype and its already-printed arms. Future ducted revisions can change the

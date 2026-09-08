@@ -1,0 +1,15 @@
+{
+  "status": "CONCEPT ONLY — unmeasured mating geometry; not a print release",
+  "laptop_width": 353.68,
+  "laptop_depth": 240.33,
+  "laptop_thickness": 26.17,
+  "support_z": 20.0,
+  "port_height_from_front_edge": 185.0,
+  "port_offset_from_midplane": 0.0,
+  "plug_body_length": 30.0,
+  "plug_body_width": 14.0,
+  "plug_body_height": 10.0,
+  "withdrawal_travel": 18.0,
+  "guide_clearance_per_face": 0.4,
+  "notes": "Thickness uses larger conflicting Dell envelope for visualization. Port position and plug dimensions are placeholders, NOT measured estimates. All dimensions mm."
+}
