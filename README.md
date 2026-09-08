@@ -10,6 +10,14 @@ The assembly uses side-printed ASA brackets, 45° fan modules, keyed CA joints a
 
 [STEP assembly](Precision_5560_Wall_Mount.step) · [Print files](print_ready/) · [Assembly guide](P1S_ASA_Print_Guide.md) · [Engineering report](ENGINEERING_REPORT.md) · [Reproduction steps](PROCESS.md)
 
+## Installed airflow: 3D simulation drawing package
+
+[**Seven-sheet A3 technical review**](docs/simulation/installed-airflow-2026-09-07/) covers the installed mount, traced laptop envelope, internal surrogate ducts and four idealized fans. It includes isometric and orthographic views, velocity and pressure sections, mesh details and convergence evidence.
+
+[View the PDF](docs/simulation/installed-airflow-2026-09-07/Precision_5560_CFD_Technical_Review.pdf) · [Download the PDF and individual sheets](https://github.com/thereprocase/dell-5560-wall-mount/raw/refs/heads/onshape-native-rebuild/docs/simulation/installed-airflow-2026-09-07/Precision_5560_CFD_Drawing_Package.zip)
+
+This newer 3D exploration is separate from the sealed 2D slot comparison below. The 836,278-cell run reached 1,200 iterations but did not meet the residual convergence target. Fan forcing is assumed; no thermal prediction or measured cooling performance is claimed.
+
 ## 1. Define fit and access
 
 > “The hinge will go up so that the hot air escapes up and the fans can go on the bottom…”
