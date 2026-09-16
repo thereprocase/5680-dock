@@ -2,10 +2,10 @@
   "coordinate_frame": {
     "x": "Positive from keyboard-left/plug end (x=0) toward keyboard-right end (x=353.68). Plug appears screen-right in a lid-facing view.",
     "y": "Positive toward lid/user/fans; negative toward underside/intake.",
-    "z": "Positive up from retained desk datum; D8 integral shell feet terminate at z=-2 and separate desk pads extend to z=-5 mm.",
+    "z": "Positive up from retained desk datum; bare printed feet/perimeter terminate at z=-5 mm, with 1.5 mm cover-lock clearance. Optional 3 mm grip pads extend to z=-8.",
     "construction": "Preserve Dell source handedness; translation then rigid lean, no reflection. Plug X position stays fixed; chassis stop adjusts along X. Laptop docks along -X."
   },
-  "scope": "D8 removable adjustable connector and direct-foot plenum study. End seats and lid liners support the laptop; no tall cheeks or underside frame. Source-handed USB-C ports. Physical qualification remains outstanding.",
+  "scope": "D8 removable adjustable connector and direct-foot plenum study. Integral end seats, intermediate hinge bearings and lid lands support the laptop directly; no tall cheeks or underside frame. Source-handed USB-C ports. Physical qualification remains outstanding.",
   "parts": [
     {
       "name": "01_fan_guard_retainer",
@@ -317,110 +317,6 @@
         307.58416699450885,
         76.352011785866,
         62.830061622899805
-      ]
-    },
-    {
-      "name": "corner_pad_far",
-      "reference": false,
-      "volume_mm3": 51.29999999999916,
-      "bounds_mm": [
-        6.0,
-        -2.375690796383394,
-        53.5046055348104,
-        25.0,
-        6.506039127571767,
-        56.804137091633166
-      ]
-    },
-    {
-      "name": "corner_pad_near",
-      "reference": false,
-      "volume_mm3": 75.59999999999872,
-      "bounds_mm": [
-        345.68,
-        -2.375690796383394,
-        53.5046055348104,
-        373.68,
-        6.506039127571767,
-        56.804137091633166
-      ]
-    },
-    {
-      "name": "lid_bearing_liner_1",
-      "reference": false,
-      "volume_mm3": 2683.199999999998,
-      "bounds_mm": [
-        41.0,
-        12.785933083300163,
-        72.90547910782853,
-        127.0,
-        17.915748525033436,
-        124.7598968542479
-      ]
-    },
-    {
-      "name": "lid_bearing_liner_2",
-      "reference": false,
-      "volume_mm3": 2683.199999999998,
-      "bounds_mm": [
-        226.68,
-        12.785933083300163,
-        72.90547910782853,
-        312.68,
-        17.915748525033436,
-        124.7598968542479
-      ]
-    },
-    {
-      "name": "hinge_seal_42.0_-11.335",
-      "reference": false,
-      "volume_mm3": 290.82239999999945,
-      "bounds_mm": [
-        42.0,
-        -11.640489873860568,
-        50.95083810602913,
-        176.64000000000001,
-        -10.72901238111395,
-        54.58943246480801
-      ]
-    },
-    {
-      "name": "hinge_seal_177.3_-11.335",
-      "reference": false,
-      "volume_mm3": 329.0543999999994,
-      "bounds_mm": [
-        177.34,
-        -11.640489873860568,
-        50.95083810602913,
-        329.68,
-        -10.72901238111395,
-        54.58943246480801
-      ]
-    },
-    {
-      "name": "hinge_seal_42.0_11.0",
-      "reference": false,
-      "volume_mm3": 630.1152000000005,
-      "bounds_mm": [
-        42.0,
-        11.0,
-        50.0,
-        176.64000000000001,
-        12.3,
-        53.6
-      ]
-    },
-    {
-      "name": "hinge_seal_177.3_11.0",
-      "reference": false,
-      "volume_mm3": 712.9512000000004,
-      "bounds_mm": [
-        177.34,
-        11.0,
-        50.0,
-        329.68,
-        12.3,
-        53.6
       ]
     },
     {
@@ -801,84 +697,6 @@
       ]
     },
     {
-      "name": "hinge_bearing_liner_1_1",
-      "reference": false,
-      "volume_mm3": 9.420000000000044,
-      "bounds_mm": [
-        72.71,
-        -1.6699131480171556,
-        57.16298592645351,
-        76.71000000000001,
-        6.325791159541106,
-        58.1590902778623
-      ]
-    },
-    {
-      "name": "hinge_bearing_liner_1_2",
-      "reference": false,
-      "volume_mm3": 9.419999999999996,
-      "bounds_mm": [
-        105.42,
-        -1.6699131480171556,
-        57.16298592645351,
-        109.42,
-        6.325791159541106,
-        58.1590902778623
-      ]
-    },
-    {
-      "name": "hinge_bearing_liner_1_3",
-      "reference": false,
-      "volume_mm3": 9.419999999999952,
-      "bounds_mm": [
-        138.13,
-        -1.6699131480171556,
-        57.16298592645351,
-        142.13,
-        6.325791159541106,
-        58.1590902778623
-      ]
-    },
-    {
-      "name": "hinge_bearing_liner_2_1",
-      "reference": false,
-      "volume_mm3": 9.419999999999881,
-      "bounds_mm": [
-        216.275,
-        -1.6699131480171556,
-        57.16298592645351,
-        220.275,
-        6.325791159541106,
-        58.1590902778623
-      ]
-    },
-    {
-      "name": "hinge_bearing_liner_2_2",
-      "reference": false,
-      "volume_mm3": 9.419999999999947,
-      "bounds_mm": [
-        253.41000000000003,
-        -1.6699131480171556,
-        57.16298592645351,
-        257.41,
-        6.325791159541106,
-        58.15909027786231
-      ]
-    },
-    {
-      "name": "hinge_bearing_liner_2_3",
-      "reference": false,
-      "volume_mm3": 9.420000000000043,
-      "bounds_mm": [
-        290.545,
-        -1.6699131480171556,
-        57.16298592645351,
-        294.545,
-        6.325791159541106,
-        58.15909027786231
-      ]
-    },
-    {
       "name": "01_bottom_thumb_lock_1",
       "reference": false,
       "volume_mm3": 1555.1264385729085,
@@ -906,54 +724,54 @@
     },
     {
       "name": "01_desk_pad_1_1",
-      "reference": false,
+      "reference": true,
       "volume_mm3": 421.6991118430775,
       "bounds_mm": [
         -7.0,
         -24.0,
-        -5.0,
+        -8.0,
         5.0,
         -12.0,
-        -2.0
+        -5.0
       ]
     },
     {
       "name": "01_desk_pad_1_2",
-      "reference": false,
+      "reference": true,
       "volume_mm3": 421.69911184307756,
       "bounds_mm": [
         -7.0,
         60.43349235828353,
-        -5.0,
+        -8.0,
         5.0,
         72.43349235828353,
-        -2.0
+        -5.0
       ]
     },
     {
       "name": "01_desk_pad_2_1",
-      "reference": false,
+      "reference": true,
       "volume_mm3": 421.6991118430775,
       "bounds_mm": [
         164.84,
         -24.0,
-        -5.0,
+        -8.0,
         176.84,
         -12.0,
-        -2.0
+        -5.0
       ]
     },
     {
       "name": "01_desk_pad_2_2",
-      "reference": false,
+      "reference": true,
       "volume_mm3": 421.69911184307756,
       "bounds_mm": [
         164.84,
         60.43349235828353,
-        -5.0,
+        -8.0,
         176.84,
         72.43349235828353,
-        -2.0
+        -5.0
       ]
     },
     {
@@ -997,54 +815,54 @@
     },
     {
       "name": "02_desk_pad_1_1",
-      "reference": false,
+      "reference": true,
       "volume_mm3": 421.6991118430775,
       "bounds_mm": [
         177.14000000000001,
         -24.0,
-        -5.0,
+        -8.0,
         189.14000000000001,
         -12.0,
-        -2.0
+        -5.0
       ]
     },
     {
       "name": "02_desk_pad_1_2",
-      "reference": false,
+      "reference": true,
       "volume_mm3": 421.69911184307756,
       "bounds_mm": [
         177.14000000000001,
         60.43349235828353,
-        -5.0,
+        -8.0,
         189.14000000000001,
         72.43349235828353,
-        -2.0
+        -5.0
       ]
     },
     {
       "name": "02_desk_pad_2_1",
-      "reference": false,
+      "reference": true,
       "volume_mm3": 421.6991118430775,
       "bounds_mm": [
         366.68,
         -24.0,
-        -5.0,
+        -8.0,
         378.68,
         -12.0,
-        -2.0
+        -5.0
       ]
     },
     {
       "name": "02_desk_pad_2_2",
-      "reference": false,
+      "reference": true,
       "volume_mm3": 421.69911184307756,
       "bounds_mm": [
         366.68,
         60.43349235828353,
-        -5.0,
+        -8.0,
         378.68,
         72.43349235828353,
-        -2.0
+        -5.0
       ]
     },
     {
@@ -1141,11 +959,11 @@
     {
       "name": "01_manifold_with_cradle",
       "reference": false,
-      "volume_mm3": 263122.68889033917,
+      "volume_mm3": 270864.9063083625,
       "bounds_mm": [
         -16.0,
         -24.005738064720475,
-        -2.0000000000000004,
+        -5.0,
         176.84,
         111.01636013767029,
         143.46689994995054
@@ -1154,11 +972,11 @@
     {
       "name": "02_manifold_with_cradle",
       "reference": false,
-      "volume_mm3": 259745.97010551672,
+      "volume_mm3": 267767.3675248961,
       "bounds_mm": [
         177.14000000000001,
         -24.005738064720475,
-        -2.0000000000000004,
+        -5.0,
         378.68000000000006,
         111.0163601376703,
         143.46689994995054

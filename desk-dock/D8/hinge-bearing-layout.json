@@ -5,9 +5,8 @@
     "x_mm": 74.71000000000001,
     "bridge_width_mm": 6.0,
     "contact_top_local_z_mm": 58.0,
-    "liner_thickness_mm": 0.3,
+    "contact_material": "Printed shell, no liner",
     "sliding_chamfer_mm": 1.0,
-    "liner_chamfer_mm": 0.15,
     "structural_part": "01_hinge_bridge_1"
   },
   {
@@ -16,9 +15,8 @@
     "x_mm": 107.42,
     "bridge_width_mm": 6.0,
     "contact_top_local_z_mm": 58.0,
-    "liner_thickness_mm": 0.3,
+    "contact_material": "Printed shell, no liner",
     "sliding_chamfer_mm": 1.0,
-    "liner_chamfer_mm": 0.15,
     "structural_part": "01_hinge_bridge_2"
   },
   {
@@ -27,9 +25,8 @@
     "x_mm": 140.13,
     "bridge_width_mm": 6.0,
     "contact_top_local_z_mm": 58.0,
-    "liner_thickness_mm": 0.3,
+    "contact_material": "Printed shell, no liner",
     "sliding_chamfer_mm": 1.0,
-    "liner_chamfer_mm": 0.15,
     "structural_part": "01_hinge_bridge_3"
   },
   {
@@ -38,9 +35,8 @@
     "x_mm": 218.275,
     "bridge_width_mm": 6.0,
     "contact_top_local_z_mm": 58.0,
-    "liner_thickness_mm": 0.3,
+    "contact_material": "Printed shell, no liner",
     "sliding_chamfer_mm": 1.0,
-    "liner_chamfer_mm": 0.15,
     "structural_part": "02_hinge_bridge_1"
   },
   {
@@ -49,9 +45,8 @@
     "x_mm": 255.41000000000003,
     "bridge_width_mm": 6.0,
     "contact_top_local_z_mm": 58.0,
-    "liner_thickness_mm": 0.3,
+    "contact_material": "Printed shell, no liner",
     "sliding_chamfer_mm": 1.0,
-    "liner_chamfer_mm": 0.15,
     "structural_part": "02_hinge_bridge_2"
   },
   {
@@ -60,9 +55,8 @@
     "x_mm": 292.545,
     "bridge_width_mm": 6.0,
     "contact_top_local_z_mm": 58.0,
-    "liner_thickness_mm": 0.3,
+    "contact_material": "Printed shell, no liner",
     "sliding_chamfer_mm": 1.0,
-    "liner_chamfer_mm": 0.15,
     "structural_part": "02_hinge_bridge_3"
   }
 ]

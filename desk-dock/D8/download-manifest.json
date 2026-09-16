@@ -3,16 +3,16 @@
   "notice": "Print/source and STEP are separate downloads; no approved P1S machine jobs.",
   "print_source": {
     "file": "Precision_5680_D8_Review.zip",
-    "bytes": 8610581,
-    "sha256": "df2692825c2997cc208a953748d653623749f07522b55263ab64536ff753d9bf",
-    "members": 101,
+    "bytes": 8605475,
+    "sha256": "57eea28b941d00e044d13e633a492c43a0ee5827d4e849d9c4cda5acd17bcc42",
+    "members": 102,
     "member_hashes_verified": true,
     "print_meshes": 43
   },
   "step": {
     "file": "Precision_5680_D8_STEP.zip",
-    "bytes": 6741136,
-    "sha256": "c66e9a05014627daa70e47847aec8e338e62ae326ad6d296fe8268fb1370372c",
-    "extracted_sha256": "c0683818c94cf27d1c394db12d9c306d41ccaa280c91b6f30e6f36ca0226418c"
+    "bytes": 6632598,
+    "sha256": "33c066e446adb3943c903238d0b1793d159245519c971ea48ebeb1a3b1fd6722",
+    "extracted_sha256": "7ec1a799fe42440c60975715fa4efa842fe06ea5edd2f2eac8d4e4c39cd49404"
   }
 }

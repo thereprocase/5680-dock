@@ -6,11 +6,13 @@ Download the complete [STEP archive](Precision_5680_D8_STEP.zip), the [print and
 
 ## What changes
 
-- **Chamfered intermediate hinge bearings.** Six integral bridges support the straight hinge edge at quarter intervals of each opening. Both sliding directions have 1 mm lead-in chamfers and beveled 0.3 mm liners. See [the update and fresh checks](HINGE_BEARINGS.md).
+The latest [direct-contact revision](DIRECT_CONTACTS.md) removes 14 separate liners/seals and makes the printed feet usable without pads. Printed screws and fan mounting holes are retained.
+
+- **Chamfered intermediate hinge bearings.** Six integral bridges support the straight hinge edge at quarter intervals of each opening. Both sliding directions have 1 mm lead-in chamfers. The bearings, end seats and lid lands contact the laptop directly, with no liners or hinge seals. See [the update and fresh checks](HINGE_BEARINGS.md).
 
 - **A removable connector module.** Only its keyed mounting shoe belongs to the left shell. Two accessible 8 mm printed hand screws release the complete module, including the cable holder and separate laptop-stop bracket. The keys and broad seat transmit thrust; the screws clamp the joint.
 - **Real live adjustment.** The same Z saddle slides −4 to +5 mm; the same cable cradle slides ±3 mm in Y. Two Z locks and one Y lock secure them. The separate threaded laptop stop adjusts ±4 mm in X. No temporary fitting jig, replacement height shim or newly printed calibration plate sets the cable position. The historical `X_depth_overmold_clamp` name is retained, but this part now slides in Y and is positively restrained in X.
-- **Gravity through the shell perimeter.** Four integral corner feet on each shell connect to its walls. Separate 3 mm desk pads meet the desk. The bottom covers clear these feet and carry service handling, not laptop weight.
+- **Gravity through the shell perimeter.** Four integral corner feet on each shell connect to its walls. The printed feet work directly on the desk, with 1.5 mm cover-screw clearance. Separate 3 mm grip pads are optional. The bottom covers clear these feet and carry service handling, not laptop weight.
 - **Thin removable covers.** A 2 mm skin, perimeter overlap and three shallow ribs replace the heavy cover construction. Compact ring bosses and wall webs replace four large solid fastening blocks per shell.
 - **Flat grilles and separate clips.** The grille's tall return becomes two small replaceable clips. Their flexible leaves print in the layer plane. A 121.5 mm pocket and 27.8 mm axial envelope accept the researched fan sizes with deliberate printing clearance. No full fan gasket is specified. See [fan fit](FAN_FIT.md).
 - **Explicit print poses.** Every production STL has a chosen bed face and load-orientation note. The shells print upright on a continuous lower perimeter. Sparse 1.6 mm gusset ribs give the low duct roofs bridge landings at 10 mm pitch, outside the mouths; the six new bearing bridges cross the openings. Fan rails have 45° lower ramps; the connector brace has internal haunches reducing its roof bridge to 8 mm. The old spring stand-offs are separate end-printed spacers. Springs and clips export in their unloaded shape.
@@ -19,7 +21,7 @@ Download the complete [STEP archive](Precision_5680_D8_STEP.zip), the [print and
 
 ## Assembly and adjustment
 
-Seat and join the two shells with the existing bridge keys and hand locks. Apply the desk pads. Fit fans, slide the flat grilles into their rails and install the top clips. Lay fan leads in the existing edge routes and close the bottom panels. Keep wiring out of the fan swept volumes.
+Seat and join the two shells with the existing bridge keys and hand locks. Add optional desk-grip pads only if wanted. Fit fans, slide the flat grilles into their rails and install the top clips. Lay fan leads in the existing edge routes and close the bottom panels. Keep wiring out of the fan swept volumes.
 
 With the laptop unloaded, engage the connector module's keys in the shell shoe and install its two hand screws. Fit the independent stop bracket, existing face-cam hardware, cable cradle, cable and cap. Keep a loose cable loop behind the module.
 
@@ -50,7 +52,7 @@ Regeneration writes the uncompressed STEP locally. When republishing regenerated
 
 See [CURRENT_STATUS.md](CURRENT_STATUS.md) for the final measured mass, current checks and remaining gates. The [public viewer](https://thereprocase.github.io/5680-dock/desk-dock.html) now uses D8 geometry. The archived D7 viewer and archive retain D7.
 
-The chamfered-bearing update passes 89-solid assembly checks and all 43 mesh preflights. The previous 42-part PETG deposited-path screen and **1.659 kg** estimate predate the added bridges. Re-slice the changed shells in OrcaSlicer; final support choices, material use and physical strength remain unqualified. See [the bearing revision](HINGE_BEARINGS.md).
+The chamfered-bearing update passes 75-solid assembly checks (including eight optional desk-pad references) and all 43 mesh preflights. The previous 42-part PETG deposited-path screen and **1.659 kg** estimate predate the added bridges. Re-slice the changed shells in OrcaSlicer; final support choices, material use and physical strength remain unqualified. See [the bearing revision](HINGE_BEARINGS.md).
 
 The female thread cutter includes a documented 0.045 mm additional minor-radius relief to avoid a CAD-kernel degeneracy. Major and crest clearances stay unchanged. The partial-thread screws use a tapered runout that exports as a closed mesh. See the hashed checks in [review-evidence](review-evidence/). Reprint thread fit samples for D8; D7 coupon fit does not validate this updated female root.
 

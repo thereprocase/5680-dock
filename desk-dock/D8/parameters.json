@@ -41,7 +41,7 @@
   "coordinate_frame": {
     "x": "Positive from keyboard-left/plug end (x=0) toward keyboard-right end (x=353.68). Plug appears screen-right in a lid-facing view.",
     "y": "Positive toward lid/user/fans; negative toward underside/intake.",
-    "z": "Positive up from retained desk datum; D8 integral shell feet terminate at z=-2 and separate desk pads extend to z=-5 mm.",
+    "z": "Positive up from retained desk datum; bare printed feet/perimeter terminate at z=-5 mm, with 1.5 mm cover-lock clearance. Optional 3 mm grip pads extend to z=-8.",
     "construction": "Preserve Dell source handedness; translation then rigid lean, no reflection. Plug X position stays fixed; chassis stop adjusts along X. Laptop docks along -X."
   },
   "docking_travel_direction": "-X",
@@ -63,7 +63,7 @@
   "guide_fit_clearance_per_face_mm": 0.25,
   "laptop_lean_deg": 5,
   "underside_net_free_area_target": 0.8,
-  "contact_scheme": "Profiled end seats plus six intermediate straight-hinge bearings carry weight. Three integral bridges per mouth at quarter intervals; 0.3 mm replaceable soft pads. Original lid liners and retention lip retained.",
+  "contact_scheme": "Direct printed profiled end seats, six chamfered intermediate hinge bearings and integral lid lands support the laptop. No contact liners or hinge seals. Integral flat feet work without optional desk-grip pads.",
   "cassette_adjustment": "Live Y/Z sliding stages with printed hand locks; X engagement set by independent chassis stop. No calibration jig or reprinted shims.",
   "print_material": "PETG",
   "printer": "Bambu Lab P1S",
@@ -130,9 +130,7 @@
       6.0
     ],
     "straight_edge_offset_mm": 4.0,
-    "liner_thickness_mm": 0.3,
     "datum_note": "Matches central straight hinge relief of the existing D8 reference; verify against physical laptop.",
-    "sliding_chamfer_mm": 1.0,
-    "liner_chamfer_mm": 0.15
+    "sliding_chamfer_mm": 1.0
   }
 }

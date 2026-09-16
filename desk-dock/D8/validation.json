@@ -16,7 +16,7 @@
       "pad_thickness_mm": 0.0
     }
   },
-  "cache_part_count": 89,
+  "cache_part_count": 75,
   "cache_part_validity": [
     {
       "name": "01_fan_guard_retainer",
@@ -185,62 +185,6 @@
       "valid": true,
       "solids": 1,
       "volume_mm3": 1115.352082350958
-    },
-    {
-      "name": "corner_pad_far",
-      "reference": false,
-      "valid": true,
-      "solids": 1,
-      "volume_mm3": 51.29999999999916
-    },
-    {
-      "name": "corner_pad_near",
-      "reference": false,
-      "valid": true,
-      "solids": 1,
-      "volume_mm3": 75.59999999999877
-    },
-    {
-      "name": "lid_bearing_liner_1",
-      "reference": false,
-      "valid": true,
-      "solids": 1,
-      "volume_mm3": 2683.199999999998
-    },
-    {
-      "name": "lid_bearing_liner_2",
-      "reference": false,
-      "valid": true,
-      "solids": 1,
-      "volume_mm3": 2683.199999999998
-    },
-    {
-      "name": "hinge_seal_42.0_-11.335",
-      "reference": false,
-      "valid": true,
-      "solids": 1,
-      "volume_mm3": 290.82239999999945
-    },
-    {
-      "name": "hinge_seal_177.3_-11.335",
-      "reference": false,
-      "valid": true,
-      "solids": 1,
-      "volume_mm3": 329.0543999999994
-    },
-    {
-      "name": "hinge_seal_42.0_11.0",
-      "reference": false,
-      "valid": true,
-      "solids": 1,
-      "volume_mm3": 630.1152000000004
-    },
-    {
-      "name": "hinge_seal_177.3_11.0",
-      "reference": false,
-      "valid": true,
-      "solids": 1,
-      "volume_mm3": 712.9512000000004
     },
     {
       "name": "breakaway_carrier",
@@ -446,48 +390,6 @@
       "volume_mm3": 150.91361463545533
     },
     {
-      "name": "hinge_bearing_liner_1_1",
-      "reference": false,
-      "valid": true,
-      "solids": 1,
-      "volume_mm3": 9.42000000000003
-    },
-    {
-      "name": "hinge_bearing_liner_1_2",
-      "reference": false,
-      "valid": true,
-      "solids": 1,
-      "volume_mm3": 9.420000000000023
-    },
-    {
-      "name": "hinge_bearing_liner_1_3",
-      "reference": false,
-      "valid": true,
-      "solids": 1,
-      "volume_mm3": 9.41999999999998
-    },
-    {
-      "name": "hinge_bearing_liner_2_1",
-      "reference": false,
-      "valid": true,
-      "solids": 1,
-      "volume_mm3": 9.419999999999874
-    },
-    {
-      "name": "hinge_bearing_liner_2_2",
-      "reference": false,
-      "valid": true,
-      "solids": 1,
-      "volume_mm3": 9.419999999999956
-    },
-    {
-      "name": "hinge_bearing_liner_2_3",
-      "reference": false,
-      "valid": true,
-      "solids": 1,
-      "volume_mm3": 9.420000000000032
-    },
-    {
       "name": "01_bottom_thumb_lock_1",
       "reference": false,
       "valid": true,
@@ -503,28 +405,28 @@
     },
     {
       "name": "01_desk_pad_1_1",
-      "reference": false,
+      "reference": true,
       "valid": true,
       "solids": 1,
       "volume_mm3": 421.6991118430774
     },
     {
       "name": "01_desk_pad_1_2",
-      "reference": false,
+      "reference": true,
       "valid": true,
       "solids": 1,
       "volume_mm3": 421.69911184307745
     },
     {
       "name": "01_desk_pad_2_1",
-      "reference": false,
+      "reference": true,
       "valid": true,
       "solids": 1,
       "volume_mm3": 421.6991118430774
     },
     {
       "name": "01_desk_pad_2_2",
-      "reference": false,
+      "reference": true,
       "valid": true,
       "solids": 1,
       "volume_mm3": 421.69911184307745
@@ -552,28 +454,28 @@
     },
     {
       "name": "02_desk_pad_1_1",
-      "reference": false,
+      "reference": true,
       "valid": true,
       "solids": 1,
       "volume_mm3": 421.6991118430774
     },
     {
       "name": "02_desk_pad_1_2",
-      "reference": false,
+      "reference": true,
       "valid": true,
       "solids": 1,
       "volume_mm3": 421.69911184307745
     },
     {
       "name": "02_desk_pad_2_1",
-      "reference": false,
+      "reference": true,
       "valid": true,
       "solids": 1,
       "volume_mm3": 421.6991118430774
     },
     {
       "name": "02_desk_pad_2_2",
-      "reference": false,
+      "reference": true,
       "valid": true,
       "solids": 1,
       "volume_mm3": 421.69911184307745
@@ -632,34 +534,20 @@
       "reference": false,
       "valid": true,
       "solids": 1,
-      "volume_mm3": 263122.6888903395
+      "volume_mm3": 270864.90630836284
     },
     {
       "name": "02_manifold_with_cradle",
       "reference": false,
       "valid": true,
       "solids": 1,
-      "volume_mm3": 259745.97010551748
+      "volume_mm3": 267767.3675248968
     }
   ],
   "rigid_pair_count": 1701,
   "omitted_reference_reference_pair_count": 190,
   "excluded_soft_parts": [
-    "corner_pad_far",
-    "corner_pad_near",
-    "lid_bearing_liner_1",
-    "lid_bearing_liner_2",
-    "hinge_seal_42.0_-11.335",
-    "hinge_seal_177.3_-11.335",
-    "hinge_seal_42.0_11.0",
-    "hinge_seal_177.3_11.0",
     "stop_soft_tip",
-    "hinge_bearing_liner_1_1",
-    "hinge_bearing_liner_1_2",
-    "hinge_bearing_liner_1_3",
-    "hinge_bearing_liner_2_1",
-    "hinge_bearing_liner_2_2",
-    "hinge_bearing_liner_2_3",
     "01_desk_pad_1_1",
     "01_desk_pad_1_2",
     "01_desk_pad_2_1",
@@ -1152,15 +1040,15 @@
   "geometry_errors": [],
   "numerical_intersection_threshold_mm3": 0.01,
   "provenance": {
-    "cache_directory": "C:\\Users\\kbnelson\\Documents\\Codex\\2026-09-16\\https-github-com-thereprocase-5680-dock\\work\\final-cache",
+    "cache_directory": "C:\\Users\\kbnelson\\Documents\\Codex\\2026-09-16\\https-github-com-thereprocase-5680-dock\\work\\direct-cache",
     "input_sha256": {
-      "parameters.json": "48a80163327a1f8db4f0659f14a08f4685434a46cf88c2b47d89616c42170408",
+      "parameters.json": "3dc1904fdb383491c3fc7780bf5304487d9f79a1df84eb06ff247af674097cfc",
       "contact-profiles.json": "aa02aa10e52958e60c83230b141927807b6b04b000babc8a98ee0865c241bfdc",
       "port-study.json": "eb484763342fc2eef1e0c31727f123ea17a7ea41c65d0c9ad65f63bcd77c127f",
-      "validate.py": "bd879f2047e2af24a29fb7452339eb2c1b0d682ab292fe016accff5a3d34b717"
+      "validate.py": "4f3938b73c79dfcc6d8913c2dc96527401cb33bfdafc648108798ff0f9842d24"
     },
     "cache_sha256": {
-      "parts.json": "ec416d3501999d819332cad6baaf5ed5ac3374733e6669e5d4bf8866dd9ca4df",
+      "parts.json": "f3c37e0d625abd4096d3d57fcfa240ae6266f3b154b6a525ec6575b71aebd936",
       "01_fan_guard_retainer.brep": "519022320c6bb18b3b749b2490c149a71e5e779910b5c16bc1535fdca26308ca",
       "01_fan_top_clip_1.brep": "ac7807fe4303265aaa43c9de348f8c24eb7e4f89ae636a145a74749f9cb35746",
       "01_fan_top_clip_2.brep": "00e8208114a5fc98b9b2a4f00f2cb3559177c3e18065fcd9bbf454836c1b2100",
@@ -1185,14 +1073,6 @@
       "02_blade_4.brep": "66b5ccca5c13d48973dabb6048ac352cd09adbb1a47e3ac5e1b63e430583301c",
       "02_blade_5.brep": "53dc4b7f8b0dae8e02db211e6eb5f6852a4edfc92b344b267657ee14dbaea050",
       "02_blade_6.brep": "43dd2ba824cdb327c67bf0033abceec39ac1a1c3aac35f5e4c6d2b9b21ea7115",
-      "corner_pad_far.brep": "9b8611c81373a6f1706614cad253041b85e0770305634fdaecc54e23aad3eb24",
-      "corner_pad_near.brep": "d2fb8944a2fe6bfefbd7aab027f6b1c5ff9a17ecc28948ef780429e56b771e51",
-      "lid_bearing_liner_1.brep": "31d6b253ed59bc9e0853a37849bbc281be6ea1b743b421ac8638a757fffb6d22",
-      "lid_bearing_liner_2.brep": "cd6e1cf935d67a35fb05cc44ac78706a78c72e31c0976c2d976136de2614a48c",
-      "hinge_seal_42.0_-11.335.brep": "95d9605d30888b77c4ca43a8f472ca8545e876bf4ff322682cc1758526be24f9",
-      "hinge_seal_177.3_-11.335.brep": "f0696c0ef2855534d20608af2e64c446c81e964d0a8bb782f57725c8e2dee401",
-      "hinge_seal_42.0_11.0.brep": "c4d1391b8b01e0e0300ce3838881b8c24a6816d15484c428d4b9e960e2005609",
-      "hinge_seal_177.3_11.0.brep": "8b6c62ae4a2709a80011c41df3d68f3bc7742041c836ee3e8eac4f1986b69ccd",
       "breakaway_carrier.brep": "852087f94a812d69fe524b07ee8bd0a89672839df1b0f1476a8bed3ca60dc600",
       "breakaway_pivot_pin_10mm.brep": "800edfb9138aa967a0ba3c3c2bd61e284387caa81459dd9331a3be4ec861a5e5",
       "breakaway_spring_cartridge.brep": "03b55a0ac9ae1158cdabdc8bf05346f5d7b6406a342042211dd6cb349b71d2d0",
@@ -1222,25 +1102,19 @@
       "RUBBER_FOOT_rear_strip.brep": "66348e50c4d00e4fab38bbb2474c494487f5a905da59819e0dcee063399991f1",
       "RUBBER_FOOT_front_left.brep": "66cf2a492e4e4aba71ffce57bdddd78102efdb847b5bfb22baff94358637ae1f",
       "RUBBER_FOOT_front_right.brep": "0f1f2debc783eb5997e704ea218c05cea9239ba8ebae9be278abe57d8f7a48cf",
-      "hinge_bearing_liner_1_1.brep": "f4277041f17595992e10df4e34cefd8d7708249e6d75f90f12e4b902a8b1d0eb",
-      "hinge_bearing_liner_1_2.brep": "d7264bfbea24470ddaf7aac8614a26ab07c12594fb04496f22bbd9c0ffa5e184",
-      "hinge_bearing_liner_1_3.brep": "20d80ef0d2142f637d11658d97bc6a2603d4794f622a4088603b4e44101e69d3",
-      "hinge_bearing_liner_2_1.brep": "29e4e3673b8ccf57fe8fb20eba6b09e6334d11d079dd41671969573edeb15a38",
-      "hinge_bearing_liner_2_2.brep": "53e8a808c05f115ccd44ca007114eb43be8fc1cbb82f6712811d0eed72b27bf3",
-      "hinge_bearing_liner_2_3.brep": "c844e31c27e052d7e7a4de0b21d6e2e09aed7cfd6ed39761b55767cc837a3343",
       "01_bottom_thumb_lock_1.brep": "9670fd293921373f99defb477fbc6323a93846a32476ff3e0729c0a0bc24e074",
       "01_bottom_thumb_lock_2.brep": "65ab7ab0031971810b09677165d08d2258a76ee329cf9284b60652b47c2c88ec",
-      "01_desk_pad_1_1.brep": "b8c68cfedd6bc35be6118e808a6a8c933af777dc85a42cfe387b0fabdfe5cd17",
-      "01_desk_pad_1_2.brep": "f32dfc26f13102332c968ba9e22c5b98e2b32f1db6c8dbd0dcb5bfe53296275a",
-      "01_desk_pad_2_1.brep": "7f9a4f52db814f025266eddf439d36f2d6e14275157628f03b73024694638a35",
-      "01_desk_pad_2_2.brep": "e98ff0c62dac67d6636af0adc6d9df3f87a4f6edbec7bc521bb41a989b1da726",
+      "01_desk_pad_1_1.brep": "1be3f58e90a8825237b46e700a57ae87c3fc7a82f109c217689278c1637d7226",
+      "01_desk_pad_1_2.brep": "53360a9913e9fe86e2a252181551c51b0b965f9b749b59c9c4d04bbf1faa92d2",
+      "01_desk_pad_2_1.brep": "33e8d628209e6b40a9aa2c350a8853ea71020d948b8b72e96178cdefd3e6e525",
+      "01_desk_pad_2_2.brep": "3549b91f6903775f35056c608b4d9b1fa1cca6850fc8538afdc7822ffb5d46e3",
       "01_bottom_panel.brep": "1b99ff39185e6092f0d624f342361c3f35b786c7ded1af5a0669ab63b218887d",
       "02_bottom_thumb_lock_1.brep": "1f2a2a0fca6bded8bd9f958a74a79177676899d638d7e14bd5e433a857092c9d",
       "02_bottom_thumb_lock_2.brep": "e26dde24fb3aadeb78ea0453623bbfcab052b24540a85ae15e21f1e16030b68b",
-      "02_desk_pad_1_1.brep": "26fee0478a9a60f9aa11021af8c4b420d822e4953b9a8b493d7b947432f07de4",
-      "02_desk_pad_1_2.brep": "8ad82c401530b0b6902cfc6f8d716f061761c7738d8c3ff1e72a00253b1a6b23",
-      "02_desk_pad_2_1.brep": "a526142832c41385fcb273a4d4074df141ed3b1ad5a09f8131fd17289f645159",
-      "02_desk_pad_2_2.brep": "98b645ece02c4a33e4298c4a0ae776cd08a68820234e5bcc74c00b90a2ab9b67",
+      "02_desk_pad_1_1.brep": "071b1e7c32a17cbad74aa6bd8b74c03016d32b412f8fed7c5e3d683f1b0eff3c",
+      "02_desk_pad_1_2.brep": "16db51631a7bc770c36b0c0234fc79cbe5da360913c5362905331f99ef2125b9",
+      "02_desk_pad_2_1.brep": "365f8cb4be96e71c4a62e9d81b880040894db74ccbe3e9e9ee76183a225d6d35",
+      "02_desk_pad_2_2.brep": "3ded1628316b9016432d282406d1a3cbbf8309fa5c68a853ffcac05d15c0d0f3",
       "02_bottom_panel.brep": "ddd9f4abc97ef5cf5ba45d40d6e6481bb51b9ecec22eec06b52b5d760843a55b",
       "01_bridge_thumb_lock_1.brep": "2dfb8230f7f8c5f84f51c74e6ada7d43adff0a80bfdd3816a1fe9b9b1b9eb07c",
       "02_bridge_thumb_lock_1.brep": "1fff1eb7b33b562557529323aa9699d7c50ec6a08a133d873f6b652b6d759028",
@@ -1248,8 +1122,8 @@
       "01_bridge_thumb_lock_2.brep": "4f6cec7dcf1ae0cf8113d3c97604e625b920a11973c02da04cf19f887cfd7b82",
       "02_bridge_thumb_lock_2.brep": "8a4ef469eff73973856bab1341dc55688cd8b64ff9f3f9dc3ab6d35dde3b869f",
       "bridge_key_2.brep": "d7a7a4654547ddf4a3ab74ee8486baf7f50328b561a0fcaa277ea35fd3386b5b",
-      "01_manifold_with_cradle.brep": "9303927071f1a80f3afce7b84fce7550f9b9fbf0e95d490fc23e2af57613e831",
-      "02_manifold_with_cradle.brep": "3dfb6afccc1dfe62a97d1a9ae3f5ffdccf165230298bdab732c5ddb5d5fe7d76"
+      "01_manifold_with_cradle.brep": "b3247c085161a739e3ca0334dd4700f9a45494366c8694e0bc3c0cf79ca23945",
+      "02_manifold_with_cradle.brep": "1d5a54bb6eca1ea64e6ff8f13c34ee1081310b6b3246f34e5e4154c0d730c017"
     },
     "note": "Hashes identify the exact BReps and parameter/source-reference bytes checked. This cache does not itself certify that current CAD source regenerated those BReps."
   }

@@ -50,11 +50,11 @@ def roof_gussets(body,x0,x1,fx,front_y,W,wall=2.4,mouth_width=21):
 
 def lower_perimeter(body,i,x0,x1,front_y,wall=2.4):
     front=front_y(3)
-    skirt=box(x0,-24,-2,x1-x0,front+24,5.2)
-    skirt=skirt.cut(box(x0+wall,-24+wall,-2.1,x1-x0-2*wall,front+24-2*wall,5.4))
+    skirt=box(x0,-24,-5,x1-x0,front+24,8.2)
+    skirt=skirt.cut(box(x0+wall,-24+wall,-5.1,x1-x0-2*wall,front+24-2*wall,8.4))
     outer=x0 if i==1 else x1
     # Open the cover saddle's removal channel all the way through the skirt.
-    skirt=skirt.cut(box(outer-.15 if i==1 else outer-11.3,34-6.8,-2.1,11.45,13.6,8.3))
+    skirt=skirt.cut(box(outer-.15 if i==1 else outer-11.3,34-6.8,-5.1,11.45,13.6,11.3))
     body=body.fuse(skirt.val()).clean()
     assert body.isValid() and len(body.Solids())==1
     return body

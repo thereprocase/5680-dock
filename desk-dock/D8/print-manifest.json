@@ -1112,11 +1112,11 @@
       "dimensions_mm": [
         192.84,
         135.02209820239077,
-        145.46689994995054
+        148.46689994995054
       ],
-      "volume_mm3": 263122.6888903389,
-      "first_layer_mean_contact_mm2": 1654.8391339341197,
-      "sha256": "0544d6e745eecaddf278ebc2776bce0520af755a3a2b4c4ef74ec61f4298f7b3",
+      "volume_mm3": 270864.90630836337,
+      "first_layer_mean_contact_mm2": 1654.839133934106,
+      "sha256": "578965f3effc1c94f137f61fdb4dceee09f5e454ea4250201f3dc92d51c8975d",
       "unloaded_export": false,
       "layer_mm": 0.2,
       "nozzle_mm": 0.4,
@@ -1135,11 +1135,11 @@
       "dimensions_mm": [
         201.54000000000005,
         135.0220982023908,
-        145.46689994995054
+        148.46689994995054
       ],
-      "volume_mm3": 259745.9701055162,
-      "first_layer_mean_contact_mm2": 1739.7991339341245,
-      "sha256": "a720469992c3dcd16cd63b0a51aa0f571c30518d6da5fb8c13457ed3a2591705",
+      "volume_mm3": 267767.367524896,
+      "first_layer_mean_contact_mm2": 1739.799133934106,
+      "sha256": "35dbe2f01f1235cec3cdf28747bf8b67c77a128d6ca478701739d9fd7f816fa7",
       "unloaded_export": false,
       "layer_mm": 0.2,
       "nozzle_mm": 0.4,

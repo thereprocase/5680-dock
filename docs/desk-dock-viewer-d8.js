@@ -60,10 +60,6 @@ function pretty(n){
   if(n.includes('fan_frame'))return '120 × 120 × 25 mm fan'+suffix;
   if(n.includes('fan_hub'))return 'Fan hub'+suffix;
   if(n.includes('blade'))return 'Fan blade'+suffix;
-  if(n.includes('lid_bearing'))return 'Soft lid contact';
-  if(n.includes('hinge_bearing_liner'))return 'Chamfered intermediate hinge bearing';
-  if(n.includes('corner_pad'))return 'Soft end seat';
-  if(n.includes('hinge_seal'))return 'Exhaust seal';
   if(n.includes('foot_'))return 'Desk grip pad'+suffix;
   return n.replace(/^\d+_/,'').replace(/_REFERENCE/g,'').replaceAll('_',' ').replace(/\b\w/,s=>s.toUpperCase());
 }
@@ -77,7 +73,6 @@ function partColor(p){
   if(n==='breakaway_spring_cartridge')return [154,157,116];
   if(handControl(n))return [102,143,132];
   if(p.reference||fan(n))return p.color;
-  if(n.includes('hinge_bearing_liner'))return [224,157,62];
   if(/liner|corner_pad|seal|soft_tip/.test(n))return [106,120,111];
   if(n.includes('foot_')||n.includes('_desk_pad_'))return [34,40,41];
   if(/nut|washer|metal/.test(n))return p.color;
@@ -135,7 +130,6 @@ function offset(p){
   if(fan(n))return [s*54,70,23];
   if(n.includes('quarter_turn_keeper'))return [-54,0,60];
   if(cap(n))return [-78,0,8];
-  if(n.includes('lid_bearing'))return [s*54,-28,0];
   if(/seal|corner_pad/.test(n))return [s*54,0,35];
   return [-65,0,30];
 }
@@ -155,7 +149,7 @@ function update(){
     const p=mesh.userData;mesh.position.set(...p.explode).multiplyScalar(e);poseHolder(mesh);
     if(moduleParts.has(p.name)&&service>0)mesh.position.add(new THREE.Vector3(-outboard,-Math.cos(LEAN)*keyTravel,Math.sin(LEAN)*keyTravel));
     if(moving(p.name)&&!e)mesh.position.set(x,Math.sin(LEAN)*lift,Math.cos(LEAN)*lift);
-    mesh.visible=(!moving(p.name)||$('laptop').checked)&&(!cap(p.name)||$('cover').checked)&&(!guard(p.name)||$('guards').checked)&&(!fan(p.name)||$('fans').checked)&&(!moduleLocks.has(p.name)||service===0);
+    mesh.visible=(!moving(p.name)||$('laptop').checked)&&(!cap(p.name)||$('cover').checked)&&(!guard(p.name)||$('guards').checked)&&(!fan(p.name)||$('fans').checked)&&(!moduleLocks.has(p.name)||service===0)&&(!p.name.includes('_desk_pad_')||$('deskPads').checked);
   }
   air.visible=$('air').checked&&e===0&&service===0;
   folded=foldAngle>=44.999;
@@ -214,7 +208,7 @@ function setView(name){
 }
 function describe(n){
   if(moving(n))return 'Laptop reference. Both Thunderbolt ports are on the keyboard-left edge, at the far plug end. The rubber feet remain outside the intended bearing contacts.';
-  if(n.includes('manifold'))return 'Four integral perimeter feet per half carry the laptop through the shell to separate desk pads. The ribs and local bosses support thin removable covers. Fan pockets preserve the underside intake.';
+  if(n.includes('manifold'))return 'The integral flat printed feet carry the laptop directly and clear the bottom screws without pads. Separate desk-grip pads are optional. The ribs and local bosses support thin removable covers. Fan pockets preserve the underside intake.';
   if(n==='connector_module_body')return 'The complete connector, printed breakaway hinge, live Y/Z slides and independent X stop remove together. Unload the laptop, remove two mounting locks, pull local −Y by 4.3 mm, then withdraw outboard along −X.';
   if(n==='cassette_Z_saddle'||n.startsWith('cassette_Z_lock'))return 'Live vertical adjustment from −4 to +5 mm. Two accessible printed hand locks secure the same saddle at the selected height; no replacement shims.';
   if(n.startsWith('cassette_Y_lock')||n==='X_depth_overmold_clamp')return 'Live lateral adjustment of ±3 mm. The underside hand lock clamps the plug cradle; positive shoulders carry docking thrust. Plug X stays fixed while the separate chassis stop sets engagement.';
@@ -231,11 +225,7 @@ function describe(n){
   if(n.includes('breakaway'))return 'Resettable printed hinge for a misaligned docking strike. Firm seating at 20 N and a 50 N-class release are calibration targets. Return the cassette by hand to reset; keep its cable loop loose.';
   if(n.includes('stop'))return 'Independent chassis stop limits insertion travel so the connector does not carry the seating load. Set it after aligning the plug.';
   if(/cassette|overmold_clamp/.test(n))return 'Plug capture and calibration assembly. Adjust live Y/Z slides before setting the independent X chassis stop.';
-  if(n.includes('lid_bearing'))return 'Replaceable soft contact between the lid and the plenum. The shell carries the lean load.';
-  if(n.includes('hinge_bearing_liner'))return 'A 0.3 mm liner supports the straight hinge edge on an integral bridge at a quarter point of the inlet. The printed bearing has 1 mm lead-in chamfers in both sliding directions; the liner edges have 0.15 mm bevels. Verify contact height on the actual laptop.';
-  if(/corner_pad/.test(n))return 'Soft profiled end seat carries the laptop case at its bare end margin.';
-  if(n.includes('seal'))return 'Compliant exhaust seal. It seals airflow; the end seats and six intermediate bearings carry the laptop weight.';
-  if(n.includes('foot_')||n.includes('_desk_pad_'))return 'Soft pad directly below an integral shell foot. Test sliding and tip stability with the actual laptop and cable loads.';
+  if(n.includes('foot_')||n.includes('_desk_pad_'))return 'Optional grip pad beneath a usable printed foot. Leave it out for a bare printed base; it is not needed for screw clearance.';
   if(handControl(n))return 'Hand-operated fastener for assembly or calibration. Physical access and retention require prototype checks.';
   return 'D8 assembly component. See the design guide for assembly, fit and print-planning limits.';
 }
@@ -284,7 +274,7 @@ $('moduleMotion').oninput=()=>{
   document.querySelectorAll('[data-view]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.view==='module')));
   update();
 };
-for(const id of ['laptop','cover','fans','guards','air'])$(id).addEventListener('change',update);
+for(const id of ['laptop','cover','fans','guards','air','deskPads'])$(id).addEventListener('change',update);
 document.querySelectorAll('[data-view]').forEach(button=>button.onclick=()=>setView(button.dataset.view));
 $('part').onchange=()=>select(meshes.find(mesh=>mesh.userData.name===$('part').value));
 function holderView(){
