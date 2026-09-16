@@ -44,7 +44,10 @@ members["START_HERE.md"] = b"""# Precision 5680 D8 print and source package
 This archive contains all 43 manufacturing STLs, editable D8 source, renders,
 design notes and the recorded CAD/manufacturing checks.
 
-The complete STEP CAD is a separate download:
+Printable-only STEP (43 separate manufacturing solids, arrange into plates):
+https://thereprocase.github.io/5680-dock/downloads/Precision_5680_D8_Printables.step
+
+The full reference assembly STEP CAD is a separate download:
 https://thereprocase.github.io/5680-dock/downloads/Precision_5680_D8_STEP.zip
 Extract that archive into desk-dock/D8 if you want the STEP beside these files.
 
@@ -77,5 +80,9 @@ record = {
     "step": {"file": step.name, "bytes": step.stat().st_size,
              "sha256": digest(step.read_bytes()), "extracted_sha256": step_record["extracted_sha256"]},
 }
+printables=json.loads((R/'printables-step-check.json').read_text(encoding='utf-8'))
+assert printables['passed'] and printables['solid_count']==43
+assert digest((OUT/printables['filename']).read_bytes())==printables['sha256']
+record['printables_step']={k:printables[k] for k in ['filename','bytes','sha256','solid_count']}
 (R / "download-manifest.json").write_text(json.dumps(record, indent=2) + "\n")
 print(json.dumps(record, indent=2))

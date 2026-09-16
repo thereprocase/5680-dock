@@ -1,0 +1,34 @@
+{
+  "passed": true,
+  "quantity": 2,
+  "identical": true,
+  "bracket_width_mm": 38.1,
+  "inside_clear_gap_mm": 318.48,
+  "center_spacing_mm": 356.58000000000004,
+  "outside_width_mm": 394.68000000000006,
+  "footprint_depth_mm": 135.0220982023908,
+  "height_above_desk_mm": 150.9135462995145,
+  "laptop_left_edge_from_left_bracket_outer_edge_mm": 16.0,
+  "laptop_right_edge_from_right_bracket_outer_edge_mm": 25.000000000000057,
+  "nominal_lean_degrees": 5,
+  "solid_volume_each_cm3": 98.14438631021983,
+  "solid_PETG_mass_pair_g": 249.28674122795837,
+  "print_bounds_mm": [
+    150.91354360117188,
+    135.0220946265625,
+    38.099998474121094
+  ],
+  "checks": [
+    {
+      "laptop_overlap_mm3": 0.0,
+      "rubber_foot_overlap_mm3": 0.0,
+      "seat_contact_probe_mm3": 3.6532910356141137
+    },
+    {
+      "laptop_overlap_mm3": 0.0,
+      "rubber_foot_overlap_mm3": 0.0,
+      "seat_contact_probe_mm3": 2.0332910252656435
+    }
+  ],
+  "scope": "Body/fans/grilles/fasteners envelope; excludes removable connector. Nominal CAD fit only, not a load test."
+}
