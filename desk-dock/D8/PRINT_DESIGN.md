@@ -1,3 +1,7 @@
+# Bearing revision print-review status
+
+The six new cross-slot bearings have 1 mm sliding chamfers. The 43 regenerated meshes pass geometric preflight; the revised shells have not been re-sliced. Inspect bridge supports and removal in OrcaSlicer. The deposited-path and material figures below are retained as the **pre-bearing baseline**, not current shell qualification. See [HINGE_BEARINGS.md](HINGE_BEARINGS.md).
+
 # D8 print design — P1S, PETG, 0.4 mm nozzle
 
 Design each part around its print pose and load path. These are the D8 orientation decisions; the regenerated per-part print manifest must implement them and identify any remaining support. A CAD export or bed-fit check alone does not qualify deposited paths or strength.

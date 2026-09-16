@@ -10,7 +10,7 @@ parser=argparse.ArgumentParser()
 parser.add_argument('--cache',type=Path)
 args=parser.parse_args()
 root=Path(__file__).resolve().parent
-input_names=['regenerate.py','build.py','body_service.py','body_print_geometry.py',
+input_names=['regenerate.py','build.py','hinge_bearings.py','body_service.py','body_print_geometry.py',
  'fan_service.py','fan_retention.py','cable_service.py','cassette.py',
  'connector_mount.py','connector_clearance.py','breakaway_geometry.py',
  'printed_fasteners.py','export_print.py','parameters.json',
@@ -32,7 +32,7 @@ if args.cache:
     print('Exact review cache saved',flush=True)
 records=export_all(build)
 assert source_hashes==hashes(),'Generation inputs changed while building; regenerate before publishing'
-outputs=['Precision_5680_D8.step','geometry.json','flow-geometry.json',
+outputs=['Precision_5680_D8.step','geometry.json','flow-geometry.json','hinge-bearing-layout.json',
          'assembly-details.json','print-manifest.json']
 outputs.extend('print/'+row['file'] for row in records)
 provenance=dict(revision='D8',started_utc=started,

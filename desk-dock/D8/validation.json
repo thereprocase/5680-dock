@@ -16,14 +16,14 @@
       "pad_thickness_mm": 0.0
     }
   },
-  "cache_part_count": 83,
+  "cache_part_count": 89,
   "cache_part_validity": [
     {
       "name": "01_fan_guard_retainer",
       "reference": false,
       "valid": true,
       "solids": 1,
-      "volume_mm3": 30472.13165271025
+      "volume_mm3": 30472.13165271027
     },
     {
       "name": "01_fan_top_clip_1",
@@ -58,14 +58,14 @@
       "reference": true,
       "valid": true,
       "solids": 1,
-      "volume_mm3": 1115.3520823509534
+      "volume_mm3": 1115.3520823509552
     },
     {
       "name": "01_blade_1",
       "reference": true,
       "valid": true,
       "solids": 1,
-      "volume_mm3": 1115.3520823509534
+      "volume_mm3": 1115.3520823509537
     },
     {
       "name": "01_blade_2",
@@ -79,14 +79,14 @@
       "reference": true,
       "valid": true,
       "solids": 1,
-      "volume_mm3": 1115.352082350953
+      "volume_mm3": 1115.3520823509548
     },
     {
       "name": "01_blade_4",
       "reference": true,
       "valid": true,
       "solids": 1,
-      "volume_mm3": 1115.352082350953
+      "volume_mm3": 1115.3520823509532
     },
     {
       "name": "01_blade_5",
@@ -100,14 +100,14 @@
       "reference": true,
       "valid": true,
       "solids": 1,
-      "volume_mm3": 1115.3520823509532
+      "volume_mm3": 1115.3520823509575
     },
     {
       "name": "02_fan_guard_retainer",
       "reference": false,
       "valid": true,
       "solids": 1,
-      "volume_mm3": 30472.131652710174
+      "volume_mm3": 30472.131652710166
     },
     {
       "name": "02_fan_top_clip_1",
@@ -142,49 +142,49 @@
       "reference": true,
       "valid": true,
       "solids": 1,
-      "volume_mm3": 1115.352082350953
+      "volume_mm3": 1115.3520823509555
     },
     {
       "name": "02_blade_1",
       "reference": true,
       "valid": true,
       "solids": 1,
-      "volume_mm3": 1115.3520823509543
+      "volume_mm3": 1115.3520823509539
     },
     {
       "name": "02_blade_2",
       "reference": true,
       "valid": true,
       "solids": 1,
-      "volume_mm3": 1115.3520823509539
+      "volume_mm3": 1115.352082350954
     },
     {
       "name": "02_blade_3",
       "reference": true,
       "valid": true,
       "solids": 1,
-      "volume_mm3": 1115.3520823509534
+      "volume_mm3": 1115.3520823509552
     },
     {
       "name": "02_blade_4",
       "reference": true,
       "valid": true,
       "solids": 1,
-      "volume_mm3": 1115.352082350953
+      "volume_mm3": 1115.3520823509532
     },
     {
       "name": "02_blade_5",
       "reference": true,
       "valid": true,
       "solids": 1,
-      "volume_mm3": 1115.3520823509534
+      "volume_mm3": 1115.3520823509537
     },
     {
       "name": "02_blade_6",
       "reference": true,
       "valid": true,
       "solids": 1,
-      "volume_mm3": 1115.3520823509539
+      "volume_mm3": 1115.352082350958
     },
     {
       "name": "corner_pad_far",
@@ -254,7 +254,7 @@
       "reference": false,
       "valid": true,
       "solids": 1,
-      "volume_mm3": 8632.112543848361
+      "volume_mm3": 8632.115266528413
     },
     {
       "name": "breakaway_spring_cartridge",
@@ -268,56 +268,56 @@
       "reference": false,
       "valid": true,
       "solids": 1,
-      "volume_mm3": 3007.88287090828
+      "volume_mm3": 3007.8836469945168
     },
     {
       "name": "breakaway_spring_hand_screw_0",
       "reference": false,
       "valid": true,
       "solids": 1,
-      "volume_mm3": 3373.231393393986
+      "volume_mm3": 3373.253798910808
     },
     {
       "name": "breakaway_spring_hand_screw_1",
       "reference": false,
       "valid": true,
       "solids": 1,
-      "volume_mm3": 3373.2313933939863
+      "volume_mm3": 3373.2537989108077
     },
     {
       "name": "cassette_Z_lock_0",
       "reference": false,
       "valid": true,
       "solids": 1,
-      "volume_mm3": 1176.242785685966
+      "volume_mm3": 1176.245091384194
     },
     {
       "name": "cassette_Z_lock_1",
       "reference": false,
       "valid": true,
       "solids": 1,
-      "volume_mm3": 1176.2427856859665
+      "volume_mm3": 1176.245091384193
     },
     {
       "name": "cassette_Y_lock_0",
       "reference": false,
       "valid": true,
       "solids": 1,
-      "volume_mm3": 1403.344715129842
+      "volume_mm3": 1403.3409511091734
     },
     {
       "name": "cassette_Z_saddle",
       "reference": false,
       "valid": true,
       "solids": 1,
-      "volume_mm3": 13635.714616392073
+      "volume_mm3": 13635.715924642067
     },
     {
       "name": "X_depth_overmold_clamp",
       "reference": false,
       "valid": true,
       "solids": 1,
-      "volume_mm3": 11219.854686592407
+      "volume_mm3": 11219.85435449973
     },
     {
       "name": "sliding_plug_cap",
@@ -331,7 +331,7 @@
       "reference": false,
       "valid": true,
       "solids": 1,
-      "volume_mm3": 1325.7256041244516
+      "volume_mm3": 1325.7256041244518
     },
     {
       "name": "Dell_plug_overmold_REFERENCE",
@@ -366,49 +366,49 @@
       "reference": false,
       "valid": true,
       "solids": 1,
-      "volume_mm3": 1306.3468615044865
+      "volume_mm3": 1306.3461083402585
     },
     {
       "name": "connector_mount_lock_1",
       "reference": false,
       "valid": true,
       "solids": 1,
-      "volume_mm3": 1306.346861504485
+      "volume_mm3": 1306.3461083402585
     },
     {
       "name": "chassis_stop_mount_lock_0",
       "reference": false,
       "valid": true,
       "solids": 1,
-      "volume_mm3": 1306.3468615044865
+      "volume_mm3": 1306.3461083402583
     },
     {
       "name": "chassis_stop_mount_lock_1",
       "reference": false,
       "valid": true,
       "solids": 1,
-      "volume_mm3": 1306.3468615044872
+      "volume_mm3": 1306.3461083402572
     },
     {
       "name": "chassis_stop_bracket",
       "reference": false,
       "valid": true,
       "solids": 1,
-      "volume_mm3": 10545.52654030019
+      "volume_mm3": 10545.524865227395
     },
     {
       "name": "connector_module_body",
       "reference": false,
       "valid": true,
       "solids": 1,
-      "volume_mm3": 141848.15400876646
+      "volume_mm3": 141848.1590786068
     },
     {
       "name": "independent_printed_chassis_stop_screw",
       "reference": false,
       "valid": true,
       "solids": 1,
-      "volume_mm3": 4018.7923494632305
+      "volume_mm3": 4018.796064489366
     },
     {
       "name": "stop_soft_tip",
@@ -446,18 +446,60 @@
       "volume_mm3": 150.91361463545533
     },
     {
+      "name": "hinge_bearing_liner_1_1",
+      "reference": false,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 9.42000000000003
+    },
+    {
+      "name": "hinge_bearing_liner_1_2",
+      "reference": false,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 9.420000000000023
+    },
+    {
+      "name": "hinge_bearing_liner_1_3",
+      "reference": false,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 9.41999999999998
+    },
+    {
+      "name": "hinge_bearing_liner_2_1",
+      "reference": false,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 9.419999999999874
+    },
+    {
+      "name": "hinge_bearing_liner_2_2",
+      "reference": false,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 9.419999999999956
+    },
+    {
+      "name": "hinge_bearing_liner_2_3",
+      "reference": false,
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 9.420000000000032
+    },
+    {
       "name": "01_bottom_thumb_lock_1",
       "reference": false,
       "valid": true,
       "solids": 1,
-      "volume_mm3": 1555.1271224095276
+      "volume_mm3": 1555.1264385729098
     },
     {
       "name": "01_bottom_thumb_lock_2",
       "reference": false,
       "valid": true,
       "solids": 1,
-      "volume_mm3": 1555.1271224095267
+      "volume_mm3": 1555.1264385729094
     },
     {
       "name": "01_desk_pad_1_1",
@@ -499,14 +541,14 @@
       "reference": false,
       "valid": true,
       "solids": 1,
-      "volume_mm3": 1555.127122409527
+      "volume_mm3": 1555.1264385729094
     },
     {
       "name": "02_bottom_thumb_lock_2",
       "reference": false,
       "valid": true,
       "solids": 1,
-      "volume_mm3": 1555.1271224095283
+      "volume_mm3": 1555.1264385729098
     },
     {
       "name": "02_desk_pad_1_1",
@@ -548,14 +590,14 @@
       "reference": false,
       "valid": true,
       "solids": 1,
-      "volume_mm3": 1792.8173285787313
+      "volume_mm3": 1792.8166288789375
     },
     {
       "name": "02_bridge_thumb_lock_1",
       "reference": false,
       "valid": true,
       "solids": 1,
-      "volume_mm3": 1792.8173285787313
+      "volume_mm3": 1792.8166288789375
     },
     {
       "name": "bridge_key_1",
@@ -569,14 +611,14 @@
       "reference": false,
       "valid": true,
       "solids": 1,
-      "volume_mm3": 1792.817328578731
+      "volume_mm3": 1792.8166288789375
     },
     {
       "name": "02_bridge_thumb_lock_2",
       "reference": false,
       "valid": true,
       "solids": 1,
-      "volume_mm3": 1792.8173285787311
+      "volume_mm3": 1792.816628878937
     },
     {
       "name": "bridge_key_2",
@@ -590,14 +632,14 @@
       "reference": false,
       "valid": true,
       "solids": 1,
-      "volume_mm3": 260332.26438770434
+      "volume_mm3": 263122.6888903395
     },
     {
       "name": "02_manifold_with_cradle",
       "reference": false,
       "valid": true,
       "solids": 1,
-      "volume_mm3": 256954.82818497336
+      "volume_mm3": 259745.97010551748
     }
   ],
   "rigid_pair_count": 1701,
@@ -612,6 +654,12 @@
     "hinge_seal_42.0_11.0",
     "hinge_seal_177.3_11.0",
     "stop_soft_tip",
+    "hinge_bearing_liner_1_1",
+    "hinge_bearing_liner_1_2",
+    "hinge_bearing_liner_1_3",
+    "hinge_bearing_liner_2_1",
+    "hinge_bearing_liner_2_2",
+    "hinge_bearing_liner_2_3",
     "01_desk_pad_1_1",
     "01_desk_pad_1_2",
     "01_desk_pad_2_1",
@@ -626,13 +674,13 @@
     {
       "a": "X_depth_overmold_clamp",
       "b": "cassette_cap_push_pin_6p5",
-      "volume_mm3": 0.2871089689654518,
+      "volume_mm3": 0.2871089689683295,
       "bounds_mm": [
         -30.9500001,
-        13.214010971332993,
+        13.214010971337368,
         124.62817158219526,
         -24.0499999,
-        14.20097544374289,
+        14.200975443745008,
         131.50508628395184
       ],
       "reason": "two near-end cap-pin retention-rib annuli",
@@ -1104,39 +1152,39 @@
   "geometry_errors": [],
   "numerical_intersection_threshold_mm3": 0.01,
   "provenance": {
-    "cache_directory": "/workspace/scratch/2b28a28d5c90/d8-release-review-cache",
+    "cache_directory": "C:\\Users\\kbnelson\\Documents\\Codex\\2026-09-16\\https-github-com-thereprocase-5680-dock\\work\\final-cache",
     "input_sha256": {
-      "parameters.json": "be41ebd6dcd159ccd4931493f291b29d37888c6d49e178dc7f05b6d426ee6d1c",
+      "parameters.json": "48a80163327a1f8db4f0659f14a08f4685434a46cf88c2b47d89616c42170408",
       "contact-profiles.json": "aa02aa10e52958e60c83230b141927807b6b04b000babc8a98ee0865c241bfdc",
       "port-study.json": "eb484763342fc2eef1e0c31727f123ea17a7ea41c65d0c9ad65f63bcd77c127f",
-      "validate.py": "bcbd0260b895e0a44bfe1e266a21667491c5127b82b520ed105e09fa4a743a95"
+      "validate.py": "bd879f2047e2af24a29fb7452339eb2c1b0d682ab292fe016accff5a3d34b717"
     },
     "cache_sha256": {
-      "parts.json": "c8d9b2fe2b55e4a1328760f35ecc5584193eaae0bd906cbe63a9cd15075008a6",
-      "01_fan_guard_retainer.brep": "2868fb0af04725825d5b521753a7d3a738f29ae6b4eba1a16b9a0d7c4ab2fc4f",
+      "parts.json": "ec416d3501999d819332cad6baaf5ed5ac3374733e6669e5d4bf8866dd9ca4df",
+      "01_fan_guard_retainer.brep": "519022320c6bb18b3b749b2490c149a71e5e779910b5c16bc1535fdca26308ca",
       "01_fan_top_clip_1.brep": "ac7807fe4303265aaa43c9de348f8c24eb7e4f89ae636a145a74749f9cb35746",
       "01_fan_top_clip_2.brep": "00e8208114a5fc98b9b2a4f00f2cb3559177c3e18065fcd9bbf454836c1b2100",
       "01_120x25_fan_frame.brep": "0742c250b691ad35fabf29f9ac51f04c89f10c92a389fc4280a2a981452b6baa",
       "01_fan_hub_struts.brep": "0b9c52776cf543214b7738a4bd656d21c98f1add01aa5da68dff2ffc0d9e7836",
-      "01_blade_0.brep": "d7bd39f65650378bfd7289de85f1bde4338e124afc8b2bf7cde8298f6b8381de",
-      "01_blade_1.brep": "8f3ecc5e23eec70dd43b550fbfe93c742fa50c1d620c3ed26fd8e776bdfc2c53",
-      "01_blade_2.brep": "0799ab4b6ab21389837bfd62d0c2c0e00175d68f6db081a24e16a921b3c53382",
-      "01_blade_3.brep": "efe582db9fe4fc0cd072187a26897e7b8953869ce8b2df69091499e9a3329aca",
-      "01_blade_4.brep": "36f846bb8c2093b6a0c91f22edd9c219b29a2b4e94a8cfdbafc5b3e8849a5c0d",
-      "01_blade_5.brep": "ab772f6999b89bf6d90f887370c818cf5dced6a6c973417fbc90c837ef1ff458",
-      "01_blade_6.brep": "3b95f78af8f3e2a9c7202921c2eb974031a48529b0f3c24066e3f1dbf12976ee",
-      "02_fan_guard_retainer.brep": "6b24be9ea6eed32853c753f9d1753b467d6d750de2eaff1a85a8a1b4949965aa",
+      "01_blade_0.brep": "ca222868ec4b8dbbc4035632abe2df82c97913c400015c97a3bba659a811b1cd",
+      "01_blade_1.brep": "06b27b37da72e89abf1e2fb13d3362845087d8e371c66b7adfa43c25bd297b60",
+      "01_blade_2.brep": "373d9e6a5a0527bfa09e834dac1a4cc3f9562e408c169b6c282f17e4b3880628",
+      "01_blade_3.brep": "f037a4a03bff2d2fd1cf56097596aa7a7a0f5b37b584efaf68af24411f7e3c1d",
+      "01_blade_4.brep": "f6a87c2c4ea727bf8fc55e8fd983d141e8d82feb859dfb983ffe4fc19558cdc8",
+      "01_blade_5.brep": "484e03b63a20d012eed383b8abe9cedd1cc4d35a6d0afaea4846721fe6035e91",
+      "01_blade_6.brep": "306024dea6feeb0fc972e83eaaea9e404b0dffc25399a2fc2643f38ad1bcd365",
+      "02_fan_guard_retainer.brep": "80cf6b649e63f441afefb5ae739ee0ab737850b34c2649d1fc0bf0eb80fff707",
       "02_fan_top_clip_1.brep": "11c0e43fdd65cba3c12c27ac2944f260cbc1c6e0a2da86d9680d8cf6a5d57ab7",
       "02_fan_top_clip_2.brep": "4feafbe5a2df15cfabd4c67c0787a8c16b7a9e5a9493b2a9062e900b42636b26",
       "02_120x25_fan_frame.brep": "beaeb0d4e0805201020a3846ef3505762cbd2bf7da4d430660e85165eea2cb8c",
       "02_fan_hub_struts.brep": "daa4cf94cd87c794af7163c2b485da7bd40bd110eedbef1eb2a80ff2bdfcb245",
-      "02_blade_0.brep": "859aff73347dd687f2c7d8073e5790af4465709dfc8bd87f26bef0a0920afbd2",
-      "02_blade_1.brep": "27708beb026d40e8dc1d2178e287f3b7e20e955f28e4d4b9816d09f823957cce",
-      "02_blade_2.brep": "41336f5f76eb3a4ccf764f43c93522d5023249de46a6c587bb567cb1eeedd7ed",
-      "02_blade_3.brep": "dc69538055cbf811ceabb19517aec1c662e0a0a5cbed753956a42539de0d0db8",
-      "02_blade_4.brep": "0aafa52347f96c23460b3193a1f8ee5221168038f696db59f60a073b59eae858",
-      "02_blade_5.brep": "36250eddb1d6cb3d2e72d60db9686ba42c726946f88d203dc8943599c7a72f24",
-      "02_blade_6.brep": "026864e00ebf645d79632d9704755c0c3fcbb03c00788a13b035230e964cc38b",
+      "02_blade_0.brep": "83b486d728361df5634d95f39bfa07e7de9fb1722b4d72c7165e5ced5de7af8f",
+      "02_blade_1.brep": "53613f7ae471c30e597b29d53cfa180d79ef369cc67bcb7d7adadb43e4ac8fa3",
+      "02_blade_2.brep": "9803c320cd22eeaddbf2fc01560a4afbd9059f7b6c84138198f119f488b3a787",
+      "02_blade_3.brep": "2599a2ab2a2c9a7fb63532dea5afaa575d81791469cb3db8cbef4a466b20ca79",
+      "02_blade_4.brep": "66b5ccca5c13d48973dabb6048ac352cd09adbb1a47e3ac5e1b63e430583301c",
+      "02_blade_5.brep": "53dc4b7f8b0dae8e02db211e6eb5f6852a4edfc92b344b267657ee14dbaea050",
+      "02_blade_6.brep": "43dd2ba824cdb327c67bf0033abceec39ac1a1c3aac35f5e4c6d2b9b21ea7115",
       "corner_pad_far.brep": "9b8611c81373a6f1706614cad253041b85e0770305634fdaecc54e23aad3eb24",
       "corner_pad_near.brep": "d2fb8944a2fe6bfefbd7aab027f6b1c5ff9a17ecc28948ef780429e56b771e51",
       "lid_bearing_liner_1.brep": "31d6b253ed59bc9e0853a37849bbc281be6ea1b743b421ac8638a757fffb6d22",
@@ -1145,57 +1193,63 @@
       "hinge_seal_177.3_-11.335.brep": "f0696c0ef2855534d20608af2e64c446c81e964d0a8bb782f57725c8e2dee401",
       "hinge_seal_42.0_11.0.brep": "c4d1391b8b01e0e0300ce3838881b8c24a6816d15484c428d4b9e960e2005609",
       "hinge_seal_177.3_11.0.brep": "8b6c62ae4a2709a80011c41df3d68f3bc7742041c836ee3e8eac4f1986b69ccd",
-      "breakaway_carrier.brep": "ff9f294bdf1a5c158bfc48f27055edb98adf0a44101b8197ab4c818c122d9355",
-      "breakaway_pivot_pin_10mm.brep": "c9bbdb29b48c56bf10fbf8fbfbfae380f6a7a8a1c8d462631fad6a55d6247b6b",
+      "breakaway_carrier.brep": "852087f94a812d69fe524b07ee8bd0a89672839df1b0f1476a8bed3ca60dc600",
+      "breakaway_pivot_pin_10mm.brep": "800edfb9138aa967a0ba3c3c2bd61e284387caa81459dd9331a3be4ec861a5e5",
       "breakaway_spring_cartridge.brep": "03b55a0ac9ae1158cdabdc8bf05346f5d7b6406a342042211dd6cb349b71d2d0",
-      "breakaway_preload_hand_nut.brep": "df21f4020a3d66211666f9905f3452277003e0111d21d765c78c81b6288f2e19",
-      "breakaway_spring_hand_screw_0.brep": "34a0733fa08f574ce046c0c60a149f5b3736efe96ec2fe45d36b1e9087b9e336",
-      "breakaway_spring_hand_screw_1.brep": "242de4428056fc0c19127d2c4d12e52bd32e55e5a6cc9d67d6a50bff031c9306",
-      "cassette_Z_lock_0.brep": "8d31730bab320687affb25ae078f3cd46d25a99c5611a266b4ea5f565d613c41",
-      "cassette_Z_lock_1.brep": "f45f85cbc780fe43b4e6dfebe985af26997cda080953948ed59c4b41eaaa8220",
-      "cassette_Y_lock_0.brep": "eb19450239112bd80935cdcead67e7e10c2a43b5643b112373a17e3554981b20",
-      "cassette_Z_saddle.brep": "560d10279b3cb5ef7c417619920d085f068117d5fc2b887249c2caaa27b3ff03",
-      "X_depth_overmold_clamp.brep": "b87cf1c845007c74edb2145de62e32158670891a13b7c291c15113d3f7c97f20",
+      "breakaway_preload_hand_nut.brep": "7c7bf4645a9e242c606e681cb7a46bb8020f7e4372da8054f98007e1e38fab08",
+      "breakaway_spring_hand_screw_0.brep": "c607582213792eb388f98c59b3476fadfb633e723620ffadf850a322721f7ea2",
+      "breakaway_spring_hand_screw_1.brep": "60cfb466f26d8319434bc3c03f6033fb685d0f0d871985b4cce7343cfd61cc5f",
+      "cassette_Z_lock_0.brep": "3407400648198b6bcf7c64526a844411e33fcbe22ce4e61c3b52720566680152",
+      "cassette_Z_lock_1.brep": "445587ca6646236f5a462c87ff40b3c05ccdfc1335b98f588cb131a6c33278eb",
+      "cassette_Y_lock_0.brep": "fb8fb2f82ef04ec4a17442c5d182c91b81d483fd934d325163483a957c5bed63",
+      "cassette_Z_saddle.brep": "2f8710450dff8442258afec2344363fd8443e9864adff400bf402abf36c23379",
+      "X_depth_overmold_clamp.brep": "4741d722e45306d6165da612bbc6879490396d8478a80a4161040d4ad62749df",
       "sliding_plug_cap.brep": "92646e5d7cfeccb25fabfc2fb3bb2780c253f112800ed4358a9a22c420c868f2",
       "cassette_cap_push_pin_6p5.brep": "7d625642f566f091748ec70c97bb6ac4d41627b9266d85c8b56f1c46c56a96d2",
       "Dell_plug_overmold_REFERENCE.brep": "c35cc8bb15ce7bb3f786adcdf573ed3d4fcbf1b93c541e1d2e349e6adcf9341b",
       "USB_C_shell_REFERENCE.brep": "6ccd92cef43a56324583f90449cd4bdf9edc283f7e8a681d7c1e1294b2e51831",
       "breakaway_spring_spacer_0.brep": "aeefa418ea1592659281eccbb9b61d1bbbf4650adc0deff18122548693cacf1c",
       "breakaway_spring_spacer_1.brep": "441f9c641bcfb50fcd9cf50a385bed7032c0bb9db3554a3880b4bf982a9cb116",
-      "connector_mount_lock_0.brep": "a937c86bb9719e2a4d3800fa93a20ebfdfdf2c7c49ec38dbb11be8036a69fa1f",
-      "connector_mount_lock_1.brep": "71f08f8a9bf7e0d7e0a81c40fcfd8d86c66503d9122fb68031126cfa8c5fcb0f",
-      "chassis_stop_mount_lock_0.brep": "c47fd9edd7a4af75645d020be166c0a11725468a532ef7e51c84359ac278dc53",
-      "chassis_stop_mount_lock_1.brep": "0657574c32bb0489c2f52b07d19cb19b8c4dde208c4960607171738f8702ce20",
-      "chassis_stop_bracket.brep": "ae7986df68488693a2a9ef2850710d0fb3444192e21c44138b2dfbff9af6a3bf",
-      "connector_module_body.brep": "51c918968f9f00d40f64dbc35be4c0a6ac29dac99d3fb070f484335bbbdc6ff6",
-      "independent_printed_chassis_stop_screw.brep": "59fb90c42bf88e74b15ee93f745ff0b44bdfd7a93d88261825974a6fb33aa42f",
+      "connector_mount_lock_0.brep": "1e627016372059d4aa3ecc252038a51d5db89e6f23b18d32e28ebb2cd7ef1ffe",
+      "connector_mount_lock_1.brep": "92a9b8f08470fd1ac9cf96711caddec2ef52b7c901e15f4ce27ba40eac59164e",
+      "chassis_stop_mount_lock_0.brep": "065f6267f3e15e080ed94b2f6d3bf1c517356c8fc3b6556bdb03dea7475c8672",
+      "chassis_stop_mount_lock_1.brep": "36117a3cfecb860d0bd0bd698ffd305482bea8527f39f788605a76bf8c9fc95a",
+      "chassis_stop_bracket.brep": "7b4380e6fc73e440465f8508963c271f10cfc2a38c64e913671c332cb5755911",
+      "connector_module_body.brep": "6d74b53dbf80215e06da1f737d293ddbebd616d1aad72c87620e191623067444",
+      "independent_printed_chassis_stop_screw.brep": "a3e6ab7c4091aadf49cddf92d57d083366b0af38aff989d4c3f25a7664aef23d",
       "stop_soft_tip.brep": "d1d5112d00b76b906626b56800e223922ba867ae44f31bd6d4acbf429db11e0f",
-      "Precision_5680_REFERENCE.brep": "ae96dddfcc89edb6a3bef0fb183b6d24de27545e8930d4c15d13aa3b8cea2d31",
+      "Precision_5680_REFERENCE.brep": "9b3dd68091717a9d015315aae37e2369d87f8255e3855742572c57d712b21166",
       "RUBBER_FOOT_rear_strip.brep": "66348e50c4d00e4fab38bbb2474c494487f5a905da59819e0dcee063399991f1",
       "RUBBER_FOOT_front_left.brep": "66cf2a492e4e4aba71ffce57bdddd78102efdb847b5bfb22baff94358637ae1f",
       "RUBBER_FOOT_front_right.brep": "0f1f2debc783eb5997e704ea218c05cea9239ba8ebae9be278abe57d8f7a48cf",
-      "01_bottom_thumb_lock_1.brep": "498509262dd05dedcdd818a4aef78335de7ba0a64d25f153f0ca083ede0c0454",
-      "01_bottom_thumb_lock_2.brep": "94f9fcdbc9d0026030c73d025ab314373923874076f5e70c88c058b51c1bf49b",
+      "hinge_bearing_liner_1_1.brep": "f4277041f17595992e10df4e34cefd8d7708249e6d75f90f12e4b902a8b1d0eb",
+      "hinge_bearing_liner_1_2.brep": "d7264bfbea24470ddaf7aac8614a26ab07c12594fb04496f22bbd9c0ffa5e184",
+      "hinge_bearing_liner_1_3.brep": "20d80ef0d2142f637d11658d97bc6a2603d4794f622a4088603b4e44101e69d3",
+      "hinge_bearing_liner_2_1.brep": "29e4e3673b8ccf57fe8fb20eba6b09e6334d11d079dd41671969573edeb15a38",
+      "hinge_bearing_liner_2_2.brep": "53e8a808c05f115ccd44ca007114eb43be8fc1cbb82f6712811d0eed72b27bf3",
+      "hinge_bearing_liner_2_3.brep": "c844e31c27e052d7e7a4de0b21d6e2e09aed7cfd6ed39761b55767cc837a3343",
+      "01_bottom_thumb_lock_1.brep": "9670fd293921373f99defb477fbc6323a93846a32476ff3e0729c0a0bc24e074",
+      "01_bottom_thumb_lock_2.brep": "65ab7ab0031971810b09677165d08d2258a76ee329cf9284b60652b47c2c88ec",
       "01_desk_pad_1_1.brep": "b8c68cfedd6bc35be6118e808a6a8c933af777dc85a42cfe387b0fabdfe5cd17",
       "01_desk_pad_1_2.brep": "f32dfc26f13102332c968ba9e22c5b98e2b32f1db6c8dbd0dcb5bfe53296275a",
       "01_desk_pad_2_1.brep": "7f9a4f52db814f025266eddf439d36f2d6e14275157628f03b73024694638a35",
       "01_desk_pad_2_2.brep": "e98ff0c62dac67d6636af0adc6d9df3f87a4f6edbec7bc521bb41a989b1da726",
-      "01_bottom_panel.brep": "937af52ea73b825ffe1209802c1c62971cfc345c5cab0a435328a93675a32d8a",
-      "02_bottom_thumb_lock_1.brep": "06059824825535286d071acb0673d804c0026a513ea10da38c9f48df7d026d83",
-      "02_bottom_thumb_lock_2.brep": "11a89fec387f7ee896138ba583cf1adc34f0b2d89dd328472f15ce4c5314a434",
+      "01_bottom_panel.brep": "1b99ff39185e6092f0d624f342361c3f35b786c7ded1af5a0669ab63b218887d",
+      "02_bottom_thumb_lock_1.brep": "1f2a2a0fca6bded8bd9f958a74a79177676899d638d7e14bd5e433a857092c9d",
+      "02_bottom_thumb_lock_2.brep": "e26dde24fb3aadeb78ea0453623bbfcab052b24540a85ae15e21f1e16030b68b",
       "02_desk_pad_1_1.brep": "26fee0478a9a60f9aa11021af8c4b420d822e4953b9a8b493d7b947432f07de4",
       "02_desk_pad_1_2.brep": "8ad82c401530b0b6902cfc6f8d716f061761c7738d8c3ff1e72a00253b1a6b23",
       "02_desk_pad_2_1.brep": "a526142832c41385fcb273a4d4074df141ed3b1ad5a09f8131fd17289f645159",
       "02_desk_pad_2_2.brep": "98b645ece02c4a33e4298c4a0ae776cd08a68820234e5bcc74c00b90a2ab9b67",
       "02_bottom_panel.brep": "ddd9f4abc97ef5cf5ba45d40d6e6481bb51b9ecec22eec06b52b5d760843a55b",
-      "01_bridge_thumb_lock_1.brep": "02c4b4a28a44ba0a8486efef53dbb7147f11bf34a20862fb1acfaaded0a0d5db",
-      "02_bridge_thumb_lock_1.brep": "5686dd3b8082261fae278a4f1a1cbc8fed5f9d323edec127aceba2f774208a4c",
+      "01_bridge_thumb_lock_1.brep": "2dfb8230f7f8c5f84f51c74e6ada7d43adff0a80bfdd3816a1fe9b9b1b9eb07c",
+      "02_bridge_thumb_lock_1.brep": "1fff1eb7b33b562557529323aa9699d7c50ec6a08a133d873f6b652b6d759028",
       "bridge_key_1.brep": "309b4d5e6b70a0cbbd16ef9ac7e29a68711f754ddf12b4e4b9ac5589062276b1",
-      "01_bridge_thumb_lock_2.brep": "ae048196460fc599524326ca3b7237fb1641bddb3ffe49a533f730149bd4ed9d",
-      "02_bridge_thumb_lock_2.brep": "a5a5b09c77c4dd528d5bec2ff3bae5f7fa1f7a6ec1169daa027be87a335d7d9c",
+      "01_bridge_thumb_lock_2.brep": "4f6cec7dcf1ae0cf8113d3c97604e625b920a11973c02da04cf19f887cfd7b82",
+      "02_bridge_thumb_lock_2.brep": "8a4ef469eff73973856bab1341dc55688cd8b64ff9f3f9dc3ab6d35dde3b869f",
       "bridge_key_2.brep": "d7a7a4654547ddf4a3ab74ee8486baf7f50328b561a0fcaa277ea35fd3386b5b",
-      "01_manifold_with_cradle.brep": "72341d622a21ae600e83831fba105f21fa952f9e6eee0af3f837012b78d3a7da",
-      "02_manifold_with_cradle.brep": "f3fa96fa41d6870f15eb094842acad0a6ae931b6918e065ae5c8c879c7764392"
+      "01_manifold_with_cradle.brep": "9303927071f1a80f3afce7b84fce7550f9b9fbf0e95d490fc23e2af57613e831",
+      "02_manifold_with_cradle.brep": "3dfb6afccc1dfe62a97d1a9ae3f5ffdccf165230298bdab732c5ddb5d5fe7d76"
     },
     "note": "Hashes identify the exact BReps and parameter/source-reference bytes checked. This cache does not itself certify that current CAD source regenerated those BReps."
   }
