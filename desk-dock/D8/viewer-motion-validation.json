@@ -1,8 +1,8 @@
 {
   "revision": "D8",
   "passed": true,
-  "model_sha256": "d2564ce5d4f682dab19e552ad037b43a18bdc4e05287aaf691ff4fdd7d1b44b7",
-  "manifest_sha256": "92623517180c09166ca2a64c019cb23a83ec69fa05d2a3f6e565610035abf0fc",
+  "model_sha256": "7bac272d9ca10df16b839ab8722aa404e3304db408802cf2560270a096658481",
+  "manifest_sha256": "6c41a05ba4ab65ec1036c2eac90d6cbcf3cf62759792690476f3e4ad96ce9f90",
   "checker_sha256": "213e142b88f66fb18a7c04a549bae6482ea58bee9aaa54d4b87da440e12fe3e5",
   "binary_parts": [
     {
@@ -147,54 +147,6 @@
       "name": "02_blade_6",
       "vertices": 188,
       "triangles": 176,
-      "passed": true
-    },
-    {
-      "name": "corner_pad_far",
-      "vertices": 336,
-      "triangles": 220,
-      "passed": true
-    },
-    {
-      "name": "corner_pad_near",
-      "vertices": 336,
-      "triangles": 220,
-      "passed": true
-    },
-    {
-      "name": "lid_bearing_liner_1",
-      "vertices": 24,
-      "triangles": 12,
-      "passed": true
-    },
-    {
-      "name": "lid_bearing_liner_2",
-      "vertices": 24,
-      "triangles": 12,
-      "passed": true
-    },
-    {
-      "name": "hinge_seal_42.0_-11.335",
-      "vertices": 24,
-      "triangles": 12,
-      "passed": true
-    },
-    {
-      "name": "hinge_seal_177.3_-11.335",
-      "vertices": 24,
-      "triangles": 12,
-      "passed": true
-    },
-    {
-      "name": "hinge_seal_42.0_11.0",
-      "vertices": 24,
-      "triangles": 12,
-      "passed": true
-    },
-    {
-      "name": "hinge_seal_177.3_11.0",
-      "vertices": 24,
-      "triangles": 12,
       "passed": true
     },
     {
@@ -372,42 +324,6 @@
       "passed": true
     },
     {
-      "name": "hinge_bearing_liner_1_1",
-      "vertices": 36,
-      "triangles": 20,
-      "passed": true
-    },
-    {
-      "name": "hinge_bearing_liner_1_2",
-      "vertices": 36,
-      "triangles": 20,
-      "passed": true
-    },
-    {
-      "name": "hinge_bearing_liner_1_3",
-      "vertices": 36,
-      "triangles": 20,
-      "passed": true
-    },
-    {
-      "name": "hinge_bearing_liner_2_1",
-      "vertices": 36,
-      "triangles": 20,
-      "passed": true
-    },
-    {
-      "name": "hinge_bearing_liner_2_2",
-      "vertices": 36,
-      "triangles": 20,
-      "passed": true
-    },
-    {
-      "name": "hinge_bearing_liner_2_3",
-      "vertices": 36,
-      "triangles": 20,
-      "passed": true
-    },
-    {
       "name": "01_bottom_thumb_lock_1",
       "vertices": 4962,
       "triangles": 4928,
@@ -529,14 +445,14 @@
     },
     {
       "name": "01_manifold_with_cradle",
-      "vertices": 29406,
-      "triangles": 30954,
+      "vertices": 29430,
+      "triangles": 30970,
       "passed": true
     },
     {
       "name": "02_manifold_with_cradle",
-      "vertices": 29405,
-      "triangles": 30936,
+      "vertices": 29429,
+      "triangles": 30952,
       "passed": true
     }
   ],

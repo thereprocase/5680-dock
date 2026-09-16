@@ -1,12 +1,12 @@
 {
   "revision": "D8",
   "archive": "Precision_5680_D8_STEP.zip",
-  "archive_bytes": 6741136,
-  "archive_sha256": "c66e9a05014627daa70e47847aec8e338e62ae326ad6d296fe8268fb1370372c",
+  "archive_bytes": 6632598,
+  "archive_sha256": "33c066e446adb3943c903238d0b1793d159245519c971ea48ebeb1a3b1fd6722",
   "member": "Precision_5680_D8.step",
-  "extracted_bytes": 30835741,
-  "extracted_sha256": "c0683818c94cf27d1c394db12d9c306d41ccaa280c91b6f30e6f36ca0226418c",
+  "extracted_bytes": 30111338,
+  "extracted_sha256": "7ec1a799fe42440c60975715fa4efa842fe06ea5edd2f2eac8d4e4c39cd49404",
   "exact_round_trip_verified": true,
-  "generation_provenance_sha256": "03726fc16a7a88a6edd052185a966d09e2dec343654b7d770f0b2e2da1fd44ba",
+  "generation_provenance_sha256": "ee3adffc9b99089122620d8dfd28d29db75bb0cdf96abbd5397d226ab0c356ed",
   "reason": "Complete chamfered-bearing assembly; lossless archive preserves every generated STEP byte."
 }

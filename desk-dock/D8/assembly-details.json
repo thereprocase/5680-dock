@@ -80,7 +80,7 @@
     {
       "module": 1,
       "cover_skin_mm": 2.0,
-      "flat_print_perimeter_bottom_z_mm": -2,
+      "flat_print_perimeter_bottom_z_mm": -5,
       "perimeter_rib_mm": 2.4,
       "rib_height_mm": 2.2,
       "panel_clearance_per_side_mm": 0.35,
@@ -130,7 +130,11 @@
           -5
         ]
       ],
-      "load_path": "Laptop seat to shell walls to integral corner stems to desk pads; covers are bypassed.",
+      "load_path": "Direct printed laptop contacts to shell walls and integral flat feet; covers are bypassed. Desk grip pads are optional.",
+      "desk_pads_optional": true,
+      "optional_pad_thickness_mm": 3.0,
+      "bare_foot_bottom_z_mm": -5,
+      "optional_pad_bottom_z_mm": -8,
       "minimum_lock_head_desk_clearance_mm": 1.5,
       "sealing": "No required gasket. Perimeter tongue limits gross bypass; optional tape only if testing warrants it.",
       "cable_routing": {
@@ -180,7 +184,7 @@
     {
       "module": 2,
       "cover_skin_mm": 2.0,
-      "flat_print_perimeter_bottom_z_mm": -2,
+      "flat_print_perimeter_bottom_z_mm": -5,
       "perimeter_rib_mm": 2.4,
       "rib_height_mm": 2.2,
       "panel_clearance_per_side_mm": 0.35,
@@ -230,7 +234,11 @@
           -5
         ]
       ],
-      "load_path": "Laptop seat to shell walls to integral corner stems to desk pads; covers are bypassed.",
+      "load_path": "Direct printed laptop contacts to shell walls and integral flat feet; covers are bypassed. Desk grip pads are optional.",
+      "desk_pads_optional": true,
+      "optional_pad_thickness_mm": 3.0,
+      "bare_foot_bottom_z_mm": -5,
+      "optional_pad_bottom_z_mm": -8,
       "minimum_lock_head_desk_clearance_mm": 1.5,
       "sealing": "No required gasket. Perimeter tongue limits gross bypass; optional tape only if testing warrants it.",
       "cable_routing": {

@@ -1,3 +1,12 @@
+# Direct-contact revision print review
+
+Laptop contacts are integral printed surfaces; there are no contact liners or
+hinge seals. The continuous lower print perimeter and foot faces now lie at
+Z=-5 mm, providing 1.5 mm cover-screw clearance without optional desk pads.
+The 43 manufacturing meshes require a fresh shell slice in OrcaSlicer.
+See [DIRECT_CONTACTS.md](DIRECT_CONTACTS.md). All earlier slicer/mass results
+below are retained as historical evidence, not approval of the new shells.
+
 # Bearing revision print-review status
 
 The six new cross-slot bearings have 1 mm sliding chamfers. The 43 regenerated meshes pass geometric preflight; the revised shells have not been re-sliced. Inspect bridge supports and removal in OrcaSlicer. The deposited-path and material figures below are retained as the **pre-bearing baseline**, not current shell qualification. See [HINGE_BEARINGS.md](HINGE_BEARINGS.md).

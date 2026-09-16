@@ -4,7 +4,7 @@
   "coordinate_frame": {
     "x": "Positive from keyboard-left/plug end (x=0) toward keyboard-right end (x=353.68). Plug appears screen-right in a lid-facing view.",
     "y": "Positive toward lid/user/fans; negative toward underside/intake.",
-    "z": "Positive up from retained desk datum; D8 integral shell feet terminate at z=-2 and separate desk pads extend to z=-5 mm.",
+    "z": "Positive up from retained desk datum; bare printed feet/perimeter terminate at z=-5 mm, with 1.5 mm cover-lock clearance. Optional 3 mm grip pads extend to z=-8.",
     "construction": "Preserve Dell source handedness; translation then rigid lean, no reflection. Plug X position stays fixed; chassis stop adjusts along X. Laptop docks along -X."
   },
   "undocked_x_offset_mm": 18,
@@ -495,150 +495,6 @@
       ]
     },
     {
-      "name": "corner_pad_far",
-      "color": [
-        133,
-        140,
-        135
-      ],
-      "reference": false,
-      "positionOffset": 212544,
-      "vertexCount": 336,
-      "indexOffset": 216576,
-      "indexCount": 660,
-      "center": [
-        15.5,
-        2.06517416559419,
-        55.1543713132218
-      ]
-    },
-    {
-      "name": "corner_pad_near",
-      "color": [
-        133,
-        140,
-        135
-      ],
-      "reference": false,
-      "positionOffset": 219216,
-      "vertexCount": 336,
-      "indexOffset": 223248,
-      "indexCount": 660,
-      "center": [
-        359.68,
-        2.0651741655941906,
-        55.1543713132218
-      ]
-    },
-    {
-      "name": "lid_bearing_liner_1",
-      "color": [
-        119,
-        131,
-        124
-      ],
-      "reference": false,
-      "positionOffset": 225888,
-      "vertexCount": 24,
-      "indexOffset": 226176,
-      "indexCount": 36,
-      "center": [
-        84.0,
-        15.350840804166857,
-        98.83268798103822
-      ]
-    },
-    {
-      "name": "lid_bearing_liner_2",
-      "color": [
-        119,
-        131,
-        124
-      ],
-      "reference": false,
-      "positionOffset": 226320,
-      "vertexCount": 24,
-      "indexOffset": 226608,
-      "indexCount": 36,
-      "center": [
-        269.68,
-        15.350840804166856,
-        98.83268798103822
-      ]
-    },
-    {
-      "name": "hinge_seal_42.0_-11.335",
-      "color": [
-        56,
-        80,
-        75
-      ],
-      "reference": false,
-      "positionOffset": 226752,
-      "vertexCount": 24,
-      "indexOffset": 227040,
-      "indexCount": 36,
-      "center": [
-        109.32,
-        -11.1847511274873,
-        52.77013528541855
-      ]
-    },
-    {
-      "name": "hinge_seal_177.3_-11.335",
-      "color": [
-        56,
-        80,
-        75
-      ],
-      "reference": false,
-      "positionOffset": 227184,
-      "vertexCount": 24,
-      "indexOffset": 227472,
-      "indexCount": 36,
-      "center": [
-        253.51000000000002,
-        -11.184751127487301,
-        52.77013528541855
-      ]
-    },
-    {
-      "name": "hinge_seal_42.0_11.0",
-      "color": [
-        56,
-        80,
-        75
-      ],
-      "reference": false,
-      "positionOffset": 227616,
-      "vertexCount": 24,
-      "indexOffset": 227904,
-      "indexCount": 36,
-      "center": [
-        109.32,
-        11.65,
-        51.8
-      ]
-    },
-    {
-      "name": "hinge_seal_177.3_11.0",
-      "color": [
-        56,
-        80,
-        75
-      ],
-      "reference": false,
-      "positionOffset": 228048,
-      "vertexCount": 24,
-      "indexOffset": 228336,
-      "indexCount": 36,
-      "center": [
-        253.51000000000002,
-        11.65,
-        51.8
-      ]
-    },
-    {
       "name": "breakaway_carrier",
       "color": [
         74,
@@ -646,9 +502,9 @@
         86
       ],
       "reference": false,
-      "positionOffset": 228480,
+      "positionOffset": 212544,
       "vertexCount": 3328,
-      "indexOffset": 268416,
+      "indexOffset": 252480,
       "indexCount": 7974,
       "center": [
         -19.01568661377066,
@@ -665,9 +521,9 @@
         130
       ],
       "reference": false,
-      "positionOffset": 300312,
+      "positionOffset": 284376,
       "vertexCount": 5060,
-      "indexOffset": 361032,
+      "indexOffset": 345096,
       "indexCount": 15132,
       "center": [
         -22.0,
@@ -684,9 +540,9 @@
         116
       ],
       "reference": false,
-      "positionOffset": 421560,
+      "positionOffset": 405624,
       "vertexCount": 1306,
-      "indexOffset": 437232,
+      "indexOffset": 421296,
       "indexCount": 3396,
       "center": [
         -22.0,
@@ -694,7 +550,7 @@
         139.67189101728792
       ],
       "motion": "spring",
-      "springWeightOffset": 450816
+      "springWeightOffset": 434880
     },
     {
       "name": "breakaway_preload_hand_nut",
@@ -704,9 +560,9 @@
         130
       ],
       "reference": false,
-      "positionOffset": 456040,
+      "positionOffset": 440104,
       "vertexCount": 3714,
-      "indexOffset": 500608,
+      "indexOffset": 484672,
       "indexCount": 10998,
       "center": [
         -22.00000000000009,
@@ -723,9 +579,9 @@
         130
       ],
       "reference": false,
-      "positionOffset": 544600,
+      "positionOffset": 528664,
       "vertexCount": 4697,
-      "indexOffset": 600964,
+      "indexOffset": 585028,
       "indexCount": 14070,
       "center": [
         -43.99999999999994,
@@ -741,9 +597,9 @@
         130
       ],
       "reference": false,
-      "positionOffset": 657244,
+      "positionOffset": 641308,
       "vertexCount": 4697,
-      "indexOffset": 713608,
+      "indexOffset": 697672,
       "indexCount": 14070,
       "center": [
         5.240252676230739e-14,
@@ -759,9 +615,9 @@
         132
       ],
       "reference": false,
-      "positionOffset": 769888,
+      "positionOffset": 753952,
       "vertexCount": 4932,
-      "indexOffset": 829072,
+      "indexOffset": 813136,
       "indexCount": 14694,
       "center": [
         -41.74471699264727,
@@ -778,9 +634,9 @@
         132
       ],
       "reference": false,
-      "positionOffset": 887848,
+      "positionOffset": 871912,
       "vertexCount": 4932,
-      "indexOffset": 947032,
+      "indexOffset": 931096,
       "indexCount": 14694,
       "center": [
         -41.74471699264729,
@@ -797,9 +653,9 @@
         132
       ],
       "reference": false,
-      "positionOffset": 1005808,
+      "positionOffset": 989872,
       "vertexCount": 3840,
-      "indexOffset": 1051888,
+      "indexOffset": 1035952,
       "indexCount": 11430,
       "center": [
         -15.249999999999996,
@@ -816,9 +672,9 @@
         132
       ],
       "reference": false,
-      "positionOffset": 1097608,
+      "positionOffset": 1081672,
       "vertexCount": 6034,
-      "indexOffset": 1170016,
+      "indexOffset": 1154080,
       "indexCount": 17988,
       "center": [
         -20.20974490939693,
@@ -835,9 +691,9 @@
         86
       ],
       "reference": false,
-      "positionOffset": 1241968,
+      "positionOffset": 1226032,
       "vertexCount": 3592,
-      "indexOffset": 1285072,
+      "indexOffset": 1269136,
       "indexCount": 10476,
       "center": [
         -16.702886884937623,
@@ -854,9 +710,9 @@
         86
       ],
       "reference": false,
-      "positionOffset": 1326976,
+      "positionOffset": 1311040,
       "vertexCount": 690,
-      "indexOffset": 1335256,
+      "indexOffset": 1319320,
       "indexCount": 1908,
       "center": [
         -16.70126112864451,
@@ -873,9 +729,9 @@
         132
       ],
       "reference": false,
-      "positionOffset": 1342888,
+      "positionOffset": 1326952,
       "vertexCount": 3580,
-      "indexOffset": 1385848,
+      "indexOffset": 1369912,
       "indexCount": 18132,
       "center": [
         -27.495649224266227,
@@ -892,9 +748,9 @@
         40
       ],
       "reference": true,
-      "positionOffset": 1458376,
+      "positionOffset": 1442440,
       "vertexCount": 550,
-      "indexOffset": 1464976,
+      "indexOffset": 1449040,
       "indexCount": 1578,
       "center": [
         -14.001053975820385,
@@ -911,9 +767,9 @@
         200
       ],
       "reference": true,
-      "positionOffset": 1471288,
+      "positionOffset": 1455352,
       "vertexCount": 288,
-      "indexOffset": 1474744,
+      "indexOffset": 1458808,
       "indexCount": 804,
       "center": [
         1.8250000000000002,
@@ -930,9 +786,9 @@
         86
       ],
       "reference": false,
-      "positionOffset": 1477960,
+      "positionOffset": 1462024,
       "vertexCount": 508,
-      "indexOffset": 1484056,
+      "indexOffset": 1468120,
       "indexCount": 1512,
       "center": [
         -44.0,
@@ -948,9 +804,9 @@
         86
       ],
       "reference": false,
-      "positionOffset": 1490104,
+      "positionOffset": 1474168,
       "vertexCount": 508,
-      "indexOffset": 1496200,
+      "indexOffset": 1480264,
       "indexCount": 1512,
       "center": [
         0.0,
@@ -966,9 +822,9 @@
         130
       ],
       "reference": false,
-      "positionOffset": 1502248,
+      "positionOffset": 1486312,
       "vertexCount": 5748,
-      "indexOffset": 1571224,
+      "indexOffset": 1555288,
       "indexCount": 17130,
       "center": [
         3.9999999999999867,
@@ -984,9 +840,9 @@
         130
       ],
       "reference": false,
-      "positionOffset": 1639744,
+      "positionOffset": 1623808,
       "vertexCount": 5748,
-      "indexOffset": 1708720,
+      "indexOffset": 1692784,
       "indexCount": 17130,
       "center": [
         3.9999999999999964,
@@ -1002,9 +858,9 @@
         130
       ],
       "reference": false,
-      "positionOffset": 1777240,
+      "positionOffset": 1761304,
       "vertexCount": 5748,
-      "indexOffset": 1846216,
+      "indexOffset": 1830280,
       "indexCount": 17130,
       "center": [
         -24.499999999999996,
@@ -1020,9 +876,9 @@
         130
       ],
       "reference": false,
-      "positionOffset": 1914736,
+      "positionOffset": 1898800,
       "vertexCount": 5748,
-      "indexOffset": 1983712,
+      "indexOffset": 1967776,
       "indexCount": 17130,
       "center": [
         -24.499999999999996,
@@ -1038,9 +894,9 @@
         86
       ],
       "reference": false,
-      "positionOffset": 2052232,
+      "positionOffset": 2036296,
       "vertexCount": 4362,
-      "indexOffset": 2104576,
+      "indexOffset": 2088640,
       "indexCount": 12948,
       "center": [
         -17.99222506121209,
@@ -1056,9 +912,9 @@
         86
       ],
       "reference": false,
-      "positionOffset": 2156368,
+      "positionOffset": 2140432,
       "vertexCount": 24015,
-      "indexOffset": 2444548,
+      "indexOffset": 2428612,
       "indexCount": 70308,
       "center": [
         -19.017858220912355,
@@ -1074,9 +930,9 @@
         132
       ],
       "reference": false,
-      "positionOffset": 2725780,
+      "positionOffset": 2709844,
       "vertexCount": 6012,
-      "indexOffset": 2797924,
+      "indexOffset": 2781988,
       "indexCount": 17868,
       "center": [
         -14.503844801970093,
@@ -1092,9 +948,9 @@
         75
       ],
       "reference": false,
-      "positionOffset": 2869396,
+      "positionOffset": 2853460,
       "vertexCount": 508,
-      "indexOffset": 2875492,
+      "indexOffset": 2859556,
       "indexCount": 1500,
       "center": [
         -1.9999999999999998,
@@ -1110,9 +966,9 @@
         195
       ],
       "reference": true,
-      "positionOffset": 2881492,
+      "positionOffset": 2865556,
       "vertexCount": 1940,
-      "indexOffset": 2904772,
+      "indexOffset": 2888836,
       "indexCount": 5232,
       "center": [
         176.84065376058038,
@@ -1128,9 +984,9 @@
         50
       ],
       "reference": true,
-      "positionOffset": 2925700,
+      "positionOffset": 2909764,
       "vertexCount": 24,
-      "indexOffset": 2925988,
+      "indexOffset": 2910052,
       "indexCount": 36,
       "center": [
         176.8400545987858,
@@ -1146,9 +1002,9 @@
         50
       ],
       "reference": true,
-      "positionOffset": 2926132,
+      "positionOffset": 2910196,
       "vertexCount": 24,
-      "indexOffset": 2926420,
+      "indexOffset": 2910484,
       "indexCount": 36,
       "center": [
         51.98940148685125,
@@ -1164,122 +1020,14 @@
         50
       ],
       "reference": true,
-      "positionOffset": 2926564,
+      "positionOffset": 2910628,
       "vertexCount": 24,
-      "indexOffset": 2926852,
+      "indexOffset": 2910916,
       "indexCount": 36,
       "center": [
         301.6893815073745,
         7.477531455736776,
         260.41640494505157
-      ]
-    },
-    {
-      "name": "hinge_bearing_liner_1_1",
-      "color": [
-        224,
-        157,
-        62
-      ],
-      "reference": false,
-      "positionOffset": 2926996,
-      "vertexCount": 36,
-      "indexOffset": 2927428,
-      "indexCount": 60,
-      "center": [
-        74.71,
-        2.327939005761975,
-        57.6610381021579
-      ]
-    },
-    {
-      "name": "hinge_bearing_liner_1_2",
-      "color": [
-        224,
-        157,
-        62
-      ],
-      "reference": false,
-      "positionOffset": 2927668,
-      "vertexCount": 36,
-      "indexOffset": 2928100,
-      "indexCount": 60,
-      "center": [
-        107.42,
-        2.327939005761975,
-        57.6610381021579
-      ]
-    },
-    {
-      "name": "hinge_bearing_liner_1_3",
-      "color": [
-        224,
-        157,
-        62
-      ],
-      "reference": false,
-      "positionOffset": 2928340,
-      "vertexCount": 36,
-      "indexOffset": 2928772,
-      "indexCount": 60,
-      "center": [
-        140.13,
-        2.3279390057619804,
-        57.6610381021579
-      ]
-    },
-    {
-      "name": "hinge_bearing_liner_2_1",
-      "color": [
-        224,
-        157,
-        62
-      ],
-      "reference": false,
-      "positionOffset": 2929012,
-      "vertexCount": 36,
-      "indexOffset": 2929444,
-      "indexCount": 60,
-      "center": [
-        218.275,
-        2.327939005761977,
-        57.6610381021579
-      ]
-    },
-    {
-      "name": "hinge_bearing_liner_2_2",
-      "color": [
-        224,
-        157,
-        62
-      ],
-      "reference": false,
-      "positionOffset": 2929684,
-      "vertexCount": 36,
-      "indexOffset": 2930116,
-      "indexCount": 60,
-      "center": [
-        255.41000000000003,
-        2.327939005761976,
-        57.661038102157896
-      ]
-    },
-    {
-      "name": "hinge_bearing_liner_2_3",
-      "color": [
-        224,
-        157,
-        62
-      ],
-      "reference": false,
-      "positionOffset": 2930356,
-      "vertexCount": 36,
-      "indexOffset": 2930788,
-      "indexCount": 60,
-      "center": [
-        292.545,
-        2.3279390057619773,
-        57.661038102157896
       ]
     },
     {
@@ -1290,9 +1038,9 @@
         108
       ],
       "reference": false,
-      "positionOffset": 2931028,
+      "positionOffset": 2911060,
       "vertexCount": 4962,
-      "indexOffset": 2990572,
+      "indexOffset": 2970604,
       "indexCount": 14784,
       "center": [
         8.999999999999995,
@@ -1308,9 +1056,9 @@
         108
       ],
       "reference": false,
-      "positionOffset": 3049708,
+      "positionOffset": 3029740,
       "vertexCount": 4962,
-      "indexOffset": 3109252,
+      "indexOffset": 3089284,
       "indexCount": 14784,
       "center": [
         160.84000000000003,
@@ -1325,15 +1073,15 @@
         34,
         37
       ],
-      "reference": false,
-      "positionOffset": 3168388,
+      "reference": true,
+      "positionOffset": 3148420,
       "vertexCount": 288,
-      "indexOffset": 3171844,
+      "indexOffset": 3151876,
       "indexCount": 804,
       "center": [
         -1.0,
         -18.0,
-        -3.5
+        -6.5
       ]
     },
     {
@@ -1343,15 +1091,15 @@
         34,
         37
       ],
-      "reference": false,
-      "positionOffset": 3175060,
+      "reference": true,
+      "positionOffset": 3155092,
       "vertexCount": 288,
-      "indexOffset": 3178516,
+      "indexOffset": 3158548,
       "indexCount": 804,
       "center": [
         -1.0,
         66.4334923582835,
-        -3.5
+        -6.5
       ]
     },
     {
@@ -1361,15 +1109,15 @@
         34,
         37
       ],
-      "reference": false,
-      "positionOffset": 3181732,
+      "reference": true,
+      "positionOffset": 3161764,
       "vertexCount": 288,
-      "indexOffset": 3185188,
+      "indexOffset": 3165220,
       "indexCount": 804,
       "center": [
         170.84,
         -18.0,
-        -3.5
+        -6.5
       ]
     },
     {
@@ -1379,15 +1127,15 @@
         34,
         37
       ],
-      "reference": false,
-      "positionOffset": 3188404,
+      "reference": true,
+      "positionOffset": 3168436,
       "vertexCount": 288,
-      "indexOffset": 3191860,
+      "indexOffset": 3171892,
       "indexCount": 804,
       "center": [
         170.84,
         66.4334923582835,
-        -3.5
+        -6.5
       ]
     },
     {
@@ -1398,9 +1146,9 @@
         69
       ],
       "reference": false,
-      "positionOffset": 3195076,
+      "positionOffset": 3175108,
       "vertexCount": 1612,
-      "indexOffset": 3214420,
+      "indexOffset": 3194452,
       "indexCount": 4380,
       "center": [
         83.61939772810263,
@@ -1416,9 +1164,9 @@
         108
       ],
       "reference": false,
-      "positionOffset": 3231940,
+      "positionOffset": 3211972,
       "vertexCount": 4962,
-      "indexOffset": 3291484,
+      "indexOffset": 3271516,
       "indexCount": 14784,
       "center": [
         193.14000000000001,
@@ -1434,9 +1182,9 @@
         108
       ],
       "reference": false,
-      "positionOffset": 3350620,
+      "positionOffset": 3330652,
       "vertexCount": 4962,
-      "indexOffset": 3410164,
+      "indexOffset": 3390196,
       "indexCount": 14784,
       "center": [
         362.68,
@@ -1451,15 +1199,15 @@
         34,
         37
       ],
-      "reference": false,
-      "positionOffset": 3469300,
+      "reference": true,
+      "positionOffset": 3449332,
       "vertexCount": 288,
-      "indexOffset": 3472756,
+      "indexOffset": 3452788,
       "indexCount": 804,
       "center": [
         183.14,
         -18.0,
-        -3.5
+        -6.5
       ]
     },
     {
@@ -1469,15 +1217,15 @@
         34,
         37
       ],
-      "reference": false,
-      "positionOffset": 3475972,
+      "reference": true,
+      "positionOffset": 3456004,
       "vertexCount": 288,
-      "indexOffset": 3479428,
+      "indexOffset": 3459460,
       "indexCount": 804,
       "center": [
         183.14,
         66.4334923582835,
-        -3.5
+        -6.5
       ]
     },
     {
@@ -1487,15 +1235,15 @@
         34,
         37
       ],
-      "reference": false,
-      "positionOffset": 3482644,
+      "reference": true,
+      "positionOffset": 3462676,
       "vertexCount": 288,
-      "indexOffset": 3486100,
+      "indexOffset": 3466132,
       "indexCount": 804,
       "center": [
         372.68,
         -18.0,
-        -3.5
+        -6.5
       ]
     },
     {
@@ -1505,15 +1253,15 @@
         34,
         37
       ],
-      "reference": false,
-      "positionOffset": 3489316,
+      "reference": true,
+      "positionOffset": 3469348,
       "vertexCount": 288,
-      "indexOffset": 3492772,
+      "indexOffset": 3472804,
       "indexCount": 804,
       "center": [
         372.68,
         66.4334923582835,
-        -3.5
+        -6.5
       ]
     },
     {
@@ -1524,9 +1272,9 @@
         69
       ],
       "reference": false,
-      "positionOffset": 3495988,
+      "positionOffset": 3476020,
       "vertexCount": 1612,
-      "indexOffset": 3515332,
+      "indexOffset": 3495364,
       "indexCount": 4380,
       "center": [
         279.21060227189736,
@@ -1542,9 +1290,9 @@
         108
       ],
       "reference": false,
-      "positionOffset": 3532852,
+      "positionOffset": 3512884,
       "vertexCount": 4888,
-      "indexOffset": 3591508,
+      "indexOffset": 3571540,
       "indexCount": 14562,
       "center": [
         166.99,
@@ -1560,9 +1308,9 @@
         108
       ],
       "reference": false,
-      "positionOffset": 3649756,
+      "positionOffset": 3629788,
       "vertexCount": 4888,
-      "indexOffset": 3708412,
+      "indexOffset": 3688444,
       "indexCount": 14562,
       "center": [
         186.99,
@@ -1578,9 +1326,9 @@
         86
       ],
       "reference": false,
-      "positionOffset": 3766660,
+      "positionOffset": 3746692,
       "vertexCount": 796,
-      "indexOffset": 3776212,
+      "indexOffset": 3756244,
       "indexCount": 2340,
       "center": [
         176.99,
@@ -1596,9 +1344,9 @@
         108
       ],
       "reference": false,
-      "positionOffset": 3785572,
+      "positionOffset": 3765604,
       "vertexCount": 4888,
-      "indexOffset": 3844228,
+      "indexOffset": 3824260,
       "indexCount": 14562,
       "center": [
         166.99,
@@ -1614,9 +1362,9 @@
         108
       ],
       "reference": false,
-      "positionOffset": 3902476,
+      "positionOffset": 3882508,
       "vertexCount": 4888,
-      "indexOffset": 3961132,
+      "indexOffset": 3941164,
       "indexCount": 14562,
       "center": [
         186.99,
@@ -1632,9 +1380,9 @@
         86
       ],
       "reference": false,
-      "positionOffset": 4019380,
+      "positionOffset": 3999412,
       "vertexCount": 796,
-      "indexOffset": 4028932,
+      "indexOffset": 4008964,
       "indexCount": 2340,
       "center": [
         176.99,
@@ -1650,14 +1398,14 @@
         68
       ],
       "reference": false,
-      "positionOffset": 4038292,
-      "vertexCount": 29406,
-      "indexOffset": 4391164,
-      "indexCount": 92862,
+      "positionOffset": 4018324,
+      "vertexCount": 29430,
+      "indexOffset": 4371484,
+      "indexCount": 92910,
       "center": [
         80.42120454379467,
         43.50531103647494,
-        70.73224543118086
+        69.23224543118086
       ]
     },
     {
@@ -1668,14 +1416,14 @@
         68
       ],
       "reference": false,
-      "positionOffset": 4762612,
-      "vertexCount": 29405,
-      "indexOffset": 5115472,
-      "indexCount": 92808,
+      "positionOffset": 4743124,
+      "vertexCount": 29429,
+      "indexOffset": 5096272,
+      "indexCount": 92856,
       "center": [
         277.90999999999997,
         43.50531103647494,
-        70.73224543118084
+        69.23224543118084
       ]
     }
   ]

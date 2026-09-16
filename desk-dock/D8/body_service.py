@@ -37,19 +37,22 @@ def body_service(bodies,W,front_y,box,rb,hole,add):
         foot_positions=[]
         for j,x in enumerate([x0,x1-12],1):
             for k,y in enumerate([-24,front_y(3)-12],1):
-                stem=rb(x,y,-2,12,12,10,2)
+                stem=rb(x,y,-5,12,12,13,2)
                 body=body.fuse(stem.val()).clean()
                 plate=plate.cut(rb(x-.35,y-.35,.3,12.7,12.7,5,2.35))
-                add(f'{i:02}_desk_pad_{j}_{k}',rb(x,y,-5,12,12,3,2),(31,34,37),False)
+                # Optional grip only: bare printed feet already clear the locks.
+                add(f'{i:02}_desk_pad_{j}_{k}',rb(x,y,-8,12,12,3,2),(31,34,37),True)
                 foot_positions.append([x+6,y+6,-5])
         body=lower_perimeter(body,i,x0,x1,front_y)
         body,plate,cable=add_cable_routing(i,x0,x1,body,plate,box,rb,hole)
         add(f'{i:02}_bottom_panel',plate,(56,65,69),False)
         bodies[i-1]=(x0,x1,body)
-        metadata.append(dict(module=i,cover_skin_mm=2.0,flat_print_perimeter_bottom_z_mm=-2,perimeter_rib_mm=2.4,rib_height_mm=2.2,
+        metadata.append(dict(module=i,cover_skin_mm=2.0,flat_print_perimeter_bottom_z_mm=-5,perimeter_rib_mm=2.4,rib_height_mm=2.2,
             panel_clearance_per_side_mm=.35,panel_removal_direction=[0,0,-1],fastener=dict(THREAD_SPEC),
             bottom_screw_under_head_length_mm=14,nominal_thread_engagement_mm=11.7,feet=foot_positions,
-            load_path='Laptop seat to shell walls to integral corner stems to desk pads; covers are bypassed.',
+            load_path='Direct printed laptop contacts to shell walls and integral flat feet; covers are bypassed. Desk grip pads are optional.',
+            desk_pads_optional=True,optional_pad_thickness_mm=3.0,
+            bare_foot_bottom_z_mm=-5,optional_pad_bottom_z_mm=-8,
             minimum_lock_head_desk_clearance_mm=1.5,
             sealing='No required gasket. Perimeter tongue limits gross bypass; optional tape only if testing warrants it.',
             cable_routing=cable))

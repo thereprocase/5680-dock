@@ -19,7 +19,7 @@ import cadquery as cq
 R=Path(__file__).resolve().parent
 VOLUME_TOLERANCE_MM3=.01
 BOUND_TOLERANCE_MM=1e-6
-SOFT_NAMES=('corner_pad_','lid_bearing_liner_','hinge_bearing_liner_','hinge_seal_')
+SOFT_NAMES=()
 
 
 def box(x,y,z,a,b,c):
@@ -168,8 +168,8 @@ def run(cache,output):
     H=p['rear_case_seat_z'];lean=math.radians(p['laptop_lean_deg'])
     def leaned(s):return s.rotate((0,0,H),(1,0,H),-p['laptop_lean_deg'])
     laptop=next(a for a in parts if a['name']=='Precision_5680_REFERENCE')
-    # Include the compliant stop tip in laptop/foot clearance checks; other
-    # compliant contact liners and seals remain outside this rigid path screen.
+    # Include the connector stop tip. All direct printed laptop contacts are
+    # part of the rigid shells and receive the full motion checks.
     static=rigid+[a for a in parts if a['name']=='stop_soft_tip']
     feet=[]
     expansion=float(contacts.get('keepout_expansion_mm',2.0))

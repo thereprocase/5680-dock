@@ -1,14 +1,14 @@
 {
   "revision": "D8",
-  "started_utc": "2026-09-16T19:57:28.223571+00:00",
-  "completed_utc": "2026-09-16T19:59:37.290759+00:00",
+  "started_utc": "2026-09-16T20:18:09.544184+00:00",
+  "completed_utc": "2026-09-16T20:20:31.061664+00:00",
   "cadquery_version": "2.7.0",
   "source_sha256": {
     "regenerate.py": "6681eed5cf946003092b37de10be4f2cad137f272eae3446e6d0dbb0300ab5ae",
-    "build.py": "52c457e793b33f0daca1817466903255a39be3207350ad44dbb6be9c618a99ce",
-    "hinge_bearings.py": "4500ae1e2c8419d07bea8637108f1fe57b2778884f3e49d24dc3dfe651119357",
-    "body_service.py": "d56534d75b9f817df1bd7fc4b7fecd3eac0cb10f9ac7fcd341591b309933ce56",
-    "body_print_geometry.py": "f1cef2880b91d7bc2b24e09be358946b055cd47c951de5bdc3089344026acb6c",
+    "build.py": "4418b555e401e573c0e7dc282ff23e572784a7f0d51920547e47c7793b7d7d75",
+    "hinge_bearings.py": "8bc019da4762c73d359f361e651c761bc9631361dae1eea29af94bfcf5c1119f",
+    "body_service.py": "2a160bf80fc369216c9f96029420ae0ca1c5b704c77f9a375182a2f302a38ecb",
+    "body_print_geometry.py": "5db67a1b2d516085908d1b44fb4c34fd7255aca5b53aee663217d10912e0f310",
     "fan_service.py": "428b768804a1a71f98ea9de95fc7c601694768aafd92ee2c9ad7730bbe699c49",
     "fan_retention.py": "7df2d3b2d431ae0b97ba17a4be76ee3983ad533eb6a5848be9116e459f04b46b",
     "cable_service.py": "035fbcecbf95902f4e2614e39bb197fd2f6bb34c2d2edc4f5067474ab122ea61",
@@ -18,17 +18,17 @@
     "breakaway_geometry.py": "9a5b19ed74f041ab2dae8561c3c459b73b2e5fff298013309a64620731a7adac",
     "printed_fasteners.py": "fee35ccbb8c3c25ecb442685b2634ac9eded9abaeeaedc580569af04ca1860a4",
     "export_print.py": "812d5c7adb1b1f0697ed3fc2e6f5216862d648c604188b09248047f81439a0ff",
-    "parameters.json": "48a80163327a1f8db4f0659f14a08f4685434a46cf88c2b47d89616c42170408",
+    "parameters.json": "3dc1904fdb383491c3fc7780bf5304487d9f79a1df84eb06ff247af674097cfc",
     "contact-profiles.json": "aa02aa10e52958e60c83230b141927807b6b04b000babc8a98ee0865c241bfdc",
     "port-study.json": "eb484763342fc2eef1e0c31727f123ea17a7ea41c65d0c9ad65f63bcd77c127f"
   },
   "output_sha256": {
-    "Precision_5680_D8.step": "c0683818c94cf27d1c394db12d9c306d41ccaa280c91b6f30e6f36ca0226418c",
-    "geometry.json": "d2a5f1b2dabe21355e8a93bd1761c756d248cd884a52d1226eade29ed4cd81f8",
+    "Precision_5680_D8.step": "7ec1a799fe42440c60975715fa4efa842fe06ea5edd2f2eac8d4e4c39cd49404",
+    "geometry.json": "eb47b3ec93ae763d1cc03fbcdc93f7eeaf4bb294d361578db1b59e73af1ef301",
     "flow-geometry.json": "bdca1c3559426c7c3ac91b7b0e6c34c8d430115de56f93c0762a350a370ab656",
-    "hinge-bearing-layout.json": "73777c3af7156e74abc566dea4f3dd0d56fb2f6d7bad1ff3fbc3b1b0eddc7358",
-    "assembly-details.json": "cdd195f67885ae5e89195ad05f41cc9e72341a7cc14bf02e415cc60e2d741b82",
-    "print-manifest.json": "e271fcc2d5047e61584478997d3b3394a501f9a7da5002e3760b7ae2c7ec3463",
+    "hinge-bearing-layout.json": "a0cb05f9f5f34ccc409254689b008e6ef512d8573e580a2a032e0b80b477c51f",
+    "assembly-details.json": "e9e698e93b0be1a2d99950cb8774b2f18e2d969afaf5da99b84349888b080d34",
+    "print-manifest.json": "631f51a77ff7442f367f8ae9a7d640f33d34ae95fa63b3f7e3ec2e17dec31dfd",
     "print/01_fan_guard_retainer.stl": "7acfd7270a9bc512d0a5b33acc5d9d1aeb6af389abcd556c63bb260b79d61abc",
     "print/01_fan_top_clip_1.stl": "bb12cf2ed7daffb7cb9f95d7506c4945416e94d4584c9e2e4988076805cc4387",
     "print/01_fan_top_clip_2.stl": "db83eec63dcbe66dab86779555f94cf48ad31854ff46e67b8b66012537840a7f",
@@ -70,8 +70,8 @@
     "print/01_bridge_thumb_lock_2.stl": "1a0f285edca2b2b192c888dbbb6acd4f4562272d77656649cd94edaf676b0d99",
     "print/02_bridge_thumb_lock_2.stl": "1a0f285edca2b2b192c888dbbb6acd4f4562272d77656649cd94edaf676b0d99",
     "print/bridge_key_2.stl": "a1e4e80bf7a2b38f7efa1694c715625edd820064eb0bcc5cec71873704d94b44",
-    "print/01_manifold_with_cradle.stl": "0544d6e745eecaddf278ebc2776bce0520af755a3a2b4c4ef74ec61f4298f7b3",
-    "print/02_manifold_with_cradle.stl": "a720469992c3dcd16cd63b0a51aa0f571c30518d6da5fb8c13457ed3a2591705"
+    "print/01_manifold_with_cradle.stl": "578965f3effc1c94f137f61fdb4dceee09f5e454ea4250201f3dc92d51c8975d",
+    "print/02_manifold_with_cradle.stl": "35dbe2f01f1235cec3cdf28747bf8b67c77a128d6ca478701739d9fd7f816fa7"
   },
   "scope": "One successful generation with unchanged source inputs; not physical qualification."
 }

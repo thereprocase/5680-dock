@@ -66,7 +66,7 @@ for i,((x0,x1),fx) in enumerate(zip([(-7,W/2),(W/2+.30,W+25)],p['fan_centers_x']
     edge_list=[e for e in outer.val().Edges() if abs(e.BoundingBox().ymin+24)<1e-5 and abs(e.BoundingBox().ymax+24)<1e-5 and e.BoundingBox().xlen<1e-5 and e.BoundingBox().zlen>20]
     outer=cq.Workplane(obj=outer.val().fillet(2.0,edge_list))
     roof=outer.cut(inner)
-    # Keep the mouths outside bearing pads and the split joint. Full-width
+    # Keep the mouths outside end seats and the split joint. Full-width
     # rounded rectangles avoid a row of narrow, sharp-edged whistle slots.
     ma=max(42,x0+4);mb=min(W-24,x1-4)
     mw=float(p['mouth_width_mm']);mr=float(p['mouth_corner_radius_mm']);me=float(p['mouth_edge_radius_mm'])
@@ -126,15 +126,11 @@ for j,pair in enumerate(contacts['curves'][0]['rear_curve_local_yz_mm']):
     curve.append((y,H+z))
 for tag,xx,span,top in [('left',6,19,P+12),('right',W-8,28,H+36)]:
     cradle=rb(xx,-16,48,span,32,4,3)
-    # Seat top follows the extracted rear-case envelope; a 0.3 mm replaceable
-    # liner sits between its printed substrate and the actual case.
+    # Direct printed seat follows the extracted rear-case envelope.
     ys0=curve[0][0];ys1=curve[-1][0]
-    seatpts=[(ys0,51),(ys1,51)]+[(y,z-.3) for y,z in reversed(curve)]
+    seatpts=[(ys0,51),(ys1,51)]+[(y,z) for y,z in reversed(curve)]
     seat=cq.Workplane('YZ',origin=(xx,0,0)).polyline(seatpts).close().extrude(span)
     cradle=cradle.union(seat)
-    linerpts=[(y,z-.3) for y,z in curve]+list(reversed(curve))
-    liner=cq.Workplane('YZ',origin=(xx,0,0)).polyline(linerpts).close().extrude(span)
-    add('corner_pad_'+tag,liner,(133,140,135))
     add('corner_cradle_'+tag,cradle)
 # Continuous low retention lip: the original 12 mm profile spans the laptop,
 # with only the 0.3 mm joint between the two printable shells. Extending its
@@ -146,19 +142,10 @@ lip_pts=[(-G-3,lip_root),(-G-3,lip_top),(-G-1,lip_top),(-G,H+8),(-G,lip_root)]
 for side,a,b in [('left',6,W/2),('right',W/2+.3,W+20)]:
     lip=cq.Workplane('YZ',origin=(a,0,0)).polyline(lip_pts).close().extrude(b-a)
     add('retention_lip_'+side,lip)
-# Thin replaceable liners on the plenum wall carry the lid-side lean load.
-# Two broad, separated contacts use the duct itself as the stand structure.
+# Integral printed lands replace the former lid-side liners. Extend 0.2 mm
+# into the wall so each land is structurally fused, without moving the laptop.
 for i,fx in enumerate(p['fan_centers_x'],1):
-    add(f'lid_bearing_liner_{i}',box(fx-43,T/2,H+20,86,.6,52),(119,131,124))
-for yy,seal_width in [(-G,.6),(11.0,1.3)]:
-    # Replaceable compliant seal; bearing loads use end pads, not this lip.
-    # The thin rear strip fits inside the new continuous rail and stays clear
-    # of the mouth. It uses the same 0.6 mm stock as the lid contact liners.
-    for a,b in [(42,W/2-.2),(W/2+.5,W-24)]:
-        seal=box(a,yy,50,b-a,seal_width,3.6).val()
-        # Adhere the rear strip directly to the lip's leaned inside face.
-        if yy<0:seal=leaned(seal)
-        add(f'hinge_seal_{a:.1f}_{yy}',seal,(56,80,75))
+    add(f'lid_bearing_land_{i}',box(fx-43,T/2,H+20,86,.8,52))
 
 # Hand-adjusted cassette, captured nuts and tool-free removable cap.
 from cassette import build_cassette
@@ -194,7 +181,7 @@ for f in contacts['rubber_feet']:
 # Lean only the laptop, guide/contact parts and plug station; fans retain the
 # independently configured upward discharge angle. Contacts follow the laptop lean.
 for item in parts:
-    if not item['name'].startswith(('01_','02_','hinge_seal_')):
+    if not item['name'].startswith(('01_','02_')):
         item['shape']=leaned(item['shape'])
 
 # Fuse intentional structural overlaps and reserve a removable roof clearance
@@ -213,6 +200,7 @@ for side,i,x0,x1 in [('left','01',-7,W/2),('right','02',W/2+.30,W+25)]:
     roof=take(i+'_suction_roof').fuse(take('corner_cradle_'+side)).fuse(take('retention_lip_'+side)).clean()
     roof,print_meta=roof_gussets(roof,x0,x1,p['fan_centers_x'][int(i)-1],front_y,W,WALL,p['mouth_width_mm'])
     roof_print_metadata.append(print_meta)
+    roof=roof.fuse(take(f'lid_bearing_land_{int(i)}')).clean()
     for bearing in hinge_bearing_metadata:
         if bearing['module']==int(i):
             roof=roof.fuse(take(bearing['structural_part'])).clean()
@@ -233,10 +221,6 @@ for i in range(2):
 # Preserve source handedness. Dell keyboard-left is source -X, hence x=0.
 # With a right-handed camera at +Y and +Z up, x=0 appears screen-right.
 # Laptop withdrawal is +X; insertion is -X. No final reflection is permitted.
-# Replace ambiguous viewer-left/right names with the actual desk relation.
-for item in parts:
-    item['name']=item['name'].replace('corner_pad_left','corner_pad_far').replace('corner_pad_right','corner_pad_near')
-
 print('Exporting D8 assembly',flush=True)
 ass=cq.Assembly(name='Precision_5680_D8')
 for a in parts:ass.add(a['shape'],name=a['name'],color=cq.Color(*[v/255 for v in a['color']]))
@@ -247,6 +231,6 @@ for a in parts:
     manifest.append({k:a[k] for k in ['name','reference']}|{'volume_mm3':a['shape'].Volume(),'bounds_mm':[b.xmin,b.ymin,b.zmin,b.xmax,b.ymax,b.zmax]})
 (R/'flow-geometry.json').write_text(json.dumps({'mouths':mouth_records,'plenum_volumes_mm3':[v.Volume() for v in flow_voids],'cavity_basis':'Baseline void minus final body bosses and bottom panels; conservative omission of new floor clearance.','exhaust_axis':[0,math.cos(ELEV),math.sin(ELEV)]},indent=2)+'\n')
 (R/'assembly-details.json').write_text(json.dumps({'cassette':cassette_metadata,'body_service':body_service_metadata,'roof_print_geometry':roof_print_metadata,'fan_fit':__import__('fan_service').ACTIVE_SPECS,'fan_retention':__import__('fan_service').TOP_CLIP_SPECS},indent=2)+'\n')
-(R/'geometry.json').write_text(json.dumps({'coordinate_frame':p['coordinate_frame'],'scope':'D8 removable adjustable connector and direct-foot plenum study. End seats and lid liners support the laptop; no tall cheeks or underside frame. Source-handed USB-C ports. Physical qualification remains outstanding.','parts':manifest},indent=2)+'\n')
+(R/'geometry.json').write_text(json.dumps({'coordinate_frame':p['coordinate_frame'],'scope':'D8 removable adjustable connector and direct-foot plenum study. Integral end seats, intermediate hinge bearings and lid lands support the laptop directly; no tall cheeks or underside frame. Source-handed USB-C ports. Physical qualification remains outstanding.','parts':manifest},indent=2)+'\n')
 print('D8 exported:',len(parts),'valid solids',flush=True)
 
