@@ -29,4 +29,3 @@ shells; they do not qualify this update. Physical fit, sliding friction,
 strength, warm creep and cooling remain unmeasured.
 
 ![Chamfered quarter-interval hinge bearings](D8-hinge-bearings.png)
-
