@@ -23,14 +23,14 @@
     ]
   },
   "declared_export_linear_deflection_mm": 0.06,
-  "manifest_sha256": "51d71f28e96a9847b98a6c06dd4d041f4c41cf03b7ef955785ef2d29b04c981f",
+  "manifest_sha256": "e271fcc2d5047e61584478997d3b3394a501f9a7da5002e3760b7ae2c7ec3463",
   "parts": [
     {
       "part": "01_fan_guard_retainer",
       "file": "01_fan_guard_retainer.stl",
       "failures": [],
       "warnings": [],
-      "sha256": "4481228109ffab4ea7fba14422e3d6f523fc3eb6b4a5cd2aeb31033c9ef98b92",
+      "sha256": "7acfd7270a9bc512d0a5b33acc5d9d1aeb6af389abcd556c63bb260b79d61abc",
       "mesh": {
         "triangles": 1476,
         "unique_vertices": 712,
@@ -40,7 +40,7 @@
         "watertight": true,
         "consistent_winding": true,
         "degenerate_triangles": 0,
-        "signed_volume_mm3": 30485.18806012977,
+        "signed_volume_mm3": 30485.188061805897,
         "positive_volume": true,
         "bounds_mm": [
           [
@@ -111,8 +111,8 @@
       },
       "first_layer": {
         "xy_bounding_footprint_mm2": 16384.0,
-        "cad_first_0p20mm_mean_area_mm2": 8100.586065824279,
-        "mean_area_fraction_of_bounding_rectangle": 0.49442053624415766,
+        "cad_first_0p20mm_mean_area_mm2": 8100.586065824278,
+        "mean_area_fraction_of_bounding_rectangle": 0.4944205362441576,
         "source": "Manifest CAD slab-intersection volume / 0.20 mm; not recalculated from STL and not exact Z=0 contact area"
       },
       "geometric_preflight_pass": true,
@@ -317,7 +317,7 @@
       "file": "02_fan_guard_retainer.stl",
       "failures": [],
       "warnings": [],
-      "sha256": "3bf3b83bfaf70820ac4e4c7e7fbd40fd76f03751d1e0cfe025e0d25f71e708bd",
+      "sha256": "c76693b4b3301891b34bd822758a5ed43352b5471e3fecbeff2dba24e1d9e209",
       "mesh": {
         "triangles": 1476,
         "unique_vertices": 712,
@@ -327,7 +327,7 @@
         "watertight": true,
         "consistent_winding": true,
         "degenerate_triangles": 0,
-        "signed_volume_mm3": 30485.188061230827,
+        "signed_volume_mm3": 30485.18806118723,
         "positive_volume": true,
         "bounds_mm": [
           [
@@ -398,8 +398,8 @@
       },
       "first_layer": {
         "xy_bounding_footprint_mm2": 16384.0,
-        "cad_first_0p20mm_mean_area_mm2": 8100.586065824286,
-        "mean_area_fraction_of_bounding_rectangle": 0.4944205362441581,
+        "cad_first_0p20mm_mean_area_mm2": 8100.586065824283,
+        "mean_area_fraction_of_bounding_rectangle": 0.4944205362441579,
         "source": "Manifest CAD slab-intersection volume / 0.20 mm; not recalculated from STL and not exact Z=0 contact area"
       },
       "geometric_preflight_pass": true,
@@ -606,7 +606,7 @@
       "warnings": [
         "Manifest identifies an outstanding bridge/support review"
       ],
-      "sha256": "510117fe93439446d98be5d80bb181a05635f63f8ec6e8b0fd4e721d0a4a8807",
+      "sha256": "fb92b63b8c8eb012294b7dddbc36c5fe78cbc8e38309ae3fe59c4075d8f45d59",
       "mesh": {
         "triangles": 3754,
         "unique_vertices": 1875,
@@ -697,7 +697,7 @@
         "Mean first-layer area is below 5% of bounding rectangle; inspect adhesion and local supports",
         "Manifest identifies an outstanding bridge/support review"
       ],
-      "sha256": "fba7447365c6e256e7abd4f1920533ebd25aa4ea2a9d5b8e7c8158c2d48b18d1",
+      "sha256": "cd8cba624b7631443054e256eebf75bad18905b21c3f236418568e8bc55a3773",
       "mesh": {
         "triangles": 8140,
         "unique_vertices": 4072,
@@ -707,7 +707,7 @@
         "watertight": true,
         "consistent_winding": true,
         "degenerate_triangles": 0,
-        "signed_volume_mm3": 8627.061348573588,
+        "signed_volume_mm3": 8627.061223451821,
         "positive_volume": true,
         "bounds_mm": [
           [
@@ -726,7 +726,7 @@
           88.0,
           21.995076755061746
         ],
-        "surface_area_mm2": 3849.3488641227264,
+        "surface_area_mm2": 3849.3488476874354,
         "method": "Exact-coordinate vertex merge; edge incidence/winding; edge-connected components; signed volume. No healing or self-intersection certification."
       },
       "cad_minus_mesh_dimensions_mm": [
@@ -785,7 +785,7 @@
       "file": "breakaway_spring_cartridge.stl",
       "failures": [],
       "warnings": [],
-      "sha256": "f3b1e8041132cee9f9dbb1187b1d8364e875645da3ae510463babf4b66bdc0a3",
+      "sha256": "ad1204a1cf61caf0ae12ccedb932c1d11a9c8c5d2fddeaf07fb9fcdd7c1a89bb",
       "mesh": {
         "triangles": 1340,
         "unique_vertices": 662,
@@ -878,17 +878,17 @@
       "file": "breakaway_preload_hand_nut.stl",
       "failures": [],
       "warnings": [],
-      "sha256": "b60f9a5c6a4a40c5d5260772edba7cfefb0566d91990bc1ac5c437bda6b86e68",
+      "sha256": "6ab2b4867e6d55548b5c4922f6cbfbbb785525258a394c24ac4ca501ae219af0",
       "mesh": {
-        "triangles": 6778,
-        "unique_vertices": 3389,
+        "triangles": 6768,
+        "unique_vertices": 3384,
         "edge_connected_components": 1,
         "boundary_edges": 0,
         "nonmanifold_edges": 0,
         "watertight": true,
         "consistent_winding": true,
         "degenerate_triangles": 0,
-        "signed_volume_mm3": 3006.7950492277614,
+        "signed_volume_mm3": 3006.7957510481683,
         "positive_volume": true,
         "bounds_mm": [
           [
@@ -907,7 +907,7 @@
           23.990409355144948,
           9.99999990000002
         ],
-        "surface_area_mm2": 1809.3933068293582,
+        "surface_area_mm2": 1809.395293393614,
         "method": "Exact-coordinate vertex merge; edge incidence/winding; edge-connected components; signed volume. No healing or self-intersection certification."
       },
       "cad_minus_mesh_dimensions_mm": [
@@ -959,8 +959,8 @@
       },
       "first_layer": {
         "xy_bounding_footprint_mm2": 568.7726370475863,
-        "cad_first_0p20mm_mean_area_mm2": 346.54568559263254,
-        "mean_area_fraction_of_bounding_rectangle": 0.6092868450766187,
+        "cad_first_0p20mm_mean_area_mm2": 346.54568559284974,
+        "mean_area_fraction_of_bounding_rectangle": 0.6092868450770005,
         "source": "Manifest CAD slab-intersection volume / 0.20 mm; not recalculated from STL and not exact Z=0 contact area"
       },
       "geometric_preflight_pass": true,
@@ -971,17 +971,17 @@
       "file": "breakaway_spring_hand_screw_0.stl",
       "failures": [],
       "warnings": [],
-      "sha256": "8772c90b31aa739c1e69a05bc0ea1953c9da55355e8c7484d5278babde95261b",
+      "sha256": "76334d71a5fd267f35e12c62dbbf280196b04904037d0e2fbdba7d8c762c27d5",
       "mesh": {
-        "triangles": 7724,
-        "unique_vertices": 3864,
+        "triangles": 7720,
+        "unique_vertices": 3862,
         "edge_connected_components": 1,
         "boundary_edges": 0,
         "nonmanifold_edges": 0,
         "watertight": true,
         "consistent_winding": true,
         "degenerate_triangles": 0,
-        "signed_volume_mm3": 3371.6280950092514,
+        "signed_volume_mm3": 3371.6271565592633,
         "positive_volume": true,
         "bounds_mm": [
           [
@@ -1000,7 +1000,7 @@
           16.993376805447042,
           53.0
         ],
-        "surface_area_mm2": 1956.4015836673689,
+        "surface_area_mm2": 1956.4019704552747,
         "method": "Exact-coordinate vertex merge; edge incidence/winding; edge-connected components; signed volume. No healing or self-intersection certification."
       },
       "cad_minus_mesh_dimensions_mm": [
@@ -1052,8 +1052,8 @@
       },
       "first_layer": {
         "xy_bounding_footprint_mm2": 282.14260178148083,
-        "cad_first_0p20mm_mean_area_mm2": 210.28296188016398,
-        "mean_area_fraction_of_bounding_rectangle": 0.7453073748962871,
+        "cad_first_0p20mm_mean_area_mm2": 210.2829618801639,
+        "mean_area_fraction_of_bounding_rectangle": 0.7453073748962868,
         "source": "Manifest CAD slab-intersection volume / 0.20 mm; not recalculated from STL and not exact Z=0 contact area"
       },
       "geometric_preflight_pass": true,
@@ -1064,17 +1064,17 @@
       "file": "breakaway_spring_hand_screw_1.stl",
       "failures": [],
       "warnings": [],
-      "sha256": "eaa8036687190e3411b983f1a1ec0ceeddbe593a98031eaa72d59488bac8445b",
+      "sha256": "7918267b707ff7cde0000e593aac72a2c62c5121942beca3285f724246446f38",
       "mesh": {
-        "triangles": 7724,
-        "unique_vertices": 3864,
+        "triangles": 7720,
+        "unique_vertices": 3862,
         "edge_connected_components": 1,
         "boundary_edges": 0,
         "nonmanifold_edges": 0,
         "watertight": true,
         "consistent_winding": true,
         "degenerate_triangles": 0,
-        "signed_volume_mm3": 3371.6280950632317,
+        "signed_volume_mm3": 3371.627156642302,
         "positive_volume": true,
         "bounds_mm": [
           [
@@ -1093,7 +1093,7 @@
           16.993376805447042,
           53.0
         ],
-        "surface_area_mm2": 1956.4015836673689,
+        "surface_area_mm2": 1956.4019704552747,
         "method": "Exact-coordinate vertex merge; edge incidence/winding; edge-connected components; signed volume. No healing or self-intersection certification."
       },
       "cad_minus_mesh_dimensions_mm": [
@@ -1145,8 +1145,8 @@
       },
       "first_layer": {
         "xy_bounding_footprint_mm2": 282.14260178148083,
-        "cad_first_0p20mm_mean_area_mm2": 210.28296188016392,
-        "mean_area_fraction_of_bounding_rectangle": 0.745307374896287,
+        "cad_first_0p20mm_mean_area_mm2": 210.2829618801639,
+        "mean_area_fraction_of_bounding_rectangle": 0.7453073748962868,
         "source": "Manifest CAD slab-intersection volume / 0.20 mm; not recalculated from STL and not exact Z=0 contact area"
       },
       "geometric_preflight_pass": true,
@@ -1157,17 +1157,17 @@
       "file": "cassette_Z_lock_0.stl",
       "failures": [],
       "warnings": [],
-      "sha256": "6986265e9dff24f44b69fbf3b9dacaa7a37d51c7fd067fc7e2393149c0d5610d",
+      "sha256": "5e1b5d1b21ce60927c522d4fbbfb1df42fb4925eae3a7085475f75cc7cf4cbc8",
       "mesh": {
-        "triangles": 8862,
-        "unique_vertices": 4433,
+        "triangles": 8856,
+        "unique_vertices": 4430,
         "edge_connected_components": 1,
         "boundary_edges": 0,
         "nonmanifold_edges": 0,
         "watertight": true,
         "consistent_winding": true,
         "degenerate_triangles": 0,
-        "signed_volume_mm3": 1175.9050285514802,
+        "signed_volume_mm3": 1175.9047124787628,
         "positive_volume": true,
         "bounds_mm": [
           [
@@ -1186,7 +1186,7 @@
           13.993982350220904,
           18.5
         ],
-        "surface_area_mm2": 882.4304600639098,
+        "surface_area_mm2": 882.4309244656715,
         "method": "Exact-coordinate vertex merge; edge incidence/winding; edge-connected components; signed volume. No healing or self-intersection certification."
       },
       "cad_minus_mesh_dimensions_mm": [
@@ -1250,17 +1250,17 @@
       "file": "cassette_Z_lock_1.stl",
       "failures": [],
       "warnings": [],
-      "sha256": "f5e57d96b2ce9ef73833c52723740a1bbabd5a53b82eb0a0807094a8a8089bcc",
+      "sha256": "bacff64c7861149b7cedfd1894c7420229969e974b030bfe3363913a9cd6b6ff",
       "mesh": {
-        "triangles": 8862,
-        "unique_vertices": 4433,
+        "triangles": 8856,
+        "unique_vertices": 4430,
         "edge_connected_components": 1,
         "boundary_edges": 0,
         "nonmanifold_edges": 0,
         "watertight": true,
         "consistent_winding": true,
         "degenerate_triangles": 0,
-        "signed_volume_mm3": 1175.9050285514802,
+        "signed_volume_mm3": 1175.9047124787628,
         "positive_volume": true,
         "bounds_mm": [
           [
@@ -1279,7 +1279,7 @@
           13.993982350220904,
           18.5
         ],
-        "surface_area_mm2": 882.4304600639093,
+        "surface_area_mm2": 882.4309244656712,
         "method": "Exact-coordinate vertex merge; edge incidence/winding; edge-connected components; signed volume. No healing or self-intersection certification."
       },
       "cad_minus_mesh_dimensions_mm": [
@@ -1343,17 +1343,17 @@
       "file": "cassette_Y_lock_0.stl",
       "failures": [],
       "warnings": [],
-      "sha256": "69ffda38364ea08fbfe983cd5b7d00daa93a988115865deaa8f93a3b5fc44e53",
+      "sha256": "bbf610442b690e14dac26b5f79ed44b570bfe252f0e5c52437a5a6b16ec7463e",
       "mesh": {
-        "triangles": 7166,
-        "unique_vertices": 3585,
+        "triangles": 7176,
+        "unique_vertices": 3590,
         "edge_connected_components": 1,
         "boundary_edges": 0,
         "nonmanifold_edges": 0,
         "watertight": true,
         "consistent_winding": true,
         "degenerate_triangles": 0,
-        "signed_volume_mm3": 1402.9036166870947,
+        "signed_volume_mm3": 1402.9030304762355,
         "positive_volume": true,
         "bounds_mm": [
           [
@@ -1372,7 +1372,7 @@
           17.9924578955397,
           14.5
         ],
-        "surface_area_mm2": 1016.1394240926343,
+        "surface_area_mm2": 1016.1384787810306,
         "method": "Exact-coordinate vertex merge; edge incidence/winding; edge-connected components; signed volume. No healing or self-intersection certification."
       },
       "cad_minus_mesh_dimensions_mm": [
@@ -1419,8 +1419,8 @@
       },
       "first_layer": {
         "xy_bounding_footprint_mm2": 317.07297012103254,
-        "cad_first_0p20mm_mean_area_mm2": 237.69020266519095,
-        "mean_area_fraction_of_bounding_rectangle": 0.7496388057754032,
+        "cad_first_0p20mm_mean_area_mm2": 237.69020266519098,
+        "mean_area_fraction_of_bounding_rectangle": 0.7496388057754033,
         "source": "Manifest CAD slab-intersection volume / 0.20 mm; not recalculated from STL and not exact Z=0 contact area"
       },
       "geometric_preflight_pass": true,
@@ -1433,17 +1433,17 @@
       "warnings": [
         "Manifest identifies an outstanding bridge/support review"
       ],
-      "sha256": "e742619588d11d4e0bc2df7fe64d890ce3e8809b73f1c3e1620f39c1b7be2aed",
+      "sha256": "8662e07b81943f73d1b0a94b926fd0fbd4410e230981377e321e2f945234e1c5",
       "mesh": {
-        "triangles": 9028,
-        "unique_vertices": 4510,
+        "triangles": 9040,
+        "unique_vertices": 4516,
         "edge_connected_components": 1,
         "boundary_edges": 0,
         "nonmanifold_edges": 0,
         "watertight": true,
         "consistent_winding": true,
         "degenerate_triangles": 0,
-        "signed_volume_mm3": 13636.244741593318,
+        "signed_volume_mm3": 13636.2433663342,
         "positive_volume": true,
         "bounds_mm": [
           [
@@ -1462,7 +1462,7 @@
           25.399999618530273,
           37.5
         ],
-        "surface_area_mm2": 7086.362157759776,
+        "surface_area_mm2": 7086.360353273223,
         "method": "Exact-coordinate vertex merge; edge incidence/winding; edge-connected components; signed volume. No healing or self-intersection certification."
       },
       "cad_minus_mesh_dimensions_mm": [
@@ -1528,17 +1528,17 @@
       "warnings": [
         "Manifest identifies an outstanding bridge/support review"
       ],
-      "sha256": "f8b9cbf63c361efc6ee03482daad5dee15da5b5420f8e8dbe49cc605f7134f1f",
+      "sha256": "d24f0f423251f99dc8a6105cbb5a0ae624a76db9bb7aefb302f4d1190eb7c30d",
       "mesh": {
-        "triangles": 5580,
-        "unique_vertices": 2786,
+        "triangles": 5574,
+        "unique_vertices": 2783,
         "edge_connected_components": 1,
         "boundary_edges": 0,
         "nonmanifold_edges": 0,
         "watertight": true,
         "consistent_winding": true,
         "degenerate_triangles": 0,
-        "signed_volume_mm3": 11220.320528517166,
+        "signed_volume_mm3": 11220.32084331678,
         "positive_volume": true,
         "bounds_mm": [
           [
@@ -1557,7 +1557,7 @@
           29.0,
           28.200000662939487
         ],
-        "surface_area_mm2": 5232.462086298491,
+        "surface_area_mm2": 5232.462593259488,
         "method": "Exact-coordinate vertex merge; edge incidence/winding; edge-connected components; signed volume. No healing or self-intersection certification."
       },
       "cad_minus_mesh_dimensions_mm": [
@@ -1604,8 +1604,8 @@
       },
       "first_layer": {
         "xy_bounding_footprint_mm2": 945.3999557495117,
-        "cad_first_0p20mm_mean_area_mm2": 700.7071647472242,
-        "mean_area_fraction_of_bounding_rectangle": 0.7411753729052214,
+        "cad_first_0p20mm_mean_area_mm2": 700.7071647479013,
+        "mean_area_fraction_of_bounding_rectangle": 0.7411753729059376,
         "source": "Manifest CAD slab-intersection volume / 0.20 mm; not recalculated from STL and not exact Z=0 contact area"
       },
       "geometric_preflight_pass": true,
@@ -1618,7 +1618,7 @@
       "warnings": [
         "Manifest identifies an outstanding bridge/support review"
       ],
-      "sha256": "c69ca2f26f6e87afaad6ad50e3b2d28ba3fff1ff6fcc8d6fc7ff4e05eefde9b6",
+      "sha256": "64b4ce249ab1eba4b406ef8f729bd564212034b4aae3e5eaa692367f7237527c",
       "mesh": {
         "triangles": 1000,
         "unique_vertices": 500,
@@ -1714,7 +1714,7 @@
         "Mean first-layer area is below 5% of bounding rectangle; inspect adhesion and local supports",
         "Manifest identifies an outstanding bridge/support review"
       ],
-      "sha256": "7629cfad9cc206d603d8379602970aac485810a92e405197f45694add742781f",
+      "sha256": "8540bd84c96f1fb2163304ee94402b3925b74bd6b51d1517a26892797869c119",
       "mesh": {
         "triangles": 15956,
         "unique_vertices": 7980,
@@ -1724,7 +1724,7 @@
         "watertight": true,
         "consistent_winding": true,
         "degenerate_triangles": 0,
-        "signed_volume_mm3": 1324.9302540167585,
+        "signed_volume_mm3": 1324.9302540442957,
         "positive_volume": true,
         "bounds_mm": [
           [
@@ -1743,7 +1743,7 @@
           25.268644332885742,
           13.99843374604825
         ],
-        "surface_area_mm2": 925.0138915009389,
+        "surface_area_mm2": 925.013891500939,
         "method": "Exact-coordinate vertex merge; edge incidence/winding; edge-connected components; signed volume. No healing or self-intersection certification."
       },
       "cad_minus_mesh_dimensions_mm": [
@@ -1802,7 +1802,7 @@
       "file": "breakaway_spring_spacer_0.stl",
       "failures": [],
       "warnings": [],
-      "sha256": "aa8753fcc577901adcc5827363594b012f93dbd1cab89a67d756a6bb7cc4157a",
+      "sha256": "5a9518f160726bc3ba68742b45955ea88618be3abd2bb830188117e39a127a88",
       "mesh": {
         "triangles": 840,
         "unique_vertices": 420,
@@ -1895,7 +1895,7 @@
       "file": "breakaway_spring_spacer_1.stl",
       "failures": [],
       "warnings": [],
-      "sha256": "1178ee213ba2dd8049a051f06a021bd387e042383c6c21dd52fa709458d52f22",
+      "sha256": "1d9ac33de993e328a13913cd3aafdf8e5b1ad9bba74b3d3166d864a9212d49ea",
       "mesh": {
         "triangles": 840,
         "unique_vertices": 420,
@@ -1988,17 +1988,17 @@
       "file": "connector_mount_lock_0.stl",
       "failures": [],
       "warnings": [],
-      "sha256": "25a86ca8899d98aa1aead77c0cbaa7e186a251c0d156d9756830e02c52a7e0dc",
+      "sha256": "65fd3d22f7862453e059611211e2ef2aa2cbbf7a5f4cbe5cc652a7f8ff25404a",
       "mesh": {
-        "triangles": 9788,
-        "unique_vertices": 4896,
+        "triangles": 9786,
+        "unique_vertices": 4895,
         "edge_connected_components": 1,
         "boundary_edges": 0,
         "nonmanifold_edges": 0,
         "watertight": true,
         "consistent_winding": true,
         "degenerate_triangles": 0,
-        "signed_volume_mm3": 1305.9245687076973,
+        "signed_volume_mm3": 1305.924066568986,
         "positive_volume": true,
         "bounds_mm": [
           [
@@ -2017,7 +2017,7 @@
           13.993982350220904,
           21.5
         ],
-        "surface_area_mm2": 971.0642775914855,
+        "surface_area_mm2": 971.0644402168246,
         "method": "Exact-coordinate vertex merge; edge incidence/winding; edge-connected components; signed volume. No healing or self-intersection certification."
       },
       "cad_minus_mesh_dimensions_mm": [
@@ -2069,8 +2069,8 @@
       },
       "first_layer": {
         "xy_bounding_footprint_mm2": 189.3454090614886,
-        "cad_first_0p20mm_mean_area_mm2": 137.5486039764981,
-        "mean_area_fraction_of_bounding_rectangle": 0.7264427728048592,
+        "cad_first_0p20mm_mean_area_mm2": 137.54860397649813,
+        "mean_area_fraction_of_bounding_rectangle": 0.7264427728048594,
         "source": "Manifest CAD slab-intersection volume / 0.20 mm; not recalculated from STL and not exact Z=0 contact area"
       },
       "geometric_preflight_pass": true,
@@ -2081,17 +2081,17 @@
       "file": "connector_mount_lock_1.stl",
       "failures": [],
       "warnings": [],
-      "sha256": "52bed6aa65a30ea11c2884a0acff88fa562afe0acac40c1834a37a8ca245d149",
+      "sha256": "dd3880d60c74c60891a5a2f741578309a6da0592406f4a55322cabcb06a0adc3",
       "mesh": {
-        "triangles": 9788,
-        "unique_vertices": 4896,
+        "triangles": 9786,
+        "unique_vertices": 4895,
         "edge_connected_components": 1,
         "boundary_edges": 0,
         "nonmanifold_edges": 0,
         "watertight": true,
         "consistent_winding": true,
         "degenerate_triangles": 0,
-        "signed_volume_mm3": 1305.9245687076964,
+        "signed_volume_mm3": 1305.9240665689852,
         "positive_volume": true,
         "bounds_mm": [
           [
@@ -2110,7 +2110,7 @@
           13.993982350220904,
           21.5
         ],
-        "surface_area_mm2": 971.0642775914853,
+        "surface_area_mm2": 971.0644402168244,
         "method": "Exact-coordinate vertex merge; edge incidence/winding; edge-connected components; signed volume. No healing or self-intersection certification."
       },
       "cad_minus_mesh_dimensions_mm": [
@@ -2174,17 +2174,17 @@
       "file": "chassis_stop_mount_lock_0.stl",
       "failures": [],
       "warnings": [],
-      "sha256": "9d982f4919a8e190ef7c65c9e6d392a262d9597f74a79e413c64bd1679a8040f",
+      "sha256": "182907f1b7e77691845dcff5d5cf6224e8a94dd36b09e02413519a3fb3794d79",
       "mesh": {
-        "triangles": 9788,
-        "unique_vertices": 4896,
+        "triangles": 9786,
+        "unique_vertices": 4895,
         "edge_connected_components": 1,
         "boundary_edges": 0,
         "nonmanifold_edges": 0,
         "watertight": true,
         "consistent_winding": true,
         "degenerate_triangles": 0,
-        "signed_volume_mm3": 1305.9245687019381,
+        "signed_volume_mm3": 1305.9240665564369,
         "positive_volume": true,
         "bounds_mm": [
           [
@@ -2203,7 +2203,7 @@
           13.993982350220904,
           21.5
         ],
-        "surface_area_mm2": 971.0642775914855,
+        "surface_area_mm2": 971.0644402168248,
         "method": "Exact-coordinate vertex merge; edge incidence/winding; edge-connected components; signed volume. No healing or self-intersection certification."
       },
       "cad_minus_mesh_dimensions_mm": [
@@ -2267,17 +2267,17 @@
       "file": "chassis_stop_mount_lock_1.stl",
       "failures": [],
       "warnings": [],
-      "sha256": "e3df14456d03c494a2e3fad64ece18147b0a72177ef9a0d18bca6c9c4a53b9f0",
+      "sha256": "b1fe4bc43bd91df450766cce49b5fe15e73c8d1842736efce140ac8740571d83",
       "mesh": {
-        "triangles": 9788,
-        "unique_vertices": 4896,
+        "triangles": 9786,
+        "unique_vertices": 4895,
         "edge_connected_components": 1,
         "boundary_edges": 0,
         "nonmanifold_edges": 0,
         "watertight": true,
         "consistent_winding": true,
         "degenerate_triangles": 0,
-        "signed_volume_mm3": 1305.9245687019381,
+        "signed_volume_mm3": 1305.9240665564373,
         "positive_volume": true,
         "bounds_mm": [
           [
@@ -2296,7 +2296,7 @@
           13.993982350220904,
           21.5
         ],
-        "surface_area_mm2": 971.0642775914856,
+        "surface_area_mm2": 971.0644402168248,
         "method": "Exact-coordinate vertex merge; edge incidence/winding; edge-connected components; signed volume. No healing or self-intersection certification."
       },
       "cad_minus_mesh_dimensions_mm": [
@@ -2348,8 +2348,8 @@
       },
       "first_layer": {
         "xy_bounding_footprint_mm2": 189.3454090614886,
-        "cad_first_0p20mm_mean_area_mm2": 137.54860397650083,
-        "mean_area_fraction_of_bounding_rectangle": 0.7264427728048737,
+        "cad_first_0p20mm_mean_area_mm2": 137.5486039765009,
+        "mean_area_fraction_of_bounding_rectangle": 0.7264427728048741,
         "source": "Manifest CAD slab-intersection volume / 0.20 mm; not recalculated from STL and not exact Z=0 contact area"
       },
       "geometric_preflight_pass": true,
@@ -2362,17 +2362,17 @@
       "warnings": [
         "Manifest identifies an outstanding bridge/support review"
       ],
-      "sha256": "bd2af61f556092fdba0cfd983affdbbcaf3530c998c5fe6b9de5d907482c5b02",
+      "sha256": "31f5eb57fcda68d87163f3288635e788b60717b9fcc2842264861951c29deb47",
       "mesh": {
-        "triangles": 7142,
-        "unique_vertices": 3567,
+        "triangles": 7110,
+        "unique_vertices": 3551,
         "edge_connected_components": 1,
         "boundary_edges": 0,
         "nonmanifold_edges": 0,
         "watertight": true,
         "consistent_winding": true,
         "degenerate_triangles": 0,
-        "signed_volume_mm3": 10546.467473360239,
+        "signed_volume_mm3": 10546.467375802704,
         "positive_volume": true,
         "bounds_mm": [
           [
@@ -2391,7 +2391,7 @@
           30.0,
           35.0
         ],
-        "surface_area_mm2": 4765.524535689685,
+        "surface_area_mm2": 4765.525226151391,
         "method": "Exact-coordinate vertex merge; edge incidence/winding; edge-connected components; signed volume. No healing or self-intersection certification."
       },
       "cad_minus_mesh_dimensions_mm": [
@@ -2457,17 +2457,17 @@
       "warnings": [
         "Manifest identifies an outstanding bridge/support review"
       ],
-      "sha256": "84110d8622f1a9db298924b7e974dd6fcee0014db05606e9434286fae3e5306e",
+      "sha256": "3a8369ee2faf626c665284d58f3cfae9e1046d4915ef8f5e42785adbe416a7f6",
       "mesh": {
-        "triangles": 37148,
-        "unique_vertices": 18562,
+        "triangles": 37240,
+        "unique_vertices": 18608,
         "edge_connected_components": 1,
         "boundary_edges": 0,
         "nonmanifold_edges": 0,
         "watertight": true,
         "consistent_winding": true,
         "degenerate_triangles": 0,
-        "signed_volume_mm3": 141808.44803272575,
+        "signed_volume_mm3": 141808.4462499051,
         "positive_volume": true,
         "bounds_mm": [
           [
@@ -2486,7 +2486,7 @@
           132.11101867584512,
           27.9999999
         ],
-        "surface_area_mm2": 30879.97024088512,
+        "surface_area_mm2": 30879.96234645949,
         "method": "Exact-coordinate vertex merge; edge incidence/winding; edge-connected components; signed volume. No healing or self-intersection certification."
       },
       "cad_minus_mesh_dimensions_mm": [
@@ -2538,8 +2538,8 @@
       },
       "first_layer": {
         "xy_bounding_footprint_mm2": 9776.192756388391,
-        "cad_first_0p20mm_mean_area_mm2": 6407.37633647767,
-        "mean_area_fraction_of_bounding_rectangle": 0.6554060968458993,
+        "cad_first_0p20mm_mean_area_mm2": 6407.376336477543,
+        "mean_area_fraction_of_bounding_rectangle": 0.6554060968458865,
         "source": "Manifest CAD slab-intersection volume / 0.20 mm; not recalculated from STL and not exact Z=0 contact area"
       },
       "geometric_preflight_pass": true,
@@ -2550,17 +2550,17 @@
       "file": "independent_printed_chassis_stop_screw.stl",
       "failures": [],
       "warnings": [],
-      "sha256": "ed605a32ae6434f4a1aa15ad2fb891dcfa0edcb21af8e4addb5df4eeaf33acc8",
+      "sha256": "2b9a39a6283c5629772cda0a5df6d3686684ea0a086c70025ee1e037530f22f3",
       "mesh": {
-        "triangles": 10698,
-        "unique_vertices": 5351,
+        "triangles": 10774,
+        "unique_vertices": 5389,
         "edge_connected_components": 1,
         "boundary_edges": 0,
         "nonmanifold_edges": 0,
         "watertight": true,
         "consistent_winding": true,
         "degenerate_triangles": 0,
-        "signed_volume_mm3": 4017.3091027404275,
+        "signed_volume_mm3": 4017.3141792434194,
         "positive_volume": true,
         "bounds_mm": [
           [
@@ -2579,11 +2579,11 @@
           23.99040925502777,
           27.0
         ],
-        "surface_area_mm2": 2094.91394294522,
+        "surface_area_mm2": 2094.90571148022,
         "method": "Exact-coordinate vertex merge; edge incidence/winding; edge-connected components; signed volume. No healing or self-intersection certification."
       },
       "cad_minus_mesh_dimensions_mm": [
-        -3.357828646244343e-07,
+        -3.35782868177148e-07,
         0.009590944972231341,
         0.0
       ],
@@ -2631,8 +2631,8 @@
       },
       "first_layer": {
         "xy_bounding_footprint_mm2": 568.772632274934,
-        "cad_first_0p20mm_mean_area_mm2": 435.2539554280868,
-        "mean_area_fraction_of_bounding_rectangle": 0.7652512282231139,
+        "cad_first_0p20mm_mean_area_mm2": 435.2539554280867,
+        "mean_area_fraction_of_bounding_rectangle": 0.7652512282231138,
         "source": "Manifest CAD slab-intersection volume / 0.20 mm; not recalculated from STL and not exact Z=0 contact area"
       },
       "geometric_preflight_pass": true,
@@ -2643,7 +2643,7 @@
       "file": "stop_soft_tip.stl",
       "failures": [],
       "warnings": [],
-      "sha256": "3700036844ed503869416af71486090bf1afb6079de88078f38415cf720f4242",
+      "sha256": "edc478df801331c521cf7713e8ae68ef1336c38ed83837adead4711e6773590b",
       "mesh": {
         "triangles": 836,
         "unique_vertices": 420,
@@ -2736,17 +2736,17 @@
       "file": "01_bottom_thumb_lock_1.stl",
       "failures": [],
       "warnings": [],
-      "sha256": "eb51f646ff88a41f4b3ed71834f990c1cf2b0bca07edc373150e55caa1e9ceb1",
+      "sha256": "0efdf7dc93fa323c029ff4b14678a8d6ee3f0fa783c303e6f97b502ba94f915b",
       "mesh": {
-        "triangles": 8792,
-        "unique_vertices": 4398,
+        "triangles": 8796,
+        "unique_vertices": 4400,
         "edge_connected_components": 1,
         "boundary_edges": 0,
         "nonmanifold_edges": 0,
         "watertight": true,
         "consistent_winding": true,
         "degenerate_triangles": 0,
-        "signed_volume_mm3": 1554.623894430685,
+        "signed_volume_mm3": 1554.624019490786,
         "positive_volume": true,
         "bounds_mm": [
           [
@@ -2765,7 +2765,7 @@
           17.9924578955397,
           18.0
         ],
-        "surface_area_mm2": 1119.5555971234487,
+        "surface_area_mm2": 1119.555352018158,
         "method": "Exact-coordinate vertex merge; edge incidence/winding; edge-connected components; signed volume. No healing or self-intersection certification."
       },
       "cad_minus_mesh_dimensions_mm": [
@@ -2812,8 +2812,8 @@
       },
       "first_layer": {
         "xy_bounding_footprint_mm2": 317.07297012103254,
-        "cad_first_0p20mm_mean_area_mm2": 237.69020266519095,
-        "mean_area_fraction_of_bounding_rectangle": 0.7496388057754032,
+        "cad_first_0p20mm_mean_area_mm2": 237.69020266519098,
+        "mean_area_fraction_of_bounding_rectangle": 0.7496388057754033,
         "source": "Manifest CAD slab-intersection volume / 0.20 mm; not recalculated from STL and not exact Z=0 contact area"
       },
       "geometric_preflight_pass": true,
@@ -2824,17 +2824,17 @@
       "file": "01_bottom_thumb_lock_2.stl",
       "failures": [],
       "warnings": [],
-      "sha256": "b7829dc90f111a09f21402a1ab3e7862badc07433268d0eaddbfb38c61bd0b01",
+      "sha256": "717462ae814f3301db994671e2e2de408884b3a598e9d0d1a5b1bdbe3f24a048",
       "mesh": {
-        "triangles": 8792,
-        "unique_vertices": 4398,
+        "triangles": 8796,
+        "unique_vertices": 4400,
         "edge_connected_components": 1,
         "boundary_edges": 0,
         "nonmanifold_edges": 0,
         "watertight": true,
         "consistent_winding": true,
         "degenerate_triangles": 0,
-        "signed_volume_mm3": 1554.6238944306845,
+        "signed_volume_mm3": 1554.6240194984664,
         "positive_volume": true,
         "bounds_mm": [
           [
@@ -2853,7 +2853,7 @@
           17.9924578955397,
           18.0
         ],
-        "surface_area_mm2": 1119.5555971234487,
+        "surface_area_mm2": 1119.555352018158,
         "method": "Exact-coordinate vertex merge; edge incidence/winding; edge-connected components; signed volume. No healing or self-intersection certification."
       },
       "cad_minus_mesh_dimensions_mm": [
@@ -2900,8 +2900,8 @@
       },
       "first_layer": {
         "xy_bounding_footprint_mm2": 317.07297012103265,
-        "cad_first_0p20mm_mean_area_mm2": 237.69020266519084,
-        "mean_area_fraction_of_bounding_rectangle": 0.7496388057754027,
+        "cad_first_0p20mm_mean_area_mm2": 237.69020266519092,
+        "mean_area_fraction_of_bounding_rectangle": 0.7496388057754029,
         "source": "Manifest CAD slab-intersection volume / 0.20 mm; not recalculated from STL and not exact Z=0 contact area"
       },
       "geometric_preflight_pass": true,
@@ -2914,7 +2914,7 @@
       "warnings": [
         "Manifest identifies an outstanding bridge/support review"
       ],
-      "sha256": "0d2324499b7cc3923972afb3f48f52c308b1af41b563d17688d2b8beec136eaf",
+      "sha256": "fd3b5af3f608ab76d5e85bec010c59a064ead10b57c5632fdca6d47c1d3bd1c5",
       "mesh": {
         "triangles": 2284,
         "unique_vertices": 1140,
@@ -2924,7 +2924,7 @@
         "watertight": true,
         "consistent_winding": true,
         "degenerate_triangles": 0,
-        "signed_volume_mm3": 35396.67617121255,
+        "signed_volume_mm3": 35396.676171212566,
         "positive_volume": true,
         "bounds_mm": [
           [
@@ -3002,17 +3002,17 @@
       "file": "02_bottom_thumb_lock_1.stl",
       "failures": [],
       "warnings": [],
-      "sha256": "b7829dc90f111a09f21402a1ab3e7862badc07433268d0eaddbfb38c61bd0b01",
+      "sha256": "717462ae814f3301db994671e2e2de408884b3a598e9d0d1a5b1bdbe3f24a048",
       "mesh": {
-        "triangles": 8792,
-        "unique_vertices": 4398,
+        "triangles": 8796,
+        "unique_vertices": 4400,
         "edge_connected_components": 1,
         "boundary_edges": 0,
         "nonmanifold_edges": 0,
         "watertight": true,
         "consistent_winding": true,
         "degenerate_triangles": 0,
-        "signed_volume_mm3": 1554.6238944306845,
+        "signed_volume_mm3": 1554.6240194984664,
         "positive_volume": true,
         "bounds_mm": [
           [
@@ -3031,7 +3031,7 @@
           17.9924578955397,
           18.0
         ],
-        "surface_area_mm2": 1119.5555971234487,
+        "surface_area_mm2": 1119.555352018158,
         "method": "Exact-coordinate vertex merge; edge incidence/winding; edge-connected components; signed volume. No healing or self-intersection certification."
       },
       "cad_minus_mesh_dimensions_mm": [
@@ -3078,8 +3078,8 @@
       },
       "first_layer": {
         "xy_bounding_footprint_mm2": 317.07297012103265,
-        "cad_first_0p20mm_mean_area_mm2": 237.69020266519084,
-        "mean_area_fraction_of_bounding_rectangle": 0.7496388057754027,
+        "cad_first_0p20mm_mean_area_mm2": 237.69020266519092,
+        "mean_area_fraction_of_bounding_rectangle": 0.7496388057754029,
         "source": "Manifest CAD slab-intersection volume / 0.20 mm; not recalculated from STL and not exact Z=0 contact area"
       },
       "geometric_preflight_pass": true,
@@ -3090,17 +3090,17 @@
       "file": "02_bottom_thumb_lock_2.stl",
       "failures": [],
       "warnings": [],
-      "sha256": "9b28d59741783a540fed19a3bd0c777666a23783d6fbef7933c59398dbe672f6",
+      "sha256": "5f16e9aa120f40cca71d1010ac1565294d70b4ef5ebb6f52133e793c9788dea9",
       "mesh": {
-        "triangles": 8792,
-        "unique_vertices": 4398,
+        "triangles": 8796,
+        "unique_vertices": 4400,
         "edge_connected_components": 1,
         "boundary_edges": 0,
         "nonmanifold_edges": 0,
         "watertight": true,
         "consistent_winding": true,
         "degenerate_triangles": 0,
-        "signed_volume_mm3": 1554.6238944306845,
+        "signed_volume_mm3": 1554.6240194984664,
         "positive_volume": true,
         "bounds_mm": [
           [
@@ -3119,7 +3119,7 @@
           17.9924578955397,
           18.0
         ],
-        "surface_area_mm2": 1119.5555971234485,
+        "surface_area_mm2": 1119.5553520181577,
         "method": "Exact-coordinate vertex merge; edge incidence/winding; edge-connected components; signed volume. No healing or self-intersection certification."
       },
       "cad_minus_mesh_dimensions_mm": [
@@ -3180,7 +3180,7 @@
       "warnings": [
         "Manifest identifies an outstanding bridge/support review"
       ],
-      "sha256": "6129d50bf1e723817abc89e8d2c4c2fbe6b5c63229985090c912bcb905c9ecf6",
+      "sha256": "453643bc0d2c28e5aaee659e935486bfd7a5cd7049a7521f958c4950aa5c6ccf",
       "mesh": {
         "triangles": 2284,
         "unique_vertices": 1140,
@@ -3190,7 +3190,7 @@
         "watertight": true,
         "consistent_winding": true,
         "degenerate_triangles": 0,
-        "signed_volume_mm3": 38813.25004246155,
+        "signed_volume_mm3": 38813.25004246156,
         "positive_volume": true,
         "bounds_mm": [
           [
@@ -3268,17 +3268,17 @@
       "file": "01_bridge_thumb_lock_1.stl",
       "failures": [],
       "warnings": [],
-      "sha256": "c3c134ef4d270d07577913482da174c645d7cab8691b317960d7ac0b79fd663e",
+      "sha256": "79383976c1688f9099e6a1759c939d686ee1244258257b3c7d0afa011a37a6fa",
       "mesh": {
-        "triangles": 8620,
-        "unique_vertices": 4312,
+        "triangles": 8632,
+        "unique_vertices": 4318,
         "edge_connected_components": 1,
         "boundary_edges": 0,
         "nonmanifold_edges": 0,
         "watertight": true,
         "consistent_winding": true,
         "degenerate_triangles": 0,
-        "signed_volume_mm3": 1792.2397373824813,
+        "signed_volume_mm3": 1792.2403563223004,
         "positive_volume": true,
         "bounds_mm": [
           [
@@ -3297,7 +3297,7 @@
           17.9924578955397,
           19.000000000000004
         ],
-        "surface_area_mm2": 1179.3991127053948,
+        "surface_area_mm2": 1179.3982312611756,
         "method": "Exact-coordinate vertex merge; edge incidence/winding; edge-connected components; signed volume. No healing or self-intersection certification."
       },
       "cad_minus_mesh_dimensions_mm": [
@@ -3349,8 +3349,8 @@
       },
       "first_layer": {
         "xy_bounding_footprint_mm2": 317.07297012103265,
-        "cad_first_0p20mm_mean_area_mm2": 237.690202665189,
-        "mean_area_fraction_of_bounding_rectangle": 0.7496388057753968,
+        "cad_first_0p20mm_mean_area_mm2": 237.69020266518902,
+        "mean_area_fraction_of_bounding_rectangle": 0.7496388057753969,
         "source": "Manifest CAD slab-intersection volume / 0.20 mm; not recalculated from STL and not exact Z=0 contact area"
       },
       "geometric_preflight_pass": true,
@@ -3361,17 +3361,17 @@
       "file": "02_bridge_thumb_lock_1.stl",
       "failures": [],
       "warnings": [],
-      "sha256": "c3c134ef4d270d07577913482da174c645d7cab8691b317960d7ac0b79fd663e",
+      "sha256": "79383976c1688f9099e6a1759c939d686ee1244258257b3c7d0afa011a37a6fa",
       "mesh": {
-        "triangles": 8620,
-        "unique_vertices": 4312,
+        "triangles": 8632,
+        "unique_vertices": 4318,
         "edge_connected_components": 1,
         "boundary_edges": 0,
         "nonmanifold_edges": 0,
         "watertight": true,
         "consistent_winding": true,
         "degenerate_triangles": 0,
-        "signed_volume_mm3": 1792.2397373824813,
+        "signed_volume_mm3": 1792.2403563223004,
         "positive_volume": true,
         "bounds_mm": [
           [
@@ -3390,7 +3390,7 @@
           17.9924578955397,
           19.000000000000004
         ],
-        "surface_area_mm2": 1179.3991127053948,
+        "surface_area_mm2": 1179.3982312611756,
         "method": "Exact-coordinate vertex merge; edge incidence/winding; edge-connected components; signed volume. No healing or self-intersection certification."
       },
       "cad_minus_mesh_dimensions_mm": [
@@ -3442,8 +3442,8 @@
       },
       "first_layer": {
         "xy_bounding_footprint_mm2": 317.07297012103265,
-        "cad_first_0p20mm_mean_area_mm2": 237.690202665189,
-        "mean_area_fraction_of_bounding_rectangle": 0.7496388057753968,
+        "cad_first_0p20mm_mean_area_mm2": 237.69020266518902,
+        "mean_area_fraction_of_bounding_rectangle": 0.7496388057753969,
         "source": "Manifest CAD slab-intersection volume / 0.20 mm; not recalculated from STL and not exact Z=0 contact area"
       },
       "geometric_preflight_pass": true,
@@ -3454,7 +3454,7 @@
       "file": "bridge_key_1.stl",
       "failures": [],
       "warnings": [],
-      "sha256": "9644d7bbc60073a21aaa1f0d412086c62e2c85ffe0392ee7cff058df655da4f9",
+      "sha256": "a1e4e80bf7a2b38f7efa1694c715625edd820064eb0bcc5cec71873704d94b44",
       "mesh": {
         "triangles": 1292,
         "unique_vertices": 644,
@@ -3464,7 +3464,7 @@
         "watertight": true,
         "consistent_winding": true,
         "degenerate_triangles": 0,
-        "signed_volume_mm3": 2357.6028024292264,
+        "signed_volume_mm3": 2357.602802429227,
         "positive_volume": true,
         "bounds_mm": [
           [
@@ -3542,17 +3542,17 @@
       "file": "01_bridge_thumb_lock_2.stl",
       "failures": [],
       "warnings": [],
-      "sha256": "c2c8ac57d2a08262058a24d7669658a1c38f8cdc3121777baf4cfc77ac4d9a89",
+      "sha256": "1a0f285edca2b2b192c888dbbb6acd4f4562272d77656649cd94edaf676b0d99",
       "mesh": {
-        "triangles": 8620,
-        "unique_vertices": 4312,
+        "triangles": 8632,
+        "unique_vertices": 4318,
         "edge_connected_components": 1,
         "boundary_edges": 0,
         "nonmanifold_edges": 0,
         "watertight": true,
         "consistent_winding": true,
         "degenerate_triangles": 0,
-        "signed_volume_mm3": 1792.2397373824817,
+        "signed_volume_mm3": 1792.2403563223004,
         "positive_volume": true,
         "bounds_mm": [
           [
@@ -3571,7 +3571,7 @@
           17.9924578955397,
           19.000000000000004
         ],
-        "surface_area_mm2": 1179.3991127053946,
+        "surface_area_mm2": 1179.3982312611756,
         "method": "Exact-coordinate vertex merge; edge incidence/winding; edge-connected components; signed volume. No healing or self-intersection certification."
       },
       "cad_minus_mesh_dimensions_mm": [
@@ -3623,8 +3623,8 @@
       },
       "first_layer": {
         "xy_bounding_footprint_mm2": 317.07297012103265,
-        "cad_first_0p20mm_mean_area_mm2": 237.69020266519084,
-        "mean_area_fraction_of_bounding_rectangle": 0.7496388057754027,
+        "cad_first_0p20mm_mean_area_mm2": 237.69020266519092,
+        "mean_area_fraction_of_bounding_rectangle": 0.7496388057754029,
         "source": "Manifest CAD slab-intersection volume / 0.20 mm; not recalculated from STL and not exact Z=0 contact area"
       },
       "geometric_preflight_pass": true,
@@ -3635,17 +3635,17 @@
       "file": "02_bridge_thumb_lock_2.stl",
       "failures": [],
       "warnings": [],
-      "sha256": "c2c8ac57d2a08262058a24d7669658a1c38f8cdc3121777baf4cfc77ac4d9a89",
+      "sha256": "1a0f285edca2b2b192c888dbbb6acd4f4562272d77656649cd94edaf676b0d99",
       "mesh": {
-        "triangles": 8620,
-        "unique_vertices": 4312,
+        "triangles": 8632,
+        "unique_vertices": 4318,
         "edge_connected_components": 1,
         "boundary_edges": 0,
         "nonmanifold_edges": 0,
         "watertight": true,
         "consistent_winding": true,
         "degenerate_triangles": 0,
-        "signed_volume_mm3": 1792.2397373824817,
+        "signed_volume_mm3": 1792.2403563223004,
         "positive_volume": true,
         "bounds_mm": [
           [
@@ -3664,7 +3664,7 @@
           17.9924578955397,
           19.000000000000004
         ],
-        "surface_area_mm2": 1179.3991127053946,
+        "surface_area_mm2": 1179.3982312611756,
         "method": "Exact-coordinate vertex merge; edge incidence/winding; edge-connected components; signed volume. No healing or self-intersection certification."
       },
       "cad_minus_mesh_dimensions_mm": [
@@ -3716,8 +3716,8 @@
       },
       "first_layer": {
         "xy_bounding_footprint_mm2": 317.07297012103265,
-        "cad_first_0p20mm_mean_area_mm2": 237.69020266519084,
-        "mean_area_fraction_of_bounding_rectangle": 0.7496388057754027,
+        "cad_first_0p20mm_mean_area_mm2": 237.69020266519092,
+        "mean_area_fraction_of_bounding_rectangle": 0.7496388057754029,
         "source": "Manifest CAD slab-intersection volume / 0.20 mm; not recalculated from STL and not exact Z=0 contact area"
       },
       "geometric_preflight_pass": true,
@@ -3728,7 +3728,7 @@
       "file": "bridge_key_2.stl",
       "failures": [],
       "warnings": [],
-      "sha256": "9644d7bbc60073a21aaa1f0d412086c62e2c85ffe0392ee7cff058df655da4f9",
+      "sha256": "a1e4e80bf7a2b38f7efa1694c715625edd820064eb0bcc5cec71873704d94b44",
       "mesh": {
         "triangles": 1292,
         "unique_vertices": 644,
@@ -3738,7 +3738,7 @@
         "watertight": true,
         "consistent_winding": true,
         "degenerate_triangles": 0,
-        "signed_volume_mm3": 2357.6028024292264,
+        "signed_volume_mm3": 2357.602802429227,
         "positive_volume": true,
         "bounds_mm": [
           [
@@ -3818,17 +3818,17 @@
       "warnings": [
         "Manifest identifies an outstanding bridge/support review"
       ],
-      "sha256": "26728cf4e435468157ef870e9309df23af9ccd067070c6aefed5d7fb9d707930",
+      "sha256": "0544d6e745eecaddf278ebc2776bce0520af755a3a2b4c4ef74ec61f4298f7b3",
       "mesh": {
-        "triangles": 55888,
-        "unique_vertices": 27916,
+        "triangles": 56304,
+        "unique_vertices": 28118,
         "edge_connected_components": 1,
         "boundary_edges": 0,
         "nonmanifold_edges": 0,
         "watertight": true,
         "consistent_winding": true,
         "degenerate_triangles": 0,
-        "signed_volume_mm3": 260323.67065833465,
+        "signed_volume_mm3": 263114.1224471412,
         "positive_volume": true,
         "bounds_mm": [
           [
@@ -3847,7 +3847,7 @@
           135.02145710308105,
           145.46690368652344
         ],
-        "surface_area_mm2": 172240.80545540163,
+        "surface_area_mm2": 174150.57002931202,
         "method": "Exact-coordinate vertex merge; edge incidence/winding; edge-connected components; signed volume. No healing or self-intersection certification."
       },
       "cad_minus_mesh_dimensions_mm": [
@@ -3908,17 +3908,17 @@
       "warnings": [
         "Manifest identifies an outstanding bridge/support review"
       ],
-      "sha256": "51889b1f8223d58655bc75cd662ed976cd9996770b25411d9cbbfa7a3ba9e0d2",
+      "sha256": "a720469992c3dcd16cd63b0a51aa0f571c30518d6da5fb8c13457ed3a2591705",
       "mesh": {
-        "triangles": 55428,
-        "unique_vertices": 27688,
+        "triangles": 55856,
+        "unique_vertices": 27896,
         "edge_connected_components": 1,
         "boundary_edges": 0,
         "nonmanifold_edges": 0,
         "watertight": true,
         "consistent_winding": true,
         "degenerate_triangles": 0,
-        "signed_volume_mm3": 256945.1716537278,
+        "signed_volume_mm3": 259736.31499229433,
         "positive_volume": true,
         "bounds_mm": [
           [
@@ -3937,7 +3937,7 @@
           135.02145710308105,
           145.46690368652344
         ],
-        "surface_area_mm2": 184755.42138754134,
+        "surface_area_mm2": 186666.04407489143,
         "method": "Exact-coordinate vertex merge; edge incidence/winding; edge-connected components; signed volume. No healing or self-intersection certification."
       },
       "cad_minus_mesh_dimensions_mm": [

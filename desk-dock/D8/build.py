@@ -203,6 +203,9 @@ for item in parts:
 def take(name):
     a=next(a for a in parts if a['name']==name);parts.remove(a);return a['shape']
 
+from hinge_bearings import add_hinge_bearings
+hinge_bearing_metadata=add_hinge_bearings(p,mouth_records,box,leaned,add)
+(R/'hinge-bearing-layout.json').write_text(json.dumps(hinge_bearing_metadata,indent=2)+'\n')
 bodies=[];roof_print_metadata=[]
 from body_print_geometry import roof_gussets
 from connector_clearance import clear_shell_for_module
@@ -210,6 +213,10 @@ for side,i,x0,x1 in [('left','01',-7,W/2),('right','02',W/2+.30,W+25)]:
     roof=take(i+'_suction_roof').fuse(take('corner_cradle_'+side)).fuse(take('retention_lip_'+side)).clean()
     roof,print_meta=roof_gussets(roof,x0,x1,p['fan_centers_x'][int(i)-1],front_y,W,WALL,p['mouth_width_mm'])
     roof_print_metadata.append(print_meta)
+    for bearing in hinge_bearing_metadata:
+        if bearing['module']==int(i):
+            roof=roof.fuse(take(bearing['structural_part'])).clean()
+    assert roof.isValid() and len(roof.Solids())==1, 'Bearing bridge must join its shell'
     if side=='left':
         roof=clear_shell_for_module(roof,p)
         roof=roof.fuse(take('connector_shell_shoe')).clean()

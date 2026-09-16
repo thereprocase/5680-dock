@@ -61,6 +61,7 @@ function pretty(n){
   if(n.includes('fan_hub'))return 'Fan hub'+suffix;
   if(n.includes('blade'))return 'Fan blade'+suffix;
   if(n.includes('lid_bearing'))return 'Soft lid contact';
+  if(n.includes('hinge_bearing_liner'))return 'Chamfered intermediate hinge bearing';
   if(n.includes('corner_pad'))return 'Soft end seat';
   if(n.includes('hinge_seal'))return 'Exhaust seal';
   if(n.includes('foot_'))return 'Desk grip pad'+suffix;
@@ -76,6 +77,7 @@ function partColor(p){
   if(n==='breakaway_spring_cartridge')return [154,157,116];
   if(handControl(n))return [102,143,132];
   if(p.reference||fan(n))return p.color;
+  if(n.includes('hinge_bearing_liner'))return [224,157,62];
   if(/liner|corner_pad|seal|soft_tip/.test(n))return [106,120,111];
   if(n.includes('foot_')||n.includes('_desk_pad_'))return [34,40,41];
   if(/nut|washer|metal/.test(n))return p.color;
@@ -230,8 +232,9 @@ function describe(n){
   if(n.includes('stop'))return 'Independent chassis stop limits insertion travel so the connector does not carry the seating load. Set it after aligning the plug.';
   if(/cassette|overmold_clamp/.test(n))return 'Plug capture and calibration assembly. Adjust live Y/Z slides before setting the independent X chassis stop.';
   if(n.includes('lid_bearing'))return 'Replaceable soft contact between the lid and the plenum. The shell carries the lean load.';
+  if(n.includes('hinge_bearing_liner'))return 'A 0.3 mm liner supports the straight hinge edge on an integral bridge at a quarter point of the inlet. The printed bearing has 1 mm lead-in chamfers in both sliding directions; the liner edges have 0.15 mm bevels. Verify contact height on the actual laptop.';
   if(/corner_pad/.test(n))return 'Soft profiled end seat carries the laptop case at its bare end margin.';
-  if(n.includes('seal'))return 'Compliant exhaust seal. It seals airflow; the end seats carry the laptop weight.';
+  if(n.includes('seal'))return 'Compliant exhaust seal. It seals airflow; the end seats and six intermediate bearings carry the laptop weight.';
   if(n.includes('foot_')||n.includes('_desk_pad_'))return 'Soft pad directly below an integral shell foot. Test sliding and tip stability with the actual laptop and cable loads.';
   if(handControl(n))return 'Hand-operated fastener for assembly or calibration. Physical access and retention require prototype checks.';
   return 'D8 assembly component. See the design guide for assembly, fit and print-planning limits.';

@@ -19,7 +19,7 @@ import cadquery as cq
 R=Path(__file__).resolve().parent
 VOLUME_TOLERANCE_MM3=.01
 BOUND_TOLERANCE_MM=1e-6
-SOFT_NAMES=('corner_pad_','lid_bearing_liner_','hinge_seal_')
+SOFT_NAMES=('corner_pad_','lid_bearing_liner_','hinge_bearing_liner_','hinge_seal_')
 
 
 def box(x,y,z,a,b,c):

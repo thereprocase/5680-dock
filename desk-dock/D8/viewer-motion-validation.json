@@ -1,8 +1,8 @@
 {
   "revision": "D8",
   "passed": true,
-  "model_sha256": "097be0b68550704e2254f10b875f846b12c50d0b1324dd1e76e690eaa5f11274",
-  "manifest_sha256": "ee0736c7d278d8309afc380af31fc2febd20c273ee7f85d6cc2bae9080a16edc",
+  "model_sha256": "d2564ce5d4f682dab19e552ad037b43a18bdc4e05287aaf691ff4fdd7d1b44b7",
+  "manifest_sha256": "92623517180c09166ca2a64c019cb23a83ec69fa05d2a3f6e565610035abf0fc",
   "checker_sha256": "213e142b88f66fb18a7c04a549bae6482ea58bee9aaa54d4b87da440e12fe3e5",
   "binary_parts": [
     {
@@ -205,8 +205,8 @@
     },
     {
       "name": "breakaway_pivot_pin_10mm",
-      "vertices": 5100,
-      "triangles": 5084,
+      "vertices": 5060,
+      "triangles": 5044,
       "passed": true
     },
     {
@@ -217,50 +217,50 @@
     },
     {
       "name": "breakaway_preload_hand_nut",
-      "vertices": 3708,
-      "triangles": 3660,
+      "vertices": 3714,
+      "triangles": 3666,
       "passed": true
     },
     {
       "name": "breakaway_spring_hand_screw_0",
-      "vertices": 4639,
-      "triangles": 4632,
+      "vertices": 4697,
+      "triangles": 4690,
       "passed": true
     },
     {
       "name": "breakaway_spring_hand_screw_1",
-      "vertices": 4639,
-      "triangles": 4632,
+      "vertices": 4697,
+      "triangles": 4690,
       "passed": true
     },
     {
       "name": "cassette_Z_lock_0",
-      "vertices": 4918,
-      "triangles": 4884,
+      "vertices": 4932,
+      "triangles": 4898,
       "passed": true
     },
     {
       "name": "cassette_Z_lock_1",
-      "vertices": 4918,
-      "triangles": 4884,
+      "vertices": 4932,
+      "triangles": 4898,
       "passed": true
     },
     {
       "name": "cassette_Y_lock_0",
-      "vertices": 3848,
-      "triangles": 3818,
+      "vertices": 3840,
+      "triangles": 3810,
       "passed": true
     },
     {
       "name": "cassette_Z_saddle",
-      "vertices": 5994,
-      "triangles": 5956,
+      "vertices": 6034,
+      "triangles": 5996,
       "passed": true
     },
     {
       "name": "X_depth_overmold_clamp",
-      "vertices": 3602,
-      "triangles": 3502,
+      "vertices": 3592,
+      "triangles": 3492,
       "passed": true
     },
     {
@@ -301,44 +301,44 @@
     },
     {
       "name": "connector_mount_lock_0",
-      "vertices": 5724,
-      "triangles": 5686,
+      "vertices": 5748,
+      "triangles": 5710,
       "passed": true
     },
     {
       "name": "connector_mount_lock_1",
-      "vertices": 5724,
-      "triangles": 5686,
+      "vertices": 5748,
+      "triangles": 5710,
       "passed": true
     },
     {
       "name": "chassis_stop_mount_lock_0",
-      "vertices": 5724,
-      "triangles": 5686,
+      "vertices": 5748,
+      "triangles": 5710,
       "passed": true
     },
     {
       "name": "chassis_stop_mount_lock_1",
-      "vertices": 5724,
-      "triangles": 5686,
+      "vertices": 5748,
+      "triangles": 5710,
       "passed": true
     },
     {
       "name": "chassis_stop_bracket",
-      "vertices": 4382,
-      "triangles": 4336,
+      "vertices": 4362,
+      "triangles": 4316,
       "passed": true
     },
     {
       "name": "connector_module_body",
-      "vertices": 23963,
-      "triangles": 23384,
+      "vertices": 24015,
+      "triangles": 23436,
       "passed": true
     },
     {
       "name": "independent_printed_chassis_stop_screw",
-      "vertices": 6030,
-      "triangles": 5974,
+      "vertices": 6012,
+      "triangles": 5956,
       "passed": true
     },
     {
@@ -372,15 +372,51 @@
       "passed": true
     },
     {
+      "name": "hinge_bearing_liner_1_1",
+      "vertices": 36,
+      "triangles": 20,
+      "passed": true
+    },
+    {
+      "name": "hinge_bearing_liner_1_2",
+      "vertices": 36,
+      "triangles": 20,
+      "passed": true
+    },
+    {
+      "name": "hinge_bearing_liner_1_3",
+      "vertices": 36,
+      "triangles": 20,
+      "passed": true
+    },
+    {
+      "name": "hinge_bearing_liner_2_1",
+      "vertices": 36,
+      "triangles": 20,
+      "passed": true
+    },
+    {
+      "name": "hinge_bearing_liner_2_2",
+      "vertices": 36,
+      "triangles": 20,
+      "passed": true
+    },
+    {
+      "name": "hinge_bearing_liner_2_3",
+      "vertices": 36,
+      "triangles": 20,
+      "passed": true
+    },
+    {
       "name": "01_bottom_thumb_lock_1",
-      "vertices": 4902,
-      "triangles": 4868,
+      "vertices": 4962,
+      "triangles": 4928,
       "passed": true
     },
     {
       "name": "01_bottom_thumb_lock_2",
-      "vertices": 4902,
-      "triangles": 4868,
+      "vertices": 4962,
+      "triangles": 4928,
       "passed": true
     },
     {
@@ -415,14 +451,14 @@
     },
     {
       "name": "02_bottom_thumb_lock_1",
-      "vertices": 4902,
-      "triangles": 4868,
+      "vertices": 4962,
+      "triangles": 4928,
       "passed": true
     },
     {
       "name": "02_bottom_thumb_lock_2",
-      "vertices": 4902,
-      "triangles": 4868,
+      "vertices": 4962,
+      "triangles": 4928,
       "passed": true
     },
     {
@@ -457,14 +493,14 @@
     },
     {
       "name": "01_bridge_thumb_lock_1",
-      "vertices": 4806,
-      "triangles": 4772,
+      "vertices": 4888,
+      "triangles": 4854,
       "passed": true
     },
     {
       "name": "02_bridge_thumb_lock_1",
-      "vertices": 4806,
-      "triangles": 4772,
+      "vertices": 4888,
+      "triangles": 4854,
       "passed": true
     },
     {
@@ -475,14 +511,14 @@
     },
     {
       "name": "01_bridge_thumb_lock_2",
-      "vertices": 4806,
-      "triangles": 4772,
+      "vertices": 4888,
+      "triangles": 4854,
       "passed": true
     },
     {
       "name": "02_bridge_thumb_lock_2",
-      "vertices": 4806,
-      "triangles": 4772,
+      "vertices": 4888,
+      "triangles": 4854,
       "passed": true
     },
     {
@@ -493,14 +529,14 @@
     },
     {
       "name": "01_manifold_with_cradle",
-      "vertices": 28915,
-      "triangles": 30566,
+      "vertices": 29406,
+      "triangles": 30954,
       "passed": true
     },
     {
       "name": "02_manifold_with_cradle",
-      "vertices": 28900,
-      "triangles": 30536,
+      "vertices": 29405,
+      "triangles": 30936,
       "passed": true
     }
   ],
@@ -576,7 +612,7 @@
     {
       "name": "Dell_plug_overmold_REFERENCE",
       "motion": "rotate",
-      "max_error_mm": 5.684341886080802e-14,
+      "max_error_mm": 4.263256414560601e-14,
       "passed": true
     },
     {

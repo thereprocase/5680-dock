@@ -63,7 +63,7 @@
   "guide_fit_clearance_per_face_mm": 0.25,
   "laptop_lean_deg": 5,
   "underside_net_free_area_target": 0.8,
-  "contact_scheme": "Profiled hinge-end seats carry weight; laptop leans on plenum-wall liners. A continuous low underside lip restrains thrust and aids alignment, split only at the shell joint. Rubber feet and intake remain clear.",
+  "contact_scheme": "Profiled end seats plus six intermediate straight-hinge bearings carry weight. Three integral bridges per mouth at quarter intervals; 0.3 mm replaceable soft pads. Original lid liners and retention lip retained.",
   "cassette_adjustment": "Live Y/Z sliding stages with printed hand locks; X engagement set by independent chassis stop. No calibration jig or reprinted shims.",
   "print_material": "PETG",
   "printer": "Bambu Lab P1S",
@@ -117,5 +117,22 @@
     "pad_thickness_mm": 0.0
   },
   "stop_adjustment_x_mm": 0.0,
-  "legacy_depth_adjustment": "Retained at zero for inherited cable keepout compatibility; not an active plug adjustment."
+  "legacy_depth_adjustment": "Retained at zero for inherited cable keepout compatibility; not an active plug adjustment.",
+  "hinge_bearings": {
+    "fractions": [
+      0.25,
+      0.5,
+      0.75
+    ],
+    "bridge_width_mm": 6.0,
+    "contact_y_bounds_mm": [
+      -2.0,
+      6.0
+    ],
+    "straight_edge_offset_mm": 4.0,
+    "liner_thickness_mm": 0.3,
+    "datum_note": "Matches central straight hinge relief of the existing D8 reference; verify against physical laptop.",
+    "sliding_chamfer_mm": 1.0,
+    "liner_chamfer_mm": 0.15
+  }
 }
