@@ -1,0 +1,270 @@
+{
+  "passed": true,
+  "step_roundtrip_max_relative_volume_error": 6.869667498191743e-07,
+  "parts": [
+    {
+      "name": "01_fan_guard_retainer",
+      "material": "PETG",
+      "volume_mm3": 30472.131652710403,
+      "print_pose_matches_manifest": true
+    },
+    {
+      "name": "01_fan_top_clip_1",
+      "material": "PETG",
+      "volume_mm3": 1270.9185185185177,
+      "print_pose_matches_manifest": true
+    },
+    {
+      "name": "01_fan_top_clip_2",
+      "material": "PETG",
+      "volume_mm3": 1270.9185185185197,
+      "print_pose_matches_manifest": true
+    },
+    {
+      "name": "02_fan_guard_retainer",
+      "material": "PETG",
+      "volume_mm3": 30472.131652710286,
+      "print_pose_matches_manifest": true
+    },
+    {
+      "name": "02_fan_top_clip_1",
+      "material": "PETG",
+      "volume_mm3": 1270.91851851852,
+      "print_pose_matches_manifest": true
+    },
+    {
+      "name": "02_fan_top_clip_2",
+      "material": "PETG",
+      "volume_mm3": 1270.91851851851,
+      "print_pose_matches_manifest": true
+    },
+    {
+      "name": "breakaway_carrier",
+      "material": "PETG",
+      "volume_mm3": 46299.92690247997,
+      "print_pose_matches_manifest": true
+    },
+    {
+      "name": "breakaway_pivot_pin_10mm",
+      "material": "PETG",
+      "volume_mm3": 8632.115266528417,
+      "print_pose_matches_manifest": true
+    },
+    {
+      "name": "breakaway_spring_cartridge",
+      "material": "PETG",
+      "volume_mm3": 36104.649271909606,
+      "print_pose_matches_manifest": true
+    },
+    {
+      "name": "breakaway_preload_hand_nut",
+      "material": "PETG",
+      "volume_mm3": 3007.883646994521,
+      "print_pose_matches_manifest": true
+    },
+    {
+      "name": "breakaway_spring_hand_screw_0",
+      "material": "PETG",
+      "volume_mm3": 3373.253798910821,
+      "print_pose_matches_manifest": true
+    },
+    {
+      "name": "breakaway_spring_hand_screw_1",
+      "material": "PETG",
+      "volume_mm3": 3373.253798910824,
+      "print_pose_matches_manifest": true
+    },
+    {
+      "name": "cassette_Z_lock_0",
+      "material": "PETG",
+      "volume_mm3": 1176.245091384196,
+      "print_pose_matches_manifest": true
+    },
+    {
+      "name": "cassette_Z_lock_1",
+      "material": "PETG",
+      "volume_mm3": 1176.245091384194,
+      "print_pose_matches_manifest": true
+    },
+    {
+      "name": "cassette_Y_lock_0",
+      "material": "PETG",
+      "volume_mm3": 1403.3409511091743,
+      "print_pose_matches_manifest": true
+    },
+    {
+      "name": "cassette_Z_saddle",
+      "material": "PETG",
+      "volume_mm3": 13635.715924642063,
+      "print_pose_matches_manifest": true
+    },
+    {
+      "name": "X_depth_overmold_clamp",
+      "material": "PETG",
+      "volume_mm3": 11219.854354499734,
+      "print_pose_matches_manifest": true
+    },
+    {
+      "name": "sliding_plug_cap",
+      "material": "PETG",
+      "volume_mm3": 3379.1594671850885,
+      "print_pose_matches_manifest": true
+    },
+    {
+      "name": "cassette_cap_push_pin_6p5",
+      "material": "PETG",
+      "volume_mm3": 1325.7256041244514,
+      "print_pose_matches_manifest": true
+    },
+    {
+      "name": "breakaway_spring_spacer_0",
+      "material": "PETG",
+      "volume_mm3": 3681.993713897051,
+      "print_pose_matches_manifest": true
+    },
+    {
+      "name": "breakaway_spring_spacer_1",
+      "material": "PETG",
+      "volume_mm3": 3681.993713897051,
+      "print_pose_matches_manifest": true
+    },
+    {
+      "name": "connector_mount_lock_0",
+      "material": "PETG",
+      "volume_mm3": 1306.3461083402597,
+      "print_pose_matches_manifest": true
+    },
+    {
+      "name": "connector_mount_lock_1",
+      "material": "PETG",
+      "volume_mm3": 1306.3461083402563,
+      "print_pose_matches_manifest": true
+    },
+    {
+      "name": "chassis_stop_mount_lock_0",
+      "material": "PETG",
+      "volume_mm3": 1306.3461083402572,
+      "print_pose_matches_manifest": true
+    },
+    {
+      "name": "chassis_stop_mount_lock_1",
+      "material": "PETG",
+      "volume_mm3": 1306.3461083402537,
+      "print_pose_matches_manifest": true
+    },
+    {
+      "name": "chassis_stop_bracket",
+      "material": "PETG",
+      "volume_mm3": 10545.524865227391,
+      "print_pose_matches_manifest": true
+    },
+    {
+      "name": "connector_module_body",
+      "material": "PETG",
+      "volume_mm3": 141848.15907860696,
+      "print_pose_matches_manifest": true
+    },
+    {
+      "name": "independent_printed_chassis_stop_screw",
+      "material": "PETG",
+      "volume_mm3": 4018.796064489359,
+      "print_pose_matches_manifest": true
+    },
+    {
+      "name": "stop_soft_tip",
+      "material": "TPU or purchased compliant bumper",
+      "volume_mm3": 293.958824596398,
+      "print_pose_matches_manifest": true
+    },
+    {
+      "name": "01_bottom_thumb_lock_1",
+      "material": "PETG",
+      "volume_mm3": 1555.1264385729091,
+      "print_pose_matches_manifest": true
+    },
+    {
+      "name": "01_bottom_thumb_lock_2",
+      "material": "PETG",
+      "volume_mm3": 1555.1264385729069,
+      "print_pose_matches_manifest": true
+    },
+    {
+      "name": "01_bottom_panel",
+      "material": "PETG",
+      "volume_mm3": 35396.43346829454,
+      "print_pose_matches_manifest": true
+    },
+    {
+      "name": "02_bottom_thumb_lock_1",
+      "material": "PETG",
+      "volume_mm3": 1555.1264385729103,
+      "print_pose_matches_manifest": true
+    },
+    {
+      "name": "02_bottom_thumb_lock_2",
+      "material": "PETG",
+      "volume_mm3": 1555.1264385729069,
+      "print_pose_matches_manifest": true
+    },
+    {
+      "name": "02_bottom_panel",
+      "material": "PETG",
+      "volume_mm3": 38813.011097777926,
+      "print_pose_matches_manifest": true
+    },
+    {
+      "name": "01_bridge_thumb_lock_1",
+      "material": "PETG",
+      "volume_mm3": 1792.816628878939,
+      "print_pose_matches_manifest": true
+    },
+    {
+      "name": "02_bridge_thumb_lock_1",
+      "material": "PETG",
+      "volume_mm3": 1792.81662887894,
+      "print_pose_matches_manifest": true
+    },
+    {
+      "name": "bridge_key_1",
+      "material": "PETG",
+      "volume_mm3": 2357.3274725758897,
+      "print_pose_matches_manifest": true
+    },
+    {
+      "name": "01_bridge_thumb_lock_2",
+      "material": "PETG",
+      "volume_mm3": 1792.8166288789416,
+      "print_pose_matches_manifest": true
+    },
+    {
+      "name": "02_bridge_thumb_lock_2",
+      "material": "PETG",
+      "volume_mm3": 1792.8166288789416,
+      "print_pose_matches_manifest": true
+    },
+    {
+      "name": "bridge_key_2",
+      "material": "PETG",
+      "volume_mm3": 2357.3274725758897,
+      "print_pose_matches_manifest": true
+    },
+    {
+      "name": "01_manifold_with_cradle",
+      "material": "PETG",
+      "volume_mm3": 270864.9063083632,
+      "print_pose_matches_manifest": true
+    },
+    {
+      "name": "02_manifold_with_cradle",
+      "material": "PETG",
+      "volume_mm3": 267767.3675248967,
+      "print_pose_matches_manifest": true
+    }
+  ],
+  "solid_count": 43,
+  "filename": "Precision_5680_D8_Printables.step",
+  "bytes": 28079409,
+  "sha256": "428eb05dc58b1d6db534284c31bbd332a87337adad109e1fb3c47d8d2e7507f7",
+  "scope": "Separate named solids, spaced inventory in manufacturing orientations; arrange onto plates in slicer. Includes TPU stop tip separately; no laptop, fans, optional desk pads or hardware references.",
+  "manifest_sha256": "631f51a77ff7442f367f8ae9a7d640f33d34ae95fa63b3f7e3ec2e17dec31dfd"
+}

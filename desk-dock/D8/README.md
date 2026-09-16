@@ -4,6 +4,11 @@ D8 develops D7 into a lighter, serviceable prototype. It preserves the source-ha
 
 Download the complete [STEP archive](Precision_5680_D8_STEP.zip), the [print and source package](../../docs/downloads/Precision_5680_D8_Review.zip), or the individual [manufacturing STLs](print/). The ZIP contains the full, unchanged `Precision_5680_D8.step`; extract it before opening in CAD. The [archive record](step-archive.json) verifies its extracted hash against the generated file. Compression keeps the 30 MB STEP below the upload interface's request limit.
 
+## Quick downloads
+
+- [Printable-only STEP: 43 separate manufacturing solids](https://thereprocase.github.io/5680-dock/downloads/Precision_5680_D8_Printables.step), no laptop/fan/pad references. Arrange into plates; the connector stop tip uses TPU.
+- [Quick-fit temporary stand](quick-fit/README.md): print two identical 1.5-inch brackets, spaced 318.48 mm between inner faces. Separate from the production parts.
+
 ## What changes
 
 The latest [direct-contact revision](DIRECT_CONTACTS.md) removes 14 separate liners/seals and makes the printed feet usable without pads. Printed screws and fan mounting holes are retained.
