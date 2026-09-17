@@ -1,3 +1,9 @@
+# D9 P1 update — 17 September 2026
+
+[Download the complete D9 P1 print kit](../../printables/d9-p1/Precision_5680_D9_P1_Print_Kit.zip). [Six native Orca plates and assembly instructions](../../handoff-2026-09-17.html#d9-printables).
+
+Ten new parts have completed CAD, nominal enclosure and Orca path verification. Plug mechanism excluded. Physical contact and load qualification remain open; the fit trial below still applies. Earlier instructions to finish or repair the proposed D9 enclosure are superseded by this package.
+
 # Precision 5680 — next steps after the 17 September handoff
 
 Work is paused at this checkpoint. V4 means the full-height A/B/C **fit
