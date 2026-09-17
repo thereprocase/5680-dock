@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0000A8">
+  <meta name="description" content="Precision 5680 dock handoff: filed V4 fit coupons, D9 diagnostic status, and the next physical and design steps.">
+  <title>5680 dock · September 17 handoff and next steps</title>
+  <link rel="stylesheet" href="gridline/gridline.css">
+  <link rel="stylesheet" href="gridline/project.css">
+  <link rel="stylesheet" href="gridline/themes.css">
+  <link rel="icon" href="gridline/logo.svg" type="image/svg+xml">
+  <style>
+    .handoff{max-width:1480px}.handoff .ps-main{padding:clamp(12px,3vw,40px)}
+    .handoff-nav{display:flex;flex-wrap:wrap;gap:8px 22px;padding:12px 16px;background:#e8e8e8;border-bottom:1px solid #666}
+    .handoff-nav a{min-height:32px;display:inline-flex;align-items:center;text-decoration:underline}
+    .handoff h1{max-width:30ch}.handoff .ps-hero{margin-bottom:24px}
+    .handoff table{border-collapse:collapse;width:100%;font-size:14px}
+    .handoff th,.handoff td{text-align:left;vertical-align:top;padding:12px;border:1px solid #999}
+    .handoff th{background:#e8e8e8}.table-scroll{overflow:auto;max-width:100%}
+    .handoff ol{padding-left:24px}.handoff li{margin-bottom:18px}
+    .handoff a,.handoff code{overflow-wrap:anywhere}.handoff .status{font-weight:600}
+    .handoff .ready{color:#175c37}.handoff .held{color:#815000}.handoff figure{margin:0}
+    .handoff .ps-section:target{outline:3px solid #0000a8;outline-offset:3px}
+  </style>
+</head>
+<body class="project-site" data-project="5680-dock">
+<a class="gl-skip" href="#main">Skip to content</a>
+<div class="ps-frame handoff">
+<header class="ps-network"><a href="index.html">Precision 5680 dock</a><span>17 SEPTEMBER 2026 · WORK FILED / DEVELOPMENT PAUSED</span><a href="https://github.com/thereprocase/5680-dock">Source repository ↗</a></header>
+<nav class="handoff-nav" aria-label="Handoff navigation"><a href="#status">Current status</a><a href="#files">Filed deliverables</a><a href="#next-steps">Next steps</a><a href="#evidence">Evidence summary</a><a href="desk-dock.html">D8 reference viewer</a></nav>
+<main class="ps-main" id="main">
+<section class="ps-hero" aria-labelledby="title"><p class="ps-eyebrow">A concrete checkpoint for the next session</p><h1 id="title">The fit kit is ready.<br>The D9 dock is unfinished.</h1><p class="ps-lead">Start with the full-height A/B/C coupons to understand why the real laptop rocks onto the short fence instead of seating on its cradles. The complete dock has not been qualified.</p><div class="ps-actions"><a class="ps-button primary" href="#next-steps">Read the next steps ↓</a><a class="ps-button" href="#files">Find the filed deliverables ↓</a></div></section>
+    <section class="ps-section" id="status"><h2>Current status</h2><div class="ps-body">
+      <div class="table-scroll"><table><thead><tr><th scope="col">Work</th><th scope="col">Established</th><th scope="col">Still open</th></tr></thead><tbody>
+        <tr><th scope="row">V4 full-height fit coupons</th><td><span class="status ready">Toolpaths verified.</span> Native Orca project, matching G-code, CAD, profiles and previews filed.</td><td>Physical first contact, seating and readability. These handheld specimens do not carry the laptop.</td></tr>
+        <tr><th scope="row">V1 seating investigation</th><td>Four original photos reviewed and retained locally; rocking onto the short fence is documented.</td><td>Exact local contour and clearance. A thicker or curved lid remains a hypothesis, not metrology.</td></tr>
+        <tr><th scope="row">D9 whole-dock revision</th><td><span class="status held">Held.</span> Closed-V3 failed nominal enclosure and tray/lid print geometry; R1 also failed print geometry.</td><td>Shared air-volume/panel rebuild, supporting frame, joints and service checks. The proposed D9 V4 is a plan only.</td></tr>
+        <tr><th scope="row">Airflow and acoustics</th><td>Corrected fan/area calculations, a future resistance-test plan and controlled acoustic-test guidance.</td><td>No D9 CFD solve, measured useful airflow, cooling benefit or acoustic improvement. No new print was sent.</td></tr>
+      </tbody></table></div>
+      <p class="ps-note">D8 remains the last complete CAD reference. Its nominal checks do not resolve the reported real seating failure. “V4 fit coupons” and the proposed “D9 V4 duct” are separate artifacts.</p>
+    </div></section>
+<section class="ps-section" id="files"><h2>Filed deliverables · local handoff</h2><div class="ps-body">
+<p>The complete files are preserved in the local project workspace at <code>outputs/5680-design-team/CLOSEOUT-20260917/</code>. The public page records their status and the next steps; raw CAD, source and diagnostic archives have not been uploaded.</p>
+<div class="table-scroll"><table><thead><tr><th scope="col">File or folder</th><th scope="col">Contents and status</th></tr></thead><tbody>
+<tr><th scope="row"><code>Precision_5680_V4_Full_Rail_Fit_Kit.zip</code></th><td>The full kit: 43 hashed payload files plus the manifest. Native Orca project, matching G-code, fallback STEP/STL, editable source, profiles, previews and verification receipts. Toolpaths verified; physical fit untested.</td></tr>
+<tr><th scope="row"><code>Precision_5680_V4_Full_Rail_Fit_Coupons.3mf</code></th><td>One each A/B/C, P1S, 0.4-mm nozzle, Generic PETG, textured PEI. Estimated 47.02 g and 1 h 56 m 58 s. Open in Orca and confirm it matches the actual printer/material. No print was sent.</td></tr>
+<tr><th scope="row"><code>Precision_5680_20260917_Diagnostic_Evidence.zip</code></th><td>Failed D9 snapshots, independent review, calculations, source revisions and unexecuted test plans. <strong>Not a print release.</strong> The later V3 builder does not reproduce the original frozen export; that mismatch is recorded.</td></tr>
+<tr><th scope="row"><code>evidence/</code>, <code>DELIVERABLES.json</code>, <code>NEXT-STEPS.md</code></th><td>Readable evidence folders, download identities and hashes, and the ordered resume list. Original four V1 photos remain in the adjacent <code>physical-fit-evidence/</code> folder.</td></tr>
+</tbody></table></div>
+<p><strong>Coupon identifiers:</strong> A has one square opening and the original R1 profile. B has two and the actual R2 capture changes. C has three and adds the local 1-mm seat relief to B. All retain the full original lid-side rail.</p>
+<p><strong>Fit-kit SHA-256:</strong> <code>5d98ca89825dc0012866ddff6cc93e13835a561b51cc547a12badd7109ee9cf2</code></p>
+</div></section>
+    <section class="ps-section" id="next-steps"><h2>Next steps · in order</h2><div class="ps-body">
+      <ol>
+        <li><strong>Print the V4 fit coupons.</strong> Use the native Orca plate and its instructions. Keep the selected orientations and identify A/B/C when removing them.</li>
+        <li><strong>Compare first contact on the real laptop.</strong> Support the laptop independently and present each coupon gently at the same section and pose. Record whether the curved seat, short fence or tall rail touches first, whether the seat catches, and any rock or gap. Do not load the coupons or flex the rails to force a fit.</li>
+        <li><strong>Resolve the contact profile before a full stand print.</strong> Use those observations and any needed local measurements. A/B/C can distinguish behavior; they do not measure a uniform thickness correction. Then check full-height engagement, loaded stability, docking alignment and connector protection.</li>
+        <li><strong>Rebuild D9 as printable panels around one shared air volume.</strong> Complete its structural frame, joints, hardware and fan-service access. Verify enclosure, both named open ports, actual sections and clearances, and every designed bed face and underside. Preserve V3/R1 as failed references.</li>
+        <li><strong>Use Orca after the geometric design passes.</strong> Verify the selected poses, supports, bridges, identifiers and bed clearance. Print the relevant joint/contact specimen before the full dock. Correct demonstrated defects instead of searching through slicer guesses.</li>
+        <li><strong>Run the bounded component-resistance screen when ready.</strong> One future module-1 test prescribes 10 CFM, after geometry, boundary and mesh review, within the recorded 15-minute / 4-CPU / 8-GiB limit. Report computed total-pressure loss and separate reverse flow. This is not a claim that an 800-RPM fan delivers 10 CFM.</li>
+        <li><strong>Test the assembled dock with both fans fixed at 800 RPM.</strong> Check retention, service access, normal/displaced seating, useful flow versus bypass, temperatures, noise and rattle. Hold fan position, speed, grille, sealing and microphone position fixed when comparing mount compliance; record repeatability.</li>
+      </ol>
+      <p><a href="handoff/2026-09-17/NEXT-STEPS.md">Download the detailed next-step list ↗</a></p>
+      <p class="ps-note">If the earlier R3 scalloped retainer is reused, its saved crest-overlap question also needs inspection. The 20-N docking and 50-N release figures in design proposals are test targets, not measured performance.</p>
+    </div></section>
+<section class="ps-section linked" id="evidence"><h2>Evidence summary · scope matters</h2><div class="ps-body">
+<ul>
+<li><strong>V4 manufacturing:</strong> selected constant-section print geometry, zero support paths and zero external bridges in Orca. All six identifiers retain the checked 1-mm clear cores across 120 layers. Native embedded and standalone G-code match. Physical print quality is untested.</li>
+<li><strong>V1 photos:</strong> the reported rocking and missed cradle engagement are documented. Exact local contour, clearances, pivot and sealing remain unresolved. Neither the photos nor nominal CAD supports a blanket 4-mm correction.</li>
+<li><strong>V3 identifier correction:</strong> the first failed hole check omitted the frozen nozzle coordinate offset. That failure was withdrawn; larger V4 identifiers remain the selected trial. This is not a physical nozzle calibration.</li>
+<li><strong>D9 V3:</strong> the intended air volume remained connected to exterior even with both named ports capped. The tray and lid had unsupported undersides in their nominated poses. R1 also failed its print-normal check. Individual watertight STLs do not prove an enclosed or printable assembly.</li>
+<li><strong>Flow calculations:</strong> the corrected generic fan/area screen reproduced 140 operating rows and 30 constraints. Assumed loss coefficients and source-mouth areas do not establish actual D9 or useful laptop flow.</li>
+<li><strong>Unexecuted work:</strong> D9 V4 is a panel-construction plan only. No D9 mesh or CFD solve, physical cooling test, noise measurement or full-dock qualification was performed. The future 10-CFM resistance test and acoustic comparison remain plans.</li>
+</ul>
+<p>The local evidence archive includes exact output hashes and the diagnostic receipts needed to resume without repeating the same failures.</p>
+</div></section>
+</main><footer class="ps-footer"><span>5680 DOCK / 17 SEPTEMBER CHECKPOINT</span><a href="index.html">Project home ↗</a><a href="#next-steps">Next steps ↑</a></footer>
+</div></body></html>

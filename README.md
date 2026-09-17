@@ -2,7 +2,11 @@
 
 A compact, hinge-down stand built around its cooling plenum. Two recessed fans draw from the laptop's hinge exhaust, and a captured USB-C plug makes the final sideways docking connection.
 
-**D8 is the current design.** The CAD and manufacturing review is complete; physical fit, strength and cooling tests remain.
+**17 September checkpoint:** the V4 full-height A/B/C fit kit (filed locally) is toolpath-verified and ready for a supported contact test. The reported seating failure remains unresolved. **D9 is unfinished**: its diagnostic duct failed enclosure/print geometry, and the next panel construction exists only as a plan. No D9 airflow or acoustic improvement has been demonstrated.
+
+**[Handoff, evidence and ordered next steps](https://thereprocase.github.io/5680-dock/handoff-2026-09-17.html)** · [Detailed next-step list](docs/handoff/2026-09-17/NEXT-STEPS.md)
+
+D8 remains the last complete CAD reference. The earlier nominal CAD/manufacturing checks below do not establish physical seating, strength or cooling.
 
 **[Explore D8](https://thereprocase.github.io/5680-dock/)** · **[Download D8 STEP](docs/downloads/Precision_5680_D8_STEP.zip)** · **[Print + source package](docs/downloads/Precision_5680_D8_Review.zip)** · **[Assembly and adjustment](desk-dock/D8/README.md)** · **[P1S print guide](desk-dock/D8/PRINT_DESIGN.md)**
 
