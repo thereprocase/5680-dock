@@ -1,3 +1,17 @@
+# D9 P2 no-metal update — 17 September 2026
+
+P2 supersedes P1 for the current cradle, plenum, fan-guard and brace print kit.
+No added metal hardware: 20 printed pins and 20 keys join ten major parts.
+
+1. [Print the P2 fastener fit plate](../../printables/d9-p2/OPEN-ME.3mf). Check insertion, retention and deliberate removal. About 40 g / 1 h 52 m.
+2. [Print the V4 laptop-contact coupons](../../printables/fit-v4/Precision_5680_V4_Full_Rail_Fit_Coupons.3mf). Resolve the reported seating issue before committing to large cradles; R2 contact geometry is retained.
+3. [Download the complete P2 kit](../../printables/d9-p2/Precision_5680_D9_P2_Print_Kit.zip) and [read assembly instructions](../../printables/d9-p2/README.md). Plates 01–07 make one assembly; about 1,099 g / 44 h 54 m.
+4. Dry-assemble braces on the bench and install internal plenum keys before fans. Test seating with the laptop independently supported, then qualify loading, retention durability, creep, cooling and noise.
+
+The older diagnostic next steps below are historical. Instructions to finish the D9 CAD/enclosure are superseded by P2; physical fit and performance checks remain open.
+
+---
+
 # D9 P1 update — 17 September 2026
 
 [Download the complete D9 P1 print kit](../../printables/d9-p1/Precision_5680_D9_P1_Print_Kit.zip). [Six native Orca plates and assembly instructions](../../handoff-2026-09-17.html#d9-printables).
