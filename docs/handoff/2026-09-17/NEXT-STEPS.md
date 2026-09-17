@@ -1,11 +1,10 @@
 # Precision 5680 — next steps after the 17 September handoff
 
-Work is paused at this checkpoint. The kit and full evidence are filed locally
-in `outputs/5680-design-team/CLOSEOUT-20260917/`. V4 means the full-height A/B/C **fit
+Work is paused at this checkpoint. V4 means the full-height A/B/C **fit
 coupons** below. The separate D9 duct's proposed V4 is only a construction
 plan; it is not the printable V4 fit kit.
 
-1. **Print the V4 fit coupons.** Open the supplied 3MF in OrcaSlicer. The
+1. **Print the V4 fit coupons.** Download the [native Orca 3MF](https://thereprocase.github.io/5680-dock/printables/fit-v4/Precision_5680_V4_Full_Rail_Fit_Coupons.3mf) or [complete fit-kit ZIP with G-code and instructions](https://thereprocase.github.io/5680-dock/printables/fit-v4/Precision_5680_V4_Full_Rail_Fit_Kit.zip). Open the 3MF in OrcaSlicer. The
    frozen plate is one each of A, B and C, P1S / 0.4 mm / Generic PETG /
    textured PEI, 47.02 g and 1 h 56 m 58 s estimated. Check that this matches
    the actual printer and material. Keep the supplied orientations. No print
@@ -23,16 +22,20 @@ plan; it is not the printable V4 fit kit.
    of its changes helped; C does not measure lid thickness. Do not apply a
    blanket 4-mm change from the published overall thickness. Then check full
    rail engagement, loaded stability, docking alignment and connector stops.
-4. **Rebuild the D9 duct and its supporting frame.** Resume from the saved
-   shared air-volume / flat-panel construction proposal. Derive every panel
-   from the same boundary; specify joints, hardware, fan clearance and service
-   access. Structural frame and cross-ties carry laptop/docking loads.
-   Independently verify nominal enclosure, both named open ports, sections,
-   actual fan clearance, and every selected bed face/underside. V3 and R1 are
-   failed diagnostic references; do not print them. D9 V4 has no CAD release.
+4. **Reassess the D9 duct and complete its supporting frame.** Supports are
+   welcome on hidden/internal surfaces with removal access. Protect outward
+   finished surfaces exposed to users; prefer gentler overhangs and short
+   bridges anchored at both ends over cantilevers. Nonzero downward-facing
+   area alone is not a failure. Classify the existing tray/lid/coupler by
+   visibility, support access, fit and load path before choosing a repair or
+   panel split. Repair the independently observed enclosure leak and verify
+   both named ports, sections, fan clearance, joints and service access.
+   Structural frame and cross-ties carry laptop/docking loads. V3/R1 remain
+   unqualified diagnostic references; D9 V4 has no CAD release.
 5. **Verify manufacturing after geometric design.** Once that assembly passes
    geometric review, use Orca to verify the chosen orientations, supports,
-   bridges, small features and bed clearance. Correct specific demonstrated
+   support removal, actual bridge direction/anchoring, visible surface finish,
+   small features and bed clearance. Correct specific demonstrated
    defects. Start with the relevant joint/contact specimen and inspect physical
    assembly and leakage before a complete dock print. Do not search for a
    workable design by repeated slicing.
