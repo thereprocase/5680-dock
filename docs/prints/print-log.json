@@ -1,0 +1,477 @@
+{
+  "printer": "Bambu P1S 01P00A3C1300643 via bambu-bridge on pve",
+  "entries": [
+    {
+      "id": "P-0001",
+      "when": "2026-09-17 20:06",
+      "label": "V5 rail +3.5 mm fit coupons A/B/C (PETG grey)",
+      "status": "printed",
+      "job_id": "0eec266d",
+      "file_name": "Precision_5680_V5_Rail_Plus_3p5mm_Fit_Coupons.gcode.3mf",
+      "ams_physical_slot": 2,
+      "repo_commit": "f442cc2",
+      "notes": "Lid rail moved 3.5 mm away from seat and fence after the V4 trio all bound.",
+      "lessons": "C (R2 seat + 1 mm relief) seated best: 3 dots wins. Rail offset confirmed at 3.5 mm.",
+      "follow_ups": [],
+      "slice_dir": "/mnt/c/Users/repro/Documents/Codex/2026-09-17/for-x20/work/quartet-team/architect/v5-orca",
+      "estimate": {
+        "time": "1h 52m 33s",
+        "filament_g": 48.18,
+        "layers": 120,
+        "max_z_mm": 24.0
+      },
+      "toolpath_audit_passed": true,
+      "gcode_sha256": "45a0770e482865a68dd925c0057538133acc76c2ab535ff26b23c77a4d415879",
+      "supports_by_object": {},
+      "parts": [
+        {
+          "name": "A_R1_full_rail_plus_3p5mm_X_to_print_Z",
+          "source_sha256": "c3fbe9c04abdcae53b7d8b8c9dc9c354e66eaeab9bd450bc954ad4e98a2fee59"
+        },
+        {
+          "name": "B_R2_full_rail_plus_3p5mm_X_to_print_Z",
+          "source_sha256": "dad7d63de9b792c9042661b8d1eeac6ef3c51e9d3ee6f6b9d109d8bfd959984f"
+        },
+        {
+          "name": "C_R2_full_rail_plus_3p5mm_plus_1mm_seat_relief_X_to_print_Z",
+          "source_sha256": "0e5512bfb011cd286049b1590bf67a0d87526eafecc07840bdc01b84a30e4a08"
+        }
+      ],
+      "profiles": {
+        "machine": "Repro P1S - 0.4 nozzle",
+        "process": "Repro Normal - 0.4 nozzle",
+        "filament": "Repro Generic PETG - 0.4 nozzle - Starter",
+        "filament_preset": "Repro Generic PETG - 0.4 nozzle - Starter"
+      },
+      "process": {
+        "layer_height": "0.2",
+        "wall_loops": "4",
+        "top_shell_layers": "5",
+        "sparse_infill_density": "20%",
+        "sparse_infill_pattern": "gyroid",
+        "support_type": "normal(auto)",
+        "support_style": "tree_slim",
+        "support_on_build_plate_only": "0",
+        "support_object_xy_distance": "0.35",
+        "brim_width": "5"
+      },
+      "filament_settings": {
+        "filament_flow_ratio": "0.95",
+        "filament_shrink": "100%",
+        "nozzle_temperature": "255",
+        "hot_plate_temp": "70"
+      }
+    },
+    {
+      "id": "P-0002",
+      "when": "2026-09-17 22:11",
+      "label": "R4-C bracket pair + D9 P2 fastener fit parts (PETG grey, 8 h plate)",
+      "status": "printed",
+      "job_id": "9c88a11e",
+      "file_name": "OPEN-ME.gcode.3mf",
+      "ams_physical_slot": 2,
+      "repo_commit": "30998a6",
+      "notes": "Two beefed-up R4-C brackets plus the P2 fit fixtures, three pins and keys.",
+      "lessons": "Brackets seat the laptop well (cradle is great). Octagonal pins rattle in the 8.8 mm bores (0.6 mm diametral at corners): bores to 8.4 mm. Key barbs need 1 mm more total interference (0.8 to 1.8 mm). T tongue looked 0.6 mm proud but it was stuck support debris; the cleaned pair nests flush.",
+      "follow_ups": [],
+      "slice_dir": "/mnt/c/Users/repro/Documents/Codex/2026-09-17/for-x20/work/quartet-team/architect/r4-C-8h-orca",
+      "estimate": {
+        "time": "6h 59m 10s",
+        "filament_g": 217.3,
+        "layers": 298,
+        "max_z_mm": 38.0
+      },
+      "toolpath_audit_passed": true,
+      "gcode_sha256": "f71dafc5fe6972d5560c1cc3cd8fe0728cb82f641268711ba1129a52fb6d1087",
+      "supports_by_object": {
+        "D8-R4-C-quick-fit-bracket-print-TWO": 0,
+        "D8-R4-C-quick-fit-bracket-print-TWO-2": 0,
+        "fan-socket-fit-fixture": 3768,
+        "side-socket-fit-fixture": 3405,
+        "T-joint-fit-L": 1182,
+        "T-joint-fit-R": 1873,
+        "M1-fan-1-pin": 774,
+        "M1-fan-3-pin": 774,
+        "front-lap-pin": 700,
+        "M1-fan-1-key": 0,
+        "M1-fan-3-key": 0,
+        "front-lap-key": 0
+      },
+      "parts": [
+        {
+          "name": "D8-R4-C-quick-fit-bracket-print-TWO",
+          "source_sha256": "76cd2acca0a54ecc02512d8b90cbe93551cd2c05d29e86c1dd79044041a817c8"
+        },
+        {
+          "name": "D8-R4-C-quick-fit-bracket-print-TWO-2",
+          "source_sha256": "76cd2acca0a54ecc02512d8b90cbe93551cd2c05d29e86c1dd79044041a817c8"
+        },
+        {
+          "name": "fan-socket-fit-fixture",
+          "source_sha256": "8ff048783540dc0082025c2f0ce002573b9808468deab017add5e69b37294e6a"
+        },
+        {
+          "name": "side-socket-fit-fixture",
+          "source_sha256": "5bb130ef78d6acb2be212c15a9fa99d314ab17693d198d1a7f013eb1b6d5c85d"
+        },
+        {
+          "name": "T-joint-fit-L",
+          "source_sha256": "561c060bed9f1c1ba4247a5ed6cfddcc80408a4fb072e9b989c4c146b6627c0a"
+        },
+        {
+          "name": "T-joint-fit-R",
+          "source_sha256": "ac9eaaeb987246abcf91f12f17a5bd15ae827a6b75f08dcad8ba921f4fd17840"
+        },
+        {
+          "name": "M1-fan-1-pin",
+          "source_sha256": "fc300ddeb4180d83a42200b97c86f37c9c3db2e83d45acc8b099ba8e73e15b54"
+        },
+        {
+          "name": "M1-fan-3-pin",
+          "source_sha256": "fc300ddeb4180d83a42200b97c86f37c9c3db2e83d45acc8b099ba8e73e15b54"
+        },
+        {
+          "name": "front-lap-pin",
+          "source_sha256": "42d48155efdbccd73c5317ee3b3532dfc2c027b3401f7eb1a249e8c6cb11335c"
+        },
+        {
+          "name": "M1-fan-1-key",
+          "source_sha256": "82f5a4d12c23c4fea59df13fe34d7a8eb314891053a5f1ead94d256504f37e2e"
+        },
+        {
+          "name": "M1-fan-3-key",
+          "source_sha256": "7a9efd6c3943db90af5734ece5ba127ffd5564ef150dc9b224d35e38ce7022d8"
+        },
+        {
+          "name": "front-lap-key",
+          "source_sha256": "82f5a4d12c23c4fea59df13fe34d7a8eb314891053a5f1ead94d256504f37e2e"
+        }
+      ],
+      "profiles": {
+        "machine": "Repro P1S - 0.4 nozzle",
+        "process": "Repro Normal 15 grid - 0.4 nozzle",
+        "filament": "Repro Generic PETG - 0.4 nozzle - Starter",
+        "filament_preset": "Repro Generic PETG - 0.4 nozzle - Starter"
+      },
+      "process": {
+        "layer_height": "0.2",
+        "wall_loops": "4",
+        "top_shell_layers": "5",
+        "sparse_infill_density": "15%",
+        "sparse_infill_pattern": "grid",
+        "support_type": "normal(auto)",
+        "support_style": "tree_slim",
+        "support_on_build_plate_only": "0",
+        "support_object_xy_distance": "0.35",
+        "brim_width": "5"
+      },
+      "filament_settings": {
+        "filament_flow_ratio": "0.95",
+        "filament_shrink": "100%",
+        "nozzle_temperature": "255",
+        "hot_plate_temp": "70"
+      }
+    },
+    {
+      "id": "P-0003",
+      "when": "2026-09-18 07:22",
+      "label": "D9 P5 plate 02, M1 inner plenum (PETG grey)",
+      "status": "not-started",
+      "job_id": "ede6ad47",
+      "file_name": "D9-P5-02-M1-inner-plenum.gcode.3mf",
+      "ams_physical_slot": 2,
+      "repo_commit": "4834be6",
+      "notes": "Bridge accepted the job but the printer refused the start with BBSTART_NOT_IDLE while showing FINISH from the R4-C plate. Dismissed on screen; plate 02 was not printed in PETG.",
+      "lessons": "Consecutive jobs normally submit straight into FINISH; this refusal was a one-off. If it recurs, dismiss on the screen and resubmit.",
+      "follow_ups": [],
+      "slice_dir": "/mnt/c/Users/repro/Documents/Codex/2026-09-17/for-x20/work/d9-p5-print-pass/plates-prev-tongue-12.1/02",
+      "estimate": {
+        "time": "6h 35m 37s",
+        "filament_g": 188.94,
+        "layers": 725,
+        "max_z_mm": 91.8
+      },
+      "toolpath_audit_passed": true,
+      "gcode_sha256": "74260543a0f03061a7035c9183c6f911e0b829de473956b0a1bb5dd882c7498f",
+      "supports_by_object": {
+        "M1-inner-shell": 31889
+      },
+      "parts": [
+        {
+          "name": "M1-inner-shell",
+          "source_sha256": "34fdd086644035f220cd1a6ba6a3b0c2f336171c53bdbdc59100b344241c04ab"
+        }
+      ],
+      "profiles": {
+        "machine": "Repro P1S - 0.4 nozzle",
+        "process": "Repro Normal - 0.4 nozzle",
+        "filament": "Repro Generic PETG - 0.4 nozzle - Starter",
+        "filament_preset": "Repro Generic PETG - 0.4 nozzle - Starter"
+      },
+      "process": {
+        "layer_height": "0.2",
+        "wall_loops": "5",
+        "top_shell_layers": "6",
+        "sparse_infill_density": "40%",
+        "sparse_infill_pattern": "gyroid",
+        "support_type": "normal(auto)",
+        "support_style": "snug",
+        "support_on_build_plate_only": "0",
+        "support_object_xy_distance": "0.35",
+        "brim_width": "5"
+      },
+      "filament_settings": {
+        "filament_flow_ratio": "0.95",
+        "filament_shrink": "100%",
+        "nozzle_temperature": "255",
+        "hot_plate_temp": "70"
+      }
+    },
+    {
+      "id": "P-0004",
+      "when": "2026-09-18 07:50",
+      "label": "D9 P5 plate 01, M1 outer cradle (calibrated PolyLite ASA), first attempt",
+      "status": "failed",
+      "job_id": "405f9ec4",
+      "file_name": "D9-P5-01-M1-outer-cradle-ASA.gcode.3mf",
+      "ams_physical_slot": 3,
+      "repo_commit": "4834be6",
+      "notes": "Killed by the bridge watchdog (FED_NO_PROGRESS, 600 s) during the 100 C bed preheat before any layer printed.",
+      "lessons": "Bridge feed deadline raised to 1800 s (BRIDGE_FEED_DEADLINE_S), PR #28, deployed on pve the same morning.",
+      "follow_ups": [],
+      "slice_dir": "/mnt/c/Users/repro/Documents/Codex/2026-09-17/for-x20/work/d9-p5-print-pass/asa/01",
+      "estimate": {
+        "time": "9h 36m 19s",
+        "filament_g": 170.35,
+        "layers": 548,
+        "max_z_mm": 74.4
+      },
+      "toolpath_audit_passed": true,
+      "gcode_sha256": "d2143a37ce771da349d5fb82163930e7b138eeb3baee437a1705db51552dc521",
+      "supports_by_object": {
+        "M1-outer-cradle-shell": 22901
+      },
+      "parts": [
+        {
+          "name": "M1-outer-cradle-shell",
+          "source_sha256": "1d11da52c6cd2c129c6d670c8b1204ba1a2a62e88208d48a75d6c1c49ea44bc3"
+        }
+      ],
+      "profiles": {
+        "machine": "Repro P1S - 0.4 nozzle",
+        "process": "Repro Normal - 0.4 nozzle",
+        "filament": "Repro - ASA - Polymaker PolyLite - Calibrated",
+        "material": "Polymaker PolyLite ASA, calibrated (flow 0.93, shrink 99.46 %, PA 0.034), AMS slot 3",
+        "filament_preset": "Repro - ASA - Polymaker PolyLite - Calibrated"
+      },
+      "process": {
+        "layer_height": "0.2",
+        "wall_loops": "5",
+        "top_shell_layers": "6",
+        "sparse_infill_density": "40%",
+        "sparse_infill_pattern": "gyroid",
+        "support_type": "normal(auto)",
+        "support_style": "snug",
+        "support_on_build_plate_only": "0",
+        "support_object_xy_distance": "0.35",
+        "brim_width": "5"
+      },
+      "filament_settings": {
+        "filament_flow_ratio": "0.93",
+        "filament_shrink": "99.46%",
+        "pressure_advance": "0.034",
+        "nozzle_temperature": "260",
+        "hot_plate_temp": "100"
+      }
+    },
+    {
+      "id": "P-0005",
+      "when": "2026-09-18 08:08",
+      "label": "D9 P5 plate 01, M1 outer cradle (calibrated PolyLite ASA)",
+      "status": "printed",
+      "job_id": "059ef858",
+      "file_name": "D9-P5-01-M1-outer-cradle-ASA.gcode.3mf",
+      "ams_physical_slot": 3,
+      "repo_commit": "4834be6",
+      "notes": "Resubmitted after the watchdog fix. Finished about 16:20. Snug normal supports, 5 walls, 40 % gyroid.",
+      "lessons": "Part came out nice; supports were acceptable to remove. Predates the fan-screw pilots (drill by hand with the guard as jig) and the socket-boss gussets.",
+      "follow_ups": [],
+      "slice_dir": "/mnt/c/Users/repro/Documents/Codex/2026-09-17/for-x20/work/d9-p5-print-pass/asa/01",
+      "estimate": {
+        "time": "9h 36m 19s",
+        "filament_g": 170.35,
+        "layers": 548,
+        "max_z_mm": 74.4
+      },
+      "toolpath_audit_passed": true,
+      "gcode_sha256": "d2143a37ce771da349d5fb82163930e7b138eeb3baee437a1705db51552dc521",
+      "supports_by_object": {
+        "M1-outer-cradle-shell": 22901
+      },
+      "parts": [
+        {
+          "name": "M1-outer-cradle-shell",
+          "source_sha256": "1d11da52c6cd2c129c6d670c8b1204ba1a2a62e88208d48a75d6c1c49ea44bc3"
+        }
+      ],
+      "profiles": {
+        "machine": "Repro P1S - 0.4 nozzle",
+        "process": "Repro Normal - 0.4 nozzle",
+        "filament": "Repro - ASA - Polymaker PolyLite - Calibrated",
+        "material": "Polymaker PolyLite ASA, calibrated (flow 0.93, shrink 99.46 %, PA 0.034), AMS slot 3",
+        "filament_preset": "Repro - ASA - Polymaker PolyLite - Calibrated"
+      },
+      "process": {
+        "layer_height": "0.2",
+        "wall_loops": "5",
+        "top_shell_layers": "6",
+        "sparse_infill_density": "40%",
+        "sparse_infill_pattern": "gyroid",
+        "support_type": "normal(auto)",
+        "support_style": "snug",
+        "support_on_build_plate_only": "0",
+        "support_object_xy_distance": "0.35",
+        "brim_width": "5"
+      },
+      "filament_settings": {
+        "filament_flow_ratio": "0.93",
+        "filament_shrink": "99.46%",
+        "pressure_advance": "0.034",
+        "nozzle_temperature": "260",
+        "hot_plate_temp": "100"
+      }
+    },
+    {
+      "id": "P-0006",
+      "when": "2026-09-18 16:58",
+      "label": "D9 P5 overnight plate: M1 + M2 inner plenums, 4 contact pegs, 2 insert pins, 4 round-shaft frame-end pins + keys (calibrated PolyLite ASA)",
+      "status": "running",
+      "job_id": "1cb99fd5",
+      "file_name": "D9-P5-10-inner-pair-pegs-ASA.gcode.3mf",
+      "ams_physical_slot": 3,
+      "repo_commit": "6cc690c",
+      "notes": "Submitted straight into FINISH; printer went IDLE then RUNNING within 30 s. Pegs, pins and keys at the plate's 40 % gyroid rather than 100 %. Round-shaft trial on the four frame-end pins. Predates the fan-screw pilots and the gussets.",
+      "lessons": "",
+      "follow_ups": [],
+      "slice_dir": "/mnt/c/Users/repro/Documents/Codex/2026-09-17/for-x20/work/d9-p5-print-pass/asa/10-inner-pair-pegs",
+      "estimate": {
+        "time": "14h 33m 48s",
+        "filament_g": 326.58,
+        "layers": 990,
+        "max_z_mm": 91.8
+      },
+      "toolpath_audit_passed": true,
+      "gcode_sha256": "5b629e9a7f6237f60740cd13dd323c114ef1de11f5428202fd3798c556203a15",
+      "supports_by_object": {
+        "M1-fence-peg": 639,
+        "M2-fence-peg": 633,
+        "M1-seat-peg": 1039,
+        "M2-seat-peg": 1039,
+        "M1-insert-pin": 973,
+        "M2-insert-pin": 973,
+        "front-frame-L-pin": 111,
+        "front-frame-R-pin": 111,
+        "rear-frame-L-pin": 111,
+        "rear-frame-R-pin": 111,
+        "front-frame-L-key": 0,
+        "front-frame-R-key": 0,
+        "rear-frame-L-key": 0,
+        "rear-frame-R-key": 0,
+        "M1-inner-shell": 31889,
+        "M2-inner-shell": 30803
+      },
+      "parts": [
+        {
+          "name": "M1-fence-peg",
+          "source_sha256": "bdc102d6c48c03cb9ad634f026c3e5fffa0af233d75778f4f2b25193a3cfa24b"
+        },
+        {
+          "name": "M2-fence-peg",
+          "source_sha256": "5cd84efe43b1b443fb39916f99c967ba5f69b090e23cf301ef540443d899ffe6"
+        },
+        {
+          "name": "M1-seat-peg",
+          "source_sha256": "0aed55942890f57099d9b4509c0434956ec66582f42036796fa04cd912e506c5"
+        },
+        {
+          "name": "M2-seat-peg",
+          "source_sha256": "8d2c053555c7910837851c4caf46ac445926898b71021dbf97698d7efb8faa53"
+        },
+        {
+          "name": "M1-insert-pin",
+          "source_sha256": "fc300ddeb4180d83a42200b97c86f37c9c3db2e83d45acc8b099ba8e73e15b54"
+        },
+        {
+          "name": "M2-insert-pin",
+          "source_sha256": "fc300ddeb4180d83a42200b97c86f37c9c3db2e83d45acc8b099ba8e73e15b54"
+        },
+        {
+          "name": "front-frame-L-pin",
+          "source_sha256": "e515c5742f376b24904e6c93abb2a645b7a5d6cc838123ea416fb529a9aa96ac"
+        },
+        {
+          "name": "front-frame-R-pin",
+          "source_sha256": "e515c5742f376b24904e6c93abb2a645b7a5d6cc838123ea416fb529a9aa96ac"
+        },
+        {
+          "name": "rear-frame-L-pin",
+          "source_sha256": "e515c5742f376b24904e6c93abb2a645b7a5d6cc838123ea416fb529a9aa96ac"
+        },
+        {
+          "name": "rear-frame-R-pin",
+          "source_sha256": "e515c5742f376b24904e6c93abb2a645b7a5d6cc838123ea416fb529a9aa96ac"
+        },
+        {
+          "name": "front-frame-L-key",
+          "source_sha256": "3905db7246ece951873933bbc614a5798ec731b62883c5a4033ccdea14283a98"
+        },
+        {
+          "name": "front-frame-R-key",
+          "source_sha256": "3905db7246ece951873933bbc614a5798ec731b62883c5a4033ccdea14283a98"
+        },
+        {
+          "name": "rear-frame-L-key",
+          "source_sha256": "3905db7246ece951873933bbc614a5798ec731b62883c5a4033ccdea14283a98"
+        },
+        {
+          "name": "rear-frame-R-key",
+          "source_sha256": "3905db7246ece951873933bbc614a5798ec731b62883c5a4033ccdea14283a98"
+        },
+        {
+          "name": "M1-inner-shell",
+          "source_sha256": "34fdd086644035f220cd1a6ba6a3b0c2f336171c53bdbdc59100b344241c04ab"
+        },
+        {
+          "name": "M2-inner-shell",
+          "source_sha256": "0583ada73437c9b1d30500e3dd818df38dd0d06e5f3de2b3dccd25405d3bdbe4"
+        }
+      ],
+      "profiles": {
+        "machine": "Repro P1S - 0.4 nozzle",
+        "process": "Repro Normal - 0.4 nozzle",
+        "filament": "Repro - ASA - Polymaker PolyLite - Calibrated",
+        "material": "Polymaker PolyLite ASA, calibrated (flow 0.93, shrink 99.46 %, PA 0.034), AMS slot 3",
+        "filament_preset": "Repro - ASA - Polymaker PolyLite - Calibrated"
+      },
+      "process": {
+        "layer_height": "0.2",
+        "wall_loops": "5",
+        "top_shell_layers": "6",
+        "sparse_infill_density": "40%",
+        "sparse_infill_pattern": "gyroid",
+        "support_type": "normal(auto)",
+        "support_style": "snug",
+        "support_on_build_plate_only": "0",
+        "support_object_xy_distance": "0.35",
+        "brim_width": "5"
+      },
+      "filament_settings": {
+        "filament_flow_ratio": "0.93",
+        "filament_shrink": "99.46%",
+        "pressure_advance": "0.034",
+        "nozzle_temperature": "260",
+        "hot_plate_temp": "100"
+      }
+    }
+  ]
+}

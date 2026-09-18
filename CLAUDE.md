@@ -64,6 +64,12 @@ STEPs and JSON). The R2 quick-fit files are untracked in the main checkout at
 3. `cd architect && cadpy run_coupon_pipeline.py --stl <1..3 STLs> --profiles profiles/coupon-fast --out vN-orca --review VN-GEOMETRY-REVIEW.md [--package <out> --geometry-dir ../geometry/profile-vN --readme VN-PRINT-KIT-README.md --title "…"]`
 4. Print: `p1s-print <slice-dir or package>/OPEN-ME.3mf 1` (physical slot;
    see the `p1s-print` skill). Check `p1s-status` first.
+   **Log every submission** right after the bridge accepts it:
+   `python3 tools/print-log.py add --slice-dir <orca slice folder> --job <id> --slot <N> --commit <sha> --label "..."`
+   and close it out when the part comes off:
+   `python3 tools/print-log.py update --id P-00NN --status printed|failed --lessons "..."`.
+   The log (`docs/prints/print-log.json`, rendered to `docs/prints/README.md`) ties every printed
+   part to its source-STL hash, profiles and repo commit, so fit feedback can be traced to geometry.
 5. Publish: copy the kit zip and 3MF to `docs/printables/fit-vN/`, update
    `docs/handoff-2026-09-17.html`, `docs/handoff/2026-09-17/NEXT-STEPS.md`,
    `docs/index.html` and `docs/desk-dock.html`. GitHub Pages serves `main`.

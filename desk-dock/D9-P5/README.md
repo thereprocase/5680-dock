@@ -31,7 +31,17 @@ P5 is the D9 P2 no-metal-hardware dock with these changes and nothing else:
    four M4 x 45 screws can hold guard and fan instead of (or as well as) the
    pins. The pilots are blind, so the air wall stays closed; plug or ignore
    them if unused. Shells printed before 18 September 17:00 lack the pilots:
-   use the guard as a drill jig. Plate 00 is regenerated: print it first and check insertion,
+   use the guard as a drill jig. Support-reducing gussets (18 September, no mating
+   change; `check_no_removed_material.py` proves nothing was removed from any shell
+   or guard): every external socket boss now carries a rib or a 34-degree wedge to
+   the flange, and each seam tab carries a 34-degree wedge on its pin-tip end,
+   which is the bed-facing end on the M1 inner shell and the M2 outer cradle. Those
+   two parts lose 80 % and 64 % of their support road; the M1 outer cradle and
+   M2 inner shell keep their tab towers because the pin head sits under those tab
+   ends. The wedges add about 15 cm3 per plenum and 30 to 35 minutes of print time
+   per gusseted shell, so the trade is cleanup for time. `overhang-threshold-test/`
+   is the calibration: this Orca profile supports faces at 45 degrees from
+   vertical and leaves 35 degrees alone. Plate 00 is regenerated: print it first and check insertion,
    retention and deliberate removal before the large parts.
 2. **Printable edge treatment.** Profile corners that run along each part's
    print Z are filleted (3 mm concave for stress relief, 1.5 mm convex for

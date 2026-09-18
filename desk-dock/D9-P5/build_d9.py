@@ -33,6 +33,8 @@ def cz(x,y,z,r,length):return cq.Solid.makeCylinder(r,length,cq.Vector(x,y,z),cq
 def norm(s):
     b=s.BoundingBox();return s.translate((-b.xmin,-b.ymin,-b.zmin))
 def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
+def wedge_xz(points,y0,width):return cq.Workplane('XZ',origin=(0,y0,0)).polyline(points).close().extrude(-width).val()  # triangle in (x,z) at y0, extruded +Y
+GUSSET_RUN=15.5;GUSSET_SLOPE=1.5  # gussets: print-Z extent = 1.5 x overhang depth (34 degrees from vertical). overhang-threshold-test/ showed this Orca profile supports 45 degrees from vertical and leaves 35 alone
 def posed(s,fx):return s.rotate((0,0,0),(1,0,0),108).translate((fx,FY,FZ))
 def fp(y,w):return (FY+math.cos(ANGLE)*y-math.sin(ANGLE)*w,FZ+math.sin(ANGLE)*y+math.cos(ANGLE)*w)
 def locate(s,origin,normal=(1,0,0),xdir=(0,0,-1)):
@@ -147,9 +149,22 @@ for index,fx in enumerate(P['fan_centers_x'],1):
     screw_pilots=[posed(cz(sx,sy,7.4,SCREW_PILOT_R,6.1),fx) for sx in (-52.5,52.5) for sy in (-52.5,52.5)]
     for hole in screw_pilots:housing=housing.cut(hole)
     # Four blind external sockets. No fan screw hole penetrates the air wall.
+    left_end=(ox0-15 if index==1 else ox0)-fx;right_end=(ox1 if index==1 else ox1+15)-fx  # part ends in fan-local x
     for sx,sy,side_access in mounts:
         boss=box(sx-6,sy-8,-8,12,16,15.5).cut(socket_cutter(sx,sy,side_access))
         housing=housing.fuse(posed(boss,fx))
+        # Support-free bosses (2026-09-18): each boss cantilevers 15.5 mm off the flange and faces the bed end of its
+        # half in print. Fill to the part end when it is within GUSSET_RUN, else a 45-degree wedge. External only:
+        # the key/side-access cutters are applied afterwards, so no socket, slot or access path changes.
+        if sx<0:
+            gap=(sx-6)-left_end
+            g=box(left_end,sy-8,-8,gap,16,15.5) if gap<=GUSSET_RUN*GUSSET_SLOPE else wedge_xz([(sx-6,7.5),(sx-6,-8),(sx-6-GUSSET_RUN*GUSSET_SLOPE,7.5)],sy-8,16)
+        else:
+            gap=right_end-(sx+6)
+            g=box(sx+6,sy-8,-8,gap,16,15.5) if gap<=GUSSET_RUN*GUSSET_SLOPE else wedge_xz([(sx+6,7.5),(sx+6,-8),(sx+6+GUSSET_RUN*GUSSET_SLOPE,7.5)],sy-8,16)
+        g=posed(g,fx)
+        for ty in (-40,100):g=g.cut(box(-100,ty-10.5,-1.5,600,21,17))  # stay 0.5 mm clear of the front/rear tie envelopes
+        housing=housing.fuse(g)
     # Three internal pin tabs. Avoid the narrow inlet neck; orient key insertion
     # tangentially to each wall, with the head and flexing leaves inside the cavity.
     coords=list(poly.exterior.coords)[:-1];seam=[];seam_cuts=[]
@@ -163,9 +178,13 @@ for index,fx in enumerate(P['fan_centers_x'],1):
         # Canonical Z is axial X; canonical Y is the wall tangent.
         place=lambda s,yy=yy,zz=zz,ty=ty,tz=tz:locate(s,(fx-13.2,yy,zz),xdir=(0,tz,-ty))
         tab=place(box(-12,-8,.2,24,16,26)).intersect(stock)
-        housing=housing.fuse(tab).cut(cx(fx-13.3,yy,zz,BORE_R,26.6))
+        # Support-free tab tip (2026-09-18): the +X end of each tab is the bed-facing face of the right-hand half and
+        # carries only the pin tip, so a wedge from the tab tip (21 mm into the cavity) down to the wall
+        # makes it self-supporting (print-Z extent 1.5 x the 21-mm depth); the bore continues through the wedge. The -X end carries the pin head and stays.
+        tip_wedge=place(wedge_xz([(12*sign,26.2),(-9*sign,26.2),(-9*sign,26.2+21*GUSSET_SLOPE)],-8,16))
+        housing=housing.fuse(tab).fuse(tip_wedge).cut(cx(fx-13.3,yy,zz,BORE_R,26.6+33))
         housing=housing.cut(place(box(-2.7,-8.2,18.5-1.7,5.4,16.4,3.4)))
-        seam_cuts.append(cx(fx-13.3,yy,zz,BORE_R,26.6));seam_cuts.append(place(box(-2.7,-8.2,18.5-1.7,5.4,16.4,3.4)))
+        seam_cuts.append(cx(fx-13.3,yy,zz,BORE_R,26.6+33));seam_cuts.append(place(box(-2.7,-8.2,18.5-1.7,5.4,16.4,3.4)))
         seam.append({'y':yy,'z':zz,'tangent':[ty,tz]})
         pin_and_key(f'M{index}-seam-{len(seam)}',26,3,place)
     left=housing.intersect(box(ox0-30,-100,-30,fx-(ox0-30),350,230)).clean()
