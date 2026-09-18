@@ -17,7 +17,13 @@ M2 outer lose most of their support. Plate 04 is re-sliced in calibrated ASA wit
 1. Plates 02, 03, 05, 06, 07 (675 g, 27 h 39 m) do not depend on contact geometry: start any time.
 2. Fit plate 00 (40 g, 1 h 53 m) for the P4 clearances; pegs plate 08 (30 g, 1 h 19 m); plate 09 cradle-end trial (136 g, 7 h 01 m) to feel the 8° seat and peg fit before the cradles.
    Plate 01 (M1 outer cradle) printed in calibrated PolyLite ASA on 18 September. Overnight: 02 + 03 with the pegs,
-   insert pins and round frame-end pins on one plate (`desk-dock/D9-P5/asa-10-receipts`); then 04, 05, 06, 07.
+   insert pins and round frame-end pins on one plate (`desk-dock/D9-P5/asa-10-receipts`).
+   Remaining plates, regrouped for one morning and one evening swap per day (calibrated ASA, slot 3,
+   sliced and verified 18 September evening in `d9-p5-print-pass/asa/14..16`):
+   - Sat morning: 15 = M1 fan guard + all four ties (7 h 59 m, 142 g).
+   - Sat evening: 14 = M2 outer cradle + all 16 seam/fan/lap pins and keys (12 h 48 m, 213 g), overnight.
+   - Sun morning: 16 = M2 fan guard alone (2 h 00 m, 41 g). Dock complete about 10:00 Sunday;
+     two purchased 120 mm fans mount on pins/keys or M4 x 45 screws. Plug mechanism still excluded.
 3. Outer cradles 01 and 04 (446 g, 20 h 36 m) once the pegs are trusted.
 4. Other machines: re-head the pegs (`R7/build_quick_fit.py --demo-thickness`), the frame stays.
 
