@@ -12,13 +12,13 @@ every flange on the 105 mm pattern, for M4 × 45 screws; pins stay primary. Dril
 and the two inner shells printed on 18 September using the guard as a jig.
 Gussets (additive only): socket bosses and pin-tip tab ends are self-supporting at 34°; M1 inner and
 M2 outer lose most of their support. Plate 04 is re-sliced in calibrated ASA with gussets and pilots.
-[Kit](../../printables/d9-p5/Precision_5680_D9_P5_Print_Kit.zip) · [fit plate](../../printables/d9-p5/OPEN-ME.3mf) · [notes](../../printables/d9-p5/README.md) · [print log](../../prints/README.md).
+[Kit](../../printables/d9-p5/Precision_5680_D9_P5_Print_Kit.zip) · [fit plate](../../printables/d9-p5/OPEN-ME.3mf) · [notes](../../printables/d9-p5/README.md) · [print log](../../prints/).
 
-1. Plates 02, 03, 05, 06, 07 (668 g, 26 h 36 m) do not depend on contact geometry: start any time.
+1. Plates 02, 03, 05, 06, 07 (675 g, 27 h 39 m) do not depend on contact geometry: start any time.
 2. Fit plate 00 (40 g, 1 h 53 m) for the P4 clearances; pegs plate 08 (30 g, 1 h 19 m); plate 09 cradle-end trial (136 g, 7 h 01 m) to feel the 8° seat and peg fit before the cradles.
    Plate 01 (M1 outer cradle) printed in calibrated PolyLite ASA on 18 September. Overnight: 02 + 03 with the pegs,
    insert pins and round frame-end pins on one plate (`desk-dock/D9-P5/asa-10-receipts`); then 04, 05, 06, 07.
-3. Outer cradles 01 and 04 (441 g, 20 h 03 m) once the pegs are trusted.
+3. Outer cradles 01 and 04 (446 g, 20 h 36 m) once the pegs are trusted.
 4. Other machines: re-head the pegs (`R7/build_quick_fit.py --demo-thickness`), the frame stays.
 
 ---
