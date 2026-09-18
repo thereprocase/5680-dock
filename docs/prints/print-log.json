@@ -3,6 +3,82 @@
   "entries": [
     {
       "id": "P-0001",
+      "when": "2026-09-16 18:44",
+      "label": "D8 quick-fit bracket pair, pre-R4 revision (PETG)",
+      "status": "printed",
+      "job_id": "b8c11d5e2216487ba26385df0b79d6fa",
+      "file_name": "D8-quick-fit-bracket-print-TWO_plate_1",
+      "ams_physical_slot": null,
+      "repo_commit": "502a85e",
+      "notes": "Pre-session print recovered from the bridge job list (2 h 36 m actual). Exact bracket revision not recorded; the D8 quick-fit R1/R2 sources are in desk-dock/D8/quick-fit.",
+      "lessons": "Seat and fence needed the V-series coupons to converge; superseded by the R4-C pair (P-0004, the R4-C plate).",
+      "follow_ups": [],
+      "actual_duration_s": 9389
+    },
+    {
+      "id": "P-0002",
+      "when": "2026-09-17 18:41",
+      "label": "V4 full-rail fit coupons A/B/C (PETG grey)",
+      "status": "printed",
+      "job_id": "0d353e7416234f1498326c701b233e2a",
+      "file_name": "Precision_5680_V4_Full_Rail_Fit_Coupons_V4 FULL RAIL A B C FIT COUPONS - ONE EACH",
+      "ams_physical_slot": 2,
+      "repo_commit": "3e8792b",
+      "notes": "Recovered from the bridge job list (57 min actual).",
+      "lessons": "All three V4 sizers bound: the tall lid-stop wall sat too close to the seat and fence. Fixed by moving the rail 3.5 mm outward in V5 (P-0003, the V5 coupons).",
+      "follow_ups": [],
+      "actual_duration_s": 3453,
+      "slice_dir": "/mnt/c/Users/repro/Documents/Codex/2026-09-17/for-x20/work/quartet-team/architect/v4-orca",
+      "estimate": {
+        "time": "1h 50m 46s",
+        "filament_g": 47.02,
+        "layers": 120,
+        "max_z_mm": 24.0
+      },
+      "toolpath_audit_passed": true,
+      "gcode_sha256": "0827fe8911fe024932d88e7c36e41e3a4fcbe8c4b614fe548bd0af0f877549ee",
+      "supports_by_object": {},
+      "parts": [
+        {
+          "name": "A_R1_full_native_rail_X_to_print_Z",
+          "source_sha256": "11bb78ab79a1e333f708042e76edf4bdb381a64b108034260dad0cbdc1e2b401"
+        },
+        {
+          "name": "B_R2_full_native_rail_X_to_print_Z",
+          "source_sha256": "a2ec03ec6196f0214d7c75bfa340b6a6154b4393d1eb2a2693a6aceed91a0238"
+        },
+        {
+          "name": "C_R2_full_rail_plus_1mm_seat_relief_X_to_print_Z",
+          "source_sha256": "eb23e9dbe01ae39c80321c3095786bf2f3c1192c2dfdc12897d5597560e3022b"
+        }
+      ],
+      "profiles": {
+        "machine": "Repro P1S - 0.4 nozzle",
+        "process": "Repro Normal - 0.4 nozzle",
+        "filament": "Repro Generic PETG - 0.4 nozzle - Starter",
+        "filament_preset": "Repro Generic PETG - 0.4 nozzle - Starter"
+      },
+      "process": {
+        "layer_height": "0.2",
+        "wall_loops": "4",
+        "top_shell_layers": "5",
+        "sparse_infill_density": "20%",
+        "sparse_infill_pattern": "gyroid",
+        "support_type": "normal(auto)",
+        "support_style": "tree_slim",
+        "support_on_build_plate_only": "0",
+        "support_object_xy_distance": "0.35",
+        "brim_width": "5"
+      },
+      "filament_settings": {
+        "filament_flow_ratio": "0.95",
+        "filament_shrink": "100%",
+        "nozzle_temperature": "255",
+        "hot_plate_temp": "70"
+      }
+    },
+    {
+      "id": "P-0003",
       "when": "2026-09-17 20:06",
       "label": "V5 rail +3.5 mm fit coupons A/B/C (PETG grey)",
       "status": "printed",
@@ -63,7 +139,7 @@
       }
     },
     {
-      "id": "P-0002",
+      "id": "P-0004",
       "when": "2026-09-17 22:11",
       "label": "R4-C bracket pair + D9 P2 fastener fit parts (PETG grey, 8 h plate)",
       "status": "printed",
@@ -173,7 +249,7 @@
       }
     },
     {
-      "id": "P-0003",
+      "id": "P-0005",
       "when": "2026-09-18 07:22",
       "label": "D9 P5 plate 02, M1 inner plenum (PETG grey)",
       "status": "not-started",
@@ -228,7 +304,7 @@
       }
     },
     {
-      "id": "P-0004",
+      "id": "P-0006",
       "when": "2026-09-18 07:50",
       "label": "D9 P5 plate 01, M1 outer cradle (calibrated PolyLite ASA), first attempt",
       "status": "failed",
@@ -285,7 +361,7 @@
       }
     },
     {
-      "id": "P-0005",
+      "id": "P-0007",
       "when": "2026-09-18 08:08",
       "label": "D9 P5 plate 01, M1 outer cradle (calibrated PolyLite ASA)",
       "status": "printed",
@@ -293,7 +369,7 @@
       "file_name": "D9-P5-01-M1-outer-cradle-ASA.gcode.3mf",
       "ams_physical_slot": 3,
       "repo_commit": "4834be6",
-      "notes": "Resubmitted after the watchdog fix. Finished about 16:20. Snug normal supports, 5 walls, 40 % gyroid.",
+      "notes": "Resubmitted after the watchdog fix. Finished about 16:20. Snug normal supports, 5 walls, 40 % gyroid. The bridge job row still reads \"preparing\": its JobRun died in the watchdog-fix restart and was re-attached as started_at.recovered; the printer completed the part.",
       "lessons": "Part came out nice; supports were acceptable to remove. Predates the fan-screw pilots (drill by hand with the guard as jig) and the socket-boss gussets.",
       "follow_ups": [],
       "slice_dir": "/mnt/c/Users/repro/Documents/Codex/2026-09-17/for-x20/work/d9-p5-print-pass/asa/01",
@@ -342,7 +418,7 @@
       }
     },
     {
-      "id": "P-0006",
+      "id": "P-0008",
       "when": "2026-09-18 16:58",
       "label": "D9 P5 overnight plate: M1 + M2 inner plenums, 4 contact pegs, 2 insert pins, 4 round-shaft frame-end pins + keys (calibrated PolyLite ASA)",
       "status": "running",
