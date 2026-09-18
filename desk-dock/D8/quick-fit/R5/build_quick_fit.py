@@ -302,10 +302,26 @@ for deg in (2, 4, 6, 8, 10):
 assert tip_hits[2] < .001 or True  # small angles may graze the lead-in; recorded, not asserted
 assert max(tip_hits.values()) > 1.0, ('underside rail never catches the tipping laptop', tip_hits)
 first_catch = min(d for d,v in tip_hits.items() if v > .001)
-# Feet and intake window stay outside both bracket ends.
+# The wall belongs on the plug-end bracket (x=0 side) only. The laptop docks
+# along -X from an 18-mm undocked offset, so the rear rubber-foot strip
+# (x 30..323 docked) sweeps x 30..341: it never reaches the plug-end bracket
+# (x < 18) but passes through the far-end bracket's x range. The far end stays
+# R4-C without the wall. Receipt: sweep the docking travel and record the
+# closest approach of every foot keepout to this bracket at each end.
+undock = P['undocked_x_offset_mm']
 intake = C['intake_window_case_relative_bounds_mm']
-assert xstarts[0]+B < intake[0][0] and xstarts[1] > intake[1][0], 'underside rail would cover the intake window'
-assert all(xstarts[0]+B < f['untilted_case_relative_bounds_mm'][0][0] and xstarts[1] > f['untilted_case_relative_bounds_mm'][1][0] for f in C['rubber_feet']), 'underside rail would meet a rubber foot'
+sweep = {}
+for end, x0 in (('plug_end', xstarts[0]), ('far_end', xstarts[1])):
+    worst = None
+    for dx in np.arange(0, undock+1e-9, 2.0):
+        for f in C['rubber_feet']:
+            a, b_ = f['untilted_case_relative_bounds_mm']
+            fx0, fx1 = a[0]+dx, b_[0]+dx
+            gap = float(max(x0-fx1, fx0-(x0+B)))  # positive = clear in X
+            worst = gap if worst is None else min(worst, gap)
+    sweep[end] = {'min_x_clearance_to_any_foot_mm': worst, 'foot_strip_overlaps_bracket_x_range_during_docking': bool(worst < 0)}
+assert not sweep['plug_end']['foot_strip_overlaps_bracket_x_range_during_docking'], sweep
+assert xstarts[0]+B < intake[0][0], 'plug-end rail would cover the intake window'
 
 printed = s.rotate((0,0,0),(0,1,0),-90)
 b = printed.BoundingBox()
@@ -327,7 +343,7 @@ report = dict(passed=True,revision=f'R5-{VARIANT} fit pair',quantity=2,identical
     lip_nominal_clearance_mm=(.25+F['lip_outward_shift_mm']) if VARIANT!='A' else .25,
     fence_inner_to_rail_inner_mm=T+.25+(F['lip_outward_shift_mm'] if VARIANT!='A' else 0)+S,
     base_thickness_mm=BT,brace_width_mm=BW,edge_treatment=edge_report,
-    underside_rail=edge_report['fence'],tip_catch_first_deg=first_catch,tip_overlap_by_deg_mm3=tip_hits,
+    underside_rail=edge_report['fence'],tip_catch_first_deg=first_catch,tip_overlap_by_deg_mm3=tip_hits,docking_sweep=sweep,wall_placement='plug-end bracket only; pair = one R5 (plug end) + one R4 (far end)',
     seat_datum_unchanged=True,bracket_width_mm=B,
     inside_clear_gap_mm=gap,center_spacing_mm=xstarts[1]-xstarts[0],
     outside_width_mm=hi[0]-lo[0],footprint_depth_mm=y1-y0,
@@ -347,7 +363,7 @@ report = dict(passed=True,revision=f'R5-{VARIANT} fit pair',quantity=2,identical
 
 im,_ = render([(q,(62,117,139)) for q in placed]+[(laptop,(188,195,198))],(1500,950),(.8,-1,.65),pad=65)
 canvas = Image.new('RGB',(1500,1070),'#f7f7f7'); canvas.paste(im,(0,75)); draw=ImageDraw.Draw(canvas)
-draw.text((35,20),f'D8 R5-{VARIANT} fit pair | Print the same bracket twice',font=font(29,True),fill='#20313c')
+draw.text((35,20),f'D8 R5-{VARIANT} | Plug-end bracket only; the far end stays R4-{VARIANT}',font=font(29,True),fill='#20313c')
 draw.text((35,1020),f'Inside gap {gap:.2f} mm | Lid rail +{S} mm | Underside rail to z={F["fence_top_z_mm"]:.0f} mm | Rail {RT}, base {BT}, brace {BW} mm',font=font(23),fill='#20313c')
 canvas.save(R/f'D8-R5-{VARIANT}{TAG}-quick-fit.png')
 im,_=render([(s,(62,117,139))],(1100,900),(1,-.15,.13),pad=60)

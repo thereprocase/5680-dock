@@ -147,9 +147,20 @@
     "8": 5912.241247085061,
     "10": 7862.245621010093
   },
+  "docking_sweep": {
+    "plug_end": {
+      "min_x_clearance_to_any_foot_mm": 8.534487775303425,
+      "foot_strip_overlaps_bracket_x_range_during_docking": false
+    },
+    "far_end": {
+      "min_x_clearance_to_any_foot_mm": -0.46562142226844117,
+      "foot_strip_overlaps_bracket_x_range_during_docking": true
+    }
+  },
+  "wall_placement": "plug-end bracket only; pair = one R5 (plug end) + one R4 (far end)",
   "seat_datum_unchanged": true,
   "bracket_width_mm": 38.1,
-  "inside_clear_gap_mm": 318.48,
+  "inside_clear_gap_mm": -0.4621345505490808,
   "center_spacing_mm": 356.58000000000004,
   "outside_width_mm": 394.68000000000006,
   "footprint_depth_mm": 135.0220982023908,
@@ -305,7 +316,7 @@
   "trimesh_version": "5.1.0",
   "source_mesh_sha256": "f201f10ae03de3ec4aefffcc14745deb65b97b597bdba02c8d4b449e4937648a",
   "input_sha256": {
-    "quick-fit\\R5\\build_quick_fit.py": "d0c3b6d5ec4fb94807e36ccfdc9a4b4d3cb0ecb5dcd2b99bfb0b2b97f7923605",
+    "quick-fit\\R5\\build_quick_fit.py": "cacd73ec5d9d3a6b734905eae3bf540a510b6b50577170980c47390eb6e274a7",
     "quick-fit\\R5\\fit-parameters.json": "1cfab16934d5431e805f1ac43c60fa3550f895493972f65f4c203066682b12dd",
     "quick-fit\\R2\\seat-profile.json": "6fc169a141ba90088ef8d456097a4f7f2bbd9ea32160324efe212d0a56f0813b",
     "parameters.json": "3dc1904fdb383491c3fc7780bf5304487d9f79a1df84eb06ff247af674097cfc",
@@ -314,7 +325,7 @@
   },
   "output_sha256": {
     "D8-R5-C-d9-source-quick-fit-bracket-print-TWO.stl": "d9fd0b252fa7097ea00ef672f69490a90df50a4e26c16be3c6293e2b059aa090",
-    "D8-R5-C-d9-source-quick-fit-bracket.step": "000799d2cf20a1004f23fc38cb0aba8d85829fec718f7cffa46f7402988b5c8a"
+    "D8-R5-C-d9-source-quick-fit-bracket.step": "108f21a44eaae1f2761eceb8943e74a6b58bcc2e68cfe77c90b308c9a107ddb9"
   },
   "base_thickness_override": 4.0,
   "tag": "d9-source",

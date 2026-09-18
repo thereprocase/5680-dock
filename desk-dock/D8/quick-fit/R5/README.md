@@ -3,12 +3,15 @@
 **18 September 2026.** The printed R4-C pair carried the laptop, but a nudge
 tipped it away from the lid rail: the 15-mm short fence cannot hold a 240-mm
 lever pivoting on the seat, and the 5-degree lean gives only about 10 mm of
-centre-of-gravity margin. R5 raises that fence, at the bracket ends only, into
-a 6-mm underside rail 64 mm above the seat datum (unleaned z 47..118), keeping
+centre-of-gravity margin. R5 raises that fence into a 6-mm underside rail on the **plug-end bracket only**, 64 mm above the seat datum (unleaned z 47..118), keeping
 the R2 lower profile, the 2.25-mm running clearance and a 4 x 2 mm lead-in at
-the top. Rubber feet (x 30..323) and the intake window (x 31..323) lie between
-the brackets, so the rail meets neither and blocks no air; the builder asserts
-both.
+the top. The laptop docks along -X from an 18-mm undocked offset, so the rear
+rubber-foot strip (x 30..323 docked) sweeps x 30..341: it never reaches the
+plug-end bracket (x < 18) but slides through the far-end bracket's x range, so
+the far end keeps the R4-C profile without the wall. One wall stops the
+rotation. The builder records the docking sweep and asserts the plug-end
+clearance. Pair = one R5-C (plug end) + one R4-C (far end); the two R4-C
+already printed cover the far end.
 
 Tip receipt (variant C, nominal laptop rotated about the seat front edge toward
 the underside side): 2° grazes the lead-in, 4° and beyond the rail carries it.
