@@ -58,8 +58,13 @@ BORE_R=4.2   # 8.4-mm bores for the 8.2-mm across-corners pins: 0.2-mm diametral
 KEY_BARB=3.6 # barb half-width: 7.2 mm through the 5.4-mm slot = 1.8 mm total interference (P2/P3: 3.1 = 0.8 mm)
 TONGUE_H=12.7 # T tongue height in print Z; P2/P3 value restored 2026-09-18 (the P4 0.6-mm trim chased support debris, not geometry)
 OCT=[(PIN_R*math.cos(math.pi/8+i*math.pi/4),PIN_R*math.sin(math.pi/8+i*math.pi/4)) for i in range(8)]
-def pin(length,marks):
-    sh=cq.Workplane('XY').polyline(OCT).close().extrude(length).val()
+def pin(length,marks,profile='octagon'):
+    if profile=='round':
+        # Round 8.2-mm shaft with one chord flat at the octagon's flat height: same bed contact, but the shaft now
+        # matches the 8.4-mm round bore everywhere except that chord (0.2 mm diametral) instead of only at eight corners.
+        sh=cq.Solid.makeCylinder(PIN_R,length,cq.Vector(0,0,0),cq.Vector(0,0,1)).cut(box(-6,-6,-1,12,6-FLAT,length+2))
+    else:
+        sh=cq.Workplane('XY').polyline(OCT).close().extrude(length).val()
     head=[(-5.5,-FLAT),(5.5,-FLAT),(7.5,2-FLAT),(7.5,4.2),(5.5,6.2),(-5.5,6.2),(-7.5,4.2),(-7.5,2-FLAT)]
     sh=sh.fuse(cq.Workplane('XY',origin=(0,0,-4)).polyline(head).close().extrude(4).val())
     sh=sh.cut(box(-2.7,-5,length-7.5-1.7,5.4,10,3.4))
@@ -78,16 +83,16 @@ def key(grip):
     root=-a-1 if grip==8 else -a+3
     gap=box(-half_gap,root,-1.6,2*half_gap,grip+8,3.2).fuse(cz(0,root,-1.6,half_gap,3.2))
     return sh.cut(gap).clean()
-def pin_and_key(name,length,marks,transform,grip=16,key_reverse=False,key_angle=0):
-    canonical_pin=pin(length,marks)
+def pin_and_key(name,length,marks,transform,grip=16,key_reverse=False,key_angle=0,profile='octagon'):
+    canonical_pin=pin(length,marks,profile)
     p=canonical_pin.rotate((0,0,0),(0,0,1),key_angle)
     k=key(grip).translate((0,0,length-7.5))
     compressed=k.cut(box(2.4,grip/2,-3+length-7.5,2,5,6)).cut(box(-4.4,grip/2,-3+length-7.5,2,5,6))
     angle=key_angle+(180 if key_reverse else 0)
     k=k.rotate((0,0,0),(0,0,1),angle);compressed=compressed.rotate((0,0,0),(0,0,1),angle)
-    add(name+'-pin',transform(p),'base','Octagonal pin on its longitudinal flat; axis and tension path lie in the layers. Head edge notch count identifies the length.',canonical_pin.rotate((0,0,0),(1,0,0),90))
+    add(name+'-pin',transform(p),'base',('Round pin with one longitudinal chord flat on the bed' if profile=='round' else 'Octagonal pin on its longitudinal flat')+'; axis and tension path lie in the layers. Head edge notch count identifies the length.',canonical_pin.rotate((0,0,0),(1,0,0),90))
     add(name+'-key',transform(k),'base',f'Flat XY print; two {1.0 if grip==8 else 1.2}-mm locking leaves flex in the layer plane. Pin carries the load; barbs retain the removable key.',key(grip))
-    JOINTS.append({'name':name,'pin_length_mm':length,'head_notches':marks,'key_grip_mm':grip,'radial_pin_clearance_mm':round(BORE_R-PIN_R,2),'key_barb_total_interference_mm':round(2*KEY_BARB-5.4,2),'key_slot_clearance_per_side_mm':.3})
+    JOINTS.append({'name':name,'pin_length_mm':length,'head_notches':marks,'key_grip_mm':grip,'shaft_profile':profile,'radial_pin_clearance_mm':round(BORE_R-PIN_R,2),'key_barb_total_interference_mm':round(2*KEY_BARB-5.4,2),'key_slot_clearance_per_side_mm':.3})
     origin=transform(cq.Vertex.makeVertex(0,0,0)).Center()
     key_axis=transform(cq.Vertex.makeVertex(-math.sin(math.radians(angle)),math.cos(math.radians(angle)),0)).Center()-origin
     pin_axis=transform(cq.Vertex.makeVertex(0,0,1)).Center()-origin
@@ -244,7 +249,7 @@ for label,yy in [('front',-40),('rear',100)]:
         shape=shape.cut(place(box(-2.7,-8.2,32.8-7.5-1.7,5.4,16.4,3.4)))
         add(f'{label}-tie-{side}',shape,'flip' if side=='L' else 'base','Male T tongue prints broad top down; female socket floor prints base down. Shoulder bearing carries longitudinal load; 0.3-mm mating clearance.')
         PROTECT[f'{label}-tie-{side}']=[box(mid-13,yy-11,-1.5,31,22,18),box(start-1,yy-9,-2,19,18,19),box(end-18,yy-9,-2,19,18,19)]
-        pin_and_key(f'{label}-frame-{side}',32.8,2,place,key_reverse=label=='rear')
+        pin_and_key(f'{label}-frame-{side}',32.8,2,place,key_reverse=label=='rear',profile='round')  # 2026-09-18 trial: round shaft on the four frame-end pins first
     sgn=1
     place=lambda s,yy=yy,sgn=sgn:locate(s,(hx,yy-sgn*10.2,8),normal=(0,sgn,0),xdir=(1,0,0))
     pin_and_key(f'{label}-lap',29.4,4,place,grip=8)

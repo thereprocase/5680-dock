@@ -5,11 +5,14 @@ per end (tall at the plug end), one horizontal fan pin with a 0.15-mm cam
 offset, push-out holes; the 8° lid rail is the only fixed contact. Plenum
 front wall 24 → 26.5 for the 8° lid. P4 fit corrections kept, except the T tongue,
 which is back to 12.7 mm: the 0.6 mm “proud” reading was stuck support debris.
+Round-shaft trial: the four frame-end pins are round 8.2 mm with a bed flat (the
+printed octagons rattled in their 8.4 mm bores); judge them before converting the rest.
 [Kit](../../printables/d9-p5/Precision_5680_D9_P5_Print_Kit.zip) · [fit plate](../../printables/d9-p5/OPEN-ME.3mf) · [notes](../../printables/d9-p5/README.md).
 
 1. Plates 02, 03, 05, 06, 07 (668 g, 26 h 36 m) do not depend on contact geometry: start any time.
 2. Fit plate 00 (40 g, 1 h 53 m) for the P4 clearances; pegs plate 08 (30 g, 1 h 19 m); plate 09 cradle-end trial (136 g, 7 h 01 m) to feel the 8° seat and peg fit before the cradles.
-   Plate 01 (M1 outer cradle) is printing in calibrated PolyLite ASA on 18 September; 02 and 03 next, then 05, 06, 07.
+   Plate 01 (M1 outer cradle) printed in calibrated PolyLite ASA on 18 September. Overnight: 02 + 03 with the pegs,
+   insert pins and round frame-end pins on one plate (`desk-dock/D9-P5/asa-10-receipts`); then 04, 05, 06, 07.
 3. Outer cradles 01 and 04 (441 g, 20 h 03 m) once the pegs are trusted.
 4. Other machines: re-head the pegs (`R7/build_quick_fit.py --demo-thickness`), the frame stays.
 

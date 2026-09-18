@@ -15,7 +15,7 @@ Floor-backed T joints transfer tie loads through shoulders; their pins prevent
 uplift. The front tie/foot moved 20 mm forward from P1 to clear its accessible
 printed retainers. Rear tie height remains 16 mm to clear the fans.
 
-Pin sections are octagonal, 8.2 mm across corners, in 8.8 mm clearance holes.
+Pin sections are octagonal, 8.2 mm across corners, in 8.8 mm clearance holes (P4+: 8.4 mm; P5 trial: the four frame-end pins are round 8.2 mm with a chord flat on the bed).
 Pin axes print parallel to the bed, on a longitudinal flat. Head notches identify
 fan (1), frame (2), seam (3) and T-joint (4) pins. The keys print flat and bend in
 their layer plane. Long keys use 1.2 mm leaves; short keys use 1 mm leaves and a

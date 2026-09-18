@@ -1,0 +1,373 @@
+{
+  "stage": "prepared",
+  "objects": [
+    {
+      "name": "M1-fence-peg",
+      "source": "C:\\Users\\repro\\Documents\\Codex\\2026-09-17\\for-x20\\work\\d9-p5-print-pass\\generated\\M1-fence-peg.stl",
+      "sha256": "bdc102d6c48c03cb9ad634f026c3e5fffa0af233d75778f4f2b25193a3cfa24b",
+      "strict": false,
+      "bed_bounds_mm": [
+        [
+          19.0,
+          34.0,
+          0.0
+        ],
+        [
+          107.35118051311292,
+          51.23792088814662,
+          16.0
+        ]
+      ],
+      "translation_mm": [
+        18.999824006765266,
+        33.99959386177943,
+        1.66488362424222e-16
+      ]
+    },
+    {
+      "name": "M2-fence-peg",
+      "source": "C:\\Users\\repro\\Documents\\Codex\\2026-09-17\\for-x20\\work\\d9-p5-print-pass\\generated\\M2-fence-peg.stl",
+      "sha256": "5cd84efe43b1b443fb39916f99c967ba5f69b090e23cf301ef540443d899ffe6",
+      "strict": false,
+      "bed_bounds_mm": [
+        [
+          19.0,
+          62.0,
+          0.0
+        ],
+        [
+          58.82804818889417,
+          72.41843999215052,
+          16.0
+        ]
+      ],
+      "translation_mm": [
+        18.999824006765266,
+        61.99959386177943,
+        1.66488362424222e-16
+      ]
+    },
+    {
+      "name": "M1-seat-peg",
+      "source": "C:\\Users\\repro\\Documents\\Codex\\2026-09-17\\for-x20\\work\\d9-p5-print-pass\\generated\\M1-seat-peg.stl",
+      "sha256": "0aed55942890f57099d9b4509c0434956ec66582f42036796fa04cd912e506c5",
+      "strict": false,
+      "bed_bounds_mm": [
+        [
+          19.0,
+          88.0,
+          0.0
+        ],
+        [
+          47.59035863413089,
+          104.46109774432261,
+          15.999999899999999
+        ]
+      ],
+      "translation_mm": [
+        18.999999900000027,
+        87.99959376177867,
+        -1.0000000116860974e-07
+      ]
+    },
+    {
+      "name": "M2-seat-peg",
+      "source": "C:\\Users\\repro\\Documents\\Codex\\2026-09-17\\for-x20\\work\\d9-p5-print-pass\\generated\\M2-seat-peg.stl",
+      "sha256": "8d2c053555c7910837851c4caf46ac445926898b71021dbf97698d7efb8faa53",
+      "strict": false,
+      "bed_bounds_mm": [
+        [
+          60.0,
+          88.0,
+          0.0
+        ],
+        [
+          88.5903586341309,
+          104.46109774432261,
+          15.999999899999978
+        ]
+      ],
+      "translation_mm": [
+        59.99999990000003,
+        87.99959376177867,
+        -1.0000002248489182e-07
+      ]
+    },
+    {
+      "name": "M1-insert-pin",
+      "source": "C:\\Users\\repro\\Documents\\Codex\\2026-09-17\\for-x20\\work\\d9-p5-print-pass\\generated\\M1-insert-pin.stl",
+      "sha256": "fc300ddeb4180d83a42200b97c86f37c9c3db2e83d45acc8b099ba8e73e15b54",
+      "strict": false,
+      "bed_bounds_mm": [
+        [
+          19.0,
+          120.0,
+          0.0
+        ],
+        [
+          34.0,
+          160.0,
+          9.987906455993652
+        ]
+      ],
+      "translation_mm": [
+        19.0,
+        120.0,
+        -4.440892098500626e-16
+      ]
+    },
+    {
+      "name": "M2-insert-pin",
+      "source": "C:\\Users\\repro\\Documents\\Codex\\2026-09-17\\for-x20\\work\\d9-p5-print-pass\\generated\\M2-insert-pin.stl",
+      "sha256": "fc300ddeb4180d83a42200b97c86f37c9c3db2e83d45acc8b099ba8e73e15b54",
+      "strict": false,
+      "bed_bounds_mm": [
+        [
+          50.0,
+          120.0,
+          0.0
+        ],
+        [
+          65.0,
+          160.0,
+          9.987906455993652
+        ]
+      ],
+      "translation_mm": [
+        50.0,
+        120.0,
+        -4.440892098500626e-16
+      ]
+    },
+    {
+      "name": "front-frame-L-pin",
+      "source": "C:\\Users\\repro\\Documents\\Codex\\2026-09-17\\for-x20\\work\\d9-p5-print-pass\\generated\\front-frame-L-pin.stl",
+      "sha256": "e515c5742f376b24904e6c93abb2a645b7a5d6cc838123ea416fb529a9aa96ac",
+      "strict": false,
+      "bed_bounds_mm": [
+        [
+          19.0,
+          170.0,
+          0.0
+        ],
+        [
+          34.0,
+          206.79999923706055,
+          9.987906455993652
+        ]
+      ],
+      "translation_mm": [
+        19.0,
+        170.0,
+        -4.440892098500626e-16
+      ]
+    },
+    {
+      "name": "front-frame-R-pin",
+      "source": "C:\\Users\\repro\\Documents\\Codex\\2026-09-17\\for-x20\\work\\d9-p5-print-pass\\generated\\front-frame-R-pin.stl",
+      "sha256": "e515c5742f376b24904e6c93abb2a645b7a5d6cc838123ea416fb529a9aa96ac",
+      "strict": false,
+      "bed_bounds_mm": [
+        [
+          40.0,
+          170.0,
+          0.0
+        ],
+        [
+          55.0,
+          206.79999923706055,
+          9.987906455993652
+        ]
+      ],
+      "translation_mm": [
+        40.0,
+        170.0,
+        -4.440892098500626e-16
+      ]
+    },
+    {
+      "name": "rear-frame-L-pin",
+      "source": "C:\\Users\\repro\\Documents\\Codex\\2026-09-17\\for-x20\\work\\d9-p5-print-pass\\generated\\rear-frame-L-pin.stl",
+      "sha256": "e515c5742f376b24904e6c93abb2a645b7a5d6cc838123ea416fb529a9aa96ac",
+      "strict": false,
+      "bed_bounds_mm": [
+        [
+          61.0,
+          170.0,
+          0.0
+        ],
+        [
+          76.0,
+          206.79999923706055,
+          9.987906455993652
+        ]
+      ],
+      "translation_mm": [
+        61.0,
+        170.0,
+        -4.440892098500626e-16
+      ]
+    },
+    {
+      "name": "rear-frame-R-pin",
+      "source": "C:\\Users\\repro\\Documents\\Codex\\2026-09-17\\for-x20\\work\\d9-p5-print-pass\\generated\\rear-frame-R-pin.stl",
+      "sha256": "e515c5742f376b24904e6c93abb2a645b7a5d6cc838123ea416fb529a9aa96ac",
+      "strict": false,
+      "bed_bounds_mm": [
+        [
+          82.0,
+          170.0,
+          0.0
+        ],
+        [
+          97.0,
+          206.79999923706055,
+          9.987906455993652
+        ]
+      ],
+      "translation_mm": [
+        82.0,
+        170.0,
+        -4.440892098500626e-16
+      ]
+    },
+    {
+      "name": "front-frame-L-key",
+      "source": "C:\\Users\\repro\\Documents\\Codex\\2026-09-17\\for-x20\\work\\d9-p5-print-pass\\generated\\front-frame-L-key.stl",
+      "sha256": "3905db7246ece951873933bbc614a5798ec731b62883c5a4033ccdea14283a98",
+      "strict": false,
+      "bed_bounds_mm": [
+        [
+          19.0,
+          213.0,
+          0.0
+        ],
+        [
+          28.0,
+          235.5,
+          2.799999952316284
+        ]
+      ],
+      "translation_mm": [
+        19.0,
+        213.0,
+        -0.0
+      ]
+    },
+    {
+      "name": "front-frame-R-key",
+      "source": "C:\\Users\\repro\\Documents\\Codex\\2026-09-17\\for-x20\\work\\d9-p5-print-pass\\generated\\front-frame-R-key.stl",
+      "sha256": "3905db7246ece951873933bbc614a5798ec731b62883c5a4033ccdea14283a98",
+      "strict": false,
+      "bed_bounds_mm": [
+        [
+          34.0,
+          213.0,
+          0.0
+        ],
+        [
+          43.0,
+          235.5,
+          2.799999952316284
+        ]
+      ],
+      "translation_mm": [
+        34.0,
+        213.0,
+        -0.0
+      ]
+    },
+    {
+      "name": "rear-frame-L-key",
+      "source": "C:\\Users\\repro\\Documents\\Codex\\2026-09-17\\for-x20\\work\\d9-p5-print-pass\\generated\\rear-frame-L-key.stl",
+      "sha256": "3905db7246ece951873933bbc614a5798ec731b62883c5a4033ccdea14283a98",
+      "strict": false,
+      "bed_bounds_mm": [
+        [
+          49.0,
+          213.0,
+          0.0
+        ],
+        [
+          58.0,
+          235.5,
+          2.799999952316284
+        ]
+      ],
+      "translation_mm": [
+        49.0,
+        213.0,
+        -0.0
+      ]
+    },
+    {
+      "name": "rear-frame-R-key",
+      "source": "C:\\Users\\repro\\Documents\\Codex\\2026-09-17\\for-x20\\work\\d9-p5-print-pass\\generated\\rear-frame-R-key.stl",
+      "sha256": "3905db7246ece951873933bbc614a5798ec731b62883c5a4033ccdea14283a98",
+      "strict": false,
+      "bed_bounds_mm": [
+        [
+          64.0,
+          213.0,
+          0.0
+        ],
+        [
+          73.0,
+          235.5,
+          2.799999952316284
+        ]
+      ],
+      "translation_mm": [
+        64.0,
+        213.0,
+        -0.0
+      ]
+    },
+    {
+      "name": "M1-inner-shell",
+      "source": "C:\\Users\\repro\\Documents\\Codex\\2026-09-17\\for-x20\\work\\d9-p5-print-pass\\generated\\M1-inner-shell.stl",
+      "sha256": "34fdd086644035f220cd1a6ba6a3b0c2f336171c53bdbdc59100b344241c04ab",
+      "strict": false,
+      "bed_bounds_mm": [
+        [
+          114.0,
+          10.0,
+          0.0
+        ],
+        [
+          244.11965164745925,
+          119.41346740722656,
+          91.83999633789062
+        ]
+      ],
+      "translation_mm": [
+        113.99965653027175,
+        10.0,
+        3.3250341871938604e-16
+      ]
+    },
+    {
+      "name": "M2-inner-shell",
+      "source": "C:\\Users\\repro\\Documents\\Codex\\2026-09-17\\for-x20\\work\\d9-p5-print-pass\\generated\\M2-inner-shell.stl",
+      "sha256": "0583ada73437c9b1d30500e3dd818df38dd0d06e5f3de2b3dccd25405d3bdbe4",
+      "strict": false,
+      "bed_bounds_mm": [
+        [
+          114.0,
+          131.0,
+          0.0
+        ],
+        [
+          244.11965001412318,
+          240.41346740722656,
+          91.54000091552734
+        ]
+      ],
+      "translation_mm": [
+        113.99959386177943,
+        131.0,
+        3.3250341871938604e-16
+      ]
+    }
+  ]
+}

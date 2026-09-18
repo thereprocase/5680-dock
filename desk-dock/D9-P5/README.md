@@ -21,7 +21,11 @@ P5 is the D9 P2 no-metal-hardware dock with these changes and nothing else:
    (0.2-mm diametral clearance on the 8.2-mm octagonal pins); key barbs 6.2 ->
    7.2 mm wide through the 5.4-mm slot (total interference 0.8 -> 1.8 mm). The T
    tongue stays 12.7 mm tall: the P4 trim to 12.1 mm chased stuck support
-   debris; the cleaned printed pair nests flush. Plate 00 is regenerated: print it first and check insertion,
+   debris; the cleaned printed pair nests flush. Round-shaft trial (18 September):
+   the four frame-end pins have a round 8.2-mm shaft with one chord flat on the
+   bed, so they match the 8.4-mm round bores everywhere instead of only at the
+   octagon's corners (the printed P2 octagons rattled). The other 18 pins stay
+   octagonal until the trial is judged. Plate 00 is regenerated: print it first and check insertion,
    retention and deliberate removal before the large parts.
 2. **Printable edge treatment.** Profile corners that run along each part's
    print Z are filleted (3 mm concave for stress relief, 1.5 mm convex for
