@@ -6,8 +6,8 @@ fence peg (64-mm wall at the plug end, 15-mm at the far end), locked by one hori
 outer wall and both feet with a 0.15-mm cam offset. The socket void is subtracted from the fused cradle. P4 fit corrections kept.
 
 Fit corrections (user, 2026-09-18): pin bores 8.8 -> 8.4 mm so the 8.2-mm octagonal pins ride with 0.2 mm
-clearance; key barbs 1 mm more total interference through the 5.4-mm slot (0.8 -> 1.8 mm); T tongue 0.6 mm
-shorter in print Z so it no longer stands proud of the female tie.
+clearance; key barbs 1 mm more total interference through the 5.4-mm slot (0.8 -> 1.8 mm). The T tongue keeps its
+P2/P3 12.7-mm height: the P4 0.6-mm trim was withdrawn once the printed pair proved to nest flush after cleaning support debris.
 
 Derived from the frozen D9 P2 builder; connections, plenums, guards and ties are unchanged in function.
 """
@@ -56,7 +56,7 @@ def add(name,s,orientation,note,print_shape=None):
 PIN_R=4.1;FLAT=PIN_R*math.cos(math.pi/8)
 BORE_R=4.2   # 8.4-mm bores for the 8.2-mm across-corners pins: 0.2-mm diametral clearance (P2/P3 used 4.4)
 KEY_BARB=3.6 # barb half-width: 7.2 mm through the 5.4-mm slot = 1.8 mm total interference (P2/P3: 3.1 = 0.8 mm)
-TONGUE_H=12.1 # T tongue height in print Z (P2/P3: 12.7); the printed tongue stood 0.6 mm proud of the female tie
+TONGUE_H=12.7 # T tongue height in print Z; P2/P3 value restored 2026-09-18 (the P4 0.6-mm trim chased support debris, not geometry)
 OCT=[(PIN_R*math.cos(math.pi/8+i*math.pi/4),PIN_R*math.sin(math.pi/8+i*math.pi/4)) for i in range(8)]
 def pin(length,marks):
     sh=cq.Workplane('XY').polyline(OCT).close().extrude(length).val()

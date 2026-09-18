@@ -19,9 +19,9 @@ P5 is the D9 P2 no-metal-hardware dock with these changes and nothing else:
    stays 4 mm so every foot remains coplanar with the ties.
 3. **Fit corrections from the printed P2 fit plate.** Pin bores 8.8 -> 8.4 mm
    (0.2-mm diametral clearance on the 8.2-mm octagonal pins); key barbs 6.2 ->
-   7.2 mm wide through the 5.4-mm slot (total interference 0.8 -> 1.8 mm); T
-   tongue 12.7 -> 12.1 mm tall so it no longer stands 0.6 mm proud of the
-   female tie. Plate 00 is regenerated: print it first and check insertion,
+   7.2 mm wide through the 5.4-mm slot (total interference 0.8 -> 1.8 mm). The T
+   tongue stays 12.7 mm tall: the P4 trim to 12.1 mm chased stuck support
+   debris; the cleaned printed pair nests flush. Plate 00 is regenerated: print it first and check insertion,
    retention and deliberate removal before the large parts.
 2. **Printable edge treatment.** Profile corners that run along each part's
    print Z are filleted (3 mm concave for stress relief, 1.5 mm convex for
@@ -120,9 +120,9 @@ print directory.
 
 ## Orca estimates
 
-- fit plate 00: 40.39 g; 1h 52m 51s.
+- fit plate 00: 40.58 g; 1h 53m 15s.
 - cradle end trial 09: 136.17 g; 7h 0m 32s.
-- assembly plates 01 to 08: 1138.54 g; 47h 55m 13s.
+- assembly plates 01 to 08: 1138.91 g; 47h 57m 47s.
 - outer cradle plates 01 and 04: 441.02 g; 20h 2m 31s.
 - contact pegs 08: 29.91 g; 1h 18m 53s.
-- contact independent plates 02 03 05 06 07: 667.61 g; 26h 33m 49s.
+- contact independent plates 02 03 05 06 07: 667.98 g; 26h 36m 23s.

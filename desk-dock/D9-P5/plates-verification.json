@@ -1,7 +1,7 @@
 {
   "00": {
     "passed": true,
-    "time": "1h 46m 40s; total estimated time: 1h 52m 51s",
+    "time": "1h 47m 3s; total estimated time: 1h 53m 15s",
     "filament_g": "",
     "objects": {
       "fan-socket-fit-fixture": {
@@ -29,8 +29,8 @@
         "external_bridge": 0
       },
       "T-joint-fit-L": {
-        "support": 1339,
-        "external_bridge": 108
+        "support": 1209,
+        "external_bridge": 51
       },
       "T-joint-fit-R": {
         "support": 941,
@@ -70,11 +70,11 @@
   },
   "03": {
     "passed": true,
-    "time": "6h 31m 54s; total estimated time: 6h 38m 6s",
+    "time": "6h 33m 48s; total estimated time: 6h 40m 0s",
     "filament_g": "",
     "objects": {
       "M2-inner-shell": {
-        "support": 30559,
+        "support": 30803,
         "external_bridge": 864
       }
     }
@@ -92,7 +92,7 @@
   },
   "05": {
     "passed": true,
-    "time": "4h 59m 9s; total estimated time: 5h 5m 21s",
+    "time": "4h 59m 38s; total estimated time: 5h 5m 49s",
     "filament_g": "",
     "objects": {
       "M1-fan-guard": {
@@ -100,8 +100,8 @@
         "external_bridge": 0
       },
       "front-tie-L": {
-        "support": 3306,
-        "external_bridge": 205
+        "support": 3180,
+        "external_bridge": 148
       },
       "front-tie-R": {
         "support": 2922,
@@ -111,7 +111,7 @@
   },
   "06": {
     "passed": true,
-    "time": "4h 59m 5s; total estimated time: 5h 5m 16s",
+    "time": "4h 59m 16s; total estimated time: 5h 5m 28s",
     "filament_g": "",
     "objects": {
       "M2-fan-guard": {
@@ -119,8 +119,8 @@
         "external_bridge": 0
       },
       "rear-tie-L": {
-        "support": 3306,
-        "external_bridge": 205
+        "support": 3180,
+        "external_bridge": 148
       },
       "rear-tie-R": {
         "support": 2922,
@@ -130,7 +130,7 @@
   },
   "07": {
     "passed": true,
-    "time": "2h 57m 6s; total estimated time: 3h 3m 18s",
+    "time": "2h 57m 7s; total estimated time: 3h 3m 18s",
     "filament_g": "",
     "objects": {
       "M1-seam-1-pin": {

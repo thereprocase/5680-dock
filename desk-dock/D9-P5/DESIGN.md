@@ -56,7 +56,7 @@ each module unchanged to the mm3. Pins, keys and fit fixtures identical to P2.
 Cradle source R5-C: R4-C plus the 64-mm underside rail (6 mm, 2.25-mm running
 clearance, 4 x 2 mm lead-in) at the cradle ends. Fit corrections from the
 printed P2 fit plate: pin bores 8.4 mm (BORE_R 4.2), key barbs 7.2 mm wide
-(KEY_BARB 3.6, 1.8 mm total interference), T tongue 12.1 mm (TONGUE_H). Plate 00
+(KEY_BARB 3.6, 1.8 mm total interference), T tongue 12.7 mm (TONGUE_H; P4's 12.1 withdrawn). Plate 00
 regenerated. Edge treatment and everything else as P3.
 
 Revised the same day: the underside rail is on the plug-end cradle (module 1) only. The far-end cradle keeps the R4-C profile because the rear rubber-foot strip (x 30..323, starting 18 mm further out when undocked) slides through that cradle's x range during docking and would catch on a wall there.

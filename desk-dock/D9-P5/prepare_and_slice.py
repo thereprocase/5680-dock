@@ -25,7 +25,9 @@ and fence peg locked by one horizontal fan pin (plate 08, 100 % infill,
 profile on bed like the cradles). Plate 09 is the M1 cradle end sliced to its
 16-mm frame width with the M1 pegs and pin: the cheap 8-degree seat trial,
 same pose and profile as the cradle. The plenum, guard, tie and fastener plates
-are P4. The lid rail is the only laptop-touching surface left on the frame.
+are P4, except that the T tongue returns to its P2/P3 12.7-mm height: the P4
+trim to 12.1 mm chased stuck support debris, and the cleaned printed pair nests
+flush. The lid rail is the only laptop-touching surface left on the frame.
 
 
 P4 = P3 plus the R5-C underside rail on both outer cradles and three fit

@@ -3,12 +3,13 @@
 Lean 8°. Modular contact on the R7 frame: seat peg per machine, fence peg
 per end (tall at the plug end), one horizontal fan pin with a 0.15-mm cam
 offset, push-out holes; the 8° lid rail is the only fixed contact. Plenum
-front wall 24 → 26.5 for the 8° lid. P4 fit corrections kept.
+front wall 24 → 26.5 for the 8° lid. P4 fit corrections kept, except the T tongue,
+which is back to 12.7 mm: the 0.6 mm “proud” reading was stuck support debris.
 [Kit](../../printables/d9-p5/Precision_5680_D9_P5_Print_Kit.zip) · [fit plate](../../printables/d9-p5/OPEN-ME.3mf) · [notes](../../printables/d9-p5/README.md).
 
-1. Plates 02, 03, 05, 06, 07 (667 g, 26 h 34 m) do not depend on contact geometry: start any time.
+1. Plates 02, 03, 05, 06, 07 (668 g, 26 h 36 m) do not depend on contact geometry: start any time.
 2. Fit plate 00 (40 g, 1 h 53 m) for the P4 clearances; pegs plate 08 (30 g, 1 h 19 m); plate 09 cradle-end trial (136 g, 7 h 01 m) to feel the 8° seat and peg fit before the cradles.
-   Plate 02 (M1 inner plenum) was sent to the P1S on 18 September; 03 next, then 05, 06, 07.
+   Plate 01 (M1 outer cradle) is printing in calibrated PolyLite ASA on 18 September; 02 and 03 next, then 05, 06, 07.
 3. Outer cradles 01 and 04 (441 g, 20 h 03 m) once the pegs are trusted.
 4. Other machines: re-head the pegs (`R7/build_quick_fit.py --demo-thickness`), the frame stays.
 
@@ -23,7 +24,7 @@ underside side. R5 raises the short fence at the bracket ends into a 6-mm
 underside rail 64 mm above the seat datum (2.25-mm clearance, lead-in at the
 top); feet and vents lie between the brackets. D9 P4 = P3 with the R5-C
 cradles plus fit corrections from the printed P2 fit plate: 8.4-mm pin bores,
-key barbs 1 mm more total interference (1.8 mm), T tongue 0.6 mm lower.
+key barbs 1 mm more total interference (1.8 mm), T tongue 0.6 mm lower (withdrawn in P5).
 
 1. Print the P4 fit plate 00 first and check pin friction, key retention and the T joint flush.
 2. Print an R5-C bracket pair to feel the underside rail.
