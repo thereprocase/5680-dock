@@ -1,0 +1,315 @@
+{
+  "passed": true,
+  "revision": "R6 modular frame + contact insert",
+  "lean_deg": 8.0,
+  "base_thickness_mm": 6.0,
+  "rail_inner_face_unleaned_y_mm": 14.585,
+  "fence_inner_face_unleaned_y_mm": -13.335,
+  "insert_outer_face_unleaned_y_mm": -26.335,
+  "socket": {
+    "floor_z_mm": 36.0,
+    "deck_top_z_mm": 51.0,
+    "clearance_per_side_mm": 0.3,
+    "backing_wall": {
+      "outer_face_y_mm": -32.635000000000005,
+      "thickness_mm": 6.0,
+      "top_z_mm": 60.0
+    },
+    "pieces": {
+      "seat_block_y_mm": [
+        -13.035,
+        14.285
+      ],
+      "liner_foot_y_mm": [
+        -26.335,
+        -13.335
+      ],
+      "liner_wall_thickness_mm": 6.0
+    },
+    "pin": {
+      "length_mm": 36,
+      "bore_mm": 8.4,
+      "axis": "+Y from the outer face",
+      "z_mm": 43.5,
+      "cam_offset_mm": 0.15,
+      "through_backing_mm": 6.0,
+      "through_liner_mm": 13.0,
+      "into_seat_block_mm": 16.699999999999996
+    },
+    "knockout": {
+      "radius_mm": 3.0,
+      "y_mm": 0.5
+    }
+  },
+  "fence_top_z_mm": {
+    "plug": 118.0,
+    "far": 69.0
+  },
+  "insert_receipts": {
+    "plug_seat": {
+      "pin_cam_interference_mm3": 0.09725620643587769,
+      "blocked_2mm_move_overlap_mm3": {
+        "+y": 932.56,
+        "-y": 1432.67,
+        "+z": 277.31,
+        "-z": 2242.56,
+        "+x": 175.14,
+        "-x": 175.14
+      }
+    },
+    "plug_liner": {
+      "pin_cam_interference_mm3": 0.09725620643584033,
+      "blocked_2mm_move_overlap_mm3": {
+        "+y": 801.87,
+        "-y": 1097.77,
+        "+z": 262.46,
+        "-z": 1243.92,
+        "+x": 159.51,
+        "-x": 159.51
+      }
+    },
+    "far_seat": {
+      "pin_cam_interference_mm3": 0.09725620643587769,
+      "blocked_2mm_move_overlap_mm3": {
+        "+y": 932.56,
+        "-y": 1432.67,
+        "+z": 277.31,
+        "-z": 2242.56,
+        "+x": 175.14,
+        "-x": 175.14
+      }
+    },
+    "far_liner": {
+      "pin_cam_interference_mm3": 0.09725620643584033,
+      "blocked_2mm_move_overlap_mm3": {
+        "+y": 801.87,
+        "-y": 1097.77,
+        "+z": 262.46,
+        "-z": 1243.92,
+        "+x": 159.51,
+        "-x": 159.51
+      }
+    }
+  },
+  "checks": {
+    "plug": {
+      "laptop_overlap_mm3": 0.0,
+      "rubber_foot_overlap_mm3": 0.0,
+      "expanded_foot_keepout_overlap_mm3": 0.0,
+      "seat_contact_probe_mm3": 0.0
+    },
+    "far": {
+      "laptop_overlap_mm3": 0.0,
+      "rubber_foot_overlap_mm3": 0.0,
+      "expanded_foot_keepout_overlap_mm3": 0.0,
+      "seat_contact_probe_mm3": 0.0
+    }
+  },
+  "motion": [
+    {
+      "end": "plug",
+      "lift_mm": 0,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    },
+    {
+      "end": "plug",
+      "lift_mm": 0.25,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    },
+    {
+      "end": "plug",
+      "lift_mm": 0.5,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    },
+    {
+      "end": "plug",
+      "lift_mm": 1,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    },
+    {
+      "end": "plug",
+      "lift_mm": 2,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    },
+    {
+      "end": "plug",
+      "lift_mm": 3,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    },
+    {
+      "end": "plug",
+      "lift_mm": 5,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    },
+    {
+      "end": "plug",
+      "lift_mm": 10,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    },
+    {
+      "end": "plug",
+      "lift_mm": 20,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    },
+    {
+      "end": "plug",
+      "lift_mm": 40,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    },
+    {
+      "end": "far",
+      "lift_mm": 0,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    },
+    {
+      "end": "far",
+      "lift_mm": 0.25,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    },
+    {
+      "end": "far",
+      "lift_mm": 0.5,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    },
+    {
+      "end": "far",
+      "lift_mm": 1,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    },
+    {
+      "end": "far",
+      "lift_mm": 2,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    },
+    {
+      "end": "far",
+      "lift_mm": 3,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    },
+    {
+      "end": "far",
+      "lift_mm": 5,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    },
+    {
+      "end": "far",
+      "lift_mm": 10,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    },
+    {
+      "end": "far",
+      "lift_mm": 20,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    },
+    {
+      "end": "far",
+      "lift_mm": 40,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    }
+  ],
+  "tip_overlap_by_deg_mm3": {
+    "2": 3.7135355502005796,
+    "4": 754.5956570876817,
+    "6": 3335.2640252478145,
+    "8": 6022.054529935105,
+    "10": 7963.763299375394
+  },
+  "docking_sweep": {
+    "plug_end": {
+      "min_x_clearance_to_any_foot_mm": 8.534487775303425,
+      "foot_strip_overlaps_bracket_x_range_during_docking": false
+    },
+    "far_end": {
+      "min_x_clearance_to_any_foot_mm": -0.46562142226844117,
+      "foot_strip_overlaps_bracket_x_range_during_docking": true
+    }
+  },
+  "inside_clear_gap_mm": 318.48,
+  "center_spacing_mm": 356.58000000000004,
+  "outputs": {
+    "D8-R6-frame": {
+      "step": "D8-R6-frame.step",
+      "stl": "D8-R6-frame.stl",
+      "print_bounds_mm": [
+        152.91354370117188,
+        149.0220947265625,
+        38.099998474121094
+      ],
+      "volume_cm3": 180.71038991001518,
+      "sha256_stl": "27d2e7dbe5d7ecf6661a974d785f1d439d2b06619eed97c5ca1a9765921116fe"
+    },
+    "D8-R6-seat-block": {
+      "step": "D8-R6-seat-block.step",
+      "stl": "D8-R6-seat-block.stl",
+      "print_bounds_mm": [
+        23.066585540771484,
+        29.141719818115234,
+        38.099998474121094
+      ],
+      "volume_cm3": 15.812296651612272,
+      "sha256_stl": "000b47183d46ea9886514258141ebc104cd66bf662cc7dd178a974865faf6dbb"
+    },
+    "D8-R6-fence-liner-plug": {
+      "step": "D8-R6-fence-liner-plug.step",
+      "stl": "D8-R6-fence-liner-plug.stl",
+      "print_bounds_mm": [
+        81.95286191012201,
+        23.7289867401123,
+        38.099998474121094
+      ],
+      "volume_cm3": 21.86837785048789,
+      "sha256_stl": "cb049080d0de07630cb24f6ef908fbedc87c2d129b266db301939b4c1698bf9d"
+    },
+    "D8-R6-fence-liner-far": {
+      "step": "D8-R6-fence-liner-far.step",
+      "stl": "D8-R6-fence-liner-far.stl",
+      "print_bounds_mm": [
+        33.42972958590326,
+        16.909503936767575,
+        38.099998474121094
+      ],
+      "volume_cm3": 10.666977850487887,
+      "sha256_stl": "c89cca4382883b933c95bc50e233f0947560ae2c1e426e106823fa07f22b85b3"
+    },
+    "D8-R6-insert-pin": {
+      "step": "D8-R6-insert-pin.step",
+      "stl": "D8-R6-insert-pin.stl",
+      "print_bounds_mm": [
+        15.0,
+        40.0,
+        9.987906455993652
+      ],
+      "volume_cm3": 2.1418116753491785,
+      "sha256_stl": "fc300ddeb4180d83a42200b97c86f37c9c3db2e83d45acc8b099ba8e73e15b54"
+    }
+  },
+  "input_sha256": {
+    "quick-fit\\R6\\build_quick_fit.py": "d04114534c38689420742f954de81cee0402c4f9e39b84336c4d95f5168e7f10",
+    "quick-fit\\R6\\fit-parameters.json": "88a57e79fb666bfeb8b7ebce14323eecd6c9aa408d4c801b890aaa5adf8fb268",
+    "quick-fit\\R2\\seat-profile.json": "6fc169a141ba90088ef8d456097a4f7f2bbd9ea32160324efe212d0a56f0813b",
+    "parameters.json": "3dc1904fdb383491c3fc7780bf5304487d9f79a1df84eb06ff247af674097cfc",
+    "contact-profiles.json": "aa02aa10e52958e60c83230b141927807b6b04b000babc8a98ee0865c241bfdc",
+    "geometry.json": "eb47b3ec93ae763d1cc03fbcdc93f7eeaf4bb294d361578db1b59e73af1ef301"
+  },
+  "scope": "Modular bracket: frame + insert nominal CAD checks only; physical fit, insert retention, load and stability untested."
+}

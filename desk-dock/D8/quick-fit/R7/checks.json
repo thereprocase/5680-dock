@@ -1,0 +1,306 @@
+{
+  "passed": true,
+  "revision": "R7 peg bracket: frame + seat peg + fence peg",
+  "lean_deg": 8.0,
+  "base_thickness_mm": 6.0,
+  "lock_x_mm": 19.05,
+  "rail_inner_face_unleaned_y_mm": 14.585,
+  "fence_inner_face_unleaned_y_mm": -13.335,
+  "stand_outer_face_unleaned_y_mm": -25.335,
+  "socket": {
+    "deck_top_z_mm": 51.0,
+    "outer_face_y_mm": -25.335,
+    "channel_depth_mm": 22.0,
+    "peg_clearance_mm": 0.3,
+    "fence_channel_y_mm": [
+      -19.335,
+      -13.335
+    ],
+    "seat_channel_y_mm": [
+      -5.0,
+      8.0
+    ],
+    "fence_wall_thickness_mm": 6.0,
+    "pin": {
+      "length_mm": 36,
+      "bore_mm": 8.4,
+      "axis": "+Y from the outer face",
+      "z_mm": 40.0,
+      "cam_offset_mm": 0.15,
+      "tip_y_mm": 10.665,
+      "outer_wall_mm": 6.0
+    },
+    "pushout_radius_mm": 2.0
+  },
+  "fence_top_z_mm": {
+    "plug": 118.0,
+    "far": 69.0
+  },
+  "insert_receipts": {
+    "plug_seat": {
+      "pin_cam_interference_mm3": 0.06733121984022722,
+      "blocked_2mm_move_overlap_mm3": {
+        "+y": 1216.3,
+        "-y": 1429.45,
+        "+z": 275.57,
+        "-z": 1213.54,
+        "+x": 126.06,
+        "-x": 126.06
+      }
+    },
+    "plug_liner": {
+      "pin_cam_interference_mm3": 0.0403987319041308,
+      "blocked_2mm_move_overlap_mm3": {
+        "+y": 1214.53,
+        "-y": 1331.41,
+        "+z": 228.4,
+        "-z": 617.13,
+        "+x": 66.26,
+        "-x": 66.26
+      }
+    },
+    "far_seat": {
+      "pin_cam_interference_mm3": 0.06733121984022722,
+      "blocked_2mm_move_overlap_mm3": {
+        "+y": 1216.3,
+        "-y": 1429.45,
+        "+z": 275.57,
+        "-z": 1213.54,
+        "+x": 126.06,
+        "-x": 126.06
+      }
+    },
+    "far_liner": {
+      "pin_cam_interference_mm3": 0.0403987319041308,
+      "blocked_2mm_move_overlap_mm3": {
+        "+y": 1214.53,
+        "-y": 1331.41,
+        "+z": 228.4,
+        "-z": 617.13,
+        "+x": 66.26,
+        "-x": 66.26
+      }
+    }
+  },
+  "checks": {
+    "plug": {
+      "laptop_overlap_mm3": 0.0,
+      "rubber_foot_overlap_mm3": 0.0,
+      "expanded_foot_keepout_overlap_mm3": 0.0,
+      "seat_contact_probe_mm3": 0.0
+    },
+    "far": {
+      "laptop_overlap_mm3": 0.0,
+      "rubber_foot_overlap_mm3": 0.0,
+      "expanded_foot_keepout_overlap_mm3": 0.0,
+      "seat_contact_probe_mm3": 0.0
+    }
+  },
+  "motion": [
+    {
+      "end": "plug",
+      "lift_mm": 0,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    },
+    {
+      "end": "plug",
+      "lift_mm": 0.25,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    },
+    {
+      "end": "plug",
+      "lift_mm": 0.5,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    },
+    {
+      "end": "plug",
+      "lift_mm": 1,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    },
+    {
+      "end": "plug",
+      "lift_mm": 2,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    },
+    {
+      "end": "plug",
+      "lift_mm": 3,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    },
+    {
+      "end": "plug",
+      "lift_mm": 5,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    },
+    {
+      "end": "plug",
+      "lift_mm": 10,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    },
+    {
+      "end": "plug",
+      "lift_mm": 20,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    },
+    {
+      "end": "plug",
+      "lift_mm": 40,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    },
+    {
+      "end": "far",
+      "lift_mm": 0,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    },
+    {
+      "end": "far",
+      "lift_mm": 0.25,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    },
+    {
+      "end": "far",
+      "lift_mm": 0.5,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    },
+    {
+      "end": "far",
+      "lift_mm": 1,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    },
+    {
+      "end": "far",
+      "lift_mm": 2,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    },
+    {
+      "end": "far",
+      "lift_mm": 3,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    },
+    {
+      "end": "far",
+      "lift_mm": 5,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    },
+    {
+      "end": "far",
+      "lift_mm": 10,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    },
+    {
+      "end": "far",
+      "lift_mm": 20,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    },
+    {
+      "end": "far",
+      "lift_mm": 40,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    }
+  ],
+  "tip_overlap_by_deg_mm3": {
+    "2": 3.7135355840645357,
+    "4": 754.5956570937144,
+    "6": 3344.104026510322,
+    "8": 6051.114885422431,
+    "10": 8013.772452152151
+  },
+  "docking_sweep": {
+    "plug_end": {
+      "min_x_clearance_to_any_foot_mm": 8.534487775303425,
+      "foot_strip_overlaps_bracket_x_range_during_docking": false
+    },
+    "far_end": {
+      "min_x_clearance_to_any_foot_mm": -0.46562142226844117,
+      "foot_strip_overlaps_bracket_x_range_during_docking": true
+    }
+  },
+  "inside_clear_gap_mm": 318.48,
+  "center_spacing_mm": 356.58000000000004,
+  "outputs": {
+    "D8-R7-frame": {
+      "step": "D8-R7-frame.step",
+      "stl": "D8-R7-frame.stl",
+      "print_bounds_mm": [
+        152.91354370117188,
+        142.02209472656247,
+        38.099998474121094
+      ],
+      "volume_cm3": 169.0102309500237,
+      "sha256_stl": "260d93decf323e7650db6fc058bd9807d2171c9883fa55534171e137c41ae226"
+    },
+    "D8-R7-seat-peg": {
+      "step": "D8-R7-seat-peg.step",
+      "stl": "D8-R7-seat-peg.stl",
+      "print_bounds_mm": [
+        28.784927368164062,
+        16.865074157714844,
+        38.099998474121094
+      ],
+      "volume_cm3": 11.108953123658903,
+      "sha256_stl": "b1e7fd4e145cfdca38c616cc5db85e8799750025c3db619907ca56346bcd90f4"
+    },
+    "D8-R7-fence-peg-plug": {
+      "step": "D8-R7-fence-peg-plug.step",
+      "stl": "D8-R7-fence-peg-plug.stl",
+      "print_bounds_mm": [
+        88.54591000582514,
+        17.4324893951416,
+        38.099998474121094
+      ],
+      "volume_cm3": 19.324610327998744,
+      "sha256_stl": "d2aba0603b5e0b9050643f31a361ba2a12f1631c33e8f866f4ac70b1c2f47851"
+    },
+    "D8-R7-fence-peg-far": {
+      "step": "D8-R7-fence-peg-far.step",
+      "stl": "D8-R7-fence-peg-far.stl",
+      "print_bounds_mm": [
+        40.02277386690912,
+        10.613007545471191,
+        38.099998474121094
+      ],
+      "volume_cm3": 8.123210327998752,
+      "sha256_stl": "f4a555aa5b638329ab6e6ead6abbeb09045afcc142eb0b893616aa1db0860efe"
+    },
+    "D8-R7-insert-pin": {
+      "step": "D8-R7-insert-pin.step",
+      "stl": "D8-R7-insert-pin.stl",
+      "print_bounds_mm": [
+        15.0,
+        40.0,
+        9.987906455993652
+      ],
+      "volume_cm3": 2.1418116753491776,
+      "sha256_stl": "fc300ddeb4180d83a42200b97c86f37c9c3db2e83d45acc8b099ba8e73e15b54"
+    }
+  },
+  "input_sha256": {
+    "quick-fit\\R7\\build_quick_fit.py": "2e473b57be40137363c233bfc64eb69b8f6719b6a7a95a0db193a2d7d8822cdf",
+    "quick-fit\\R7\\fit-parameters.json": "62618c4095365e475e555b10b0cf77b69bee50e08016633036964dec4e22ec86",
+    "quick-fit\\R2\\seat-profile.json": "6fc169a141ba90088ef8d456097a4f7f2bbd9ea32160324efe212d0a56f0813b",
+    "parameters.json": "3dc1904fdb383491c3fc7780bf5304487d9f79a1df84eb06ff247af674097cfc",
+    "contact-profiles.json": "aa02aa10e52958e60c83230b141927807b6b04b000babc8a98ee0865c241bfdc",
+    "geometry.json": "eb47b3ec93ae763d1cc03fbcdc93f7eeaf4bb294d361578db1b59e73af1ef301"
+  },
+  "scope": "Modular bracket: frame + insert nominal CAD checks only; physical fit, insert retention, load and stability untested."
+}
