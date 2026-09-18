@@ -6,7 +6,10 @@ without rediscovering the environment.
 
 ## Where the pipeline lives
 
-The coupon/print pipeline is NOT in this repo. It is in the Codex work tree
+Snapshots of the pipeline sources are in this repo: `tools/coupon-pipeline/`
+(coupon and mixed-plate scripts, profiles, audits) and `desk-dock/D9-P5/` (the
+P5 dock builder and its inputs). The LIVE working copy, with generated geometry
+and slice folders, is the Codex work tree
 `C:\Users\repro\Documents\Codex\2026-09-17\for-x20\work\quartet-team\`
 (WSL: `/mnt/c/Users/repro/Documents/Codex/2026-09-17/for-x20/work/quartet-team/`):
 
@@ -22,8 +25,8 @@ The coupon/print pipeline is NOT in this repo. It is in the Codex work tree
   (footprint-aware, `--rot`/`--strict` per `--stl`), `verify_mixed_plate.py`,
   `package_plate.py`. Example: the R4-C pair + P2 fit parts in `r4-C-8h-orca/`.
 - Packaged kits: `...\for-x20\outputs\5680-design-team\PRINT-ME-*` and `D9-P*-PRINT-KIT`.
-- D9 dock passes: `work/d9-p2-print-pass/` (frozen P2) and `work/d9-p3-print-pass/`
-  (P3 = P2 + R4-C cradle contact + `dress.py` edge treatment). Chain there:
+- D9 dock passes: `work/d9-p2-print-pass/` (frozen P2), `d9-p3-print-pass/`, `d9-p4-print-pass/`
+  and `d9-p5-print-pass/` (current: 8° lean, R7 frame, drop-in pegs, plate 09 trial). Chain there:
   `cadpy build_d9.py` → `cadpy verify_enclosure.py` → `cadpy prepare_and_slice.py`
   → `cadpy verify_plates.py` → `cadpy verify_and_package.py`. Edge rules: fillet
   print-Z profile corners, chamfer tops, never bed edges, protect every mating zone.
@@ -68,6 +71,10 @@ STEPs and JSON). The R2 quick-fit files are untracked in the main checkout at
 
 Default to a single coupon (usually C, or B) for a quick trial; print all
 three only when the variants are the question.
+
+Bracket revisions R1–R7 live in `desk-dock/D8/quick-fit/` (R7 = modular peg
+frame; run its builder with `cadpy` from that folder). After changing pipeline
+sources on C:, refresh the snapshots here so GitHub stays current.
 
 ## Git hygiene
 

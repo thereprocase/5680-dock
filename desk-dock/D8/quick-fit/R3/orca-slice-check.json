@@ -1,0 +1,55 @@
+{
+  "passed": true,
+  "orca_version": "2.4.2",
+  "nozzle_mm": 0.4,
+  "layer_height_mm": 0.2,
+  "automatic_support_enabled": true,
+  "support_extrusion_segments": 0,
+  "bridging_segments_in_lip": 0,
+  "internal_bridges": [
+    {
+      "z_mm": 37.2,
+      "bounds_xy_mm": [
+        54.372,
+        96.266,
+        188.327,
+        174.723
+      ]
+    }
+  ],
+  "internal_bridge_note": "Internal infill closure near the top skin; outside the lip bounds.",
+  "lip_bed_bounds_xy_mm": [
+    105.73208344338782,
+    183.84675796951493,
+    127.83386750741667,
+    188.13919085331935
+  ],
+  "deposited_model_and_brim_bounds_xy_mm": [
+    47.401,
+    53.347,
+    208.599,
+    198.653
+  ],
+  "filament_per_bracket_g": 85.76,
+  "estimated_time_per_bracket": "2h 49m 56s",
+  "machine": "Repro P1S - 0.4 nozzle",
+  "filament": "Repro Generic PETG - 0.4 nozzle - Starter",
+  "nozzle_temperature_c": 255,
+  "bed_temperature_c": 70,
+  "inherited_profile_warning": "Orca flags bed temperature at or above the generic PETG vitrification value (both 70 C). Profile unchanged; select actual spool/plate settings before printing.",
+  "gl_warning": "CLI could not render an OpenGL thumbnail. Separate CAD and toolpath PNG previews supplied.",
+  "stl_sha256": "dfd7ad591bb754969f19f0585938fc116426bc5ee88845fd91b5e54e8a736c7e",
+  "gcode_sha256": "77ad365ac5ced8e143e18eefd676828668fafff94c1d48e373558b0e393bce7b",
+  "feature_block_counts": {
+    "Custom": 2,
+    "Brim": 1,
+    "Outer wall": 385,
+    "Inner wall": 382,
+    "Bottom surface": 1,
+    "Gap infill": 360,
+    "Internal solid infill": 24,
+    "Sparse infill": 404,
+    "Internal Bridge": 2,
+    "Top surface": 7
+  }
+}

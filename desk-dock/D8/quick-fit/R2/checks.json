@@ -1,0 +1,190 @@
+{
+  "passed": true,
+  "revision": "R2 fit trial",
+  "quantity": 2,
+  "identical": true,
+  "changes": {
+    "lip_outward_shift_mm": 2.0,
+    "lip_height_increase_mm": 3.0,
+    "lip_top_edge_radius_mm": 0.65,
+    "seat_extension_toward_underside_mm": 1.0,
+    "status": "Trial increments selected from qualitative physical R1 feedback; not measured corrections."
+  },
+  "lip_nominal_clearance_mm": 2.25,
+  "lip_top_above_seat_datum_mm": 15.0,
+  "seat_contact_profile_width_mm": 10.0,
+  "seat_rim_height_increase_mm": 1.193119547572806,
+  "seat_datum_and_lid_support_unchanged": true,
+  "bracket_width_mm": 38.1,
+  "inside_clear_gap_mm": 318.48,
+  "center_spacing_mm": 356.58000000000004,
+  "outside_width_mm": 394.68000000000006,
+  "footprint_depth_mm": 135.0220982023908,
+  "height_above_desk_mm": 150.9135462995145,
+  "nominal_lean_degrees": 5,
+  "solid_volume_each_cm3": 99.0672827472213,
+  "solid_PETG_mass_pair_g": 251.6308981779421,
+  "print_bounds_mm": [
+    150.91354360117188,
+    135.0220946265625,
+    38.099998474121094
+  ],
+  "mesh_watertight": true,
+  "mesh_connected_components": 1,
+  "step_roundtrip_valid": true,
+  "original_structural_difference_mm3": 0.0,
+  "original_including_font_difference_mm3": 5.806931540204772,
+  "source_extension_sample_count": 5002,
+  "source_extension_min_sampled_clearance_mm": -0.00770942081103243,
+  "checks": [
+    {
+      "laptop_overlap_mm3": 0.0,
+      "rubber_foot_overlap_mm3": 0.0,
+      "expanded_foot_keepout_overlap_mm3": 0.0,
+      "seat_contact_probe_mm3": 4.093216016520887
+    },
+    {
+      "laptop_overlap_mm3": 0.0,
+      "rubber_foot_overlap_mm3": 0.0,
+      "expanded_foot_keepout_overlap_mm3": 0.0,
+      "seat_contact_probe_mm3": 2.293216001461966
+    }
+  ],
+  "motion": [
+    {
+      "bracket": 1,
+      "lift_mm": 0,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    },
+    {
+      "bracket": 1,
+      "lift_mm": 0.25,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    },
+    {
+      "bracket": 1,
+      "lift_mm": 0.5,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    },
+    {
+      "bracket": 1,
+      "lift_mm": 1,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    },
+    {
+      "bracket": 1,
+      "lift_mm": 2,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    },
+    {
+      "bracket": 1,
+      "lift_mm": 3,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    },
+    {
+      "bracket": 1,
+      "lift_mm": 5,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    },
+    {
+      "bracket": 1,
+      "lift_mm": 10,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    },
+    {
+      "bracket": 1,
+      "lift_mm": 20,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    },
+    {
+      "bracket": 1,
+      "lift_mm": 40,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    },
+    {
+      "bracket": 2,
+      "lift_mm": 0,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    },
+    {
+      "bracket": 2,
+      "lift_mm": 0.25,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    },
+    {
+      "bracket": 2,
+      "lift_mm": 0.5,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    },
+    {
+      "bracket": 2,
+      "lift_mm": 1,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    },
+    {
+      "bracket": 2,
+      "lift_mm": 2,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    },
+    {
+      "bracket": 2,
+      "lift_mm": 3,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    },
+    {
+      "bracket": 2,
+      "lift_mm": 5,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    },
+    {
+      "bracket": 2,
+      "lift_mm": 10,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    },
+    {
+      "bracket": 2,
+      "lift_mm": 20,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    },
+    {
+      "bracket": 2,
+      "lift_mm": 40,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    }
+  ],
+  "cadquery_version": "2.8.0",
+  "trimesh_version": "5.1.0",
+  "source_mesh_sha256": "f201f10ae03de3ec4aefffcc14745deb65b97b597bdba02c8d4b449e4937648a",
+  "input_sha256": {
+    "quick-fit/R2/build_quick_fit.py": "ef27995e3296132166e097483bff4b83711a589c0ea321e63c4c70f99a5cd8bb",
+    "quick-fit/R2/fit-parameters.json": "983fe16fe5e51eb7dc0fd4774158cca05544101302758c9b8bb9433f51152cbe",
+    "parameters.json": "3dc1904fdb383491c3fc7780bf5304487d9f79a1df84eb06ff247af674097cfc",
+    "contact-profiles.json": "aa02aa10e52958e60c83230b141927807b6b04b000babc8a98ee0865c241bfdc",
+    "geometry.json": "eb47b3ec93ae763d1cc03fbcdc93f7eeaf4bb294d361578db1b59e73af1ef301"
+  },
+  "output_sha256": {
+    "D8-R2-quick-fit-bracket-print-TWO.stl": "58682a6814e4ea962a5e28de6688800ea4fa32ae33e3dc1f6893e9cbbeac2e58",
+    "D8-R2-quick-fit-bracket.step": "cfd5083a6bfc48289dc93709324fa8d8dde3b8f57573d699fdc1a4c8191c585e"
+  },
+  "scope": "Separate fit prototype. Source visualization mesh and nominal CAD checks only. Vent noise, stability, strength and physical R2 fit untested. Main D8 unchanged."
+}

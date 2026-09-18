@@ -1,0 +1,150 @@
+from pathlib import Path
+import sys,json,hashlib,zipfile,shutil,re,math,xml.etree.ElementTree as ET
+from collections import Counter
+from PIL import Image,ImageDraw
+HERE=Path(__file__).resolve().parent
+ROOT=HERE.parents[1]
+sys.path.insert(0,str(ROOT/'work/quartet-team/architect'))
+from path_reader import paths
+OUT=ROOT/'outputs/5680-design-team/D9-P5-PRINT-KIT'
+OUT.mkdir(parents=True,exist_ok=True)
+reports=[]
+sheet=Image.new('RGB',(2080,1120),'white');draw=ImageDraw.Draw(sheet)
+LABELS=['00-START-HERE-fastener-fit','01-M1-outer-cradle','02-M1-inner','03-M2-inner','04-M2-outer-cradle','05-M1-guard-front-ties','06-M2-guard-rear-ties','07-printed-pins-and-keys','08-contact-pegs','09-cradle-end-trial']
+ns={'m':'http://schemas.microsoft.com/3dmanufacturing/core/2015/02'}
+for index in range(10):
+    folder=HERE/'plates'/f'{index:02d}'
+    prep=json.loads((folder/'preparation.json').read_text())
+    data=(folder/'plate_1.gcode').read_bytes();text=data.decode()
+    offset=tuple(map(float,json.loads((folder/'machine.json').read_text())['extruder_offset'][0].split('x')))
+    seg=[((a[0]+offset[0],a[1]+offset[1]),(b[0]+offset[0],b[1]+offset[1]),z,r) for a,b,z,r in paths(text)]
+    assert seg
+    lo=[min(p[i] for a,b,z,r in seg for p in (a,b)) for i in (0,1)]
+    hi=[max(p[i] for a,b,z,r in seg for p in (a,b)) for i in (0,1)]
+    assert all(.25<lo[i]<hi[i]<255.75 for i in (0,1)),(index,lo,hi)
+    assert all(not(p[0]<18.5 and p[1]<28.5) for a,b,z,r in seg for p in (a,b))
+    height=max(z for a,b,z,r in seg)
+    assert abs(height-max(o['bounds'][1][2]-o['bounds'][0][2] for o in prep['objects']))<.21
+    label=LABELS[index]
+    with zipfile.ZipFile(folder/'sliced.3mf') as archive:
+        assert archive.testzip() is None
+        assert archive.read('Metadata/plate_1.gcode')==data
+        assert archive.read('Metadata/plate_1.gcode.md5').decode().strip().lower()==hashlib.md5(data).hexdigest()
+        settings=ET.fromstring(archive.read('Metadata/model_settings.config'))
+        assert len(settings.findall('object'))==len(prep['objects'])
+        model=ET.fromstring(archive.read('3D/3dmodel.model'))
+        items=model.findall('m:build/m:item',ns)
+        assert len(items)==len(prep['objects']) and len(settings.findall('plate'))==1
+        expected_by_name={o['name']:o for o in prep['objects']}
+        metadata={o.get('id'):o for o in settings.findall('object')}
+        for item in items:
+            obj=expected_by_name[metadata[item.get('objectid')].find("metadata[@key='name']").get('value')]
+            assert hashlib.sha256((HERE/'generated'/(obj['name']+'.stl')).read_bytes()).hexdigest()==obj['source_sha256']
+            t=list(map(float,item.get('transform').split()))
+            assert t[:9]==[1,0,0,0,1,0,0,0,1]
+            comp=model.find(f"m:resources/m:object[@id='{item.get('objectid')}']/m:components/m:component",ns)
+            ct=list(map(float,comp.get('transform').split()))
+            assert ct==[1,0,0,0,1,0,0,0,1,0,0,0]
+            meshroot=ET.fromstring(archive.read(comp.get('{http://schemas.microsoft.com/3dmanufacturing/production/2015/06}path').lstrip('/')))
+            vv=[tuple(float(v.get(axis))+t[9+i] for i,axis in enumerate(('x','y','z'))) for v in meshroot.findall('.//m:vertices/m:vertex',ns)]
+            actual=[[min(v[i] for v in vv) for i in range(3)],[max(v[i] for v in vv) for i in range(3)]]
+            expected=[[v+obj['translation'][i] for i,v in enumerate(bound)] for bound in obj['bounds']]
+            assert all(abs(a-b)<1e-4 for aa,bb in zip(actual,expected) for a,b in zip(aa,bb)),(obj['name'],actual,expected)
+        repairs=[]
+        for stat in settings.findall('.//mesh_stat'):
+            for k,v in stat.attrib.items():
+                if k!='edges_fixed' and 'count' not in k and k!='volume': pass
+                if k in ('edges_fixed','degenerate_facets','facets_removed','facets_reversed','backwards_edges'):
+                    assert float(v)==0,(index,k,v)
+            repairs.append(stat.attrib)
+        plate=settings.find('plate')
+        for key,value in [('plater_name','D9 P5 '+label),('locked','true')]:
+            node=plate.find(f"metadata[@key='{key}']")
+            if node is None:node=ET.SubElement(plate,'metadata',key=key)
+            node.set('value',value)
+        with zipfile.ZipFile(OUT/(label+'.3mf'),'w',zipfile.ZIP_DEFLATED) as native:
+            for member in archive.infolist():
+                native.writestr(member,ET.tostring(settings,encoding='utf-8',xml_declaration=True) if member.filename=='Metadata/model_settings.config' else archive.read(member.filename))
+    shutil.copy2(folder/'plate_1.gcode',OUT/(label+'.gcode'))
+    roles=Counter(r for a,b,z,r in seg)
+    supports=[s for s in seg if 'support' in s[3].lower()]
+    bridges=[s for s in seg if 'bridge' in s[3].lower() and 'internal' not in s[3].lower()]
+    summaries=[s for s in text.splitlines() if s.startswith(('; generated by','; model printing time:','; filament used [g]','; total layer number:','; max_z_height:'))]
+    report={'plate':label,'passed':True,'summary':summaries,'xy_bounds_mm':[lo,hi],'height_mm':height,'raw_motion_to_plate_offset':offset,'roles':dict(roles),'support_segments':len(supports),'external_bridge_segments':len(bridges),'max_external_bridge_segment_mm':max([math.dist(a,b) for a,b,z,r in bridges] or [0]),'unchanged_orientation_and_placement':True,'embedded_gcode_matches':True,'mesh_stats':repairs,'gcode_sha256':hashlib.sha256(data).hexdigest(),'scope':'Digital manufacturing checks; physical fit, support removal, loading, airflow and noise untested.'}
+    reports.append(report)
+    dest=OUT/'verification'/label;dest.mkdir(parents=True,exist_ok=True)
+    (dest/'toolpath-verification.json').write_text(json.dumps(report,indent=2)+'\n')
+    for name in ('machine.json','process.json','filament.json','profile-selection.json','preparation.json','slice-execution.json','geometry-review.md'):shutil.copy2(folder/name,dest/name)
+    x0=index%4*520;y0=index//4*560
+    draw.text((x0+15,y0+12),label,fill='black')
+    draw.text((x0+15,y0+32),'Gray: first layer | Orange: support | Magenta: bridge',fill='black')
+    def project(p):return (x0+15+p[0]*1.85,y0+65+(256-p[1])*1.85)
+    first=min(s[2] for s in seg)
+    for a,b,z,r in seg:
+        if abs(z-first)<.01:draw.line((project(a),project(b)),fill='#9da9b5',width=1)
+    for subset,color in [(supports,'#c18431'),(bridges,'#b33594')]:
+        for a,b,z,r in subset:draw.line((project(a),project(b)),fill=color,width=1)
+    if index==7:
+        # Actual roads on a representative production key at three heights.
+        key_obj=next(o for o in prep['objects'] if o['name']=='M1-seam-1-key')
+        bounds=[[v+key_obj['translation'][i] for i,v in enumerate(b)] for b in key_obj['bounds']]
+        detail=Image.new('RGB',(1500,680),'white');dd=ImageDraw.Draw(detail)
+        levels=sorted(set(z for a,b,z,r in seg if z<2.81))
+        for column,target in enumerate((.2,1.4,2.8)):
+            level=min(levels,key=lambda z:abs(z-target));dd.text((column*500+30,20),f'Production long key: actual Orca roads at Z {level:g} mm',fill='black')
+            def project_key(p):return (column*500+135+(p[0]-bounds[0][0])*24,60+(bounds[1][1]-p[1])*24)
+            roads=[(a,b,r) for a,b,z,r in seg if abs(z-level)<.01 and all(bounds[0][0]-.1<=p[0]<=bounds[1][0]+.1 and bounds[0][1]-.1<=p[1]<=bounds[1][1]+.1 for p in (a,b))]
+            assert roads
+            for a,b,r in roads:dd.line((project_key(a),project_key(b)),fill='#087dad' if 'wall' in r.lower() else '#ce8f35',width=3)
+        detail.save(OUT/'D9-P5-key-toolpaths.png')
+    print(json.dumps({k:report[k] for k in ('plate','summary','support_segments','external_bridge_segments','max_external_bridge_segment_mm')}),flush=True)
+sheet.save(OUT/'D9-actual-toolpath-review.png')
+(OUT/'verification/plates.json').write_text(json.dumps(reports,indent=2)+'\n')
+gen=HERE/'generated'
+cad=OUT/'CAD';cad.mkdir(exist_ok=True)
+manifest=json.loads((gen/'manifest.json').read_text())
+assert manifest['metal_hardware_count']==0 and manifest['printed_parts']==56 and not manifest['part_interferences']
+assert json.loads((gen/'insertion-motion.json').read_text())['sampled_motion_clear']
+assert all(json.loads((gen/f'M{i}-enclosure-final.json').read_text())['passed'] for i in (1,2))
+for part in manifest['parts']+manifest['fit_coupons']:
+    for ext in ('stl','step'):shutil.copy2(gen/part[ext],cad/part[ext])
+for name in ('D9-P2-assembly.step','D9-P2-assembly.png'):
+    if (gen/name).exists():shutil.copy2(gen/name,OUT/name.replace('P2','P5'))
+for name in ('preview-M1-outer-cradle-dressed.png','preview-front-tie-R-dressed.png'):
+    if (gen/name).exists():shutil.copy2(gen/name,OUT/name)
+for name in ('manifest.json','M1-enclosure-final.json','M2-enclosure-final.json','M1-enclosure-audit.json','M2-enclosure-audit.json','insertion-motion.json'):shutil.copy2(gen/name,OUT/'verification'/name)
+shutil.copy2(HERE/'plates-verification.json',OUT/'verification'/'plates-per-object.json')
+source=OUT/'source';source.mkdir(exist_ok=True)
+for name in ('build_d9.py','dress.py','prepare_and_slice.py','verify_enclosure.py','verify_and_package.py','verify_plates.py','path_reader.py'):shutil.copy2(HERE/name,source/name)
+inputs=source/'source-inputs'
+shutil.copytree(HERE/'source-inputs',inputs,dirs_exist_ok=True)
+shutil.copy2(HERE/'prepare_coupon_plate.py',source/'prepare_coupon_plate.py')
+shutil.copytree(HERE/'profiles',source/'profiles',dirs_exist_ok=True)
+for name in ('README.md','DESIGN.md'):shutil.copy2(HERE/name,OUT/name)
+shutil.copy2(OUT/(LABELS[0]+'.3mf'),OUT/'OPEN-ME.3mf')
+def totals(selected):
+    grams=0.;seconds=0
+    for report in selected:
+        for line in report['summary']:
+            if line.startswith('; filament used [g]'):
+                grams+=sum(float(v) for v in line.split('=')[1].split(','))
+            if line.startswith('; model printing time:'):
+                duration=line.split('total estimated time:')[-1]
+                seconds+=sum(int(n)*{'d':86400,'h':3600,'m':60,'s':1}[unit] for n,unit in re.findall(r'(\d+)([dhms])',duration))
+    return {'filament_g':round(grams,2),'estimated_seconds':seconds,'estimated_time':f'{seconds//3600}h {(seconds%3600)//60}m {seconds%60}s'}
+estimates={'fit_plate_00':totals(reports[:1]),'cradle_end_trial_09':totals(reports[9:10]),'assembly_plates_01_to_08':totals(reports[1:9]),'outer_cradle_plates_01_and_04':totals([reports[1],reports[4]]),'contact_pegs_08':totals([reports[8]]),'contact_independent_plates_02_03_05_06_07':totals([reports[2],reports[3],reports[5],reports[6],reports[7]])}
+(OUT/'verification/estimates.json').write_text(json.dumps(estimates,indent=2)+'\n')
+with (OUT/'README.md').open('a',encoding='utf-8') as f:
+    f.write('\n## Orca estimates\n\n')
+    for label,value in estimates.items():f.write(f"- {label.replace('_',' ')}: {value['filament_g']:.2f} g; {value['estimated_time']}.\n")
+print('ESTIMATES',json.dumps(estimates),flush=True)
+hashes={p.relative_to(OUT).as_posix():hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(OUT.rglob('*')) if p.is_file() and p.name!='SHA256.json'}
+(OUT/'SHA256.json').write_text(json.dumps(hashes,indent=2)+'\n')
+archive=OUT.parent/'Precision_5680_D9_P5_Print_Kit.zip'
+with zipfile.ZipFile(archive,'w',zipfile.ZIP_DEFLATED) as z:
+    for p in sorted(OUT.rglob('*')):
+        if p.is_file():z.write(p,OUT.name+'/'+p.relative_to(OUT).as_posix())
+with zipfile.ZipFile(archive) as z:
+    assert z.testzip() is None
+    for name,digest in hashes.items():assert hashlib.sha256(z.read(OUT.name+'/'+name)).hexdigest()==digest
+print('VERIFIED PACKAGE',archive,archive.stat().st_size,flush=True)

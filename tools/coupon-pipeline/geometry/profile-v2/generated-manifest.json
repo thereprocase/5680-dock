@@ -1,0 +1,173 @@
+{
+  "format": "precision-5680-native-datum-contact-coupon-v2",
+  "status": "analysis-only candidate pending independent same-datum geometry review; v1 is superseded for coordinate mismatch",
+  "scope": "small hand-held fit/contact specimen only; not freestanding/load-qualified, a whole laptop model, print release, production D8 or CFD-contact release",
+  "native_datum": {
+    "x_crop_mm": [
+      7.050000000000001,
+      31.05
+    ],
+    "y_crop_mm": [
+      -16.585,
+      17.085
+    ],
+    "z_crop_mm": [
+      44.0,
+      72.0
+    ],
+    "laptop_thickness_mm": 22.17,
+    "r1_fence_inner_face_mm": -11.335,
+    "r1_fence_outer_face_mm": -14.085,
+    "r2_fence_outer_face_mm": -16.085,
+    "lower_lid_rail_start_y_mm_unleaned": 11.085,
+    "source_equations": "R1/R2 builders use inner=-T/2-.25-offset, outer=-T/2-3-offset and lower rail y=T/2 before lean(); v2 crops these imported solids rather than rebuilding from the 9-mm local curve span."
+  },
+  "variants": {
+    "A_R1_native_control": {
+      "id_notches": 1,
+      "meaning": "exact native-datum R1 contact-region crop; source control, not asserted as the exact user print"
+    },
+    "B_R2_native_documented_capture": {
+      "id_notches": 2,
+      "meaning": "exact native-datum R2 contact-region crop; preserves the actual R2 GLB-re-extracted extension"
+    },
+    "C_R2_native_plus_1mm_seat_relief": {
+      "id_notches": 3,
+      "meaning": "B plus only a 1-mm downward band under the true R2 revised seat curve; a local stack/seat discriminator, not a measured correction"
+    }
+  },
+  "C_changed_surface": {
+    "parameter_mm": 1.0,
+    "direction": "negative local Z within the unleaned R2 seat-cavity band, then the exact R2 source lean() transform",
+    "source_curve": "R2/seat-profile.json revised_yz_mm, which preserves R2's actual GLB-re-extracted extension samples",
+    "unchanged": [
+      "R2 imported source solid except the Boolean band",
+      "native fence",
+      "native lower lid rail",
+      "native crop datum",
+      "low-source integral ID notch location"
+    ]
+  },
+  "boolean_receipt": {
+    "operation": "C_pre_ID = B_pre_ID.cut(leaned_R2_curve_band)",
+    "source_transform": "rotate((0,0,H), (1,0,H), -laptop_lean_deg), exactly as R2 build_quick_fit.py:45-46",
+    "B_pre_ID_volume_mm3": 8800.906631294387,
+    "C_pre_ID_volume_mm3": 8560.906631294485,
+    "removed_by_B_minus_C_mm3": 239.99999999990177,
+    "removed_by_B_intersect_band_mm3": 239.99999999996186,
+    "volume_discrepancy_mm3": 6.008349373587407e-11,
+    "relief_band_bounds_mm": [
+      -3.3289073940430502,
+      6.506039127571767,
+      52.80726914614617,
+      58.07987220186248
+    ],
+    "x_section_mm": 19.05,
+    "section_render": "C_boolean_X_section_receipt.png"
+  },
+  "integral_id_safety_receipt": {
+    "form": "one/two/three full-width through-notches in existing imported low source seat-support material; no added base is used",
+    "notch_yz_bounds_mm": [
+      -2.5,
+      0.08000000000000007,
+      49.0,
+      49.7
+    ],
+    "R1_bearing_min_z_mm": 53.803463944237926,
+    "R2_bearing_min_z_mm": 53.803463944237926,
+    "relief_band_min_z_mm": 52.80726914614617,
+    "leaned_lid_rail_min_y_mm": 10.519883771861052,
+    "proof": "ID top is below both source bearing curves and the relief band; its maximum Y is strictly inboard of the leaned source lid rail minimum Y. Every notch additionally removes its full analytic rectangular volume from native source material."
+  },
+  "user_reported_behavior": "intended cradle capture misses and the laptop rocks into the short fence; this coupon separates that backup stop from the intended bearing but does not assert a measured cause or correction",
+  "physical_reading_protocol": [
+    "Use the integral 1/2/3-notch low-support ID to identify A/B/C; it is below the contact region.",
+    "Hand-position the closed laptop local profile against the curved intended bearing; this specimen is not freestanding or load-qualified.",
+    "Observe whether the intended bearing contacts before the short backup fence; do not force capture or infer force from the result.",
+    "If a variant is later printed, capture one metric-scaled perpendicular photo/trace at the tested local section and retain the result with the variant ID."
+  ],
+  "printability_geometry_first": {
+    "orientation": "original X to print Z; X was the constant source extrusion axis",
+    "proof": "Every generated feature is a constant YZ profile extruded along X. The imported R1/R2 source contact geometry is itself composed as YZ profiles extruded along X, and the crop/relief/integral-ID-notch preserve that axis. Therefore lateral layer advance is exactly zero.",
+    "before_slice": "The geometry and section proof precede any slicer use. OrcaSlicer remains a later review-owned verification gate."
+  },
+  "limits": [
+    "R1 is a plausible V1 source but exact physical-export identity remains unproven.",
+    "R1/R2 contact data derives from an AR-visualization mesh, not manufacturing metrology.",
+    "C is a deliberate 1-mm discriminator, not a measured lid/case offset.",
+    "No scallop, airflow, acoustic, thermal, strength, retention or CFD claim follows from this coupon."
+  ],
+  "validation": {
+    "A_R1_native_control": {
+      "step_valid": true,
+      "step_solids": 1,
+      "stl_watertight": true,
+      "stl_components": 1,
+      "print_bounds_mm": [
+        28.0,
+        32.35758590698242,
+        24.0
+      ],
+      "analytic_print_section": {
+        "orientation": "original X rotated to print Z",
+        "max_lateral_advance_per_print_layer_mm": 0.0,
+        "reason": "R1/R2 source features, crop, relief band and integral ID notches are all constant YZ sections extruded through original X"
+      }
+    },
+    "B_R2_native_documented_capture": {
+      "step_valid": true,
+      "step_solids": 1,
+      "stl_watertight": true,
+      "stl_components": 1,
+      "print_bounds_mm": [
+        28.0,
+        33.302417755126946,
+        24.0
+      ],
+      "analytic_print_section": {
+        "orientation": "original X rotated to print Z",
+        "max_lateral_advance_per_print_layer_mm": 0.0,
+        "reason": "R1/R2 source features, crop, relief band and integral ID notches are all constant YZ sections extruded through original X"
+      }
+    },
+    "C_R2_native_plus_1mm_seat_relief": {
+      "step_valid": true,
+      "step_solids": 1,
+      "stl_watertight": true,
+      "stl_components": 1,
+      "print_bounds_mm": [
+        28.0,
+        33.302417755126946,
+        24.0
+      ],
+      "analytic_print_section": {
+        "orientation": "original X rotated to print Z",
+        "max_lateral_advance_per_print_layer_mm": 0.0,
+        "reason": "R1/R2 source features, crop, relief band and integral ID notches are all constant YZ sections extruded through original X"
+      }
+    }
+  },
+  "input_sha256": {
+    "parameters": "3dc1904fdb383491c3fc7780bf5304487d9f79a1df84eb06ff247af674097cfc",
+    "r1_builder": "922131baffc55e3675fe47c8ee36f8ba2a8807a21a1f44ee8978c0e5a93e0cc9",
+    "r1_contact_profiles": "aa02aa10e52958e60c83230b141927807b6b04b000babc8a98ee0865c241bfdc",
+    "r1_step": "617dbb5e5c49bfc697aa73810e1da7b0ea04fe4fc5e594d5521dde645cec1587",
+    "r2_builder": "ef27995e3296132166e097483bff4b83711a589c0ea321e63c4c70f99a5cd8bb",
+    "r2_step": "cfd5083a6bfc48289dc93709324fa8d8dde3b8f57573d699fdc1a4c8191c585e",
+    "r2_fit_parameters": "983fe16fe5e51eb7dc0fd4774158cca05544101302758c9b8bb9433f51152cbe",
+    "r2_seat_profile": "6fc169a141ba90088ef8d456097a4f7f2bbd9ea32160324efe212d0a56f0813b"
+  },
+  "output_sha256": {
+    "A_R1_native_control.step": "9b68e26046ff96c317cbcb04233e06b5017c859021a621e69d08e6fdc4cc7d8c",
+    "A_R1_native_control_X_to_print_Z.stl": "2d59c8347b80be392370e769ffd70457c0c1df3d1554ba0cba5e05c50ba050b6",
+    "B_R2_native_documented_capture.step": "2e013167a08c8f457a7234eff4344e7d145ca450ac5ed6007fb2ffdc323a1f45",
+    "B_R2_native_documented_capture_X_to_print_Z.stl": "bcad354bba14bdcadf8e21b87195c510f9a9c32bfc8a4cf4ebde9a45ec6fd6e6",
+    "C_R2_native_plus_1mm_seat_relief.step": "b943326b7e4f3028576deaa1a1a13075e91e4f76ba977a7bf428803b3f215305",
+    "C_R2_native_plus_1mm_seat_relief_X_to_print_Z.stl": "1656217a44c90878e1f67b81af035f3ead76d51629ed1c69280e8e24344046b6",
+    "A_R1_native_control.png": "d4be9c54ca92fb51f3822927704eb0ac9f90917c061bacf9a8ed802d0366a1ca",
+    "B_R2_native_capture.png": "d13d130989495e1650d7a2e2a8e1841e2635dd0d21c1c7fabf46984082da8264",
+    "C_R2_native_plus_1mm_relief.png": "c94888a5e9334e19f789f3f7c877ab5651422c2a8e14db6e4c30d4fe82fa866d",
+    "ABC_native_datum_comparison.png": "9b056a8a39213b474fa2c87719ec6b009e39cf08e9e61efc6ec4d5b17becb65c",
+    "C_boolean_X_section_receipt.png": "f3a428bcab3ea5287c97515e6af56150898d2643ea92d4a25377aba22c55d937"
+  }
+}

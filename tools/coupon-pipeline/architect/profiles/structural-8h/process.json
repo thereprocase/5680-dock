@@ -1,0 +1,298 @@
+{
+    "top_color_penetration_layers": "5",
+    "brim_width": "5",
+    "circle_compensation_manual_offset": "0",
+    "wipe_tower_no_sparse_layers": "0",
+    "prime_tower_max_speed": "90",
+    "prime_tower_brim_width": "3",
+    "line_width": "0.42",
+    "enable_height_slowdown": [
+        "0",
+        "0"
+    ],
+    "filename_format": "{input_filename_base}_{filament_type[0]}_{print_time}.gcode",
+    "top_surface_pattern": "monotonicline",
+    "ironing_inset": "0.21",
+    "enable_tower_interface_cooldown_during_tower": "0",
+    "z_direction_outwall_speed_continuous": "0",
+    "ironing_speed": "30",
+    "reduce_crossing_wall": "0",
+    "infill_direction": "45",
+    "support_threshold_angle": "45",
+    "support_interface_loop_pattern": "0",
+    "seam_slope_gap": "0",
+    "reduce_infill_retraction": "1",
+    "bottom_shell_thickness": "0",
+    "override_filament_scarf_seam_setting": "0",
+    "slowdown_start_speed": [
+        "1000",
+        "1000"
+    ],
+    "tree_support_branch_diameter": "2",
+    "brim_type": "outer_only",
+    "xy_hole_compensation": "0",
+    "infill_shift_step": "0.4",
+    "enable_tower_interface_features": "0",
+    "outer_wall_acceleration": [
+        "2000",
+        "2000"
+    ],
+    "skin_infill_density": "15%",
+    "only_one_wall_top": "1",
+    "travel_acceleration": [
+        "6000",
+        "6000"
+    ],
+    "interface_shells": "0",
+    "seam_slope_type": "none",
+    "top_surface_acceleration": [
+        "2000",
+        "2000"
+    ],
+    "sparse_infill_acceleration": [
+        "3000",
+        "3000"
+    ],
+    "gap_infill_speed": [
+        "250",
+        "250"
+    ],
+    "small_perimeter_speed": [
+        "50%",
+        "50%"
+    ],
+    "smooth_coefficient": "150",
+    "support_bottom_z_distance": "0.2",
+    "internal_bridge_support_thickness": "0.8",
+    "print_sequence": "by layer",
+    "layer_height": "0.2",
+    "vertical_shell_speed": [
+        "80%",
+        "80%"
+    ],
+    "overhang_4_4_speed": [
+        "10",
+        "10"
+    ],
+    "prime_tower_width": "35",
+    "support_base_pattern": "default",
+    "type": "process",
+    "initial_layer_speed": [
+        "50",
+        "50"
+    ],
+    "overhang_2_4_speed": [
+        "50",
+        "50"
+    ],
+    "bridge_no_support": "0",
+    "initial_layer_acceleration": [
+        "500",
+        "500"
+    ],
+    "prime_tower_enable_framework": "0",
+    "curr_bed_type": "Textured PEI Plate",
+    "infill_lock_depth": "1.0",
+    "enable_circle_compensation": "0",
+    "internal_solid_infill_speed": [
+        "250",
+        "250"
+    ],
+    "from": "User",
+    "overhang_totally_speed": [
+        "10",
+        "10"
+    ],
+    "prime_tower_lift_speed": "90",
+    "standby_temperature_delta": "-5",
+    "minimum_sparse_infill_area": "15",
+    "support_type": "normal(auto)",
+    "support_style": "tree_slim",
+    "xy_contour_compensation": "0",
+    "inherits": "0.20mm Standard @BBL X1C",
+    "top_shell_thickness": "1.0",
+    "bridge_speed": [
+        "50",
+        "50"
+    ],
+    "travel_speed_z": [
+        "0",
+        "0"
+    ],
+    "setting_id": "GP004",
+    "support_interface_speed": [
+        "80",
+        "80"
+    ],
+    "initial_layer_print_height": "0.2",
+    "support_base_pattern_spacing": "2.5",
+    "support_object_xy_distance": "0.35",
+    "ironing_flow": "10%",
+    "tree_support_branch_angle": "45",
+    "draft_shield": "disabled",
+    "slowdown_end_speed": [
+        "1000",
+        "1000"
+    ],
+    "support_interface_top_layers": "2",
+    "prime_tower_flat_ironing": "0",
+    "infill_rotate_step": "0",
+    "top_surface_speed": [
+        "200",
+        "200"
+    ],
+    "locked_skeleton_infill_pattern": "zigzag",
+    "print_settings_id": "Repro Normal 15 grid - 0.4 nozzle",
+    "travel_speed": [
+        "500",
+        "500"
+    ],
+    "enable_arc_fitting": "1",
+    "print_extruder_id": [
+        "1",
+        "1"
+    ],
+    "skirt_height": "1",
+    "infill_wall_overlap": "15%",
+    "initial_layer_infill_speed": [
+        "105",
+        "105"
+    ],
+    "skirt_loops": "0",
+    "enable_prime_tower": "1",
+    "outer_wall_line_width": "0.42",
+    "renamed_from": "0.20mm Bambu Support W @BBL X1C",
+    "raft_layers": "0",
+    "sparse_infill_density": "15%",
+    "support_interface_spacing": "0.5",
+    "brim_object_gap": "0.8",
+    "support_speed": [
+        "150",
+        "150"
+    ],
+    "detect_overhang_wall": "1",
+    "support_interface_filament": "0",
+    "default_acceleration": [
+        "4000",
+        "4000"
+    ],
+    "instantiation": "true",
+    "enable_wrapping_detection": "0",
+    "infill_combination": "0",
+    "seam_position": "aligned",
+    "pre_start_fan_time": [
+        "0"
+    ],
+    "compatible_printers_condition": "",
+    "symmetric_infill_y_axis": "0",
+    "skin_infill_depth": "2.0",
+    "top_shell_layers": "5",
+    "inner_wall_speed": [
+        "300",
+        "300"
+    ],
+    "support_interface_pattern": "auto",
+    "initial_layer_line_width": "0.5",
+    "support_on_build_plate_only": "0",
+    "slowdown_start_height": [
+        "0",
+        "0"
+    ],
+    "adaptive_layer_height": "0",
+    "skin_infill_line_width": "0.45",
+    "inner_wall_acceleration": [
+        "0",
+        "0"
+    ],
+    "skeleton_infill_line_width": "0.45",
+    "support_filament": "0",
+    "sparse_infill_line_width": "0.45",
+    "detect_floating_vertical_shell": "1",
+    "independent_support_layer_height": "1",
+    "overhang_3_4_speed": [
+        "30",
+        "30"
+    ],
+    "ironing_spacing": "0.15",
+    "layer_time_smoothing": "0",
+    "support_top_z_distance": "0.15",
+    "internal_solid_infill_line_width": "0.42",
+    "print_extruder_variant": [
+        "Direct Drive Standard",
+        "Direct Drive High Flow"
+    ],
+    "bottom_color_penetration_layers": "3",
+    "name": "Repro Normal 15 grid - 0.4 nozzle",
+    "support_expansion": "0",
+    "spiral_mode": "0",
+    "sparse_infill_speed": [
+        "270",
+        "270"
+    ],
+    "version": "2.4.2",
+    "seam_slope_start_height": "10%",
+    "max_bridge_length": "0",
+    "support_line_width": "0.42",
+    "slowdown_start_acc": [
+        "100000",
+        "100000"
+    ],
+    "small_perimeter_threshold": [
+        "0",
+        "0"
+    ],
+    "bridge_flow": "1",
+    "inner_wall_line_width": "0.45",
+    "ironing_type": "no ironing",
+    "prime_tower_lift_height": "-1",
+    "slowdown_end_acc": [
+        "100000",
+        "100000"
+    ],
+    "scarf_angle_threshold": "155",
+    "slowdown_end_height": [
+        "400",
+        "400"
+    ],
+    "compatible_printers": [
+        "Bambu Lab P1S 0.4 nozzle"
+    ],
+    "bottom_surface_pattern": "monotonic",
+    "resolution": "0.012",
+    "wall_loops": "4",
+    "bottom_shell_layers": "5",
+    "initial_layer_travel_acceleration": [
+        "6000",
+        "6000"
+    ],
+    "locked_skin_infill_pattern": "crosszag",
+    "outer_wall_speed": [
+        "200",
+        "200"
+    ],
+    "skeleton_infill_density": "15%",
+    "sparse_infill_pattern": "grid",
+    "elefant_foot_compensation": "0.15",
+    "wall_infill_order": "inner wall/outer wall/infill",
+    "seam_slope_min_length": "10",
+    "wall_generator": "classic",
+    "detect_thin_wall": "0",
+    "top_surface_line_width": "0.42",
+    "seam_placement_away_from_overhangs": "0",
+    "skirt_distance": "2",
+    "support_interface_bottom_layers": "2",
+    "enable_support": "1",
+    "max_travel_detour_distance": "0",
+    "enable_overhang_speed": [
+        "1",
+        "1"
+    ],
+    "layer_time_smoothing_threshold": "30",
+    "overhang_1_4_speed": [
+        "0",
+        "0"
+    ],
+    "description": "P1S 0.4 mm physical nozzle; Normal, 0.2 mm layers. Catalog parent: 0.20mm Standard @BBL X1C. Repro preferences, not a strength/noise calibration. Material volumetric limit remains authoritative.",
+    "tree_support_wall_count": "0",
+    "notes": "Repro Normal with sparse infill 20% gyroid -> 15% grid. Walls, layers, shells, brim and supports unchanged, so pin/key clearances match the P2 kit; used to bring the R4 bracket pair + P2 fit plate under 8 h."
+}

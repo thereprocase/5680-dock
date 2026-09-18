@@ -1,0 +1,956 @@
+{
+  "passed": true,
+  "layer_height_mm": 0.2,
+  "layer_pairs": 189,
+  "maximum_sampled_lateral_advance_mm": 0.1444054315498488,
+  "maximum_sampled_angle_from_vertical_deg": 35.83030715408548,
+  "area_outside_45_degree_support_envelope_mm2": 0.0,
+  "scope": "Final lip mesh sectioned normal to original X, the print-layer axis. Geometric screen, not a physical print test.",
+  "layers": [
+    {
+      "print_z_mm": 0.3,
+      "advance_mm": 2.593940747301611e-05,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 0.5,
+      "advance_mm": 2.5873738333320106e-05,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 0.7,
+      "advance_mm": 1.7620217987649816e-05,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 0.9,
+      "advance_mm": 1.4648830246627036e-05,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 1.1,
+      "advance_mm": 1.2069827313427935e-05,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 1.3,
+      "advance_mm": 1.0469326729840255e-05,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 1.5,
+      "advance_mm": 8.719588687515128e-06,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 1.7,
+      "advance_mm": 8.00683959730825e-06,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 1.9,
+      "advance_mm": 7.38852324071574e-06,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 2.1,
+      "advance_mm": 4.562562953895242e-08,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 2.3,
+      "advance_mm": 4.227574111097021e-08,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 2.5,
+      "advance_mm": 4.788349380098959e-08,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 2.7,
+      "advance_mm": 1.9493488392563237e-08,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 2.9,
+      "advance_mm": 3.406688639751144e-08,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 3.1,
+      "advance_mm": 8.77699506617437e-08,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 3.3,
+      "advance_mm": 3.38306410462741e-08,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 3.5,
+      "advance_mm": 0.0,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 3.7,
+      "advance_mm": 0.0,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 3.9,
+      "advance_mm": 0.0,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 4.1,
+      "advance_mm": 0.0,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 4.3,
+      "advance_mm": 0.0,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 4.5,
+      "advance_mm": 0.0,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 4.7,
+      "advance_mm": 0.0,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 4.9,
+      "advance_mm": 8.751515922452341e-08,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 5.1,
+      "advance_mm": 0.0,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 5.3,
+      "advance_mm": 0.0,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 5.5,
+      "advance_mm": 0.0,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 5.7,
+      "advance_mm": 0.0,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 5.9,
+      "advance_mm": 0.0,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 6.1,
+      "advance_mm": 0.0014065688753405177,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 6.3,
+      "advance_mm": 0.001406668832526518,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 6.5,
+      "advance_mm": 0.0034850000000119508,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 6.7,
+      "advance_mm": 0.0163993213960249,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 6.9,
+      "advance_mm": 0.02907273090605298,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 7.1,
+      "advance_mm": 0.04130095283985684,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 7.3,
+      "advance_mm": 0.05378719171611632,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 7.5,
+      "advance_mm": 0.06571186421954578,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 7.7,
+      "advance_mm": 0.07694060680583449,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 7.9,
+      "advance_mm": 0.087976868438556,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 8.1,
+      "advance_mm": 0.09738151052892328,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 8.3,
+      "advance_mm": 0.1069669260096494,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 8.5,
+      "advance_mm": 0.11530764291777873,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 8.7,
+      "advance_mm": 0.12353921037549312,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 8.9,
+      "advance_mm": 0.13035030919210422,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 9.1,
+      "advance_mm": 0.13348250926790722,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 9.3,
+      "advance_mm": 0.13934599464346584,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 9.5,
+      "advance_mm": 0.14387942013176117,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 9.7,
+      "advance_mm": 0.14387937312238439,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 9.9,
+      "advance_mm": 0.14387945487573786,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 10.1,
+      "advance_mm": 0.14387940651571896,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 10.3,
+      "advance_mm": 0.13657203847205082,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 10.5,
+      "advance_mm": 0.13374888593301218,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 10.7,
+      "advance_mm": 0.1269265970491197,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 10.9,
+      "advance_mm": 0.11877412220050948,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 11.1,
+      "advance_mm": 0.10900259335998529,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 11.3,
+      "advance_mm": 0.09790789368829532,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 11.5,
+      "advance_mm": 0.08634956469176183,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 11.7,
+      "advance_mm": 0.07320265074580855,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 11.9,
+      "advance_mm": 0.059917463534518475,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 12.1,
+      "advance_mm": 0.04623419663193357,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 12.3,
+      "advance_mm": 0.009797258522936926,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 12.5,
+      "advance_mm": 0.005945655397535373,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 12.7,
+      "advance_mm": 0.0020198678156755777,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 12.9,
+      "advance_mm": 0.001250984584259061,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 13.1,
+      "advance_mm": 0.0009839729501075816,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 13.3,
+      "advance_mm": 0.0009840656257194505,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 13.5,
+      "advance_mm": 0.0009839770189469402,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 13.7,
+      "advance_mm": 0.0009839947683768387,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 13.9,
+      "advance_mm": 0.00098398937068469,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 14.1,
+      "advance_mm": 0.0009839719564929607,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 14.3,
+      "advance_mm": 1.2641702250566888e-05,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 14.5,
+      "advance_mm": 1.0953850630330434e-05,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 14.7,
+      "advance_mm": 7.271109382146936e-08,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 14.9,
+      "advance_mm": 6.450253189684781e-08,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 15.1,
+      "advance_mm": 3.205564982063824e-08,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 15.3,
+      "advance_mm": 5.270353069193994e-09,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 15.5,
+      "advance_mm": 3.747571374188202e-08,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 15.7,
+      "advance_mm": 1.4298284405160887e-08,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 15.9,
+      "advance_mm": 2.6407581534295627e-08,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 16.1,
+      "advance_mm": 2.1048829919088466e-08,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 16.3,
+      "advance_mm": 5.385881665650477e-09,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 16.5,
+      "advance_mm": 5.55710903338184e-09,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 16.7,
+      "advance_mm": 5.608563311491775e-09,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 16.9,
+      "advance_mm": 5.539164489689231e-09,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 17.1,
+      "advance_mm": 5.713235197993153e-09,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 17.3,
+      "advance_mm": 5.645835444663776e-09,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 17.5,
+      "advance_mm": 5.8219329396246e-09,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 17.7,
+      "advance_mm": 5.756647137890105e-09,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 17.9,
+      "advance_mm": 9.703197290650396e-08,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 18.1,
+      "advance_mm": 5.871847418411184e-09,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 18.3,
+      "advance_mm": 0.0,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 18.5,
+      "advance_mm": 0.0006003000000003311,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 18.7,
+      "advance_mm": 0.0008706655323271919,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 18.9,
+      "advance_mm": 0.000870565587705538,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 19.1,
+      "advance_mm": 0.0014956010838617787,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 19.3,
+      "advance_mm": 0.00994512866459806,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 19.5,
+      "advance_mm": 0.022813605392911964,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 19.7,
+      "advance_mm": 0.0351378280741929,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 19.9,
+      "advance_mm": 0.047657294986082725,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 20.1,
+      "advance_mm": 0.05971673545680846,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 20.3,
+      "advance_mm": 0.0713068190123295,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 20.5,
+      "advance_mm": 0.0826907386935952,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 20.7,
+      "advance_mm": 0.09276666909357295,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 20.9,
+      "advance_mm": 0.10221468631738753,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 21.1,
+      "advance_mm": 0.11140983821403942,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 21.3,
+      "advance_mm": 0.11950636568027181,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 21.5,
+      "advance_mm": 0.12638491563388315,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 21.7,
+      "advance_mm": 0.13281652390478502,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 21.9,
+      "advance_mm": 0.13649601432939823,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 22.1,
+      "advance_mm": 0.14089391008257499,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 22.3,
+      "advance_mm": 0.1444053888145996,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 22.5,
+      "advance_mm": 0.1444053926289705,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 22.7,
+      "advance_mm": 0.1444054153501957,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 22.9,
+      "advance_mm": 0.1444054315498488,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 23.1,
+      "advance_mm": 0.13537854712011638,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 23.3,
+      "advance_mm": 0.12942226361804784,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 23.5,
+      "advance_mm": 0.12327566622925455,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 23.7,
+      "advance_mm": 0.11417136373339035,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 23.9,
+      "advance_mm": 0.10365174579854494,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 24.1,
+      "advance_mm": 0.09214549415062655,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 24.3,
+      "advance_mm": 0.07963465412361662,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 24.5,
+      "advance_mm": 0.06656313433708455,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 24.7,
+      "advance_mm": 0.053135442132894485,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 24.9,
+      "advance_mm": 0.030918882041790927,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 25.1,
+      "advance_mm": 0.007244836431746451,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 25.3,
+      "advance_mm": 0.004107574655430216,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 25.5,
+      "advance_mm": 0.00237376326682395,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 25.7,
+      "advance_mm": 0.0012757194863674292,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 25.9,
+      "advance_mm": 0.0012756451496645088,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 26.1,
+      "advance_mm": 0.0012757331796321772,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 26.3,
+      "advance_mm": 0.0012756477392344358,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 26.5,
+      "advance_mm": 0.001275731339910331,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 26.7,
+      "advance_mm": 0.0012756562523242793,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 26.9,
+      "advance_mm": 1.597445200479513e-05,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 27.1,
+      "advance_mm": 1.1714499440834235e-05,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 27.3,
+      "advance_mm": 7.614531257643675e-06,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 27.5,
+      "advance_mm": 1.1097566580419853e-08,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 27.7,
+      "advance_mm": 5.164339801026194e-08,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 27.9,
+      "advance_mm": 6.079009367372258e-08,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 28.1,
+      "advance_mm": 1.1747978774894647e-08,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 28.3,
+      "advance_mm": 3.614269793904112e-08,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 28.5,
+      "advance_mm": 9.204719595349167e-08,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 28.7,
+      "advance_mm": 8.318097475154893e-09,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 28.9,
+      "advance_mm": 1.2752991089147398e-08,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 29.1,
+      "advance_mm": 1.3027580802230646e-08,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 29.3,
+      "advance_mm": 1.3319791214900257e-08,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 29.5,
+      "advance_mm": 1.3619746103743507e-08,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 29.7,
+      "advance_mm": 1.3933652554213784e-08,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 29.9,
+      "advance_mm": 4.814113937858865e-09,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 30.1,
+      "advance_mm": 9.741233746569654e-09,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 30.3,
+      "advance_mm": 9.987810500164797e-09,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 30.5,
+      "advance_mm": 1.0240784806177692e-08,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 30.7,
+      "advance_mm": 1.0513483488359256e-08,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 30.9,
+      "advance_mm": 1.079434135883865e-08,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 31.1,
+      "advance_mm": 1.1097568299641804e-08,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 31.3,
+      "advance_mm": 1.1411161705187593e-08,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 31.5,
+      "advance_mm": 1.1865009893079498e-08,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 31.7,
+      "advance_mm": 0.00010082604850632585,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 31.9,
+      "advance_mm": 0.0035380797115874348,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 32.1,
+      "advance_mm": 0.016528340969972733,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 32.3,
+      "advance_mm": 0.0288817716204057,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 32.5,
+      "advance_mm": 0.04153536130112393,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 32.7,
+      "advance_mm": 0.05353139094107132,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 32.9,
+      "advance_mm": 0.06588614033815282,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 33.1,
+      "advance_mm": 0.07697851583723327,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 33.3,
+      "advance_mm": 0.0879573585008053,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 33.5,
+      "advance_mm": 0.09752219237368474,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 33.7,
+      "advance_mm": 0.10678295218393777,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 33.9,
+      "advance_mm": 0.11553367695259467,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 34.1,
+      "advance_mm": 0.12264790226490611,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 34.3,
+      "advance_mm": 0.12936235055033754,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 34.5,
+      "advance_mm": 0.13449953718882243,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 34.7,
+      "advance_mm": 0.1390194133239224,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 34.9,
+      "advance_mm": 0.13901931714155039,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 35.1,
+      "advance_mm": 0.1390194133239224,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 35.3,
+      "advance_mm": 0.13901934450850015,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 35.5,
+      "advance_mm": 0.13847600280733882,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 35.7,
+      "advance_mm": 0.1382166685045994,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 35.9,
+      "advance_mm": 0.13317178760886872,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 36.1,
+      "advance_mm": 0.1266034686181806,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 36.3,
+      "advance_mm": 0.11846147787741282,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 36.5,
+      "advance_mm": 0.10876688015316395,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 36.7,
+      "advance_mm": 0.09823322156190711,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 36.9,
+      "advance_mm": 0.0858542240621209,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 37.1,
+      "advance_mm": 0.07306236332083589,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 37.3,
+      "advance_mm": 0.06001413280446158,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 37.5,
+      "advance_mm": 0.04666498551611491,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 37.7,
+      "advance_mm": 0.009556007056846531,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    },
+    {
+      "print_z_mm": 37.9,
+      "advance_mm": 0.005454839443762512,
+      "area_beyond_45_degree_envelope_mm2": 0.0
+    }
+  ]
+}

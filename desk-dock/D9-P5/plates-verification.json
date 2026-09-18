@@ -1,0 +1,352 @@
+{
+  "00": {
+    "passed": true,
+    "time": "1h 46m 40s; total estimated time: 1h 52m 51s",
+    "filament_g": "",
+    "objects": {
+      "fan-socket-fit-fixture": {
+        "support": 2422,
+        "external_bridge": 63
+      },
+      "M1-fan-3-pin": {
+        "support": 973,
+        "external_bridge": 0
+      },
+      "M1-fan-3-key": {
+        "support": 0,
+        "external_bridge": 0
+      },
+      "side-socket-fit-fixture": {
+        "support": 2195,
+        "external_bridge": 110
+      },
+      "M1-fan-1-pin": {
+        "support": 973,
+        "external_bridge": 0
+      },
+      "M1-fan-1-key": {
+        "support": 0,
+        "external_bridge": 0
+      },
+      "T-joint-fit-L": {
+        "support": 1339,
+        "external_bridge": 108
+      },
+      "T-joint-fit-R": {
+        "support": 941,
+        "external_bridge": 0
+      },
+      "front-lap-pin": {
+        "support": 814,
+        "external_bridge": 0
+      },
+      "front-lap-key": {
+        "support": 0,
+        "external_bridge": 0
+      }
+    }
+  },
+  "01": {
+    "passed": true,
+    "time": "9h 45m 32s; total estimated time: 9h 51m 43s",
+    "filament_g": "",
+    "objects": {
+      "M1-outer-cradle-shell": {
+        "support": 22901,
+        "external_bridge": 1289
+      }
+    }
+  },
+  "02": {
+    "passed": true,
+    "time": "6h 35m 37s; total estimated time: 6h 41m 48s",
+    "filament_g": "",
+    "objects": {
+      "M1-inner-shell": {
+        "support": 31889,
+        "external_bridge": 868
+      }
+    }
+  },
+  "03": {
+    "passed": true,
+    "time": "6h 31m 54s; total estimated time: 6h 38m 6s",
+    "filament_g": "",
+    "objects": {
+      "M2-inner-shell": {
+        "support": 30559,
+        "external_bridge": 864
+      }
+    }
+  },
+  "04": {
+    "passed": true,
+    "time": "10h 4m 36s; total estimated time: 10h 10m 48s",
+    "filament_g": "",
+    "objects": {
+      "M2-outer-cradle-shell": {
+        "support": 26603,
+        "external_bridge": 1280
+      }
+    }
+  },
+  "05": {
+    "passed": true,
+    "time": "4h 59m 9s; total estimated time: 5h 5m 21s",
+    "filament_g": "",
+    "objects": {
+      "M1-fan-guard": {
+        "support": 0,
+        "external_bridge": 0
+      },
+      "front-tie-L": {
+        "support": 3306,
+        "external_bridge": 205
+      },
+      "front-tie-R": {
+        "support": 2922,
+        "external_bridge": 96
+      }
+    }
+  },
+  "06": {
+    "passed": true,
+    "time": "4h 59m 5s; total estimated time: 5h 5m 16s",
+    "filament_g": "",
+    "objects": {
+      "M2-fan-guard": {
+        "support": 0,
+        "external_bridge": 0
+      },
+      "rear-tie-L": {
+        "support": 3306,
+        "external_bridge": 205
+      },
+      "rear-tie-R": {
+        "support": 2922,
+        "external_bridge": 96
+      }
+    }
+  },
+  "07": {
+    "passed": true,
+    "time": "2h 57m 6s; total estimated time: 3h 3m 18s",
+    "filament_g": "",
+    "objects": {
+      "M1-seam-1-pin": {
+        "support": 781,
+        "external_bridge": 0
+      },
+      "M1-seam-1-key": {
+        "support": 0,
+        "external_bridge": 0
+      },
+      "M1-seam-2-pin": {
+        "support": 781,
+        "external_bridge": 0
+      },
+      "M1-seam-2-key": {
+        "support": 0,
+        "external_bridge": 0
+      },
+      "M1-seam-3-pin": {
+        "support": 781,
+        "external_bridge": 0
+      },
+      "M1-seam-3-key": {
+        "support": 0,
+        "external_bridge": 0
+      },
+      "M1-fan-1-pin": {
+        "support": 973,
+        "external_bridge": 0
+      },
+      "M1-fan-1-key": {
+        "support": 0,
+        "external_bridge": 0
+      },
+      "M1-fan-2-pin": {
+        "support": 973,
+        "external_bridge": 0
+      },
+      "M1-fan-2-key": {
+        "support": 0,
+        "external_bridge": 0
+      },
+      "M1-fan-3-pin": {
+        "support": 973,
+        "external_bridge": 0
+      },
+      "M1-fan-3-key": {
+        "support": 0,
+        "external_bridge": 0
+      },
+      "M1-fan-4-pin": {
+        "support": 973,
+        "external_bridge": 0
+      },
+      "M1-fan-4-key": {
+        "support": 0,
+        "external_bridge": 0
+      },
+      "M2-seam-1-pin": {
+        "support": 781,
+        "external_bridge": 0
+      },
+      "M2-seam-1-key": {
+        "support": 0,
+        "external_bridge": 0
+      },
+      "M2-seam-2-pin": {
+        "support": 781,
+        "external_bridge": 0
+      },
+      "M2-seam-2-key": {
+        "support": 0,
+        "external_bridge": 0
+      },
+      "M2-seam-3-pin": {
+        "support": 781,
+        "external_bridge": 0
+      },
+      "M2-seam-3-key": {
+        "support": 0,
+        "external_bridge": 0
+      },
+      "M2-fan-1-pin": {
+        "support": 973,
+        "external_bridge": 0
+      },
+      "M2-fan-1-key": {
+        "support": 0,
+        "external_bridge": 0
+      },
+      "M2-fan-2-pin": {
+        "support": 973,
+        "external_bridge": 0
+      },
+      "M2-fan-2-key": {
+        "support": 0,
+        "external_bridge": 0
+      },
+      "M2-fan-3-pin": {
+        "support": 973,
+        "external_bridge": 0
+      },
+      "M2-fan-3-key": {
+        "support": 0,
+        "external_bridge": 0
+      },
+      "M2-fan-4-pin": {
+        "support": 973,
+        "external_bridge": 0
+      },
+      "M2-fan-4-key": {
+        "support": 0,
+        "external_bridge": 0
+      },
+      "front-frame-L-pin": {
+        "support": 893,
+        "external_bridge": 0
+      },
+      "front-frame-L-key": {
+        "support": 0,
+        "external_bridge": 0
+      },
+      "front-frame-R-pin": {
+        "support": 893,
+        "external_bridge": 0
+      },
+      "front-frame-R-key": {
+        "support": 0,
+        "external_bridge": 0
+      },
+      "front-lap-pin": {
+        "support": 814,
+        "external_bridge": 0
+      },
+      "front-lap-key": {
+        "support": 0,
+        "external_bridge": 0
+      },
+      "rear-frame-L-pin": {
+        "support": 893,
+        "external_bridge": 0
+      },
+      "rear-frame-L-key": {
+        "support": 0,
+        "external_bridge": 0
+      },
+      "rear-frame-R-pin": {
+        "support": 893,
+        "external_bridge": 0
+      },
+      "rear-frame-R-key": {
+        "support": 0,
+        "external_bridge": 0
+      },
+      "rear-lap-pin": {
+        "support": 814,
+        "external_bridge": 0
+      },
+      "rear-lap-key": {
+        "support": 0,
+        "external_bridge": 0
+      }
+    }
+  },
+  "08": {
+    "passed": true,
+    "time": "1h 12m 41s; total estimated time: 1h 18m 53s",
+    "filament_g": "",
+    "objects": {
+      "M1-seat-peg": {
+        "support": 1039,
+        "external_bridge": 43
+      },
+      "M2-seat-peg": {
+        "support": 1039,
+        "external_bridge": 43
+      },
+      "M1-fence-peg": {
+        "support": 639,
+        "external_bridge": 5
+      },
+      "M2-fence-peg": {
+        "support": 633,
+        "external_bridge": 5
+      },
+      "M1-insert-pin": {
+        "support": 973,
+        "external_bridge": 0
+      },
+      "M2-insert-pin": {
+        "support": 973,
+        "external_bridge": 0
+      }
+    }
+  },
+  "09": {
+    "passed": true,
+    "time": "6h 54m 20s; total estimated time: 7h 0m 32s",
+    "filament_g": "",
+    "objects": {
+      "cradle-end-trial": {
+        "support": 10377,
+        "external_bridge": 772
+      },
+      "M1-fence-peg": {
+        "support": 639,
+        "external_bridge": 5
+      },
+      "M1-seat-peg": {
+        "support": 1039,
+        "external_bridge": 43
+      },
+      "M1-insert-pin": {
+        "support": 973,
+        "external_bridge": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,202 @@
+{
+  "format": "precision-5680-full-native-lid-rail-contact-coupon-v4",
+  "status": "analysis candidate; V3 frozen as ID-toolpath HOLD; V4 retains full native geometry with enlarged noncontact identifiers pending independent review",
+  "scope": "small hand-held local contact/clearance-reading specimen; no freestanding, strength, CFD, print, production or physical-fit qualification",
+  "physical_input": "User reports a slight closed-lid top curve and asks for a taller coupon. No curvature amplitude, radius, contact location or physical correction is measured here.",
+  "crop": {
+    "x_mm": [
+      7.050000000000001,
+      31.05
+    ],
+    "y_mm": [
+      -18.13255580954094,
+      22.500056440526635
+    ],
+    "z_mm": [
+      44.0,
+      133.22945443898186
+    ],
+    "derivation": "Y/Z bounds derive from the exact R2 lower-deck and full lid-rail corners after original source lean(), each with a 0.5-mm crop margin."
+  },
+  "full_native_rail": {
+    "unleaned_source_equation": "lean(box(T/2, 48, 4, 86))",
+    "unleaned_yz_mm": [
+      11.085,
+      15.085,
+      48.0,
+      134.0
+    ],
+    "unleaned_height_above_seat_mm": 80.0,
+    "leaned_yz_corners_mm": [
+      [
+        10.519883771861052,
+        47.056710403091735
+      ],
+      [
+        18.015277648159653,
+        132.72945443898186
+      ],
+      [
+        14.504662564228033,
+        46.7080874321011
+      ],
+      [
+        22.000056440526635,
+        132.38083146799121
+      ]
+    ],
+    "full_rail_volume_mm3_over_24mm_coupon_width": 8256.0,
+    "retained_volume_mm3": {
+      "A": 8255.999999997704,
+      "B": 8255.999999997704,
+      "C_pre_ID": 8255.999999997704
+    },
+    "proof": "Each imported crop contains the full explicit source rail volume; no tall rail face is truncated by the crop."
+  },
+  "C_boolean_receipt": {
+    "operation": "C_pre_ID = imported_R2_crop.cut(leaned_R2_curve_band)",
+    "source_transform": "rotate((0,0,H), (1,0,H), -laptop_lean_deg), matching R2 build_quick_fit.py lean()",
+    "removed_by_B_minus_C_mm3": 239.999999999809,
+    "removed_by_B_intersect_band_mm3": 239.99999999996174,
+    "difference_mm3": 1.5273826647899114e-10,
+    "section_x_mm": 19.05,
+    "section_render": "C_full_rail_boolean_X_section.png"
+  },
+  "curved_lid_contact_reading_envelope": {
+    "hypothesis_only": "The taller source rail can reveal whether the reported local lid-top curvature reaches it before the intended seat. It does not model the actual curve.",
+    "numeric_variable": "full native rail height: 86 mm before lean, spanning unleaned z=48..134; V4 crop upper Z is derived from its leaned corners.",
+    "protocol": [
+      "Hand-position only; do not use the tall rail as a lever or press it toward the lid.",
+      "Observe first contact among intended seat, short fence and the retained tall rail. Stop if rail flex, forced capture or rocking occurs.",
+      "If a future print is authorized, record one scaled perpendicular photo/trace at the tested X section and variant ID. Do not infer curvature amplitude from this coupon alone."
+    ]
+  },
+  "rail_stiffness_and_brace_limit": {
+    "geometry": "24-mm-wide by 4-mm unleaned rail section, 86-mm source span before lean; direct crop retains only whatever source brace material lies within the fixed local window.",
+    "limit": "No rail stiffness, allowable hand force, retention, impact or fatigue value is established. Treat this as a no-force hand-contact reader; visible flex or required push is an abort condition.",
+    "cropped_brace_remnants": "No arbitrary base or brace is added. Any adjacent source material inside the direct crop is a cropped remnant and must not be credited as structural bracing."
+  },
+  "limits": [
+    "The source reference is an AR visualization, not manufacturing metrology.",
+    "V4 records but does not quantify the user's curved-lid observation.",
+    "Two-mm square through-holes were selected before slicing with full source halo and contact-separation checks; actual toolpath survival remains a later gate.",
+    "No slice, print, solver, CFD, acoustic, strength or physical-fit conclusion follows from this artifact."
+  ],
+  "validation": {
+    "A_R1_full_native_rail": {
+      "id_holes": 1,
+      "meaning": "R1 direct crop with the complete source lid-side rail height",
+      "step_valid": true,
+      "step_solids": 1,
+      "stl_watertight": true,
+      "stl_components": 1,
+      "print_bounds_mm": [
+        89.22945404052734,
+        38.14022445678711,
+        24.0
+      ],
+      "geometry_first_print_proof": "The full rail, fence, seat, crop, C band and ID holes are all constant YZ profiles extruded along original X. Rotating original X to print Z makes every layer identical in lateral outline; this is geometry evidence only, not an Orca result."
+    },
+    "B_R2_full_native_rail": {
+      "id_holes": 2,
+      "meaning": "R2 direct crop with the complete source lid-side rail height",
+      "step_valid": true,
+      "step_solids": 1,
+      "stl_watertight": true,
+      "stl_components": 1,
+      "print_bounds_mm": [
+        89.22945404052734,
+        40.13261413574219,
+        24.0
+      ],
+      "geometry_first_print_proof": "The full rail, fence, seat, crop, C band and ID holes are all constant YZ profiles extruded along original X. Rotating original X to print Z makes every layer identical in lateral outline; this is geometry evidence only, not an Orca result."
+    },
+    "C_R2_full_rail_plus_1mm_seat_relief": {
+      "id_holes": 3,
+      "meaning": "B plus only the isolated, leaned one-mm R2 seat-relief band",
+      "step_valid": true,
+      "step_solids": 1,
+      "stl_watertight": true,
+      "stl_components": 1,
+      "print_bounds_mm": [
+        89.22945404052734,
+        40.13261413574219,
+        24.0
+      ],
+      "geometry_first_print_proof": "The full rail, fence, seat, crop, C band and ID holes are all constant YZ profiles extruded along original X. Rotating original X to print Z makes every layer identical in lateral outline; this is geometry evidence only, not an Orca result."
+    }
+  },
+  "identifier_geometry": {
+    "A": {
+      "count": 1,
+      "removed_volume_mm3": 95.999999999789,
+      "hole_side_mm": 2.0,
+      "pitch_mm": 4.0,
+      "native_y_starts_mm": [
+        -5.0
+      ],
+      "native_z_mm": [
+        47.8,
+        49.8
+      ],
+      "source_solid_halo_mm": 1.0,
+      "inter_hole_ligament_mm": 2.0,
+      "rail_and_relief_intersection_mm3": 0.0
+    },
+    "B": {
+      "count": 2,
+      "removed_volume_mm3": 191.99999999960528,
+      "hole_side_mm": 2.0,
+      "pitch_mm": 4.0,
+      "native_y_starts_mm": [
+        -5.0,
+        -1.0
+      ],
+      "native_z_mm": [
+        47.8,
+        49.8
+      ],
+      "source_solid_halo_mm": 1.0,
+      "inter_hole_ligament_mm": 2.0,
+      "rail_and_relief_intersection_mm3": 0.0
+    },
+    "C": {
+      "count": 3,
+      "removed_volume_mm3": 287.9999999994143,
+      "hole_side_mm": 2.0,
+      "pitch_mm": 4.0,
+      "native_y_starts_mm": [
+        -5.0,
+        -1.0,
+        3.0
+      ],
+      "native_z_mm": [
+        47.8,
+        49.8
+      ],
+      "source_solid_halo_mm": 1.0,
+      "inter_hole_ligament_mm": 2.0,
+      "rail_and_relief_intersection_mm3": 0.0
+    }
+  },
+  "builder_sha256": "564dba6eba9318f6db2f0f0ba9146e8b8a7ea87ea8dc48a9875bd9bf6a102e58",
+  "input_sha256": {
+    "parameters": "3dc1904fdb383491c3fc7780bf5304487d9f79a1df84eb06ff247af674097cfc",
+    "r1_step": "617dbb5e5c49bfc697aa73810e1da7b0ea04fe4fc5e594d5521dde645cec1587",
+    "r2_step": "cfd5083a6bfc48289dc93709324fa8d8dde3b8f57573d699fdc1a4c8191c585e",
+    "r2_fit_parameters": "983fe16fe5e51eb7dc0fd4774158cca05544101302758c9b8bb9433f51152cbe",
+    "r2_seat_profile": "6fc169a141ba90088ef8d456097a4f7f2bbd9ea32160324efe212d0a56f0813b",
+    "r2_builder": "ef27995e3296132166e097483bff4b83711a589c0ea321e63c4c70f99a5cd8bb",
+    "v2_builder": "ca5dcf24cba2026c2443e146f7afff4656155d59aa260b9bb1a40530dad08333"
+  },
+  "output_sha256": {
+    "A_R1_full_native_rail.step": "042cfa99aab2418b64364d7bfdb60713a74dd35a25163ecbe49f03054e932fad",
+    "A_R1_full_native_rail_X_to_print_Z.stl": "11bb78ab79a1e333f708042e76edf4bdb381a64b108034260dad0cbdc1e2b401",
+    "B_R2_full_native_rail.step": "44f7dfecd792a2d05db909a7cb92bae7baf6b58dac3a03712c3255d08f1c0359",
+    "B_R2_full_native_rail_X_to_print_Z.stl": "a2ec03ec6196f0214d7c75bfa340b6a6154b4393d1eb2a2693a6aceed91a0238",
+    "C_R2_full_rail_plus_1mm_seat_relief.step": "0044238c554ab79ae0034bda225d472991e5129d50adcc7b3ff1379a2a836d17",
+    "C_R2_full_rail_plus_1mm_seat_relief_X_to_print_Z.stl": "eb23e9dbe01ae39c80321c3095786bf2f3c1192c2dfdc12897d5597560e3022b",
+    "ABC_full_native_rail_comparison.png": "a041c6e7f4b07f8137c7ec72a959d2c79e2fdceaa2cf78bdb4098c283335b584",
+    "C_full_rail_boolean_X_section.png": "6a8f66cc0cad59d0fef148d5a9381180ee6b4d14dbcd53a13e16be88e751201a"
+  }
+}

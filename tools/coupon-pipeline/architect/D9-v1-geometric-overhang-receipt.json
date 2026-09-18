@@ -1,0 +1,28 @@
+{
+  "parts": [
+    {
+      "file": "/mnt/c/Users/repro/Documents/Codex/2026-09-17/for-x20/work/quartet-team/geometry/d9-fan-pod/generated/D9_fan_pod_tray_print_pose.stl",
+      "sha256": "8df74fe15f8302654ee686afcb39d97ff64edb70b1839f277056f8177c3d50e7",
+      "watertight": true,
+      "winding_consistent": true,
+      "components": 1,
+      "bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          132.0,
+          90.0,
+          126.0
+        ]
+      ],
+      "bed_contact_area_mm2": 528.0,
+      "nonbed_downfacing_area_mm2": 11592.0,
+      "maximum_underside_angle_from_vertical_deg": 90.0,
+      "zero_outward_growth_mesh_check": false,
+      "scope": "Nominated-pose geometric mesh verification only. Non-bed undersides require slope/landing analysis; not a slicer or structural result."
+    }
+  ]
+}

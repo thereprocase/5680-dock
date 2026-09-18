@@ -1,0 +1,210 @@
+{
+  "passed": true,
+  "revision": "R3 fit trial",
+  "quantity": 2,
+  "identical": true,
+  "air_relief": {
+    "channel_count": 3,
+    "pitch_mm": 12.700000000000001,
+    "central_scallop_depth_mm": 2.5500000000000003,
+    "mouth_scallop_depth_mm": 2.95,
+    "maximum_face_relief_mm": 0.8,
+    "nominal_remaining_wall_at_full_relief_mm": 1.95,
+    "analytic_max_overhang_from_vertical_deg": 36.579424093489585,
+    "removed_lip_volume_mm3": 185.46068864291965,
+    "topology": "Three open-top rounded scallops; inner-face channels taper smoothly to zero depth at their roots. No enclosed passages.",
+    "scope": "Geometric slope bound in broad-side print orientation; corroborate with layer sections and Orca toolpaths."
+  },
+  "changes": {
+    "lip_outward_shift_mm": 2.0,
+    "lip_height_increase_mm": 3.0,
+    "lip_top_edge_radius_mm": 0.65,
+    "seat_extension_toward_underside_mm": 1.0,
+    "air_relief": {
+      "channel_count": 3,
+      "scallop_depth_mm": 2.6,
+      "mouth_flare_mm": 0.4,
+      "face_relief_depth_mm": 0.8,
+      "groove_start_z_mm": 55.0
+    },
+    "status": "R2 fit increments retained; R3 adds gently swept open-edge relief inspired by chevrons. Acoustic benefit unmeasured."
+  },
+  "lip_nominal_clearance_mm": 2.25,
+  "lip_top_above_seat_datum_mm": 15.0,
+  "seat_contact_profile_width_mm": 10.0,
+  "seat_rim_height_increase_mm": 1.193119547572806,
+  "seat_datum_and_lid_support_unchanged": true,
+  "bracket_width_mm": 38.1,
+  "inside_clear_gap_mm": 318.48,
+  "center_spacing_mm": 356.58000000000004,
+  "outside_width_mm": 394.68000000000006,
+  "footprint_depth_mm": 135.0220982023908,
+  "height_above_desk_mm": 150.9135462995145,
+  "nominal_lean_degrees": 5,
+  "solid_volume_each_cm3": 98.88181434632644,
+  "solid_PETG_mass_pair_g": 251.15980843966915,
+  "print_bounds_mm": [
+    150.91354360117188,
+    135.0220946265625,
+    38.09999837412109
+  ],
+  "mesh_watertight": true,
+  "mesh_connected_components": 1,
+  "step_roundtrip_valid": true,
+  "original_structural_difference_mm3": 0.0,
+  "original_including_font_difference_mm3": 5.806931540204772,
+  "source_extension_sample_count": 5002,
+  "source_extension_min_sampled_clearance_mm": -0.00770942081103243,
+  "checks": [
+    {
+      "laptop_overlap_mm3": 0.0,
+      "rubber_foot_overlap_mm3": 0.0,
+      "expanded_foot_keepout_overlap_mm3": 0.0,
+      "seat_contact_probe_mm3": 4.093216016520887
+    },
+    {
+      "laptop_overlap_mm3": 0.0,
+      "rubber_foot_overlap_mm3": 0.0,
+      "expanded_foot_keepout_overlap_mm3": 0.0,
+      "seat_contact_probe_mm3": 2.293216001461966
+    }
+  ],
+  "motion": [
+    {
+      "bracket": 1,
+      "lift_mm": 0,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    },
+    {
+      "bracket": 1,
+      "lift_mm": 0.25,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    },
+    {
+      "bracket": 1,
+      "lift_mm": 0.5,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    },
+    {
+      "bracket": 1,
+      "lift_mm": 1,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    },
+    {
+      "bracket": 1,
+      "lift_mm": 2,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    },
+    {
+      "bracket": 1,
+      "lift_mm": 3,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    },
+    {
+      "bracket": 1,
+      "lift_mm": 5,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    },
+    {
+      "bracket": 1,
+      "lift_mm": 10,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    },
+    {
+      "bracket": 1,
+      "lift_mm": 20,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    },
+    {
+      "bracket": 1,
+      "lift_mm": 40,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    },
+    {
+      "bracket": 2,
+      "lift_mm": 0,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    },
+    {
+      "bracket": 2,
+      "lift_mm": 0.25,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    },
+    {
+      "bracket": 2,
+      "lift_mm": 0.5,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    },
+    {
+      "bracket": 2,
+      "lift_mm": 1,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    },
+    {
+      "bracket": 2,
+      "lift_mm": 2,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    },
+    {
+      "bracket": 2,
+      "lift_mm": 3,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    },
+    {
+      "bracket": 2,
+      "lift_mm": 5,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    },
+    {
+      "bracket": 2,
+      "lift_mm": 10,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    },
+    {
+      "bracket": 2,
+      "lift_mm": 20,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    },
+    {
+      "bracket": 2,
+      "lift_mm": 40,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    }
+  ],
+  "cadquery_version": "2.8.0",
+  "trimesh_version": "5.1.0",
+  "source_mesh_sha256": "f201f10ae03de3ec4aefffcc14745deb65b97b597bdba02c8d4b449e4937648a",
+  "input_sha256": {
+    "quick-fit/R3/build_quick_fit.py": "a60b4a4041f5e5e8a2f2218ef544ebbec23237f6d001a04a8ce34fdf5c46d01f",
+    "quick-fit/R3/air_relief.py": "0194f071bb7fb6f17460b776d41f8f1307a4405dceb57f8c859e1de0bd01b6c2",
+    "quick-fit/R3/fit-parameters.json": "8700951db8096a775d42f1dffb6dcf7470f595d51f36aa79bb960c45ff5153ad",
+    "parameters.json": "3dc1904fdb383491c3fc7780bf5304487d9f79a1df84eb06ff247af674097cfc",
+    "contact-profiles.json": "aa02aa10e52958e60c83230b141927807b6b04b000babc8a98ee0865c241bfdc",
+    "geometry.json": "eb47b3ec93ae763d1cc03fbcdc93f7eeaf4bb294d361578db1b59e73af1ef301"
+  },
+  "output_sha256": {
+    "D8-R3-quick-fit-bracket-print-TWO.stl": "dfd7ad591bb754969f19f0585938fc116426bc5ee88845fd91b5e54e8a736c7e",
+    "D8-R3-quick-fit-bracket.step": "d45b8e0c7702ed33a456e7754493338c76a24d926c67449c363bd818dd4310e1"
+  },
+  "scope": "Separate fit prototype. Source visualization mesh and nominal CAD checks only. Vent noise, stability, strength and physical R3 fit untested. Main D8 unchanged."
+}

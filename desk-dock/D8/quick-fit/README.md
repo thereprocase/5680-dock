@@ -1,5 +1,16 @@
 # D8 quick-fit stand: print this bracket twice
 
+**17 September fit feedback:** the printed pair needs more clearance and
+height at the short underside lip and slightly more heel-seat engagement.
+The separate [R2 fit trial](R2/README.md) adds 2 mm of outward lip clearance,
+3 mm of lip height and 1 mm of curved-seat wrap. The original R1 files below
+remain the baseline; R2 physical fit and noise are not yet tested.
+
+The [R3 air-relief trial](R3/README.md) retains those fit changes and adds
+three gently swept, open-top channels to the short lip. Its final lip-layer
+check and Orca slice pass without support or bridge paths in the channels.
+Physical airflow/noise benefit remains unmeasured.
+
 Two identical 38.1 mm (1.5 inch) wide brackets hold the closed laptop at D8's nominal seat height and 5-degree lean while marking the planned stand envelope. No fans, screws, liners or joining hardware. This is a temporary fit/desk-space mockup, separate from the 43-part production dock.
 
 ## Set it on the desk
