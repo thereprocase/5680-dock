@@ -23,7 +23,7 @@ M2 outer lose most of their support. Plate 04 is re-sliced in calibrated ASA wit
 
 ---
 
-# D9 P4 — 18 September 2026 (current model)
+# D9 P4 — 18 September 2026 (archived; P5 is current)
 
 [P4 kit](../../printables/d9-p4/Precision_5680_D9_P4_Print_Kit.zip) · [fit plate](../../printables/d9-p4/OPEN-ME.3mf) · [notes](../../printables/d9-p4/README.md). Fit plate 40 g / 1 h 53 m; plates 01–07 1,105 g / 46 h 31 m. The underside rail is on the plug-end cradle only; the far end keeps R4 because the rear foot strip sweeps through it during docking (0.47 mm overlap in X). No further leg prints planned; the formal model is P4.
 
