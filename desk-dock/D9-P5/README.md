@@ -25,7 +25,13 @@ P5 is the D9 P2 no-metal-hardware dock with these changes and nothing else:
    the four frame-end pins have a round 8.2-mm shaft with one chord flat on the
    bed, so they match the 8.4-mm round bores everywhere instead of only at the
    octagon's corners (the printed P2 octagons rattled). The other 18 pins stay
-   octagonal until the trial is judged. Plate 00 is regenerated: print it first and check insertion,
+   octagonal until the trial is judged. Bonus fan-screw path (optional): the
+   guards carry 4.5-mm clearance holes through plate and standoffs and every
+   flange carries 3.5-mm blind pilots 6 mm deep on the fan's 105-mm pattern, so
+   four M4 x 45 screws can hold guard and fan instead of (or as well as) the
+   pins. The pilots are blind, so the air wall stays closed; plug or ignore
+   them if unused. Shells printed before 18 September 17:00 lack the pilots:
+   use the guard as a drill jig. Plate 00 is regenerated: print it first and check insertion,
    retention and deliberate removal before the large parts.
 2. **Printable edge treatment.** Profile corners that run along each part's
    print Z are filleted (3 mm concave for stress relief, 1.5 mm convex for

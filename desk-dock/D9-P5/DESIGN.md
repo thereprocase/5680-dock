@@ -24,7 +24,9 @@ to pass a nominal 5.4 mm slot. These are design dimensions, not calibrated fits
 or measured insertion force/fatigue limits.
 
 Fan sockets are external and blind. No fan fastener enters the air wall, so the
-nominal enclosure audit needs no idealized bolt seals. Thin seam sealant remains
+nominal enclosure audit needs no idealized bolt seals. (P5, 18 September: optional
+M4 screw path added as bonus holes: 4.5-mm guard clearance, 3.5-mm blind pilots 6 mm
+deep in the flange on the 105-mm pattern. Still blind, so the audit is unchanged.) Thin seam sealant remains
 optional for physical airtightness, not structural attachment.
 
 Manufacturing: broad shell exterior X faces down, cavities up; guard faces down;

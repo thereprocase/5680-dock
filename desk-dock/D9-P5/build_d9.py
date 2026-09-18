@@ -54,6 +54,7 @@ def add(name,s,orientation,note,print_shape=None):
 # Pin axis is canonical Z; the key inserts along canonical Y. Pins print along
 # the bed, on their longitudinal octagonal flat. The key's two leaves flex in XY.
 PIN_R=4.1;FLAT=PIN_R*math.cos(math.pi/8)
+SCREW_PILOT_R=1.75;SCREW_CLEAR_R=2.25  # optional fan screws: M4 x 45 through guard (4.5 mm) and fan into 3.5-mm blind pilots
 BORE_R=4.2   # 8.4-mm bores for the 8.2-mm across-corners pins: 0.2-mm diametral clearance (P2/P3 used 4.4)
 KEY_BARB=3.6 # barb half-width: 7.2 mm through the 5.4-mm slot = 1.8 mm total interference (P2/P3: 3.1 = 0.8 mm)
 TONGUE_H=12.7 # T tongue height in print Z; P2/P3 value restored 2026-09-18 (the P4 0.6-mm trim chased support debris, not geometry)
@@ -141,6 +142,10 @@ for index,fx in enumerate(P['fan_centers_x'],1):
     fan_column=posed(cz(0,0,7.5,56.5,8.5),fx)
     slot=(cq.Workplane('XY',origin=((mx0+mx1)/2,0,46.5)).sketch().rect(mx1-mx0,21).vertices().fillet(4).finalize().extrude(3.5).val())
     air=air.fuse(fan_column).fuse(slot).clean();housing=stock.fuse(flange).cut(air).clean()
+    # Bonus fan-screw pilots (2026-09-18, optional): 3.5-mm blind holes 6 mm deep on the fan's 105-mm pattern, from the
+    # fan face into the 8-mm flange. Blind, so the air wall stays closed; the printed pins remain the primary mount.
+    screw_pilots=[posed(cz(sx,sy,7.4,SCREW_PILOT_R,6.1),fx) for sx in (-52.5,52.5) for sy in (-52.5,52.5)]
+    for hole in screw_pilots:housing=housing.cut(hole)
     # Four blind external sockets. No fan screw hole penetrates the air wall.
     for sx,sy,side_access in mounts:
         boss=box(sx-6,sy-8,-8,12,16,15.5).cut(socket_cutter(sx,sy,side_access))
@@ -192,7 +197,7 @@ for index,fx in enumerate(P['fan_centers_x'],1):
     add(names[0],left,'left','Broad outside X face on bed, cavity open upward. Internal pin-tab supports accessible before assembly.')
     add(names[1],right,'right','Broad outside X face on bed, cavity open upward. Blind fan sockets do not pierce the air wall.')
     socket_zone=box(frame_x-1,Y_OUT-1,26,18,RAIL_OUT-Y_OUT+2,28).rotate((0,0,54),(1,0,54),-LEAN)
-    for nm in names:PROTECT[nm]=[air,fan_keepout,socket_zone]+cutters+seam_cuts+foot_bores
+    for nm in names:PROTECT[nm]=[air,fan_keepout,socket_zone]+cutters+seam_cuts+foot_bores+[posed(cz(sx,sy,6.5,SCREW_PILOT_R+1,8),fx) for sx in (-52.5,52.5) for sy in (-52.5,52.5)]
     # Modular contact pieces for this end: seat block + fence liner, dropped into the frame socket, one horizontal pin.
     liner_kind='plug' if index==1 else 'far'
     dx=(frame_x-8,0,0)
@@ -217,7 +222,7 @@ for index,fx in enumerate(P['fan_centers_x'],1):
     for yy in range(-45,46,9):
         half=math.sqrt(56.5**2-yy**2)+1;guard=guard.fuse(box(-half,yy-1,-29,2*half,2,4))
     for sx in (-52.5,52.5):
-        for sy in (-52.5,52.5):guard=guard.fuse(cz(sx,sy,-25,5,7.5))
+        for sy in (-52.5,52.5):guard=guard.fuse(cz(sx,sy,-25,5,7.5)).cut(cz(sx,sy,-29.1,SCREW_CLEAR_R,11.7))  # bonus M4 clearance through plate and standoff
     for sx,sy,side_access in mounts:
         guard=guard.cut(cz(sx,sy,-29.1,BORE_R,4.2))
         place=lambda s,sx=sx,sy=sy:posed(s.translate((sx,sy,-29.2)),fx)
@@ -226,7 +231,7 @@ for index,fx in enumerate(P['fan_centers_x'],1):
     PROTECT[f'M{index}-fan-guard']=[posed(cz(0,0,-29.5,58.5,8),fx)]+[posed(cz(sx,sy,-30,6,10),fx) for sx in (-52.5,52.5) for sy in (-52.5,52.5)]+[posed(cz(sx,sy,-30,5.5,6),fx) for sx,sy,_ in mounts]
     fan=posed(box(-60,-60,-17.5,120,120,25).cut(cz(0,0,-17.6,56.5,25.2)),fx);FANS.append(fan)
     assert fan.intersect(material).Volume()<1e-3
-    MODULES.append({'module':index,'fan_center':[fx,FY,FZ],'mouth_area_mm2':mouth['area_mm2'],'air_volume_mm3':void.Volume(),'seam_tabs':seam,'fan_mount':'Four external blind sockets, printed octagonal pins and flat locking keys','ideal_fastener_seal_helpers':0})
+    MODULES.append({'module':index,'fan_center':[fx,FY,FZ],'mouth_area_mm2':mouth['area_mm2'],'air_volume_mm3':void.Volume(),'seam_tabs':seam,'fan_mount':'Four external blind sockets, printed octagonal pins and flat locking keys; bonus optional M4 x 45 screw path (4.5-mm guard clearance, 3.5-mm x 6-mm blind flange pilots on the 105-mm pattern)','ideal_fastener_seal_helpers':0})
 
 # Floor-backed T joints carry cross-tie loads through shoulders. The single
 # transverse pin prevents lifting the tongue; its short key is externally accessible.

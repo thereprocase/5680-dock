@@ -7,6 +7,9 @@ front wall 24 → 26.5 for the 8° lid. P4 fit corrections kept, except the T to
 which is back to 12.7 mm: the 0.6 mm “proud” reading was stuck support debris.
 Round-shaft trial: the four frame-end pins are round 8.2 mm with a bed flat (the
 printed octagons rattled in their 8.4 mm bores); judge them before converting the rest.
+Bonus fan-screw holes (optional): 4.5 mm through the guards, 3.5 mm × 6 mm blind pilots in
+every flange on the 105 mm pattern, for M4 × 45 screws; pins stay primary. Drill the M1 cradle
+and the two inner shells printed on 18 September using the guard as a jig.
 [Kit](../../printables/d9-p5/Precision_5680_D9_P5_Print_Kit.zip) · [fit plate](../../printables/d9-p5/OPEN-ME.3mf) · [notes](../../printables/d9-p5/README.md).
 
 1. Plates 02, 03, 05, 06, 07 (668 g, 26 h 36 m) do not depend on contact geometry: start any time.

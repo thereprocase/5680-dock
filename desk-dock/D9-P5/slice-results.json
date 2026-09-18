@@ -2,7 +2,7 @@
   {
     "plate": "00",
     "exit_code": 0,
-    "elapsed_s": 5.151756286621094,
+    "elapsed_s": 6.816004753112793,
     "command": [
       "C:\\Program Files\\OrcaSlicer\\orca-slicer.exe",
       "--datadir",
@@ -31,7 +31,7 @@
   {
     "plate": "01",
     "exit_code": 0,
-    "elapsed_s": 10.823095798492432,
+    "elapsed_s": 12.309600353240967,
     "command": [
       "C:\\Program Files\\OrcaSlicer\\orca-slicer.exe",
       "--datadir",
@@ -60,7 +60,7 @@
   {
     "plate": "02",
     "exit_code": 0,
-    "elapsed_s": 9.588456153869629,
+    "elapsed_s": 10.954050302505493,
     "command": [
       "C:\\Program Files\\OrcaSlicer\\orca-slicer.exe",
       "--datadir",
@@ -89,7 +89,7 @@
   {
     "plate": "03",
     "exit_code": 0,
-    "elapsed_s": 9.929196119308472,
+    "elapsed_s": 8.34752607345581,
     "command": [
       "C:\\Program Files\\OrcaSlicer\\orca-slicer.exe",
       "--datadir",
@@ -118,7 +118,7 @@
   {
     "plate": "04",
     "exit_code": 0,
-    "elapsed_s": 14.12013554573059,
+    "elapsed_s": 14.702341556549072,
     "command": [
       "C:\\Program Files\\OrcaSlicer\\orca-slicer.exe",
       "--datadir",
@@ -147,7 +147,7 @@
   {
     "plate": "05",
     "exit_code": 0,
-    "elapsed_s": 5.099031925201416,
+    "elapsed_s": 8.124704122543335,
     "command": [
       "C:\\Program Files\\OrcaSlicer\\orca-slicer.exe",
       "--datadir",
@@ -176,7 +176,7 @@
   {
     "plate": "06",
     "exit_code": 0,
-    "elapsed_s": 7.7228920459747314,
+    "elapsed_s": 8.75529670715332,
     "command": [
       "C:\\Program Files\\OrcaSlicer\\orca-slicer.exe",
       "--datadir",
@@ -205,7 +205,7 @@
   {
     "plate": "07",
     "exit_code": 0,
-    "elapsed_s": 10.74383020401001,
+    "elapsed_s": 9.905695676803589,
     "command": [
       "C:\\Program Files\\OrcaSlicer\\orca-slicer.exe",
       "--datadir",
@@ -234,7 +234,7 @@
   {
     "plate": "08",
     "exit_code": 0,
-    "elapsed_s": 6.1322290897369385,
+    "elapsed_s": 5.086638450622559,
     "command": [
       "C:\\Program Files\\OrcaSlicer\\orca-slicer.exe",
       "--datadir",
@@ -263,7 +263,7 @@
   {
     "plate": "09",
     "exit_code": 0,
-    "elapsed_s": 6.478586196899414,
+    "elapsed_s": 7.890899419784546,
     "command": [
       "C:\\Program Files\\OrcaSlicer\\orca-slicer.exe",
       "--datadir",
