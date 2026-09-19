@@ -61,8 +61,12 @@ P5 is the D9 P2 no-metal-hardware dock with these changes and nothing else:
    M2 front skin only, stopping flush at the gap on the M1 side, so it hints
    alignment and hides any offset. It is traced from the M2 end face after the
    edge treatment, so it follows the fan flange and boss ribs; it prints flat
-   on its gap-side face. Proven additive: nothing was removed from any printed
-   part. Plate 00 is regenerated: print it first and check insertion,
+   on its gap-side face. Plate 10 also carries three *alignment keys*, the
+   opposite hand of the trim in miniature: 2-mm tongue in the gap, 6-mm flange
+   over the M1 face, 2 mm proud, about 20 mm long and under a gram each, at the
+   front wall, the top and the fan face. They are temporary: drop them in with
+   the splice plate during glue-up, clamp, pull them, then fit the trim. Proven
+   additive: nothing was removed from any printed part. Plate 00 is regenerated: print it first and check insertion,
    retention and deliberate removal before the large parts.
 2. **Printable edge treatment.** Profile corners that run along each part's
    print Z are filleted (3 mm concave for stress relief, 1.5 mm convex for
@@ -84,8 +88,9 @@ before the cradles to feel the 8-degree seat and the peg fit. Plates 02, 03,
 
 Open **OPEN-ME.3mf** in OrcaSlicer; it is an identical copy of
 **00-START-HERE-fastener-fit.3mf**, print only one of the two. Then print
-plates **01 through 08 and 10 once each** for one dock: ten major parts, the splice plate
-and gap trim, four pegs, the centre contact, 22 pins and 20 locking keys. Each numbered 3MF contains
+plates **01 through 08 and 10 once each** for one dock: ten major parts, the splice plate,
+gap trim and three temporary alignment keys, four pegs, the centre contact, 22 pins and 20
+locking keys. Each numbered 3MF contains
 one frozen, named plate with matching embedded G-code; matching standalone
 G-code, oriented STL and assembly-coordinate STEP bodies are included. The
 STL poses are intentional; do not auto-orient them. Print the two outer

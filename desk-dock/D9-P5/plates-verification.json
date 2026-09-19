@@ -130,7 +130,7 @@
   },
   "07": {
     "passed": true,
-    "time": "2h 51m 45s; total estimated time: 2h 57m 56s",
+    "time": "2h 51m 45s; total estimated time: 2h 57m 57s",
     "filament_g": "",
     "objects": {
       "M1-seam-1-pin": {
@@ -359,12 +359,24 @@
   },
   "10": {
     "passed": true,
-    "time": "15m 58s; total estimated time: 22m 9s",
+    "time": "22m 2s; total estimated time: 28m 13s",
     "filament_g": "",
     "objects": {
       "gap-trim": {
         "support": 0,
         "external_bridge": 0
+      },
+      "align-aid-front": {
+        "support": 385,
+        "external_bridge": 7
+      },
+      "align-aid-top": {
+        "support": 610,
+        "external_bridge": 42
+      },
+      "align-aid-fan": {
+        "support": 417,
+        "external_bridge": 21
       }
     }
   }

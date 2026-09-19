@@ -10,7 +10,7 @@ def sha(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()
 def posed(s,fx):return s.rotate((0,0,0),(1,0,0),108).translate((fx,FY,FZ))
 def box(x,y,z,dx,dy,dz):return cq.Solid.makeBox(dx,dy,dz,cq.Vector(x,y,z))
 def cz(x,y,z,r,l):return cq.Solid.makeCylinder(r,l,cq.Vector(x,y,z),cq.Vector(0,0,1))
-skip=lambda n:any(k in n for k in ('fit-fixture','T-joint-fit','cradle-end-trial'))
+skip=lambda n:any(k in n for k in ('fit-fixture','T-joint-fit','cradle-end-trial','align-aid'))
 COL={'centre':[150,96,70],'cradle':[92,110,122],'plenum':[132,148,158],'guard':[70,84,92],'tie':[110,96,80],'pin':[214,178,92],'key':[236,206,120],'peg':[196,120,88],'lock':[214,178,92],'laptop':[46,52,58],'fan':[40,40,44]}
 def group(n):
     if n in ('splice-plate','gap-trim'):return 'centre'

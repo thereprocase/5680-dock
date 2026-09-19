@@ -336,7 +336,7 @@ COUPONS['cradle-end-trial']=(trial,pose(trial,'left'))
 # Cosmetic edge treatment on shells, guards and ties; pins, keys and coupons stay exact.
 for name in list(PARTS):
     orientation=ORIENT.get(name)
-    if orientation is None or name.endswith(('-pin','-key')) or name in ('splice-plate','center-contact','gap-trim'):continue  # centre parts: every face is a fit, a bond face or the desk gap
+    if orientation is None or name.endswith(('-pin','-key')) or name in ('splice-plate','center-contact','gap-trim') or name.startswith('align-aid'):continue  # centre parts: every face is a fit, a bond face or the desk gap
     is_tie='-tie-' in name
     shape,report=dress(PARTS[name],PRINT_Z[orientation],PROTECT.get(name,[]),inside=EDGE['inside'],outside=EDGE['outside'],top_chamfer=EDGE['top_chamfer'] if is_tie else 0.0)
     DRESS[name]=report;PARTS[name]=shape;POSES[name]=norm(pose(shape,orientation))
@@ -364,6 +364,15 @@ tongue=_ext(_inF,_gx0,_gx1-_gx0).cut(_inset(TRIM_DEPTH,_gx0-1,_gx1-_gx0+2))
 trim=flange.fuse(tongue).intersect(_front).clean()
 _tb=sorted(trim.Solids(),key=lambda q:-q.Volume());print('gap-trim bodies',[round(q.Volume(),1) for q in _tb],flush=True);trim=_tb[0]
 add('gap-trim',trim,'left','Gap trim: L strip, 2-mm tongue registers in the gap between the inner halves, 1.2-mm flange lays 4 mm over the M2 front skin only and stops flush at the gap on the M1 side. Prints flat on its gap-side face.')
+# Alignment aids (2026-09-19): three ~20-mm opposite-hand keys, temporary. Same 2-mm tongue in the gap, but the flange lays
+# 6 mm over the M1 face and stands 2 mm proud so pliers can pull them. Drop them in with the splice plate during glue-up,
+# clamp, pull them, then fit the trim. They share the gap with the trim by design, so that pair is exempt from the
+# interference check. Print flat with the trim on plate 10.
+AID_OVER,AID_PROUD=6.0,2.0
+_aidF=cq.Face.makeFromWires(_ow.offset2D(AID_PROUD,'arc')[0])
+aid=_ext(_aidF,_gx0-AID_OVER,(_gx1-_gx0)+AID_OVER).cut(_ext(_inF,_gx0-AID_OVER-1,(_gx1-_gx0)+AID_OVER+2)).fuse(_ext(_inF,_gx0,_gx1-_gx0).cut(_inset(TRIM_DEPTH,_gx0-1,_gx1-_gx0+2))).intersect(_front)
+for _nm,_win in (('align-aid-front',box(160,20,78,40,9,20)),('align-aid-top',box(160,27,126,40,20,10)),('align-aid-fan',box(160,56,36,40,18,16))):
+    _pc=sorted(aid.intersect(_win).Solids(),key=lambda q:-q.Volume());add(_nm,_pc[0],'left','Temporary alignment key: 2-mm tongue in the gap, 6-mm flange over the M1 face, 2 mm proud. Use during glue-up, clamp, pull, then fit the trim. Prints flat.')
 _tclear=_ext(_inF,_gap_lo,_gap_hi-_gap_lo).cut(_inset(TRIM_DEPTH+.3,_gap_lo-1,_gap_hi-_gap_lo+2)).intersect(_front)
 _fclear=_ext(cq.Face.makeFromWires(_ow.offset2D(TRIM_PROUD+.3,'arc')[0]),_gap_lo,_gap_hi-_gap_lo).cut(_ext(_inF,_gap_lo-1,_gap_hi-_gap_lo+2)).intersect(_front)   # the fin's sharp corners must not poke into the trim flange
 _sb=sorted(PARTS['splice-plate'].cut(_tclear).cut(_fclear).clean().Solids(),key=lambda q:-q.Volume());print('splice-plate bodies after trim clearance',[round(q.Volume(),1) for q in _sb],flush=True)
@@ -400,6 +409,7 @@ for i,n in enumerate(names):
         if not boxes_overlap(bounds[n],bounds[m]):continue
         overlap=PARTS[n].intersect(PARTS[m]).Volume()
         cam_pair='-insert-pin' in (n+m) and ('-peg' in n or '-peg' in m)
+        if ('align-aid' in n or 'align-aid' in m) and ('gap-trim' in (n+m) or 'align-aid' in n and 'align-aid' in m):continue   # aids and trim occupy the gap in turn, never together
         if overlap>(1.0 if cam_pair else 1e-3):checks.append({'a':n,'b':m,'overlap_mm3':overlap})
 motion_hits=[]
 for name,shape,axis,distance,exclude in MOTIONS:

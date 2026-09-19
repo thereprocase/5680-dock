@@ -17,7 +17,7 @@ assert len(fasteners)==40
 PLATES.append(fasteners)
 PLATES.append(['M1-seat-peg','M2-seat-peg','M1-fence-peg','M2-fence-peg','M1-insert-pin','M2-insert-pin','splice-plate','center-contact'])
 PLATES.append(['cradle-end-trial','M1-fence-peg','M1-seat-peg','M1-insert-pin'])
-PLATES.append(['gap-trim'])   # plate 10: the splice's front trim, flat on its gap-side face
+PLATES.append(['gap-trim','align-aid-front','align-aid-top','align-aid-fan'])   # plate 10: the splice's front trim and the three temporary alignment keys, flat
 FIT=['fan-socket-fit-fixture','M1-fan-3-pin','M1-fan-3-key','side-socket-fit-fixture','M1-fan-1-pin','M1-fan-1-key','T-joint-fit-L','T-joint-fit-R','front-lap-pin','front-lap-key']
 REVIEW='''D9 P5 geometry-selected manufacturing review
 
@@ -75,6 +75,8 @@ def prepare(index,names):
         size=[hi[i]-lo[i] for i in range(3)]
         if index==0:
             x,y=[(25,40),(80,40),(110,40),(145,40),(198,40),(225,40),(25,130),(95,130),(165,130),(198,130)][oid-1]
+        elif index==10:
+            x,y=[(24,34),(150,34),(150,64),(150,94)][oid-1]   # brims clear the P1S front-left purge zone
         elif index==9:
             x,y=[(12,12),(20,178),(125,178),(200,20)][oid-1]
         elif index==8:
