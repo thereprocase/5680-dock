@@ -68,3 +68,5 @@ Revised the same day: the underside rail is on the plug-end cradle (module 1) on
 Lean 8 degrees. R7 frame on both cradle ends with the socket void subtracted from the fused cradle; drop-in seat peg and fence peg per end locked by one horizontal fan pin (0.15-mm cam offset, push-out holes); plenum front wall 24 -> 26.5 for the 8-degree lid; plate 08 pegs, plate 09 cradle-end trial. P4 fit corrections kept.
 
 Support-reducing gussets (18 September): ribs or 34-degree wedges under every external socket boss (clipped 0.5 mm clear of the tie envelopes) and a 34-degree wedge on the pin-tip end of each seam tab (bore extended through it). Proven additive-only against the previous geometry; air volume follows the material, audits unchanged.
+
+Centre frame (19 September): third R7 frame at the splice between the inner halves, trimmed to the printed halves' envelope (0.15 mm), 2-mm registration fin in the 2.3-mm gap, floor-following splice foot, base 0.5 mm above the corner feet, bore and slot for the front lap pin and key; same seat peg (cropped at the roof) and 15-mm fence peg; epoxied, no lock pin. 59 printed parts.

@@ -15,7 +15,7 @@ manifest=json.loads((GEN/'manifest.json').read_text())
 fasteners=[p['part'] for p in manifest['parts'] if p['part'].endswith(('-pin','-key')) and '-insert-' not in p['part']]
 assert len(fasteners)==40
 PLATES.append(fasteners)
-PLATES.append(['M1-seat-peg','M2-seat-peg','M1-fence-peg','M2-fence-peg','M1-insert-pin','M2-insert-pin'])
+PLATES.append(['M1-seat-peg','M2-seat-peg','M1-fence-peg','M2-fence-peg','M1-insert-pin','M2-insert-pin','center-frame','center-seat-peg','center-fence-peg'])
 PLATES.append(['cradle-end-trial','M1-fence-peg','M1-seat-peg','M1-insert-pin'])
 FIT=['fan-socket-fit-fixture','M1-fan-3-pin','M1-fan-3-key','side-socket-fit-fixture','M1-fan-1-pin','M1-fan-1-key','T-joint-fit-L','T-joint-fit-R','front-lap-pin','front-lap-key']
 REVIEW='''D9 P5 geometry-selected manufacturing review
@@ -77,7 +77,7 @@ def prepare(index,names):
         elif index==9:
             x,y=[(12,12),(20,178),(125,178),(200,20)][oid-1]
         elif index==8:
-            x,y=[(20,30),(60,30),(20,90),(120,30),(170,30),(200,30)][oid-1]
+            x,y=[(20,30),(60,30),(20,90),(120,30),(170,30),(200,30),(20,115),(165,120),(185,120)][oid-1]
         elif index==7:
             joint=(oid-1)//2;column=joint%5;row=joint//5
             x=20+column*46+(25 if name.endswith('-key') else 0);y=35+row*52

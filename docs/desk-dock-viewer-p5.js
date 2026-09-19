@@ -11,7 +11,7 @@ scene.add(new THREE.HemisphereLight(0xeaf8ff,0x344247,2.5));
 for(const [p,i] of [[[200,400,700],3],[[-400,-200,300],2]]){const l=new THREE.DirectionalLight(0xffffff,i);l.position.set(...p);scene.add(l);}
 const meshes=[],air=new THREE.Group();scene.add(air);air.visible=false;
 let manifest=null,playing=false,start=0,selected=null;
-const TOGGLE={laptop:['laptop'],fans:['fan'],pegs:['peg','lock'],fasteners:['pin','key'],guards:['guard'],ties:['tie']};
+const TOGGLE={laptop:['laptop'],fans:['fan'],pegs:['peg','lock'],fasteners:['pin','key'],guards:['guard'],ties:['tie'],centre:['centre']};
 const pretty=n=>n.replace('Precision_5680_REFERENCE','Laptop (reference)').replace(/fan_120mm_M(\d)/,'120 mm fan, module $1 (purchased)').replaceAll('-',' ');
 function stop(){playing=false;$('play').textContent='▶ Play docking motion';$('play').setAttribute('aria-pressed','false');}
 function update(){if(!manifest)return;const e=+$('explode').value/100,t=+$('motion').value/100;

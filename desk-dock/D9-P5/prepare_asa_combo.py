@@ -14,6 +14,7 @@ sys.path.insert(0,str(ROOT/'work/quartet-team/architect'))
 from prepare_coupon_plate import mesh,NS
 GEN=HERE/'generated'
 LABEL=sys.argv[1] if len(sys.argv)>1 else '10-inner-pair-pegs'
+LAYOUT_FILE=sys.argv[2] if len(sys.argv)>2 else None   # optional JSON: [[name, x, y, rot_z_deg], ...]; rot_z keeps the print orientation
 LAYOUT=[('M1-fence-peg',19,34),('M2-fence-peg',19,62),
         ('M1-seat-peg',19,88),('M2-seat-peg',60,88),
         ('M1-insert-pin',19,120),('M2-insert-pin',50,120),
@@ -21,14 +22,21 @@ LAYOUT=[('M1-fence-peg',19,34),('M2-fence-peg',19,62),
         ('front-frame-L-key',19,213),('front-frame-R-key',34,213),('rear-frame-L-key',49,213),('rear-frame-R-key',64,213),
         ('M1-inner-shell',114,10),('M2-inner-shell',114,131)]
 # Peg column on the left starting at y=34 so its 5-mm brim clears the 18 x 28 mm purge exclusion; shells to the right.
+if LAYOUT_FILE:LAYOUT=[tuple(r) for r in json.loads(Path(LAYOUT_FILE).read_text())]
 folder=HERE/'asa'/LABEL
 assert not folder.exists(),folder
 folder.mkdir(parents=True)
 root=ET.Element(f'{{{NS}}}model',{'unit':'millimeter','xml:lang':'en-US'})
 resources=ET.SubElement(root,f'{{{NS}}}resources');build=ET.SubElement(root,f'{{{NS}}}build')
 records=[];objects=[];boxes=[]
-for oid,(name,x,y) in enumerate(LAYOUT,1):
+for oid,row in enumerate(LAYOUT,1):
+    name,x,y=row[:3];rotz=row[3] if len(row)>3 else 0
     path=GEN/(name+'.stl');vertices,faces,lo,hi=mesh(path)
+    if rotz:
+        import math
+        c,sn=math.cos(math.radians(rotz)),math.sin(math.radians(rotz))
+        vertices=[(c*vx-sn*vy,sn*vx+c*vy,vz) for vx,vy,vz in vertices]
+        lo=[min(v[i] for v in vertices) for i in range(3)];hi=[max(v[i] for v in vertices) for i in range(3)]
     size=[hi[i]-lo[i] for i in range(3)]
     shift=[x-lo[0],y-lo[1],-lo[2]]
     assert x>=19 and y>=10  # x>=19 keeps every part clear of the P1S front-left purge exclusion (18 x 28 mm) and x+size[0]<=246 and y+size[1]<=246,(name,x,y,size)
@@ -41,7 +49,7 @@ for oid,(name,x,y) in enumerate(LAYOUT,1):
     for f in faces:ET.SubElement(ff,f'{{{NS}}}triangle',dict(zip(('v1','v2','v3'),map(str,f))))
     ET.SubElement(build,f'{{{NS}}}item',{'objectid':str(oid),'transform':'1 0 0 0 1 0 0 0 1 '+' '.join(map(str,shift))})
     sha=hashlib.sha256(path.read_bytes()).hexdigest()
-    records.append({'name':name,'source_sha256':sha,'bounds':[lo,hi],'translation':shift})
+    records.append({'name':name,'source_sha256':sha,'bounds':[lo,hi],'translation':shift,'rotation_z_deg':rotz})
     objects.append({'name':name,'source':str(path),'sha256':sha,'strict':False,
                     'bed_bounds_mm':[[lo[i]+shift[i] for i in range(3)],[hi[i]+shift[i] for i in range(3)]],'translation_mm':shift})
 with zipfile.ZipFile(folder/'input.3mf','w',zipfile.ZIP_DEFLATED) as z:

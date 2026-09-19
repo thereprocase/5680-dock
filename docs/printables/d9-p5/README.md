@@ -41,7 +41,18 @@ P5 is the D9 P2 no-metal-hardware dock with these changes and nothing else:
    ends. The wedges add about 15 cm3 per plenum and 30 to 35 minutes of print time
    per gusseted shell, so the trade is cleanup for time. `overhang-threshold-test/`
    is the calibration: this Orca profile supports faces at 45 degrees from
-   vertical and leaves 35 degrees alone. Plate 00 is regenerated: print it first and check insertion,
+   vertical and leaves 35 degrees alone.
+4. **Centre frame (19 September).** The two inner halves stop 2.3 mm apart at
+   the middle with nothing joining them above the ties and no laptop contact
+   between the frame ends. Plate 08 now carries a third cradle-end frame: the
+   same R7 profile and peg sockets as the ends, so it takes the same seat peg
+   and a 15-mm fence peg (both on the plate, the seat peg cropped to sit on the
+   plenum roof), trimmed to wrap the printed halves with 0.15 mm clearance, a
+   2-mm fin that fills the gap and registers it, a foot that follows the plenum
+   floor under the splice, and a base that stops 0.5 mm above the four corner
+   feet so the dock never rocks on the middle. The front T-joint's lap pin and
+   key pass through it. It is epoxied to both halves; there is no lock pin.
+   Proven additive: nothing was removed from any printed part. Plate 00 is regenerated: print it first and check insertion,
    retention and deliberate removal before the large parts.
 2. **Printable edge treatment.** Profile corners that run along each part's
    print Z are filleted (3 mm concave for stress relief, 1.5 mm convex for
@@ -63,7 +74,7 @@ before the cradles to feel the 8-degree seat and the peg fit. Plates 02, 03,
 
 Open **OPEN-ME.3mf** in OrcaSlicer; it is an identical copy of
 **00-START-HERE-fastener-fit.3mf**, print only one of the two. Then print
-plates **01 through 08 once each** for one dock: ten major parts, four pegs,
+plates **01 through 08 once each** for one dock: eleven major parts, six pegs,
 22 pins and 20 locking keys. Each numbered 3MF contains
 one frozen, named plate with matching embedded G-code; matching standalone
 G-code, oriented STL and assembly-coordinate STEP bodies are included. The
@@ -142,7 +153,7 @@ print directory.
 
 - fit plate 00: 40.58 g; 1h 53m 15s.
 - cradle end trial 09: 136.42 g; 7h 1m 18s.
-- assembly plates 01 to 08: 1151.26 g; 49h 33m 52s.
-- outer cradle plates 01 and 04: 446.38 g; 20h 36m 7s.
-- contact pegs 08: 29.91 g; 1h 18m 53s.
-- contact independent plates 02 03 05 06 07: 674.97 g; 27h 38m 52s.
+- assembly plates 01 to 08: 1212.06 g; 51h 31m 14s.
+- outer cradle plates 01 and 04: 446.29 g; 20h 35m 31s.
+- contact pegs 08: 90.80 g; 3h 16m 54s.
+- contact independent plates 02 03 05 06 07: 674.97 g; 27h 38m 49s.
