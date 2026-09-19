@@ -2,7 +2,7 @@
   {
     "plate": "00",
     "exit_code": 0,
-    "elapsed_s": 3.943732976913452,
+    "elapsed_s": 5.154812812805176,
     "command": [
       "C:\\Program Files\\OrcaSlicer\\orca-slicer.exe",
       "--datadir",
@@ -31,7 +31,7 @@
   {
     "plate": "01",
     "exit_code": 0,
-    "elapsed_s": 10.52966856956482,
+    "elapsed_s": 10.603212118148804,
     "command": [
       "C:\\Program Files\\OrcaSlicer\\orca-slicer.exe",
       "--datadir",
@@ -60,7 +60,7 @@
   {
     "plate": "02",
     "exit_code": 0,
-    "elapsed_s": 13.432708978652954,
+    "elapsed_s": 16.073575258255005,
     "command": [
       "C:\\Program Files\\OrcaSlicer\\orca-slicer.exe",
       "--datadir",
@@ -89,7 +89,7 @@
   {
     "plate": "03",
     "exit_code": 0,
-    "elapsed_s": 13.21914005279541,
+    "elapsed_s": 11.236291408538818,
     "command": [
       "C:\\Program Files\\OrcaSlicer\\orca-slicer.exe",
       "--datadir",
@@ -118,7 +118,7 @@
   {
     "plate": "04",
     "exit_code": 0,
-    "elapsed_s": 11.679586410522461,
+    "elapsed_s": 12.781727075576782,
     "command": [
       "C:\\Program Files\\OrcaSlicer\\orca-slicer.exe",
       "--datadir",
@@ -147,7 +147,7 @@
   {
     "plate": "05",
     "exit_code": 0,
-    "elapsed_s": 9.74173092842102,
+    "elapsed_s": 6.7347447872161865,
     "command": [
       "C:\\Program Files\\OrcaSlicer\\orca-slicer.exe",
       "--datadir",
@@ -176,7 +176,7 @@
   {
     "plate": "06",
     "exit_code": 0,
-    "elapsed_s": 9.912307262420654,
+    "elapsed_s": 10.63142204284668,
     "command": [
       "C:\\Program Files\\OrcaSlicer\\orca-slicer.exe",
       "--datadir",
@@ -205,7 +205,7 @@
   {
     "plate": "07",
     "exit_code": 0,
-    "elapsed_s": 10.80259108543396,
+    "elapsed_s": 12.001112699508667,
     "command": [
       "C:\\Program Files\\OrcaSlicer\\orca-slicer.exe",
       "--datadir",
@@ -234,7 +234,7 @@
   {
     "plate": "08",
     "exit_code": 0,
-    "elapsed_s": 9.488048791885376,
+    "elapsed_s": 6.686525106430054,
     "command": [
       "C:\\Program Files\\OrcaSlicer\\orca-slicer.exe",
       "--datadir",
@@ -263,7 +263,7 @@
   {
     "plate": "09",
     "exit_code": 0,
-    "elapsed_s": 7.020980358123779,
+    "elapsed_s": 10.868473529815674,
     "command": [
       "C:\\Program Files\\OrcaSlicer\\orca-slicer.exe",
       "--datadir",
@@ -287,6 +287,35 @@
       "--outputdir",
       "C:\\Users\\repro\\Documents\\Codex\\2026-09-17\\for-x20\\work\\d9-p5-print-pass\\plates\\09",
       "C:\\Users\\repro\\Documents\\Codex\\2026-09-17\\for-x20\\work\\d9-p5-print-pass\\plates\\09\\input.3mf"
+    ]
+  },
+  {
+    "plate": "10",
+    "exit_code": 0,
+    "elapsed_s": 7.193512439727783,
+    "command": [
+      "C:\\Program Files\\OrcaSlicer\\orca-slicer.exe",
+      "--datadir",
+      "C:\\Users\\repro\\Documents\\Codex\\2026-09-17\\for-x20\\work\\d9-p5-print-pass\\plates\\10\\data",
+      "--debug",
+      "2",
+      "--logfile",
+      "C:\\Users\\repro\\Documents\\Codex\\2026-09-17\\for-x20\\work\\d9-p5-print-pass\\plates\\10\\slice.log",
+      "--load-settings",
+      "C:\\Users\\repro\\Documents\\Codex\\2026-09-17\\for-x20\\work\\d9-p5-print-pass\\plates\\10\\machine.json;C:\\Users\\repro\\Documents\\Codex\\2026-09-17\\for-x20\\work\\d9-p5-print-pass\\plates\\10\\process.json",
+      "--load-filaments",
+      "C:\\Users\\repro\\Documents\\Codex\\2026-09-17\\for-x20\\work\\d9-p5-print-pass\\plates\\10\\filament.json",
+      "--arrange",
+      "0",
+      "--orient",
+      "0",
+      "--slice",
+      "0",
+      "--export-3mf",
+      "sliced.3mf",
+      "--outputdir",
+      "C:\\Users\\repro\\Documents\\Codex\\2026-09-17\\for-x20\\work\\d9-p5-print-pass\\plates\\10",
+      "C:\\Users\\repro\\Documents\\Codex\\2026-09-17\\for-x20\\work\\d9-p5-print-pass\\plates\\10\\input.3mf"
     ]
   }
 ]

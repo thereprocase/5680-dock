@@ -13,7 +13,7 @@ def cz(x,y,z,r,l):return cq.Solid.makeCylinder(r,l,cq.Vector(x,y,z),cq.Vector(0,
 skip=lambda n:any(k in n for k in ('fit-fixture','T-joint-fit','cradle-end-trial'))
 COL={'centre':[150,96,70],'cradle':[92,110,122],'plenum':[132,148,158],'guard':[70,84,92],'tie':[110,96,80],'pin':[214,178,92],'key':[236,206,120],'peg':[196,120,88],'lock':[214,178,92],'laptop':[46,52,58],'fan':[40,40,44]}
 def group(n):
-    if n=='splice-plate':return 'centre'
+    if n in ('splice-plate','gap-trim'):return 'centre'
     if n=='center-contact':return 'peg'
     if 'outer-cradle' in n:return 'cradle'
     if 'inner-shell' in n:return 'plenum'
@@ -25,19 +25,21 @@ def group(n):
     if '-peg' in n:return 'peg'
     return 'other'
 def explode(n,g,c):
-    m=1 if n.startswith('M1') or 'front' in n else 2;s=-1 if m==1 else 1
-    if g=='centre':return [0,0,45]
-    if g=='cradle':return [s*70,0,0]
-    if g=='plenum':return [-s*35,0,0]
-    if g=='guard':return [0,EX[1]*100,EX[2]*100]
+    side=1 if 'M2' in n or n.endswith('-R') or '-R-' in n else -1 if 'M1' in n or n.endswith('-L') or '-L-' in n else 0
+    mo=[side*55,0,0];add=lambda v:[mo[0]+v[0],mo[1]+v[1],mo[2]+v[2]]
+    if g=='cradle':return add([side*30,0,0])
+    if g=='plenum':return add([0,0,0])
+    if g=='guard':return add([0,EX[1]*100,EX[2]*100])
+    if g=='fan':return add([0,EX[1]*50,EX[2]*50])
     if g=='tie':return [0,0,-60]
-    if g=='peg':return [0,math.sin(math.radians(LEAN))*70,math.cos(math.radians(LEAN))*70]
-    if g=='lock':return [0,-70,0]
-    if 'fan' in n:return [0,EX[1]*130,EX[2]*130] if g=='pin' else [0,EX[1]*150,EX[2]*150+15]
-    if 'seam' in n:return [0,0,90] if g=='pin' else [0,0,110]
-    if 'frame' in n:return [s*90,0,0] if g=='pin' else [s*90,0,30]
+    if g=='centre':return [0,60,25] if n=='gap-trim' else [0,0,-40]
+    if g=='peg':return [0,0,70] if n=='center-contact' else add([0,math.sin(math.radians(LEAN))*70,math.cos(math.radians(LEAN))*70])
+    if g=='lock':return add([0,-70,0])
+    if 'fan' in n:return add([0,EX[1]*130,EX[2]*130]) if g=='pin' else add([0,EX[1]*150,EX[2]*150+15])
+    if 'seam' in n:return add([0,0,90]) if g=='pin' else add([0,0,110])
+    if 'frame' in n:return add([side*35,0,0]) if g=='pin' else add([side*35,0,30])
     if 'lap' in n:return [0,-70,0] if g=='pin' else [0,-70,30]
-    return [0,0,60]
+    return add([0,0,60])
 NOTES={r['part']:r.get('manufacturing','') for r in man['parts']}
 data=bytearray();entries=[];prov={}
 def emit(name,shape,g,ref=False,tol=(0.35,0.2)):
@@ -47,7 +49,7 @@ def emit(name,shape,g,ref=False,tol=(0.35,0.2)):
     ioff=len(data)
     for f in faces:data.extend(struct.pack('<III',*f))
     b=shape.BoundingBox();c=[(b.xmin+b.xmax)/2,(b.ymin+b.ymax)/2,(b.zmin+b.zmax)/2]
-    entries.append({'name':name,'group':g,'color':COL[g],'reference':ref,'positionOffset':off,'vertexCount':len(verts),'indexOffset':ioff,'indexCount':3*len(faces),'center':c,'explode':explode(name,g,c) if not ref else [0,0,0],'note':NOTES.get(name,'')})
+    entries.append({'name':name,'group':g,'color':COL[g],'reference':ref,'positionOffset':off,'vertexCount':len(verts),'indexOffset':ioff,'indexCount':3*len(faces),'center':c,'explode':explode(name,g,c) if (not ref or g=='fan') else [0,0,0],'note':NOTES.get(name,'')})
     print(name,len(faces),'tris',flush=True)
 for r in man['parts']:
     n=r['part']
@@ -63,7 +65,7 @@ for i,fx in enumerate(P['fan_centers_x'],1):
     emit(f'fan_120mm_M{i}',fan,'fan',ref=True,tol=(0.5,0.3))
 up=[0,math.sin(math.radians(LEAN)),math.cos(math.radians(LEAN))]
 manifest={'revision':'D9-P5','units':'mm','coordinate_frame':'assembly: X along the dock (plug end at low X), Y toward the lid, Z up','laptop_lean_deg':LEAN,'undocked_x_offset_mm':18,'laptop_up':up,'exhaust_axis':list(EX),'fan_centers_x':P['fan_centers_x'],
-          'groups':{'centre':'Splice plate (epoxied); the centre contact is with the pegs','cradle':'Outer cradle shells (R7 frame ends)','plenum':'Inner plenum halves','guard':'Fan guards','tie':'Front and rear ties','pin':'Printed pins','key':'Locking keys','peg':'Seat and fence pegs','lock':'Peg lock pins','laptop':'Laptop reference','fan':'120 x 25 mm fans (purchased)'},'parts':entries}
+          'groups':{'centre':'Splice plate and gap trim (epoxied); the centre contact is with the pegs','cradle':'Outer cradle shells (R7 frame ends)','plenum':'Inner plenum halves','guard':'Fan guards','tie':'Front and rear ties','pin':'Printed pins','key':'Locking keys','peg':'Seat and fence pegs','lock':'Peg lock pins','laptop':'Laptop reference','fan':'120 x 25 mm fans (purchased)'},'parts':entries}
 (OUT/'model.bin').write_bytes(bytes(data));(OUT/'model.json').write_text(json.dumps(manifest))
 (OUT/'provenance.json').write_text(json.dumps({'builder_sha256':sha(HERE/'build_d9.py'),'manifest_sha256':sha(GEN/'manifest.json'),'step_sha256':prov,'tessellation':'cadquery tessellate: shells and ties 0.18/0.12, small parts 0.15/0.1, reference bodies 0.5/0.3','model_bin_bytes':len(data)},indent=1))
 print('parts',len(entries),'bytes',len(data),'MB %.1f'%(len(data)/1e6))

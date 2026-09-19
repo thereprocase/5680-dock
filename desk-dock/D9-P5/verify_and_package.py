@@ -10,9 +10,9 @@ OUT=ROOT/'outputs/5680-design-team/D9-P5-PRINT-KIT'
 OUT.mkdir(parents=True,exist_ok=True)
 reports=[]
 sheet=Image.new('RGB',(2080,1120),'white');draw=ImageDraw.Draw(sheet)
-LABELS=['00-START-HERE-fastener-fit','01-M1-outer-cradle','02-M1-inner','03-M2-inner','04-M2-outer-cradle','05-M1-guard-front-ties','06-M2-guard-rear-ties','07-printed-pins-and-keys','08-contact-pegs','09-cradle-end-trial']
+LABELS=['00-START-HERE-fastener-fit','01-M1-outer-cradle','02-M1-inner','03-M2-inner','04-M2-outer-cradle','05-M1-guard-front-ties','06-M2-guard-rear-ties','07-printed-pins-and-keys','08-contact-pegs','09-cradle-end-trial','10-gap-trim']
 ns={'m':'http://schemas.microsoft.com/3dmanufacturing/core/2015/02'}
-for index in range(10):
+for index in range(11):
     folder=HERE/'plates'/f'{index:02d}'
     prep=json.loads((folder/'preparation.json').read_text())
     data=(folder/'plate_1.gcode').read_bytes();text=data.decode()
@@ -103,7 +103,7 @@ sheet.save(OUT/'D9-actual-toolpath-review.png')
 gen=HERE/'generated'
 cad=OUT/'CAD';cad.mkdir(exist_ok=True)
 manifest=json.loads((gen/'manifest.json').read_text())
-assert manifest['metal_hardware_count']==0 and manifest['printed_parts']==58 and not manifest['part_interferences']
+assert manifest['metal_hardware_count']==0 and manifest['printed_parts']==59 and not manifest['part_interferences']
 assert json.loads((gen/'insertion-motion.json').read_text())['sampled_motion_clear']
 assert all(json.loads((gen/f'M{i}-enclosure-final.json').read_text())['passed'] for i in (1,2))
 for part in manifest['parts']+manifest['fit_coupons']:
@@ -132,7 +132,7 @@ def totals(selected):
                 duration=line.split('total estimated time:')[-1]
                 seconds+=sum(int(n)*{'d':86400,'h':3600,'m':60,'s':1}[unit] for n,unit in re.findall(r'(\d+)([dhms])',duration))
     return {'filament_g':round(grams,2),'estimated_seconds':seconds,'estimated_time':f'{seconds//3600}h {(seconds%3600)//60}m {seconds%60}s'}
-estimates={'fit_plate_00':totals(reports[:1]),'cradle_end_trial_09':totals(reports[9:10]),'assembly_plates_01_to_08':totals(reports[1:9]),'outer_cradle_plates_01_and_04':totals([reports[1],reports[4]]),'contact_pegs_08':totals([reports[8]]),'contact_independent_plates_02_03_05_06_07':totals([reports[2],reports[3],reports[5],reports[6],reports[7]])}
+estimates={'fit_plate_00':totals(reports[:1]),'cradle_end_trial_09':totals(reports[9:10]),'assembly_plates_01_to_08':totals(reports[1:9]),'gap_trim_10':totals(reports[10:11]),'outer_cradle_plates_01_and_04':totals([reports[1],reports[4]]),'contact_pegs_08':totals([reports[8]]),'contact_independent_plates_02_03_05_06_07':totals([reports[2],reports[3],reports[5],reports[6],reports[7]])}
 (OUT/'verification/estimates.json').write_text(json.dumps(estimates,indent=2)+'\n')
 with (OUT/'README.md').open('a',encoding='utf-8') as f:
     f.write('\n## Orca estimates\n\n')

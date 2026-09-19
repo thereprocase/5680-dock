@@ -81,18 +81,18 @@
   },
   "04": {
     "passed": true,
-    "time": "10h 37m 40s; total estimated time: 10h 43m 51s",
+    "time": "10h 37m 44s; total estimated time: 10h 43m 55s",
     "filament_g": "",
     "objects": {
       "M2-outer-cradle-shell": {
-        "support": 16007,
+        "support": 15999,
         "external_bridge": 788
       }
     }
   },
   "05": {
     "passed": true,
-    "time": "5h 1m 4s; total estimated time: 5h 7m 16s",
+    "time": "5h 1m 14s; total estimated time: 5h 7m 26s",
     "filament_g": "",
     "objects": {
       "M1-fan-guard": {
@@ -297,7 +297,7 @@
   },
   "08": {
     "passed": true,
-    "time": "3h 9m 6s; total estimated time: 3h 15m 17s",
+    "time": "3h 4m 43s; total estimated time: 3h 10m 55s",
     "filament_g": "",
     "objects": {
       "M1-seat-peg": {
@@ -325,8 +325,8 @@
         "external_bridge": 0
       },
       "splice-plate": {
-        "support": 5874,
-        "external_bridge": 1065
+        "support": 6029,
+        "external_bridge": 809
       },
       "center-contact": {
         "support": 622,
@@ -353,6 +353,17 @@
       },
       "M1-insert-pin": {
         "support": 973,
+        "external_bridge": 0
+      }
+    }
+  },
+  "10": {
+    "passed": true,
+    "time": "15m 58s; total estimated time: 22m 9s",
+    "filament_g": "",
+    "objects": {
+      "gap-trim": {
+        "support": 0,
         "external_bridge": 0
       }
     }

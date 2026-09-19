@@ -54,8 +54,13 @@ P5 is the D9 P2 no-metal-hardware dock with these changes and nothing else:
    splice plate's fence channel, and the seat head (R2 seat, V5 C relief)
    merged onto it through a plate that simply bears on the shelf across the
    joint. The foot registers it; it lifts out for another machine. No pin. The front T-joint's lap pin and key pass
-   through the splice plate. Proven additive: nothing was removed from any
-   printed part. Plate 00 is regenerated: print it first and check insertion,
+   through the splice plate. Plate 10 adds the *gap trim*: an L strip whose
+   2-mm tongue registers in the gap and whose 1.2-mm flange lays 4 mm over the
+   M2 front skin only, stopping flush at the gap on the M1 side, so it hints
+   alignment and hides any offset. It is traced from the M2 end face after the
+   edge treatment, so it follows the fan flange and boss ribs; it prints flat
+   on its gap-side face. Proven additive: nothing was removed from any printed
+   part. Plate 00 is regenerated: print it first and check insertion,
    retention and deliberate removal before the large parts.
 2. **Printable edge treatment.** Profile corners that run along each part's
    print Z are filleted (3 mm concave for stress relief, 1.5 mm convex for
@@ -77,8 +82,8 @@ before the cradles to feel the 8-degree seat and the peg fit. Plates 02, 03,
 
 Open **OPEN-ME.3mf** in OrcaSlicer; it is an identical copy of
 **00-START-HERE-fastener-fit.3mf**, print only one of the two. Then print
-plates **01 through 08 once each** for one dock: eleven major parts, four pegs, the centre contact,
-22 pins and 20 locking keys. Each numbered 3MF contains
+plates **01 through 08 and 10 once each** for one dock: ten major parts, the splice plate
+and gap trim, four pegs, the centre contact, 22 pins and 20 locking keys. Each numbered 3MF contains
 one frozen, named plate with matching embedded G-code; matching standalone
 G-code, oriented STL and assembly-coordinate STEP bodies are included. The
 STL poses are intentional; do not auto-orient them. Print the two outer
@@ -156,7 +161,8 @@ print directory.
 
 - fit plate 00: 40.58 g; 1h 53m 15s.
 - cradle end trial 09: 136.42 g; 7h 1m 18s.
-- assembly plates 01 to 08: 1211.96 g; 51h 29m 36s.
-- outer cradle plates 01 and 04: 446.29 g; 20h 35m 27s.
-- contact pegs 08: 90.70 g; 3h 15m 17s.
-- contact independent plates 02 03 05 06 07: 674.97 g; 27h 38m 52s.
+- assembly plates 01 to 08: 1208.47 g; 51h 25m 28s.
+- gap trim 10: 6.21 g; 0h 22m 9s.
+- outer cradle plates 01 and 04: 446.29 g; 20h 35m 31s.
+- contact pegs 08: 87.21 g; 3h 10m 55s.
+- contact independent plates 02 03 05 06 07: 674.97 g; 27h 39m 2s.

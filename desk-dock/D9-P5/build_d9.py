@@ -267,7 +267,7 @@ _gx0=_gap_lo+CF_CLR;_gx1=_gap_hi-CF_CLR   # 2.0-mm fin / rib between the halves
 _outer=list(outer.exterior.coords)[:-1]
 env=prism(_outer,CF_X0-5,_gx0-(CF_X0-5)).fuse(prism(_outer,_gx1,(CF_X0+CF_W+5)-_gx1))
 sp=frame_profiles[1].translate((CF_X0-8,0,0)).cut(void_profile.translate((CF_X0-8,0,0)))
-sp=sp.cut(box(CF_X0-5,23.5,6,CF_W+10,300,300))                        # brace and anything past the rail side
+sp=sp.cut(box(CF_X0-5,23.2,6,CF_W+10,300,300))                        # brace and anything past the rail side; 0.2 mm short of the plenum front face (23.4) where the gap trim's flange lies; above z ~72 the plenum wall is the lid stop
 sp=sp.cut(box(CF_X0-5,-60,-20,CF_W+10,60-29.5,60))                     # base short of the front tie's face at y -30
 sp=sp.cut(box(CF_X0-5,-60,SHELF_Z,CF_W+10,60+13.5,100))                # flat shelf: nothing above z 51 on the contact side (rail keeps its height)
 _low=fp(-62,15.5);_fz=lambda y:(5-WALL)+(y+10.5)*((_low[1]-5)/(_low[0]+10.5))-CF_CLR
@@ -331,13 +331,38 @@ COUPONS['cradle-end-trial']=(trial,pose(trial,'left'))
 # Cosmetic edge treatment on shells, guards and ties; pins, keys and coupons stay exact.
 for name in list(PARTS):
     orientation=ORIENT.get(name)
-    if orientation is None or name.endswith(('-pin','-key')) or name in ('splice-plate','center-contact'):continue  # centre parts: every face is a fit, a bond face or the desk gap
+    if orientation is None or name.endswith(('-pin','-key')) or name in ('splice-plate','center-contact','gap-trim'):continue  # centre parts: every face is a fit, a bond face or the desk gap
     is_tie='-tie-' in name
     shape,report=dress(PARTS[name],PRINT_Z[orientation],PROTECT.get(name,[]),inside=EDGE['inside'],outside=EDGE['outside'],top_chamfer=EDGE['top_chamfer'] if is_tie else 0.0)
     DRESS[name]=report;PARTS[name]=shape;POSES[name]=norm(pose(shape,orientation))
     print('Dressed',name,json.dumps(report),flush=True)
 # The edge treatment adds concave fillet material to the halves, so cut the centre frame against the dressed halves too.
-PARTS['splice-plate']=PARTS['splice-plate'].cut(PARTS['M1-inner-shell']).cut(PARTS['M2-inner-shell']).clean();POSES['splice-plate']=norm(pose(PARTS['splice-plate'],'left'))
+PARTS['splice-plate']=PARTS['splice-plate'].cut(PARTS['M1-inner-shell']).cut(PARTS['M2-inner-shell']).clean()
+# Gap trim (2026-09-19): an L-shaped strip that finishes the front of the splice. Its tongue (2 mm, the gap width less
+# clearance, 6 mm deep) registers in the gap; its flange (1.2 mm proud) lays over the M2 half's front skin by 4 mm and
+# stops flush with the gap on the M1 side, so it hints alignment and hides any offset. Traced from the M2 half's actual
+# end face after the edge treatment, so it follows the fan flange and boss ribs. Prints flat on its gap-side face.
+TRIM_OVER,TRIM_DEPTH,TRIM_PROUD=4.0,6.0,1.2
+_sl=PARTS['M2-inner-shell'].intersect(box(_gap_hi+.05,-100,-20,.3,300,320))
+_ef=max([f for f in _sl.Faces() if f.geomType()=='PLANE' and abs(f.normalAt().x)>.99 and f.Center().x>_gap_hi+.2],key=lambda f:f.Area())
+_ow=_ef.outerWire();_fx0=_ef.Center().x
+def _ext(face,x0,length):return cq.Solid.extrudeLinear(face,cq.Vector(length,0,0)).translate((x0-_fx0,0,0))
+_outF=cq.Face.makeFromWires(_ow.offset2D(TRIM_PROUD,'arc')[0]);_inF=cq.Face.makeFromWires(_ow)
+def _inset(d,x0,length):  # inward offset can split into islands at the rib bumps: extrude every wire and fuse
+    solids=[_ext(cq.Face.makeFromWires(w),x0,length) for w in _ow.offset2D(-d,'arc')]
+    out=solids[0]
+    for q in solids[1:]:out=out.fuse(q)
+    return out
+_front=box(150,23.4,16,50,200,200)                                                    # the front: front wall, top and leaning fan face, above the rear tie (z 15)
+flange=_ext(_outF,_gx0,(_gx1-_gx0)+TRIM_OVER).cut(_ext(_inF,_gx0-1,(_gx1-_gx0)+TRIM_OVER+2))
+tongue=_ext(_inF,_gx0,_gx1-_gx0).cut(_inset(TRIM_DEPTH,_gx0-1,_gx1-_gx0+2))
+trim=flange.fuse(tongue).intersect(_front).clean()
+_tb=sorted(trim.Solids(),key=lambda q:-q.Volume());print('gap-trim bodies',[round(q.Volume(),1) for q in _tb],flush=True);trim=_tb[0]
+add('gap-trim',trim,'left','Gap trim: L strip, 2-mm tongue registers in the gap between the inner halves, 1.2-mm flange lays 4 mm over the M2 front skin only and stops flush at the gap on the M1 side. Prints flat on its gap-side face.')
+_tclear=_ext(_inF,_gap_lo,_gap_hi-_gap_lo).cut(_inset(TRIM_DEPTH+.3,_gap_lo-1,_gap_hi-_gap_lo+2)).intersect(_front)
+_fclear=_ext(cq.Face.makeFromWires(_ow.offset2D(TRIM_PROUD+.3,'arc')[0]),_gap_lo,_gap_hi-_gap_lo).cut(_ext(_inF,_gap_lo-1,_gap_hi-_gap_lo+2)).intersect(_front)   # the fin's sharp corners must not poke into the trim flange
+_sb=sorted(PARTS['splice-plate'].cut(_tclear).cut(_fclear).clean().Solids(),key=lambda q:-q.Volume());print('splice-plate bodies after trim clearance',[round(q.Volume(),1) for q in _sb],flush=True)
+PARTS['splice-plate']=_sb[0];POSES['splice-plate']=norm(pose(PARTS['splice-plate'],'left'))   # the fin gives way to the tongue
 for index,(air,names,void_volume,_) in MODULE_AIR.items():
     material=PARTS[names[0]].Solids()[0].fuse(PARTS[names[1]].Solids()[0]).clean()
     void=air.cut(material).clean()
@@ -397,7 +422,7 @@ for name,(shape,pose) in COUPONS.items():
 cq.exporters.export(cq.Compound.makeCompound(list(PARTS.values())),str(OUT/'D9-P2-assembly.step'))
 colors=[(44,105,123),(183,127,57),(60,78,94),(83,130,143)]
 image,_=render([(s,(198,153,65) if n.endswith('-key') else (115,132,141) if n.endswith('-pin') else colors[i%4]) for i,(n,s) in enumerate(PARTS.items())],(1500,1000),(.8,1,.55),pad=45);image.save(OUT/'D9-P2-assembly.png')
-manifest={'revision':'D9-P5','lean_deg':LEAN,'modular_contact':{'frame':'R7 d9-source (base, brace, tower with deck top and two 22-mm channels, 8-degree lid rail, 6-mm outer wall)','pieces_per_end':['seat peg','fence peg'],'lock':'one 36-mm fan pin through the outer wall and both feet, 0.15-mm cam offset, no key','socket':SOCK},'fit_corrections':{'pin_bore_diameter_mm':2*BORE_R,'pin_across_corners_mm':2*PIN_R,'key_barb_width_mm':2*KEY_BARB,'key_slot_mm':5.4,'key_barb_total_interference_mm':round(2*KEY_BARB-5.4,2),'t_tongue_height_mm':TONGUE_H,'source':'printed P2 fit plate, user feedback 2026-09-18'},'edge_treatment':{'parameters_mm':EDGE,'reports':DRESS,'air_recheck':AIR_DELTA,'protected':'air cavity, fan seats, sockets, pin bores, key slots, T joints, guard aperture and standoffs, laptop contact band'},'cradle_source':{'both_ends':'R7 frame d9-source','module_1_plug_end_fence_peg':'tall (64 mm)','module_2_far_end_fence_peg':'short (15 mm): the rear foot strip slides through this end during docking'},'scope':'Cradles, split plenums, fan guards, frame ties, the splice plate and the exchangeable centre contact; no added metal fasteners; plug mechanism excluded','splice':{'x_span_mm':[CF_X0,CF_X0+CF_W],'fin_and_rib_thickness_mm':_gx1-_gx0,'gap_mm':_gap_hi-_gap_lo,'envelope_clearance_mm':CF_CLR,'shelf_z_mm':SHELF_Z,'foot_gap_above_corner_feet_mm':CF_DESK_GAP,'splice_plate':'epoxied to both halves','center_contact':'exchangeable: fence peg foot in the splice-plate channel, seat head merged on, plate bears on the shelf'},'parts':RECORDS,'fit_coupons':coupon_records,'modules':MODULES,'joints':JOINTS,'metal_hardware_count':0,'printed_parts':len(PARTS),'part_interferences':checks,'upper_laptop_overlap_mm3':upper,'fan_overlap_mm3':fans,'qualification':'Prototype; CAD and Orca verification are separate from physical fit, support removal, printed-key durability, structural load and cooling tests.','builder_sha256':sha(Path(__file__)),'source_sha256':{'R7_frame_step':sha(SOURCE_STEP[1]),'R7_socket_void_step':sha(R7/'D8-R7-socket-void-d9-source.step'),**{f'R7_{k}_step':sha(v) for k,v in INSERT_STEP.items()},'R2_step':sha(D8/'quick-fit/R2/D8-R2-quick-fit-bracket.step'),'parameters':sha(D8/'parameters.json'),'flow_geometry':sha(D8/'flow-geometry.json')}}
+manifest={'revision':'D9-P5','lean_deg':LEAN,'modular_contact':{'frame':'R7 d9-source (base, brace, tower with deck top and two 22-mm channels, 8-degree lid rail, 6-mm outer wall)','pieces_per_end':['seat peg','fence peg'],'lock':'one 36-mm fan pin through the outer wall and both feet, 0.15-mm cam offset, no key','socket':SOCK},'fit_corrections':{'pin_bore_diameter_mm':2*BORE_R,'pin_across_corners_mm':2*PIN_R,'key_barb_width_mm':2*KEY_BARB,'key_slot_mm':5.4,'key_barb_total_interference_mm':round(2*KEY_BARB-5.4,2),'t_tongue_height_mm':TONGUE_H,'source':'printed P2 fit plate, user feedback 2026-09-18'},'edge_treatment':{'parameters_mm':EDGE,'reports':DRESS,'air_recheck':AIR_DELTA,'protected':'air cavity, fan seats, sockets, pin bores, key slots, T joints, guard aperture and standoffs, laptop contact band'},'cradle_source':{'both_ends':'R7 frame d9-source','module_1_plug_end_fence_peg':'tall (64 mm)','module_2_far_end_fence_peg':'short (15 mm): the rear foot strip slides through this end during docking'},'scope':'Cradles, split plenums, fan guards, frame ties, the splice plate, the exchangeable centre contact and the gap trim; no added metal fasteners; plug mechanism excluded','splice':{'x_span_mm':[CF_X0,CF_X0+CF_W],'fin_and_rib_thickness_mm':_gx1-_gx0,'gap_mm':_gap_hi-_gap_lo,'envelope_clearance_mm':CF_CLR,'shelf_z_mm':SHELF_Z,'foot_gap_above_corner_feet_mm':CF_DESK_GAP,'splice_plate':'epoxied to both halves','center_contact':'exchangeable: fence peg foot in the splice-plate channel, seat head merged on, plate bears on the shelf'},'parts':RECORDS,'fit_coupons':coupon_records,'modules':MODULES,'joints':JOINTS,'metal_hardware_count':0,'printed_parts':len(PARTS),'part_interferences':checks,'upper_laptop_overlap_mm3':upper,'fan_overlap_mm3':fans,'qualification':'Prototype; CAD and Orca verification are separate from physical fit, support removal, printed-key durability, structural load and cooling tests.','builder_sha256':sha(Path(__file__)),'source_sha256':{'R7_frame_step':sha(SOURCE_STEP[1]),'R7_socket_void_step':sha(R7/'D8-R7-socket-void-d9-source.step'),**{f'R7_{k}_step':sha(v) for k,v in INSERT_STEP.items()},'R2_step':sha(D8/'quick-fit/R2/D8-R2-quick-fit-bracket.step'),'parameters':sha(D8/'parameters.json'),'flow_geometry':sha(D8/'flow-geometry.json')}}
 (OUT/'manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
 print(json.dumps({'parts':len(PARTS),'interferences':checks,'upper':upper,'fan_interference':{k:v for k,v in fans.items() if v>.001}},indent=2),flush=True)
 assert not checks and max(upper.values(),default=0)<.001 and max(fans.values())<.001,'Resolve geometric interference before slicing'

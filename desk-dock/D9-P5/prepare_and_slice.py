@@ -17,6 +17,7 @@ assert len(fasteners)==40
 PLATES.append(fasteners)
 PLATES.append(['M1-seat-peg','M2-seat-peg','M1-fence-peg','M2-fence-peg','M1-insert-pin','M2-insert-pin','splice-plate','center-contact'])
 PLATES.append(['cradle-end-trial','M1-fence-peg','M1-seat-peg','M1-insert-pin'])
+PLATES.append(['gap-trim'])   # plate 10: the splice's front trim, flat on its gap-side face
 FIT=['fan-socket-fit-fixture','M1-fan-3-pin','M1-fan-3-key','side-socket-fit-fixture','M1-fan-1-pin','M1-fan-1-key','T-joint-fit-L','T-joint-fit-R','front-lap-pin','front-lap-key']
 REVIEW='''D9 P5 geometry-selected manufacturing review
 
@@ -77,7 +78,7 @@ def prepare(index,names):
         elif index==9:
             x,y=[(12,12),(20,178),(125,178),(200,20)][oid-1]
         elif index==8:
-            x,y=[(20,30),(60,30),(20,90),(120,30),(170,30),(200,30),(20,115),(165,120)][oid-1]
+            x,y=[(20,30),(60,30),(20,90),(120,30),(170,30),(200,30),(20,115),(155,115)][oid-1]
         elif index==7:
             joint=(oid-1)//2;column=joint%5;row=joint//5
             x=20+column*46+(25 if name.endswith('-key') else 0);y=35+row*52
@@ -103,7 +104,7 @@ def prepare(index,names):
                     'support_style':'snug','support_threshold_angle':'45','support_on_build_plate_only':'0',
                     'support_top_z_distance':'0.2','support_bottom_z_distance':'0.2','support_interface_top_layers':'3',
                     'brim_width':'5','brim_type':'outer_only','layer_height':'0.2'})
-    if index in (0,7,8):process['sparse_infill_density']='100%'
+    if index in (0,7,8,10):process['sparse_infill_density']='100%'
     if index==9:process['sparse_infill_density']='40%'
     (folder/'process.json').write_text(json.dumps(process,indent=2)+'\n')
     (folder/'geometry-review.md').write_text(REVIEW)
