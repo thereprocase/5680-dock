@@ -48,22 +48,22 @@
   },
   "01": {
     "passed": true,
-    "time": "9h 45m 25s; total estimated time: 9h 51m 36s",
+    "time": "9h 46m 5s; total estimated time: 9h 52m 16s",
     "filament_g": "",
     "objects": {
       "M1-outer-cradle-shell": {
-        "support": 22959,
+        "support": 23594,
         "external_bridge": 1053
       }
     }
   },
   "02": {
     "passed": true,
-    "time": "7h 12m 20s; total estimated time: 7h 18m 31s",
+    "time": "7h 12m 21s; total estimated time: 7h 18m 33s",
     "filament_g": "",
     "objects": {
       "M1-inner-shell": {
-        "support": 12028,
+        "support": 12075,
         "external_bridge": 291
       }
     }
@@ -81,11 +81,11 @@
   },
   "04": {
     "passed": true,
-    "time": "10h 37m 44s; total estimated time: 10h 43m 55s",
+    "time": "10h 37m 40s; total estimated time: 10h 43m 51s",
     "filament_g": "",
     "objects": {
       "M2-outer-cradle-shell": {
-        "support": 15999,
+        "support": 16007,
         "external_bridge": 788
       }
     }
@@ -111,7 +111,7 @@
   },
   "06": {
     "passed": true,
-    "time": "5h 0m 59s; total estimated time: 5h 7m 11s",
+    "time": "5h 1m 4s; total estimated time: 5h 7m 16s",
     "filament_g": "",
     "objects": {
       "M2-fan-guard": {
@@ -119,11 +119,11 @@
         "external_bridge": 0
       },
       "rear-tie-L": {
-        "support": 3180,
+        "support": 3207,
         "external_bridge": 148
       },
       "rear-tie-R": {
-        "support": 2922,
+        "support": 2942,
         "external_bridge": 96
       }
     }
@@ -359,7 +359,7 @@
   },
   "10": {
     "passed": true,
-    "time": "22m 2s; total estimated time: 28m 13s",
+    "time": "28m 6s; total estimated time: 34m 18s",
     "filament_g": "",
     "objects": {
       "gap-trim": {
@@ -367,16 +367,16 @@
         "external_bridge": 0
       },
       "align-aid-front": {
-        "support": 385,
-        "external_bridge": 7
+        "support": 422,
+        "external_bridge": 46
       },
       "align-aid-top": {
-        "support": 610,
-        "external_bridge": 42
+        "support": 632,
+        "external_bridge": 64
       },
       "align-aid-fan": {
-        "support": 417,
-        "external_bridge": 21
+        "support": 408,
+        "external_bridge": 48
       }
     }
   }

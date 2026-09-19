@@ -358,7 +358,7 @@ def _inset(d,x0,length):  # inward offset can split into islands at the rib bump
     out=solids[0]
     for q in solids[1:]:out=out.fuse(q)
     return out
-_front=box(150,23.4,16,50,200,200)                                                    # the front: front wall, top and leaning fan face, above the rear tie (z 15)
+_front=box(150,23.4,16,50,200,200).fuse(box(150,12,74,50,12,200))                     # the front skin above the rear tie, plus the lid-side wall's outside above the splice plate's rail (z 73) so a flange can sit there
 flange=_ext(_outF,_gx0,(_gx1-_gx0)+TRIM_OVER).cut(_ext(_inF,_gx0-1,(_gx1-_gx0)+TRIM_OVER+2))
 tongue=_ext(_inF,_gx0,_gx1-_gx0).cut(_inset(TRIM_DEPTH,_gx0-1,_gx1-_gx0+2))
 trim=flange.fuse(tongue).intersect(_front).clean()
@@ -371,8 +371,12 @@ add('gap-trim',trim,'left','Gap trim: L strip, 2-mm tongue registers in the gap 
 AID_OVER,AID_PROUD=6.0,2.0
 _aidF=cq.Face.makeFromWires(_ow.offset2D(AID_PROUD,'arc')[0])
 aid=_ext(_aidF,_gx0-AID_OVER,(_gx1-_gx0)+AID_OVER).cut(_ext(_inF,_gx0-AID_OVER-1,(_gx1-_gx0)+AID_OVER+2)).fuse(_ext(_inF,_gx0,_gx1-_gx0).cut(_inset(TRIM_DEPTH,_gx0-1,_gx1-_gx0+2))).intersect(_front)
-for _nm,_win in (('align-aid-front',box(160,20,78,40,9,20)),('align-aid-top',box(160,27,126,40,20,10)),('align-aid-fan',box(160,56,36,40,18,16))):
-    _pc=sorted(aid.intersect(_win).Solids(),key=lambda q:-q.Volume());add(_nm,_pc[0],'left','Temporary alignment key: 2-mm tongue in the gap, 6-mm flange over the M1 face, 2 mm proud. Use during glue-up, clamp, pull, then fit the trim. Prints flat.')
+# Each key gets a pull tab: a lug 6 mm further out from the skin over 8 mm of its length, in the plane of the flat print.
+AID_TAB=6.0
+_tabF=cq.Face.makeFromWires(_ow.offset2D(AID_PROUD+AID_TAB,'arc')[0])
+tab=_ext(_tabF,_gx0-AID_OVER,(_gx1-_gx0)+AID_OVER).cut(_ext(_aidF,_gx0-AID_OVER-1,(_gx1-_gx0)+AID_OVER+2)).intersect(_front)
+for _nm,_win,_tw in (('align-aid-front',box(160,12,78,40,24,20),box(160,12,84,40,24,8)),('align-aid-top',box(160,27,126,40,20,16),box(160,33,126,40,8,16)),('align-aid-fan',box(160,56,36,40,26,16),box(160,62,40,40,18,8))):
+    _pc=sorted(aid.intersect(_win).fuse(tab.intersect(_tw)).clean().Solids(),key=lambda q:-q.Volume());add(_nm,_pc[0],'left','Temporary alignment key: 2-mm tongue in the gap, 6-mm flange over the M1 face, 2 mm proud, with a finger tab. Use during glue-up, clamp, pull, then fit the trim. Prints flat.')
 _tclear=_ext(_inF,_gap_lo,_gap_hi-_gap_lo).cut(_inset(TRIM_DEPTH+.3,_gap_lo-1,_gap_hi-_gap_lo+2)).intersect(_front)
 _fclear=_ext(cq.Face.makeFromWires(_ow.offset2D(TRIM_PROUD+.3,'arc')[0]),_gap_lo,_gap_hi-_gap_lo).cut(_ext(_inF,_gap_lo-1,_gap_hi-_gap_lo+2)).intersect(_front)   # the fin's sharp corners must not poke into the trim flange
 _sb=sorted(PARTS['splice-plate'].cut(_tclear).cut(_fclear).clean().Solids(),key=lambda q:-q.Volume());print('splice-plate bodies after trim clearance',[round(q.Volume(),1) for q in _sb],flush=True)
@@ -402,7 +406,7 @@ for name,shape in PARTS.items():
 def boxes_overlap(a,b):return all(min(getattr(a,k+'max'),getattr(b,k+'max'))-max(getattr(a,k+'min'),getattr(b,k+'min'))>1e-5 for k in ('x','y','z'))
 checks=[];names=list(PARTS);bounds={n:PARTS[n].BoundingBox() for n in names}
 laptop=box(0,-P['laptop_thickness']/2,62,P['laptop_width'],P['laptop_thickness'],232.33).rotate((0,0,54),(1,0,54),-LEAN)
-upper={n:PARTS[n].intersect(laptop).Volume() for n in names if boxes_overlap(bounds[n],laptop.BoundingBox())}
+upper={n:PARTS[n].intersect(laptop).Volume() for n in names if boxes_overlap(bounds[n],laptop.BoundingBox()) and not n.startswith('align-aid')}   # glue-up keys are never in place with the laptop
 fans={n:sum(PARTS[n].intersect(f).Volume() for f in FANS if boxes_overlap(bounds[n],f.BoundingBox())) for n in names}
 for i,n in enumerate(names):
     for m in names[i+1:]:

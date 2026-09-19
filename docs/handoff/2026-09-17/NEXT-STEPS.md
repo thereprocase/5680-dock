@@ -15,8 +15,8 @@ M2 outer lose most of their support. Plate 04 is re-sliced in calibrated ASA wit
 Splice (19 Sept): fixed splice plate (fin in the gap, foot 0.5 mm shy of the corner feet, outer wall, lid rail,
 shelf; epoxied) plus an exchangeable centre contact (fence peg with the seat head merged on, foot in the channel).
 On plate 08, plus the gap trim on plate 10 (L strip: tongue in the gap, 4 mm flange over the M2 front skin,
-prints flat) and three temporary opposite-hand alignment keys for glue-up (28 min together). ASA plate 17 carries
-all of it plus four replacement frame-end pins (`d9-p5-print-pass/asa/17-splice-plate-contact`, 2 h 34 m, 42 g).
+prints flat) and three temporary opposite-hand alignment keys with finger tabs for glue-up (34 min together). ASA plate 17 carries
+all of it plus four replacement frame-end pins (`d9-p5-print-pass/asa/17-splice-plate-contact`, 2h 40m 17s, 43.88 g).
 [Kit](../../printables/d9-p5/Precision_5680_D9_P5_Print_Kit.zip) · [fit plate](../../printables/d9-p5/OPEN-ME.3mf) · [notes](../../printables/d9-p5/README.md) · [print log](../../prints/).
 
 1. Plates 02, 03, 05, 06, 07 (675 g, 27 h 39 m) do not depend on contact geometry: start any time.

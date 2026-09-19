@@ -63,8 +63,8 @@ P5 is the D9 P2 no-metal-hardware dock with these changes and nothing else:
    edge treatment, so it follows the fan flange and boss ribs; it prints flat
    on its gap-side face. Plate 10 also carries three *alignment keys*, the
    opposite hand of the trim in miniature: 2-mm tongue in the gap, 6-mm flange
-   over the M1 face, 2 mm proud, about 20 mm long and under a gram each, at the
-   front wall, the top and the fan face. They are temporary: drop them in with
+   over the M1 face, 2 mm proud with a finger tab, about 20 mm long and about a
+   gram each, at the front wall, the top and the fan face. They are temporary: drop them in with
    the splice plate during glue-up, clamp, pull them, then fit the trim. Proven
    additive: nothing was removed from any printed part. Plate 00 is regenerated: print it first and check insertion,
    retention and deliberate removal before the large parts.

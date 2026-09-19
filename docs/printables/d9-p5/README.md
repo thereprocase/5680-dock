@@ -63,8 +63,8 @@ P5 is the D9 P2 no-metal-hardware dock with these changes and nothing else:
    edge treatment, so it follows the fan flange and boss ribs; it prints flat
    on its gap-side face. Plate 10 also carries three *alignment keys*, the
    opposite hand of the trim in miniature: 2-mm tongue in the gap, 6-mm flange
-   over the M1 face, 2 mm proud, about 20 mm long and under a gram each, at the
-   front wall, the top and the fan face. They are temporary: drop them in with
+   over the M1 face, 2 mm proud with a finger tab, about 20 mm long and about a
+   gram each, at the front wall, the top and the fan face. They are temporary: drop them in with
    the splice plate during glue-up, clamp, pull them, then fit the trim. Proven
    additive: nothing was removed from any printed part. Plate 00 is regenerated: print it first and check insertion,
    retention and deliberate removal before the large parts.
@@ -168,8 +168,8 @@ print directory.
 
 - fit plate 00: 40.54 g; 1h 52m 21s.
 - cradle end trial 09: 136.38 g; 7h 1m 5s.
-- assembly plates 01 to 08: 1192.42 g; 51h 37m 27s.
-- gap trim 10: 8.30 g; 0h 28m 13s.
-- outer cradle plates 01 and 04: 446.29 g; 20h 35m 31s.
+- assembly plates 01 to 08: 1192.52 g; 51h 38m 10s.
+- gap trim 10: 10.67 g; 0h 34m 18s.
+- outer cradle plates 01 and 04: 446.38 g; 20h 36m 7s.
 - contact pegs 08: 71.89 g; 3h 28m 13s.
-- contact independent plates 02 03 05 06 07: 674.24 g; 27h 33m 43s.
+- contact independent plates 02 03 05 06 07: 674.25 g; 27h 33m 50s.
