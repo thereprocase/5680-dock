@@ -6,7 +6,8 @@ outcome and what we learned. Source of truth is `print-log.json`; append with `t
 
 | Id | When | What | Status | Job | Slot | Estimate | Commit |
 | --- | --- | --- | --- | --- | --- | ---: | --- |
-| P-0008 | 2026-09-18 16:58 | D9 P5 overnight plate: M1 + M2 inner plenums, 4 contact pegs, 2 insert pins, 4 round-shaft frame-end pins + keys (calibrated PolyLite ASA) | running | 1cb99fd5 | 3 | 14h 33m 48s / 326.58 g | 6cc690c |
+| P-0009 | 2026-09-19 06:41 | D9 P5 plate 15: M1 fan guard + front/rear ties L/R (calibrated PolyLite ASA) | running | 1556c722 | 3 | 7h 52m 29s / 141.52 g | 9a8410f |
+| P-0008 | 2026-09-18 16:58 | D9 P5 overnight plate: M1 + M2 inner plenums, 4 contact pegs, 2 insert pins, 4 round-shaft frame-end pins + keys (calibrated PolyLite ASA) | printed | 1cb99fd5 | 3 | 14h 33m 48s / 326.58 g | 6cc690c |
 | P-0007 | 2026-09-18 08:08 | D9 P5 plate 01, M1 outer cradle (calibrated PolyLite ASA) | printed | 059ef858 | 3 | 9h 36m 19s / 170.35 g | 4834be6 |
 | P-0006 | 2026-09-18 07:50 | D9 P5 plate 01, M1 outer cradle (calibrated PolyLite ASA), first attempt | failed | 405f9ec4 | 3 | 9h 36m 19s / 170.35 g | 4834be6 |
 | P-0005 | 2026-09-18 07:22 | D9 P5 plate 02, M1 inner plenum (PETG grey) | not-started | ede6ad47 | 2 | 6h 35m 37s / 188.94 g | 4834be6 |
@@ -15,9 +16,20 @@ outcome and what we learned. Source of truth is `print-log.json`; append with `t
 | P-0002 | 2026-09-17 18:41 | V4 full-rail fit coupons A/B/C (PETG grey) | printed | 0d353e74 | 2 | 1h 50m 46s / 47.02 g | 3e8792b |
 | P-0001 | 2026-09-16 18:44 | D8 quick-fit bracket pair, pre-R4 revision (PETG) | printed | b8c11d5e | None |  | 502a85e |
 
+## P-0009 - D9 P5 plate 15: M1 fan guard + front/rear ties L/R (calibrated PolyLite ASA)
+
+- When: 2026-09-19 06:41; status: **running**; job `1556c722df0b44de8289231317fcfa9a`; file `D9-P5-15-M1-guard-ties-ASA.gcode.3mf`; AMS physical slot 3; repo commit `9a8410f`.
+- Profiles: Repro - ASA - Polymaker PolyLite - Calibrated; process Repro Normal - 0.4 nozzle; Polymaker PolyLite ASA, calibrated (flow 0.93, shrink 99.46 %, PA 0.034), AMS slot 3
+- Process: layer_height 0.2, wall_loops 5, top_shell_layers 6, sparse_infill_density 40%, sparse_infill_pattern gyroid, support_type normal(auto), support_style snug, support_on_build_plate_only 0, support_object_xy_distance 0.35, brim_width 5
+- Filament: filament_flow_ratio 0.93, filament_shrink 99.46%, pressure_advance 0.034, nozzle_temperature 260, hot_plate_temp 100
+- Estimate: 7h 52m 29s; 141.52 g; 100 layers; 16.0 mm tall; toolpath audit passed.
+- Parts: `M1-fan-guard` (6ac137d69478), `front-tie-L` (8ff49336782f), `front-tie-R` (460a16da9593), `rear-tie-L` (5f493fbd40b8), `rear-tie-R` (d3c141ca15fd)
+- Slice folder: `/mnt/c/Users/repro/Documents/Codex/2026-09-17/for-x20/work/d9-p5-print-pass/asa/15-M1-guard-ties`
+- Notes: Submitted into FINISH after the overnight plate; identical ASA in slots 3 and 4 for auto-refill. Ties carry the 12.7 mm tongue; guard has the bonus M4 holes.
+
 ## P-0008 - D9 P5 overnight plate: M1 + M2 inner plenums, 4 contact pegs, 2 insert pins, 4 round-shaft frame-end pins + keys (calibrated PolyLite ASA)
 
-- When: 2026-09-18 16:58; status: **running**; job `1cb99fd5`; file `D9-P5-10-inner-pair-pegs-ASA.gcode.3mf`; AMS physical slot 3; repo commit `6cc690c`.
+- When: 2026-09-18 16:58; status: **printed**; job `1cb99fd5`; file `D9-P5-10-inner-pair-pegs-ASA.gcode.3mf`; AMS physical slot 3; repo commit `6cc690c`.
 - Profiles: Repro - ASA - Polymaker PolyLite - Calibrated; process Repro Normal - 0.4 nozzle; Polymaker PolyLite ASA, calibrated (flow 0.93, shrink 99.46 %, PA 0.034), AMS slot 3
 - Process: layer_height 0.2, wall_loops 5, top_shell_layers 6, sparse_infill_density 40%, sparse_infill_pattern gyroid, support_type normal(auto), support_style snug, support_on_build_plate_only 0, support_object_xy_distance 0.35, brim_width 5
 - Filament: filament_flow_ratio 0.93, filament_shrink 99.46%, pressure_advance 0.034, nozzle_temperature 260, hot_plate_temp 100
@@ -25,6 +37,7 @@ outcome and what we learned. Source of truth is `print-log.json`; append with `t
 - Parts: `M1-fence-peg` (bdc102d6c48c), `M2-fence-peg` (5cd84efe43b1), `M1-seat-peg` (0aed55942890), `M2-seat-peg` (8d2c053555c7), `M1-insert-pin` (fc300ddeb418), `M2-insert-pin` (fc300ddeb418), `front-frame-L-pin` (e515c5742f37), `front-frame-R-pin` (e515c5742f37), `rear-frame-L-pin` (e515c5742f37), `rear-frame-R-pin` (e515c5742f37), `front-frame-L-key` (3905db7246ec), `front-frame-R-key` (3905db7246ec), `rear-frame-L-key` (3905db7246ec), `rear-frame-R-key` (3905db7246ec), `M1-inner-shell` (34fdd0866440), `M2-inner-shell` (0583ada73437)
 - Slice folder: `/mnt/c/Users/repro/Documents/Codex/2026-09-17/for-x20/work/d9-p5-print-pass/asa/10-inner-pair-pegs`
 - Notes: Submitted straight into FINISH; printer went IDLE then RUNNING within 30 s. Pegs, pins and keys at the plate's 40 % gyroid rather than 100 %. Round-shaft trial on the four frame-end pins. Predates the fan-screw pilots and the gussets.
+- Lessons: Finished about 06:40 on 19 September, an hour under the estimate. Inspect: seat/fence peg fit in the M1 cradle, round-shaft frame pins in their 8.4 mm bores, key retention.
 
 ## P-0007 - D9 P5 plate 01, M1 outer cradle (calibrated PolyLite ASA)
 
