@@ -12,8 +12,9 @@ every flange on the 105 mm pattern, for M4 × 45 screws; pins stay primary. Dril
 and the two inner shells printed on 18 September using the guard as a jig.
 Gussets (additive only): socket bosses and pin-tip tab ends are self-supporting at 34°; M1 inner and
 M2 outer lose most of their support. Plate 04 is re-sliced in calibrated ASA with gussets and pilots.
-Centre frame (19 Sept): third R7 frame at the splice, same seat and fence pegs, 2 mm fin in the gap, splice foot
-0.5 mm shy of the corner feet, epoxied. On plate 08 and on ASA plate 17 (`d9-p5-print-pass/asa/17-centre-frame-pegs`).
+Splice (19 Sept): fixed splice plate (fin in the gap, foot 0.5 mm shy of the corner feet, outer wall, lid rail,
+shelf; epoxied) plus an exchangeable centre contact (fence peg with the seat head merged on, foot in the channel).
+On plate 08 and ASA plate 17 (`d9-p5-print-pass/asa/17-splice-plate-contact`, 1 h 58 m).
 [Kit](../../printables/d9-p5/Precision_5680_D9_P5_Print_Kit.zip) · [fit plate](../../printables/d9-p5/OPEN-ME.3mf) · [notes](../../printables/d9-p5/README.md) · [print log](../../prints/).
 
 1. Plates 02, 03, 05, 06, 07 (675 g, 27 h 39 m) do not depend on contact geometry: start any time.

@@ -103,7 +103,7 @@ sheet.save(OUT/'D9-actual-toolpath-review.png')
 gen=HERE/'generated'
 cad=OUT/'CAD';cad.mkdir(exist_ok=True)
 manifest=json.loads((gen/'manifest.json').read_text())
-assert manifest['metal_hardware_count']==0 and manifest['printed_parts']==59 and not manifest['part_interferences']
+assert manifest['metal_hardware_count']==0 and manifest['printed_parts']==58 and not manifest['part_interferences']
 assert json.loads((gen/'insertion-motion.json').read_text())['sampled_motion_clear']
 assert all(json.loads((gen/f'M{i}-enclosure-final.json').read_text())['passed'] for i in (1,2))
 for part in manifest['parts']+manifest['fit_coupons']:

@@ -13,8 +13,8 @@ def cz(x,y,z,r,l):return cq.Solid.makeCylinder(r,l,cq.Vector(x,y,z),cq.Vector(0,
 skip=lambda n:any(k in n for k in ('fit-fixture','T-joint-fit','cradle-end-trial'))
 COL={'centre':[150,96,70],'cradle':[92,110,122],'plenum':[132,148,158],'guard':[70,84,92],'tie':[110,96,80],'pin':[214,178,92],'key':[236,206,120],'peg':[196,120,88],'lock':[214,178,92],'laptop':[46,52,58],'fan':[40,40,44]}
 def group(n):
-    if n=='center-frame':return 'centre'
-    if n.startswith('center-') and '-peg' in n:return 'peg'
+    if n=='splice-plate':return 'centre'
+    if n=='center-contact':return 'peg'
     if 'outer-cradle' in n:return 'cradle'
     if 'inner-shell' in n:return 'plenum'
     if 'fan-guard' in n:return 'guard'
@@ -63,7 +63,7 @@ for i,fx in enumerate(P['fan_centers_x'],1):
     emit(f'fan_120mm_M{i}',fan,'fan',ref=True,tol=(0.5,0.3))
 up=[0,math.sin(math.radians(LEAN)),math.cos(math.radians(LEAN))]
 manifest={'revision':'D9-P5','units':'mm','coordinate_frame':'assembly: X along the dock (plug end at low X), Y toward the lid, Z up','laptop_lean_deg':LEAN,'undocked_x_offset_mm':18,'laptop_up':up,'exhaust_axis':list(EX),'fan_centers_x':P['fan_centers_x'],
-          'groups':{'centre':'Centre frame at the splice (epoxied)','cradle':'Outer cradle shells (R7 frame ends)','plenum':'Inner plenum halves','guard':'Fan guards','tie':'Front and rear ties','pin':'Printed pins','key':'Locking keys','peg':'Seat and fence pegs','lock':'Peg lock pins','laptop':'Laptop reference','fan':'120 x 25 mm fans (purchased)'},'parts':entries}
+          'groups':{'centre':'Splice plate (epoxied); the centre contact is with the pegs','cradle':'Outer cradle shells (R7 frame ends)','plenum':'Inner plenum halves','guard':'Fan guards','tie':'Front and rear ties','pin':'Printed pins','key':'Locking keys','peg':'Seat and fence pegs','lock':'Peg lock pins','laptop':'Laptop reference','fan':'120 x 25 mm fans (purchased)'},'parts':entries}
 (OUT/'model.bin').write_bytes(bytes(data));(OUT/'model.json').write_text(json.dumps(manifest))
 (OUT/'provenance.json').write_text(json.dumps({'builder_sha256':sha(HERE/'build_d9.py'),'manifest_sha256':sha(GEN/'manifest.json'),'step_sha256':prov,'tessellation':'cadquery tessellate: shells and ties 0.18/0.12, small parts 0.15/0.1, reference bodies 0.5/0.3','model_bin_bytes':len(data)},indent=1))
 print('parts',len(entries),'bytes',len(data),'MB %.1f'%(len(data)/1e6))
