@@ -37,7 +37,7 @@ outcome and what we learned. Source of truth is `print-log.json`; append with `t
 - Parts: `M1-fence-peg` (bdc102d6c48c), `M2-fence-peg` (5cd84efe43b1), `M1-seat-peg` (0aed55942890), `M2-seat-peg` (8d2c053555c7), `M1-insert-pin` (fc300ddeb418), `M2-insert-pin` (fc300ddeb418), `front-frame-L-pin` (e515c5742f37), `front-frame-R-pin` (e515c5742f37), `rear-frame-L-pin` (e515c5742f37), `rear-frame-R-pin` (e515c5742f37), `front-frame-L-key` (3905db7246ec), `front-frame-R-key` (3905db7246ec), `rear-frame-L-key` (3905db7246ec), `rear-frame-R-key` (3905db7246ec), `M1-inner-shell` (34fdd0866440), `M2-inner-shell` (0583ada73437)
 - Slice folder: `/mnt/c/Users/repro/Documents/Codex/2026-09-17/for-x20/work/d9-p5-print-pass/asa/10-inner-pair-pegs`
 - Notes: Submitted straight into FINISH; printer went IDLE then RUNNING within 30 s. Pegs, pins and keys at the plate's 40 % gyroid rather than 100 %. Round-shaft trial on the four frame-end pins. Predates the fan-screw pilots and the gussets.
-- Lessons: Finished about 06:40 on 19 September, an hour under the estimate. Inspect: seat/fence peg fit in the M1 cradle, round-shaft frame pins in their 8.4 mm bores, key retention.
+- Lessons: Finished about 06:40 on 19 September, an hour under the estimate. Inspect: seat/fence peg fit in the M1 cradle, round-shaft frame pins in their 8.4 mm bores, key retention. Fit check 19 Sept: the round 8.2 mm frame-end pins (the trial) would not enter the printed 8.4 mm bores in the plenum; the octagonal pins were the loose ones on P2. Decision: one pin type, round 7.9 mm (0.5 mm diametral); reprint pins from plate 07.
 
 ## P-0007 - D9 P5 plate 01, M1 outer cradle (calibrated PolyLite ASA)
 

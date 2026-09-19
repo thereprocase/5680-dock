@@ -18,14 +18,16 @@ P5 is the D9 P2 no-metal-hardware dock with these changes and nothing else:
    clearance at the top. The cradle base
    stays 4 mm so every foot remains coplanar with the ties.
 3. **Fit corrections from the printed P2 fit plate.** Pin bores 8.8 -> 8.4 mm
-   (0.2-mm diametral clearance on the 8.2-mm octagonal pins); key barbs 6.2 ->
+   (now 0.5-mm diametral clearance on the 7.9-mm round pins); key barbs 6.2 ->
    7.2 mm wide through the 5.4-mm slot (total interference 0.8 -> 1.8 mm). The T
    tongue stays 12.7 mm tall: the P4 trim to 12.1 mm chased stuck support
-   debris; the cleaned printed pair nests flush. Round-shaft trial (18 September):
-   the four frame-end pins have a round 8.2-mm shaft with one chord flat on the
-   bed, so they match the 8.4-mm round bores everywhere instead of only at the
-   octagon's corners (the printed P2 octagons rattled). The other 18 pins stay
-   octagonal until the trial is judged. Bonus fan-screw path (optional): the
+   debris; the cleaned printed pair nests flush. One pin type (19 September):
+   every pin, the 22 in the joints and the two peg locks, is a round 7.9-mm
+   shaft with one chord flat on the bed, 0.5 mm diametral in the 8.4-mm bores.
+   The printed P2 octagons (8.2 across corners, 7.6 across flats) rattled; the
+   18 September round 8.2-mm trial would not enter the printed bores. The
+   frame-end pins printed on 19 September are that 8.2-mm trial and should be
+   replaced from plate 07. Bonus fan-screw path (optional): the
    guards carry 4.5-mm clearance holes through plate and standoffs and every
    flange carries 3.5-mm blind pilots 6 mm deep on the fan's 105-mm pattern, so
    four M4 x 45 screws can hold guard and fan instead of (or as well as) the

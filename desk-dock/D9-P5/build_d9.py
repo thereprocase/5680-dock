@@ -56,16 +56,17 @@ def add(name,s,orientation,note,print_shape=None):
 # Pin axis is canonical Z; the key inserts along canonical Y. Pins print along
 # the bed, on their longitudinal octagonal flat. The key's two leaves flex in XY.
 PIN_R=4.1;FLAT=PIN_R*math.cos(math.pi/8)
+PIN_R_ROUND=3.95  # round-shaft pins: 7.9 mm in the 8.4-mm bores (0.5 mm diametral). The 8.2-mm round trial was too tight (user, 2026-09-19).
 SCREW_PILOT_R=1.75;SCREW_CLEAR_R=2.25  # optional fan screws: M4 x 45 through guard (4.5 mm) and fan into 3.5-mm blind pilots
 BORE_R=4.2   # 8.4-mm bores for the 8.2-mm across-corners pins: 0.2-mm diametral clearance (P2/P3 used 4.4)
 KEY_BARB=3.6 # barb half-width: 7.2 mm through the 5.4-mm slot = 1.8 mm total interference (P2/P3: 3.1 = 0.8 mm)
 TONGUE_H=12.7 # T tongue height in print Z; P2/P3 value restored 2026-09-18 (the P4 0.6-mm trim chased support debris, not geometry)
 OCT=[(PIN_R*math.cos(math.pi/8+i*math.pi/4),PIN_R*math.sin(math.pi/8+i*math.pi/4)) for i in range(8)]
-def pin(length,marks,profile='octagon'):
+def pin(length,marks,profile='round'):
     if profile=='round':
-        # Round 8.2-mm shaft with one chord flat at the octagon's flat height: same bed contact, but the shaft now
-        # matches the 8.4-mm round bore everywhere except that chord (0.2 mm diametral) instead of only at eight corners.
-        sh=cq.Solid.makeCylinder(PIN_R,length,cq.Vector(0,0,0),cq.Vector(0,0,1)).cut(box(-6,-6,-1,12,6-FLAT,length+2))
+        # Round 7.9-mm shaft with one chord flat at the octagon's flat height: same bed contact, 0.5 mm diametral in the
+        # 8.4-mm bore (8.2 was too tight in print), matching everywhere except that chord instead of only at eight corners.
+        sh=cq.Solid.makeCylinder(PIN_R_ROUND,length,cq.Vector(0,0,0),cq.Vector(0,0,1)).cut(box(-6,-6,-1,12,6-FLAT,length+2))
     else:
         sh=cq.Workplane('XY').polyline(OCT).close().extrude(length).val()
     head=[(-5.5,-FLAT),(5.5,-FLAT),(7.5,2-FLAT),(7.5,4.2),(5.5,6.2),(-5.5,6.2),(-7.5,4.2),(-7.5,2-FLAT)]
@@ -86,7 +87,7 @@ def key(grip):
     root=-a-1 if grip==8 else -a+3
     gap=box(-half_gap,root,-1.6,2*half_gap,grip+8,3.2).fuse(cz(0,root,-1.6,half_gap,3.2))
     return sh.cut(gap).clean()
-def pin_and_key(name,length,marks,transform,grip=16,key_reverse=False,key_angle=0,profile='octagon'):
+def pin_and_key(name,length,marks,transform,grip=16,key_reverse=False,key_angle=0,profile='round'):
     canonical_pin=pin(length,marks,profile)
     p=canonical_pin.rotate((0,0,0),(0,0,1),key_angle)
     k=key(grip).translate((0,0,length-7.5))
@@ -95,7 +96,7 @@ def pin_and_key(name,length,marks,transform,grip=16,key_reverse=False,key_angle=
     k=k.rotate((0,0,0),(0,0,1),angle);compressed=compressed.rotate((0,0,0),(0,0,1),angle)
     add(name+'-pin',transform(p),'base',('Round pin with one longitudinal chord flat on the bed' if profile=='round' else 'Octagonal pin on its longitudinal flat')+'; axis and tension path lie in the layers. Head edge notch count identifies the length.',canonical_pin.rotate((0,0,0),(1,0,0),90))
     add(name+'-key',transform(k),'base',f'Flat XY print; two {1.0 if grip==8 else 1.2}-mm locking leaves flex in the layer plane. Pin carries the load; barbs retain the removable key.',key(grip))
-    JOINTS.append({'name':name,'pin_length_mm':length,'head_notches':marks,'key_grip_mm':grip,'shaft_profile':profile,'radial_pin_clearance_mm':round(BORE_R-PIN_R,2),'key_barb_total_interference_mm':round(2*KEY_BARB-5.4,2),'key_slot_clearance_per_side_mm':.3})
+    JOINTS.append({'name':name,'pin_length_mm':length,'head_notches':marks,'key_grip_mm':grip,'shaft_profile':profile,'radial_pin_clearance_mm':round(BORE_R-(PIN_R_ROUND if profile=='round' else PIN_R),2),'key_barb_total_interference_mm':round(2*KEY_BARB-5.4,2),'key_slot_clearance_per_side_mm':.3})
     origin=transform(cq.Vertex.makeVertex(0,0,0)).Center()
     key_axis=transform(cq.Vertex.makeVertex(-math.sin(math.radians(angle)),math.cos(math.radians(angle)),0)).Center()-origin
     pin_axis=transform(cq.Vertex.makeVertex(0,0,1)).Center()-origin
@@ -268,18 +269,22 @@ _outer=list(outer.exterior.coords)[:-1]
 env=prism(_outer,CF_X0-5,_gx0-(CF_X0-5)).fuse(prism(_outer,_gx1,(CF_X0+CF_W+5)-_gx1))
 sp=frame_profiles[1].translate((CF_X0-8,0,0)).cut(void_profile.translate((CF_X0-8,0,0)))
 sp=sp.cut(box(CF_X0-5,23.2,6,CF_W+10,300,300))                        # brace and anything past the rail side; 0.2 mm short of the plenum front face (23.4) where the gap trim's flange lies; above z ~72 the plenum wall is the lid stop
+sp=sp.cut(box(CF_X0-5,13.4,73,CF_W+10,300,300))                        # the leaned rail would taper to a knife edge against that plane; end it square at z 73, where the plenum wall takes over as the lid stop
 sp=sp.cut(box(CF_X0-5,-60,-20,CF_W+10,60-29.5,60))                     # base short of the front tie's face at y -30
 sp=sp.cut(box(CF_X0-5,-60,SHELF_Z,CF_W+10,60+13.5,100))                # flat shelf: nothing above z 51 on the contact side (rail keeps its height)
 _low=fp(-62,15.5);_fz=lambda y:(5-WALL)+(y+10.5)*((_low[1]-5)/(_low[0]+10.5))-CF_CLR
 sp=sp.cut(box(CF_X0-5,_low[0],-20,CF_W+10,300,40))                     # base beyond the floor foot
 sp=sp.fuse(prism([(-16.8,DESK_Z+CF_DESK_GAP),(_low[0],DESK_Z+CF_DESK_GAP),(_low[0],_fz(_low[0])),(-13.5,_fz(-13.5)),(-16.8,_fz(-13.5))],CF_X0,CF_W))  # splice foot
-sp=sp.fuse(prism(_outer,_gx0,_gx1-_gx0))                                # fin filling the gap
+# Gap engagement (2026-09-19): not a full-silhouette fin (unprintable one-sided) but a 6-mm tongue band along the rear and
+# top of the outline, the part the front gap trim does not cover. Prints standing up with the rest of the plate.
+_tongue=prism(_outer,_gx0,_gx1-_gx0).cut(prism(list(outer.buffer(-6,join_style='mitre').exterior.coords)[:-1],_gx0-1,_gx1-_gx0+2))
+sp=sp.fuse(_tongue.cut(box(CF_X0-5,23.2,6,CF_W+10,300,300)).cut(box(CF_X0-5,-200,-20,CF_W+10,450,26)))   # rear wall and neck top only, above the foot
 sp=sp.fuse(box(CF_X0,-13.5,50,CF_W,27,SHELF_Z-50))                      # shelf plate on the roof across the neck
 sp=sp.cut(env).cut(box(CF_X0-5,-200,-20,CF_W+10,450,(DESK_Z+CF_DESK_GAP)+20))
 _hx=(frames[0][1]+frames[1][0])/2+6
 sp=sp.cut(cq.Solid.makeCylinder(BORE_R+.4,16,cq.Vector(_hx,-34,8),cq.Vector(0,1,0))).cut(box(_hx-4.9,-30.6,.6,9.8,4.6,17.2))  # front lap pin and key pass through
 sp=sp.cut(PARTS['M1-inner-shell']).cut(PARTS['M2-inner-shell']).clean()
-add('splice-plate',sp,'left','Splice plate: fin registering in the gap between the inner halves, floor-following foot 0.5 mm above the desk, outer wall, 8-degree lid rail, flat shelf with a slot for the centre contact. Epoxied to both halves. Broad X face on bed.')
+add('splice-plate',sp,'base','Splice plate: 6-mm tongue registering in the gap along the rear wall and neck top, floor-following foot 0.5 mm above the desk, outer wall, 8-degree lid rail, a flat shelf across the joint and the fence channel that receives the centre contact. Epoxied to both halves. Prints standing as assembled: vertical walls and one 27-mm bridge at the shelf.')
 cdx=(CF_X0-8,0,0)
 seat_head=insert_profiles['seat'].translate(cdx).cut(box(CF_X0-5,-60,-20,CF_W+10,300,SHELF_Z+20))   # seat head only: its channel is inside the printed neck
 cc=insert_profiles['far'].translate(cdx).fuse(seat_head).fuse(box(CF_X0,-19.335,SHELF_Z,CF_W,19.335+8,2.2)).clean()   # fence peg + seat head + bearing plate across the joint
@@ -362,7 +367,7 @@ add('gap-trim',trim,'left','Gap trim: L strip, 2-mm tongue registers in the gap 
 _tclear=_ext(_inF,_gap_lo,_gap_hi-_gap_lo).cut(_inset(TRIM_DEPTH+.3,_gap_lo-1,_gap_hi-_gap_lo+2)).intersect(_front)
 _fclear=_ext(cq.Face.makeFromWires(_ow.offset2D(TRIM_PROUD+.3,'arc')[0]),_gap_lo,_gap_hi-_gap_lo).cut(_ext(_inF,_gap_lo-1,_gap_hi-_gap_lo+2)).intersect(_front)   # the fin's sharp corners must not poke into the trim flange
 _sb=sorted(PARTS['splice-plate'].cut(_tclear).cut(_fclear).clean().Solids(),key=lambda q:-q.Volume());print('splice-plate bodies after trim clearance',[round(q.Volume(),1) for q in _sb],flush=True)
-PARTS['splice-plate']=_sb[0];POSES['splice-plate']=norm(pose(PARTS['splice-plate'],'left'))   # the fin gives way to the tongue
+PARTS['splice-plate']=_sb[0];POSES['splice-plate']=norm(pose(PARTS['splice-plate'],'base'))   # the front trim's tongue owns the front of the gap
 for index,(air,names,void_volume,_) in MODULE_AIR.items():
     material=PARTS[names[0]].Solids()[0].fuse(PARTS[names[1]].Solids()[0]).clean()
     void=air.cut(material).clean()
@@ -422,7 +427,7 @@ for name,(shape,pose) in COUPONS.items():
 cq.exporters.export(cq.Compound.makeCompound(list(PARTS.values())),str(OUT/'D9-P2-assembly.step'))
 colors=[(44,105,123),(183,127,57),(60,78,94),(83,130,143)]
 image,_=render([(s,(198,153,65) if n.endswith('-key') else (115,132,141) if n.endswith('-pin') else colors[i%4]) for i,(n,s) in enumerate(PARTS.items())],(1500,1000),(.8,1,.55),pad=45);image.save(OUT/'D9-P2-assembly.png')
-manifest={'revision':'D9-P5','lean_deg':LEAN,'modular_contact':{'frame':'R7 d9-source (base, brace, tower with deck top and two 22-mm channels, 8-degree lid rail, 6-mm outer wall)','pieces_per_end':['seat peg','fence peg'],'lock':'one 36-mm fan pin through the outer wall and both feet, 0.15-mm cam offset, no key','socket':SOCK},'fit_corrections':{'pin_bore_diameter_mm':2*BORE_R,'pin_across_corners_mm':2*PIN_R,'key_barb_width_mm':2*KEY_BARB,'key_slot_mm':5.4,'key_barb_total_interference_mm':round(2*KEY_BARB-5.4,2),'t_tongue_height_mm':TONGUE_H,'source':'printed P2 fit plate, user feedback 2026-09-18'},'edge_treatment':{'parameters_mm':EDGE,'reports':DRESS,'air_recheck':AIR_DELTA,'protected':'air cavity, fan seats, sockets, pin bores, key slots, T joints, guard aperture and standoffs, laptop contact band'},'cradle_source':{'both_ends':'R7 frame d9-source','module_1_plug_end_fence_peg':'tall (64 mm)','module_2_far_end_fence_peg':'short (15 mm): the rear foot strip slides through this end during docking'},'scope':'Cradles, split plenums, fan guards, frame ties, the splice plate, the exchangeable centre contact and the gap trim; no added metal fasteners; plug mechanism excluded','splice':{'x_span_mm':[CF_X0,CF_X0+CF_W],'fin_and_rib_thickness_mm':_gx1-_gx0,'gap_mm':_gap_hi-_gap_lo,'envelope_clearance_mm':CF_CLR,'shelf_z_mm':SHELF_Z,'foot_gap_above_corner_feet_mm':CF_DESK_GAP,'splice_plate':'epoxied to both halves','center_contact':'exchangeable: fence peg foot in the splice-plate channel, seat head merged on, plate bears on the shelf'},'parts':RECORDS,'fit_coupons':coupon_records,'modules':MODULES,'joints':JOINTS,'metal_hardware_count':0,'printed_parts':len(PARTS),'part_interferences':checks,'upper_laptop_overlap_mm3':upper,'fan_overlap_mm3':fans,'qualification':'Prototype; CAD and Orca verification are separate from physical fit, support removal, printed-key durability, structural load and cooling tests.','builder_sha256':sha(Path(__file__)),'source_sha256':{'R7_frame_step':sha(SOURCE_STEP[1]),'R7_socket_void_step':sha(R7/'D8-R7-socket-void-d9-source.step'),**{f'R7_{k}_step':sha(v) for k,v in INSERT_STEP.items()},'R2_step':sha(D8/'quick-fit/R2/D8-R2-quick-fit-bracket.step'),'parameters':sha(D8/'parameters.json'),'flow_geometry':sha(D8/'flow-geometry.json')}}
+manifest={'revision':'D9-P5','lean_deg':LEAN,'modular_contact':{'frame':'R7 d9-source (base, brace, tower with deck top and two 22-mm channels, 8-degree lid rail, 6-mm outer wall)','pieces_per_end':['seat peg','fence peg'],'lock':'one 36-mm fan pin through the outer wall and both feet, 0.15-mm cam offset, no key','socket':SOCK},'fit_corrections':{'pin_bore_diameter_mm':2*BORE_R,'pin_shaft_diameter_mm':2*PIN_R_ROUND,'pin_profile':'round with one chord flat (all 22 pins and the two peg locks, 2026-09-19)','pin_across_corners_mm_octagon_retired':2*PIN_R,'key_barb_width_mm':2*KEY_BARB,'key_slot_mm':5.4,'key_barb_total_interference_mm':round(2*KEY_BARB-5.4,2),'t_tongue_height_mm':TONGUE_H,'source':'printed P2 fit plate, user feedback 2026-09-18'},'edge_treatment':{'parameters_mm':EDGE,'reports':DRESS,'air_recheck':AIR_DELTA,'protected':'air cavity, fan seats, sockets, pin bores, key slots, T joints, guard aperture and standoffs, laptop contact band'},'cradle_source':{'both_ends':'R7 frame d9-source','module_1_plug_end_fence_peg':'tall (64 mm)','module_2_far_end_fence_peg':'short (15 mm): the rear foot strip slides through this end during docking'},'scope':'Cradles, split plenums, fan guards, frame ties, the splice plate, the exchangeable centre contact and the gap trim; no added metal fasteners; plug mechanism excluded','splice':{'x_span_mm':[CF_X0,CF_X0+CF_W],'fin_and_rib_thickness_mm':_gx1-_gx0,'gap_mm':_gap_hi-_gap_lo,'envelope_clearance_mm':CF_CLR,'shelf_z_mm':SHELF_Z,'foot_gap_above_corner_feet_mm':CF_DESK_GAP,'splice_plate':'epoxied to both halves','center_contact':'exchangeable: fence peg foot in the splice-plate channel, seat head merged on, plate bears on the shelf'},'parts':RECORDS,'fit_coupons':coupon_records,'modules':MODULES,'joints':JOINTS,'metal_hardware_count':0,'printed_parts':len(PARTS),'part_interferences':checks,'upper_laptop_overlap_mm3':upper,'fan_overlap_mm3':fans,'qualification':'Prototype; CAD and Orca verification are separate from physical fit, support removal, printed-key durability, structural load and cooling tests.','builder_sha256':sha(Path(__file__)),'source_sha256':{'R7_frame_step':sha(SOURCE_STEP[1]),'R7_socket_void_step':sha(R7/'D8-R7-socket-void-d9-source.step'),**{f'R7_{k}_step':sha(v) for k,v in INSERT_STEP.items()},'R2_step':sha(D8/'quick-fit/R2/D8-R2-quick-fit-bracket.step'),'parameters':sha(D8/'parameters.json'),'flow_geometry':sha(D8/'flow-geometry.json')}}
 (OUT/'manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
 print(json.dumps({'parts':len(PARTS),'interferences':checks,'upper':upper,'fan_interference':{k:v for k,v in fans.items() if v>.001}},indent=2),flush=True)
 assert not checks and max(upper.values(),default=0)<.001 and max(fans.values())<.001,'Resolve geometric interference before slicing'

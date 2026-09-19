@@ -5,8 +5,8 @@ per end (tall at the plug end), one horizontal fan pin with a 0.15-mm cam
 offset, push-out holes; the 8° lid rail is the only fixed contact. Plenum
 front wall 24 → 26.5 for the 8° lid. P4 fit corrections kept, except the T tongue,
 which is back to 12.7 mm: the 0.6 mm “proud” reading was stuck support debris.
-Round-shaft trial: the four frame-end pins are round 8.2 mm with a bed flat (the
-printed octagons rattled in their 8.4 mm bores); judge them before converting the rest.
+One pin type: every pin is round 7.9 mm with a bed flat (0.5 mm diametral in the 8.4 mm bores). Octagons rattled;
+the 8.2 mm round trial would not enter the printed bores. Replace the four frame-end pins printed 19 Sept from plate 07.
 Bonus fan-screw holes (optional): 4.5 mm through the guards, 3.5 mm × 6 mm blind pilots in
 every flange on the 105 mm pattern, for M4 × 45 screws; pins stay primary. Drill the M1 cradle
 and the two inner shells printed on 18 September using the guard as a jig.
@@ -15,7 +15,7 @@ M2 outer lose most of their support. Plate 04 is re-sliced in calibrated ASA wit
 Splice (19 Sept): fixed splice plate (fin in the gap, foot 0.5 mm shy of the corner feet, outer wall, lid rail,
 shelf; epoxied) plus an exchangeable centre contact (fence peg with the seat head merged on, foot in the channel).
 On plate 08, plus the gap trim on plate 10 (L strip: tongue in the gap, 4 mm flange over the M2 front skin,
-prints flat, 22 min). ASA plate 17 carries all three (`d9-p5-print-pass/asa/17-splice-plate-contact`, 2 h 05 m).
+prints flat, 22 min). ASA plate 17 carries all three plus four replacement frame-end pins (`d9-p5-print-pass/asa/17-splice-plate-contact`, 2 h 27 m).
 [Kit](../../printables/d9-p5/Precision_5680_D9_P5_Print_Kit.zip) · [fit plate](../../printables/d9-p5/OPEN-ME.3mf) · [notes](../../printables/d9-p5/README.md) · [print log](../../prints/).
 
 1. Plates 02, 03, 05, 06, 07 (675 g, 27 h 39 m) do not depend on contact geometry: start any time.
@@ -25,7 +25,7 @@ prints flat, 22 min). ASA plate 17 carries all three (`d9-p5-print-pass/asa/17-s
    Remaining plates, regrouped for one morning and one evening swap per day (calibrated ASA, slot 3,
    sliced and verified 18 September evening in `d9-p5-print-pass/asa/14..16`):
    - Sat morning: 15 = M1 fan guard + all four ties (7 h 59 m, 142 g).
-   - Sat evening: 14 = M2 outer cradle + all 16 seam/fan/lap pins and keys (12 h 48 m, 213 g), overnight.
+   - Sat evening: 14 = M2 outer cradle + all 16 seam/fan/lap pins and keys, round 7.9 mm pins (12 h 38 m, 213 g), overnight.
    - Sun morning: 16 = M2 fan guard alone (2 h 00 m, 41 g). Dock complete about 10:00 Sunday;
      two purchased 120 mm fans mount on pins/keys or M4 x 45 screws. Plug mechanism still excluded.
 3. Outer cradles 01 and 04 (446 g, 20 h 36 m) once the pegs are trusted.

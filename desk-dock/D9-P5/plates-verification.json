@@ -1,7 +1,7 @@
 {
   "00": {
     "passed": true,
-    "time": "1h 47m 3s; total estimated time: 1h 53m 15s",
+    "time": "1h 46m 10s; total estimated time: 1h 52m 21s",
     "filament_g": "",
     "objects": {
       "fan-socket-fit-fixture": {
@@ -9,7 +9,7 @@
         "external_bridge": 63
       },
       "M1-fan-3-pin": {
-        "support": 973,
+        "support": 230,
         "external_bridge": 0
       },
       "M1-fan-3-key": {
@@ -21,7 +21,7 @@
         "external_bridge": 110
       },
       "M1-fan-1-pin": {
-        "support": 973,
+        "support": 230,
         "external_bridge": 0
       },
       "M1-fan-1-key": {
@@ -37,7 +37,7 @@
         "external_bridge": 0
       },
       "front-lap-pin": {
-        "support": 814,
+        "support": 202,
         "external_bridge": 0
       },
       "front-lap-key": {
@@ -92,7 +92,7 @@
   },
   "05": {
     "passed": true,
-    "time": "5h 1m 14s; total estimated time: 5h 7m 26s",
+    "time": "5h 1m 4s; total estimated time: 5h 7m 16s",
     "filament_g": "",
     "objects": {
       "M1-fan-guard": {
@@ -130,11 +130,11 @@
   },
   "07": {
     "passed": true,
-    "time": "2h 56m 55s; total estimated time: 3h 3m 6s",
+    "time": "2h 51m 45s; total estimated time: 2h 57m 56s",
     "filament_g": "",
     "objects": {
       "M1-seam-1-pin": {
-        "support": 781,
+        "support": 195,
         "external_bridge": 0
       },
       "M1-seam-1-key": {
@@ -142,7 +142,7 @@
         "external_bridge": 0
       },
       "M1-seam-2-pin": {
-        "support": 781,
+        "support": 195,
         "external_bridge": 0
       },
       "M1-seam-2-key": {
@@ -150,7 +150,7 @@
         "external_bridge": 0
       },
       "M1-seam-3-pin": {
-        "support": 781,
+        "support": 195,
         "external_bridge": 0
       },
       "M1-seam-3-key": {
@@ -158,7 +158,7 @@
         "external_bridge": 0
       },
       "M1-fan-1-pin": {
-        "support": 973,
+        "support": 230,
         "external_bridge": 0
       },
       "M1-fan-1-key": {
@@ -166,7 +166,7 @@
         "external_bridge": 0
       },
       "M1-fan-2-pin": {
-        "support": 973,
+        "support": 230,
         "external_bridge": 0
       },
       "M1-fan-2-key": {
@@ -174,7 +174,7 @@
         "external_bridge": 0
       },
       "M1-fan-3-pin": {
-        "support": 973,
+        "support": 230,
         "external_bridge": 0
       },
       "M1-fan-3-key": {
@@ -182,7 +182,7 @@
         "external_bridge": 0
       },
       "M1-fan-4-pin": {
-        "support": 973,
+        "support": 230,
         "external_bridge": 0
       },
       "M1-fan-4-key": {
@@ -190,7 +190,7 @@
         "external_bridge": 0
       },
       "M2-seam-1-pin": {
-        "support": 781,
+        "support": 195,
         "external_bridge": 0
       },
       "M2-seam-1-key": {
@@ -198,7 +198,7 @@
         "external_bridge": 0
       },
       "M2-seam-2-pin": {
-        "support": 781,
+        "support": 195,
         "external_bridge": 0
       },
       "M2-seam-2-key": {
@@ -206,7 +206,7 @@
         "external_bridge": 0
       },
       "M2-seam-3-pin": {
-        "support": 781,
+        "support": 195,
         "external_bridge": 0
       },
       "M2-seam-3-key": {
@@ -214,7 +214,7 @@
         "external_bridge": 0
       },
       "M2-fan-1-pin": {
-        "support": 973,
+        "support": 230,
         "external_bridge": 0
       },
       "M2-fan-1-key": {
@@ -222,7 +222,7 @@
         "external_bridge": 0
       },
       "M2-fan-2-pin": {
-        "support": 973,
+        "support": 230,
         "external_bridge": 0
       },
       "M2-fan-2-key": {
@@ -230,7 +230,7 @@
         "external_bridge": 0
       },
       "M2-fan-3-pin": {
-        "support": 973,
+        "support": 230,
         "external_bridge": 0
       },
       "M2-fan-3-key": {
@@ -238,7 +238,7 @@
         "external_bridge": 0
       },
       "M2-fan-4-pin": {
-        "support": 973,
+        "support": 230,
         "external_bridge": 0
       },
       "M2-fan-4-key": {
@@ -246,7 +246,7 @@
         "external_bridge": 0
       },
       "front-frame-L-pin": {
-        "support": 111,
+        "support": 215,
         "external_bridge": 0
       },
       "front-frame-L-key": {
@@ -254,7 +254,7 @@
         "external_bridge": 0
       },
       "front-frame-R-pin": {
-        "support": 111,
+        "support": 215,
         "external_bridge": 0
       },
       "front-frame-R-key": {
@@ -262,7 +262,7 @@
         "external_bridge": 0
       },
       "front-lap-pin": {
-        "support": 814,
+        "support": 202,
         "external_bridge": 0
       },
       "front-lap-key": {
@@ -270,7 +270,7 @@
         "external_bridge": 0
       },
       "rear-frame-L-pin": {
-        "support": 111,
+        "support": 215,
         "external_bridge": 0
       },
       "rear-frame-L-key": {
@@ -278,7 +278,7 @@
         "external_bridge": 0
       },
       "rear-frame-R-pin": {
-        "support": 111,
+        "support": 215,
         "external_bridge": 0
       },
       "rear-frame-R-key": {
@@ -286,7 +286,7 @@
         "external_bridge": 0
       },
       "rear-lap-pin": {
-        "support": 814,
+        "support": 202,
         "external_bridge": 0
       },
       "rear-lap-key": {
@@ -297,7 +297,7 @@
   },
   "08": {
     "passed": true,
-    "time": "3h 4m 43s; total estimated time: 3h 10m 55s",
+    "time": "3h 22m 1s; total estimated time: 3h 28m 13s",
     "filament_g": "",
     "objects": {
       "M1-seat-peg": {
@@ -317,16 +317,16 @@
         "external_bridge": 5
       },
       "M1-insert-pin": {
-        "support": 973,
+        "support": 230,
         "external_bridge": 0
       },
       "M2-insert-pin": {
-        "support": 973,
+        "support": 230,
         "external_bridge": 0
       },
       "splice-plate": {
-        "support": 6029,
-        "external_bridge": 809
+        "support": 17284,
+        "external_bridge": 138
       },
       "center-contact": {
         "support": 622,
@@ -336,7 +336,7 @@
   },
   "09": {
     "passed": true,
-    "time": "6h 55m 6s; total estimated time: 7h 1m 18s",
+    "time": "6h 54m 53s; total estimated time: 7h 1m 5s",
     "filament_g": "",
     "objects": {
       "cradle-end-trial": {
@@ -352,7 +352,7 @@
         "external_bridge": 43
       },
       "M1-insert-pin": {
-        "support": 973,
+        "support": 230,
         "external_bridge": 0
       }
     }
