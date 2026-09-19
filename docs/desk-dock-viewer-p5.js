@@ -22,7 +22,7 @@ for(const m of meshes){const p=m.userData;const isLaptop=p.group==='laptop';
 if(isLaptop&&!e)m.position.set(x,up[1]*lift,up[2]*lift);else m.position.set(p.explode[0]*e,p.explode[1]*e,p.explode[2]*e);
 let vis=true;for(const [id,groups] of Object.entries(TOGGLE))if(groups.includes(p.group)&&!$(id).checked)vis=false;m.visible=vis;}
 air.visible=$('air').checked&&e===0;}
-function view(name){const views={home:[[-320,760,470],[170,40,120]],lid:[[177,900,220],[177,30,120]],under:[[120,-820,420],[177,0,110]],plug:[[-260,240,200],[40,20,90]],exploded:[[-380,820,560],[170,40,130]]};
+function view(name){const views={home:[[-330,-640,520],[177,30,115]],lid:[[177,900,260],[177,40,130]],under:[[177,-760,300],[177,0,100]],plug:[[-330,-160,210],[50,20,90]],exploded:[[-420,-760,640],[177,20,120]]};
 if(name==='exploded'){$('explode').value=100;$('motion').value=0;update();}const [pos,tgt]=views[name]||views.home;camera.position.set(...pos);controls.target.set(...tgt);controls.update();
 document.querySelectorAll('[data-view]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.view===name)));}
 function select(m){if(selected)selected.material.emissive.setHex(0);selected=m;if(m){m.material.emissive.setHex(0x235549);$('part').value=m.userData.name;$('detail').textContent=pretty(m.userData.name)+(m.userData.note?': '+m.userData.note:'')+(m.userData.reference?' Reference body, not printed.':'');}else{$('part').value='';$('detail').textContent='Select a part in the model or the list to see what it does.';}}
@@ -30,11 +30,11 @@ try{
 const [man,buffer]=await Promise.all([fetch('models/desk-dock-p5/model.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error(r.status);return r.json();}),fetch('models/desk-dock-p5/model.bin',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error(r.status);return r.arrayBuffer();})]);
 manifest=man;
 for(const p of man.parts){const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.BufferAttribute(new Float32Array(buffer,p.positionOffset,p.vertexCount*3),3));g.setIndex(new THREE.BufferAttribute(new Uint32Array(buffer,p.indexOffset,p.indexCount),1));g.computeVertexNormals();
-const mat=new THREE.MeshStandardMaterial({color:new THREE.Color(p.color[0]/255,p.color[1]/255,p.color[2]/255),roughness:.72,metalness:.05,transparent:p.reference,opacity:p.reference?(p.group==='laptop'?.45:.85):1});
+const mat=new THREE.MeshStandardMaterial({color:new THREE.Color(p.color[0]/255,p.color[1]/255,p.color[2]/255),roughness:.72,metalness:.05,transparent:p.reference,opacity:p.reference?(p.group==='laptop'?.28:.85):1});
 const m=new THREE.Mesh(g,mat);m.userData=p;scene.add(m);meshes.push(m);const o=document.createElement('option');o.value=p.name;o.textContent=pretty(p.name);$('part').append(o);}
 // Arrows show the intended extraction direction only; they are not a CFD result.
 const ex=man.exhaust_axis;for(const x of man.fan_centers_x){air.add(new THREE.ArrowHelper(new THREE.Vector3(ex[0],ex[1],ex[2]),new THREE.Vector3(x,150,150),90,0x79decd,22,11));air.add(new THREE.ArrowHelper(new THREE.Vector3(0,0,-1),new THREE.Vector3(x,0,62),40,0x79decd,14,7));}
-$('loading').hidden=true;window.deskDockReady=true;update();view('home');
+$('loading').hidden=true;window.deskDockReady=true;update();view(new URLSearchParams(location.search).get('view')||'home');
 }catch(e){$('loading').textContent='Could not load the P5 CAD model.';console.error(e);}
 for(const id of ['explode','motion'])$(id).addEventListener('input',()=>{stop();$(id==='explode'?'motion':'explode').value=0;update();});
 for(const id of [...Object.keys(TOGGLE),'air'])$(id).addEventListener('change',update);
