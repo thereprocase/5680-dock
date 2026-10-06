@@ -1,0 +1,459 @@
+{
+  "parts": [
+    {
+      "part": "01_fan_guard_retainer",
+      "file": "01_fan_guard_retainer.stl",
+      "orientation": "Flat grille front face on bed; integral top return upward.",
+      "dimensions_mm": [
+        128.7,
+        129.50000000000003,
+        36.60000000000002
+      ],
+      "first_0p2mm_mean_contact_area_mm2": 8100.58606582395,
+      "support_review": "Required: inspect unsupported ledges, bridges and support removal in a working slicer.",
+      "material": "PETG",
+      "printer": "Bambu P1S, 0.4 mm nozzle",
+      "infill": "100% for initial structural/fastener/spring qualification; hollow CAD ducts remain hollow."
+    },
+    {
+      "part": "02_fan_guard_retainer",
+      "file": "02_fan_guard_retainer.stl",
+      "orientation": "Flat grille front face on bed; integral top return upward.",
+      "dimensions_mm": [
+        128.69999999999996,
+        129.50000000000003,
+        36.60000000000002
+      ],
+      "first_0p2mm_mean_contact_area_mm2": 8100.586065823943,
+      "support_review": "Required: inspect unsupported ledges, bridges and support removal in a working slicer.",
+      "material": "PETG",
+      "printer": "Bambu P1S, 0.4 mm nozzle",
+      "infill": "100% for initial structural/fastener/spring qualification; hollow CAD ducts remain hollow."
+    },
+    {
+      "part": "breakaway_carrier",
+      "file": "breakaway_carrier.stl",
+      "orientation": "Laptop lean removed; flat underside on bed.",
+      "dimensions_mm": [
+        60.0000001,
+        58.500000000000014,
+        80.15000020000002
+      ],
+      "first_0p2mm_mean_contact_area_mm2": 2029.6326145688913,
+      "support_review": "Required: inspect unsupported ledges, bridges and support removal in a working slicer.",
+      "material": "PETG",
+      "printer": "Bambu P1S, 0.4 mm nozzle",
+      "infill": "100% for initial structural/fastener/spring qualification; hollow CAD ducts remain hollow."
+    },
+    {
+      "part": "breakaway_pivot_pin_10mm",
+      "file": "breakaway_pivot_pin_10mm.stl",
+      "orientation": "Large pin head on bed, shaft upright. Qualify layer strength and fit.",
+      "dimensions_mm": [
+        22.0,
+        22.00000000000003,
+        88.0000001
+      ],
+      "first_0p2mm_mean_contact_area_mm2": 380.132711084354,
+      "support_review": "Required: inspect unsupported ledges, bridges and support removal in a working slicer.",
+      "material": "PETG",
+      "printer": "Bambu P1S, 0.4 mm nozzle",
+      "infill": "100% for initial structural/fastener/spring qualification; hollow CAD ducts remain hollow."
+    },
+    {
+      "part": "breakaway_spring_cartridge",
+      "file": "breakaway_spring_cartridge.stl",
+      "orientation": "UNLOADED spring: common flat outside face on bed; leaf lengths and bending stress in the bed plane.",
+      "dimensions_mm": [
+        88.0,
+        60.0,
+        11.000000000000007
+      ],
+      "first_0p2mm_mean_contact_area_mm2": 4463.186190297514,
+      "support_review": "Required: inspect unsupported ledges, bridges and support removal in a working slicer.",
+      "material": "PETG",
+      "printer": "Bambu P1S, 0.4 mm nozzle",
+      "infill": "100% for initial structural/fastener/spring qualification; hollow CAD ducts remain hollow."
+    },
+    {
+      "part": "breakaway_preload_hand_nut",
+      "file": "breakaway_preload_hand_nut.stl",
+      "orientation": "Large hand face on bed; custom thread axis vertical.",
+      "dimensions_mm": [
+        23.70833333333334,
+        24.00000000000003,
+        10.00000020000002
+      ],
+      "first_0p2mm_mean_contact_area_mm2": 346.5457697723219,
+      "support_review": "Required: inspect unsupported ledges, bridges and support removal in a working slicer.",
+      "material": "PETG",
+      "printer": "Bambu P1S, 0.4 mm nozzle",
+      "infill": "100% for initial structural/fastener/spring qualification; hollow CAD ducts remain hollow."
+    },
+    {
+      "part": "breakaway_spring_hand_screw_0",
+      "file": "breakaway_spring_hand_screw_0.stl",
+      "orientation": "Large hand face on bed; custom thread axis vertical.",
+      "dimensions_mm": [
+        16.603092983505157,
+        17.000000200000002,
+        53.000000099999994
+      ],
+      "first_0p2mm_mean_contact_area_mm2": 210.28296188017882,
+      "support_review": "Required: inspect unsupported ledges, bridges and support removal in a working slicer.",
+      "material": "PETG",
+      "printer": "Bambu P1S, 0.4 mm nozzle",
+      "infill": "100% for initial structural/fastener/spring qualification; hollow CAD ducts remain hollow."
+    },
+    {
+      "part": "breakaway_spring_hand_screw_1",
+      "file": "breakaway_spring_hand_screw_1.stl",
+      "orientation": "Large hand face on bed; custom thread axis vertical.",
+      "dimensions_mm": [
+        16.603092983505157,
+        17.000000200000002,
+        53.00000010000001
+      ],
+      "first_0p2mm_mean_contact_area_mm2": 210.28296188018052,
+      "support_review": "Required: inspect unsupported ledges, bridges and support removal in a working slicer.",
+      "material": "PETG",
+      "printer": "Bambu P1S, 0.4 mm nozzle",
+      "infill": "100% for initial structural/fastener/spring qualification; hollow CAD ducts remain hollow."
+    },
+    {
+      "part": "height_shim_pack",
+      "file": "height_shim_pack.stl",
+      "orientation": "Underside key on bed; broad peripheral ledge starts 4.3 mm above bed and requires accessible support review.",
+      "dimensions_mm": [
+        38.4,
+        37.50000000000001,
+        16.60000000000004
+      ],
+      "first_0p2mm_mean_contact_area_mm2": 387.9061990118511,
+      "support_review": "Required: inspect unsupported ledges, bridges and support removal in a working slicer.",
+      "material": "PETG",
+      "printer": "Bambu P1S, 0.4 mm nozzle",
+      "infill": "100% for initial structural/fastener/spring qualification; hollow CAD ducts remain hollow."
+    },
+    {
+      "part": "cassette_calibration_keeper_plate",
+      "file": "cassette_calibration_keeper_plate.stl",
+      "orientation": "Laptop lean removed; flat underside on bed.",
+      "dimensions_mm": [
+        34.0,
+        32.00000000000001,
+        5.000000000000028
+      ],
+      "first_0p2mm_mean_contact_area_mm2": 1025.119583626783,
+      "support_review": "Required: inspect unsupported ledges, bridges and support removal in a working slicer.",
+      "material": "PETG",
+      "printer": "Bambu P1S, 0.4 mm nozzle",
+      "infill": "100% for initial structural/fastener/spring qualification; hollow CAD ducts remain hollow."
+    },
+    {
+      "part": "cassette_calibration_hand_screw",
+      "file": "cassette_calibration_hand_screw.stl",
+      "orientation": "Laptop lean removed; flat underside on bed.",
+      "dimensions_mm": [
+        19.656250200000002,
+        20.000000200000002,
+        28.900000100000035
+      ],
+      "first_0p2mm_mean_contact_area_mm2": 297.23968332904707,
+      "support_review": "Required: inspect unsupported ledges, bridges and support removal in a working slicer.",
+      "material": "PETG",
+      "printer": "Bambu P1S, 0.4 mm nozzle",
+      "infill": "100% for initial structural/fastener/spring qualification; hollow CAD ducts remain hollow."
+    },
+    {
+      "part": "X_depth_overmold_clamp",
+      "file": "X_depth_overmold_clamp.stl",
+      "orientation": "Laptop lean removed; flat underside on bed.",
+      "dimensions_mm": [
+        32.6,
+        29.000000000000007,
+        28.200000100000018
+      ],
+      "first_0p2mm_mean_contact_area_mm2": 770.3071062707944,
+      "support_review": "Required: inspect unsupported ledges, bridges and support removal in a working slicer.",
+      "material": "PETG",
+      "printer": "Bambu P1S, 0.4 mm nozzle",
+      "infill": "100% for initial structural/fastener/spring qualification; hollow CAD ducts remain hollow."
+    },
+    {
+      "part": "sliding_plug_cap",
+      "file": "sliding_plug_cap.stl",
+      "orientation": "Inverted cap on its rear clevis; broad face has a 2.5 mm ledge requiring accessible support review.",
+      "dimensions_mm": [
+        32.6,
+        24.268644412551083,
+        10.100000000000051
+      ],
+      "first_0p2mm_mean_contact_area_mm2": 90.19999999999749,
+      "support_review": "Required: inspect unsupported ledges, bridges and support removal in a working slicer.",
+      "material": "PETG",
+      "printer": "Bambu P1S, 0.4 mm nozzle",
+      "infill": "100% for initial structural/fastener/spring qualification; hollow CAD ducts remain hollow."
+    },
+    {
+      "part": "cassette_cap_push_pin_6p5",
+      "file": "cassette_cap_push_pin_6p5.stl",
+      "orientation": "Large pin head on bed, shaft upright. Qualify layer strength and fit.",
+      "dimensions_mm": [
+        14.0,
+        14.0,
+        28.268644412551076
+      ],
+      "first_0p2mm_mean_contact_area_mm2": 153.9380400258999,
+      "support_review": "Required: inspect unsupported ledges, bridges and support removal in a working slicer.",
+      "material": "PETG",
+      "printer": "Bambu P1S, 0.4 mm nozzle",
+      "infill": "100% for initial structural/fastener/spring qualification; hollow CAD ducts remain hollow."
+    },
+    {
+      "part": "independent_printed_chassis_stop_screw",
+      "file": "independent_printed_chassis_stop_screw.stl",
+      "orientation": "Large hand face on bed; 10 mm custom threaded shaft upright.",
+      "dimensions_mm": [
+        23.70833353333335,
+        24.000000200000002,
+        27.0
+      ],
+      "first_0p2mm_mean_contact_area_mm2": 435.2539554280867,
+      "support_review": "Required: inspect unsupported ledges, bridges and support removal in a working slicer.",
+      "material": "PETG",
+      "printer": "Bambu P1S, 0.4 mm nozzle",
+      "infill": "100% for initial structural/fastener/spring qualification; hollow CAD ducts remain hollow."
+    },
+    {
+      "part": "stop_soft_tip",
+      "file": "stop_soft_tip.stl",
+      "orientation": "Closed contact face on bed; socket upward. Use a flexible bumper, or PETG with an added soft face pad and recalibrate the stop.",
+      "dimensions_mm": [
+        12.000000000000007,
+        12.0,
+        4.0000000000000036
+      ],
+      "first_0p2mm_mean_contact_area_mm2": 113.09733552923252,
+      "support_review": "Required: inspect unsupported ledges, bridges and support removal in a working slicer.",
+      "material": "PETG",
+      "printer": "Bambu P1S, 0.4 mm nozzle",
+      "infill": "100% for initial structural/fastener/spring qualification; hollow CAD ducts remain hollow."
+    },
+    {
+      "part": "01_bottom_thumb_lock_1",
+      "file": "01_bottom_thumb_lock_1.stl",
+      "orientation": "Flat underside on bed.",
+      "dimensions_mm": [
+        17.622549219607848,
+        18.000000200000002,
+        19.0000001
+      ],
+      "first_0p2mm_mean_contact_area_mm2": 226.62377405747756,
+      "support_review": "Required: inspect unsupported ledges, bridges and support removal in a working slicer.",
+      "material": "PETG",
+      "printer": "Bambu P1S, 0.4 mm nozzle",
+      "infill": "100% for initial structural/fastener/spring qualification; hollow CAD ducts remain hollow."
+    },
+    {
+      "part": "01_bottom_thumb_lock_2",
+      "file": "01_bottom_thumb_lock_2.stl",
+      "orientation": "Flat underside on bed.",
+      "dimensions_mm": [
+        17.622549219607848,
+        18.000000200000002,
+        19.0000001
+      ],
+      "first_0p2mm_mean_contact_area_mm2": 226.62377405745266,
+      "support_review": "Required: inspect unsupported ledges, bridges and support removal in a working slicer.",
+      "material": "PETG",
+      "printer": "Bambu P1S, 0.4 mm nozzle",
+      "infill": "100% for initial structural/fastener/spring qualification; hollow CAD ducts remain hollow."
+    },
+    {
+      "part": "01_bottom_panel",
+      "file": "01_bottom_panel.stl",
+      "orientation": "Flat underside on bed.",
+      "dimensions_mm": [
+        181.24,
+        91.23349235828354,
+        10.700000000000001
+      ],
+      "first_0p2mm_mean_contact_area_mm2": 13386.88755524027,
+      "support_review": "Required: inspect unsupported ledges, bridges and support removal in a working slicer.",
+      "material": "PETG",
+      "printer": "Bambu P1S, 0.4 mm nozzle",
+      "infill": "100% for initial structural/fastener/spring qualification; hollow CAD ducts remain hollow."
+    },
+    {
+      "part": "02_bottom_thumb_lock_1",
+      "file": "02_bottom_thumb_lock_1.stl",
+      "orientation": "Flat underside on bed.",
+      "dimensions_mm": [
+        17.622549219607848,
+        18.000000200000002,
+        19.0000001
+      ],
+      "first_0p2mm_mean_contact_area_mm2": 226.62377405745266,
+      "support_review": "Required: inspect unsupported ledges, bridges and support removal in a working slicer.",
+      "material": "PETG",
+      "printer": "Bambu P1S, 0.4 mm nozzle",
+      "infill": "100% for initial structural/fastener/spring qualification; hollow CAD ducts remain hollow."
+    },
+    {
+      "part": "02_bottom_thumb_lock_2",
+      "file": "02_bottom_thumb_lock_2.stl",
+      "orientation": "Flat underside on bed.",
+      "dimensions_mm": [
+        17.622549219607848,
+        18.000000200000002,
+        19.0000001
+      ],
+      "first_0p2mm_mean_contact_area_mm2": 226.62377405743058,
+      "support_review": "Required: inspect unsupported ledges, bridges and support removal in a working slicer.",
+      "material": "PETG",
+      "printer": "Bambu P1S, 0.4 mm nozzle",
+      "infill": "100% for initial structural/fastener/spring qualification; hollow CAD ducts remain hollow."
+    },
+    {
+      "part": "02_bottom_panel",
+      "file": "02_bottom_panel.stl",
+      "orientation": "Flat underside on bed.",
+      "dimensions_mm": [
+        198.94,
+        91.23349235828353,
+        10.700000000000001
+      ],
+      "first_0p2mm_mean_contact_area_mm2": 14846.148821021765,
+      "support_review": "Required: inspect unsupported ledges, bridges and support removal in a working slicer.",
+      "material": "PETG",
+      "printer": "Bambu P1S, 0.4 mm nozzle",
+      "infill": "100% for initial structural/fastener/spring qualification; hollow CAD ducts remain hollow."
+    },
+    {
+      "part": "01_bridge_thumb_lock_1",
+      "file": "01_bridge_thumb_lock_1.stl",
+      "orientation": "Large hand face on bed; 8 mm custom thread shaft upright.",
+      "dimensions_mm": [
+        17.622549219607848,
+        18.000000200000002,
+        19.000000100000005
+      ],
+      "first_0p2mm_mean_contact_area_mm2": 237.69020266518902,
+      "support_review": "Required: inspect unsupported ledges, bridges and support removal in a working slicer.",
+      "material": "PETG",
+      "printer": "Bambu P1S, 0.4 mm nozzle",
+      "infill": "100% for initial structural/fastener/spring qualification; hollow CAD ducts remain hollow."
+    },
+    {
+      "part": "02_bridge_thumb_lock_1",
+      "file": "02_bridge_thumb_lock_1.stl",
+      "orientation": "Large hand face on bed; 8 mm custom thread shaft upright.",
+      "dimensions_mm": [
+        17.622549219607848,
+        18.000000200000002,
+        19.000000100000005
+      ],
+      "first_0p2mm_mean_contact_area_mm2": 237.69020266518902,
+      "support_review": "Required: inspect unsupported ledges, bridges and support removal in a working slicer.",
+      "material": "PETG",
+      "printer": "Bambu P1S, 0.4 mm nozzle",
+      "infill": "100% for initial structural/fastener/spring qualification; hollow CAD ducts remain hollow."
+    },
+    {
+      "part": "bridge_key_1",
+      "file": "bridge_key_1.stl",
+      "orientation": "Flat underside on bed.",
+      "dimensions_mm": [
+        40.0,
+        18.0,
+        4.0
+      ],
+      "first_0p2mm_mean_contact_area_mm2": 572.8483898211636,
+      "support_review": "Required: inspect unsupported ledges, bridges and support removal in a working slicer.",
+      "material": "PETG",
+      "printer": "Bambu P1S, 0.4 mm nozzle",
+      "infill": "100% for initial structural/fastener/spring qualification; hollow CAD ducts remain hollow."
+    },
+    {
+      "part": "01_bridge_thumb_lock_2",
+      "file": "01_bridge_thumb_lock_2.stl",
+      "orientation": "Large hand face on bed; 8 mm custom thread shaft upright.",
+      "dimensions_mm": [
+        17.622549219607848,
+        18.000000200000002,
+        19.000000100000005
+      ],
+      "first_0p2mm_mean_contact_area_mm2": 237.69020266519092,
+      "support_review": "Required: inspect unsupported ledges, bridges and support removal in a working slicer.",
+      "material": "PETG",
+      "printer": "Bambu P1S, 0.4 mm nozzle",
+      "infill": "100% for initial structural/fastener/spring qualification; hollow CAD ducts remain hollow."
+    },
+    {
+      "part": "02_bridge_thumb_lock_2",
+      "file": "02_bridge_thumb_lock_2.stl",
+      "orientation": "Large hand face on bed; 8 mm custom thread shaft upright.",
+      "dimensions_mm": [
+        17.622549219607848,
+        18.000000200000002,
+        19.000000100000005
+      ],
+      "first_0p2mm_mean_contact_area_mm2": 237.69020266519092,
+      "support_review": "Required: inspect unsupported ledges, bridges and support removal in a working slicer.",
+      "material": "PETG",
+      "printer": "Bambu P1S, 0.4 mm nozzle",
+      "infill": "100% for initial structural/fastener/spring qualification; hollow CAD ducts remain hollow."
+    },
+    {
+      "part": "bridge_key_2",
+      "file": "bridge_key_2.stl",
+      "orientation": "Flat underside on bed.",
+      "dimensions_mm": [
+        40.0,
+        18.0,
+        4.0
+      ],
+      "first_0p2mm_mean_contact_area_mm2": 572.8483898211636,
+      "support_review": "Required: inspect unsupported ledges, bridges and support removal in a working slicer.",
+      "material": "PETG",
+      "printer": "Bambu P1S, 0.4 mm nozzle",
+      "infill": "100% for initial structural/fastener/spring qualification; hollow CAD ducts remain hollow."
+    }
+  ],
+  "scope": "Saved review state: 28 current production meshes plus 16 coupons. Two shell meshes require regeneration; see CURRENT_STATUS.md.",
+  "pending_regeneration": [
+    {
+      "part": "01_manifold_with_cradle",
+      "file": "01_manifold_with_cradle.stl",
+      "orientation": "Flat center-seam end wall on bed; fixed hinge support builds upward. Inspect duct roofs and accessible internal supports.",
+      "dimensions_mm": [
+        175.37965457490216,
+        132.35913995676438,
+        232.84000010000003
+      ],
+      "first_0p2mm_mean_contact_area_mm2": 4156.516101622054,
+      "support_review": "Required: inspect unsupported ledges, bridges and support removal in a working slicer.",
+      "material": "PETG",
+      "printer": "Bambu P1S, 0.4 mm nozzle",
+      "infill": "100% for initial structural/fastener/spring qualification; hollow CAD ducts remain hollow.",
+      "status": "Regenerate from corrected fan_service.py; prior mesh quarantined."
+    },
+    {
+      "part": "02_manifold_with_cradle",
+      "file": "02_manifold_with_cradle.stl",
+      "orientation": "Fan pocket front rim on bed; open sole accessible for support removal.",
+      "dimensions_mm": [
+        201.54000000000005,
+        140.5660545474445,
+        130.808806948074
+      ],
+      "first_0p2mm_mean_contact_area_mm2": 1855.1999999997354,
+      "support_review": "Required: inspect unsupported ledges, bridges and support removal in a working slicer.",
+      "material": "PETG",
+      "printer": "Bambu P1S, 0.4 mm nozzle",
+      "infill": "100% for initial structural/fastener/spring qualification; hollow CAD ducts remain hollow.",
+      "status": "Regenerate from corrected fan_service.py; prior mesh quarantined."
+    }
+  ]
+}

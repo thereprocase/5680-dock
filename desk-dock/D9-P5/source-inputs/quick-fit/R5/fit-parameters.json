@@ -1,0 +1,19 @@
+{
+  "lip_outward_shift_mm": 2.0,
+  "lip_height_increase_mm": 3.0,
+  "lip_top_edge_radius_mm": 0.65,
+  "seat_extension_toward_underside_mm": 1.0,
+  "status": "R5 = R4 (R2 contact, V5 rail move, thick members) with the short underside fence raised into a 6-mm underside rail at the bracket ends so the laptop cannot tip toward the underside side; same 2.25-mm running clearance and R2 lower profile; 4 x 2 mm lead-in at the top. Requested 2026-09-18 after the R4-C pair flopped off the short fence side when nudged.",
+  "rail_outward_shift_mm": 3.5,
+  "rail_thickness_mm": 6.0,
+  "fence_extra_outer_thickness_mm": 3.25,
+  "base_thickness_mm": 6.0,
+  "brace_width_mm": 6.0,
+  "inside_corner_fillet_mm": 3.0,
+  "outside_corner_fillet_mm": 1.5,
+  "contact_edge_break_mm": 0.5,
+  "top_face_chamfer_mm": 0.8,
+  "fence_top_z_mm": 118.0,
+  "fence_lead_in_height_mm": 4.0,
+  "fence_lead_in_depth_mm": 2.0
+}

@@ -1,0 +1,8 @@
+{
+  "machine": "Repro P1S - 0.4 nozzle",
+  "process": "Repro Normal - 0.4 nozzle",
+  "filament": "Repro - ASA - Polymaker PolyLite - Calibrated",
+  "layer": "0.20",
+  "support_check": "Automatic normal supports at 45 degrees; inspect emitted toolpath roles.",
+  "material": "Polymaker PolyLite ASA, calibrated (flow 0.93, shrink 99.46 %, PA 0.034), AMS slot 3"
+}

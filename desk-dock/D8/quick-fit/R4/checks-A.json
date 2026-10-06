@@ -1,0 +1,290 @@
+{
+  "passed": true,
+  "revision": "R4-A fit pair",
+  "quantity": 2,
+  "identical": true,
+  "variant": "A",
+  "changes": {
+    "lip_outward_shift_mm": 2.0,
+    "lip_height_increase_mm": 3.0,
+    "lip_top_edge_radius_mm": 0.65,
+    "seat_extension_toward_underside_mm": 1.0,
+    "status": "R2 trial increments retained; rail moved 3.5 mm outward per the printed V5 coupons (user request 2026-09-17, not a measurement); members thickened outward/downward only, laptop-facing surfaces unchanged.",
+    "rail_outward_shift_mm": 3.5,
+    "rail_thickness_mm": 6.0,
+    "fence_extra_outer_thickness_mm": 2.0,
+    "base_thickness_mm": 6.0,
+    "brace_width_mm": 6.0,
+    "inside_corner_fillet_mm": 3.0,
+    "outside_corner_fillet_mm": 1.5,
+    "contact_edge_break_mm": 0.5,
+    "top_face_chamfer_mm": 0.8
+  },
+  "rail_inner_face_unleaned_y_mm": 14.585,
+  "rail_thickness_mm": 6.0,
+  "lip_nominal_clearance_mm": 0.25,
+  "fence_inner_to_rail_inner_mm": 25.92,
+  "base_thickness_mm": 6.0,
+  "brace_width_mm": 6.0,
+  "edge_treatment": {
+    "inside": [
+      [
+        103.02,
+        -1.0,
+        3.0
+      ],
+      [
+        6.0,
+        45.44,
+        3.0
+      ],
+      [
+        6.0,
+        -1.0,
+        3.0
+      ],
+      [
+        -6.0,
+        -1.0,
+        3.0
+      ],
+      [
+        -6.0,
+        46.49,
+        3.0
+      ],
+      [
+        26.49,
+        131.99,
+        3.0
+      ]
+    ],
+    "outside": [
+      [
+        -24.01,
+        -7.0,
+        1.5
+      ],
+      [
+        111.02,
+        -7.0,
+        1.5
+      ],
+      [
+        19.72,
+        44.24,
+        1.5
+      ],
+      [
+        -24.01,
+        -1.0,
+        1.5
+      ],
+      [
+        -16.72,
+        47.43,
+        1.5
+      ],
+      [
+        -14.98,
+        67.36,
+        1.5
+      ],
+      [
+        -10.99,
+        67.01,
+        1.5
+      ],
+      [
+        26.49,
+        145.91,
+        1.5
+      ],
+      [
+        29.49,
+        145.91,
+        0.75
+      ]
+    ],
+    "edge_break": [
+      [
+        21.5,
+        132.42,
+        0.5
+      ]
+    ],
+    "skipped": [],
+    "top_chamfer_mm": 0.8,
+    "top_chamfer_steps": 4
+  },
+  "seat_datum_unchanged": true,
+  "bracket_width_mm": 38.1,
+  "inside_clear_gap_mm": 318.48,
+  "center_spacing_mm": 356.58000000000004,
+  "outside_width_mm": 394.68000000000006,
+  "footprint_depth_mm": 135.0220982023908,
+  "height_above_desk_mm": 152.9135462995145,
+  "nominal_lean_degrees": 5,
+  "solid_volume_each_cm3": 126.49132609646564,
+  "solid_PETG_mass_pair_g": 321.2879682850227,
+  "print_bounds_mm": [
+    152.91354360117188,
+    135.0220946265625,
+    38.099998474121094
+  ],
+  "mesh_watertight": true,
+  "mesh_connected_components": 1,
+  "step_roundtrip_valid": true,
+  "checks": [
+    {
+      "laptop_overlap_mm3": 0.0,
+      "rubber_foot_overlap_mm3": 0.0,
+      "expanded_foot_keepout_overlap_mm3": 0.0,
+      "seat_contact_probe_mm3": 3.653291035609696
+    },
+    {
+      "laptop_overlap_mm3": 0.0,
+      "rubber_foot_overlap_mm3": 0.0,
+      "expanded_foot_keepout_overlap_mm3": 0.0,
+      "seat_contact_probe_mm3": 2.0332910252818173
+    }
+  ],
+  "motion": [
+    {
+      "bracket": 1,
+      "lift_mm": 0,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    },
+    {
+      "bracket": 1,
+      "lift_mm": 0.25,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    },
+    {
+      "bracket": 1,
+      "lift_mm": 0.5,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    },
+    {
+      "bracket": 1,
+      "lift_mm": 1,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    },
+    {
+      "bracket": 1,
+      "lift_mm": 2,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    },
+    {
+      "bracket": 1,
+      "lift_mm": 3,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    },
+    {
+      "bracket": 1,
+      "lift_mm": 5,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    },
+    {
+      "bracket": 1,
+      "lift_mm": 10,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    },
+    {
+      "bracket": 1,
+      "lift_mm": 20,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    },
+    {
+      "bracket": 1,
+      "lift_mm": 40,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    },
+    {
+      "bracket": 2,
+      "lift_mm": 0,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    },
+    {
+      "bracket": 2,
+      "lift_mm": 0.25,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    },
+    {
+      "bracket": 2,
+      "lift_mm": 0.5,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    },
+    {
+      "bracket": 2,
+      "lift_mm": 1,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    },
+    {
+      "bracket": 2,
+      "lift_mm": 2,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    },
+    {
+      "bracket": 2,
+      "lift_mm": 3,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    },
+    {
+      "bracket": 2,
+      "lift_mm": 5,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    },
+    {
+      "bracket": 2,
+      "lift_mm": 10,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    },
+    {
+      "bracket": 2,
+      "lift_mm": 20,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    },
+    {
+      "bracket": 2,
+      "lift_mm": 40,
+      "laptop_overlap_mm3": 0.0,
+      "foot_keepout_overlap_mm3": 0.0
+    }
+  ],
+  "cadquery_version": "2.8.0",
+  "trimesh_version": "5.1.0",
+  "source_mesh_sha256": "f201f10ae03de3ec4aefffcc14745deb65b97b597bdba02c8d4b449e4937648a",
+  "input_sha256": {
+    "quick-fit\\R4\\build_quick_fit.py": "3cc8b50cb5b006ac5080c169a8bbcc9e48efbb2cf53c39960c992cc1a5678123",
+    "quick-fit\\R4\\fit-parameters.json": "aaec93ba38a9a5671dd56f5fbdee108ec5b2e0e95e225feab50c3092c35e4335",
+    "quick-fit\\R2\\seat-profile.json": "6fc169a141ba90088ef8d456097a4f7f2bbd9ea32160324efe212d0a56f0813b",
+    "parameters.json": "3dc1904fdb383491c3fc7780bf5304487d9f79a1df84eb06ff247af674097cfc",
+    "contact-profiles.json": "aa02aa10e52958e60c83230b141927807b6b04b000babc8a98ee0865c241bfdc",
+    "geometry.json": "eb47b3ec93ae763d1cc03fbcdc93f7eeaf4bb294d361578db1b59e73af1ef301"
+  },
+  "output_sha256": {
+    "D8-R4-A-quick-fit-bracket-print-TWO.stl": "037add0325c167e874d1f4dcf2436a3ab033f88c21c6ca727503ff2b83842342",
+    "D8-R4-A-quick-fit-bracket.step": "091ee882c804393d73fe9d0fbce58484d89e2a0afb7098cf154473a22030b3f9"
+  },
+  "scope": "Loaded fit prototype: R2 contact, V5 rail offset, thicker members. Source visualization mesh and nominal CAD checks only; physical fit, stability and strength untested."
+}

@@ -1,0 +1,177 @@
+{
+  "laptop_lean_deg": 2,
+  "intake_window_mm2": 16304.911425677692,
+  "rib_projected_blockage_mm2": 1609.9783054590237,
+  "rib_net_free_fraction": 0.9012580771874934,
+  "funnel_entry_samples": [
+    {
+      "initial_cross_slot_error_mm": -3,
+      "lift_mm": 85,
+      "remaining_error_mm": -3,
+      "collisions": [],
+      "foot_keepout_collisions": []
+    },
+    {
+      "initial_cross_slot_error_mm": -3,
+      "lift_mm": 80,
+      "remaining_error_mm": -2.1176470588235294,
+      "collisions": [],
+      "foot_keepout_collisions": []
+    },
+    {
+      "initial_cross_slot_error_mm": -3,
+      "lift_mm": 75,
+      "remaining_error_mm": -1.2352941176470589,
+      "collisions": [],
+      "foot_keepout_collisions": []
+    },
+    {
+      "initial_cross_slot_error_mm": -3,
+      "lift_mm": 70,
+      "remaining_error_mm": -0.3529411764705882,
+      "collisions": [],
+      "foot_keepout_collisions": []
+    },
+    {
+      "initial_cross_slot_error_mm": -3,
+      "lift_mm": 65,
+      "remaining_error_mm": 0,
+      "collisions": [],
+      "foot_keepout_collisions": []
+    },
+    {
+      "initial_cross_slot_error_mm": -3,
+      "lift_mm": 62,
+      "remaining_error_mm": 0,
+      "collisions": [],
+      "foot_keepout_collisions": []
+    },
+    {
+      "initial_cross_slot_error_mm": -3,
+      "lift_mm": 50,
+      "remaining_error_mm": 0,
+      "collisions": [],
+      "foot_keepout_collisions": []
+    },
+    {
+      "initial_cross_slot_error_mm": -3,
+      "lift_mm": 0,
+      "remaining_error_mm": 0,
+      "collisions": [],
+      "foot_keepout_collisions": []
+    },
+    {
+      "initial_cross_slot_error_mm": 0,
+      "lift_mm": 85,
+      "remaining_error_mm": 0,
+      "collisions": [],
+      "foot_keepout_collisions": []
+    },
+    {
+      "initial_cross_slot_error_mm": 0,
+      "lift_mm": 80,
+      "remaining_error_mm": 0.0,
+      "collisions": [],
+      "foot_keepout_collisions": []
+    },
+    {
+      "initial_cross_slot_error_mm": 0,
+      "lift_mm": 75,
+      "remaining_error_mm": 0.0,
+      "collisions": [],
+      "foot_keepout_collisions": []
+    },
+    {
+      "initial_cross_slot_error_mm": 0,
+      "lift_mm": 70,
+      "remaining_error_mm": 0.0,
+      "collisions": [],
+      "foot_keepout_collisions": []
+    },
+    {
+      "initial_cross_slot_error_mm": 0,
+      "lift_mm": 65,
+      "remaining_error_mm": 0,
+      "collisions": [],
+      "foot_keepout_collisions": []
+    },
+    {
+      "initial_cross_slot_error_mm": 0,
+      "lift_mm": 62,
+      "remaining_error_mm": 0,
+      "collisions": [],
+      "foot_keepout_collisions": []
+    },
+    {
+      "initial_cross_slot_error_mm": 0,
+      "lift_mm": 50,
+      "remaining_error_mm": 0,
+      "collisions": [],
+      "foot_keepout_collisions": []
+    },
+    {
+      "initial_cross_slot_error_mm": 0,
+      "lift_mm": 0,
+      "remaining_error_mm": 0,
+      "collisions": [],
+      "foot_keepout_collisions": []
+    },
+    {
+      "initial_cross_slot_error_mm": 3,
+      "lift_mm": 85,
+      "remaining_error_mm": 3,
+      "collisions": [],
+      "foot_keepout_collisions": []
+    },
+    {
+      "initial_cross_slot_error_mm": 3,
+      "lift_mm": 80,
+      "remaining_error_mm": 2.1176470588235294,
+      "collisions": [],
+      "foot_keepout_collisions": []
+    },
+    {
+      "initial_cross_slot_error_mm": 3,
+      "lift_mm": 75,
+      "remaining_error_mm": 1.2352941176470589,
+      "collisions": [],
+      "foot_keepout_collisions": []
+    },
+    {
+      "initial_cross_slot_error_mm": 3,
+      "lift_mm": 70,
+      "remaining_error_mm": 0.3529411764705882,
+      "collisions": [],
+      "foot_keepout_collisions": []
+    },
+    {
+      "initial_cross_slot_error_mm": 3,
+      "lift_mm": 65,
+      "remaining_error_mm": 0,
+      "collisions": [],
+      "foot_keepout_collisions": []
+    },
+    {
+      "initial_cross_slot_error_mm": 3,
+      "lift_mm": 62,
+      "remaining_error_mm": 0,
+      "collisions": [],
+      "foot_keepout_collisions": []
+    },
+    {
+      "initial_cross_slot_error_mm": 3,
+      "lift_mm": 50,
+      "remaining_error_mm": 0,
+      "collisions": [],
+      "foot_keepout_collisions": []
+    },
+    {
+      "initial_cross_slot_error_mm": 3,
+      "lift_mm": 0,
+      "remaining_error_mm": 0,
+      "collisions": [],
+      "foot_keepout_collisions": []
+    }
+  ],
+  "scope": "Geometric prescribed paths, not a gravity/friction/dynamic self-centering simulation. Net free area is the added stand structure over the OEM intake window; excludes OEM grille solidity. Foot keepouts expand the visualization-mesh bounds by 2 mm."
+}

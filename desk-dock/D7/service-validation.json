@@ -1,0 +1,729 @@
+{
+  "service_stages": [
+    {
+      "operation": "Printed cap pin withdrawal",
+      "instruction": "Pull the large cap pin toward the underside side; small retention ribs flex during withdrawal.",
+      "moving_parts": [
+        "cassette_cap_push_pin_6p5"
+      ],
+      "removed_before_operation": [
+        "Precision_5680_REFERENCE",
+        "RUBBER_FOOT_front_left",
+        "RUBBER_FOOT_front_right",
+        "RUBBER_FOOT_rear_strip"
+      ],
+      "samples": [
+        {
+          "sample": 0,
+          "collisions": [],
+          "intentional_contacts": [
+            [
+              "cassette_cap_push_pin_6p5",
+              "X_depth_overmold_clamp",
+              0.574218,
+              "cap push-pin retention ribs"
+            ]
+          ]
+        },
+        {
+          "sample": 0.5,
+          "collisions": [],
+          "intentional_contacts": [
+            [
+              "cassette_cap_push_pin_6p5",
+              "X_depth_overmold_clamp",
+              0.574218,
+              "cap push-pin retention ribs"
+            ]
+          ]
+        },
+        {
+          "sample": 2,
+          "collisions": [],
+          "intentional_contacts": [
+            [
+              "cassette_cap_push_pin_6p5",
+              "X_depth_overmold_clamp",
+              0.574218,
+              "cap push-pin retention ribs"
+            ]
+          ]
+        },
+        {
+          "sample": 5,
+          "collisions": [],
+          "intentional_contacts": [
+            [
+              "cassette_cap_push_pin_6p5",
+              "sliding_plug_cap",
+              0.012047,
+              "cap push-pin retention ribs"
+            ]
+          ]
+        },
+        {
+          "sample": 10,
+          "collisions": [],
+          "intentional_contacts": [
+            [
+              "cassette_cap_push_pin_6p5",
+              "sliding_plug_cap",
+              0.574218,
+              "cap push-pin retention ribs"
+            ]
+          ]
+        },
+        {
+          "sample": 20,
+          "collisions": [],
+          "intentional_contacts": [
+            [
+              "cassette_cap_push_pin_6p5",
+              "X_depth_overmold_clamp",
+              0.574218,
+              "cap push-pin retention ribs"
+            ]
+          ]
+        },
+        {
+          "sample": 35,
+          "collisions": [],
+          "intentional_contacts": []
+        }
+      ],
+      "passed": true
+    },
+    {
+      "operation": "Plug cap lift",
+      "instruction": "Remove pin, then lift cap. The initial overmold squeeze is a deliberate fit allowance.",
+      "moving_parts": [
+        "sliding_plug_cap"
+      ],
+      "removed_before_operation": [
+        "Precision_5680_REFERENCE",
+        "RUBBER_FOOT_front_left",
+        "RUBBER_FOOT_front_right",
+        "RUBBER_FOOT_rear_strip",
+        "cassette_cap_push_pin_6p5"
+      ],
+      "samples": [
+        {
+          "sample": 0,
+          "collisions": [],
+          "intentional_contacts": [
+            [
+              "sliding_plug_cap",
+              "Dell_plug_overmold_REFERENCE",
+              25.521795,
+              "provisional cap overmold squeeze"
+            ]
+          ]
+        },
+        {
+          "sample": 0.3,
+          "collisions": [],
+          "intentional_contacts": []
+        },
+        {
+          "sample": 1,
+          "collisions": [],
+          "intentional_contacts": []
+        },
+        {
+          "sample": 3,
+          "collisions": [],
+          "intentional_contacts": []
+        },
+        {
+          "sample": 8,
+          "collisions": [],
+          "intentional_contacts": []
+        },
+        {
+          "sample": 16,
+          "collisions": [],
+          "intentional_contacts": []
+        },
+        {
+          "sample": 30,
+          "collisions": [],
+          "intentional_contacts": []
+        }
+      ],
+      "passed": true
+    },
+    {
+      "operation": "01_bottom cover withdrawal",
+      "instruction": "Lift unloaded stand from desk, remove its printed floor locks, lower cover with feet and lay-in cable saddle.",
+      "moving_parts": [
+        "01_bottom_panel",
+        "01_foot_1.0_-20.0",
+        "01_foot_1.0_52.4",
+        "01_foot_156.8_-20.0",
+        "01_foot_156.8_52.4"
+      ],
+      "removed_before_operation": [
+        "01_bottom_thumb_lock_1",
+        "01_bottom_thumb_lock_2",
+        "Precision_5680_REFERENCE",
+        "RUBBER_FOOT_front_left",
+        "RUBBER_FOOT_front_right",
+        "RUBBER_FOOT_rear_strip"
+      ],
+      "samples": [
+        {
+          "sample": 0,
+          "collisions": [],
+          "intentional_contacts": []
+        },
+        {
+          "sample": 0.5,
+          "collisions": [],
+          "intentional_contacts": []
+        },
+        {
+          "sample": 2,
+          "collisions": [],
+          "intentional_contacts": []
+        },
+        {
+          "sample": 5,
+          "collisions": [],
+          "intentional_contacts": []
+        },
+        {
+          "sample": 10,
+          "collisions": [],
+          "intentional_contacts": []
+        },
+        {
+          "sample": 20,
+          "collisions": [],
+          "intentional_contacts": []
+        }
+      ],
+      "passed": true
+    },
+    {
+      "operation": "01_grille lift",
+      "instruction": "Laptop removed: slide grille upward along the inclined pocket; friction lands release in the first few millimetres.",
+      "moving_parts": [
+        "01_fan_guard_retainer"
+      ],
+      "removed_before_operation": [
+        "Precision_5680_REFERENCE",
+        "RUBBER_FOOT_front_left",
+        "RUBBER_FOOT_front_right",
+        "RUBBER_FOOT_rear_strip"
+      ],
+      "samples": [
+        {
+          "sample": 0,
+          "collisions": [],
+          "intentional_contacts": [
+            [
+              "01_fan_guard_retainer",
+              "01_manifold_with_cradle",
+              1.719241,
+              "grille friction lands"
+            ]
+          ]
+        },
+        {
+          "sample": 0.5,
+          "collisions": [],
+          "intentional_contacts": [
+            [
+              "01_fan_guard_retainer",
+              "01_manifold_with_cradle",
+              1.584397,
+              "grille friction lands"
+            ]
+          ]
+        },
+        {
+          "sample": 2,
+          "collisions": [],
+          "intentional_contacts": [
+            [
+              "01_fan_guard_retainer",
+              "01_manifold_with_cradle",
+              1.134397,
+              "grille friction lands"
+            ]
+          ]
+        },
+        {
+          "sample": 4,
+          "collisions": [],
+          "intentional_contacts": [
+            [
+              "01_fan_guard_retainer",
+              "01_manifold_with_cradle",
+              0.534397,
+              "grille friction lands"
+            ]
+          ]
+        },
+        {
+          "sample": 6,
+          "collisions": [],
+          "intentional_contacts": []
+        },
+        {
+          "sample": 10,
+          "collisions": [],
+          "intentional_contacts": []
+        },
+        {
+          "sample": 25,
+          "collisions": [],
+          "intentional_contacts": []
+        },
+        {
+          "sample": 60,
+          "collisions": [],
+          "intentional_contacts": []
+        },
+        {
+          "sample": 100,
+          "collisions": [],
+          "intentional_contacts": []
+        },
+        {
+          "sample": 140,
+          "collisions": [],
+          "intentional_contacts": []
+        }
+      ],
+      "passed": true
+    },
+    {
+      "operation": "01_fan lift",
+      "instruction": "After grille removal and cable disconnection, lift fan from the open-top pocket.",
+      "moving_parts": [
+        "01_120x25_fan_frame",
+        "01_blade_0",
+        "01_blade_1",
+        "01_blade_2",
+        "01_blade_3",
+        "01_blade_4",
+        "01_blade_5",
+        "01_blade_6",
+        "01_fan_hub_struts"
+      ],
+      "removed_before_operation": [
+        "01_fan_guard_retainer",
+        "Precision_5680_REFERENCE",
+        "RUBBER_FOOT_front_left",
+        "RUBBER_FOOT_front_right",
+        "RUBBER_FOOT_rear_strip"
+      ],
+      "samples": [
+        {
+          "sample": 0,
+          "collisions": [],
+          "intentional_contacts": []
+        },
+        {
+          "sample": 1,
+          "collisions": [],
+          "intentional_contacts": []
+        },
+        {
+          "sample": 3,
+          "collisions": [],
+          "intentional_contacts": []
+        },
+        {
+          "sample": 6,
+          "collisions": [],
+          "intentional_contacts": []
+        },
+        {
+          "sample": 15,
+          "collisions": [],
+          "intentional_contacts": []
+        },
+        {
+          "sample": 35,
+          "collisions": [],
+          "intentional_contacts": []
+        },
+        {
+          "sample": 70,
+          "collisions": [],
+          "intentional_contacts": []
+        },
+        {
+          "sample": 110,
+          "collisions": [],
+          "intentional_contacts": []
+        },
+        {
+          "sample": 140,
+          "collisions": [],
+          "intentional_contacts": []
+        }
+      ],
+      "passed": true
+    },
+    {
+      "operation": "02_bottom cover withdrawal",
+      "instruction": "Lift unloaded stand from desk, remove its printed floor locks, lower cover with feet and lay-in cable saddle.",
+      "moving_parts": [
+        "02_bottom_panel",
+        "02_foot_185.1_-20.0",
+        "02_foot_185.1_52.4",
+        "02_foot_358.7_-20.0",
+        "02_foot_358.7_52.4"
+      ],
+      "removed_before_operation": [
+        "02_bottom_thumb_lock_1",
+        "02_bottom_thumb_lock_2",
+        "Precision_5680_REFERENCE",
+        "RUBBER_FOOT_front_left",
+        "RUBBER_FOOT_front_right",
+        "RUBBER_FOOT_rear_strip"
+      ],
+      "samples": [
+        {
+          "sample": 0,
+          "collisions": [],
+          "intentional_contacts": []
+        },
+        {
+          "sample": 0.5,
+          "collisions": [],
+          "intentional_contacts": []
+        },
+        {
+          "sample": 2,
+          "collisions": [],
+          "intentional_contacts": []
+        },
+        {
+          "sample": 5,
+          "collisions": [],
+          "intentional_contacts": []
+        },
+        {
+          "sample": 10,
+          "collisions": [],
+          "intentional_contacts": []
+        },
+        {
+          "sample": 20,
+          "collisions": [],
+          "intentional_contacts": []
+        }
+      ],
+      "passed": true
+    },
+    {
+      "operation": "02_grille lift",
+      "instruction": "Laptop removed: slide grille upward along the inclined pocket; friction lands release in the first few millimetres.",
+      "moving_parts": [
+        "02_fan_guard_retainer"
+      ],
+      "removed_before_operation": [
+        "Precision_5680_REFERENCE",
+        "RUBBER_FOOT_front_left",
+        "RUBBER_FOOT_front_right",
+        "RUBBER_FOOT_rear_strip"
+      ],
+      "samples": [
+        {
+          "sample": 0,
+          "collisions": [],
+          "intentional_contacts": [
+            [
+              "02_fan_guard_retainer",
+              "02_manifold_with_cradle",
+              1.719241,
+              "grille friction lands"
+            ]
+          ]
+        },
+        {
+          "sample": 0.5,
+          "collisions": [],
+          "intentional_contacts": [
+            [
+              "02_fan_guard_retainer",
+              "02_manifold_with_cradle",
+              1.584397,
+              "grille friction lands"
+            ]
+          ]
+        },
+        {
+          "sample": 2,
+          "collisions": [],
+          "intentional_contacts": [
+            [
+              "02_fan_guard_retainer",
+              "02_manifold_with_cradle",
+              1.134397,
+              "grille friction lands"
+            ]
+          ]
+        },
+        {
+          "sample": 4,
+          "collisions": [],
+          "intentional_contacts": [
+            [
+              "02_fan_guard_retainer",
+              "02_manifold_with_cradle",
+              0.534397,
+              "grille friction lands"
+            ]
+          ]
+        },
+        {
+          "sample": 6,
+          "collisions": [],
+          "intentional_contacts": []
+        },
+        {
+          "sample": 10,
+          "collisions": [],
+          "intentional_contacts": []
+        },
+        {
+          "sample": 25,
+          "collisions": [],
+          "intentional_contacts": []
+        },
+        {
+          "sample": 60,
+          "collisions": [],
+          "intentional_contacts": []
+        },
+        {
+          "sample": 100,
+          "collisions": [],
+          "intentional_contacts": []
+        },
+        {
+          "sample": 140,
+          "collisions": [],
+          "intentional_contacts": []
+        }
+      ],
+      "passed": true
+    },
+    {
+      "operation": "02_fan lift",
+      "instruction": "After grille removal and cable disconnection, lift fan from the open-top pocket.",
+      "moving_parts": [
+        "02_120x25_fan_frame",
+        "02_blade_0",
+        "02_blade_1",
+        "02_blade_2",
+        "02_blade_3",
+        "02_blade_4",
+        "02_blade_5",
+        "02_blade_6",
+        "02_fan_hub_struts"
+      ],
+      "removed_before_operation": [
+        "02_fan_guard_retainer",
+        "Precision_5680_REFERENCE",
+        "RUBBER_FOOT_front_left",
+        "RUBBER_FOOT_front_right",
+        "RUBBER_FOOT_rear_strip"
+      ],
+      "samples": [
+        {
+          "sample": 0,
+          "collisions": [],
+          "intentional_contacts": []
+        },
+        {
+          "sample": 1,
+          "collisions": [],
+          "intentional_contacts": []
+        },
+        {
+          "sample": 3,
+          "collisions": [],
+          "intentional_contacts": []
+        },
+        {
+          "sample": 6,
+          "collisions": [],
+          "intentional_contacts": []
+        },
+        {
+          "sample": 15,
+          "collisions": [],
+          "intentional_contacts": []
+        },
+        {
+          "sample": 35,
+          "collisions": [],
+          "intentional_contacts": []
+        },
+        {
+          "sample": 70,
+          "collisions": [],
+          "intentional_contacts": []
+        },
+        {
+          "sample": 110,
+          "collisions": [],
+          "intentional_contacts": []
+        },
+        {
+          "sample": 140,
+          "collisions": [],
+          "intentional_contacts": []
+        }
+      ],
+      "passed": true
+    },
+    {
+      "operation": "Unloaded spring cartridge withdrawal",
+      "instruction": "Support the unloaded cassette, remove preload nut and both cartridge screws; withdraw the relaxed cartridge off the axle.",
+      "moving_parts": [
+        "breakaway_spring_cartridge"
+      ],
+      "removed_before_operation": [
+        "Precision_5680_REFERENCE",
+        "RUBBER_FOOT_front_left",
+        "RUBBER_FOOT_front_right",
+        "RUBBER_FOOT_rear_strip",
+        "breakaway_preload_hand_nut",
+        "breakaway_spring_hand_screw_0",
+        "breakaway_spring_hand_screw_1"
+      ],
+      "samples": [
+        {
+          "sample": 0,
+          "collisions": [],
+          "intentional_contacts": []
+        },
+        {
+          "sample": 1,
+          "collisions": [],
+          "intentional_contacts": []
+        },
+        {
+          "sample": 3,
+          "collisions": [],
+          "intentional_contacts": []
+        },
+        {
+          "sample": 8,
+          "collisions": [],
+          "intentional_contacts": []
+        },
+        {
+          "sample": 16,
+          "collisions": [],
+          "intentional_contacts": []
+        },
+        {
+          "sample": 30,
+          "collisions": [],
+          "intentional_contacts": []
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "breakaway_samples": [
+    {
+      "angle_deg": 0,
+      "cam_lift_mm": 0.0,
+      "collisions": [],
+      "cable_fixed_hardware_collisions": []
+    },
+    {
+      "angle_deg": 0.1,
+      "cam_lift_mm": 0.03380177561603248,
+      "collisions": [],
+      "cable_fixed_hardware_collisions": []
+    },
+    {
+      "angle_deg": 0.5,
+      "cam_lift_mm": 0.16063739018386958,
+      "collisions": [],
+      "cable_fixed_hardware_collisions": []
+    },
+    {
+      "angle_deg": 1,
+      "cam_lift_mm": 0.3042168112119821,
+      "collisions": [],
+      "cable_fixed_hardware_collisions": []
+    },
+    {
+      "angle_deg": 2,
+      "cam_lift_mm": 0.5565125761762959,
+      "collisions": [],
+      "cable_fixed_hardware_collisions": []
+    },
+    {
+      "angle_deg": 3,
+      "cam_lift_mm": 0.7768673818438685,
+      "collisions": [],
+      "cable_fixed_hardware_collisions": []
+    },
+    {
+      "angle_deg": 4,
+      "cam_lift_mm": 0.8,
+      "collisions": [],
+      "cable_fixed_hardware_collisions": []
+    },
+    {
+      "angle_deg": 10,
+      "cam_lift_mm": 0.8,
+      "collisions": [],
+      "cable_fixed_hardware_collisions": []
+    },
+    {
+      "angle_deg": 20,
+      "cam_lift_mm": 0.8,
+      "collisions": [],
+      "cable_fixed_hardware_collisions": []
+    },
+    {
+      "angle_deg": 30,
+      "cam_lift_mm": 0.8,
+      "collisions": [],
+      "cable_fixed_hardware_collisions": []
+    },
+    {
+      "angle_deg": 45,
+      "cam_lift_mm": 0.8,
+      "collisions": [],
+      "cable_fixed_hardware_collisions": []
+    }
+  ],
+  "rear_cable_allowance": {
+    "source_stub_diameter_mm": 6.5,
+    "provisional_continuation_diameter_mm": 6.5,
+    "clearance_check_diameter_mm": 8.0,
+    "trough_diameter_mm": 8.5,
+    "mouth_flare_diameter_mm": 12.5,
+    "mouth_flare_length_mm": 2.0,
+    "exit_axis": [
+      -1,
+      0,
+      0
+    ],
+    "lay_in_direction": [
+      0,
+      0,
+      -1
+    ],
+    "rear_wall_outer_x_mm": -47,
+    "free_straight_after_wall_mm": 30,
+    "illustrative_bend_radius_mm": 30,
+    "qualification": "Continuation diameter and bend radius are assumptions, not measured Dell cable properties. Reserve a loose exterior loop; no fixed clamp or rigid elbow near the moving outlet."
+  },
+  "scope": "Sampled actual CAD, spring shape, compliant fit regions and a provisional free cable loop against fixed hardware. Not a continuous sweep, actual cable bend/slack or remote-anchor model, measured force, fatigue or impact validation.",
+  "passed": true
+}

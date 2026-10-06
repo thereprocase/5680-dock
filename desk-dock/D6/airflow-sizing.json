@@ -1,0 +1,170 @@
+{
+  "assumed_total_design_cfm": 30,
+  "assumed_equal_branch_split": true,
+  "laptop_lean_deg": 5,
+  "fan_discharge_deg": 18.0,
+  "selected": {
+    "fan_center_y_mm": 58,
+    "top_suction_face_to_lid_normal_mm": 14.777835009613668,
+    "upper_feed_velocity_at_30cfm_m_s": 0.9422972791702485,
+    "analytical_upper_wall_ray_clearance_mm": 12.2517436134401,
+    "meets_screen": true
+  },
+  "depth_sweep": [
+    {
+      "fan_center_y_mm": 95,
+      "top_suction_face_to_lid_normal_mm": 51.63703883900826,
+      "upper_feed_velocity_at_30cfm_m_s": 0.4530363548350583,
+      "analytical_upper_wall_ray_clearance_mm": 52.29412219639995,
+      "meets_screen": true
+    },
+    {
+      "fan_center_y_mm": 70,
+      "top_suction_face_to_lid_normal_mm": 26.732171386714615,
+      "upper_feed_velocity_at_30cfm_m_s": 0.6978650585221865,
+      "analytical_upper_wall_ray_clearance_mm": 25.238460991697348,
+      "meets_screen": true
+    },
+    {
+      "fan_center_y_mm": 64,
+      "top_suction_face_to_lid_normal_mm": 20.75500319816414,
+      "upper_feed_velocity_at_30cfm_m_s": 0.8018673892958951,
+      "analytical_upper_wall_ray_clearance_mm": 18.745102302568725,
+      "meets_screen": true
+    },
+    {
+      "fan_center_y_mm": 60,
+      "top_suction_face_to_lid_normal_mm": 16.77022440579716,
+      "upper_feed_velocity_at_30cfm_m_s": 0.8903235804340686,
+      "analytical_upper_wall_ray_clearance_mm": 14.416196509816311,
+      "meets_screen": true
+    },
+    {
+      "fan_center_y_mm": 58,
+      "top_suction_face_to_lid_normal_mm": 14.777835009613668,
+      "upper_feed_velocity_at_30cfm_m_s": 0.9422972791702485,
+      "analytical_upper_wall_ray_clearance_mm": 12.2517436134401,
+      "meets_screen": true
+    },
+    {
+      "fan_center_y_mm": 56,
+      "top_suction_face_to_lid_normal_mm": 12.785445613430177,
+      "upper_feed_velocity_at_30cfm_m_s": 1.0007152213405623,
+      "analytical_upper_wall_ray_clearance_mm": 10.087290717063892,
+      "meets_screen": false
+    },
+    {
+      "fan_center_y_mm": 54,
+      "top_suction_face_to_lid_normal_mm": 10.793056217246685,
+      "upper_feed_velocity_at_30cfm_m_s": 1.066855158639753,
+      "analytical_upper_wall_ray_clearance_mm": 7.922837820687684,
+      "meets_screen": false
+    },
+    {
+      "fan_center_y_mm": 52,
+      "top_suction_face_to_lid_normal_mm": 8.800666821063194,
+      "upper_feed_velocity_at_30cfm_m_s": 1.142356548955386,
+      "analytical_upper_wall_ray_clearance_mm": 5.758384924311477,
+      "meets_screen": false
+    },
+    {
+      "fan_center_y_mm": 50,
+      "top_suction_face_to_lid_normal_mm": 6.808277424879703,
+      "upper_feed_velocity_at_30cfm_m_s": 1.2293582938805145,
+      "analytical_upper_wall_ray_clearance_mm": 3.5939320279352684,
+      "meets_screen": false
+    }
+  ],
+  "plenums": [
+    {
+      "module": 1,
+      "volume_litres": 0.8798407623705803,
+      "transfer_section_mm2": 9593.292321502788,
+      "minimum_sampled_fan_normal_clearance_mm": 12.5,
+      "fan_axis_clearance_mm": 35.5,
+      "ray_sample_count": 81
+    },
+    {
+      "module": 2,
+      "volume_litres": 0.9424898844168735,
+      "transfer_section_mm2": 10340.232321502766,
+      "minimum_sampled_fan_normal_clearance_mm": 12.5,
+      "fan_axis_clearance_mm": 35.5,
+      "ray_sample_count": 81
+    }
+  ],
+  "flow_cases": [
+    {
+      "assumed_total_cfm": 20,
+      "branches": [
+        {
+          "mouth_velocity_m_s": 1.7262756632529181,
+          "transfer_velocity_m_s": 0.4919556646284594,
+          "baseline_loss_sensitivity_Pa": [
+            1.3713155012910878,
+            3.2386923807127936
+          ]
+        },
+        {
+          "mouth_velocity_m_s": 1.5196632433381476,
+          "transfer_velocity_m_s": 0.45641861355336644,
+          "baseline_loss_sensitivity_Pa": [
+            1.1197703084834099,
+            2.604774034919291
+          ]
+        }
+      ]
+    },
+    {
+      "assumed_total_cfm": 30,
+      "branches": [
+        {
+          "mouth_velocity_m_s": 2.589413494879377,
+          "transfer_velocity_m_s": 0.7379334969426891,
+          "baseline_loss_sensitivity_Pa": [
+            3.0854598779049462,
+            7.287057856603784
+          ]
+        },
+        {
+          "mouth_velocity_m_s": 2.2794948650072215,
+          "transfer_velocity_m_s": 0.6846279203300496,
+          "baseline_loss_sensitivity_Pa": [
+            2.5194831940876714,
+            5.860741578568404
+          ]
+        }
+      ]
+    },
+    {
+      "assumed_total_cfm": 40,
+      "branches": [
+        {
+          "mouth_velocity_m_s": 3.4525513265058363,
+          "transfer_velocity_m_s": 0.9839113292569188,
+          "baseline_loss_sensitivity_Pa": [
+            5.485262005164351,
+            12.954769522851175
+          ]
+        },
+        {
+          "mouth_velocity_m_s": 3.0393264866762952,
+          "transfer_velocity_m_s": 0.9128372271067329,
+          "baseline_loss_sensitivity_Pa": [
+            4.479081233933639,
+            10.419096139677164
+          ]
+        }
+      ]
+    }
+  ],
+  "screen_rule": "Engineering screening allowances, not measured limits: >=12 mm lid/top gap and upper wall clearance; <=2 m/s upper feeder speed at assumed 30 CFM. CAD ray clearance checked separately.",
+  "limitations": "Uniform disk loading is an assumption. Baseline loss coefficients are inherited sensitivity assumptions, NOT a reliable bound on close-inlet system effect. Laptop resistance, inlet distortion, stall, bypass leakage and noise are unmodeled. No P-Q curve intersection or thermal claim. The final minimum usable depth requires prototype flow/pressure/noise measurements.",
+  "fan_example": {
+    "model": "Noctua NF-A12x15 PWM",
+    "free_air_max_cfm": 55.44,
+    "shutoff_pressure_Pa": 15.0041745,
+    "source": "https://www.noctua.at/en/products/nf-a12x15-pwm/specifications",
+    "note": "Separate endpoints; parallel fans do not double pressure. Example fan, not a verified installed fan."
+  }
+}

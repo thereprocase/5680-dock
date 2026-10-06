@@ -1,0 +1,71 @@
+{
+  "revision": "D5 \u2014 profiled fixed cheeks, open ribs, 2 degree lidward lean",
+  "laptop_width": 353.68,
+  "laptop_depth": 240.33,
+  "laptop_thickness": 22.17,
+  "rear_case_seat_z": 54.0,
+  "port_from_rear_case": 65.99,
+  "second_port_from_rear_case": 82.2,
+  "port_y": 2.24,
+  "plug_length": 25.0,
+  "plug_major": 12.5,
+  "plug_minor": 6.5,
+  "plug_tip_length": 6.65,
+  "fan_size": 120.0,
+  "fan_thickness": 15.0,
+  "fan_hole_pitch": 105.0,
+  "fan_centers_x": [
+    84.0,
+    269.68
+  ],
+  "fan_center_y": 95,
+  "wall": 2.4,
+  "height_adjustment": 0.0,
+  "lateral_adjustment": 0.0,
+  "depth_adjustment": 0.0,
+  "height_range": [
+    -5.0,
+    5.0
+  ],
+  "lateral_range": [
+    -3.0,
+    3.0
+  ],
+  "depth_range": [
+    -5.0,
+    5.0
+  ],
+  "guide_clearance_per_face": 0.35,
+  "notes": "Port and plug dimensions extracted from Dell-linked visualization meshes, not manufacturing drawings. Rear-case datum excludes the projecting hinge lip. Hardware fits, seal compression and airflow remain untested. D3 uses the supplied photo to correct handedness only; the photo is not used as a dimensioned scale reference.",
+  "fan_center_z": 72,
+  "fan_plane_from_vertical_deg": 15,
+  "docking_withdrawal_mm": 18,
+  "animation_lift_mm": 135,
+  "coordinate_frame": {
+    "x": "Increasing toward far/plug end: x=0 near, x=353.68 keyboard-left ports; right edge in user photo.",
+    "y": "Positive toward lid/user/fans; negative toward underside/intake.",
+    "z": "Positive upward; hinge down.",
+    "construction": "D2 local shapes mirror about x=W/2 before export. Positive depth_adjustment moves the plug farther into the laptop, along exported -X."
+  },
+  "docking_travel_direction": "+X",
+  "undocked_x_offset_mm": -18,
+  "fan_exhaust_elevation_deg": 15,
+  "design_flow_cfm": 30,
+  "flow_checks_cfm": [
+    20,
+    30,
+    40
+  ],
+  "mouth_width_mm": 21,
+  "mouth_corner_radius_mm": 4,
+  "mouth_edge_radius_mm": 1,
+  "inner_turn_radius_mm": 24.4,
+  "guard_wire_diameter_mm": 1,
+  "guard_pitch_mm": 9,
+  "guard_from_fan_face_mm": 7.5,
+  "guide_mouth_extra_per_face_mm": 5,
+  "guide_fit_clearance_per_face_mm": 0.25,
+  "laptop_lean_deg": 2,
+  "underside_net_free_area_target": 0.8,
+  "contact_scheme": "Bare hinge-end case seats and lid-side guides; underside ribs relieved behind 2 mm expanded rubber-foot sweep. No sliding carriage."
+}

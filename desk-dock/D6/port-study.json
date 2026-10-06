@@ -1,0 +1,99 @@
+{
+  "source_url": "https://content.hmxmedia.com/precision-16-5680-laptop-AR/gltf/precision-16-5680-laptop-AR.glb",
+  "source_sha256": "f201f10ae03de3ec4aefffcc14745deb65b97b597bdba02c8d4b449e4937648a",
+  "retrieved_utc": "2026-09-08",
+  "rear_case_datum_source_mm": -101.48604027926922,
+  "ports": [
+    {
+      "name": "TB4_rear",
+      "node": "Dell4768",
+      "side": "keyboard-left",
+      "kind": "Thunderbolt 4",
+      "source_bounds_mm": [
+        [
+          -175.9055822622031,
+          11.702371528372169,
+          -39.98438362032175
+        ],
+        [
+          -169.70935044810176,
+          14.930339646525681,
+          -31.028757337480783
+        ]
+      ],
+      "source_center_mm": [
+        -172.80746635515243,
+        13.316355587448925,
+        -35.50657047890127
+      ],
+      "case_offset_from_rear_mm": 65.97946980036795,
+      "case_y_mm": 2.231355587448924,
+      "opening_height_mm": 8.955626282840967,
+      "opening_thickness_mm": 3.2279681181535125,
+      "case_edge_x_mm": 0
+    },
+    {
+      "name": "TB4_front",
+      "node": "Dell4694",
+      "side": "keyboard-left",
+      "kind": "Thunderbolt 4",
+      "source_bounds_mm": [
+        [
+          -175.88999634608626,
+          11.409333674237132,
+          -23.769617080688477
+        ],
+        [
+          -169.66574545949697,
+          14.590694627258927,
+          -14.817958232015371
+        ]
+      ],
+      "source_center_mm": [
+        -172.77787090279162,
+        13.00001415074803,
+        -19.293787656351924
+      ],
+      "case_offset_from_rear_mm": 82.1922526229173,
+      "case_y_mm": 1.9150141507480285,
+      "opening_height_mm": 8.951658848673105,
+      "opening_thickness_mm": 3.1813609530217946,
+      "case_edge_x_mm": 0
+    },
+    {
+      "name": "USB_C_right",
+      "node": "Dell4638",
+      "side": "keyboard-right",
+      "kind": "USB 3.2 Gen 2 / DisplayPort; not Thunderbolt",
+      "source_bounds_mm": [
+        [
+          169.63591938838363,
+          12.324505485594273,
+          -66.88590766862035
+        ],
+        [
+          175.40551535785198,
+          15.459023183211684,
+          -57.93871637433767
+        ]
+      ],
+      "source_center_mm": [
+        172.5207173731178,
+        13.891764334402978,
+        -62.41231202147901
+      ],
+      "case_offset_from_rear_mm": 39.07372825779021,
+      "case_y_mm": 2.8067643344029776,
+      "opening_height_mm": 8.947191294282675,
+      "opening_thickness_mm": 3.1345176976174116,
+      "case_edge_x_mm": 353.68
+    }
+  ],
+  "source_to_untilted_case_translation_mm": [
+    176.84,
+    -11.085,
+    101.48604027926922
+  ],
+  "linear_transform_determinant": 1,
+  "limits": "Visualization mesh dimensions, not factory toleranced openings. Labels corroborated by Dell left/right owner manual views."
+}

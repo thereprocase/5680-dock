@@ -1,0 +1,122 @@
+{
+  "status": "REJECT_MANUAL_BLOCKER_SCENARIO",
+  "qualified_for_printing": false,
+  "reason": "The first upper-hood roof layer contains long X-directed SKIN roads over the blocked region. The intended short bridge direction is Y, with nominal clear span 6.6066 mm. Do not use the reduced-support mass scenario as a validated print plan.",
+  "method": {
+    "coordinate_system": "Assembly/world coordinates; subtract review.json world_to_plate_shift_mm from G-code XYZ.",
+    "roof_world_z_mm": 131.8,
+    "roof_plate_z_mm": 133.8,
+    "preceding_layer_world_z_mm": [
+      131.6,
+      131.4
+    ],
+    "road_contact_test": "Parse positive-extruding G0/G1 model roads; include ALL deposited road types, including SUPPORT and SUPPORT-INTERFACE, on the preceding two layers. Expand each previous centerline by 0.45 mm (two 0.225 mm half-widths) to conservatively include footprint contact with a 0.45 mm current road. Subtract these polygons from current centerlines and clip to the upper-hood blocker XY bounds.",
+    "road_width_assumed_mm": 0.45,
+    "vertical_window_below_current_mm": 0.4,
+    "extent": "Bounded first-roof direction/contact check; this result is not a complete support-removal or strength qualification.",
+    "limitations": "Centerline/nominal-road approximation; does not simulate sag, adhesion, extrusion width variation or same-layer interactions. The retained conservative auto-support scenario is also only an offline path screen, not executable P1S G-code."
+  },
+  "parts": [
+    {
+      "part": "01_manifold_with_cradle",
+      "reviewed_source_stl_sha256": "ec7e3c22005b589269454e35ad7eabb8ba26e5c394e9370d44a9a0813f8881a2",
+      "current_repo_stl_sha256_at_check": "26728cf4e435468157ef870e9309df23af9ccd067070c6aefed5d7fb9d707930",
+      "current_repo_stl_matches_reviewed_source": false,
+      "toolpaths_sha256": "6b6aa73c2f1bfbf91bf920833f410a3d0f4ff414deae39c28ac692dc4292b366",
+      "blockers_sha256": "e787abea5db70da90fdaa912688ebd89e3c9fcd2e47ba31a994b0dc3a76cbbd7",
+      "world_to_plate_shift_mm": [
+        47.58000183105469,
+        94.4943718896985,
+        2.0000000000000004
+      ],
+      "blocker_world_bounds_mm": [
+        [
+          25.0,
+          21.518755091305717,
+          130
+        ],
+        [
+          143.0,
+          28.125310084559935,
+          134
+        ]
+      ],
+      "intended_bridge_direction": "Y",
+      "intended_clear_span_mm": 6.606554993254218,
+      "concrete_wrong_direction_examples": [
+        {
+          "type": "SKIN",
+          "feed_mm_min": 1500.0,
+          "direction": "X",
+          "angle_from_X_deg": 0.0,
+          "unsupported_span_clipped_to_blocker_mm": 92.998,
+          "unsupported_world_xy_endpoints_mm": [
+            [
+              130.496998,
+              22.505628
+            ],
+            [
+              37.498998,
+              22.505628
+            ]
+          ],
+          "current_world_z_mm": 131.8,
+          "current_plate_z_mm": 133.8,
+          "road_has_contact_with_previous_two_layers": false
+        }
+      ],
+      "result": "FAIL: a greater-than90mm X-directed roof road remains unsupported throughout its clipped extent."
+    },
+    {
+      "part": "02_manifold_with_cradle",
+      "reviewed_source_stl_sha256": "6eada45844f4724fd43ee071c091a20d410bf21e57458f3f2cf581f4293828bb",
+      "current_repo_stl_sha256_at_check": "51889b1f8223d58655bc75cd662ed976cd9996770b25411d9cbbfa7a3ba9e0d2",
+      "current_repo_stl_matches_reviewed_source": false,
+      "toolpaths_sha256": "780110700ad939a9d0d312bbfbd1b99a44656dad3122afabc2995395f39350b4",
+      "blockers_sha256": "ce44e81740bc35a1a692af2fe544cc0233f5ea14b125b0b5ff4808c4237eb3f5",
+      "world_to_plate_shift_mm": [
+        -149.90999664306642,
+        94.4943718896985,
+        2.0000000000000013
+      ],
+      "blocker_world_bounds_mm": [
+        [
+          210.68,
+          21.518755091305717,
+          130
+        ],
+        [
+          328.68,
+          28.125310084559935,
+          134
+        ]
+      ],
+      "intended_bridge_direction": "Y",
+      "intended_clear_span_mm": 6.606554993254218,
+      "concrete_wrong_direction_examples": [
+        {
+          "type": "SKIN",
+          "feed_mm_min": 1500.0,
+          "direction": "X",
+          "angle_from_X_deg": 0.0,
+          "unsupported_span_clipped_to_blocker_mm": 92.998,
+          "unsupported_world_xy_endpoints_mm": [
+            [
+              316.176997,
+              22.505628
+            ],
+            [
+              223.178997,
+              22.505628
+            ]
+          ],
+          "current_world_z_mm": 131.8,
+          "current_plate_z_mm": 133.8,
+          "road_has_contact_with_previous_two_layers": false
+        }
+      ],
+      "result": "FAIL: a greater-than90mm X-directed roof road remains unsupported throughout its clipped extent."
+    }
+  ],
+  "scope": "Rejected candidate manual-blocker toolpaths. The parent regenerated final CAD while this review ran; this evidence is tied to reviewed_source_stl_sha256 and toolpaths_sha256, not the regenerated final STL hashes."
+}

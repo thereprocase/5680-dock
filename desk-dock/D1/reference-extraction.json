@@ -1,0 +1,120 @@
+{
+  "retrieved_utc": "2026-09-09",
+  "source_kind": "Dell-linked AR visualization meshes, not manufacturing CAD",
+  "discovery_pages": [
+    "https://www.dell.com/en-us/shop/dell-laptops/precision-5680-workstation/spd/precision-16-5680-laptop",
+    "https://www.dell.com/en-us/shop/dell-pro-thunderbolt-5-smart-dock-sd25tb5/apd/210-brqs/docks"
+  ],
+  "sources": {
+    "laptop.glb": {
+      "url": "https://content.hmxmedia.com/precision-16-5680-laptop-AR/gltf/precision-16-5680-laptop-AR.glb",
+      "sha256": "f201f10ae03de3ec4aefffcc14745deb65b97b597bdba02c8d4b449e4937648a"
+    },
+    "dock.glb": {
+      "url": "https://content.hmxmedia.com/dell-pro-sd25tb5-dock-AR/gltf/dell-pro-sd25tb5-dock-AR.glb",
+      "sha256": "76e4e5ced653bb4ccb7daef8a4535490c6f49b797c4c39692242e96e9b0e73ed"
+    },
+    "left.jpg": {
+      "url": "https://dl.dell.com/content/guides/public/Html/precision-5680-owners-manual/images/GUID-6CFE9489-9462-473E-B516-A962EB2845A2-low.jpg",
+      "sha256": "a3ce5eacdad8065fd255698b00f344b0fef78ce4427622e451105faae4ab6283"
+    }
+  },
+  "rear_case_datum_glTF_mm": -101.48604027926922,
+  "rear_case_width_mm": 353.67998480796814,
+  "ports": {
+    "Dell4768": {
+      "world_bounds_mm": [
+        [
+          -175.9055822622031,
+          11.702371528372169,
+          -39.98438362032175
+        ],
+        [
+          -169.70935044810176,
+          14.930339646525681,
+          -31.028757337480783
+        ]
+      ],
+      "center_mm": [
+        -172.80746635515243,
+        13.316355587448925,
+        -35.50657047890127
+      ],
+      "distance_from_rear_case_mm": 65.97946980036795
+    },
+    "Dell4694": {
+      "world_bounds_mm": [
+        [
+          -175.88999634608626,
+          11.409333674237132,
+          -23.769617080688477
+        ],
+        [
+          -169.66574545949697,
+          14.590694627258927,
+          -14.817958232015371
+        ]
+      ],
+      "center_mm": [
+        -172.77787090279162,
+        13.00001415074803,
+        -19.293787656351924
+      ],
+      "distance_from_rear_case_mm": 82.1922526229173
+    }
+  },
+  "plug_overmold": {
+    "geometry": "Cube_8",
+    "bounds_mm": [
+      [
+        -165.85978865623474,
+        -21.166672930121422,
+        65.09946286678314
+      ],
+      [
+        -153.3597856760025,
+        -14.666669070720673,
+        90.09945392608643
+      ]
+    ],
+    "extents_mm": [
+      12.500002980232239,
+      6.500003859400749,
+      24.999991059303284
+    ]
+  },
+  "plug_tip": {
+    "geometry": "Cube_9",
+    "bounds_mm": [
+      [
+        -163.7347787618637,
+        -19.116666167974472,
+        90.09945392608643
+      ],
+      [
+        -155.48479557037354,
+        -16.716666519641876,
+        96.7494547367096
+      ]
+    ],
+    "extents_mm": [
+      8.249983191490173,
+      2.399999648332596,
+      6.650000810623169
+    ]
+  },
+  "image_scale_check": {
+    "image_hinge_x_px": 164,
+    "image_front_x_px": 1518,
+    "depth_mm": 240.33,
+    "port_centers_x_px": [
+      536,
+      627
+    ],
+    "distances_mm": [
+      66.02862629246677,
+      82.18079025110784
+    ]
+  },
+  "uncertainty": "Use +/-2 mm setup allowance for case/port reconstruction and +/-1 mm for overmold shape. These are engineering allowances, not statistical confidence intervals. Exact shell plane, overmold taper, metal engagement, lid compression and pad seating need adjustment on the physical hardware."
+}

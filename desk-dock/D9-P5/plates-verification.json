@@ -1,0 +1,306 @@
+{
+  "00": {
+    "passed": true,
+    "time": "4h 39m 35s; total estimated time: 4h 45m 47s",
+    "filament_g": "139.32",
+    "objects": {
+      "clamp-shaft-fit-coupon": {
+        "support": 21834,
+        "external_bridge": 203
+      },
+      "clamp-nut-fit-coupon": {
+        "support": 4256,
+        "external_bridge": 0
+      },
+      "fan-stand-socket-blank": {
+        "support": 3235,
+        "external_bridge": 139
+      },
+      "T-joint-fit-L": {
+        "support": 1327,
+        "external_bridge": 51
+      },
+      "T-joint-fit-R": {
+        "support": 1051,
+        "external_bridge": 0
+      }
+    }
+  },
+  "01": {
+    "passed": true,
+    "time": "8h 44m 14s; total estimated time: 8h 50m 26s",
+    "filament_g": "191.97",
+    "objects": {
+      "M1-outer-cradle-shell": {
+        "support": 7600,
+        "external_bridge": 1122
+      }
+    }
+  },
+  "02": {
+    "passed": true,
+    "time": "5h 6m 35s; total estimated time: 5h 12m 47s",
+    "filament_g": "152.28",
+    "objects": {
+      "M1-inner-shell": {
+        "support": 1046,
+        "external_bridge": 405
+      }
+    }
+  },
+  "03": {
+    "passed": true,
+    "time": "5h 7m 22s; total estimated time: 5h 13m 33s",
+    "filament_g": "153.03",
+    "objects": {
+      "M2-inner-shell": {
+        "support": 365,
+        "external_bridge": 38
+      }
+    }
+  },
+  "04": {
+    "passed": true,
+    "time": "8h 54m 35s; total estimated time: 9h 0m 46s",
+    "filament_g": "196.34",
+    "objects": {
+      "M2-outer-cradle-shell": {
+        "support": 6441,
+        "external_bridge": 517
+      }
+    }
+  },
+  "05": {
+    "passed": true,
+    "time": "6h 9m 48s; total estimated time: 6h 16m 0s",
+    "filament_g": "129.00",
+    "objects": {
+      "front-tie-L": {
+        "support": 3485,
+        "external_bridge": 149
+      },
+      "front-tie-R": {
+        "support": 3203,
+        "external_bridge": 95
+      },
+      "rear-tie-L": {
+        "support": 3485,
+        "external_bridge": 149
+      },
+      "rear-tie-R": {
+        "support": 3203,
+        "external_bridge": 95
+      }
+    }
+  },
+  "06": {
+    "passed": true,
+    "time": "2h 7m 18s; total estimated time: 2h 13m 29s",
+    "filament_g": "52.35",
+    "objects": {
+      "M1-contact-cassette": {
+        "support": 1879,
+        "external_bridge": 46
+      },
+      "M2-contact-cassette": {
+        "support": 1895,
+        "external_bridge": 50
+      },
+      "M1-insert-pin": {
+        "support": 230,
+        "external_bridge": 0
+      },
+      "M2-insert-pin": {
+        "support": 230,
+        "external_bridge": 0
+      },
+      "centre-contact-cassette": {
+        "support": 0,
+        "external_bridge": 0
+      },
+      "splice-ring-upper": {
+        "support": 4291,
+        "external_bridge": 605
+      },
+      "splice-ring-lower": {
+        "support": 2509,
+        "external_bridge": 301
+      }
+    }
+  },
+  "07": {
+    "passed": true,
+    "time": "52m 11s; total estimated time: 58m 22s",
+    "filament_g": "16.62",
+    "objects": {
+      "front-frame-L-key": {
+        "support": 0,
+        "external_bridge": 0
+      },
+      "front-frame-L-pin": {
+        "support": 215,
+        "external_bridge": 0
+      },
+      "front-frame-R-key": {
+        "support": 0,
+        "external_bridge": 0
+      },
+      "front-frame-R-pin": {
+        "support": 215,
+        "external_bridge": 0
+      },
+      "front-lap-key": {
+        "support": 0,
+        "external_bridge": 0
+      },
+      "front-lap-pin": {
+        "support": 202,
+        "external_bridge": 0
+      },
+      "rear-frame-L-key": {
+        "support": 0,
+        "external_bridge": 0
+      },
+      "rear-frame-L-pin": {
+        "support": 215,
+        "external_bridge": 0
+      },
+      "rear-frame-R-key": {
+        "support": 0,
+        "external_bridge": 0
+      },
+      "rear-frame-R-pin": {
+        "support": 215,
+        "external_bridge": 0
+      },
+      "rear-lap-key": {
+        "support": 0,
+        "external_bridge": 0
+      },
+      "rear-lap-pin": {
+        "support": 202,
+        "external_bridge": 0
+      }
+    }
+  },
+  "08": {
+    "passed": true,
+    "time": "6h 30m 54s; total estimated time: 6h 37m 6s",
+    "filament_g": "157.37",
+    "objects": {
+      "plug-holder-polar-inner-arm": {
+        "support": 0,
+        "external_bridge": 0
+      },
+      "accessory-socket-body": {
+        "support": 9235,
+        "external_bridge": 473
+      },
+      "plug-holder-polar-plug-rotor": {
+        "support": 3229,
+        "external_bridge": 0
+      },
+      "plug-holder-polar-outer-arm": {
+        "support": 6238,
+        "external_bridge": 885
+      }
+    }
+  },
+  "09": {
+    "passed": true,
+    "time": "3h 26m 48s; total estimated time: 3h 32m 59s",
+    "filament_g": "67.02",
+    "objects": {
+      "plug-holder-clamp-nut": {
+        "support": 4239,
+        "external_bridge": 0
+      },
+      "plug-holder-clamp-pressure-washer": {
+        "support": 0,
+        "external_bridge": 0
+      },
+      "accessory-socket-clamp-bolt": {
+        "support": 3082,
+        "external_bridge": 0
+      },
+      "accessory-socket-clamp-nut": {
+        "support": 1075,
+        "external_bridge": 0
+      },
+      "laptop-slide-endstop-screw": {
+        "support": 806,
+        "external_bridge": 0
+      },
+      "laptop-slide-endstop-soft-tip": {
+        "support": 177,
+        "external_bridge": 90
+      },
+      "plug-holder-length-clamp-1-nut": {
+        "support": 378,
+        "external_bridge": 0
+      },
+      "plug-holder-length-clamp-1-screw": {
+        "support": 1170,
+        "external_bridge": 0
+      },
+      "plug-holder-length-clamp-2-nut": {
+        "support": 378,
+        "external_bridge": 0
+      },
+      "plug-holder-length-clamp-2-screw": {
+        "support": 1170,
+        "external_bridge": 0
+      },
+      "plug-holder-rotor-pinch-nut": {
+        "support": 383,
+        "external_bridge": 0
+      },
+      "plug-holder-rotor-pinch-screw": {
+        "support": 1459,
+        "external_bridge": 0
+      },
+      "plug-holder-tip-annular-nut": {
+        "support": 644,
+        "external_bridge": 0
+      },
+      "plug-holder-tip-annular-screw": {
+        "support": 1713,
+        "external_bridge": 0
+      }
+    }
+  },
+  "10": {
+    "passed": true,
+    "time": "6h 16m 52s; total estimated time: 6h 23m 4s",
+    "filament_g": "143.87",
+    "objects": {
+      "plug-holder-clamp-shoulder": {
+        "support": 39324,
+        "external_bridge": 1578
+      }
+    }
+  },
+  "11": {
+    "passed": true,
+    "time": "1h 37m 22s; total estimated time: 1h 43m 34s",
+    "filament_g": "35.14",
+    "objects": {
+      "plug-holder-clamp-cam-spatula": {
+        "support": 0,
+        "external_bridge": 0
+      },
+      "plug-holder-tip-head-thrust-washer": {
+        "support": 0,
+        "external_bridge": 0
+      },
+      "plug-holder-tip-nut-thrust-washer": {
+        "support": 0,
+        "external_bridge": 0
+      },
+      "plug-holder-rotor-pinch-shim": {
+        "support": 129,
+        "external_bridge": 53
+      }
+    }
+  }
+}

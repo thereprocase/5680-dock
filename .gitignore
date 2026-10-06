@@ -1,0 +1,50 @@
+.venv/
+__pycache__/
+*.pyc
+Precision_5560_Wall_Mount_Package.zip
+package_manifest.json
+*_log.txt
+# Unpacked CFD evidence is generated locally; tracked case dictionaries remain visible.
+cfd/*/[1-9]*/
+cfd/*/VTK/
+cfd/*/constant/polyMesh/
+cfd/*/*.log
+
+# Local credentials, tool caches and duplicate build outputs
+.env
+.env.*
+!.env.example
+/tmp/
+/output/
+/%SystemDrive%/
+
+# Minimalist build intermediates; reviewed reports and delivery archives are tracked.
+/minimalist/scratch/
+/minimalist/snapshots/
+/minimalist/slices/
+/minimalist/presets/*/*.FCStd1
+/minimalist/*.FCStd1
+/minimalist/*.[0-9]*.FCStd
+/00000.log
+/result.json
+
+**/node_modules/
+
+/minimalist/M1*History.png
+/minimalist/assembly_preview.png
+/minimalist/browser/*.png
+# Preserved local CFD meshes, partitioned fields and failed trials can be many GB.
+/fusion/cfd/runs/
+/fusion/cfd/geometry_revh_prepare.log
+/freecad/ValidationSnapshot.FCStd
+
+# D8 full STEP is distributed in its lossless ZIP; regeneration writes this local copy.
+/desk-dock/D8/Precision_5680_D8.step
+
+# Rebuilt P5 CAD and review slices are local evidence, not qualified releases.
+/desk-dock/D9-P5/generated/
+/desk-dock/D9-P5/plates/
+/outputs/
+# D9-P5 local slice folders, viewer scratch export and audit logs (results are committed as JSON/PNG)
+/desk-dock/D9-P5/viewer-export/
+/desk-dock/D9-P5/audit/*.log

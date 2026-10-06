@@ -1,0 +1,14 @@
+{
+  "lip_outward_shift_mm": 2.0,
+  "lip_height_increase_mm": 3.0,
+  "lip_top_edge_radius_mm": 0.65,
+  "seat_extension_toward_underside_mm": 1.0,
+  "air_relief": {
+    "channel_count": 3,
+    "scallop_depth_mm": 2.6,
+    "mouth_flare_mm": 0.4,
+    "face_relief_depth_mm": 0.8,
+    "groove_start_z_mm": 55.0
+  },
+  "status": "R2 fit increments retained; R3 adds gently swept open-edge relief inspired by chevrons. Acoustic benefit unmeasured."
+}

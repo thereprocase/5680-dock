@@ -1,0 +1,8 @@
+{
+  "machine": "Repro P1S - 0.4 nozzle",
+  "process": "Repro Normal 15 grid - 0.4 nozzle",
+  "filament": "Repro Generic PETG - 0.4 nozzle - Starter",
+  "layer": "0.20",
+  "support_check": "Automatic normal supports at 45 degrees; inspect emitted toolpath roles.",
+  "infill": "15% grid"
+}

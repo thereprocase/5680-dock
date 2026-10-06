@@ -1,0 +1,42 @@
+{
+  "source": "D:\\Code\\Modeling\\dell-5560-wall-mount\\desk-dock\\D7\\print\\stop_soft_tip.stl",
+  "source_sha256": "edc478df801331c521cf7713e8ae68ef1336c38ed83837adead4711e6773590b",
+  "watertight": true,
+  "part_size_mm": [
+    11.997314453125,
+    11.998657224117778,
+    3.9999999999999996
+  ],
+  "translation_mm": [
+    122.0013427734375,
+    131.99999999877764,
+    -3.3306690738754696e-16
+  ],
+  "placed_bounds_mm": [
+    [
+      122.0013427734375,
+      132.0006713879411,
+      0.0
+    ],
+    [
+      133.9986572265625,
+      143.9993286120589,
+      3.9999999999999996
+    ]
+  ],
+  "conservative_brim_bounds_mm": [
+    114.0013427734375,
+    124.00067138794111,
+    141.9986572265625,
+    151.9993286120589
+  ],
+  "bed_and_exclusion_pass": true,
+  "brim_mm": 8,
+  "orientation": "CAD export orientation preserved",
+  "overhang_angle_screen": {
+    "method": "Downward-facing triangles steeper than a 45-degree printable wall, above the first 0.4 mm. Angle screening alone cannot establish support requirements or bridge anchoring.",
+    "candidate_area_mm2": 0.0,
+    "candidate_triangle_count": 0,
+    "largest_candidate_triangles": []
+  }
+}

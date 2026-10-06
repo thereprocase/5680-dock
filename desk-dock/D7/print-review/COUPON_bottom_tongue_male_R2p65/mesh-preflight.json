@@ -1,0 +1,42 @@
+{
+  "source": "D:\\Code\\Modeling\\dell-5560-wall-mount\\desk-dock\\D7\\print\\COUPON_bottom_tongue_male_R2p65.stl",
+  "source_sha256": "5ee624cca14b9dacf5ee5141996c59a62101812c742519ec6b7f5b44bb10c429",
+  "watertight": true,
+  "part_size_mm": [
+    30.0,
+    30.0,
+    4.5
+  ],
+  "translation_mm": [
+    113.0,
+    123.0,
+    -0.0
+  ],
+  "placed_bounds_mm": [
+    [
+      113.0,
+      123.0,
+      0.0
+    ],
+    [
+      143.0,
+      153.0,
+      4.5
+    ]
+  ],
+  "conservative_brim_bounds_mm": [
+    105.0,
+    115.0,
+    151.0,
+    161.0
+  ],
+  "bed_and_exclusion_pass": true,
+  "brim_mm": 8,
+  "orientation": "CAD export orientation preserved",
+  "overhang_angle_screen": {
+    "method": "Downward-facing triangles steeper than a 45-degree printable wall, above the first 0.4 mm. Angle screening alone cannot establish support requirements or bridge anchoring.",
+    "candidate_area_mm2": 0.0,
+    "candidate_triangle_count": 0,
+    "largest_candidate_triangles": []
+  }
+}

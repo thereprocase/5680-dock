@@ -1,0 +1,106 @@
+{
+  "scope": "Ideal spring and face-cam energy calculation, not measured PETG mechanism or impact simulation.",
+  "load_basis": "USB-IF R2.5 normal insertion5\u201320N;50N chosen user target for misaligned docking impact, no standard establishes this limit.",
+  "spring": {
+    "type": "two fixed-guided beams plus assumed rigid island and frame",
+    "leaf_length_mm": 30,
+    "width_mm": 24,
+    "thickness_mm": 3,
+    "nominal_E_MPa": 1200,
+    "stiffness_N_per_mm": 57.6,
+    "assembled_preload_deflection_mm": 1.2,
+    "preload_N": 69.12,
+    "maximum_deflection_mm": 2.0,
+    "maximum_force_N": 115.2,
+    "preload_surface_strain": 0.011999999999999999,
+    "maximum_surface_strain": 0.02
+  },
+  "cam": {
+    "mean_radius_mm": 20,
+    "rise_mm": 0.8,
+    "angular_ramp_deg": 3.1118255852232295,
+    "stored_energy_increment_J": 0.073728,
+    "ideal_release_torque_Nmm": 1357.5,
+    "axial_or_downward_lever_mm": 27.15,
+    "normal20N_torque_Nmm": 543.0,
+    "ideal_axial_release_N": 50,
+    "ideal_downward_release_N": 50,
+    "ideal_45deg_combined_release_resultant_N": 35.35533905932737,
+    "lateral_release": "No calibrated lateral-Y release. Do not claim omnidirectional protection."
+  },
+  "sensitivity": [
+    {
+      "E_MPa": 800,
+      "assumed_friction": 0,
+      "initial_release_N": 33.33333333333333,
+      "maximum_over_ramp_N": 33.33333333333334
+    },
+    {
+      "E_MPa": 800,
+      "assumed_friction": 0.1,
+      "initial_release_N": 40.72716675164579,
+      "maximum_over_ramp_N": 41.431931064400665
+    },
+    {
+      "E_MPa": 800,
+      "assumed_friction": 0.2,
+      "initial_release_N": 49.92802670076375,
+      "maximum_over_ramp_N": 50.612334101241586
+    },
+    {
+      "E_MPa": 1200,
+      "assumed_friction": 0,
+      "initial_release_N": 50.0,
+      "maximum_over_ramp_N": 50.0
+    },
+    {
+      "E_MPa": 1200,
+      "assumed_friction": 0.1,
+      "initial_release_N": 61.09075012746869,
+      "maximum_over_ramp_N": 62.147896596601
+    },
+    {
+      "E_MPa": 1200,
+      "assumed_friction": 0.2,
+      "initial_release_N": 74.89204005114564,
+      "maximum_over_ramp_N": 75.91850115186237
+    },
+    {
+      "E_MPa": 1500,
+      "assumed_friction": 0,
+      "initial_release_N": 62.5,
+      "maximum_over_ramp_N": 62.50000000000003
+    },
+    {
+      "E_MPa": 1500,
+      "assumed_friction": 0.1,
+      "initial_release_N": 76.36343765933586,
+      "maximum_over_ramp_N": 77.68487074575125
+    },
+    {
+      "E_MPa": 1500,
+      "assumed_friction": 0.2,
+      "initial_release_N": 93.61505006393205,
+      "maximum_over_ramp_N": 94.89812643982796
+    },
+    {
+      "E_MPa": 1800,
+      "assumed_friction": 0,
+      "initial_release_N": 75.00000000000001,
+      "maximum_over_ramp_N": 75.00000000000003
+    },
+    {
+      "E_MPa": 1800,
+      "assumed_friction": 0.1,
+      "initial_release_N": 91.63612519120305,
+      "maximum_over_ramp_N": 93.2218448949015
+    },
+    {
+      "E_MPa": 1800,
+      "assumed_friction": 0.2,
+      "initial_release_N": 112.33806007671848,
+      "maximum_over_ramp_N": 113.87775172779355
+    }
+  ],
+  "qualification": "Use detached dummy-plug test fixture, not laptop, for load calibration. Verify <=0.20mm axial movement at20N, reset repeatability, 50N-class axial/downward release, warm dwell and repeated resets. Impact peak may exceed static release; cable slack and stop travel matter. Tuning preload changes force profile; fit and print orientation need qualification."
+}

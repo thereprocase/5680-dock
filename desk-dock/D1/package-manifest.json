@@ -1,0 +1,18 @@
+{
+  "parameters.json": "bc50acd51fcea4c353ff3c6d54e3fd69489d6882a6319a59db505031ea4d59c9",
+  "reference-evidence.png": "3806610f047a0032e96f02cdf7c80be057797dbdec5abab1f6e626f6dcd60141",
+  "adjustment.png": "7773fbb991847572c35ed1c4e1dcc01b57ca2192149dfeed01e6dfda6c6fdd89",
+  "air-path.png": "3c79af2bce148d35ee6858ada2ebcbaf3ae527e710e30ff74ea7a0a4611fdd15",
+  "validation.json": "e16c7ef3cc8feedec1348014154107cb9b30bc861605399ad9f22a98e89ee98f",
+  "validate.py": "c69642399d924ff087ffe01ab555830105c11a94bb70d3af628a31af9fd1b406",
+  "overview.png": "89b68ac9201f9d549be3dcb534f5a28edb570afe9166846da879625db7798bfa",
+  "extract_references.py": "d925e783c7e09424e95fc59f8b70ceba171fedcdf979d9e9fa3027eb66301161",
+  "render.py": "319362ec96af9d64af4bce03b853d5e7f9bc2810b60e2178d81e5750075486a7",
+  "Precision_5680_D1.step": "e4964cd1dabff741cc8a93af7258a67ff7e1df69223557d1534647220a0f7835",
+  "geometry.json": "92042cada6190e60b017e63f02981e96eb185ca4f41dfd0d9379b1ed93045a3b",
+  "README.md": "f8e1539dc037f4f66271ad8cbae713987506ff34484ad238fb4b78cefca5c828",
+  "build.py": "e75ecde40164c8c41318553548fabb5f90b3c6baf799ca8628eca6a176502ce7",
+  "reference-extraction.json": "6ed9ad3c824fd3fed8feaf558cf27c003de22032f1f065eb4c4fea3fe8acea7e",
+  "raster.py": "0305d2719341475aad2a81ddce6523f6073d4b2d0423fede307f0557bb81c9ae",
+  "Precision_5680_D1_Review.zip": "c6d547bbb4183e3a510cb696425aa38e58d56100cd0c05cb35b43c5a3d62599d"
+}

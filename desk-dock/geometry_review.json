@@ -1,0 +1,101 @@
+{
+  "scope": "Individual solid validity only. Assembly contains conceptual unfastened interfaces and intentional reference intersections; no fit or production acceptance.",
+  "parts": [
+    {
+      "name": "Metal_spine_envelope",
+      "valid": true,
+      "volume_mm3": 118451.51999999999,
+      "reference": false
+    },
+    {
+      "name": "Foot_1",
+      "valid": true,
+      "volume_mm3": 82741.95579110661,
+      "reference": false
+    },
+    {
+      "name": "Trough_saddle_1",
+      "valid": true,
+      "volume_mm3": 30437.439999999995,
+      "reference": false
+    },
+    {
+      "name": "Contact_pad_1",
+      "valid": true,
+      "volume_mm3": 2302.96,
+      "reference": false
+    },
+    {
+      "name": "Foot_2",
+      "valid": true,
+      "volume_mm3": 82741.95579110661,
+      "reference": false
+    },
+    {
+      "name": "Trough_saddle_2",
+      "valid": true,
+      "volume_mm3": 30437.439999999995,
+      "reference": false
+    },
+    {
+      "name": "Contact_pad_2",
+      "valid": true,
+      "volume_mm3": 2302.96,
+      "reference": false
+    },
+    {
+      "name": "Slotted_connector_frame",
+      "valid": true,
+      "volume_mm3": 108816.00000000006,
+      "reference": false
+    },
+    {
+      "name": "Cassette_lower_envelope",
+      "valid": true,
+      "volume_mm3": 3978.4159446225103,
+      "reference": false
+    },
+    {
+      "name": "Cassette_upper_envelope",
+      "valid": true,
+      "volume_mm3": 3978.4159446225103,
+      "reference": false
+    },
+    {
+      "name": "Dell_overmold_PLACEHOLDER",
+      "valid": true,
+      "volume_mm3": 4200.0,
+      "reference": true
+    },
+    {
+      "name": "USB_C_tip_PLACEHOLDER",
+      "valid": true,
+      "volume_mm3": 141.9599999999997,
+      "reference": true
+    },
+    {
+      "name": "Port_level_guide_-18.485",
+      "valid": true,
+      "volume_mm3": 11000.0,
+      "reference": false
+    },
+    {
+      "name": "Port_level_guide_13.485000000000001",
+      "valid": true,
+      "volume_mm3": 10999.999999999998,
+      "reference": false
+    },
+    {
+      "name": "Chassis_stop_ENVELOPE",
+      "valid": true,
+      "volume_mm3": 1570.2000000000003,
+      "reference": false
+    },
+    {
+      "name": "Laptop_REFERENCE",
+      "valid": true,
+      "volume_mm3": 2224447.7598480005,
+      "reference": true
+    }
+  ]
+}

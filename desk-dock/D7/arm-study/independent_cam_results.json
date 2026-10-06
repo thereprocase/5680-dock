@@ -1,0 +1,407 @@
+{
+  "scope": "Ruled-loft axial height after female radial relief; not proof of radial CAD clearance, contact stiffness, friction, preload, manufactured fit, creep, strength or impact response.",
+  "source_sha256": "7fc503241f146703ffdfbfd250e85baf7c189e7a58d32cd9963c2c79e50db822",
+  "ideal_leaf_k_N_per_mm": 57.6,
+  "preload_N": 69.12,
+  "full_lift_spring_force_N": 115.2,
+  "preload_surface_strain": 0.011999999999999999,
+  "full_lift_surface_strain": 0.02,
+  "ramp_angle_deg": 3.1118255852232295,
+  "target_torque_Nmm": 1357.5,
+  "cam_lift_energy_Nmm": 73.72800000000001,
+  "ruled_minus_smooth_lift_range_mm": [
+    -0.0007407079089093577,
+    0.0
+  ],
+  "facet_derivative_range_mm_per_rad": [
+    11.945286738197813,
+    18.961781491147708
+  ],
+  "frictionless_facet_torque_range_Nmm": [
+    1310.6383387391327,
+    1404.3709304619024
+  ],
+  "negative_X_force_range_N": [
+    47.03279388729953,
+    51.4938382506411
+  ],
+  "negative_Z_force_range_N": [
+    48.2739719657531,
+    53.67830407233517
+  ],
+  "nominal_equal_diagonal_resultant_release_N": 35.35533905932737,
+  "radial_chord_error_r24_2p5deg_crown_mm": 0.005711350082180822,
+  "frame_sensitivity": {
+    "assumption": "Four 38 mm rail cantilevers, not a calibrated frame model.",
+    "frame_stiffness_N_per_mm": 407.5083831462312,
+    "series_cartridge_stiffness_N_per_mm": 50.46669490333205
+  },
+  "tip_release_path": [
+    {
+      "angle_deg": 0,
+      "tip_delta_xz_mm": [
+        0.0,
+        0.0
+      ],
+      "carrier_delta_y_mm": -0.0
+    },
+    {
+      "angle_deg": 3.1118255852232295,
+      "tip_delta_xz_mm": [
+        -1.5138681923272264,
+        -1.4338021603080027
+      ],
+      "carrier_delta_y_mm": -0.8
+    },
+    {
+      "angle_deg": 10,
+      "tip_delta_xz_mm": [
+        -5.12701752937571,
+        -4.302078517938606
+      ],
+      "carrier_delta_y_mm": -0.8
+    },
+    {
+      "angle_deg": 30,
+      "tip_delta_xz_mm": [
+        -17.212410287252485,
+        -9.93758971274751
+      ],
+      "carrier_delta_y_mm": -0.8
+    },
+    {
+      "angle_deg": 45,
+      "tip_delta_xz_mm": [
+        -27.15,
+        -11.245898218429533
+      ],
+      "carrier_delta_y_mm": -0.8
+    }
+  ],
+  "facets": [
+    {
+      "facet": 1,
+      "angle_deg": 5.729577951308233e-09,
+      "lift_mm": 1.8961781491152e-09,
+      "lift_derivative_mm_per_rad": 18.961781491147708,
+      "torque_Nmm": 1310.6383387391327,
+      "negative_X_force_N": 48.2739719560983,
+      "negative_Z_force_N": 48.2739719657531
+    },
+    {
+      "facet": 1,
+      "angle_deg": 0.12965939938430124,
+      "lift_mm": 0.04291005073286369,
+      "lift_derivative_mm_per_rad": 18.961684386256938,
+      "torque_Nmm": 1357.497682704182,
+      "negative_X_force_N": 49.887148692462866,
+      "negative_Z_force_N": 50.113448773361014
+    },
+    {
+      "facet": 1,
+      "angle_deg": 0.2593187930390245,
+      "lift_mm": 0.08582009956954924,
+      "lift_derivative_mm_per_rad": 18.961781491147708,
+      "torque_Nmm": 1404.3709304619024,
+      "negative_X_force_N": 51.4938382506411,
+      "negative_Z_force_N": 51.962079491733654
+    },
+    {
+      "facet": 2,
+      "angle_deg": 0.2593188044981804,
+      "lift_mm": 0.08582010324303327,
+      "lift_derivative_mm_per_rad": 17.773058871456858,
+      "torque_Nmm": 1316.3302882391708,
+      "negative_X_force_N": 48.26566647265989,
+      "negative_Z_force_N": 48.70455348016065
+    },
+    {
+      "facet": 2,
+      "angle_deg": 0.38897819815290374,
+      "lift_mm": 0.12604010179683692,
+      "lift_derivative_mm_per_rad": 17.772967854115418,
+      "torque_Nmm": 1357.4976827041796,
+      "negative_X_force_N": 49.66389601408043,
+      "negative_Z_force_N": 50.34284725235663
+    },
+    {
+      "facet": 2,
+      "angle_deg": 0.5186375918076269,
+      "lift_mm": 0.16626010035064054,
+      "lift_derivative_mm_per_rad": 17.773058871456858,
+      "torque_Nmm": 1398.6789809618585,
+      "negative_X_force_N": 51.05665776265602,
+      "negative_Z_force_N": 51.98944976290796
+    },
+    {
+      "facet": 3,
+      "angle_deg": 0.5186376032667829,
+      "lift_mm": 0.16626010380627657,
+      "lift_derivative_mm_per_rad": 16.78330175527434,
+      "torque_Nmm": 1320.7884824662954,
+      "negative_X_force_N": 48.213383078453056,
+      "negative_Z_force_N": 49.09422920145087
+    },
+    {
+      "facet": 3,
+      "angle_deg": 0.6482969969215061,
+      "lift_mm": 0.20424030615677113,
+      "lift_derivative_mm_per_rad": 16.78321580656301,
+      "torque_Nmm": 1357.4976827041846,
+      "negative_X_force_N": 49.4436409217195,
+      "negative_Z_force_N": 50.5753963384084
+    },
+    {
+      "facet": 3,
+      "angle_deg": 0.7779563905762296,
+      "lift_mm": 0.2422205085072657,
+      "lift_derivative_mm_per_rad": 16.78330175527434,
+      "torque_Nmm": 1394.2207867347443,
+      "negative_X_force_N": 50.669225210128246,
+      "negative_Z_force_N": 52.0642153669865
+    },
+    {
+      "facet": 4,
+      "angle_deg": 0.7779564020353854,
+      "lift_mm": 0.24222051177984738,
+      "lift_derivative_mm_per_rad": 15.942515138766055,
+      "torque_Nmm": 1324.3750469273748,
+      "negative_X_force_N": 48.1308686119474,
+      "negative_Z_force_N": 49.455974505692375
+    },
+    {
+      "facet": 4,
+      "angle_deg": 0.9076157956901086,
+      "lift_mm": 0.2782980345328344,
+      "lift_derivative_mm_per_rad": 15.942433495794276,
+      "torque_Nmm": 1357.4976827041787,
+      "negative_X_force_N": 49.22633474484707,
+      "negative_Z_force_N": 50.8111494893522
+    },
+    {
+      "facet": 4,
+      "angle_deg": 1.0372751893448318,
+      "lift_mm": 0.31437555728582145,
+      "lift_derivative_mm_per_rad": 15.942515138766055,
+      "torque_Nmm": 1390.6342222736537,
+      "negative_X_force_N": 50.31776260426259,
+      "negative_Z_force_N": 52.17345270454915
+    },
+    {
+      "facet": 5,
+      "angle_deg": 1.0372752008039878,
+      "lift_mm": 0.31437556040174314,
+      "lift_derivative_mm_per_rad": 15.21670178374774,
+      "torque_Nmm": 1327.3229543748012,
+      "negative_X_force_N": 48.02695075009774,
+      "negative_Z_force_N": 49.79815704871218
+    },
+    {
+      "facet": 5,
+      "angle_deg": 1.1669345944587108,
+      "lift_mm": 0.34881058524256436,
+      "lift_derivative_mm_per_rad": 15.216623857727695,
+      "torque_Nmm": 1357.4976827041842,
+      "negative_X_force_N": 49.01192992688725,
+      "negative_Z_force_N": 51.050161448667694
+    },
+    {
+      "facet": 5,
+      "angle_deg": 1.2965939881134343,
+      "lift_mm": 0.3832456100833856,
+      "lift_derivative_mm_per_rad": 15.21670178374774,
+      "torque_Nmm": 1387.686314826238,
+      "negative_X_force_N": 49.99338973699867,
+      "negative_Z_force_N": 52.30886813924115
+    },
+    {
+      "facet": 6,
+      "angle_deg": 1.2965939995725904,
+      "lift_mm": 0.38324561306323845,
+      "lift_derivative_mm_per_rad": 14.581826631605207,
+      "torque_Nmm": 1329.7889113884082,
+      "negative_X_force_N": 47.907552731466424,
+      "negative_Z_force_N": 50.1264241710906
+    },
+    {
+      "facet": 6,
+      "angle_deg": 1.4262533932273136,
+      "lift_mm": 0.41624393092606016,
+      "lift_derivative_mm_per_rad": 14.581751956834644,
+      "torque_Nmm": 1357.497682704184,
+      "negative_X_force_N": 48.80037999428687,
+      "negative_Z_force_N": 51.292488283554306
+    },
+    {
+      "facet": 6,
+      "angle_deg": 1.5559127868820368,
+      "lift_mm": 0.44924224878888186,
+      "lift_derivative_mm_per_rad": 14.581826631605207,
+      "torque_Nmm": 1385.220357812631,
+      "negative_X_force_N": 49.69011906295677,
+      "negative_Z_force_N": 52.4649026132983
+    },
+    {
+      "facet": 7,
+      "angle_deg": 1.555912798341193,
+      "lift_mm": 0.44924225164909964,
+      "lift_derivative_mm_per_rad": 14.020350930754022,
+      "torque_Nmm": 1331.8822159457652,
+      "negative_X_force_N": 47.77679269755247,
+      "negative_Z_force_N": 50.44473276228454
+    },
+    {
+      "facet": 7,
+      "angle_deg": 1.685572191995916,
+      "lift_mm": 0.48096996370120754,
+      "lift_derivative_mm_per_rad": 14.020279131348133,
+      "torque_Nmm": 1357.4976827041767,
+      "negative_X_force_N": 48.59163952661889,
+      "negative_Z_force_N": 51.53818742438238
+    },
+    {
+      "facet": 7,
+      "angle_deg": 1.8152315856506394,
+      "lift_mm": 0.5126976757533155,
+      "lift_derivative_mm_per_rad": 14.020350930754022,
+      "torque_Nmm": 1383.1270532552592,
+      "negative_X_force_N": 49.40376157336063,
+      "negative_Z_force_N": 52.637697467004855
+    },
+    {
+      "facet": 8,
+      "angle_deg": 1.8152315971097954,
+      "lift_mm": 0.5126976785072642,
+      "lift_derivative_mm_per_rad": 13.519135213434167,
+      "torque_Nmm": 1333.6814301393313,
+      "negative_X_force_N": 47.637618844907415,
+      "negative_Z_force_N": 50.75594428347867
+    },
+    {
+      "facet": 8,
+      "angle_deg": 1.9448909907645182,
+      "lift_mm": 0.5432911516210134,
+      "lift_derivative_mm_per_rad": 13.519065980796464,
+      "torque_Nmm": 1357.4976827041803,
+      "negative_X_force_N": 48.38566412767737,
+      "negative_Z_force_N": 51.78731770557014
+    },
+    {
+      "facet": 8,
+      "angle_deg": 2.0745503844192417,
+      "lift_mm": 0.5738846247347625,
+      "lift_derivative_mm_per_rad": 13.519135213434167,
+      "torque_Nmm": 1381.3278390617,
+      "negative_X_force_N": 49.1312946339455,
+      "negative_Z_force_N": 52.82449695827665
+    },
+    {
+      "facet": 9,
+      "angle_deg": 2.0745503958783975,
+      "lift_mm": 0.5738846273934876,
+      "lift_derivative_mm_per_rad": 13.068114675264844,
+      "torque_Nmm": 1335.2444773325308,
+      "negative_X_force_N": 47.4921940735893,
+      "negative_Z_force_N": 51.06218513230483
+    },
+    {
+      "facet": 9,
+      "angle_deg": 2.2042097895331207,
+      "lift_mm": 0.6034574520345061,
+      "lift_derivative_mm_per_rad": 13.068047752341558,
+      "torque_Nmm": 1357.4976827041821,
+      "negative_X_force_N": 48.18241039752529,
+      "negative_Z_force_N": 52.03993940794701
+    },
+    {
+      "facet": 9,
+      "angle_deg": 2.333869183187844,
+      "lift_mm": 0.6330302766755246,
+      "lift_derivative_mm_per_rad": 13.068114675264844,
+      "torque_Nmm": 1379.7647918685045,
+      "negative_X_force_N": 48.87047912646091,
+      "negative_Z_force_N": 53.02328644489394
+    },
+    {
+      "facet": 10,
+      "angle_deg": 2.333869194647,
+      "lift_mm": 0.6330302792482793,
+      "lift_derivative_mm_per_rad": 12.659431679376485,
+      "torque_Nmm": 1336.6150033750266,
+      "negative_X_force_N": 47.34213830898939,
+      "negative_Z_force_N": 51.3650736875956
+    },
+    {
+      "facet": 10,
+      "angle_deg": 2.463528588301723,
+      "lift_mm": 0.6616782642416897,
+      "lift_derivative_mm_per_rad": 12.659366849353471,
+      "torque_Nmm": 1357.4976827041821,
+      "negative_X_force_N": 47.98183590546445,
+      "negative_Z_force_N": 52.296114302672216
+    },
+    {
+      "facet": 10,
+      "angle_deg": 2.5931879819564463,
+      "lift_mm": 0.6903262492351003,
+      "lift_derivative_mm_per_rad": 12.659431679376485,
+      "torque_Nmm": 1378.3942658260087,
+      "negative_X_force_N": 48.619618235710085,
+      "negative_Z_force_N": 53.23256445882319
+    },
+    {
+      "facet": 11,
+      "angle_deg": 2.5931879934156026,
+      "lift_mm": 0.6903262517297285,
+      "lift_derivative_mm_per_rad": 12.286849881444196,
+      "torque_Nmm": 1337.826521200681,
+      "negative_X_force_N": 47.18868637742435,
+      "negative_Z_force_N": 51.66586825392555
+    },
+    {
+      "facet": 11,
+      "angle_deg": 2.722847387070326,
+      "lift_mm": 0.7181310932056167,
+      "lift_derivative_mm_per_rad": 12.28678695944416,
+      "torque_Nmm": 1357.497682704181,
+      "negative_X_force_N": 47.78389916388691,
+      "negative_Z_force_N": 52.5559056967697
+    },
+    {
+      "facet": 11,
+      "angle_deg": 2.852506780725049,
+      "lift_mm": 0.745935934681505,
+      "lift_derivative_mm_per_rad": 12.286849881444196,
+      "torque_Nmm": 1377.1827480003524,
+      "negative_X_force_N": 48.377400279373056,
+      "negative_Z_force_N": 53.451194221580835
+    },
+    {
+      "facet": 12,
+      "angle_deg": 2.8525067921842053,
+      "lift_mm": 0.7459359371047248,
+      "lift_derivative_mm_per_rad": 11.945347911337304,
+      "torque_Nmm": 1338.9051906368713,
+      "negative_X_force_N": 47.03279388729953,
+      "negative_Z_force_N": 51.96556630464716
+    },
+    {
+      "facet": 12,
+      "angle_deg": 2.9821661858389286,
+      "lift_mm": 0.772967967955095,
+      "lift_derivative_mm_per_rad": 11.945286738197813,
+      "torque_Nmm": 1357.4976827041776,
+      "negative_X_force_N": 47.588559602977035,
+      "negative_Z_force_N": 52.8193784803517
+    },
+    {
+      "facet": 12,
+      "angle_deg": 3.111825579493652,
+      "lift_mm": 0.7999999988054652,
+      "lift_derivative_mm_per_rad": 11.945347911337304,
+      "torque_Nmm": 1376.1040785641555,
+      "negative_X_force_N": 48.1427932844588,
+      "negative_Z_force_N": 53.67830407233517
+    }
+  ]
+}

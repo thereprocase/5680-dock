@@ -1,0 +1,123 @@
+{
+  "thread_spec": {
+    "family": "D7 custom trapezoidal matched pair; not ISO metric",
+    "major_diameter_mm": 8.0,
+    "pitch_mm": 2.0,
+    "core_diameter_mm": 6.7,
+    "crest_width_mm": 0.45,
+    "default_radial_clearance_mm": 0.25,
+    "default_axial_clearance_per_flank_mm": 0.15,
+    "minimum_recommended_engagement_mm": 6.0,
+    "print_orientation": "Screw knob flat on bed, shaft upright; nut axis upright",
+    "qualification": "PETG fit and hand torque coupon required; no strength certification"
+  },
+  "fit_checks": [
+    {
+      "radial_clearance_mm": 0.2,
+      "aligned_interference_mm3": 0.0,
+      "half_turn_out_of_phase_interference_mm3": 14.00745412997729
+    },
+    {
+      "radial_clearance_mm": 0.25,
+      "aligned_interference_mm3": 0.0,
+      "half_turn_out_of_phase_interference_mm3": 11.280754410871204
+    },
+    {
+      "radial_clearance_mm": 0.3,
+      "aligned_interference_mm3": 0.0,
+      "half_turn_out_of_phase_interference_mm3": 8.769508385620139
+    },
+    {
+      "diameter_mm": 10,
+      "radial_clearance_mm": 0.2,
+      "aligned_interference_mm3": 0.0,
+      "half_turn_out_of_phase_interference_mm3": 17.64938134155713
+    },
+    {
+      "diameter_mm": 10,
+      "radial_clearance_mm": 0.25,
+      "aligned_interference_mm3": 0.0,
+      "half_turn_out_of_phase_interference_mm3": 14.197735618646341
+    },
+    {
+      "diameter_mm": 10,
+      "radial_clearance_mm": 0.3,
+      "aligned_interference_mm3": 0.0,
+      "half_turn_out_of_phase_interference_mm3": 11.02544000749512
+    }
+  ],
+  "stl_count": 9,
+  "export_files": [
+    {
+      "file": "custom8_nut_gap_0.20.stl",
+      "sha256": "166499134366cc71a27bdc66ef9e8ec49874ceb8b5bfc74984c89e17949fec3d"
+    },
+    {
+      "file": "custom8_nut_gap_0.25.stl",
+      "sha256": "d87f3a7119b85b70a6f6ab2b5870a52160716c7902232f7b1733c7c8bc8902ac"
+    },
+    {
+      "file": "custom8_nut_gap_0.30.stl",
+      "sha256": "fc0b38905b2ac7ef1df4a527a61780fcaa3be5a2c28d1921ca693ec172b4d80c"
+    },
+    {
+      "file": "custom10_nut_gap_0.20.stl",
+      "sha256": "f849e71410aa196b8eab8e11f7e79b239261043f2c0f9a91cc2b655fce9d56c7"
+    },
+    {
+      "file": "custom10_nut_gap_0.25.stl",
+      "sha256": "f3bae5287df8330864d4fc3c23dc6cbffca6bccddc9a03f4f282b96092488a69"
+    },
+    {
+      "file": "custom10_nut_gap_0.30.stl",
+      "sha256": "c10cfa0cd473653f3d4efe02e35879648fe49981bf232926083ffa87a8411ffd"
+    },
+    {
+      "file": "custom8_screw_L16.stl",
+      "sha256": "16c2c49bf2c501bacc45ac9ad65a1059517e9c1407abbe44ddb812024bf94157"
+    },
+    {
+      "file": "custom10_screw_L12.stl",
+      "sha256": "4424d59ab1af51780d521b643f62f2a4aa0e2801fb5e4395f247a70e1cbf943d"
+    },
+    {
+      "file": "custom12_screw_L12.stl",
+      "sha256": "652f15906c5f8130d05c058b0a666d69d2d4412a8b4df21bdf77e209c32efff1"
+    }
+  ],
+  "fractional_phase_interference_mm3": 0.0,
+  "parts": [
+    {
+      "name": "custom8_screw_L16",
+      "size_mm": [
+        17.622549219607844,
+        18.0000002,
+        21.0000001
+      ],
+      "valid_solid": true,
+      "volume_mm3": 1879.5500048130525
+    },
+    {
+      "name": "custom10_screw_L12",
+      "size_mm": [
+        19.656250200000002,
+        20.0000002,
+        17.0000001
+      ],
+      "valid_solid": true,
+      "volume_mm3": 2320.305385188425
+    },
+    {
+      "name": "custom12_screw_L12",
+      "size_mm": [
+        21.6844264295082,
+        22.0000002,
+        17.0000001
+      ],
+      "valid_solid": true,
+      "volume_mm3": 3041.4658499533025
+    }
+  ],
+  "source_sha256": "3cdf579dd8d7c7ec681f95f0d09a51599345eb0bb9516030d4aca44cfded9c73",
+  "limits": "Geometric fit, not printed fit or PETG stripping/creep qualification; print coupons first."
+}

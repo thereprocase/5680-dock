@@ -1,0 +1,9 @@
+{
+  "python": "3.13.14 (tags/v3.13.14:fd17997, Jun 10 2026, 13:03:48) [MSC v.1944 64 bit (AMD64)]",
+  "packages": {
+    "cadquery": "2.7.0",
+    "numpy": "2.4.3",
+    "trimesh": "4.11.4",
+    "Pillow": "12.3.0"
+  }
+}

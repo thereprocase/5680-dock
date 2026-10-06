@@ -1,0 +1,7 @@
+{
+  "lip_outward_shift_mm": 2.0,
+  "lip_height_increase_mm": 3.0,
+  "lip_top_edge_radius_mm": 0.65,
+  "seat_extension_toward_underside_mm": 1.0,
+  "status": "Trial increments selected from qualitative physical R1 feedback; not measured corrections."
+}

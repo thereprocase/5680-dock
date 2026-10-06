@@ -1,0 +1,92 @@
+{
+  "nominal_rigid_collisions": [],
+  "docking_path_samples": [
+    {
+      "offset_xz_mm": [
+        18,
+        135
+      ],
+      "collisions": []
+    },
+    {
+      "offset_xz_mm": [
+        18,
+        80
+      ],
+      "collisions": []
+    },
+    {
+      "offset_xz_mm": [
+        18,
+        30
+      ],
+      "collisions": []
+    },
+    {
+      "offset_xz_mm": [
+        18,
+        24
+      ],
+      "collisions": []
+    },
+    {
+      "offset_xz_mm": [
+        18,
+        10
+      ],
+      "collisions": []
+    },
+    {
+      "offset_xz_mm": [
+        18,
+        0
+      ],
+      "collisions": []
+    },
+    {
+      "offset_xz_mm": [
+        15,
+        0
+      ],
+      "collisions": []
+    },
+    {
+      "offset_xz_mm": [
+        10,
+        0
+      ],
+      "collisions": []
+    },
+    {
+      "offset_xz_mm": [
+        6,
+        0
+      ],
+      "collisions": []
+    },
+    {
+      "offset_xz_mm": [
+        4,
+        0
+      ],
+      "collisions": []
+    },
+    {
+      "offset_xz_mm": [
+        2,
+        0
+      ],
+      "collisions": []
+    },
+    {
+      "offset_xz_mm": [
+        0,
+        0
+      ],
+      "collisions": []
+    }
+  ],
+  "step_solids": 53,
+  "step_all_valid": true,
+  "scope": "Simplified nominal envelope and sampled path only; does not qualify real hardware, all adjustment positions, manufacturing, loads or airflow."
+}

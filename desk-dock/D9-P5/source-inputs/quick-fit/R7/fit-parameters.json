@@ -1,0 +1,26 @@
+{
+  "rail_outward_shift_mm": 3.5,
+  "rail_thickness_mm": 6.0,
+  "brace_width_mm": 6.0,
+  "base_thickness_mm": 6.0,
+  "lip_outward_shift_mm": 2.0,
+  "seat_extension_toward_underside_mm": 1.0,
+  "lip_top_edge_radius_mm": 0.65,
+  "fence_liner_thickness_mm": 6.0,
+  "fence_top_z_plug_mm": 118.0,
+  "fence_top_z_far_mm": 69.0,
+  "fence_lead_in_height_mm": 4.0,
+  "fence_lead_in_depth_mm": 2.0,
+  "base_outward_extension_mm": 2.0,
+  "status": "R7 peg bracket, 2026-09-18: frame (base, brace, tower with deck top, 8-degree lid rail, 6-mm outer wall) + drop-in fence peg (foot in a 6-mm channel, wall above) + drop-in seat peg (foot in a 13-mm channel, R2 seat with V5 C relief above); one horizontal 36-mm fan pin through the outer wall and both feet, 0.15-mm cam offset; push-out holes under both channels. No backing wall: as slim as the fence allows.",
+  "pin_cam_offset_mm": 0.15,
+  "peg_clearance_mm": 0.3,
+  "channel_depth_mm": 22.0,
+  "seat_channel_y_mm": [
+    -5.0,
+    8.0
+  ],
+  "outer_wall_thickness_mm": 6.0,
+  "pin_z_mm": 40.0,
+  "pushout_radius_mm": 2.0
+}

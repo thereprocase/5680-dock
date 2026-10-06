@@ -1,0 +1,13 @@
+{
+  "command": [
+    "C:\\Program Files\\Bambu Studio\\bambu-studio.exe",
+    "--datadir",
+    "D:\\Code\\Modeling\\dell-5560-wall-mount\\desk-dock\\D7\\print-review\\isolated-user",
+    "--help"
+  ],
+  "exit_code": 4294967294,
+  "timeout": false,
+  "elapsed_seconds": 0.71,
+  "log": "D:\\Code\\Modeling\\dell-5560-wall-mount\\desk-dock\\D7\\print-review\\cli-help.txt",
+  "executable_sha256": "a2bc15b74006abbdb5e8c9ff53f335c173bc39ade25424b8a92da953bfe1f319"
+}

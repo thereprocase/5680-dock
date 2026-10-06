@@ -1,0 +1,701 @@
+{
+  "production_parts": 30,
+  "coupon_parts": 16,
+  "files_checked": 46,
+  "all_pass": false,
+  "parts": [
+    {
+      "file": "01_fan_guard_retainer.stl",
+      "sha256": "d03b6b5eb1daed1f1b46268f5ca2667ebcd8bce72a37d22dbf36aa4eea775274",
+      "watertight": true,
+      "winding_consistent": true,
+      "mesh_components": 1,
+      "positive_volume_mm3": 43370.472479850374,
+      "size_mm": [
+        128.6999969482422,
+        129.5,
+        36.599998474121094
+      ],
+      "pass": true
+    },
+    {
+      "file": "02_fan_guard_retainer.stl",
+      "sha256": "7cc3b674118c2a28881b05fb8de90b8877d091d04328f8bd220b7dc211ae42b5",
+      "watertight": true,
+      "winding_consistent": true,
+      "mesh_components": 1,
+      "positive_volume_mm3": 43370.47247985037,
+      "size_mm": [
+        128.6999969482422,
+        129.5,
+        36.599998474121094
+      ],
+      "pass": true
+    },
+    {
+      "file": "breakaway_carrier.stl",
+      "sha256": "95055d3f1b9f6515f82d2ad64dca09506af562ae89745939caffc63dcb37c324",
+      "watertight": true,
+      "winding_consistent": true,
+      "mesh_components": 1,
+      "positive_volume_mm3": 53536.96010716743,
+      "size_mm": [
+        59.989163007587194,
+        58.5,
+        80.14763631357425
+      ],
+      "pass": true
+    },
+    {
+      "file": "breakaway_pivot_pin_10mm.stl",
+      "sha256": "99fa2bbdd89b318d60aaa85b2ba5d853dc807e638c2fe6d6c98fee869e543fda",
+      "watertight": true,
+      "winding_consistent": true,
+      "mesh_components": 1,
+      "positive_volume_mm3": 8627.112739344662,
+      "size_mm": [
+        21.997538880095817,
+        21.995077133178683,
+        88.0
+      ],
+      "pass": true
+    },
+    {
+      "file": "breakaway_spring_cartridge.stl",
+      "sha256": "8f8f0c0ead8d5b8648f8e31746636c1e354b15f238ab9b5763aed50ce1e1fd8f",
+      "watertight": true,
+      "winding_consistent": true,
+      "mesh_components": 1,
+      "positive_volume_mm3": 36105.75152081668,
+      "size_mm": [
+        88.0,
+        60.0,
+        11.0
+      ],
+      "pass": true
+    },
+    {
+      "file": "breakaway_preload_hand_nut.stl",
+      "sha256": "5055afb3658ea5b505e100dac5c3498149ff460ffd9506dde4606445efb71b3c",
+      "watertight": true,
+      "winding_consistent": true,
+      "mesh_components": 1,
+      "positive_volume_mm3": 3025.8665029725066,
+      "size_mm": [
+        23.70833396911621,
+        23.990409355144948,
+        9.99999990000002
+      ],
+      "pass": true
+    },
+    {
+      "file": "breakaway_spring_hand_screw_0.stl",
+      "sha256": "7e7c7cc908b50d0a641f6a1cc79e3ed7b6d8bb5a3d5927949ecb59ba1ec0db6c",
+      "watertight": true,
+      "winding_consistent": true,
+      "mesh_components": 1,
+      "positive_volume_mm3": 3128.383368596627,
+      "size_mm": [
+        16.603092093603514,
+        16.993376705562696,
+        53.0
+      ],
+      "pass": true
+    },
+    {
+      "file": "breakaway_spring_hand_screw_1.stl",
+      "sha256": "96d2b483ab96b3d6d5e1f12ed723a3a2e6c6bb5a148f550b475d7411cd2a6d92",
+      "watertight": true,
+      "winding_consistent": true,
+      "mesh_components": 1,
+      "positive_volume_mm3": 3128.383368596626,
+      "size_mm": [
+        16.603092093603514,
+        16.993376705562696,
+        53.0
+      ],
+      "pass": true
+    },
+    {
+      "file": "height_shim_pack.stl",
+      "sha256": "cddaa9e22fe7416a1f564ebeefc441bcd8ca3cef606aa042a9b976af00fbbbf5",
+      "watertight": true,
+      "winding_consistent": true,
+      "mesh_components": 1,
+      "positive_volume_mm3": 12427.143813510134,
+      "size_mm": [
+        38.400001525878906,
+        37.5,
+        16.600000381469727
+      ],
+      "pass": true
+    },
+    {
+      "file": "cassette_calibration_keeper_plate.stl",
+      "sha256": "f6714ae9f66362f30dffbd2de098c62b3fcb3f9c1928528b6cd636cd228b8aea",
+      "watertight": true,
+      "winding_consistent": true,
+      "mesh_components": 1,
+      "positive_volume_mm3": 5125.739829128029,
+      "size_mm": [
+        34.0,
+        32.0,
+        5.0
+      ],
+      "pass": true
+    },
+    {
+      "file": "cassette_calibration_hand_screw.stl",
+      "sha256": "261ec67389ac1b8c622a56942c65fdc7449799ed9aefb9674c8ff7cfdea0d9d9",
+      "watertight": true,
+      "winding_consistent": true,
+      "mesh_components": 1,
+      "positive_volume_mm3": 2518.9612354673322,
+      "size_mm": [
+        19.6562499,
+        19.999999900000006,
+        28.899999618530273
+      ],
+      "pass": true
+    },
+    {
+      "file": "X_depth_overmold_clamp.stl",
+      "sha256": "18453722323449a0ab4ffedbef524e06ec5c269955438fb88fffb5c8055ee450",
+      "watertight": true,
+      "winding_consistent": true,
+      "mesh_components": 1,
+      "positive_volume_mm3": 13107.474485465857,
+      "size_mm": [
+        32.599998474121094,
+        29.0,
+        28.200000662939487
+      ],
+      "pass": true
+    },
+    {
+      "file": "sliding_plug_cap.stl",
+      "sha256": "e52aa956151d9d6de6c216afe35f4358c127972a2a9b26dfc8d5f76500df58ea",
+      "watertight": true,
+      "winding_consistent": true,
+      "mesh_components": 1,
+      "positive_volume_mm3": 2437.166815005052,
+      "size_mm": [
+        32.599998474121094,
+        24.268644332885742,
+        10.100000381469727
+      ],
+      "pass": true
+    },
+    {
+      "file": "cassette_cap_push_pin_6p5.stl",
+      "sha256": "4ae12d43ef97e6c16d6ccd11990e767a4c489f1897bd53bfa00446bb1d90b18b",
+      "watertight": true,
+      "winding_consistent": true,
+      "mesh_components": 1,
+      "positive_volume_mm3": 1424.4200719432836,
+      "size_mm": [
+        13.99686702596955,
+        13.99843374604825,
+        28.268644332885742
+      ],
+      "pass": true
+    },
+    {
+      "file": "independent_printed_chassis_stop_screw.stl",
+      "sha256": "d8ed7210aa01964d21d084df2ffa9eae68942446dfc61315bcfc938d25b3fc29",
+      "watertight": true,
+      "winding_consistent": true,
+      "mesh_components": 1,
+      "positive_volume_mm3": 4017.2284974721388,
+      "size_mm": [
+        23.708333869116217,
+        23.99040925502777,
+        27.0
+      ],
+      "pass": true
+    },
+    {
+      "file": "stop_soft_tip.stl",
+      "sha256": "edc478df801331c521cf7713e8ae68ef1336c38ed83837adead4711e6773590b",
+      "watertight": true,
+      "winding_consistent": true,
+      "mesh_components": 1,
+      "positive_volume_mm3": 293.78342327277073,
+      "size_mm": [
+        11.997314453125,
+        11.998657224117778,
+        3.9999999999999996
+      ],
+      "pass": true
+    },
+    {
+      "file": "01_bottom_thumb_lock_1.stl",
+      "sha256": "744749b08e2635d7811e8aa42c6b970df93a2bf7325481dfc8bf1ca3a682361f",
+      "watertight": true,
+      "winding_consistent": true,
+      "mesh_components": 1,
+      "positive_volume_mm3": 1792.1989964420375,
+      "size_mm": [
+        17.622549092397094,
+        17.9924578955397,
+        19.000000035390258
+      ],
+      "pass": true
+    },
+    {
+      "file": "01_bottom_thumb_lock_2.stl",
+      "sha256": "817aaf7cb0186e77ec298e7884ccb03009fe8c0a0542646a8521facfe2e8cdb5",
+      "watertight": true,
+      "winding_consistent": true,
+      "mesh_components": 1,
+      "positive_volume_mm3": 1792.1989964468075,
+      "size_mm": [
+        17.622549092397094,
+        17.9924578955397,
+        19.000000035390258
+      ],
+      "pass": true
+    },
+    {
+      "file": "01_bottom_panel.stl",
+      "sha256": "f166e56ec9e36c44f6371b91e16a012dc6f0f2daf150ee35799cc1da6c92477b",
+      "watertight": true,
+      "winding_consistent": true,
+      "mesh_components": 1,
+      "positive_volume_mm3": 67335.89694314201,
+      "size_mm": [
+        181.24000629375223,
+        91.23349259188399,
+        10.700000023469329
+      ],
+      "pass": true
+    },
+    {
+      "file": "02_bottom_thumb_lock_1.stl",
+      "sha256": "817aaf7cb0186e77ec298e7884ccb03009fe8c0a0542646a8521facfe2e8cdb5",
+      "watertight": true,
+      "winding_consistent": true,
+      "mesh_components": 1,
+      "positive_volume_mm3": 1792.1989964468075,
+      "size_mm": [
+        17.622549092397094,
+        17.9924578955397,
+        19.000000035390258
+      ],
+      "pass": true
+    },
+    {
+      "file": "02_bottom_thumb_lock_2.stl",
+      "sha256": "129939a7c96bda2de2893615e8ac6fa8e1a7b98d997df0cf39743bfc08c44af1",
+      "watertight": true,
+      "winding_consistent": true,
+      "mesh_components": 1,
+      "positive_volume_mm3": 1792.1989964468075,
+      "size_mm": [
+        17.622549092397094,
+        17.9924578955397,
+        19.000000035390258
+      ],
+      "pass": true
+    },
+    {
+      "file": "02_bottom_panel.stl",
+      "sha256": "cbff1ac944ed5dc6b7ee2332afd23550de709d2034db33abbd10f7f27f6ef7e4",
+      "watertight": true,
+      "winding_consistent": true,
+      "mesh_components": 1,
+      "positive_volume_mm3": 74280.22661121136,
+      "size_mm": [
+        198.94000504305586,
+        91.23349259188399,
+        10.700000023469329
+      ],
+      "pass": true
+    },
+    {
+      "file": "01_bridge_thumb_lock_1.stl",
+      "sha256": "e15700a4dde0e0a9dd94ac8face5aae34195aeb45e6e78aefa5cc50157c8c209",
+      "watertight": true,
+      "winding_consistent": true,
+      "mesh_components": 1,
+      "positive_volume_mm3": 1792.19898388627,
+      "size_mm": [
+        17.622548957006842,
+        17.9924578955397,
+        19.000000000000004
+      ],
+      "pass": true
+    },
+    {
+      "file": "02_bridge_thumb_lock_1.stl",
+      "sha256": "e15700a4dde0e0a9dd94ac8face5aae34195aeb45e6e78aefa5cc50157c8c209",
+      "watertight": true,
+      "winding_consistent": true,
+      "mesh_components": 1,
+      "positive_volume_mm3": 1792.19898388627,
+      "size_mm": [
+        17.622548957006842,
+        17.9924578955397,
+        19.000000000000004
+      ],
+      "pass": true
+    },
+    {
+      "file": "bridge_key_1.stl",
+      "sha256": "456592a509aa0fc233383fa1de3ad58aa2eae8b8dd75e099be511ccb00c4a293",
+      "watertight": true,
+      "winding_consistent": true,
+      "mesh_components": 1,
+      "positive_volume_mm3": 2357.6027657657414,
+      "size_mm": [
+        40.00000170106068,
+        17.99999979371205,
+        3.9999998221173882
+      ],
+      "pass": true
+    },
+    {
+      "file": "01_bridge_thumb_lock_2.stl",
+      "sha256": "d1cc6a4215bdbecd699a47c2d27d71b1f4ad2561caebfd569610920e979a8508",
+      "watertight": true,
+      "winding_consistent": true,
+      "mesh_components": 1,
+      "positive_volume_mm3": 1792.1989838862708,
+      "size_mm": [
+        17.622548957006842,
+        17.9924578955397,
+        19.000000000000004
+      ],
+      "pass": true
+    },
+    {
+      "file": "02_bridge_thumb_lock_2.stl",
+      "sha256": "d1cc6a4215bdbecd699a47c2d27d71b1f4ad2561caebfd569610920e979a8508",
+      "watertight": true,
+      "winding_consistent": true,
+      "mesh_components": 1,
+      "positive_volume_mm3": 1792.1989838862708,
+      "size_mm": [
+        17.622548957006842,
+        17.9924578955397,
+        19.000000000000004
+      ],
+      "pass": true
+    },
+    {
+      "file": "bridge_key_2.stl",
+      "sha256": "4cfe5337a6fe23375566c7a3c167dc884c80c0bd8cc9a1246fcd8cba2a602507",
+      "watertight": true,
+      "winding_consistent": true,
+      "mesh_components": 1,
+      "positive_volume_mm3": 2357.6027657657414,
+      "size_mm": [
+        40.00000170106068,
+        17.99999979371205,
+        3.9999998221173882
+      ],
+      "pass": true
+    },
+    {
+      "file": "01_manifold_with_cradle.stl",
+      "sha256": "88b1cf96b880924c41b474d2ff806e16209a612cb2818ab94cb475946663195c",
+      "watertight": false,
+      "winding_consistent": true,
+      "mesh_components": 1,
+      "positive_volume_mm3": 410079.6188558761,
+      "size_mm": [
+        175.36471557617188,
+        132.3585084946826,
+        232.83982849121094
+      ],
+      "pass": false,
+      "bad_edge_count": 1,
+      "bad_edge_counts": [
+        4
+      ],
+      "bad_edges_xyz_mm": [
+        [
+          [
+            15.76510238647461,
+            125.27391815185547,
+            36.84000015258789
+          ],
+          [
+            15.76510238647461,
+            125.27391815185547,
+            148.83999633789062
+          ]
+        ]
+      ],
+      "bad_edge_length_range_mm": [
+        111.99999618530273,
+        111.99999618530273
+      ]
+    },
+    {
+      "file": "02_manifold_with_cradle.stl",
+      "sha256": "771afa8f3a676c34add058cbd96401450a57a555369dd458f395c145382d899b",
+      "watertight": false,
+      "winding_consistent": true,
+      "mesh_components": 1,
+      "positive_volume_mm3": 261684.6311760697,
+      "size_mm": [
+        201.5399932861328,
+        140.56605529785156,
+        130.80880737304688
+      ],
+      "pass": false,
+      "bad_edge_count": 1,
+      "bad_edge_counts": [
+        4
+      ],
+      "bad_edges_xyz_mm": [
+        [
+          [
+            148.5399932861328,
+            6.083094120025635,
+            6.800000190734863
+          ],
+          [
+            36.540000915527344,
+            6.083094120025635,
+            6.800000190734863
+          ]
+        ]
+      ],
+      "bad_edge_length_range_mm": [
+        111.99999237060547,
+        111.99999237060547
+      ]
+    },
+    {
+      "file": "coupon_custom10_nut_gap_0.20.stl",
+      "sha256": "f849e71410aa196b8eab8e11f7e79b239261043f2c0f9a91cc2b655fce9d56c7",
+      "watertight": true,
+      "winding_consistent": true,
+      "mesh_components": 1,
+      "positive_volume_mm3": 1742.583873369795,
+      "size_mm": [
+        19.65625,
+        20.0,
+        8.0
+      ],
+      "pass": true
+    },
+    {
+      "file": "coupon_custom10_nut_gap_0.25.stl",
+      "sha256": "f3bae5287df8330864d4fc3c23dc6cbffca6bccddc9a03f4f282b96092488a69",
+      "watertight": true,
+      "winding_consistent": true,
+      "mesh_components": 1,
+      "positive_volume_mm3": 1729.9045361037834,
+      "size_mm": [
+        19.65625,
+        20.0,
+        8.0
+      ],
+      "pass": true
+    },
+    {
+      "file": "coupon_custom10_nut_gap_0.30.stl",
+      "sha256": "c10cfa0cd473653f3d4efe02e35879648fe49981bf232926083ffa87a8411ffd",
+      "watertight": true,
+      "winding_consistent": true,
+      "mesh_components": 1,
+      "positive_volume_mm3": 1717.0973692494438,
+      "size_mm": [
+        19.65625,
+        20.0,
+        8.0
+      ],
+      "pass": true
+    },
+    {
+      "file": "coupon_custom10_screw_L12.stl",
+      "sha256": "4424d59ab1af51780d521b643f62f2a4aa0e2801fb5e4395f247a70e1cbf943d",
+      "watertight": true,
+      "winding_consistent": true,
+      "mesh_components": 1,
+      "positive_volume_mm3": 2319.6985145127333,
+      "size_mm": [
+        19.65625,
+        20.0,
+        17.0
+      ],
+      "pass": true
+    },
+    {
+      "file": "coupon_custom8_nut_gap_0.20.stl",
+      "sha256": "166499134366cc71a27bdc66ef9e8ec49874ceb8b5bfc74984c89e17949fec3d",
+      "watertight": true,
+      "winding_consistent": true,
+      "mesh_components": 1,
+      "positive_volume_mm3": 1493.5728790295316,
+      "size_mm": [
+        17.622549057006836,
+        17.994600296020508,
+        8.0
+      ],
+      "pass": true
+    },
+    {
+      "file": "coupon_custom8_nut_gap_0.25.stl",
+      "sha256": "d87f3a7119b85b70a6f6ab2b5870a52160716c7902232f7b1733c7c8bc8902ac",
+      "watertight": true,
+      "winding_consistent": true,
+      "mesh_components": 1,
+      "positive_volume_mm3": 1483.4049294815868,
+      "size_mm": [
+        17.622549057006836,
+        17.994600296020508,
+        8.0
+      ],
+      "pass": true
+    },
+    {
+      "file": "coupon_custom8_nut_gap_0.30.stl",
+      "sha256": "fc0b38905b2ac7ef1df4a527a61780fcaa3be5a2c28d1921ca693ec172b4d80c",
+      "watertight": true,
+      "winding_consistent": true,
+      "mesh_components": 1,
+      "positive_volume_mm3": 1473.1133849026817,
+      "size_mm": [
+        17.622549057006836,
+        17.994600296020508,
+        8.0
+      ],
+      "pass": true
+    },
+    {
+      "file": "coupon_custom8_screw_L16.stl",
+      "sha256": "16c2c49bf2c501bacc45ac9ad65a1059517e9c1407abbe44ddb812024bf94157",
+      "watertight": true,
+      "winding_consistent": true,
+      "mesh_components": 1,
+      "positive_volume_mm3": 1879.1277162063843,
+      "size_mm": [
+        17.622549057006836,
+        17.994600296020508,
+        21.0
+      ],
+      "pass": true
+    },
+    {
+      "file": "coupon_cap_pin_receiver_bore_6.8.stl",
+      "sha256": "3e9dbb2cfb47f918c9595b87cf7e3c42cf9fb08aff03e3b6c35bca75f8450f08",
+      "watertight": true,
+      "winding_consistent": true,
+      "mesh_components": 1,
+      "positive_volume_mm3": 940.5798894370809,
+      "size_mm": [
+        14.0,
+        13.995648384094238,
+        8.0
+      ],
+      "pass": true
+    },
+    {
+      "file": "coupon_cap_pin_receiver_bore_6.9.stl",
+      "sha256": "3dc715ed0b4c2024b22a12a386aca822d364c5bde3e07ccc79a95e6737ddd79a",
+      "watertight": true,
+      "winding_consistent": true,
+      "mesh_components": 1,
+      "positive_volume_mm3": 931.9754958634967,
+      "size_mm": [
+        14.0,
+        13.995648384094238,
+        8.0
+      ],
+      "pass": true
+    },
+    {
+      "file": "coupon_cap_pin_receiver_bore_7.0.stl",
+      "sha256": "0cdf910e970d8a5b5c28230b7a56f573f8754cbd111c4bb0185e42adf8725ae8",
+      "watertight": true,
+      "winding_consistent": true,
+      "mesh_components": 1,
+      "positive_volume_mm3": 923.2454885197809,
+      "size_mm": [
+        14.0,
+        13.995648384094238,
+        8.0
+      ],
+      "pass": true
+    },
+    {
+      "file": "coupon_fan_slide_rail.stl",
+      "sha256": "9d45c9120fa793c48351710041c8229f165b86b9b544422bc624caa45db7bc9d",
+      "watertight": true,
+      "winding_consistent": true,
+      "mesh_components": 1,
+      "positive_volume_mm3": 5411.063232707741,
+      "size_mm": [
+        9.0,
+        20.0,
+        41.4951057434082
+      ],
+      "pass": true
+    },
+    {
+      "file": "coupon_fan_grille_edge.stl",
+      "sha256": "d9d33261bf5d19c3d955e0867deb68dbd03fad5c274c9ede5d08aca64d0123a5",
+      "watertight": true,
+      "winding_consistent": true,
+      "mesh_components": 1,
+      "positive_volume_mm3": 435.0817385142913,
+      "size_mm": [
+        5.849999904632568,
+        20.0,
+        4.0
+      ],
+      "pass": true
+    },
+    {
+      "file": "coupon_fixed_cam_and_pilot.stl",
+      "sha256": "d589fbac4107bcc782346925d1b5946b82b3ea580f50bf3dc78203bf0ba32150",
+      "watertight": true,
+      "winding_consistent": true,
+      "mesh_components": 1,
+      "positive_volume_mm3": 26457.163939499373,
+      "size_mm": [
+        67.98751581180841,
+        67.98999769799411,
+        7.9999999999999964
+      ],
+      "pass": true
+    },
+    {
+      "file": "coupon_rotor_cam_and_pilot.stl",
+      "sha256": "2864bd5a8ebc6c46a345b8d59f1c7e7c4c7add3352739d28a2f3ceb2381f713a",
+      "watertight": true,
+      "winding_consistent": true,
+      "mesh_components": 1,
+      "positive_volume_mm3": 20403.24382195542,
+      "size_mm": [
+        59.99852564302273,
+        60.99540086905472,
+        12.5
+      ],
+      "pass": true
+    },
+    {
+      "file": "coupon_dummy_plug_load_eye.stl",
+      "sha256": "ecd6dff8bc0e354747e030a1cf43b95cc33fa8e933e979bcf7dc25e17f6ef37f",
+      "watertight": true,
+      "winding_consistent": true,
+      "mesh_components": 1,
+      "positive_volume_mm3": 2623.1021449806367,
+      "size_mm": [
+        39.14767074584961,
+        14.999999705191641,
+        6.499999999999999
+      ],
+      "pass": true
+    }
+  ],
+  "input_manifest_sha256": {
+    "print-manifest.json": "21f31af4f83b4040dd013ba13bc12f4ca5d8016df22eb66585c82fd650587119",
+    "print\\coupon-manifest.json": "704ee95d8312baf53c96174f73b332acd43acc5694efff465072d607d47c5d2c"
+  },
+  "limits": "Geometric mesh/topology check only; no toolpaths, support qualification, or physical print."
+}

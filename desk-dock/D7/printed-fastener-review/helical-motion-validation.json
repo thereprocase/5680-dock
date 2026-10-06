@@ -1,0 +1,30 @@
+{
+  "helical_motion_fit": [
+    {
+      "angle_deg": 0,
+      "advance_mm": 0.0,
+      "interference_mm3": 0.0
+    },
+    {
+      "angle_deg": 45,
+      "advance_mm": 0.25,
+      "interference_mm3": 0.0
+    },
+    {
+      "angle_deg": 90,
+      "advance_mm": 0.5,
+      "interference_mm3": 0.0
+    },
+    {
+      "angle_deg": 180,
+      "advance_mm": 1.0,
+      "interference_mm3": 0.0
+    },
+    {
+      "angle_deg": 270,
+      "advance_mm": 1.5,
+      "interference_mm3": 0.0
+    }
+  ],
+  "qualification": "CAD motion only; print fit remains unverified"
+}

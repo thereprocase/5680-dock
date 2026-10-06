@@ -1,0 +1,41 @@
+{
+  "stl_count": 3,
+  "parts": [
+    {
+      "file": "cap_pin_receiver_bore_6.8.stl",
+      "bore_mm": 6.8,
+      "size_mm": [
+        14,
+        14,
+        8
+      ],
+      "sha256": "3e9dbb2cfb47f918c9595b87cf7e3c42cf9fb08aff03e3b6c35bca75f8450f08",
+      "purpose": "Use actual cassette_cap_push_pin_6p5 as male; diameter/friction screening only."
+    },
+    {
+      "file": "cap_pin_receiver_bore_6.9.stl",
+      "bore_mm": 6.9,
+      "size_mm": [
+        14,
+        14,
+        8
+      ],
+      "sha256": "3dc715ed0b4c2024b22a12a386aca822d364c5bde3e07ccc79a95e6737ddd79a",
+      "purpose": "Use actual cassette_cap_push_pin_6p5 as male; diameter/friction screening only."
+    },
+    {
+      "file": "cap_pin_receiver_bore_7.0.stl",
+      "bore_mm": 7.0,
+      "size_mm": [
+        14,
+        14,
+        8
+      ],
+      "sha256": "0cdf910e970d8a5b5c28230b7a56f573f8754cbd111c4bb0185e42adf8725ae8",
+      "purpose": "Use actual cassette_cap_push_pin_6p5 as male; diameter/friction screening only."
+    }
+  ],
+  "male": "cassette_cap_push_pin_6p5.stl (actual cap pin exported by cassette_isolated_check.py)",
+  "print_pose": "Flat ring face on bed; pin upright on its head; same PETG profile as final parts.",
+  "limits": "Full housing ears differ in compliance and engagement length. Ring fit does not qualify extraction load, pin fatigue, or cap squeeze."
+}

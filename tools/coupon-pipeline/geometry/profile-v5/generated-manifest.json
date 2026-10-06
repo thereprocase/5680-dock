@@ -1,0 +1,294 @@
+{
+  "format": "precision-5680-full-native-lid-rail-contact-coupon-v5",
+  "status": "V4 geometry with the rail side moved 3.5 mm outward after the printed V4 plate failed the same way on all three variants; pending independent review and one fixed-pose Orca verification",
+  "scope": "small hand-held local contact/clearance-reading specimen; no freestanding, strength, CFD, production or physical-fit qualification",
+  "physical_input": "User printed the V4 A/B/C plate: all three were wrong and C (three openings) was still not enough. Instruction: move the tall lid-stop wall 3.5 mm further from the seat/hinge/rest/bearing surface and the short fence so the whole coupon grows by 3.5 mm normal to the tall wall. The 3.5 mm is a requested trial increment, not a measured lid thickness.",
+  "rail_offset": {
+    "shift_mm": 3.5,
+    "direction": "unleaned source +Y after the R1/R2 lean(), i.e. the outward normal of the rail's inner face",
+    "shift_vector_mm": [
+      0.0,
+      3.4866814433211095,
+      -0.3050450996168036
+    ],
+    "split_plane_unleaned_y_mm": 8.75,
+    "split_plane_between": {
+      "r2_seat_curve_end_y_mm": 6.414999999999999,
+      "rail_inner_face_y_mm": 11.085
+    },
+    "moved": "every feature on the rail side of the split plane: the full 86-mm lid rail, its deck portion and any cropped brace remnant",
+    "unchanged": "short fence, curved seat, seat-support column, C relief band, identifier holes, crop datum on the fence side",
+    "rail_inner_face_unleaned_y_mm": {
+      "V4": 11.085,
+      "V5": 14.585
+    },
+    "fence_inner_to_rail_inner_mm": {
+      "A_R1": {
+        "V4": 22.42,
+        "V5": 25.92
+      },
+      "B_and_C_R2": {
+        "V4": 24.42,
+        "V5": 27.92
+      }
+    },
+    "stretch_receipts": {
+      "A": {
+        "split_plane_unleaned_y_mm": 8.75,
+        "section_face_area_mm2": 119.9999999999782,
+        "section_unleaned_z_mm": [
+          46.0,
+          51.0
+        ],
+        "moved_volume_mm3": 9146.059213864566,
+        "kept_volume_mm3": 5196.166648432096,
+        "filler_volume_mm3": 419.99999999992224,
+        "shift_vector_mm": [
+          0.0,
+          3.4866814433211095,
+          -0.3050450996168036
+        ]
+      },
+      "B": {
+        "split_plane_unleaned_y_mm": 8.75,
+        "section_face_area_mm2": 119.99999999999865,
+        "section_unleaned_z_mm": [
+          46.0,
+          51.0
+        ],
+        "moved_volume_mm3": 9146.059213864712,
+        "kept_volume_mm3": 5778.346469694178,
+        "filler_volume_mm3": 419.9999999999934,
+        "shift_vector_mm": [
+          0.0,
+          3.4866814433211095,
+          -0.3050450996168036
+        ]
+      }
+    }
+  },
+  "crop": {
+    "x_mm": [
+      7.050000000000001,
+      31.05
+    ],
+    "y_mm_before_shift": [
+      -18.13255580954094,
+      22.500056440526635
+    ],
+    "z_mm_before_shift": [
+      44.0,
+      133.22945443898186
+    ],
+    "derivation": "Identical V4 window: Y/Z bounds derive from the exact R2 lower-deck and full lid-rail corners after original source lean(), each with a 0.5-mm crop margin. The rail-side piece is shifted after cropping, so the finished coupon extends 3.5 mm beyond this window along the rail normal."
+  },
+  "full_native_rail": {
+    "unleaned_source_equation": "lean(box(T/2, 48, 4, 86)) then translate by shift_vector_mm",
+    "unleaned_yz_mm_before_shift": [
+      11.085,
+      15.085,
+      48.0,
+      134.0
+    ],
+    "unleaned_height_above_seat_mm": 80.0,
+    "leaned_yz_corners_mm_before_shift": [
+      [
+        10.519883771861052,
+        47.056710403091735
+      ],
+      [
+        18.015277648159653,
+        132.72945443898186
+      ],
+      [
+        14.504662564228033,
+        46.7080874321011
+      ],
+      [
+        22.000056440526635,
+        132.38083146799121
+      ]
+    ],
+    "full_rail_volume_mm3_over_24mm_coupon_width": 8256.0,
+    "retained_moved_rail_volume_mm3": {
+      "A": 8255.999999997708,
+      "B": 8255.999999997708,
+      "C": 8255.999999997708
+    },
+    "proof": "Each finished coupon contains the full explicit source rail volume at its moved position; the 3.5-mm channel between the old and new rail faces above the deck is empty."
+  },
+  "C_boolean_receipt": {
+    "operation": "C_pre_ID = stretched_B.cut(leaned_R2_curve_band)",
+    "source_transform": "rotate((0,0,H), (1,0,H), -laptop_lean_deg), matching R2 build_quick_fit.py lean()",
+    "removed_by_B_minus_C_mm3": 239.9999999998072,
+    "removed_by_B_intersect_band_mm3": 239.9999999999618,
+    "difference_mm3": 1.546140993013978e-10,
+    "section_x_mm": 19.05,
+    "section_render": "B_V4_vs_V5_X_section.png"
+  },
+  "reading_protocol": [
+    "Hand-position only; do not use the tall rail as a lever or press it toward the lid.",
+    "Observe first contact among intended seat, short fence and the moved tall rail. Stop if rail flex, forced capture or rocking occurs.",
+    "V5 prints look like V4 prints: tell them apart by the flat deck between the seat and the tall rail, which is 3.5 mm longer on V5. Label or discard the V4 prints before comparing."
+  ],
+  "limits": [
+    "The source reference is an AR visualization, not manufacturing metrology.",
+    "3.5 mm is the user's requested increment from handling the printed V4 plate; it is not a measured lid thickness or curvature.",
+    "No slice, print, solver, CFD, acoustic, strength or physical-fit conclusion follows from this artifact."
+  ],
+  "validation": {
+    "A_R1_full_rail_plus_3p5mm": {
+      "id_holes": 1,
+      "meaning": "V4 A (R1 crop, full rail) with the rail side moved 3.5 mm outward",
+      "step_valid": true,
+      "step_solids": 1,
+      "stl_watertight": true,
+      "stl_components": 1,
+      "source_bounds_mm": [
+        [
+          7.050000000000001,
+          -15.64016641335,
+          44.0
+        ],
+        [
+          31.050000000000004,
+          25.98673788384776,
+          132.92440933936507
+        ]
+      ],
+      "print_bounds_mm": [
+        88.92440795898438,
+        41.62690353393555,
+        24.0
+      ],
+      "geometry_first_print_proof": "The full rail, fence, seat, crop, deck filler, C band and ID holes are all constant YZ profiles extruded along original X. Rotating original X to print Z makes every layer identical in lateral outline; this is geometry evidence only, not an Orca result."
+    },
+    "B_R2_full_rail_plus_3p5mm": {
+      "id_holes": 2,
+      "meaning": "V4 B (R2 crop, full rail) with the rail side moved 3.5 mm outward",
+      "step_valid": true,
+      "step_solids": 1,
+      "stl_watertight": true,
+      "stl_components": 1,
+      "source_bounds_mm": [
+        [
+          7.050000000000001,
+          -17.63255580954,
+          44.0
+        ],
+        [
+          31.050000000000004,
+          25.98673788384776,
+          132.92440933936507
+        ]
+      ],
+      "print_bounds_mm": [
+        88.92440795898438,
+        43.619293212890625,
+        24.0
+      ],
+      "geometry_first_print_proof": "The full rail, fence, seat, crop, deck filler, C band and ID holes are all constant YZ profiles extruded along original X. Rotating original X to print Z makes every layer identical in lateral outline; this is geometry evidence only, not an Orca result."
+    },
+    "C_R2_full_rail_plus_3p5mm_plus_1mm_seat_relief": {
+      "id_holes": 3,
+      "meaning": "V4 C (B plus the 1-mm R2 seat-relief band) with the rail side moved 3.5 mm outward",
+      "step_valid": true,
+      "step_solids": 1,
+      "stl_watertight": true,
+      "stl_components": 1,
+      "source_bounds_mm": [
+        [
+          7.050000000000001,
+          -17.63255580954,
+          44.0
+        ],
+        [
+          31.050000000000004,
+          25.98673788384776,
+          132.92440933936507
+        ]
+      ],
+      "print_bounds_mm": [
+        88.92440795898438,
+        43.619293212890625,
+        24.0
+      ],
+      "geometry_first_print_proof": "The full rail, fence, seat, crop, deck filler, C band and ID holes are all constant YZ profiles extruded along original X. Rotating original X to print Z makes every layer identical in lateral outline; this is geometry evidence only, not an Orca result."
+    }
+  },
+  "identifier_geometry": {
+    "A": {
+      "count": 1,
+      "removed_volume_mm3": 95.99999999979627,
+      "hole_side_mm": 2.0,
+      "pitch_mm": 4.0,
+      "native_y_starts_mm": [
+        -5.0
+      ],
+      "native_z_mm": [
+        47.8,
+        49.8
+      ],
+      "source_solid_halo_mm": 1.0,
+      "inter_hole_ligament_mm": 2.0,
+      "rail_and_relief_intersection_mm3": 0.0
+    },
+    "B": {
+      "count": 2,
+      "removed_volume_mm3": 191.99999999960892,
+      "hole_side_mm": 2.0,
+      "pitch_mm": 4.0,
+      "native_y_starts_mm": [
+        -5.0,
+        -1.0
+      ],
+      "native_z_mm": [
+        47.8,
+        49.8
+      ],
+      "source_solid_halo_mm": 1.0,
+      "inter_hole_ligament_mm": 2.0,
+      "rail_and_relief_intersection_mm3": 0.0
+    },
+    "C": {
+      "count": 3,
+      "removed_volume_mm3": 287.9999999994361,
+      "hole_side_mm": 2.0,
+      "pitch_mm": 4.0,
+      "native_y_starts_mm": [
+        -5.0,
+        -1.0,
+        3.0
+      ],
+      "native_z_mm": [
+        47.8,
+        49.8
+      ],
+      "source_solid_halo_mm": 1.0,
+      "inter_hole_ligament_mm": 2.0,
+      "rail_and_relief_intersection_mm3": 0.0
+    }
+  },
+  "builder_sha256": "8b0976d0afa730df23f60444d12897020291e1cc6f8ef2363a671019a2b303f2",
+  "input_sha256": {
+    "parameters": "3dc1904fdb383491c3fc7780bf5304487d9f79a1df84eb06ff247af674097cfc",
+    "r1_step": "617dbb5e5c49bfc697aa73810e1da7b0ea04fe4fc5e594d5521dde645cec1587",
+    "r2_step": "cfd5083a6bfc48289dc93709324fa8d8dde3b8f57573d699fdc1a4c8191c585e",
+    "r2_fit_parameters": "983fe16fe5e51eb7dc0fd4774158cca05544101302758c9b8bb9433f51152cbe",
+    "r2_seat_profile": "6fc169a141ba90088ef8d456097a4f7f2bbd9ea32160324efe212d0a56f0813b",
+    "r2_builder": "ef27995e3296132166e097483bff4b83711a589c0ea321e63c4c70f99a5cd8bb",
+    "v2_builder": "ca5dcf24cba2026c2443e146f7afff4656155d59aa260b9bb1a40530dad08333",
+    "v4_builder": "564dba6eba9318f6db2f0f0ba9146e8b8a7ea87ea8dc48a9875bd9bf6a102e58",
+    "v4_b_step": "44f7dfecd792a2d05db909a7cb92bae7baf6b58dac3a03712c3255d08f1c0359"
+  },
+  "output_sha256": {
+    "A_R1_full_rail_plus_3p5mm.step": "f62f9f7632442ad9234b15f220c858d52fd517e0c0426bc6795fe9fc8bfe9b68",
+    "A_R1_full_rail_plus_3p5mm_X_to_print_Z.stl": "c3fbe9c04abdcae53b7d8b8c9dc9c354e66eaeab9bd450bc954ad4e98a2fee59",
+    "B_R2_full_rail_plus_3p5mm.step": "f0451c579822bee36bfb53216e1cffb210589b63e01f58f682167f75adefd0fa",
+    "B_R2_full_rail_plus_3p5mm_X_to_print_Z.stl": "dad7d63de9b792c9042661b8d1eeac6ef3c51e9d3ee6f6b9d109d8bfd959984f",
+    "C_R2_full_rail_plus_3p5mm_plus_1mm_seat_relief.step": "2905e0803b4c45a90423fa56d6f0bc6def83bc696091763f1323c53abadf1dad",
+    "C_R2_full_rail_plus_3p5mm_plus_1mm_seat_relief_X_to_print_Z.stl": "0e5512bfb011cd286049b1590bf67a0d87526eafecc07840bdc01b84a30e4a08",
+    "ABC_full_rail_plus_3p5mm_comparison.png": "4d924530688bab68e523f3577ce42c8f1da1142fd66dc7c3f493e68c9424357c",
+    "B_V4_vs_V5_X_section.png": "aa5f75138e01b8d3d5db4d38a17e684c96fe1082fd90f98a53a618b80c77f34f"
+  }
+}

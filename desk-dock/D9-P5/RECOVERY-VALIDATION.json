@@ -1,0 +1,399 @@
+{
+  "base": "562aeb326c1f24a4886cca85b368fced76bc955f",
+  "recovery_commit": "b90d7e7206b07ca2359356338fc0e4191b615ec1",
+  "recovery_tree": "60fe3210691bc29638b73977fad137973ee442d1",
+  "printed_parts": 48,
+  "splice_engagement": {
+    "back": {
+      "shell": "M1",
+      "engagement_mm3": 2872.4256542915446
+    },
+    "front": {
+      "shell": "M2",
+      "engagement_mm3": 265.2055266175869
+    },
+    "fan": {
+      "shell": "M1",
+      "engagement_mm3": 297.60000000000105
+    },
+    "floor": {
+      "shell": "M2",
+      "engagement_mm3": 181.26481347082438
+    }
+  },
+  "modules": [
+    {
+      "module": 1,
+      "fan_center": [
+        84.0,
+        70.0,
+        72.0
+      ],
+      "mouth_area_mm2": 2733.9054824574364,
+      "plenum_joint": {
+        "type": "continuous bonded scalloped shiplap",
+        "total_overlap_mm": 20.0,
+        "inner_tongue_mm": 1.25,
+        "outer_tongue_mm": 1.4,
+        "epoxy_clearance_mm": 0.2,
+        "air_surface_epoxy_land_mm": 0.15,
+        "scallop_radius_mm": 8.0,
+        "scallop_depth_mm": 1.5,
+        "scallops": [
+          {
+            "edge": 3,
+            "male": "outer tongue",
+            "x_mm": 94.0
+          },
+          {
+            "edge": 6,
+            "male": "outer tongue",
+            "x_mm": 94.0
+          },
+          {
+            "edge": 7,
+            "male": "outer tongue",
+            "x_mm": 94.0
+          }
+        ]
+      },
+      "air_volume_mm3": 770257.4017438883,
+      "seam_tabs": [],
+      "fan_mount": "Standard 120-mm steel wire finger guard and four M4 x 35 screws through the 25-mm fan into 3.5-mm x 6-mm blind flange pilots on the 105-mm pattern",
+      "fan_seat_face_gap_mm3": 0.0,
+      "ideal_fastener_seal_helpers": 0
+    },
+    {
+      "module": 2,
+      "fan_center": [
+        269.68,
+        70.0,
+        72.0
+      ],
+      "mouth_area_mm2": 3105.605482457436,
+      "plenum_joint": {
+        "type": "continuous bonded scalloped shiplap",
+        "total_overlap_mm": 20.0,
+        "inner_tongue_mm": 1.25,
+        "outer_tongue_mm": 1.4,
+        "epoxy_clearance_mm": 0.2,
+        "air_surface_epoxy_land_mm": 0.15,
+        "scallop_radius_mm": 8.0,
+        "scallop_depth_mm": 1.5,
+        "scallops": [
+          {
+            "edge": 3,
+            "male": "outer tongue",
+            "x_mm": 279.68
+          },
+          {
+            "edge": 6,
+            "male": "outer tongue",
+            "x_mm": 279.68
+          },
+          {
+            "edge": 7,
+            "male": "outer tongue",
+            "x_mm": 279.68
+          }
+        ]
+      },
+      "air_volume_mm3": 786384.4889101831,
+      "seam_tabs": [],
+      "fan_mount": "Standard 120-mm steel wire finger guard and four M4 x 35 screws through the 25-mm fan into 3.5-mm x 6-mm blind flange pilots on the 105-mm pattern",
+      "fan_seat_face_gap_mm3": 0.0,
+      "ideal_fastener_seal_helpers": 0
+    }
+  ],
+  "part_interferences": [],
+  "fan_overlap_mm3": {
+    "M1-outer-cradle-shell": 0.0,
+    "M1-inner-shell": 0.0,
+    "M1-contact-cassette": 0,
+    "M1-insert-pin": 0,
+    "M2-inner-shell": 0.0,
+    "M2-outer-cradle-shell": 0.0,
+    "M2-contact-cassette": 0,
+    "M2-insert-pin": 0,
+    "accessory-socket-body": 0,
+    "plug-holder-polar-base-cartridge": 0,
+    "plug-holder-polar-inner-arm": 0,
+    "plug-holder-polar-outer-arm": 0,
+    "plug-holder-polar-plug-rotor": 0,
+    "accessory-socket-clamp-bolt": 0,
+    "accessory-socket-clamp-nut": 0,
+    "laptop-slide-endstop-screw": 0,
+    "laptop-slide-endstop-soft-tip": 0,
+    "plug-holder-base-annular-screw": 0,
+    "plug-holder-base-annular-nut": 0,
+    "plug-holder-tip-annular-screw": 0,
+    "plug-holder-tip-annular-nut": 0,
+    "plug-holder-base-head-thrust-washer": 0,
+    "plug-holder-base-nut-thrust-washer": 0,
+    "plug-holder-tip-head-thrust-washer": 0,
+    "plug-holder-tip-nut-thrust-washer": 0,
+    "plug-holder-length-clamp-1-screw": 0,
+    "plug-holder-length-clamp-1-nut": 0,
+    "plug-holder-length-clamp-2-screw": 0,
+    "plug-holder-length-clamp-2-nut": 0,
+    "front-tie-L": 0,
+    "front-frame-L-pin": 0,
+    "front-frame-L-key": 0,
+    "front-tie-R": 0,
+    "front-frame-R-pin": 0,
+    "front-frame-R-key": 0,
+    "front-lap-pin": 0,
+    "front-lap-key": 0,
+    "rear-tie-L": 0.0,
+    "rear-frame-L-pin": 0.0,
+    "rear-frame-L-key": 0,
+    "rear-tie-R": 0.0,
+    "rear-frame-R-pin": 0.0,
+    "rear-frame-R-key": 0,
+    "rear-lap-pin": 0,
+    "rear-lap-key": 0,
+    "centre-contact-cassette": 0,
+    "splice-ring-upper": 0,
+    "splice-ring-lower": 0
+  },
+  "insertion_motion": {
+    "sampled_motion_clear": true,
+    "sampling_fractions": [
+      0.0,
+      0.05,
+      0.1,
+      0.15,
+      0.2,
+      0.25,
+      0.3,
+      0.35,
+      0.4,
+      0.45,
+      0.5,
+      0.55,
+      0.6,
+      0.65,
+      0.7,
+      0.75,
+      0.8,
+      0.85,
+      0.9,
+      0.95,
+      1.0
+    ],
+    "assembly_sequence": "T ties joined on bench before attaching them to the cradles; plenum keys installed before fans; frame and fan fasteners checked with purchased fans present. Remove a brace as a unit before disassembling its T joint.",
+    "key_model": "Barbs compressed flush to 4.8-mm stem width during insertion; head remains full width. No elastic force or fatigue result.",
+    "conflicts": []
+  },
+  "enclosure_recovered": [
+    {
+      "module": 1,
+      "passed": false,
+      "closed": [
+        {
+          "volume_mm3": 5329000.566826682,
+          "target_overlap_mm3": 767704.8708176567,
+          "exterior": true
+        }
+      ],
+      "each_port_open": [
+        [
+          {
+            "volume_mm3": 5333012.066486037,
+            "target_overlap_mm3": 769710.6206473489,
+            "exterior": true
+          }
+        ],
+        [
+          {
+            "volume_mm3": 5330094.129019663,
+            "target_overlap_mm3": 768251.6519141482,
+            "exterior": true
+          }
+        ]
+      ],
+      "physical_part_count": 2,
+      "ideal_exterior_fastener_seals": 0,
+      "method": "Subtract the two exported housing solids and each named port cap separately from an exterior box. No fastener or seal helper patches are used.",
+      "scope": "Nominal closed housing with blind external fan-pin sockets. Printed seam leakage is not measured; sealant may be used for airtightness. No physical airflow result."
+    },
+    {
+      "module": 2,
+      "passed": false,
+      "closed": [
+        {
+          "volume_mm3": 5419457.392094984,
+          "target_overlap_mm3": 783757.61798395,
+          "exterior": true
+        }
+      ],
+      "each_port_open": [
+        [
+          {
+            "volume_mm3": 5423468.891754353,
+            "target_overlap_mm3": 785763.3678136457,
+            "exterior": true
+          }
+        ],
+        [
+          {
+            "volume_mm3": 5420699.634287967,
+            "target_overlap_mm3": 784378.739080441,
+            "exterior": true
+          }
+        ]
+      ],
+      "physical_part_count": 2,
+      "ideal_exterior_fastener_seals": 0,
+      "method": "Subtract the two exported housing solids and each named port cap separately from an exterior box. No fastener or seal helper patches are used.",
+      "scope": "Nominal closed housing with blind external fan-pin sockets. Printed seam leakage is not measured; sealant may be used for airtightness. No physical airflow result."
+    }
+  ],
+  "enclosure_base": [
+    {
+      "module": 1,
+      "passed": false,
+      "closed": [
+        {
+          "volume_mm3": 5328714.126826608,
+          "target_overlap_mm3": 767704.8708176567,
+          "exterior": true
+        }
+      ],
+      "each_port_open": [
+        [
+          {
+            "volume_mm3": 5332725.626485971,
+            "target_overlap_mm3": 769710.6206473489,
+            "exterior": true
+          }
+        ],
+        [
+          {
+            "volume_mm3": 5329807.6890195925,
+            "target_overlap_mm3": 768251.6519141482,
+            "exterior": true
+          }
+        ]
+      ],
+      "physical_part_count": 2,
+      "ideal_exterior_fastener_seals": 0,
+      "method": "Subtract the two exported housing solids and each named port cap separately from an exterior box. No fastener or seal helper patches are used.",
+      "scope": "Nominal closed housing with blind external fan-pin sockets. Printed seam leakage is not measured; sealant may be used for airtightness. No physical airflow result."
+    },
+    {
+      "module": 2,
+      "passed": false,
+      "closed": [
+        {
+          "volume_mm3": 5419457.392094984,
+          "target_overlap_mm3": 783757.61798395,
+          "exterior": true
+        }
+      ],
+      "each_port_open": [
+        [
+          {
+            "volume_mm3": 5423468.891754353,
+            "target_overlap_mm3": 785763.3678136457,
+            "exterior": true
+          }
+        ],
+        [
+          {
+            "volume_mm3": 5420699.634287967,
+            "target_overlap_mm3": 784378.739080441,
+            "exterior": true
+          }
+        ]
+      ],
+      "physical_part_count": 2,
+      "ideal_exterior_fastener_seals": 0,
+      "method": "Subtract the two exported housing solids and each named port cap separately from an exterior box. No fastener or seal helper patches are used.",
+      "scope": "Nominal closed housing with blind external fan-pin sockets. Printed seam leakage is not measured; sealant may be used for airtightness. No physical airflow result."
+    }
+  ],
+  "viewer": {
+    "recovered_revision": "D9-P5-CODEX-SPLICE-LAP-AND-PRINT-POSE",
+    "recovered_bytes": 582312,
+    "rebuilt_revision": "D9-P5-CODEX-SPLICE-LAP-AND-PRINT-POSE",
+    "rebuilt_bytes": 581256,
+    "parts": 51,
+    "printed_parts": 48,
+    "both_binary_layouts_valid": true,
+    "publication": "Preserve the supplied recovery binary; local rebuild is separate evidence."
+  },
+  "plates": [
+    {
+      "plate": "00",
+      "objects": 3,
+      "passed": true,
+      "mesh_repairs": 0,
+      "gcode_sha256": "7ea9734ea561b92cba32a39ebf961f1131c9354a8e40e1dd6d0163c39b5b545c"
+    },
+    {
+      "plate": "01",
+      "objects": 1,
+      "passed": true,
+      "mesh_repairs": 0,
+      "gcode_sha256": "0ba37aacefe26eeb69af9377a622311fa876cf844b3dd18c47afacee01d6540a"
+    },
+    {
+      "plate": "02",
+      "objects": 1,
+      "passed": true,
+      "mesh_repairs": 0,
+      "gcode_sha256": "d25d4f139d74679c101d9e701755652e1f508cdd9d7988948a159bf1edffe5ec"
+    },
+    {
+      "plate": "03",
+      "objects": 1,
+      "passed": true,
+      "mesh_repairs": 0,
+      "gcode_sha256": "65f24382407eefa5b4ed92b02fc4875252144b34a74850ca0fbe60cefb99cb68"
+    },
+    {
+      "plate": "04",
+      "objects": 1,
+      "passed": true,
+      "mesh_repairs": 0,
+      "gcode_sha256": "a12681e5dd803034e13b563aeeebc3334d87dbab4b8b8ce875a6d1b12e3e3703"
+    },
+    {
+      "plate": "05",
+      "objects": 4,
+      "passed": true,
+      "mesh_repairs": 0,
+      "gcode_sha256": "c159e7d7f11b25d01003ce481b73459b19eb2953bb253e5db814559e673d2278"
+    },
+    {
+      "plate": "06",
+      "objects": 7,
+      "passed": true,
+      "mesh_repairs": 0,
+      "gcode_sha256": "4202bb7fdea7132e419942307eb061a1507bba5906c8ee5157dfdad61900c0d7"
+    },
+    {
+      "plate": "07",
+      "objects": 12,
+      "passed": true,
+      "mesh_repairs": 0,
+      "gcode_sha256": "72ec890831535fde19cb0df72f95e756e35399cc262a7ddbd8c7000530b1596a"
+    },
+    {
+      "plate": "08",
+      "objects": 5,
+      "passed": true,
+      "mesh_repairs": 0,
+      "gcode_sha256": "8cfe7ac30922ce088771b781e817e1c57a13d4018ce6a247d9eed56bcf4f9f2f"
+    },
+    {
+      "plate": "09",
+      "objects": 16,
+      "passed": true,
+      "mesh_repairs": 0,
+      "gcode_sha256": "b1d0f7889c15717268d634644a8be5c1fdee8b4f4e7deed8f4758c6d3bb19672"
+    }
+  ],
+  "production_package_released": false
+}

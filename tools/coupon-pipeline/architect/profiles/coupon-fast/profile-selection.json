@@ -1,0 +1,12 @@
+{
+  "machine": "Repro P1S - 0.4 nozzle",
+  "process": "Repro Coupon Fast - 0.4 nozzle",
+  "filament": "Repro Polymaker PETG - 0.4 nozzle",
+  "layer": "0.28",
+  "support_check": "Automatic normal supports at 45 degrees stay enabled; inspect emitted toolpath roles.",
+  "calibration_pending": [
+    "filament_flow_ratio",
+    "pressure_advance",
+    "filament_max_volumetric_speed (max flow test)"
+  ]
+}

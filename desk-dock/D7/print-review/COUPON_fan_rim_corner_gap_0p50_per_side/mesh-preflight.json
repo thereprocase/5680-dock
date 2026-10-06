@@ -1,0 +1,42 @@
+{
+  "source": "D:\\Code\\Modeling\\dell-5560-wall-mount\\desk-dock\\D7\\print\\COUPON_fan_rim_corner_gap_0p50_per_side.stl",
+  "source_sha256": "f17fb6b33e85bdb48c8b709bf57633cb1db02e7466ea30dab7aedbeef77f785b",
+  "watertight": true,
+  "part_size_mm": [
+    30.0,
+    30.0,
+    16.0
+  ],
+  "translation_mm": [
+    113.0,
+    123.0,
+    -0.0
+  ],
+  "placed_bounds_mm": [
+    [
+      113.0,
+      123.0,
+      0.0
+    ],
+    [
+      143.0,
+      153.0,
+      16.0
+    ]
+  ],
+  "conservative_brim_bounds_mm": [
+    105.0,
+    115.0,
+    151.0,
+    161.0
+  ],
+  "bed_and_exclusion_pass": true,
+  "brim_mm": 8,
+  "orientation": "CAD export orientation preserved",
+  "overhang_angle_screen": {
+    "method": "Downward-facing triangles steeper than a 45-degree printable wall, above the first 0.4 mm. Angle screening alone cannot establish support requirements or bridge anchoring.",
+    "candidate_area_mm2": 0.0,
+    "candidate_triangle_count": 0,
+    "largest_candidate_triangles": []
+  }
+}

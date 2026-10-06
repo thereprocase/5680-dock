@@ -1,0 +1,591 @@
+{
+  "scope": "Linear elastic, small-displacement isotropic sensitivity only. Current large predicted rotations violate this model; values flag insufficiency, not realistic displacement. Neither shell fixity nor printed modulus, strength, creep, bolt preload or friction is verified.",
+  "force_N": 20.0,
+  "assumed_moduli_MPa": [
+    800,
+    1200,
+    1800
+  ],
+  "assumed_poisson_ratio": 0.38,
+  "dimensions_mm": {
+    "spine_cross_section": [
+      6,
+      7
+    ],
+    "spine_centerline_length": 68.77946980036796,
+    "return_cross_section": [
+      7,
+      6.3
+    ],
+    "return_to_shell_centerline_span": 31.2,
+    "port_above_shelf": 21.349999999999994,
+    "port_y_minus_spine_y": -19.268644412551076,
+    "shelf_nominal_dimensions": [
+      39.4,
+      43,
+      5.3
+    ],
+    "wall_attachment_x_bounds": [
+      -7,
+      -4.6
+    ]
+  },
+  "rows": [
+    {
+      "E_MPa_assumed": 800,
+      "G_MPa_derived_assumed_nu_0p38": 289.8550724637681,
+      "current_spine_bending_mm": 47.77902339947458,
+      "current_spine_eccentric_torsion_mm": 7.2189545789309,
+      "current_return_vertical_bending_mm": 43.43999763244357,
+      "current_return_lateral_bending_mm": 1.6082127605049115,
+      "current_return_axial_mm": 0.017687074829931974,
+      "current_member_sum_mm": 100.0638754461839,
+      "current_2D_frame_check": {
+        "port_axial_deflection_mm": 91.23670810674794,
+        "shelf_rotation_deg": -71.19790496650046,
+        "shelf_center_displacement_xz_mm": [
+          64.70638974904575,
+          7.518783418643314
+        ],
+        "member_local_end_forces": [
+          {
+            "nodes": [
+              0,
+              1
+            ],
+            "length_mm": 31.2,
+            "area_mm2": 44.1,
+            "in_plane_I_mm4": 145.86074999999997,
+            "N_V_M_end_values": [
+              20.0,
+              2.5832254232089934e-13,
+              1802.5893960073624,
+              -20.0,
+              -2.5832254232089934e-13,
+              -1802.5893960073524
+            ]
+          },
+          {
+            "nodes": [
+              1,
+              2
+            ],
+            "length_mm": 68.77946980036796,
+            "area_mm2": 42,
+            "in_plane_I_mm4": 126.0,
+            "N_V_M_end_values": [
+              -1.3642420526593924e-12,
+              20.0,
+              1802.5893960073527,
+              1.3642420526593924e-12,
+              -20.0,
+              -427.0000000000009
+            ]
+          }
+        ]
+      },
+      "candidate_2D_braced_frame": {
+        "port_axial_deflection_mm": 1.2574938158830913,
+        "shelf_rotation_deg": -1.2456416419853127,
+        "shelf_center_displacement_xz_mm": [
+          0.7933331170952491,
+          0.4116431373347524
+        ],
+        "member_local_end_forces": [
+          {
+            "nodes": [
+              0,
+              1
+            ],
+            "length_mm": 31.2,
+            "area_mm2": 270.9,
+            "in_plane_I_mm4": 896.0017499999999,
+            "N_V_M_end_values": [
+              -11.12066185064536,
+              43.81263471154909,
+              1040.3842692433036,
+              11.12066185064536,
+              -43.81263471154909,
+              326.56993375702706
+            ]
+          },
+          {
+            "nodes": [
+              1,
+              2
+            ],
+            "length_mm": 68.77946980036796,
+            "area_mm2": 258,
+            "in_plane_I_mm4": 774.0,
+            "N_V_M_end_values": [
+              -43.81263471154875,
+              -11.120661850645359,
+              -326.5699337570267,
+              43.81263471154875,
+              11.120661850645359,
+              -438.3032921595399
+            ]
+          },
+          {
+            "nodes": [
+              2,
+              3
+            ],
+            "length_mm": 59.81176128577611,
+            "area_mm2": 64,
+            "in_plane_I_mm4": 341.3333333333333,
+            "N_V_M_end_values": [
+              53.613204170770246,
+              3.6968761046537804,
+              11.303292159540348,
+              -53.613204170770246,
+              -3.6968761046537804,
+              209.8133789151014
+            ]
+          }
+        ]
+      },
+      "candidate_2D_braced_frame_16mm_load_band": {
+        "port_axial_deflection_mm": 0.6636970347061999,
+        "shelf_rotation_deg": -0.7117096467123358,
+        "shelf_center_displacement_xz_mm": [
+          0.39849423815747864,
+          0.21970871370655737
+        ],
+        "member_local_end_forces": [
+          {
+            "nodes": [
+              0,
+              1
+            ],
+            "length_mm": 31.2,
+            "area_mm2": 270.9,
+            "in_plane_I_mm4": 896.0017499999999,
+            "N_V_M_end_values": [
+              -6.9238820358736755,
+              24.5164166070941,
+              566.5080868110946,
+              6.9238820358736755,
+              -24.5164166070941,
+              198.4041113302407
+            ]
+          },
+          {
+            "nodes": [
+              1,
+              2
+            ],
+            "length_mm": 68.77946980036796,
+            "area_mm2": 258,
+            "in_plane_I_mm4": 774.0,
+            "N_V_M_end_values": [
+              -24.516416607093902,
+              -6.923882035873676,
+              -198.40411133024057,
+              24.516416607093902,
+              6.923882035873676,
+              -277.81682405744334
+            ]
+          },
+          {
+            "nodes": [
+              2,
+              3
+            ],
+            "length_mm": 59.81176128577611,
+            "area_mm2": 128,
+            "in_plane_I_mm4": 2730.6666666666665,
+            "N_V_M_end_values": [
+              34.961098209316276,
+              10.181931011982698,
+              -149.18317594255643,
+              -34.961098209316276,
+              -10.181931011982698,
+              758.1824030595066
+            ]
+          }
+        ]
+      },
+      "shelf_cantilever_23mm_full_width_optimistic_mm": 0.4913022862169189,
+      "shelf_torsion_full_width_optimistic_mm": 0.3386497774274943,
+      "shelf_torsion_6mm_effective_width_sensitivity_mm": 4.314600907011472
+    },
+    {
+      "E_MPa_assumed": 1200,
+      "G_MPa_derived_assumed_nu_0p38": 434.7826086956522,
+      "current_spine_bending_mm": 31.852682266316393,
+      "current_spine_eccentric_torsion_mm": 4.812636385953933,
+      "current_return_vertical_bending_mm": 28.95999842162905,
+      "current_return_lateral_bending_mm": 1.0721418403366074,
+      "current_return_axial_mm": 0.011791383219954649,
+      "current_member_sum_mm": 66.70925029745595,
+      "current_2D_frame_check": {
+        "port_axial_deflection_mm": 60.82447207116507,
+        "shelf_rotation_deg": -47.46526997766683,
+        "shelf_center_displacement_xz_mm": [
+          43.137593166030335,
+          5.012522279095494
+        ],
+        "member_local_end_forces": [
+          {
+            "nodes": [
+              0,
+              1
+            ],
+            "length_mm": 31.2,
+            "area_mm2": 44.1,
+            "in_plane_I_mm4": 145.86074999999997,
+            "N_V_M_end_values": [
+              19.999999999999975,
+              -4.365235938185258e-13,
+              1802.589396007337,
+              -19.999999999999975,
+              4.365235938185258e-13,
+              -1802.589396007352
+            ]
+          },
+          {
+            "nodes": [
+              1,
+              2
+            ],
+            "length_mm": 68.77946980036796,
+            "area_mm2": 42,
+            "in_plane_I_mm4": 126.0,
+            "N_V_M_end_values": [
+              0.0,
+              19.99999999999997,
+              1802.5893960073531,
+              0.0,
+              -19.99999999999997,
+              -427.0000000000009
+            ]
+          }
+        ]
+      },
+      "candidate_2D_braced_frame": {
+        "port_axial_deflection_mm": 0.8383292105887277,
+        "shelf_rotation_deg": -0.830427761323542,
+        "shelf_center_displacement_xz_mm": [
+          0.5288887447301662,
+          0.2744287582231684
+        ],
+        "member_local_end_forces": [
+          {
+            "nodes": [
+              0,
+              1
+            ],
+            "length_mm": 31.2,
+            "area_mm2": 270.9,
+            "in_plane_I_mm4": 896.0017499999999,
+            "N_V_M_end_values": [
+              -11.120661850645362,
+              43.81263471154906,
+              1040.3842692433036,
+              11.120661850645362,
+              -43.81263471154906,
+              326.5699337570269
+            ]
+          },
+          {
+            "nodes": [
+              1,
+              2
+            ],
+            "length_mm": 68.77946980036796,
+            "area_mm2": 258,
+            "in_plane_I_mm4": 774.0,
+            "N_V_M_end_values": [
+              -43.812634711549435,
+              -11.120661850645362,
+              -326.56993375702694,
+              43.812634711549435,
+              11.120661850645362,
+              -438.30329215954015
+            ]
+          },
+          {
+            "nodes": [
+              2,
+              3
+            ],
+            "length_mm": 59.81176128577611,
+            "area_mm2": 64,
+            "in_plane_I_mm4": 341.3333333333333,
+            "N_V_M_end_values": [
+              53.613204170770075,
+              3.696876104653781,
+              11.303292159540504,
+              -53.613204170770075,
+              -3.696876104653781,
+              209.81337891510157
+            ]
+          }
+        ]
+      },
+      "candidate_2D_braced_frame_16mm_load_band": {
+        "port_axial_deflection_mm": 0.44246468980413367,
+        "shelf_rotation_deg": -0.4744730978082242,
+        "shelf_center_displacement_xz_mm": [
+          0.26566282543831937,
+          0.1464724758043717
+        ],
+        "member_local_end_forces": [
+          {
+            "nodes": [
+              0,
+              1
+            ],
+            "length_mm": 31.2,
+            "area_mm2": 270.9,
+            "in_plane_I_mm4": 896.0017499999999,
+            "N_V_M_end_values": [
+              -6.92388203587368,
+              24.516416607094094,
+              566.5080868110949,
+              6.92388203587368,
+              -24.516416607094094,
+              198.40411133024068
+            ]
+          },
+          {
+            "nodes": [
+              1,
+              2
+            ],
+            "length_mm": 68.77946980036796,
+            "area_mm2": 258,
+            "in_plane_I_mm4": 774.0,
+            "N_V_M_end_values": [
+              -24.51641660709413,
+              -6.92388203587368,
+              -198.4041113302408,
+              24.51641660709413,
+              6.92388203587368,
+              -277.8168240574437
+            ]
+          },
+          {
+            "nodes": [
+              2,
+              3
+            ],
+            "length_mm": 59.81176128577611,
+            "area_mm2": 128,
+            "in_plane_I_mm4": 2730.6666666666665,
+            "N_V_M_end_values": [
+              34.96109820931633,
+              10.181931011982716,
+              -149.18317594255586,
+              -34.96109820931633,
+              -10.181931011982716,
+              758.1824030595077
+            ]
+          }
+        ]
+      },
+      "shelf_cantilever_23mm_full_width_optimistic_mm": 0.327534857477946,
+      "shelf_torsion_full_width_optimistic_mm": 0.22576651828499622,
+      "shelf_torsion_6mm_effective_width_sensitivity_mm": 2.8764006046743145
+    },
+    {
+      "E_MPa_assumed": 1800,
+      "G_MPa_derived_assumed_nu_0p38": 652.1739130434784,
+      "current_spine_bending_mm": 21.235121510877594,
+      "current_spine_eccentric_torsion_mm": 3.208424257302622,
+      "current_return_vertical_bending_mm": 19.30666561441937,
+      "current_return_lateral_bending_mm": 0.7147612268910716,
+      "current_return_axial_mm": 0.007860922146636432,
+      "current_member_sum_mm": 44.47283353163729,
+      "current_2D_frame_check": {
+        "port_axial_deflection_mm": 40.549648047443675,
+        "shelf_rotation_deg": -31.643513318444743,
+        "shelf_center_displacement_xz_mm": [
+          28.75839544402045,
+          3.3416815193970626
+        ],
+        "member_local_end_forces": [
+          {
+            "nodes": [
+              0,
+              1
+            ],
+            "length_mm": 31.2,
+            "area_mm2": 44.1,
+            "in_plane_I_mm4": 145.86074999999997,
+            "N_V_M_end_values": [
+              19.999999999999993,
+              1.1980024026282882e-12,
+              1802.58939600739,
+              -19.999999999999993,
+              -1.1980024026282882e-12,
+              -1802.5893960073536
+            ]
+          },
+          {
+            "nodes": [
+              1,
+              2
+            ],
+            "length_mm": 68.77946980036796,
+            "area_mm2": 42,
+            "in_plane_I_mm4": 126.0,
+            "N_V_M_end_values": [
+              -4.547473508864641e-13,
+              20.0,
+              1802.5893960073545,
+              4.547473508864641e-13,
+              -20.0,
+              -426.9999999999991
+            ]
+          }
+        ]
+      },
+      "candidate_2D_braced_frame": {
+        "port_axial_deflection_mm": 0.5588861403924852,
+        "shelf_rotation_deg": -0.5536185075490282,
+        "shelf_center_displacement_xz_mm": [
+          0.3525924964867775,
+          0.18295250548211234
+        ],
+        "member_local_end_forces": [
+          {
+            "nodes": [
+              0,
+              1
+            ],
+            "length_mm": 31.2,
+            "area_mm2": 270.9,
+            "in_plane_I_mm4": 896.0017499999999,
+            "N_V_M_end_values": [
+              -11.120661850645371,
+              43.812634711549094,
+              1040.3842692433043,
+              11.120661850645371,
+              -43.812634711549094,
+              326.5699337570271
+            ]
+          },
+          {
+            "nodes": [
+              1,
+              2
+            ],
+            "length_mm": 68.77946980036796,
+            "area_mm2": 258,
+            "in_plane_I_mm4": 774.0,
+            "N_V_M_end_values": [
+              -43.81263471154921,
+              -11.120661850645371,
+              -326.56993375702723,
+              43.81263471154921,
+              11.120661850645371,
+              -438.3032921595404
+            ]
+          },
+          {
+            "nodes": [
+              2,
+              3
+            ],
+            "length_mm": 59.81176128577611,
+            "area_mm2": 64,
+            "in_plane_I_mm4": 341.3333333333333,
+            "N_V_M_end_values": [
+              53.61320417077002,
+              3.696876104653778,
+              11.303292159540362,
+              -53.61320417077002,
+              -3.696876104653778,
+              209.81337891510145
+            ]
+          }
+        ]
+      },
+      "candidate_2D_braced_frame_16mm_load_band": {
+        "port_axial_deflection_mm": 0.29497645986942284,
+        "shelf_rotation_deg": -0.3163153985388165,
+        "shelf_center_displacement_xz_mm": [
+          0.17710855029221315,
+          0.09764831720291461
+        ],
+        "member_local_end_forces": [
+          {
+            "nodes": [
+              0,
+              1
+            ],
+            "length_mm": 31.2,
+            "area_mm2": 270.9,
+            "in_plane_I_mm4": 896.0017499999999,
+            "N_V_M_end_values": [
+              -6.92388203587369,
+              24.51641660709413,
+              566.5080868110957,
+              6.92388203587369,
+              -24.51641660709413,
+              198.40411133024088
+            ]
+          },
+          {
+            "nodes": [
+              1,
+              2
+            ],
+            "length_mm": 68.77946980036796,
+            "area_mm2": 258,
+            "in_plane_I_mm4": 774.0,
+            "N_V_M_end_values": [
+              -24.516416607094243,
+              -6.92388203587369,
+              -198.40411133024094,
+              24.516416607094243,
+              6.92388203587369,
+              -277.8168240574438
+            ]
+          },
+          {
+            "nodes": [
+              2,
+              3
+            ],
+            "length_mm": 59.81176128577611,
+            "area_mm2": 128,
+            "in_plane_I_mm4": 2730.6666666666665,
+            "N_V_M_end_values": [
+              34.96109820931639,
+              10.181931011982737,
+              -149.18317594255575,
+              -34.96109820931639,
+              -10.181931011982737,
+              758.1824030595088
+            ]
+          }
+        ]
+      },
+      "shelf_cantilever_23mm_full_width_optimistic_mm": 0.21835657165196395,
+      "shelf_torsion_full_width_optimistic_mm": 0.15051101218999743,
+      "shelf_torsion_6mm_effective_width_sensitivity_mm": 1.9176004031162095
+    }
+  ],
+  "current_spine_linear_base_bending_stress_MPa": 42.918795143032355,
+  "current_return_linear_bending_stress_MPa": 38.92861237463253,
+  "root_rotation_stiffness_needed_Nmm_per_rad_for_0p1mm_budget": 1624664.2652990879,
+  "root_translation_stiffness_needed_N_per_mm_for_0p1mm_budget": 200.0,
+  "cassette_friction_sensitivity": {
+    "mu_assumed": [
+      0.15,
+      0.2,
+      0.3
+    ],
+    "minimum_total_preload_for_axial_F_only_N": [
+      133.33333333333334,
+      100.0,
+      66.66666666666667
+    ],
+    "max_bolt_group_axial_share_N": 12.789194484311155,
+    "shelf_interface_overturning_moment_Nmm": 374.0,
+    "clamp_interface_overturning_moment_Nmm": 274.0
+  }
+}

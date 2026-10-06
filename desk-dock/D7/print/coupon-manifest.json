@@ -1,0 +1,138 @@
+{
+  "parts": [
+    {
+      "file": "coupon_custom10_nut_gap_0.20.stl",
+      "purpose": "Matched8x2 or10x2 thread fit; custom pair, not ISO. Print supplied orientation.",
+      "source": "printed-fastener-review\\custom10_nut_gap_0.20.stl",
+      "source_sha256": "f849e71410aa196b8eab8e11f7e79b239261043f2c0f9a91cc2b655fce9d56c7",
+      "sha256": "f849e71410aa196b8eab8e11f7e79b239261043f2c0f9a91cc2b655fce9d56c7"
+    },
+    {
+      "file": "coupon_custom10_nut_gap_0.25.stl",
+      "purpose": "Matched8x2 or10x2 thread fit; custom pair, not ISO. Print supplied orientation.",
+      "source": "printed-fastener-review\\custom10_nut_gap_0.25.stl",
+      "source_sha256": "f3bae5287df8330864d4fc3c23dc6cbffca6bccddc9a03f4f282b96092488a69",
+      "sha256": "f3bae5287df8330864d4fc3c23dc6cbffca6bccddc9a03f4f282b96092488a69"
+    },
+    {
+      "file": "coupon_custom10_nut_gap_0.30.stl",
+      "purpose": "Matched8x2 or10x2 thread fit; custom pair, not ISO. Print supplied orientation.",
+      "source": "printed-fastener-review\\custom10_nut_gap_0.30.stl",
+      "source_sha256": "c10cfa0cd473653f3d4efe02e35879648fe49981bf232926083ffa87a8411ffd",
+      "sha256": "c10cfa0cd473653f3d4efe02e35879648fe49981bf232926083ffa87a8411ffd"
+    },
+    {
+      "file": "coupon_custom10_screw_L12.stl",
+      "purpose": "Matched8x2 or10x2 thread fit; custom pair, not ISO. Print supplied orientation.",
+      "source": "printed-fastener-review\\custom10_screw_L12.stl",
+      "source_sha256": "4424d59ab1af51780d521b643f62f2a4aa0e2801fb5e4395f247a70e1cbf943d",
+      "sha256": "4424d59ab1af51780d521b643f62f2a4aa0e2801fb5e4395f247a70e1cbf943d"
+    },
+    {
+      "file": "coupon_custom8_nut_gap_0.20.stl",
+      "purpose": "Matched8x2 or10x2 thread fit; custom pair, not ISO. Print supplied orientation.",
+      "source": "printed-fastener-review\\custom8_nut_gap_0.20.stl",
+      "source_sha256": "166499134366cc71a27bdc66ef9e8ec49874ceb8b5bfc74984c89e17949fec3d",
+      "sha256": "166499134366cc71a27bdc66ef9e8ec49874ceb8b5bfc74984c89e17949fec3d"
+    },
+    {
+      "file": "coupon_custom8_nut_gap_0.25.stl",
+      "purpose": "Matched8x2 or10x2 thread fit; custom pair, not ISO. Print supplied orientation.",
+      "source": "printed-fastener-review\\custom8_nut_gap_0.25.stl",
+      "source_sha256": "d87f3a7119b85b70a6f6ab2b5870a52160716c7902232f7b1733c7c8bc8902ac",
+      "sha256": "d87f3a7119b85b70a6f6ab2b5870a52160716c7902232f7b1733c7c8bc8902ac"
+    },
+    {
+      "file": "coupon_custom8_nut_gap_0.30.stl",
+      "purpose": "Matched8x2 or10x2 thread fit; custom pair, not ISO. Print supplied orientation.",
+      "source": "printed-fastener-review\\custom8_nut_gap_0.30.stl",
+      "source_sha256": "fc0b38905b2ac7ef1df4a527a61780fcaa3be5a2c28d1921ca693ec172b4d80c",
+      "sha256": "fc0b38905b2ac7ef1df4a527a61780fcaa3be5a2c28d1921ca693ec172b4d80c"
+    },
+    {
+      "file": "coupon_custom8_screw_L16.stl",
+      "purpose": "Matched8x2 or10x2 thread fit; custom pair, not ISO. Print supplied orientation.",
+      "source": "printed-fastener-review\\custom8_screw_L16.stl",
+      "source_sha256": "16c2c49bf2c501bacc45ac9ad65a1059517e9c1407abbe44ddb812024bf94157",
+      "sha256": "16c2c49bf2c501bacc45ac9ad65a1059517e9c1407abbe44ddb812024bf94157"
+    },
+    {
+      "file": "coupon_cap_pin_receiver_bore_6.8.stl",
+      "purpose": "Use actual6.5mm cap pin as male; bore friction sample, not full clevis strength.",
+      "source": "cassette-review\\cap_pin_receiver_bore_6.8.stl",
+      "source_sha256": "3e9dbb2cfb47f918c9595b87cf7e3c42cf9fb08aff03e3b6c35bca75f8450f08",
+      "sha256": "3e9dbb2cfb47f918c9595b87cf7e3c42cf9fb08aff03e3b6c35bca75f8450f08"
+    },
+    {
+      "file": "coupon_cap_pin_receiver_bore_6.9.stl",
+      "purpose": "Use actual6.5mm cap pin as male; bore friction sample, not full clevis strength.",
+      "source": "cassette-review\\cap_pin_receiver_bore_6.9.stl",
+      "source_sha256": "3dc715ed0b4c2024b22a12a386aca822d364c5bde3e07ccc79a95e6737ddd79a",
+      "sha256": "3dc715ed0b4c2024b22a12a386aca822d364c5bde3e07ccc79a95e6737ddd79a"
+    },
+    {
+      "file": "coupon_cap_pin_receiver_bore_7.0.stl",
+      "purpose": "Use actual6.5mm cap pin as male; bore friction sample, not full clevis strength.",
+      "source": "cassette-review\\cap_pin_receiver_bore_7.0.stl",
+      "source_sha256": "0cdf910e970d8a5b5c28230b7a56f573f8754cbd111c4bb0185e42adf8725ae8",
+      "sha256": "0cdf910e970d8a5b5c28230b7a56f573f8754cbd111c4bb0185e42adf8725ae8"
+    },
+    {
+      "file": "coupon_fan_slide_rail.stl",
+      "purpose": "Actual short lower rail/friction-land pair. Does not sample whole-frame shrinkage or fan fit.",
+      "dimensions_mm": [
+        9.0,
+        20.0,
+        41.495105651629544
+      ],
+      "sha256": "9d45c9120fa793c48351710041c8229f165b86b9b544422bc624caa45db7bc9d",
+      "valid_single_solid": true
+    },
+    {
+      "file": "coupon_fan_grille_edge.stl",
+      "purpose": "Actual short lower rail/friction-land pair. Does not sample whole-frame shrinkage or fan fit.",
+      "dimensions_mm": [
+        5.849999999999994,
+        20.0,
+        4.000000000000011
+      ],
+      "sha256": "d9d33261bf5d19c3d955e0867deb68dbd03fad5c274c9ede5d08aca64d0123a5",
+      "valid_single_solid": true
+    },
+    {
+      "file": "coupon_fixed_cam_and_pilot.stl",
+      "purpose": "Combined female cam/pilot seat; back face on bed. Seat-fit and repeatability sample, not force calibration.",
+      "dimensions_mm": [
+        68.00000019999999,
+        68.00000020000002,
+        8.000000100000017
+      ],
+      "sha256": "d589fbac4107bcc782346925d1b5946b82b3ea580f50bf3dc78203bf0ba32150",
+      "valid_single_solid": true
+    },
+    {
+      "file": "coupon_rotor_cam_and_pilot.stl",
+      "purpose": "Combined male cam/pilot seat; flat back on bed. Fit with female sample before full holder.",
+      "dimensions_mm": [
+        60.0000001,
+        61.00000020000003,
+        12.500000000000014
+      ],
+      "sha256": "2864bd5a8ebc6c46a345b8d59f1c7e7c4c7add3352739d28a2f3ceb2381f713a",
+      "valid_single_solid": true
+    },
+    {
+      "file": "coupon_dummy_plug_load_eye.stl",
+      "purpose": "BENCH ONLY, laptop removed. Nonfunctional dummy withload eye centered at nominal tip. Cap squeeze relieved for rigidPETG. Apply measured symmetric load; verify fixture itself survives.",
+      "dimensions_mm": [
+        39.15,
+        15.0,
+        6.5000000000000036
+      ],
+      "sha256": "ecd6dff8bc0e354747e030a1cf43b95cc33fa8e933e979bcf7dc25e17f6ef37f",
+      "valid_single_solid": true
+    }
+  ],
+  "count": 16,
+  "scope": "Print fit and detached bench samples. No tested force, fatigue, shrinkage or impact claim."
+}

@@ -1,0 +1,16 @@
+{
+  "lip_outward_shift_mm": 2.0,
+  "lip_height_increase_mm": 3.0,
+  "lip_top_edge_radius_mm": 0.65,
+  "seat_extension_toward_underside_mm": 1.0,
+  "status": "R2 trial increments retained; rail moved 3.5 mm outward per the printed V5 coupons (user request 2026-09-17, not a measurement); members thickened outward/downward only, laptop-facing surfaces unchanged.",
+  "rail_outward_shift_mm": 3.5,
+  "rail_thickness_mm": 6.0,
+  "fence_extra_outer_thickness_mm": 2.0,
+  "base_thickness_mm": 6.0,
+  "brace_width_mm": 6.0,
+  "inside_corner_fillet_mm": 3.0,
+  "outside_corner_fillet_mm": 1.5,
+  "contact_edge_break_mm": 0.5,
+  "top_face_chamfer_mm": 0.8
+}

@@ -1,0 +1,105 @@
+{
+  "model_sha256": "a4ccf6a58c7f5fafe2412908eec88bb082ba6f30bddf2b40ba348f753106f64f",
+  "angle_deg": 45,
+  "cam_lift_mm": 0.8,
+  "parts": [
+    {
+      "part": "breakaway_carrier",
+      "motion": "rotate",
+      "symmetric_vertex_error_mm": 1.3936618803537925e-05,
+      "surface_error_mm": 1.3936618803537925e-05,
+      "bounds_error_mm": 7.799074154490881e-06,
+      "passed": true
+    },
+    {
+      "part": "breakaway_pivot_pin_10mm",
+      "motion": "axial",
+      "symmetric_vertex_error_mm": 9.224220761272839e-06,
+      "surface_error_mm": 9.224220761272839e-06,
+      "bounds_error_mm": 8.071817489962996e-06,
+      "passed": true
+    },
+    {
+      "part": "breakaway_spring_cartridge",
+      "motion": "spring",
+      "symmetric_vertex_error_mm": 1.4473750016143423e-05,
+      "surface_error_mm": 1.4473750016143423e-05,
+      "bounds_error_mm": 0.0,
+      "passed": true
+    },
+    {
+      "part": "breakaway_preload_hand_nut",
+      "motion": "axial",
+      "symmetric_vertex_error_mm": 9.224220761272839e-06,
+      "surface_error_mm": 9.224220761272839e-06,
+      "bounds_error_mm": 7.186971572537004e-06,
+      "passed": true
+    },
+    {
+      "part": "height_shim_pack",
+      "motion": "rotate",
+      "symmetric_vertex_error_mm": 6.934280890868846e-06,
+      "surface_error_mm": 6.934280890868846e-06,
+      "bounds_error_mm": 4.26275849463309e-06,
+      "passed": true
+    },
+    {
+      "part": "cassette_calibration_keeper_plate",
+      "motion": "rotate",
+      "symmetric_vertex_error_mm": 7.706650316824534e-06,
+      "surface_error_mm": 7.706650316824534e-06,
+      "bounds_error_mm": 4.454463635283901e-06,
+      "passed": true
+    },
+    {
+      "part": "cassette_calibration_hand_screw",
+      "motion": "rotate",
+      "symmetric_vertex_error_mm": 0.19703448857272168,
+      "surface_error_mm": 0.019989648070365636,
+      "bounds_error_mm": 1.6599737051592456e-06,
+      "passed": true
+    },
+    {
+      "part": "X_depth_overmold_clamp",
+      "motion": "rotate",
+      "symmetric_vertex_error_mm": 0.20234736458006689,
+      "surface_error_mm": 0.01989883870183387,
+      "bounds_error_mm": 8.422427413279365e-06,
+      "passed": true
+    },
+    {
+      "part": "sliding_plug_cap",
+      "motion": "rotate",
+      "symmetric_vertex_error_mm": 1.384315834573656e-05,
+      "surface_error_mm": 1.384315834573656e-05,
+      "bounds_error_mm": 3.5854693010151095e-06,
+      "passed": true
+    },
+    {
+      "part": "cassette_cap_push_pin_6p5",
+      "motion": "rotate",
+      "symmetric_vertex_error_mm": 1.4475885872253665e-05,
+      "surface_error_mm": 1.4475885872253665e-05,
+      "bounds_error_mm": 5.0011198027277715e-06,
+      "passed": true
+    },
+    {
+      "part": "Dell_plug_overmold_REFERENCE",
+      "motion": "rotate",
+      "symmetric_vertex_error_mm": 1.0296849971804387e-05,
+      "surface_error_mm": 1.0296849971804387e-05,
+      "bounds_error_mm": 7.231326833334606e-06,
+      "passed": true
+    },
+    {
+      "part": "USB_C_shell_REFERENCE",
+      "motion": "rotate",
+      "symmetric_vertex_error_mm": 6.867481347381909e-06,
+      "surface_error_mm": 6.867481347381909e-06,
+      "bounds_error_mm": 3.1784437481974237e-06,
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "scope": "Viewer transforms and spring displacement compared with actual independently posed CAD at 45 degrees; not a dynamics or force simulation."
+}
